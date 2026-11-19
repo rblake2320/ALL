@@ -44,9 +44,10 @@ Early access, in active development (version 1.0.0).
 | Story start: claim the Condemned Shack, Act 1 | Playable |
 | Walkable world: walk to the neighbours, the street and the graveyard | Playable, new |
 | Pets and wildlife, home building, roofs and ceilings | Playable, new |
-| Accounts, online play, a store with real money | Designed only, not built |
+| Shared town: other players on the same street | First test built, off by default ([docs/SHARED_TOWN.md](docs/SHARED_TOWN.md)) |
+| Accounts, missions, a store with real money | Designed only, not built |
 
-Everything runs on your device. There are no accounts, no servers and no data collection.
+The game runs on your device. There are no accounts and no data collection, and the game itself talks to no server.
 
 What the game is meant to become: **[docs/CORE_CONCEPT.md](docs/CORE_CONCEPT.md)**. What to build next: **[ROADMAP.md](ROADMAP.md)**. What changed lately: [CHANGELOG.md](CHANGELOG.md).
 

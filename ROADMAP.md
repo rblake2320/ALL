@@ -27,6 +27,9 @@ The life sim (needs, the decay economy, careers, social life, build and buy, syn
 story start, the walkable world (neighbours, the street, the graveyard), pets and wildlife, home building, roofs and
 ceilings. It runs in a browser and as a Windows app, with no account and no server.
 
+A first test of the shared town also exists, separate from the game and off by default: two browsers on the same
+street, each seeing the other's zombie walk ([docs/SHARED_TOWN.md](docs/SHARED_TOWN.md)).
+
 ## 2. Next, still single-player (no server needed)
 
 Good places to start, because nothing here needs an account, hosting or a lawyer.
@@ -88,12 +91,13 @@ How it is meant to work, the same way most browser multiplayer games do it:
 
 Steps, each one playable:
 
-1. A server that runs the town and lets two browsers see each other's zombies walk the street.
+1. A server that runs the town and lets two browsers see each other's zombies walk the street. **Built as a test
+   page** ([docs/SHARED_TOWN.md](docs/SHARED_TOWN.md)); not yet reachable from the game, and not hosted.
 2. Twenty or more players in one town; regions, interest management, reconnecting.
 3. Emotes and preset phrases; visiting a home with the owner's permission.
 4. Missions on the server: small separate rooms of up to eight players, with health and combat.
 
-Nothing here is built yet. Design notes: [DESIGN_OPEN_WORLD.md §5](docs/DESIGN_OPEN_WORLD.md).
+Steps 2 to 4 are not built. Design notes: [DESIGN_OPEN_WORLD.md §5](docs/DESIGN_OPEN_WORLD.md).
 
 ## 5. Online accounts and saves that follow you
 

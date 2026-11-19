@@ -21,15 +21,23 @@ export interface CspOptions {
   allowWasm?: boolean;
   /** Extra script-src sources of the form 'sha256-<base64>' (single-file build's inline scripts). */
   scriptHashes?: readonly string[];
+  /**
+   * Extra connect-src origins, each exactly ws://host[:port] or wss://host[:port] (the shared-town test page's one
+   * server). The game's own page never passes this: it talks to nobody.
+   */
+  connect?: readonly string[];
 }
 
 const HASH_RE = /^'sha256-[A-Za-z0-9+/]{43}='$/;
+const CONNECT_RE = /^wss?:\/\/[a-z0-9.-]+(:\d{1,5})?$/;
 
 function directives(opts: CspOptions): [string, string][] {
   const dev = opts.devOrigin ?? null;
   const wasm = opts.allowWasm ?? false;
   const hashes = opts.scriptHashes ?? [];
   for (const h of hashes) if (!HASH_RE.test(h)) throw new Error(`invalid CSP script hash: ${h}`);
+  const connect = opts.connect ?? [];
+  for (const c of connect) if (!CONNECT_RE.test(c)) throw new Error(`invalid CSP connect origin: ${c}`);
   const self = dev ? `'self' ${dev}` : "'self'";
   const ws = dev ? ` ${dev.replace(/^http/, 'ws')}` : '';
   return [
@@ -39,7 +47,7 @@ function directives(opts: CspOptions): [string, string][] {
     ['img-src', `${self} data: blob:`],
     ['media-src', `${self} data: blob:`],
     ['font-src', `${self} data:`],
-    ['connect-src', `${self} data: blob:${ws}`],
+    ['connect-src', `${self} data: blob:${ws}${connect.map((c) => ` ${c}`).join('')}`],
     ['worker-src', `${self} blob:`],
     ['object-src', "'none'"],
     ['base-uri', "'self'"],

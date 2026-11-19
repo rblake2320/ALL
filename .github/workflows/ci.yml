@@ -233,6 +233,11 @@ jobs:
         if: hashFiles('tests/e2e/smoke.mjs') != ''
         run: npm run e2e:feedback -- --no-build
 
+      # Shared town, step 1: two browsers on the built town page against the real server (makes its own build).
+      - name: e2e shared town
+        if: hashFiles('tests/e2e/town.mjs') != ''
+        run: npm run e2e:town
+
       # tests/e2e/run.mjs writes report.json + screenshots to dev/out/e2e (E2E_OUT overrides it).
 
       # GitHub artifact storage has its own quota (run 43144265722: "Artifact storage quota has been hit" failed a job

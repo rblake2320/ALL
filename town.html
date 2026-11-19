@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1d1726" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="noindex" />
+    <title>Afterlife Lease: shared town (test)</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #1d1726;
+        color: #e8e0c8;
+        font: 15px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+        overscroll-behavior: none;
+      }
+      #town-canvas {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      #town-labels {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      .town-label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 2px 8px;
+        border-radius: 10px;
+        background: rgba(29, 23, 38, 0.78);
+        border: 1px solid rgba(232, 224, 200, 0.25);
+        white-space: nowrap;
+        font-size: 13px;
+      }
+      .town-label--me {
+        border-color: #9fe870;
+        color: #9fe870;
+      }
+      #town-panel {
+        position: fixed;
+        left: max(12px, env(safe-area-inset-left));
+        top: max(12px, env(safe-area-inset-top));
+        box-sizing: border-box;
+        max-width: min(420px, calc(100vw - 24px));
+        padding: 10px 14px;
+        border-radius: 12px;
+        background: rgba(29, 23, 38, 0.86);
+        border: 1px solid rgba(232, 224, 200, 0.18);
+      }
+      #town-panel h1 {
+        margin: 0 0 4px;
+        font: 600 17px "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      }
+      #town-panel p {
+        margin: 4px 0 0;
+      }
+      #town-help {
+        opacity: 0.75;
+        font-size: 13px;
+      }
+      a {
+        color: #9fe870;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="town-canvas" aria-label="The shared street"></canvas>
+    <div id="town-labels" aria-hidden="true"></div>
+    <div id="town-panel">
+      <h1>Mildew Lane, shared (test)</h1>
+      <p id="town-status" role="status" aria-live="polite">Starting...</p>
+      <p id="town-help">Walk with W A S D or the arrow keys, or press and drag. Q and E turn the view. Nothing you do here is saved, and there is no chat. <a href="./">Back to the game</a></p>
+    </div>
+    <script type="module" src="/src/town/main.ts"></script>
+  </body>
+</html>

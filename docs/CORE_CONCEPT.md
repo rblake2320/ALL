@@ -16,7 +16,7 @@ You run a household of zombies. How you play it is your choice, and you can swit
 | Way to play | What it feels like | State |
 |---|---|---|
 | **Run the household** | The classic life sim from above: needs, jobs, bills, pets, building a home | Playable |
-| **Roam** | Over the shoulder or first person as one zombie, walking the town | Views playable; shared town not built |
+| **Roam** | Over the shoulder or first person as one zombie, walking the town | Views playable; shared town: first test only |
 | **Missions** | Separate fights and challenges you choose to enter, alone or in a group | Not built |
 
 ## 2. Your household is yours, at your own pace
@@ -43,7 +43,11 @@ The shared town is a hub: walk around, meet people, visit homes you are invited 
 scheduled home attacks of section 5.
 
 How the shared town works technically (one server runs the rules and has the final say; first version has no
-accounts, no free-text chat and stores nothing) is in [ROADMAP.md §4](../ROADMAP.md).
+accounts, no free-text chat and stores nothing) is in [ROADMAP.md §4](../ROADMAP.md). The first test, two browsers
+on one street, is described in [SHARED_TOWN.md](SHARED_TOWN.md).
+
+The town's day and night are for looks and run faster than real time. The attack windows of section 5 count real
+days.
 
 ## 4. Missions: different modes, each with its own feel
 

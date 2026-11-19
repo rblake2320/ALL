@@ -19,5 +19,5 @@
     "types": ["vite/client"],
     "noEmit": true
   },
-  "include": ["src", "tests/unit", "tests/adversarial", "vite.config.ts", "vitest.config.ts"]
+  "include": ["src", "server", "tests/unit", "tests/adversarial", "vite.config.ts", "vitest.config.ts"]
 }

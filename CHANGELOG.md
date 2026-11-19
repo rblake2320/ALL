@@ -7,6 +7,8 @@ The version number has one source, `package.json` → `"version"` (see docs/SHIP
 ## [Unreleased]
 
 ### Added
+- **Shared town, first test** (`docs/SHARED_TOWN.md`): a Node.js WebSocket server (`server/`, `npm run town:server`) and a separate page (`town.html`) on which two or more browsers walk Mildew Lane's street and see each other's zombies, drawn by the game's renderer. The server decides every position; the page predicts its own zombie with the same rule. No accounts, no chat, no free text, nothing stored. Off by default: the page connects only when built with `VITE_TOWN_SERVER`, and the game has no button for it. Not hosted, and not tried with twenty real players.
+- New development packages for that server: `ws` 8.23.0 and `@types/ws` 8.18.2; `esbuild` 0.28.2 (already installed through Vite) is now listed directly because the server bundle uses it.
 - **The project is open.** The code and script-generated art are under the MIT licence; the files it does not cover are listed in `CREDITS.md`. Contributions come by fork and pull request (`CONTRIBUTING.md`), with a code of conduct.
 - `docs/CORE_CONCEPT.md`: the guide for builders. Your household at your own pace; a shared town where nobody is attacked; missions you queue for; a protected main home and defended extra homes; hordes, crews and blocks; code builders and in-game builders. Seven fixed rules.
 - `src/shared/homeDefense.ts`: the schedule rules for attacks on extra homes (weekly window, grace period, passes, the fighting-mode switch, changing the main home) as tested rules. Nothing in the game calls them yet.
@@ -54,6 +56,7 @@ The version number has one source, `package.json` → `"version"` (see docs/SHIP
 - L3 Downtown Rot Row art kit (W-053, Astra, PR #15) + integrity suite.
 
 ### Fixed
+- Shared-town connections ignore buffered messages after disconnection, preventing ghost players from occupying rooms. The town page's CSP now uses Vite's resolved environment, including `.env.production`, so its permitted server matches the client configuration.
 - The performance test measured the whole test process, so other tests running in parallel threads counted against it (6.7 s alone, 13.3 s next to one other file). It now measures its own thread and scales its 20 s budget by a measured machine-speed factor, so it holds on slower machines and still fails on a real slowdown.
 - The 40-household look test is one test per household; as a single test it timed out on a slower machine.
 - CI job limit raised from 40 to 90 minutes for GitHub-hosted runners.

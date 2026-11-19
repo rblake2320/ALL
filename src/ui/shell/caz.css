@@ -1039,6 +1039,60 @@
   text-align: center;
   color: var(--text-strong);
 }
+.sh-body__try {
+  font-size: var(--fs-xs, 0.75rem);
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text-warm);
+  font-weight: var(--fw-bold);
+}
+.sh-body--tryon .sh-body__art {
+  box-shadow: 0 0 0 2px var(--text-warm);
+}
+.sh-tryon {
+  border-color: var(--text-warm);
+}
+.sh-zcard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.625rem 0.75rem;
+  margin: 0 0 1rem;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+.sh-zcard__art {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 35%, #584a6e 0%, #2a2236 100%);
+}
+.sh-zcard__art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sh-zcard__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1 1 9rem;
+  min-width: 0;
+}
+.sh-zcard__name {
+  font-weight: var(--fw-bold);
+  color: var(--text-strong);
+}
+.sh-zcard__hint {
+  font-size: var(--fs-xs, 0.75rem);
+  color: var(--text-muted, var(--text));
+}
 .sh-body[aria-checked='true'] .sh-body__art {
   box-shadow: 0 0 0 2px var(--border-accent);
 }
@@ -1104,6 +1158,29 @@
   font-weight: var(--fw-bold);
   text-align: center;
   pointer-events: none;
+}
+/* top left, clear of the head of a tall zombie in the middle of the stage */
+.sh-stage__tryon {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.0625rem;
+  max-width: min(14rem, calc(50% - 1rem));
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--text-warm);
+  background: rgba(9, 6, 13, 0.78);
+  color: var(--text-strong);
+  font-size: var(--fs-sm, 0.875rem);
+  text-align: left;
+  pointer-events: none;
+}
+.sh-stage__tryon span {
+  font-size: var(--fs-xs, 0.75rem);
+  color: var(--text-warm);
 }
 .sh-stage__body--offline,
 .sh-stage__body--unavailable {

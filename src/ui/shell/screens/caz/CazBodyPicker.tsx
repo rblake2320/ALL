@@ -23,6 +23,13 @@ export interface CazBodyPickerProps {
   onChange: (v: BodyId) => void;
   labelledBy: string;
   economy?: EconomyFacade | null;
+  /** The locked premium body shown on the turntable as a preview, if any. */
+  tryOn?: BodyId | null;
+  /**
+   * Called when the player presses a locked premium body: show it on the turntable (null = stop). A preview never
+   * selects the body: `onChange` is not called and the household keeps what it had. Absent = locked tiles do nothing.
+   */
+  onTryOn?: (v: BodyId | null) => void;
 }
 
 function Silhouette() {
@@ -44,7 +51,7 @@ function ClassicGlyph() {
   );
 }
 
-export function CazBodyPicker({ value, onChange, labelledBy, economy }: CazBodyPickerProps) {
+export function CazBodyPicker({ value, onChange, labelledBy, economy, tryOn = null, onTryOn }: CazBodyPickerProps) {
   const ref = useRef<HTMLDivElement>(null);
   const uid = useUid('body').replace(/[^A-Za-z0-9_-]/g, '');
   const [broken, setBroken] = useState<ReadonlySet<string>>(() => new Set());
@@ -89,20 +96,29 @@ export function CazBodyPicker({ value, onChange, labelledBy, economy }: CazBodyP
     const canSeePrice = economy?.ready === true && (economy.age?.bracket === 'adult' || economy.age?.bracket === 'teen');
     const price = locked && canSeePrice ? catalogEntry(`body:${id}`).priceGG : undefined;
     const status = locked ? [BODY_UNLOCKS_LIVE ? t('caz.premiumLocked') : t('caz.premiumComingSoon'), ...(price === undefined ? [] : [t('caz.premiumPrice', { price: price.toLocaleString('en-US') })])].join(' · ') : '';
+    const previewing = locked && tryOn === id;
+    const canPreview = locked && !!onTryOn;
     return (
       <Tooltip key={id} content={name} description={[blurb, status].filter(Boolean).join(' ')} block>
         <button
           type="button"
           role="radio"
-          class={cx('ui-choice', 'sh-body', id === 'classic' && 'sh-body--classic')}
+          class={cx('ui-choice', 'sh-body', id === 'classic' && 'sh-body--classic', previewing && 'sh-body--tryon')}
           aria-checked={checked ? 'true' : 'false'}
-          aria-disabled={locked ? 'true' : undefined}
+          // A locked body that can be previewed does something when pressed, so it is not announced as disabled:
+          // it stays unchecked (it cannot be chosen) and its description says that pressing it previews it.
+          aria-disabled={locked && !canPreview ? 'true' : undefined}
+          data-locked={locked ? '' : undefined}
           aria-label={name}
           aria-describedby={descId}
           tabIndex={checked ? 0 : -1}
           data-body={id}
           data-index={i}
-          onClick={() => !locked && id !== value && onChange(id)}
+          data-tryon={previewing ? '' : undefined}
+          onClick={() => {
+            if (locked) onTryOn?.(previewing ? null : id);
+            else if (id !== value) onChange(id);
+          }}
         >
           <span class="sh-body__art">
             {id === 'classic' ? (
@@ -130,8 +146,9 @@ export function CazBodyPicker({ value, onChange, labelledBy, economy }: CazBodyP
           </span>
           <span class="ui-choice__label sh-body__name">{name}</span>
           {status ? <span class="sh-body__lock" aria-hidden="true">{status}</span> : null}
+          {canPreview ? <span class="sh-body__try" aria-hidden="true">{previewing ? t('caz.premiumPreviewing') : t('caz.premiumPreview')}</span> : null}
           <span id={descId} class="u-sr-only">
-            {[blurb, failed ? t('caz.castThumbMissing') : '', status].filter(Boolean).join(' ')}
+            {[blurb, failed ? t('caz.castThumbMissing') : '', status, canPreview ? (previewing ? t('caz.premiumPreviewingSr') : t('caz.premiumPreviewSr')) : ''].filter(Boolean).join(' ')}
           </span>
         </button>
       </Tooltip>

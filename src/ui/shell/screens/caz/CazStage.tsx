@@ -32,7 +32,7 @@ function safe(fn: () => void) {
   }
 }
 
-export function CazStage({ appearance, memberKey }: { appearance: ZombieAppearance; memberKey: number }) {
+export function CazStage({ appearance, memberKey, tryOnName = '' }: { appearance: ZombieAppearance; memberKey: number; /** Name of the premium body shown as a preview ('' = none). */ tryOnName?: string }) {
   const game = useGameController();
   const wrapRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -226,6 +226,12 @@ export function CazStage({ appearance, memberKey }: { appearance: ZombieAppearan
       <div class={hintSeen ? 'sh-stage__hint is-hidden' : 'sh-stage__hint'} aria-hidden="true">
         {t('caz.dragHint')}
       </div>
+      {tryOnName ? (
+        <div class="sh-stage__tryon" role="status" aria-live="polite" data-testid="caz-tryon-stage">
+          <strong>{t('caz.tryOnStage', { name: tryOnName })}</strong>
+          <span>{t('caz.tryOnStageSub')}</span>
+        </div>
+      ) : null}
       {bodyStatus !== 'ready' && bodyName ? (
         <div class={`sh-stage__body sh-stage__body--${bodyStatus}`} role="status" aria-live="polite" data-testid="caz-body-status">
           {t(`caz.body.${bodyStatus}`, { name: bodyName })}

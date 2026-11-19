@@ -41,7 +41,8 @@
     "clip:gate": "node scripts/clip-gate.mjs",
     "build:server": "node scripts/build-town-server.mjs",
     "town:server": "node scripts/build-town-server.mjs && node dist-server/town-server.mjs",
-    "e2e:town": "node tests/e2e/town.mjs"
+    "e2e:town": "node tests/e2e/town.mjs",
+    "e2e:caz-preview": "node tests/e2e/caz-preview.mjs"
   },
   "dependencies": {
     "preact": "10.29.8",

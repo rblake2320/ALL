@@ -366,6 +366,37 @@ export async function runFlow({ h, browser, url, viewport }) {
     await h.shot(page, 'caz-valid');
   }, { needs: ['caz: invalid input shows errors'] });
 
+  await step('caz: playable starter roster', async () => {
+    const before = await G(() => JSON.parse(JSON.stringify(window.__afterlife.game.caz)));
+    const expected = { arrival: 'walker', fixer: 'hardhat', caretaker: 'nurse', reader: 'granny', goGetter: 'business', partyStarter: 'clown' };
+    h.require('six starter choices', await page.locator('[data-starter]').count() === 6);
+    for (const [id, body] of Object.entries(expected)) {
+      const button = page.locator(`[data-starter="${id}"]`);
+      await button.scrollIntoViewIfNeeded();
+      if (id === 'arrival') { await button.focus(); await page.keyboard.press('Enter'); }
+      else await tap(button);
+      await until(`starter ${id} applied`, (wanted) => {
+        const c = window.__afterlife.game.caz;
+        return c.members[c.activeIndex].appearance.body === wanted;
+      }, body);
+      const current = await G(() => window.__afterlife.game.caz);
+      h.check(`${id}: keeps names and other members`, current.members.every((member, i) => (
+        member.firstName === before.members[i].firstName && member.lastName === before.members[i].lastName &&
+        (i === before.activeIndex || JSON.stringify(member) === JSON.stringify(before.members[i]))
+      )));
+      h.check(`${id}: valid for play`, (await G(() => window.__afterlife.game.validateCaz())).length === 0);
+    }
+    await page.locator('.sh-starters').scrollIntoViewIfNeeded();
+    await h.shot(page, 'playable-zombies-desktop');
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.locator('[data-starter="arrival"]').scrollIntoViewIfNeeded();
+    h.check('starter cards stay inside the phone viewport', await G(() => Array.from(document.querySelectorAll('[data-starter]')).every((el) => {
+      const rect = el.getBoundingClientRect(); return rect.left >= 0 && rect.right <= innerWidth;
+    })));
+    await h.shot(page, 'playable-zombies-phone');
+    await page.setViewportSize(viewport);
+  }, { needs: ['caz: rename + edit trait → valid'] });
+
   await step('enter game', async () => {
     const t0 = Date.now();
     await tap(page.locator('.sh-editor__start'));
@@ -376,6 +407,10 @@ export async function runFlow({ h, browser, url, viewport }) {
     h.check('household name kept', s.world.household === 'The Testgraves', s.world.household);
     h.check('Mortimer Testgrave moved in', s.world.members.includes('Mortimer Testgrave'), s.world.members);
     h.check('two members', s.world.members.length === 2);
+    h.check('starter clown moved into the playable household', await G(() => {
+      const world = window.__afterlife.game.sim.state;
+      return world.household.memberIds.some((id) => world.agents[id].appearance.body === 'clown');
+    }));
     await expectDom('funds plaque matches sim', (f) => (document.querySelector('.hud-funds')?.getAttribute('aria-label') || '').includes(f), money(s.world.funds));
     await h.shot(page, 'game');
     // first-run tutorial: a tip shows up and "Got it" dismisses it (the tip also owns Esc while visible)
@@ -385,7 +420,7 @@ export async function runFlow({ h, browser, url, viewport }) {
     await tap(page.locator('.hud-hint-bubble button', { hasText: 'Got it' }));
     await until('tip dismissed', (id) => !window.__afterlife.game.hint || window.__afterlife.game.hint.id !== id, tip, 15_000);
     h.check(`tutorial tip "${tip}" dismissed with Got it`, true);
-  }, { needs: ['caz: rename + edit trait → valid'] });
+  }, { needs: ['caz: playable starter roster'] });
 
   // ───────────────────────────── live mode ─────────────────────────────
   await step('select a zombie', async () => {

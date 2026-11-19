@@ -2,6 +2,7 @@
   "$comment": "Master requirements registry (W-090/W-092). EVERY owner requirement is listed here. Built features list the test files that prove them and a proof level: unit = Node tests only (logic/assets, no real browser); e2e = also exercised in a real browser by tests/e2e (CI job 'Browser e2e smoke'); device = verified on target hardware/stores; prod = verified live with real users. Planned items have no proof yet. 'online: true' marks items that need the backend that does not exist yet (docs/ARCHITECTURE_PLATFORM.md). Add your feature in the same PR that builds it.",
   "version": 1,
   "features": [
+    {"id": "playable-zombie-starters", "name": "Six ready-to-play cast presets in Create-a-Zombie, with traits and aspirations", "work": "W-167", "area": "game", "tests": ["tests/unit/game/starterZombies.test.ts"], "proof": "unit", "e2e": ["tests/e2e/flow.mjs"]},
     {"id": "sim-engine", "name": "Deterministic simulation engine (tick, interactions, autonomy, socials, saves)", "work": "core", "area": "sim", "tests": ["tests/unit/engine"], "proof": "unit"},
     {"id": "sim-home", "name": "Home systems: decay, food, cooking, upkeep, fire", "work": "core", "area": "sim", "tests": ["tests/unit/home"], "proof": "unit"},
     {"id": "sim-people", "name": "People: traits, careers, aspirations, townies, events", "work": "core", "area": "sim", "tests": ["tests/unit/people"], "proof": "unit"},

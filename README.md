@@ -65,6 +65,10 @@ npm run dev
 
 Open the address it prints (http://localhost:5173) and press **New Game**.
 
+For a ready-made character, choose a lot, press **Create your household**, then pick one of the six
+**Ready-to-play zombies** in the Identity tab. Customize it if you like, then **Start the Afterlife**.
+The Body tab has the full cast. [Playable zombie package and asset plan](docs/PLAYABLE_ZOMBIES.md).
+
 ## Check your changes
 
 ```sh

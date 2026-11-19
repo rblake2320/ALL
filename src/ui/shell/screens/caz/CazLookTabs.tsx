@@ -29,7 +29,9 @@ import { ChoiceGrid } from './ChoiceGrid';
 import { CazBodyPicker } from './CazBodyPicker';
 import { Button } from '../../../common/Button';
 import { castBodyOf, lookOptionApplies } from '../../../common/castArt';
-import type { CastBodyId } from '../../../../shared/cast';
+import { SCULPTED_BODIES, type CastBodyId } from '../../../../shared/cast';
+import { isPremiumBodyId, type PremiumBodyId } from '../../../../shared/premiumBodies';
+import { castThumbUrl } from '../../../common/castArt';
 import { useEconomy } from '../../../store/useEconomy';
 
 export interface MemberEditorProps {
@@ -45,6 +47,11 @@ export interface MemberEditorProps {
   issues: CazIssue[];
   /** Reveal inline errors (after a Start attempt). */
   showErrors: boolean;
+  /** The locked premium body on the turntable as a preview (never part of the member), if any. */
+  tryOn?: PremiumBodyId | null;
+  setTryOn?: (v: PremiumBodyId | null) => void;
+  /** Open the Body tab (the Identity tab's "browse all zombies" card). */
+  openBodies?: () => void;
 }
 
 /** Palette with the current (possibly custom) colour appended so it stays selectable. */
@@ -55,7 +62,32 @@ function withCurrent(list: readonly { id: string; value: string }[], current: st
   return items;
 }
 
-export function IdentityTab({ member, index, householdName, update, randomize, traits, aspirations, issues, showErrors }: MemberEditorProps) {
+/**
+ * The zombie this member is, with a way to the full list: the body choice lives on its own tab, and a player who
+ * never opened it never learned there are other zombies.
+ */
+function ZombieCard({ member, openBodies }: { member: NewMemberSpec; openBodies: () => void }) {
+  const body = castBodyOf(member.appearance);
+  const [broken, setBroken] = useState(false);
+  return (
+    <div class="sh-zcard" data-testid="caz-zombie-card">
+      <span class="sh-zcard__art" aria-hidden="true">
+        {body && !broken ? <img src={castThumbUrl(body)} alt="" width={96} height={96} decoding="async" draggable={false} onError={() => setBroken(true)} /> : <Portrait appearance={member.appearance} size="3.25rem" />}
+      </span>
+      <span class="sh-zcard__text">
+        <span class="sh-zcard__name">
+          {t('caz.zombieCard')}: {t(`cast.${body ?? 'classic'}`)}
+        </span>
+        <span class="sh-zcard__hint">{t('caz.zombieCardHint', { count: SCULPTED_BODIES.length + 1 })}</span>
+      </span>
+      <Button size="sm" variant="secondary" onClick={openBodies}>
+        {t('caz.zombieCardBrowse')}
+      </Button>
+    </div>
+  );
+}
+
+export function IdentityTab({ member, index, householdName, update, randomize, traits, aspirations, issues, showErrors, openBodies }: MemberEditorProps) {
   const [touched, setTouched] = useState(false);
   const freeText = useFreeTextNames();
   const first = member.firstName ?? '';
@@ -87,6 +119,7 @@ export function IdentityTab({ member, index, householdName, update, randomize, t
         {freeText ? <TextInput label={t('caz.lastName')} value={member.lastName ?? ''} maxLength={NAME_MAX} placeholder={t('caz.lastNamePlaceholder')} error={reveal ? lastIssue : null} onInput={(v) => update({ lastName: v })} /> : null}
       </div>
       <p class="sh-hint">{t('caz.identityHint')}</p>
+      {openBodies ? <ZombieCard member={member} openBodies={openBodies} /> : null}
       <div class="sh-cert" aria-label={t('caz.certificate')}>
         <div class="sh-cert__border" aria-hidden="true" />
         <div class="sh-cert__eyebrow">{t('caz.certificate')}</div>
@@ -205,7 +238,20 @@ function Applies({ ok, noteId, children }: { ok: boolean; noteId: string; childr
   );
 }
 
-export function BodyTab({ member, updateLook, issues, showErrors }: MemberEditorProps) {
+/** Shown while a locked premium body is on the turntable: says it is a preview and that nothing was changed. */
+function TryOnNotice({ body, member, onStop }: { body: PremiumBodyId; member: NewMemberSpec; onStop: () => void }) {
+  return (
+    <div class="sh-cast-lock sh-tryon" role="status" aria-live="polite" data-testid="caz-tryon-notice">
+      <Icon name="info" size="1rem" />
+      <p>{t('caz.tryOnNotice', { name: t(`cast.${body}`), member: (member.firstName ?? '').trim() || t('caz.zombieCard') })}</p>
+      <Button size="sm" variant="ghost" onClick={onStop}>
+        {t('caz.tryOnStop')}
+      </Button>
+    </div>
+  );
+}
+
+export function BodyTab({ member, updateLook, issues, showErrors, tryOn = null, setTryOn }: MemberEditorProps) {
   const economy = useEconomy();
   const app = member.appearance;
   const body = castBodyOf(app);
@@ -220,7 +266,18 @@ export function BodyTab({ member, updateLook, issues, showErrors }: MemberEditor
         {t('caz.bodyType')}
       </h3>
       <p class="sh-hint">{t('caz.bodyTypeHint')}</p>
-      <CazBodyPicker labelledBy="caz-bodytype" value={body ?? 'classic'} economy={economy} onChange={(v) => updateLook({ body: v })} />
+      {tryOn && setTryOn ? <TryOnNotice body={tryOn} member={member} onStop={() => setTryOn(null)} /> : null}
+      <CazBodyPicker
+        labelledBy="caz-bodytype"
+        value={body ?? 'classic'}
+        economy={economy}
+        tryOn={tryOn}
+        onTryOn={setTryOn ? (v) => setTryOn(isPremiumBodyId(v) ? v : null) : undefined}
+        onChange={(v) => {
+          setTryOn?.(null);
+          updateLook({ body: v });
+        }}
+      />
       {body ? <CastLockNotice body={body} id={noteId} onClassic={() => updateLook({ body: 'classic' })} /> : null}
       <Slider label={t('caz.height')} value={app.height} min={0} max={1} step={0.01} format={pct} minLabel={t('caz.heightMin')} maxLabel={t('caz.heightMax')} onChange={(v) => updateLook({ height: v })} />
       {body ? <p class="sh-hint sh-hint--tight">{t('caz.castHeightHint')}</p> : null}

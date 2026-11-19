@@ -23,6 +23,8 @@ import { cx } from '../../common/cx';
 import { displayName, formatMoney } from '../../common/format';
 import { aspirationList, HOUSEHOLD_NAME_MAX, lotInfo, MAX_MEMBERS, startingFunds, traitList } from '../data';
 import { collectCazIssues, firstIssue, generalHouseholdIssues, tabForField } from '../cazIssues';
+import { keptTryOn, stageAppearance } from '../cazLogic';
+import type { PremiumBodyId } from '../../../shared/premiumBodies';
 import { CazStage } from './caz/CazStage';
 import { BodyTab, HairTab, IdentityTab, OutfitTab, type MemberEditorProps } from './caz/CazLookTabs';
 import { PersonalityTab } from './caz/CazPersonality';
@@ -50,6 +52,14 @@ export function CreateZombieScreen() {
   const [startError, setStartError] = useState<string | null>(null);
   const [nameTouched, setNameTouched] = useState(false);
   const [showErrors, setShowErrors] = useState(false);
+  // A locked premium body shown on the turntable. Preview only: it never enters game.caz (cazLogic.stageAppearance).
+  const [tryOn, setTryOnRaw] = useState<{ body: PremiumBodyId; member: number } | null>(null);
+  // Moving on ends a preview for good: without this it was only hidden, and came back with the Body tab (found by
+  // tests/e2e/caz-preview.mjs). keptTryOn below covers the one render before this effect runs.
+  const activeMember = caz?.activeIndex ?? -1;
+  useEffect(() => {
+    setTryOnRaw(null);
+  }, [tab, activeMember]);
   const content = game.content ?? game.sim?.content ?? null;
   const traits = useMemo(() => traitList(content), [content]);
   const aspirations = useMemo(() => aspirationList(content), [content]);
@@ -77,9 +87,14 @@ export function CreateZombieScreen() {
   const householdError = nameTouched || showErrors ? householdIssue : null;
   const generalIssues = showErrors ? generalHouseholdIssues(issues) : [];
 
+  const shownTryOn = keptTryOn(tryOn?.body, tab, active, tryOn?.member ?? -1);
+  const setTryOn = (v: PremiumBodyId | null) => setTryOnRaw(v ? { body: v, member: active } : null);
   const update = (patch: Partial<NewMemberSpec>) => game.updateCazMember(active, patch);
   const updateLook = (patch: Partial<ZombieAppearance>) => game.updateCazMember(active, { appearance: { ...member.appearance, ...patch } });
-  const randomize = (what: 'all' | 'look' | 'traits' | 'name') => game.randomizeCazMember(active, what);
+  const randomize = (what: 'all' | 'look' | 'traits' | 'name') => {
+    if (what === 'all' || what === 'look') setTryOnRaw(null);
+    game.randomizeCazMember(active, what);
+  };
   const editorProps: MemberEditorProps = {
     member,
     index: active,
@@ -91,6 +106,9 @@ export function CreateZombieScreen() {
     aspirations,
     issues: issues.byMember[active] ?? [],
     showErrors,
+    tryOn: shownTryOn,
+    setTryOn,
+    openBodies: () => setTab('body'),
   };
 
   const start = async () => {
@@ -234,7 +252,7 @@ export function CreateZombieScreen() {
             </Tooltip>
           ))}
         </div>
-        <CazStage appearance={member.appearance} memberKey={active} />
+        <CazStage appearance={stageAppearance(member.appearance, shownTryOn)} memberKey={active} tryOnName={shownTryOn ? t(`cast.${shownTryOn}`) : ''} />
       </main>
 
       <section class="sh-caz__editor ui-panel" aria-label={t('caz.editor')}>

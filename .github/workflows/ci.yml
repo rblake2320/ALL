@@ -238,6 +238,12 @@ jobs:
         if: hashFiles('tests/e2e/town.mjs') != ''
         run: npm run e2e:town
 
+      # Create-a-Zombie: every zombie can be seen. A locked premium zombie previews on the turntable and never enters
+      # the household or a started game (with an owner profile as the control). Uses the dist/ built above.
+      - name: e2e Create-a-Zombie preview
+        if: hashFiles('tests/e2e/caz-preview.mjs') != ''
+        run: npm run e2e:caz-preview -- --no-build
+
       # tests/e2e/run.mjs writes report.json + screenshots to dev/out/e2e (E2E_OUT overrides it).
 
       # GitHub artifact storage has its own quota (run 43144265722: "Artifact storage quota has been hit" failed a job

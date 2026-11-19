@@ -1,6 +1,26 @@
 /** Pure Create-a-Zombie helpers: trait picking rules, voice seeds, household summaries. */
 import type { TraitInfo } from './data';
 import { TRAITS_REQUIRED } from './data';
+import type { ZombieAppearance } from '../../shared/appearance';
+import { isPremiumBodyId, type PremiumBodyId } from '../../shared/premiumBodies';
+
+/**
+ * The look the Create-a-Zombie turntable draws: the member's own, or the same zombie with the premium body being
+ * previewed. A preview exists only here: it is never written to the household, so it cannot be started, saved or
+ * validated (the ownership rule in src/game/premiumAccess.ts is untouched). Anything that is not a premium body id
+ * gives the member's own look back, the same object.
+ */
+export function stageAppearance(app: ZombieAppearance, tryOn: unknown): ZombieAppearance {
+  return isPremiumBodyId(tryOn) ? ({ ...app, body: tryOn } as ZombieAppearance) : app;
+}
+
+/**
+ * The preview to keep after the editor changed: none once the player left the Body tab or switched to another
+ * member, and none for an id that is not a premium body.
+ */
+export function keptTryOn(tryOn: unknown, tab: string, member: number, startedOn: number): PremiumBodyId | null {
+  return isPremiumBodyId(tryOn) && tab === 'body' && member === startedOn ? tryOn : null;
+}
 
 export type TraitBlock = { kind: 'conflict'; withId: string } | { kind: 'full' } | null;
 

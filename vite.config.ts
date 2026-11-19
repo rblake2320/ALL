@@ -25,6 +25,17 @@ function checklistVersion(): string {
 }
 
 /**
+ * The shared-town server this build's town page may connect to (VITE_TOWN_SERVER=wss://host[:port][/path]), as a CSP
+ * origin; null when unset. A malformed value stops the build rather than shipping a page that cannot connect.
+ */
+export function townServerOrigin(value: string | undefined = process.env.VITE_TOWN_SERVER): string | null {
+  if (!value) return null;
+  const m = /^(wss?:\/\/[A-Za-z0-9.-]+(?::\d{1,5})?)(\/[A-Za-z0-9._~/-]*)?$/.exec(value);
+  if (!m) throw new Error(`VITE_TOWN_SERVER must look like wss://host[:port][/path], got: ${value}`);
+  return m[1].toLowerCase();
+}
+
+/**
  * Web-build Content-Security-Policy (docs/SECURITY.md §3): the same policy Electron sends as a header
  * (electron/csp.ts), as a <meta http-equiv> tag right after <meta charset> in the BUILT index.html. Build only —
  * the dev server needs Vite's inline HMR client. scripts/inline-build.mjs later adds the hashes of the
@@ -36,9 +47,11 @@ export function cspMetaPlugin(): Plugin {
     apply: 'build',
     transformIndexHtml: {
       order: 'post',
-      handler(html) {
+      handler(html, ctx?: { filename?: string }) {
         if (/http-equiv\s*=\s*["']?content-security-policy/i.test(html)) throw new Error('index.html already declares a CSP; keep one source of truth (electron/csp.ts)');
-        const tag = `<meta http-equiv="Content-Security-Policy" content="${buildMetaCsp()}" />`;
+        // Only the shared-town test page may talk to a server, and only to the one named at build time.
+        const town = /(^|[\\/])town\.html$/.test(ctx?.filename ?? '') ? townServerOrigin() : null;
+        const tag = `<meta http-equiv="Content-Security-Policy" content="${buildMetaCsp(town ? { connect: [town] } : {})}" />`;
         const charset = /<meta\s+charset\s*=\s*["']?utf-8["']?\s*\/?>/i;
         if (charset.test(html)) return html.replace(charset, (m) => `${m}\n    ${tag}`);
         return html.replace(/<head[^>]*>/i, (m) => `${m}\n    ${tag}`);
@@ -84,7 +97,8 @@ export default defineConfig(({ mode }) => {
       cssCodeSplit: !single,
       modulePreload: single ? false : { polyfill: true },
       rollupOptions: {
-        ...(single ? { output: { inlineDynamicImports: true } } : {}),
+        // the single-file build is the game alone; every other build also carries the shared-town test page
+        ...(single ? { output: { inlineDynamicImports: true } } : { input: { main: 'index.html', town: 'town.html' } }),
         onwarn(warning, warn) {
           // src/persistence/semanticRepair.ts loads the engine LAZILY on purpose (persistence must never
           // hard-depend on, or fail to import because of, the engine); GAME imports it statically, so

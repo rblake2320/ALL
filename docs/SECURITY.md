@@ -111,6 +111,11 @@ object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; frame-
   in an iframe). The desktop build therefore carries both header and meta; they are identical apart from
   `frame-ancestors`, so they never conflict. The source `index.html` deliberately has no CSP tag; a second one
   fails the build.
+* **Shared-town test page** (`town.html`, docs/SHARED_TOWN.md): the same policy plus ONE extra `connect-src` origin,
+  the town server named at build time by `VITE_TOWN_SERVER` (`townServerOrigin` in `vite.config.ts`; a malformed
+  value stops the build). Built without that setting, the page has the game's policy and connects to nothing. The
+  game's `index.html` never gets the extra origin. `tests/e2e/town.mjs` checks both pages' policies and that the
+  town page cannot reach a second server.
 * **Single-file build** (`npm run build:single`): `scripts/inline-build.mjs` inlines the bundle (and, with
   `--inline-assets`, a `fetch()` shim) as inline `<script>`s and adds each one's exact `'sha256-…'` to
   `script-src` as the very last step — those scripts and nothing else run.

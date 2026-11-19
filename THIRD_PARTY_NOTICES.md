@@ -113,7 +113,9 @@ These run only on developer and CI machines. None of their code is in the shippe
 | TypeScript | 5.9.3 | Apache-2.0 |
 | Vite | 7.3.7 | MIT |
 | Rollup (via Vite) | 4.67.5 | MIT |
-| esbuild (via Vite) | 0.28.2 | MIT |
+| esbuild (via Vite, and used directly to bundle the town server) | 0.28.2 | MIT |
+| ws (WebSocket library; bundled into `dist-server/town-server.mjs`, the optional shared-town server, never into the game) | 8.23.0 | MIT |
+| @types/ws | 8.18.2 | MIT |
 | Vitest | 3.2.7 | MIT |
 | electron-builder | 26.18.0 | MIT |
 | @types/three, @types/node | 0.180.0, 22.20.5 | MIT |

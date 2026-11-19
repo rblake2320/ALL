@@ -1,0 +1,624 @@
+{
+  "version": 1,
+  "file": "models/characters/zombie.glb",
+  "bytes": 2303648,
+  "sha256": "cd014daa37e85406f94b14743b74a0b4729fbf2a26643cd68769c6d8b3b7c49d",
+  "animations": [
+    {
+      "name": "admire",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "angry",
+      "duration": 1.4,
+      "loop": true
+    },
+    {
+      "name": "bath",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "beEmbalmed",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "cheer",
+      "duration": 1.2,
+      "loop": true
+    },
+    {
+      "name": "clean",
+      "duration": 2.0,
+      "loop": true
+    },
+    {
+      "name": "collapse",
+      "duration": 1.6,
+      "loop": false
+    },
+    {
+      "name": "cook",
+      "duration": 4.8,
+      "loop": true
+    },
+    {
+      "name": "crawl",
+      "duration": 1.6,
+      "loop": true
+    },
+    {
+      "name": "cry",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "dance",
+      "duration": 2.0,
+      "loop": true
+    },
+    {
+      "name": "disgusted",
+      "duration": 1.6,
+      "loop": true
+    },
+    {
+      "name": "embalm",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "exercise",
+      "duration": 2.0,
+      "loop": true
+    },
+    {
+      "name": "feral",
+      "duration": 1.0,
+      "loop": true
+    },
+    {
+      "name": "flirt",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "groan",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "hug",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "idle",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "kiss",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "laugh",
+      "duration": 1.6,
+      "loop": true
+    },
+    {
+      "name": "limp",
+      "duration": 1.2,
+      "loop": true
+    },
+    {
+      "name": "listen",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "mourn",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "paint",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "phone",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "pickup",
+      "duration": 1.2,
+      "loop": false
+    },
+    {
+      "name": "read",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "shower",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "sit",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "sitChess",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "sitComputer",
+      "duration": 2.0,
+      "loop": true
+    },
+    {
+      "name": "sitEat",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "sitRead",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "sitTalk",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "sitTV",
+      "duration": 5.0,
+      "loop": true
+    },
+    {
+      "name": "sleep",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "standEat",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "stitch",
+      "duration": 2.4,
+      "loop": true
+    },
+    {
+      "name": "stretch",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "talk",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "duration": 1.0,
+      "loop": true
+    },
+    {
+      "name": "washHands",
+      "duration": 2.0,
+      "loop": true
+    },
+    {
+      "name": "wave",
+      "duration": 1.2,
+      "loop": true
+    },
+    {
+      "name": "yawn",
+      "duration": 2.0,
+      "loop": false
+    }
+  ],
+  "morphs": [
+    "blink",
+    "talk",
+    "happy",
+    "sad",
+    "angry",
+    "sleepy",
+    "disgusted",
+    "flirty",
+    "shocked",
+    "focused"
+  ],
+  "morphTargets": {
+    "ArmLower_L": [
+      "build"
+    ],
+    "ArmLower_R": [
+      "build"
+    ],
+    "ArmUpper_L": [
+      "build"
+    ],
+    "ArmUpper_R": [
+      "build"
+    ],
+    "Bottom_pants_LegL": [
+      "build"
+    ],
+    "Bottom_pants_LegR": [
+      "build"
+    ],
+    "Bottom_pants_Waist": [
+      "build"
+    ],
+    "Bottom_shorts_LegL": [
+      "build"
+    ],
+    "Bottom_shorts_LegR": [
+      "build"
+    ],
+    "Bottom_shorts_Waist": [
+      "build"
+    ],
+    "Bottom_skirt_LegL": [
+      "build"
+    ],
+    "Bottom_skirt_LegR": [
+      "build"
+    ],
+    "Bottom_skirt_Waist": [
+      "build"
+    ],
+    "Eyes_beady": [
+      "blink",
+      "talk",
+      "happy",
+      "sad",
+      "angry",
+      "sleepy",
+      "disgusted",
+      "flirty",
+      "shocked",
+      "focused"
+    ],
+    "Eyes_droopy": [
+      "blink",
+      "talk",
+      "happy",
+      "sad",
+      "angry",
+      "sleepy",
+      "disgusted",
+      "flirty",
+      "shocked",
+      "focused"
+    ],
+    "Eyes_mismatched": [
+      "blink",
+      "talk",
+      "happy",
+      "sad",
+      "angry",
+      "sleepy",
+      "disgusted",
+      "flirty",
+      "shocked",
+      "focused"
+    ],
+    "Eyes_sleepy": [
+      "blink",
+      "talk",
+      "happy",
+      "sad",
+      "angry",
+      "sleepy",
+      "disgusted",
+      "flirty",
+      "shocked",
+      "focused"
+    ],
+    "Eyes_wide": [
+      "blink",
+      "talk",
+      "happy",
+      "sad",
+      "angry",
+      "sleepy",
+      "disgusted",
+      "flirty",
+      "shocked",
+      "focused"
+    ],
+    "Foot_L": [
+      "build"
+    ],
+    "Foot_R": [
+      "build"
+    ],
+    "Hand_L": [
+      "build"
+    ],
+    "Hand_R": [
+      "build"
+    ],
+    "Head": [
+      "blink",
+      "talk",
+      "happy",
+      "sad",
+      "angry",
+      "sleepy",
+      "disgusted",
+      "flirty",
+      "shocked",
+      "focused"
+    ],
+    "LegLower_L": [
+      "build"
+    ],
+    "LegLower_R": [
+      "build"
+    ],
+    "LegUpper_L": [
+      "build"
+    ],
+    "LegUpper_R": [
+      "build"
+    ],
+    "Prosthetic_ArmL": [
+      "build"
+    ],
+    "Prosthetic_ArmR": [
+      "build"
+    ],
+    "Prosthetic_LegL": [
+      "build"
+    ],
+    "Prosthetic_LegR": [
+      "build"
+    ],
+    "Stitches": [
+      "build",
+      "hide_armL",
+      "hide_armR",
+      "hide_legL",
+      "hide_legR"
+    ],
+    "Stump_ArmL": [
+      "build"
+    ],
+    "Stump_ArmR": [
+      "build"
+    ],
+    "Stump_LegL": [
+      "build"
+    ],
+    "Stump_LegR": [
+      "build"
+    ],
+    "Top_blouse_Body": [
+      "build"
+    ],
+    "Top_blouse_SleeveL": [
+      "build"
+    ],
+    "Top_blouse_SleeveR": [
+      "build"
+    ],
+    "Top_cardigan_Body": [
+      "build"
+    ],
+    "Top_cardigan_SleeveL": [
+      "build"
+    ],
+    "Top_cardigan_SleeveR": [
+      "build"
+    ],
+    "Top_dress_Body": [
+      "build"
+    ],
+    "Top_dress_SleeveL": [
+      "build"
+    ],
+    "Top_dress_SleeveR": [
+      "build"
+    ],
+    "Top_hoodie_Body": [
+      "build"
+    ],
+    "Top_hoodie_SleeveL": [
+      "build"
+    ],
+    "Top_hoodie_SleeveR": [
+      "build"
+    ],
+    "Top_suit_Body": [
+      "build"
+    ],
+    "Top_suit_SleeveL": [
+      "build"
+    ],
+    "Top_suit_SleeveR": [
+      "build"
+    ],
+    "Top_tatters_Body": [
+      "build"
+    ],
+    "Top_tatters_SleeveL": [
+      "build"
+    ],
+    "Top_tatters_SleeveR": [
+      "build"
+    ],
+    "Top_tee_Body": [
+      "build"
+    ],
+    "Top_tee_SleeveL": [
+      "build"
+    ],
+    "Top_tee_SleeveR": [
+      "build"
+    ],
+    "Torso": [
+      "build"
+    ]
+  },
+  "nodes": [
+    "Acc_bandage",
+    "Acc_beanie",
+    "Acc_bowtie",
+    "Acc_eyepatch",
+    "Acc_flower",
+    "Acc_glasses",
+    "Acc_necklace",
+    "ArmLower_L",
+    "ArmLower_R",
+    "ArmUpper_L",
+    "ArmUpper_R",
+    "Bottom_pants_LegL",
+    "Bottom_pants_LegR",
+    "Bottom_pants_Waist",
+    "Bottom_shorts_LegL",
+    "Bottom_shorts_LegR",
+    "Bottom_shorts_Waist",
+    "Bottom_skirt_LegL",
+    "Bottom_skirt_LegR",
+    "Bottom_skirt_Waist",
+    "Eyes_beady",
+    "Eyes_droopy",
+    "Eyes_mismatched",
+    "Eyes_sleepy",
+    "Eyes_wide",
+    "Foot_L",
+    "Foot_R",
+    "Hair_afro",
+    "Hair_bob",
+    "Hair_bun",
+    "Hair_buzz",
+    "Hair_combover",
+    "Hair_long",
+    "Hair_messy",
+    "Hair_mohawk",
+    "Hair_pigtails",
+    "Hand_L",
+    "Hand_R",
+    "Head",
+    "LegLower_L",
+    "LegLower_R",
+    "LegUpper_L",
+    "LegUpper_R",
+    "Prosthetic_ArmL",
+    "Prosthetic_ArmR",
+    "Prosthetic_LegL",
+    "Prosthetic_LegR",
+    "Shoe_L",
+    "Shoe_R",
+    "Stitches",
+    "Stump_ArmL",
+    "Stump_ArmR",
+    "Stump_LegL",
+    "Stump_LegR",
+    "Top_blouse_Body",
+    "Top_blouse_SleeveL",
+    "Top_blouse_SleeveR",
+    "Top_cardigan_Body",
+    "Top_cardigan_SleeveL",
+    "Top_cardigan_SleeveR",
+    "Top_dress_Body",
+    "Top_dress_SleeveL",
+    "Top_dress_SleeveR",
+    "Top_hoodie_Body",
+    "Top_hoodie_SleeveL",
+    "Top_hoodie_SleeveR",
+    "Top_suit_Body",
+    "Top_suit_SleeveL",
+    "Top_suit_SleeveR",
+    "Top_tatters_Body",
+    "Top_tatters_SleeveL",
+    "Top_tatters_SleeveR",
+    "Top_tee_Body",
+    "Top_tee_SleeveL",
+    "Top_tee_SleeveR",
+    "Torso"
+  ],
+  "bones": [
+    "root",
+    "pelvis",
+    "spine",
+    "chest",
+    "neck",
+    "head",
+    "jaw",
+    "shoulder_L",
+    "upperarm_L",
+    "forearm_L",
+    "hand_L",
+    "prop_L",
+    "shoulder_R",
+    "upperarm_R",
+    "forearm_R",
+    "hand_R",
+    "prop_R",
+    "thigh_L",
+    "shin_L",
+    "foot_L",
+    "thigh_R",
+    "shin_R",
+    "foot_R"
+  ],
+  "materials": [
+    "Accessory",
+    "Bottom",
+    "EyeWhite",
+    "Hair",
+    "Iris",
+    "Mouth",
+    "Prosthetic",
+    "Shoes",
+    "Skin",
+    "Stitch",
+    "Teeth",
+    "Top"
+  ],
+  "triangles": 13896,
+  "oneShots": [
+    "pickup",
+    "collapse",
+    "yawn"
+  ],
+  "fps": 30,
+  "meshCount": 76,
+  "rigVersion": 2,
+  "carryAnchors": [
+    "phone",
+    "read",
+    "sitEat",
+    "sitRead",
+    "standEat"
+  ],
+  "hairClearanceMm": {
+    "Hair_buzz": 2.58,
+    "Hair_messy": 5.77,
+    "Hair_bob": 10.28,
+    "Hair_bun": 2.65,
+    "Hair_mohawk": 1.97,
+    "Hair_long": 6.41,
+    "Hair_combover": 5.25,
+    "Hair_pigtails": 3.57,
+    "Hair_afro": 40.21,
+    "Acc_beanie": 22.59
+  }
+}

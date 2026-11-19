@@ -1,0 +1,197 @@
+/*
+ * HUD root. Sizes are rem (the shell scales html font-size with the viewport and the UI-scale setting), colours
+ * and motion come from src/ui/theme/tokens.css. The root lets pointer events through to the 3D canvas; every
+ * panel opts back in with .ui-interactive.
+ */
+.hud {
+  --hud-gap: 0.75rem;
+  --hud-top-h: 3.6rem;
+  --hud-agent-w: 27rem;
+  --hud-agent-body-h: 15rem;
+  --hud-agent-h: 23.5rem;
+  --hud-catalog-h: 18.75rem;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-family: var(--font-ui);
+  color: var(--text);
+}
+.hud[data-tier='tight'] {
+  --hud-agent-w: 24rem;
+  --hud-agent-body-h: 13rem;
+  --hud-agent-h: 21.5rem;
+}
+.hud-topcenter {
+  position: absolute;
+  top: calc(var(--hud-gap) + var(--hud-top-h) + 0.625rem);
+  left: var(--hud-clock-cx, 50%);
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  z-index: var(--z-popover);
+  pointer-events: none;
+}
+.hud-topcenter > * {
+  pointer-events: auto;
+}
+
+/* The shell reset gives every svg max-width:100%, which collapses icons inside shrink-to-fit wrappers to 0px. */
+.hud .hud-icon,
+.hud .ui-icon {
+  flex-shrink: 0;
+  max-width: none;
+}
+
+/* tooltip extras on top of the shell's .ui-tooltip */
+.hud-tooltip {
+  z-index: var(--z-tooltip);
+  max-width: 19rem;
+}
+.hud-tooltip__keys {
+  display: inline-flex;
+  gap: 0.1875rem;
+  flex-shrink: 0;
+}
+.hud-tooltip__plain {
+  color: var(--text);
+}
+.hud-tooltip .ui-tooltip__body + .ui-tooltip__body {
+  margin-top: 0.1875rem;
+}
+.hud-tooltip.is-good .ui-tooltip__title {
+  color: var(--c-toxic-hi);
+}
+.hud-tooltip.is-bad .ui-tooltip__title {
+  color: #ffb4a3;
+}
+.hud-tooltip.is-warm .ui-tooltip__title {
+  color: var(--c-candle-hi);
+}
+
+/* focus rings on dark glass read better a touch further out */
+.hud :focus-visible {
+  outline-offset: 2px;
+}
+
+/*
+ * Scroll affordances (parts/scroll.ts sets data-ofl='start' | 'end' | 'both' on clipped scroll areas): the clipped
+ * edge fades out so it is obvious there is more — HUD scrollbars are thin and hidden until hover.
+ */
+.hud-ofl-y {
+  --ofl-size: 1.75rem;
+}
+.hud-ofl-y[data-ofl='end'] {
+  mask-image: linear-gradient(180deg, #000 calc(100% - var(--ofl-size)), transparent);
+  -webkit-mask-image: linear-gradient(180deg, #000 calc(100% - var(--ofl-size)), transparent);
+}
+.hud-ofl-y[data-ofl='start'] {
+  mask-image: linear-gradient(0deg, #000 calc(100% - var(--ofl-size)), transparent);
+  -webkit-mask-image: linear-gradient(0deg, #000 calc(100% - var(--ofl-size)), transparent);
+}
+.hud-ofl-y[data-ofl='both'] {
+  mask-image: linear-gradient(180deg, transparent, #000 var(--ofl-size), #000 calc(100% - var(--ofl-size)), transparent);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 var(--ofl-size), #000 calc(100% - var(--ofl-size)), transparent);
+}
+.hud-ofl-x {
+  --ofl-size: 1.5rem;
+}
+.hud-ofl-x[data-ofl='end'] {
+  mask-image: linear-gradient(90deg, #000 calc(100% - var(--ofl-size)), transparent);
+  -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - var(--ofl-size)), transparent);
+}
+.hud-ofl-x[data-ofl='start'] {
+  mask-image: linear-gradient(270deg, #000 calc(100% - var(--ofl-size)), transparent);
+  -webkit-mask-image: linear-gradient(270deg, #000 calc(100% - var(--ofl-size)), transparent);
+}
+.hud-ofl-x[data-ofl='both'] {
+  mask-image: linear-gradient(90deg, transparent, #000 var(--ofl-size), #000 calc(100% - var(--ofl-size)), transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--ofl-size), #000 calc(100% - var(--ofl-size)), transparent);
+}
+
+/* Chip rails (relationship filters, notice filters): one scrolling line instead of chips cut off at the edge. */
+.hud-chiprail {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.3125rem;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-padding-inline: 1.5rem;
+  /* room for focus rings, which would otherwise be clipped by the scroller */
+  padding: 0.1875rem 0.1875rem;
+  margin: -0.1875rem -0.1875rem;
+}
+.hud-chiprail::-webkit-scrollbar {
+  display: none;
+}
+.hud-chiprail > * {
+  flex-shrink: 0;
+}
+
+/* Carousel rails (parts/Rail.tsx): shared by build style rails and filter-chip rails. */
+.hud-rail {
+  position: relative;
+  min-width: 0;
+}
+.hud-rail__track {
+  --ofl-size: 3rem;
+  scrollbar-width: none;
+}
+.hud-rail__track::-webkit-scrollbar {
+  display: none;
+}
+.hud-rail__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-top: -1.1875rem;
+  border-radius: 50%;
+  color: var(--text-strong);
+  background: rgba(36, 28, 47, 0.94);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-md);
+  animation: ui-fade-in var(--dur-fast) var(--ease-out) both;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+.hud-rail__arrow:hover {
+  color: var(--text-on-accent);
+  background: linear-gradient(180deg, #c4f7a2, #8fdc63);
+  border-color: transparent;
+}
+.hud-rail__arrow:active {
+  transform: scale(0.92);
+}
+.hud-rail__arrow.is-prev {
+  left: -0.25rem;
+}
+.hud-rail__arrow.is-next {
+  right: -0.25rem;
+}
+.hud-rail.is-sm {
+  flex: 1 1 auto;
+}
+.hud-rail.is-sm .hud-rail__track {
+  --ofl-size: 2.25rem;
+}
+.hud-rail.is-sm .hud-rail__arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -0.75rem;
+}
+.hud-rail.is-sm .hud-rail__arrow.is-prev {
+  left: -0.125rem;
+}
+.hud-rail.is-sm .hud-rail__arrow.is-next {
+  right: -0.125rem;
+}

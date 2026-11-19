@@ -1,0 +1,23 @@
+/* S11 controls inherit the game's art tokens, with readable type/targets independent of world-camera zoom. */
+.world-navigation,.world-places,.world-signs { min-width:0; max-width:100%; color:var(--text); font:400 max(.875rem,14px)/1.5 var(--font-ui); overflow-wrap:anywhere; }
+.world-navigation { display:flex; flex-direction:column; gap:8px; padding:12px; border:1px solid var(--border-strong); border-radius:12px; background:var(--bg-panel-solid,#211c2a); }
+.world-navigation__actions { display:flex; flex-wrap:wrap; gap:8px; }
+.world-control { display:inline-flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; height:auto; max-width:100%; padding:10px 14px; border:1px solid var(--border-strong); border-radius:8px; color:var(--text-strong); background:var(--bg-panel-solid,#211c2a); font:600 max(.875rem,14px)/1.4 var(--font-ui); white-space:normal; overflow-wrap:anywhere; text-align:center; cursor:pointer; }
+.world-control:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+.world-control:disabled { cursor:default; opacity:.6; }
+.world-actor-proxy { align-self:flex-start; }
+.world-feedback { margin:0; min-height:1.5em; color:var(--text-strong); }
+.world-places__list { display:grid; gap:12px; list-style:none; margin:0; padding:0; }
+.world-place { display:flex; align-items:center; justify-content:space-between; gap:12px; min-width:0; padding:12px; border:1px solid var(--border-strong); border-radius:8px; background:var(--bg-panel-solid,#211c2a); }
+.world-place__copy { display:flex; flex:1; flex-direction:column; min-width:0; }
+.world-place__status { color:var(--text); }
+.world-place--unfinished { border-style:dashed; background-image:repeating-linear-gradient(135deg,transparent,transparent 9px,rgba(232,224,200,.05) 9px,rgba(232,224,200,.05) 12px); }
+/* A percentage cap is indefinite inside the centered grid at high browser zoom; use the viewport itself. */
+.world-signs-dialog.ui-modal { width:min(608px,calc(100vw - 32px)); max-width:calc(100vw - 32px); min-width:0; max-height:calc(100dvh - 32px); }
+.world-signs-dialog .ui-modal__body { min-width:0; overflow:auto; overscroll-behavior:contain; }
+.world-signs-dialog .ui-modal__header,.world-signs-dialog .ui-modal__footer { flex-shrink:0; }
+.world-signs-dialog .ui-modal__close { min-width:44px; min-height:44px; }
+.world-signs-dialog .ui-modal__title { font-size:max(1.25rem,18px); }
+.world-signs ol { padding-inline-start:24px; }
+.world-signs li { margin-block:12px; }
+@media(max-width:500px) { .world-place { align-items:stretch; flex-direction:column; } .world-place>.world-control { width:100%; } .world-navigation__actions>.world-control { flex:1 1 100px; } }

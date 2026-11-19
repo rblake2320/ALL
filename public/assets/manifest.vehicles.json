@@ -1,0 +1,884 @@
+{
+ "version": 1,
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "left": "+X",
+ "nodes": {
+  "wheel": "wheel_* (origin on the axle; spin about local X)",
+  "lights": "glow",
+  "door": "door (cars; origin on the hinge line)"
+ },
+ "recolour": "Paint",
+ "vehicles": {
+  "veh_bike": {
+   "name": "Bone-Shaker Bicycle",
+   "park": "small",
+   "seats": 1,
+   "paint": "#6e2a35",
+   "size": {
+    "width": 0.591,
+    "length": 1.836,
+    "height": 1.073
+   },
+   "wheelRadius": 0.33,
+   "wheels": {
+    "wheel_F": [
+     0.0,
+     0.33,
+     0.56
+    ],
+    "wheel_R": [
+     0.0,
+     0.33,
+     -0.54
+    ]
+   },
+   "parts": [
+    "glow"
+   ],
+   "materials": [
+    "Black",
+    "Bone",
+    "Brass",
+    "Chrome",
+    "Iron",
+    "Lantern",
+    "Leather",
+    "Paint",
+    "Rubber",
+    "Steel",
+    "TailLight",
+    "Tire"
+   ],
+   "outline": [
+    [
+     [
+      -0.2955,
+      0.3344
+     ],
+     [
+      -0.02,
+      -0.911
+     ],
+     [
+      0.02,
+      -0.911
+     ],
+     [
+      0.2938,
+      0.325
+     ],
+     [
+      0.2951,
+      0.3383
+     ],
+     [
+      0.1334,
+      0.7449
+     ],
+     [
+      0.0312,
+      0.925
+     ],
+     [
+      -0.0312,
+      0.925
+     ],
+     [
+      -0.1334,
+      0.7449
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.65,
+      0.0,
+      -0.1
+     ],
+     "yaw": -90.0,
+     "kind": "approach"
+    },
+    "foot_L": {
+     "pos": [
+      0.115,
+      0.17,
+      -0.05
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    },
+    "foot_R": {
+     "pos": [
+      -0.115,
+      0.43,
+      -0.05
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    },
+    "hand_L": {
+     "pos": [
+      0.26,
+      1.02,
+      0.33
+     ],
+     "yaw": 0.0,
+     "kind": "hands"
+    },
+    "hand_R": {
+     "pos": [
+      -0.26,
+      1.02,
+      0.33
+     ],
+     "yaw": 0.0,
+     "kind": "hands"
+    },
+    "seat_0": {
+     "pos": [
+      0.0,
+      1.015,
+      -0.26
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/vehicles/veh_bike.glb",
+     "bytes": 66492,
+     "sha256": "99abf5896a77c40ecbcebc217068f36eed8548f35647f23b04ed91e1a5c8b906",
+     "triangles": 1476,
+     "budget": 1500,
+     "bounds": {
+      "min": [
+       -0.2955,
+       0.0,
+       -0.911
+      ],
+      "max": [
+       0.2951,
+       1.073,
+       0.925
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/vehicles/veh_bike_lod1.glb",
+     "bytes": 28132,
+     "sha256": "996be5839ae3adebcb28f5d88b8b29f9346ab16143e8a135a77b68f373e8f38e",
+     "triangles": 420,
+     "budget": 600,
+     "bounds": {
+      "min": [
+       -0.2946,
+       0.0,
+       -0.911
+      ],
+      "max": [
+       0.2951,
+       1.0403,
+       0.925
+      ]
+     }
+    }
+   ]
+  },
+  "veh_moped": {
+   "name": "Rattletrap Moped",
+   "park": "small",
+   "seats": 1,
+   "paint": "#6f8f5e",
+   "size": {
+    "width": 0.692,
+    "length": 1.726,
+    "height": 1.25
+   },
+   "wheelRadius": 0.22,
+   "wheels": {
+    "wheel_F": [
+     0.0,
+     0.22,
+     0.6
+    ],
+    "wheel_R": [
+     0.0,
+     0.22,
+     -0.56
+    ]
+   },
+   "parts": [
+    "glow"
+   ],
+   "materials": [
+    "Bone",
+    "Brass",
+    "Chrome",
+    "Iron",
+    "Lantern",
+    "Leather",
+    "Paint",
+    "Rubber",
+    "Rust",
+    "Steel",
+    "TailLight",
+    "Tire",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "outline": [
+    [
+     [
+      -0.3462,
+      0.3887
+     ],
+     [
+      -0.1898,
+      -0.6767
+     ],
+     [
+      -0.155,
+      -0.895
+     ],
+     [
+      -0.1364,
+      -0.9064
+     ],
+     [
+      0.1364,
+      -0.9064
+     ],
+     [
+      0.155,
+      -0.895
+     ],
+     [
+      0.224,
+      -0.84
+     ],
+     [
+      0.3462,
+      0.3887
+     ],
+     [
+      0.346,
+      0.3951
+     ],
+     [
+      0.0418,
+      0.8066
+     ],
+     [
+      0.01,
+      0.82
+     ],
+     [
+      -0.01,
+      0.82
+     ],
+     [
+      -0.0418,
+      0.8066
+     ],
+     [
+      -0.346,
+      0.3951
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.7,
+      0.0,
+      -0.1
+     ],
+     "yaw": -90.0,
+     "kind": "approach"
+    },
+    "foot_L": {
+     "pos": [
+      0.1,
+      0.25,
+      0.02
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    },
+    "foot_R": {
+     "pos": [
+      -0.1,
+      0.25,
+      0.02
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    },
+    "hand_L": {
+     "pos": [
+      0.29,
+      1.019,
+      0.39
+     ],
+     "yaw": 0.0,
+     "kind": "hands"
+    },
+    "hand_R": {
+     "pos": [
+      -0.29,
+      1.019,
+      0.39
+     ],
+     "yaw": 0.0,
+     "kind": "hands"
+    },
+    "seat_0": {
+     "pos": [
+      0.0,
+      0.71,
+      -0.34
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/vehicles/veh_moped.glb",
+     "bytes": 70156,
+     "sha256": "e12418c6870ad1e5b704f9c70d4dccd591698c409bb1bc528d1bfa3b3540de0b",
+     "triangles": 2172,
+     "budget": 3000,
+     "bounds": {
+      "min": [
+       -0.3462,
+       0.0,
+       -0.9064
+      ],
+      "max": [
+       0.3462,
+       1.25,
+       0.82
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/vehicles/veh_moped_lod1.glb",
+     "bytes": 44736,
+     "sha256": "077af5140a83db4237515d10d0a4092e7d0d126a98d0cbc2c0c6988e6bd69380",
+     "triangles": 990,
+     "budget": 1200,
+     "bounds": {
+      "min": [
+       -0.3465,
+       0.0,
+       -0.89
+      ],
+      "max": [
+       0.346,
+       1.25,
+       0.82
+      ]
+     }
+    }
+   ]
+  },
+  "veh_sedan": {
+   "name": "Rustbucket Sedan",
+   "park": "car",
+   "seats": 4,
+   "paint": "#7a8a96",
+   "size": {
+    "width": 1.94,
+    "length": 4.354,
+    "height": 1.62
+   },
+   "wheelRadius": 0.33,
+   "wheels": {
+    "wheel_FL": [
+     0.76,
+     0.33,
+     1.3
+    ],
+    "wheel_FR": [
+     -0.76,
+     0.33,
+     1.3
+    ],
+    "wheel_RL": [
+     0.76,
+     0.33,
+     -1.28
+    ],
+    "wheel_RR": [
+     -0.76,
+     0.33,
+     -1.28
+    ]
+   },
+   "parts": [
+    "door",
+    "glow"
+   ],
+   "materials": [
+    "Black",
+    "Bone",
+    "Brass",
+    "Chrome",
+    "Iron",
+    "Lantern",
+    "Leather",
+    "Paint",
+    "Rust",
+    "Steel",
+    "TailLight",
+    "Tire",
+    "WindowDark"
+   ],
+   "outline": [
+    [
+     [
+      -0.97,
+      0.685
+     ],
+     [
+      -0.9,
+      -2.1
+     ],
+     [
+      -0.8854,
+      -2.1354
+     ],
+     [
+      -0.85,
+      -2.15
+     ],
+     [
+      -0.5747,
+      -2.2025
+     ],
+     [
+      -0.55,
+      -2.2035
+     ],
+     [
+      0.85,
+      -2.15
+     ],
+     [
+      0.8854,
+      -2.1354
+     ],
+     [
+      0.9,
+      -2.1
+     ],
+     [
+      0.97,
+      0.685
+     ],
+     [
+      0.97,
+      0.715
+     ],
+     [
+      0.8992,
+      2.1
+     ],
+     [
+      0.8846,
+      2.1354
+     ],
+     [
+      0.8493,
+      2.15
+     ],
+     [
+      -0.8493,
+      2.15
+     ],
+     [
+      -0.8846,
+      2.1354
+     ],
+     [
+      -0.8992,
+      2.1
+     ],
+     [
+      -0.97,
+      0.715
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      1.45,
+      0.0,
+      0.2
+     ],
+     "yaw": -90.0,
+     "kind": "approach"
+    },
+    "seat_0": {
+     "pos": [
+      0.38,
+      0.62,
+      0.2
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_1": {
+     "pos": [
+      -0.38,
+      0.62,
+      0.2
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_2": {
+     "pos": [
+      0.38,
+      0.62,
+      -0.62
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_3": {
+     "pos": [
+      -0.38,
+      0.62,
+      -0.62
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "trunk": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.75
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/vehicles/veh_sedan.glb",
+     "bytes": 105948,
+     "sha256": "71cbeef3569f523626d07dbf6b50638e93df7ae9e77e15b18e863f7b4e1fecf3",
+     "triangles": 3560,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -0.97,
+       0.0,
+       -2.2035
+      ],
+      "max": [
+       0.97,
+       1.62,
+       2.15
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/vehicles/veh_sedan_lod1.glb",
+     "bytes": 61692,
+     "sha256": "2082d76e60413d6053c7ae450d00cee270be2b374a715532b52f8acf72cf3731",
+     "triangles": 1600,
+     "budget": 2400,
+     "bounds": {
+      "min": [
+       -0.97,
+       0.0,
+       -2.15
+      ],
+      "max": [
+       0.97,
+       1.61,
+       2.15
+      ]
+     }
+    }
+   ]
+  },
+  "veh_hearse": {
+   "name": "Family Hearse",
+   "park": "car",
+   "seats": 6,
+   "paint": "#26242c",
+   "size": {
+    "width": 1.95,
+    "length": 4.896,
+    "height": 1.614
+   },
+   "wheelRadius": 0.35,
+   "wheels": {
+    "wheel_FL": [
+     0.79,
+     0.35,
+     1.43
+    ],
+    "wheel_FR": [
+     -0.79,
+     0.35,
+     1.43
+    ],
+    "wheel_RL": [
+     0.79,
+     0.35,
+     -1.37
+    ],
+    "wheel_RR": [
+     -0.79,
+     0.35,
+     -1.37
+    ]
+   },
+   "parts": [
+    "door",
+    "glow"
+   ],
+   "materials": [
+    "Black",
+    "BloodWine",
+    "Bone",
+    "Brass",
+    "Chrome",
+    "HearseCurtain",
+    "Hedge",
+    "Lantern",
+    "Paint",
+    "TailLight",
+    "Tire",
+    "Whitewall",
+    "WindowDark",
+    "WoodEbony"
+   ],
+   "outline": [
+    [
+     [
+      -0.975,
+      0.765
+     ],
+     [
+      -0.94,
+      -1.8
+     ],
+     [
+      -0.93,
+      -2.355
+     ],
+     [
+      -0.9154,
+      -2.3904
+     ],
+     [
+      -0.88,
+      -2.405
+     ],
+     [
+      -0.6247,
+      -2.4525
+     ],
+     [
+      -0.6,
+      -2.4535
+     ],
+     [
+      0.88,
+      -2.405
+     ],
+     [
+      0.9154,
+      -2.3904
+     ],
+     [
+      0.93,
+      -2.355
+     ],
+     [
+      0.94,
+      -1.8
+     ],
+     [
+      0.975,
+      0.765
+     ],
+     [
+      0.975,
+      0.795
+     ],
+     [
+      0.93,
+      2.355
+     ],
+     [
+      0.9154,
+      2.3904
+     ],
+     [
+      0.88,
+      2.405
+     ],
+     [
+      0.2,
+      2.442
+     ],
+     [
+      -0.1618,
+      2.442
+     ],
+     [
+      -0.88,
+      2.405
+     ],
+     [
+      -0.9154,
+      2.3904
+     ],
+     [
+      -0.93,
+      2.355
+     ],
+     [
+      -0.975,
+      0.795
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      1.48,
+      0.0,
+      0.3
+     ],
+     "yaw": -90.0,
+     "kind": "approach"
+    },
+    "seat_0": {
+     "pos": [
+      0.41,
+      0.68,
+      0.25
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_1": {
+     "pos": [
+      -0.41,
+      0.68,
+      0.25
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_2": {
+     "pos": [
+      0.41,
+      0.68,
+      -0.55
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_3": {
+     "pos": [
+      -0.41,
+      0.68,
+      -0.55
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_4": {
+     "pos": [
+      0.41,
+      0.68,
+      -1.35
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_5": {
+     "pos": [
+      -0.41,
+      0.68,
+      -1.35
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "trunk": {
+     "pos": [
+      0.0,
+      0.0,
+      -3.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/vehicles/veh_hearse.glb",
+     "bytes": 141956,
+     "sha256": "99119ea8186c55053cd0047ba91c284d0a92691fb633dc5da7b7521962dd1f52",
+     "triangles": 4732,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -0.975,
+       0.0,
+       -2.4535
+      ],
+      "max": [
+       0.975,
+       1.614,
+       2.442
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/vehicles/veh_hearse_lod1.glb",
+     "bytes": 72744,
+     "sha256": "37a68e49489481958342c6c22e558e654517815ea0a32072b13d78395dd0e883",
+     "triangles": 2040,
+     "budget": 2400,
+     "bounds": {
+      "min": [
+       -0.975,
+       0.0,
+       -2.405
+      ],
+      "max": [
+       0.975,
+       1.52,
+       2.405
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

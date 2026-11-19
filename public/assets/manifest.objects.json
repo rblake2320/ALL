@@ -1,0 +1,1553 @@
+{
+ "version": 1,
+ "objects": {
+  "arcade_tombstone": {
+   "file": "models/objects/arcade_tombstone.glb",
+   "bytes": 63316,
+   "sha256": "22ed68a430423eb37e1dfb9adfdbca58f7883245d9f0b9019ac85c9088e4dfee",
+   "tris": 1876,
+   "bounds": {
+    "min": [
+     -0.3854,
+     0.0,
+     -0.44
+    ],
+    "max": [
+     0.368,
+     1.85,
+     0.4016
+    ]
+   }
+  },
+  "armchair_tattered": {
+   "file": "models/objects/armchair_tattered.glb",
+   "bytes": 66004,
+   "sha256": "d13d0fbd9909dee9c8a6888af27dab39aec40e576c30fc58eaed9a9ae50932ea",
+   "tris": 2836,
+   "bounds": {
+    "min": [
+     -0.434,
+     0.0,
+     -0.5207
+    ],
+    "max": [
+     0.4322,
+     1.0583,
+     0.2821
+    ]
+   }
+  },
+  "bed_normal": {
+   "file": "models/objects/bed_normal.glb",
+   "bytes": 89652,
+   "sha256": "5151f4d464848833e636a41ab9066a7beb51cf38bde85fda32281f7d753df889",
+   "tris": 3854,
+   "bounds": {
+    "min": [
+     -0.9528,
+     0.0,
+     -0.985
+    ],
+    "max": [
+     0.9528,
+     1.125,
+     0.985
+    ]
+   }
+  },
+  "candelabra_drippy": {
+   "file": "models/objects/candelabra_drippy.glb",
+   "bytes": 90804,
+   "sha256": "b892c66870f6eb248c13dfe7b1482fdbe4259bdb274d16d355788343bbb3891f",
+   "tris": 2878,
+   "bounds": {
+    "min": [
+     -0.2056,
+     -0.0043,
+     -0.2031
+    ],
+    "max": [
+     0.2084,
+     1.4,
+     0.215
+    ]
+   }
+  },
+  "chair_creaky": {
+   "file": "models/objects/chair_creaky.glb",
+   "bytes": 29052,
+   "sha256": "8345c8096065549cf1be9c9707302719a6bb312d5b8ee6323b6124bb701c741a",
+   "tris": 1036,
+   "bounds": {
+    "min": [
+     -0.2401,
+     0.0,
+     -0.2673
+    ],
+    "max": [
+     0.2401,
+     0.9494,
+     0.2301
+    ]
+   }
+  },
+  "chair_ribcage": {
+   "file": "models/objects/chair_ribcage.glb",
+   "bytes": 94980,
+   "sha256": "7bb661d991bb55dee82fc6e5cb84a25bee7d186c587ad5ddd8dfeb0bd41b15f2",
+   "tris": 2990,
+   "bounds": {
+    "min": [
+     -0.2657,
+     -0.0045,
+     -0.3199
+    ],
+    "max": [
+     0.2657,
+     1.0827,
+     0.23
+    ]
+   }
+  },
+  "coffin_chillrest": {
+   "file": "models/objects/coffin_chillrest.glb",
+   "bytes": 112736,
+   "sha256": "f90372fccb59eedb9cab66ae45c63d1b6b5dd886ea49ddd30a857cc69f6ab8bf",
+   "tris": 2924,
+   "bounds": {
+    "min": [
+     -0.4073,
+     0.0,
+     -0.9912
+    ],
+    "max": [
+     0.4073,
+     0.7732,
+     0.996
+    ]
+   }
+  },
+  "coffin_pine": {
+   "file": "models/objects/coffin_pine.glb",
+   "bytes": 78900,
+   "sha256": "bea6505caf9495c407ceef3911dd879399a57e27f2c3342a1cfb4fe45a072186",
+   "tris": 2780,
+   "bounds": {
+    "min": [
+     -0.3848,
+     0.0,
+     -0.933
+    ],
+    "max": [
+     0.495,
+     0.6557,
+     0.951
+    ]
+   }
+  },
+  "counter_butcher": {
+   "file": "models/objects/counter_butcher.glb",
+   "bytes": 44736,
+   "sha256": "f356cffd41bf303680e33b6cbbd2dd0ef4028ec9a4f9c16ee31bba19ec8f7c63",
+   "tris": 1424,
+   "bounds": {
+    "min": [
+     -0.499,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.499,
+     0.9867,
+     0.423
+    ]
+   }
+  },
+  "counter_slab": {
+   "file": "models/objects/counter_slab.glb",
+   "bytes": 41912,
+   "sha256": "32d630e3288564ba752ba0e9d2c8aa7d91d4addd3d94423e6ed06dffb4c6114a",
+   "tris": 1180,
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.5,
+     0.922,
+     0.423
+    ]
+   }
+  },
+  "crate_prosthetic": {
+   "file": "models/objects/crate_prosthetic.glb",
+   "bytes": 63912,
+   "sha256": "342c49f016beaf0fc6c72755050695c053600cc1edfec2ab88ff9120f842cf9c",
+   "tris": 1800,
+   "bounds": {
+    "min": [
+     -0.3125,
+     0.0,
+     -0.2525
+    ],
+    "max": [
+     0.4081,
+     0.7109,
+     0.282
+    ]
+   }
+  },
+  "desk_hauntedpc": {
+   "file": "models/objects/desk_hauntedpc.glb",
+   "bytes": 68732,
+   "sha256": "3f36a4eb62a3b9b7f655dfc8601556e1cd8f97be8b8ffc53d3f92ea00012e4f2",
+   "tris": 2214,
+   "bounds": {
+    "min": [
+     -0.48,
+     0.0,
+     -0.74
+    ],
+    "max": [
+     0.48,
+     1.3582,
+     0.533
+    ]
+   }
+  },
+  "diffuser_formaldehyde": {
+   "file": "models/objects/diffuser_formaldehyde.glb",
+   "bytes": 49736,
+   "sha256": "af16304b23b61718951242d05911d73450485d955790abf5b7cb7ab6b44e8357",
+   "tris": 1442,
+   "bounds": {
+    "min": [
+     -0.17,
+     0.0,
+     -0.17
+    ],
+    "max": [
+     0.17,
+     0.899,
+     0.17
+    ]
+   }
+  },
+  "door_crypt": {
+   "file": "models/objects/door_crypt.glb",
+   "bytes": 89052,
+   "sha256": "9ce1862db48417d2b9ce1365e845f4f4a02f42ea5f0d5857c9391bb4e056bd3c",
+   "tris": 2602,
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.1
+    ],
+    "max": [
+     0.5,
+     2.23,
+     0.1558
+    ]
+   }
+  },
+  "door_splintered": {
+   "file": "models/objects/door_splintered.glb",
+   "bytes": 45364,
+   "sha256": "a4aa3fb38bfe40f192d7977c5ee59dc54ef5a98bcf1011735fdca26d03c3b1eb",
+   "tris": 1294,
+   "bounds": {
+    "min": [
+     -0.506,
+     0.0,
+     -0.098
+    ],
+    "max": [
+     0.506,
+     2.21,
+     0.098
+    ]
+   }
+  },
+  "easel_morbid": {
+   "file": "models/objects/easel_morbid.glb",
+   "bytes": 42296,
+   "sha256": "1cc34969bf6618cf3c01c274d63448c0865fe399f5db14882b3743455ae8c2d9",
+   "tris": 906,
+   "bounds": {
+    "min": [
+     -0.33,
+     -0.0045,
+     -0.4995
+    ],
+    "max": [
+     0.346,
+     1.73,
+     0.2357
+    ]
+   }
+  },
+  "env_bush": {
+   "file": "models/objects/env_bush.glb",
+   "bytes": 45764,
+   "sha256": "3d798b4e72d5b91059eb8d7ecece09859366cefd84987fa12a82e7967092a8f5",
+   "tris": 2348,
+   "bounds": {
+    "min": [
+     -0.6369,
+     -0.011,
+     -0.5113
+    ],
+    "max": [
+     0.6437,
+     1.1005,
+     0.5613
+    ]
+   }
+  },
+  "env_cart": {
+   "file": "models/objects/env_cart.glb",
+   "bytes": 55652,
+   "sha256": "50433e5c3291c9e471323e13663c607c8c185c0a0cce0c2d65c256d2fdbf641a",
+   "tris": 1464,
+   "bounds": {
+    "min": [
+     -0.58,
+     -0.011,
+     -0.365
+    ],
+    "max": [
+     0.55,
+     1.08,
+     0.365
+    ]
+   }
+  },
+  "env_fence": {
+   "file": "models/objects/env_fence.glb",
+   "bytes": 20572,
+   "sha256": "c942f074a5fb30b77b021108f0d330ce06e2a64a3bc3dbe9565dd32ba9f42a17",
+   "tris": 556,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.0017,
+     -0.0652
+    ],
+    "max": [
+     1.0001,
+     1.24,
+     0.0583
+    ]
+   }
+  },
+  "env_gravestones": {
+   "file": "models/objects/env_gravestones.glb",
+   "bytes": 36260,
+   "sha256": "aacf92fd717495c8fa28a9afd64d09215fff17cc3a809ac0dfcbbab6a8a0b79b",
+   "tris": 880,
+   "bounds": {
+    "min": [
+     -0.9237,
+     0.0,
+     -0.5735
+    ],
+    "max": [
+     0.947,
+     0.9609,
+     0.5025
+    ]
+   }
+  },
+  "env_hearse": {
+   "file": "models/objects/env_hearse.glb",
+   "bytes": 150616,
+   "sha256": "e1a06a86710638fe167309f0f05e87ec084eb179886821927d380a0c30311215",
+   "tris": 5432,
+   "bounds": {
+    "min": [
+     -2.5,
+     0.0,
+     -0.98
+    ],
+    "max": [
+     2.569,
+     1.64,
+     1.17
+    ]
+   }
+  },
+  "env_house_a": {
+   "file": "models/objects/env_house_a.glb",
+   "bytes": 110024,
+   "sha256": "b6f927c07dc6aa127779b2815aabb5c67041631459012fd162d59241d3a23add",
+   "tris": 3124,
+   "bounds": {
+    "min": [
+     -3.6776,
+     -0.003,
+     -3.9
+    ],
+    "max": [
+     3.8976,
+     7.5,
+     4.8
+    ]
+   }
+  },
+  "env_house_b": {
+   "file": "models/objects/env_house_b.glb",
+   "bytes": 70372,
+   "sha256": "5d02ad5b232dc58dceeab87d87b1a777c8ec58aa8b876e3ccd33d32702fec5f3",
+   "tris": 1892,
+   "bounds": {
+    "min": [
+     -4.6003,
+     0.0,
+     -3.6665
+    ],
+    "max": [
+     4.5216,
+     5.2,
+     4.3165
+    ]
+   }
+  },
+  "env_house_c": {
+   "file": "models/objects/env_house_c.glb",
+   "bytes": 105504,
+   "sha256": "95f0701ac492de934fd6b37c4233b4ae825ed2d18ab5058b23d9c9725b9fdff5",
+   "tris": 3224,
+   "bounds": {
+    "min": [
+     -3.2847,
+     0.0,
+     -4.15
+    ],
+    "max": [
+     3.55,
+     11.9659,
+     3.9
+    ]
+   }
+  },
+  "env_hydrant": {
+   "file": "models/objects/env_hydrant.glb",
+   "bytes": 36540,
+   "sha256": "c69b5de38b228e5196edda229d21c651ce22d80c73fa1da7ce244ef16004850f",
+   "tris": 1462,
+   "bounds": {
+    "min": [
+     -0.2725,
+     0.0,
+     -0.2137
+    ],
+    "max": [
+     0.261,
+     0.78,
+     0.2364
+    ]
+   }
+  },
+  "env_streetlamp": {
+   "file": "models/objects/env_streetlamp.glb",
+   "bytes": 24696,
+   "sha256": "78f11c2ec175c150a4d7f9466bec07fb5a63e540a950675ea87c91c6e8b8686a",
+   "tris": 850,
+   "bounds": {
+    "min": [
+     -0.2,
+     0.0,
+     -0.24
+    ],
+    "max": [
+     0.92,
+     4.0468,
+     0.24
+    ]
+   }
+  },
+  "env_tree_a": {
+   "file": "models/objects/env_tree_a.glb",
+   "bytes": 155608,
+   "sha256": "e96c7ca750c51d3117cd313a0a2ef7d046138fa264803f8de4987101bc5e48dd",
+   "tris": 4420,
+   "bounds": {
+    "min": [
+     -3.3824,
+     0.0,
+     -2.4668
+    ],
+    "max": [
+     3.2882,
+     6.0,
+     2.7567
+    ]
+   }
+  },
+  "env_tree_b": {
+   "file": "models/objects/env_tree_b.glb",
+   "bytes": 29372,
+   "sha256": "7b62967c07558a3ce601c3fcb6e1880487ecd3f56db8182daf72f49fc5789262",
+   "tris": 882,
+   "bounds": {
+    "min": [
+     -1.447,
+     0.0,
+     -1.54
+    ],
+    "max": [
+     1.4646,
+     5.0267,
+     1.4466
+    ]
+   }
+  },
+  "espresso_embalmer": {
+   "file": "models/objects/espresso_embalmer.glb",
+   "bytes": 77728,
+   "sha256": "8076b82cfa6df67673cb5857a724be70e56adaf7e47a5cf01617cb73905dcdaf",
+   "tris": 2578,
+   "bounds": {
+    "min": [
+     -0.37,
+     0.0,
+     -0.45
+    ],
+    "max": [
+     0.37,
+     1.425,
+     0.178
+    ]
+   }
+  },
+  "fridge_cryo": {
+   "file": "models/objects/fridge_cryo.glb",
+   "bytes": 98148,
+   "sha256": "9903c1d1a52a816c679e4a3a834cef1ea4b4fac2be80119bfe542e16744a5855",
+   "tris": 2684,
+   "bounds": {
+    "min": [
+     -0.4029,
+     0.0,
+     -0.45
+    ],
+    "max": [
+     0.488,
+     2.075,
+     0.4543
+    ]
+   }
+  },
+  "fridge_humming": {
+   "file": "models/objects/fridge_humming.glb",
+   "bytes": 107080,
+   "sha256": "3ee0683d10aac1b5eba96d4ee00482cefbc156165532620ba5ef18d965a07545",
+   "tris": 2896,
+   "bounds": {
+    "min": [
+     -0.38,
+     0.0,
+     -0.32
+    ],
+    "max": [
+     0.38,
+     1.86,
+     0.413
+    ]
+   }
+  },
+  "gate_bone": {
+   "file": "models/objects/homeservices/gate_bone.glb",
+   "bytes": 67440,
+   "sha256": "378d6c19f4d21f74670bcde1fc1d526c58b87934ace347fbba3ba9fa8a1a1901",
+   "tris": 2322,
+   "bounds": {
+    "min": [
+     -1.0,
+     0.0,
+     -0.25
+    ],
+    "max": [
+     1.0,
+     2.2377,
+     0.2663
+    ]
+   }
+  },
+  "gym_limb": {
+   "file": "models/objects/gym_limb.glb",
+   "bytes": 103804,
+   "sha256": "ae412f4c5a85f313d27a9549c51052a8ae82329f2c8b6c53bafbb45b59e30fd3",
+   "tris": 2900,
+   "bounds": {
+    "min": [
+     -0.97,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.97,
+     1.69,
+     0.48
+    ]
+   }
+  },
+  "headstone_decor": {
+   "file": "models/objects/headstone_decor.glb",
+   "bytes": 40872,
+   "sha256": "72a94cc51b5b1ec303cdda228860562236ae934143395db26e5f323fd3a70339",
+   "tris": 1042,
+   "bounds": {
+    "min": [
+     -0.39,
+     -0.0029,
+     -0.328
+    ],
+    "max": [
+     0.447,
+     1.0089,
+     0.2311
+    ]
+   }
+  },
+  "hearth_stone": {
+   "file": "models/objects/homeservices/hearth_stone.glb",
+   "bytes": 93368,
+   "sha256": "75e1df893664eb1c05c1974a5649e9f135fe367281cc8510e051a4ffe5ea3f73",
+   "tris": 2978,
+   "bounds": {
+    "min": [
+     -0.99,
+     0.0,
+     -0.5
+    ],
+    "max": [
+     0.99,
+     1.7,
+     0.48
+    ]
+   }
+  },
+  "item_ash": {
+   "file": "models/objects/item_ash.glb",
+   "bytes": 11948,
+   "sha256": "d7ca850e5f72810dfed73d81a9833e502c046a6685546b2f6ca59f0c7db65e35",
+   "tris": 240,
+   "bounds": {
+    "min": [
+     -0.3384,
+     0.0,
+     -0.3202
+    ],
+    "max": [
+     0.3316,
+     0.1194,
+     0.268
+    ]
+   }
+  },
+  "item_bonepile": {
+   "file": "models/objects/item_bonepile.glb",
+   "bytes": 89220,
+   "sha256": "ac33265134e0d2dea121e51d52f22babea53ce3379db74ade236178a44187d03",
+   "tris": 2522,
+   "bounds": {
+    "min": [
+     -0.3514,
+     0.0015,
+     -0.2279
+    ],
+    "max": [
+     0.3916,
+     0.3925,
+     0.2328
+    ]
+   }
+  },
+  "item_dish": {
+   "file": "models/objects/item_dish.glb",
+   "bytes": 20344,
+   "sha256": "352e04267ec5ebd5dde68a957a578c92ea03b26cee96b193770f6bd046edc53e",
+   "tris": 440,
+   "bounds": {
+    "min": [
+     -0.13,
+     0.0,
+     -0.13
+    ],
+    "max": [
+     0.13,
+     0.0263,
+     0.13
+    ]
+   }
+  },
+  "item_fire": {
+   "file": "models/objects/item_fire.glb",
+   "bytes": 49680,
+   "sha256": "60f56b7a61743f94b09e107bfb34ff27573b1e80c8dfede4923922026c778c6f",
+   "tris": 1312,
+   "bounds": {
+    "min": [
+     -0.405,
+     -0.0,
+     -0.3782
+    ],
+    "max": [
+     0.3824,
+     1.0,
+     0.3728
+    ]
+   }
+  },
+  "item_limb_arm": {
+   "file": "models/objects/item_limb_arm.glb",
+   "bytes": 26788,
+   "sha256": "806de229601cdf866178804f1abb1d37c9b977c2dafe0cad7611c66e066cf4e8",
+   "tris": 738,
+   "bounds": {
+    "min": [
+     -0.3683,
+     -0.0059,
+     -0.1363
+    ],
+    "max": [
+     0.3672,
+     0.1159,
+     0.0829
+    ]
+   }
+  },
+  "item_limb_leg": {
+   "file": "models/objects/item_limb_leg.glb",
+   "bytes": 35496,
+   "sha256": "30c9d770c68713d51d4fad6a22d1e2fe6131f3f58c1ceeabe584d3e296598970",
+   "tris": 1014,
+   "bounds": {
+    "min": [
+     -0.5035,
+     0.0,
+     -0.092
+    ],
+    "max": [
+     0.414,
+     0.1561,
+     0.0926
+    ]
+   }
+  },
+  "item_meal": {
+   "file": "models/objects/item_meal.glb",
+   "bytes": 76692,
+   "sha256": "c3701d59a4988087dd945bc2340550dbbf3dff2db5fce3394641c33c445f7ad9",
+   "tris": 2886,
+   "bounds": {
+    "min": [
+     -0.235,
+     0.0,
+     -0.1627
+    ],
+    "max": [
+     0.235,
+     0.1833,
+     0.1627
+    ]
+   }
+  },
+  "item_painting": {
+   "file": "models/objects/item_painting.glb",
+   "bytes": 31152,
+   "sha256": "d2ca7aa8c1d468b89863fd9800b8ba94ff8ffdab6604384f9b215b4dcdb18fae",
+   "tris": 790,
+   "bounds": {
+    "min": [
+     -0.35,
+     -0.0031,
+     -0.1718
+    ],
+    "max": [
+     0.35,
+     0.6735,
+     0.09
+    ]
+   }
+  },
+  "item_pizza": {
+   "file": "models/objects/item_pizza.glb",
+   "bytes": 80344,
+   "sha256": "5df532651d96f538970f70199c25d8cefc060f0ecff947337c1ac4660ba0b9fd",
+   "tris": 1760,
+   "bounds": {
+    "min": [
+     -0.19,
+     0.0,
+     -0.5515
+    ],
+    "max": [
+     0.19,
+     0.1224,
+     0.19
+    ]
+   }
+  },
+  "item_urn": {
+   "file": "models/objects/item_urn.glb",
+   "bytes": 30248,
+   "sha256": "d4114fdddd1f96ebfbe9023d5c84c38d963c4fa0ea3450dd441db2b71f4eafcc",
+   "tris": 1002,
+   "bounds": {
+    "min": [
+     -0.127,
+     0.0,
+     -0.11
+    ],
+    "max": [
+     0.127,
+     0.465,
+     0.1149
+    ]
+   }
+  },
+  "kit_reanimation": {
+   "file": "models/objects/kit_reanimation.glb",
+   "bytes": 65448,
+   "sha256": "2b94665b81efa67534143ebdb4e46172638c0c73b3eea5f04ca88346a9d9077f",
+   "tris": 2124,
+   "bounds": {
+    "min": [
+     -0.4992,
+     0.0,
+     -0.23
+    ],
+    "max": [
+     0.28,
+     0.7347,
+     0.237
+    ]
+   }
+  },
+  "lamp_skull": {
+   "file": "models/objects/lamp_skull.glb",
+   "bytes": 50936,
+   "sha256": "5ca5c50c0d7a65b03991965905eb6db9667f9f13bfc5b06837668ae49e1200f3",
+   "tris": 1954,
+   "bounds": {
+    "min": [
+     -0.2,
+     0.0,
+     -0.3033
+    ],
+    "max": [
+     0.455,
+     1.5856,
+     0.2263
+    ]
+   }
+  },
+  "lantern_post": {
+   "file": "models/objects/lantern_post.glb",
+   "bytes": 31560,
+   "sha256": "310f736c84fab4af9938b8d775e0a88c30895ccad30024609e14203c363986a3",
+   "tris": 1082,
+   "bounds": {
+    "min": [
+     -0.15,
+     0.0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     2.57,
+     0.15
+    ]
+   }
+  },
+  "mailbox_crooked": {
+   "file": "models/objects/mailbox_crooked.glb",
+   "bytes": 25108,
+   "sha256": "62e50907ee41adeaacb9566234b758f83bd16b54f0cc3916521ea635d7af07ea",
+   "tris": 556,
+   "bounds": {
+    "min": [
+     -0.177,
+     -0.0049,
+     -0.1978
+    ],
+    "max": [
+     0.152,
+     1.2712,
+     0.4696
+    ]
+   }
+  },
+  "microwave_nuke": {
+   "file": "models/objects/microwave_nuke.glb",
+   "bytes": 51548,
+   "sha256": "03d86b30419809c0add7ec1b4171a218ed6f618372484d4f0591d3f13b333639",
+   "tris": 1598,
+   "bounds": {
+    "min": [
+     -0.315,
+     0.0,
+     -0.25
+    ],
+    "max": [
+     0.315,
+     1.11,
+     0.256
+    ]
+   }
+  },
+  "mirror_cracked": {
+   "file": "models/objects/mirror_cracked.glb",
+   "bytes": 81808,
+   "sha256": "538ee05df623da67bab57ada3be9c88808b8fd5079bcb55c41f6b31f43d8c9af",
+   "tris": 2984,
+   "bounds": {
+    "min": [
+     -0.4113,
+     -0.001,
+     -0.31
+    ],
+    "max": [
+     0.4113,
+     1.6726,
+     0.25
+    ]
+   }
+  },
+  "painting_greatgrand": {
+   "file": "models/objects/painting_greatgrand.glb",
+   "bytes": 59504,
+   "sha256": "59ed327cf848a113167a56f3106866edbdd630e69dfe91b1d3eb735b6893abd1",
+   "tris": 1938,
+   "bounds": {
+    "min": [
+     -0.35,
+     1.08,
+     -0.003
+    ],
+    "max": [
+     0.35,
+     2.1255,
+     0.0957
+    ]
+   }
+  },
+  "pew_salvaged": {
+   "file": "models/objects/pew_salvaged.glb",
+   "bytes": 48520,
+   "sha256": "dfe68c85d0158ac7544c40537ec5bca1b69288ff2b494207fd6b5a5ee12181e5",
+   "tris": 1852,
+   "bounds": {
+    "min": [
+     -0.9744,
+     0.0,
+     -0.356
+    ],
+    "max": [
+     0.9744,
+     1.0269,
+     0.2668
+    ]
+   }
+  },
+  "plant_carnivorous": {
+   "file": "models/objects/plant_carnivorous.glb",
+   "bytes": 75320,
+   "sha256": "49ba907c9e2e4c06449400907cb0ebc5a6238e0880d9d548099f38bad27999ce",
+   "tris": 2398,
+   "bounds": {
+    "min": [
+     -0.3482,
+     0.0,
+     -0.2415
+    ],
+    "max": [
+     0.3779,
+     1.1376,
+     0.2415
+    ]
+   }
+  },
+  "plant_deadfern": {
+   "file": "models/objects/plant_deadfern.glb",
+   "bytes": 64212,
+   "sha256": "b020d65830d2ee6f4ee0eaa59e84c67ea4ca23b808848ff77b14dfc65d09b2eb",
+   "tris": 1750,
+   "bounds": {
+    "min": [
+     -0.508,
+     -0.0101,
+     -0.3613
+    ],
+    "max": [
+     0.3808,
+     0.8383,
+     0.4543
+    ]
+   }
+  },
+  "plot_budget": {
+   "file": "models/objects/plot_budget.glb",
+   "bytes": 104672,
+   "sha256": "1a491144c58615119bb8bd808df33609302f7575400c7bbdfae73628a5d1c524",
+   "tris": 2966,
+   "bounds": {
+    "min": [
+     -0.5,
+     -0.0021,
+     -0.9955
+    ],
+    "max": [
+     0.5,
+     0.6875,
+     0.99
+    ]
+   }
+  },
+  "rug_funeral": {
+   "file": "models/objects/rug_funeral.glb",
+   "bytes": 45204,
+   "sha256": "9e26636c8593c2e21c737e0153f1207ecc88adf2ec100f46b680b8071d433225",
+   "tris": 988,
+   "bounds": {
+    "min": [
+     -1.4955,
+     0.0,
+     -0.93
+    ],
+    "max": [
+     1.4955,
+     0.0191,
+     0.93
+    ]
+   }
+  },
+  "rug_rag": {
+   "file": "models/objects/rug_rag.glb",
+   "bytes": 91804,
+   "sha256": "f38720eb4e1d33eb8b6ad85936b4c94e472de0d78a85e37a2d56b5d185f705c0",
+   "tris": 3188,
+   "bounds": {
+    "min": [
+     -0.9398,
+     0.0,
+     -0.7199
+    ],
+    "max": [
+     0.94,
+     0.0209,
+     0.7195
+    ]
+   }
+  },
+  "sarcophagus_cryo": {
+   "file": "models/objects/sarcophagus_cryo.glb",
+   "bytes": 96416,
+   "sha256": "1b7f0e6da03271df4b2b1b3ee368594659cabe012532934b43febb728d446947",
+   "tris": 2891,
+   "bounds": {
+    "min": [
+     -0.441,
+     0.0,
+     -0.9907
+    ],
+    "max": [
+     0.441,
+     1.1769,
+     0.995
+    ]
+   }
+  },
+  "sconce_candle": {
+   "file": "models/objects/sconce_candle.glb",
+   "bytes": 51004,
+   "sha256": "e928e148a63bc825f158da7c1936e9126dd7eee6b51cecd0279e603f9143733e",
+   "tris": 1564,
+   "bounds": {
+    "min": [
+     -0.1146,
+     1.4548,
+     0.0
+    ],
+    "max": [
+     0.1146,
+     1.9034,
+     0.2905
+    ]
+   }
+  },
+  "shelf_moldering": {
+   "file": "models/objects/shelf_moldering.glb",
+   "bytes": 102724,
+   "sha256": "b5c74f26aecb514badc76fc1836aca9d003e6d11d64cc1bf3d205cc29f41e8bb",
+   "tris": 2526,
+   "bounds": {
+    "min": [
+     -0.49,
+     0.0,
+     -0.51
+    ],
+    "max": [
+     0.49,
+     2.0,
+     -0.09
+    ]
+   }
+  },
+  "shower_drizzle": {
+   "file": "models/objects/shower_drizzle.glb",
+   "bytes": 74104,
+   "sha256": "9b25f25d5b205d4f112be669cd3866f6645d0bc1eb2301a2ed784564a5567fcd",
+   "tris": 2000,
+   "bounds": {
+    "min": [
+     -0.47,
+     0.0,
+     -0.47
+    ],
+    "max": [
+     0.48,
+     2.132,
+     0.4891
+    ]
+   }
+  },
+  "sink_rusty": {
+   "file": "models/objects/sink_rusty.glb",
+   "bytes": 64916,
+   "sha256": "ded7879c728793806947ed007ac2c09bc7e6e38d18ccd78731b2a49e53cd0bc9",
+   "tris": 2004,
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.5,
+     1.186,
+     0.423
+    ]
+   }
+  },
+  "sofa_moldy": {
+   "file": "models/objects/sofa_moldy.glb",
+   "bytes": 64912,
+   "sha256": "470a905eea461111b0c657fb5f131edc4e058d2c1b3c8ac965e32fe5ff1be990",
+   "tris": 2700,
+   "bounds": {
+    "min": [
+     -0.9201,
+     0.0,
+     -0.4282
+    ],
+    "max": [
+     0.9229,
+     0.9,
+     0.24
+    ]
+   }
+  },
+  "sofa_velvet": {
+   "file": "models/objects/sofa_velvet.glb",
+   "bytes": 119740,
+   "sha256": "e80e7280fa5641669e30bc45347c02567767f49043222112fae172cc7deb9b1f",
+   "tris": 4740,
+   "bounds": {
+    "min": [
+     -1.45,
+     0.0,
+     -0.45
+    ],
+    "max": [
+     1.45,
+     1.0533,
+     0.292
+    ]
+   }
+  },
+  "station_embalming": {
+   "file": "models/objects/station_embalming.glb",
+   "bytes": 88808,
+   "sha256": "c786d9df18407c2ab4773fd82fd699bc6213aa58510404a09d2782a5bde02195",
+   "tris": 2722,
+   "bounds": {
+    "min": [
+     -0.97,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     0.99,
+     1.57,
+     0.3561
+    ]
+   }
+  },
+  "stereo_boombox": {
+   "file": "models/objects/stereo_boombox.glb",
+   "bytes": 73452,
+   "sha256": "59cc1c05e984c3ef78853b0167ea837ab03d67c3703be93c0a81531dd4a57427",
+   "tris": 2114,
+   "bounds": {
+    "min": [
+     -0.36,
+     0.0,
+     -0.3
+    ],
+    "max": [
+     0.3704,
+     0.957,
+     0.187
+    ]
+   }
+  },
+  "stove_greasefire": {
+   "file": "models/objects/stove_greasefire.glb",
+   "bytes": 71708,
+   "sha256": "c0db4b73aca8ab808aa5d8630efc532a2c4c9f673eb28b00aaa2ca4e9ed8d145",
+   "tris": 2358,
+   "bounds": {
+    "min": [
+     -0.395,
+     0.0,
+     -0.445
+    ],
+    "max": [
+     0.395,
+     1.092,
+     0.319
+    ]
+   }
+  },
+  "stove_necrochef": {
+   "file": "models/objects/stove_necrochef.glb",
+   "bytes": 96020,
+   "sha256": "c4db355dae5b690c08be19038abfebe722762d86f703ca2b2d58257a78a10137",
+   "tris": 2904,
+   "bounds": {
+    "min": [
+     -0.46,
+     0.0,
+     -0.47
+    ],
+    "max": [
+     0.46,
+     1.12,
+     0.358
+    ]
+   }
+  },
+  "table_bonechess": {
+   "file": "models/objects/table_bonechess.glb",
+   "bytes": 146432,
+   "sha256": "e5c648330d0e7adfc3ddb680c0a3405e0fd2315d6ea2645617f90c7083d81e32",
+   "tris": 4748,
+   "bounds": {
+    "min": [
+     -1.13,
+     -0.0047,
+     -0.33
+    ],
+    "max": [
+     1.13,
+     0.8233,
+     0.3842
+    ]
+   }
+  },
+  "table_coffinlid": {
+   "file": "models/objects/table_coffinlid.glb",
+   "bytes": 55496,
+   "sha256": "c0ee91c519bd2a95fddebc4af13ccb5acaeaed0a53cadf8b8f5a88b8ce24c9f5",
+   "tris": 1744,
+   "bounds": {
+    "min": [
+     -0.942,
+     0.0,
+     -0.3922
+    ],
+    "max": [
+     0.942,
+     0.426,
+     0.3922
+    ]
+   }
+  },
+  "table_rickety": {
+   "file": "models/objects/table_rickety.glb",
+   "bytes": 22492,
+   "sha256": "5cff2cf08591daf89288dabf5ec8d8f5fc850097ab64976ba985c5422d2d507a",
+   "tris": 676,
+   "bounds": {
+    "min": [
+     -0.4061,
+     0.0,
+     -0.4061
+    ],
+    "max": [
+     0.4061,
+     0.8987,
+     0.4061
+    ]
+   }
+  },
+  "table_stitchnmend": {
+   "file": "models/objects/table_stitchnmend.glb",
+   "bytes": 77184,
+   "sha256": "688fd1b1bb04f56f40b1afa3cb29db38083d91617d3ca06f548b63c0c2a518c7",
+   "tris": 2146,
+   "bounds": {
+    "min": [
+     -0.4024,
+     0.0,
+     -0.3739
+    ],
+    "max": [
+     0.4024,
+     0.9524,
+     0.1339
+    ]
+   }
+  },
+  "table_urnstand": {
+   "file": "models/objects/table_urnstand.glb",
+   "bytes": 76088,
+   "sha256": "f47130371d52a1f8649f02fc0bfe10c95109dc98088bbea2c62faa38c5a58048",
+   "tris": 2714,
+   "bounds": {
+    "min": [
+     -0.305,
+     -0.0027,
+     -0.305
+    ],
+    "max": [
+     0.305,
+     0.6334,
+     0.305
+    ]
+   }
+  },
+  "table_wake": {
+   "file": "models/objects/table_wake.glb",
+   "bytes": 80980,
+   "sha256": "c7804d7b6c1ed5d019ed98e4d38c7a8e7c6dbaa163c0bfb940928854517336f3",
+   "tris": 2872,
+   "bounds": {
+    "min": [
+     -1.0,
+     0.0,
+     -0.46
+    ],
+    "max": [
+     1.0,
+     0.9056,
+     0.46
+    ]
+   }
+  },
+  "trash_lidded": {
+   "file": "models/objects/trash_lidded.glb",
+   "bytes": 49680,
+   "sha256": "def080c1293f62b17aa8f6e554eb73dacb0c476728ef3ef416f92a859c81eb5d",
+   "tris": 1598,
+   "bounds": {
+    "min": [
+     -0.244,
+     0.0,
+     -0.2807
+    ],
+    "max": [
+     0.3266,
+     0.8073,
+     0.314
+    ]
+   }
+  },
+  "tree_gnarled": {
+   "file": "models/objects/tree_gnarled.glb",
+   "bytes": 108440,
+   "sha256": "e9e56d5c5232bbf5554b0ac78a4d18432ae913b7ce75c53079b93fd986b55f65",
+   "tris": 3018,
+   "bounds": {
+    "min": [
+     -2.6559,
+     0.0,
+     -2.477
+    ],
+    "max": [
+     2.0708,
+     4.45,
+     1.3244
+    ]
+   }
+  },
+  "tub_icebath": {
+   "file": "models/objects/tub_icebath.glb",
+   "bytes": 86320,
+   "sha256": "cdc3c9232d5a0e028d1aabfe6d60b13f19607561130b08fbe6e24100c7973f67",
+   "tris": 2886,
+   "bounds": {
+    "min": [
+     -0.98,
+     -0.0035,
+     -0.4613
+    ],
+    "max": [
+     0.9844,
+     0.7,
+     0.4198
+    ]
+   }
+  },
+  "tv_crt": {
+   "file": "models/objects/tv_crt.glb",
+   "bytes": 48208,
+   "sha256": "bc0408cf36eb7fd0acd1ce743db563539cbdb8caa254162deb6e8e5cadd13fa0",
+   "tris": 1450,
+   "bounds": {
+    "min": [
+     -0.33,
+     0.0,
+     -0.39
+    ],
+    "max": [
+     0.33,
+     1.276,
+     0.2524
+    ]
+   }
+  },
+  "tv_seance": {
+   "file": "models/objects/tv_seance.glb",
+   "bytes": 78688,
+   "sha256": "52fa47a1caf5afddf2027ed7f10d55adf563a206dcd950294809c7d10c86706b",
+   "tris": 2512,
+   "bounds": {
+    "min": [
+     -0.95,
+     0.0,
+     -0.375
+    ],
+    "max": [
+     0.95,
+     1.46,
+     0.154
+    ]
+   }
+  },
+  "vault_crypt": {
+   "file": "models/objects/homeservices/vault_crypt.glb",
+   "bytes": 39864,
+   "sha256": "105d267687c64fb5a9b60bd82ada6b48080d6a0906eaf434a3482bc0cb529904",
+   "tris": 1244,
+   "bounds": {
+    "min": [
+     -0.474,
+     -0.0031,
+     -0.3334
+    ],
+    "max": [
+     0.4935,
+     0.82,
+     0.4185
+    ]
+   }
+  },
+  "wardrobe_coffin": {
+   "file": "models/objects/homeservices/wardrobe_coffin.glb",
+   "bytes": 30688,
+   "sha256": "7ae093d896b570378e5f7a6817eedd927e38595b7bb01a093498dd9de3c2e439",
+   "tris": 940,
+   "bounds": {
+    "min": [
+     -0.41,
+     0.0,
+     -0.27
+    ],
+    "max": [
+     0.41,
+     1.9465,
+     0.34
+    ]
+   }
+  },
+  "window_gothic": {
+   "file": "models/objects/window_gothic.glb",
+   "bytes": 85576,
+   "sha256": "42fe917b5e01277bd1c56c9b1b29683255a253eb6863bf5491c413dd94d82867",
+   "tris": 2688,
+   "bounds": {
+    "min": [
+     -0.5,
+     0.85,
+     -0.115
+    ],
+    "max": [
+     0.5,
+     2.37,
+     0.115
+    ]
+   }
+  },
+  "window_grimy": {
+   "file": "models/objects/window_grimy.glb",
+   "bytes": 40712,
+   "sha256": "edc838c311eb0fd2c17b1e1df42f07fd868d037fa5da435f1744dc6dbeeace18",
+   "tris": 1340,
+   "bounds": {
+    "min": [
+     -0.5,
+     0.8,
+     -0.115
+    ],
+    "max": [
+     0.5,
+     2.12,
+     0.115
+    ]
+   }
+  },
+  "workbench_bone": {
+   "file": "models/objects/homeservices/workbench_bone.glb",
+   "bytes": 55556,
+   "sha256": "3fa0ba662b8ff0a3b5ed76ec8c1e71168ac80c27b74c5769ef91d01624cc860c",
+   "tris": 1480,
+   "bounds": {
+    "min": [
+     -0.95,
+     0.0092,
+     -0.4
+    ],
+    "max": [
+     0.95,
+     1.06,
+     0.5109
+    ]
+   }
+  },
+  "zapper_fly": {
+   "file": "models/objects/zapper_fly.glb",
+   "bytes": 43932,
+   "sha256": "9371ba7af74667c59816aadc0edce9c6d4f08c24c85a9593b25c739f0e3c5691",
+   "tris": 1360,
+   "bounds": {
+    "min": [
+     -0.2438,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.2,
+     1.94,
+     0.2
+    ]
+   }
+  }
+ }
+}

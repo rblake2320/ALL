@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img">
+
+ <path fill="#68483b" stroke="#1d1726" stroke-width="16" d="M373 107h278l93 119-46 459-186 123-186-123-46-459Z"/>
+ <path fill="#d4ba92" d="M395 144h234l75 94-42 423-150 100-150-100-42-423Z"/>
+ <path d="M394 437h211v81q0 87-105 87t-106-87Zm211 18h36q40 0 40 37t-40 37h-36" fill="#4c3932" stroke="#1d1726" stroke-width="10"/>
+ <path d="M457 399q-27-32 2-61m49 61q-27-32 2-61m49 61q-27-32 2-61" fill="none" stroke="#4c3932" stroke-width="13" stroke-linecap="round"/>
+ <text x="512" y="270" text-anchor="middle" fill="#1d1726" font-family="Georgia,serif" font-size="70" font-weight="bold" letter-spacing="3">COFFIN</text><text x="512" y="680" text-anchor="middle" fill="#1d1726" font-family="Georgia,serif" font-size="72" font-weight="bold" letter-spacing="3">COFFEE</text><text x="512" y="880" text-anchor="middle" fill="#1d1726" font-family="Arial,serif" font-size="26" font-weight="bold" letter-spacing="5">WAKE UP AGAIN</text>
+
+</svg>

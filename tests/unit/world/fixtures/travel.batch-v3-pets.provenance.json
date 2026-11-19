@@ -1,0 +1,36 @@
+{
+  "oldPin": "327fb935f68461090c24de5565ca9dc9b14cdf9a",
+  "newPin": "5ae235d9c80d8f26114059ba20148904a7080e6a",
+  "acceptedFeatureBase": "3cc1f39f4adee7a39034dc29ec20097c1b49a8d8",
+  "oldDistinctStates": 86,
+  "newDistinctStates": 86,
+  "onlyChangedTopLevelField": "pets",
+  "matchedExceptPets": 86,
+  "crossingsTiersUnchanged": true,
+  "oldGoldenOutputsReproduced": true,
+  "collectorTests": {
+    "before": {
+      "passed": 9,
+      "failed": 0
+    },
+    "after": {
+      "passed": 9,
+      "failed": 0
+    }
+  },
+  "scope": "sol-world-travel-delta-5ae",
+  "invocation": "4671c494f7c9442fbcddf7966da3260c",
+  "cpuQuota": "400%",
+  "memoryMax": 8589934592,
+  "swapMax": 0,
+  "memoryPeak": 1659904000,
+  "memoryMaxOomEvents": 0,
+  "evidence": "<private-evidence-archive>",
+  "comparisonSha256": "bc5248a8f380d18becfc1221dedec1f4684d05167abc7fec8ce3e5392d66de9d",
+  "files": {
+    "s3.travel.batch-v3-pets.golden.json": "dec7012a8a2b93c8de8542ce5776cfbc7c255e9d277a5195cb0c688745f1697b",
+    "s3.travel.frozen.batch-v3-pets.golden.json": "854af1d16446ae9e0dd8527dac5f3cd80563d4d675adb0eeb4d4e14305704f50",
+    "s4.stream.batch-v3-pets.golden.json": "1411fc49036eb88c214b5ad05094a3fa0e7680e6cd33df0a7770c366c61063d3"
+  },
+  "policy": "New travel goldens include the complete unprojected pets state. Production stateHash and AC1 projection are unchanged. Old golden files remain unchanged. External field-by-field comparison explains historical differences, not a product projection."
+}

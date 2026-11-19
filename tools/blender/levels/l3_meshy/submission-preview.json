@@ -1,0 +1,28 @@
+{
+  "schema_version": "meshy.cli/v1",
+  "command": "text-to-3d.create",
+  "ok": true,
+  "result": {
+    "task": null,
+    "submission": {
+      "state": "accepted",
+      "operation_id": "astra-w053-jukebox-20261105-preview",
+      "task_id": "01a1adf2-ca14-76fe-9ae9-913c637cae15",
+      "request_id": null
+    },
+    "downloads": {
+      "state": "not_requested",
+      "files": [],
+      "metadata_path": null
+    },
+    "saved_json": null,
+    "task_id": "01a1adf2-ca14-76fe-9ae9-913c637cae15",
+    "next": {
+      "get": "meshy text-to-3d get 01a1adf2-ca14-76fe-9ae9-913c637cae15",
+      "wait": "meshy text-to-3d wait 01a1adf2-ca14-76fe-9ae9-913c637cae15",
+      "stream": "meshy text-to-3d stream 01a1adf2-ca14-76fe-9ae9-913c637cae15 --format ndjson"
+    }
+  },
+  "error": null,
+  "warnings": []
+}

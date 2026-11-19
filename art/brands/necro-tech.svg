@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img">
+
+ <path fill="#323847" stroke="#7fe0ff" stroke-width="14" d="M198 239 299 138h426l101 101v339L725 679H299L198 578Z"/>
+ <path fill="#1d1726" d="M247 255 317 185h390l70 70v306l-70 70H317l-70-70Z"/>
+ <path d="M365 510V302l294 208V302" fill="none" stroke="#7fe0ff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="365" cy="302" r="18" fill="#ffb35a"/><circle cx="659" cy="510" r="18" fill="#ffb35a"/>
+ <text x="512" y="774" text-anchor="middle" fill="#1d1726" font-family="Arial,serif" font-size="94" font-weight="bold" letter-spacing="7">NECRO</text><text x="512" y="858" text-anchor="middle" fill="#465c6b" font-family="Arial,serif" font-size="76" font-weight="bold" letter-spacing="9">TECH</text>
+
+</svg>

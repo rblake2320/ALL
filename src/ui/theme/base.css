@@ -1,0 +1,429 @@
+/*
+ * Base layer: reset, typography, scrollbars, focus rings, pointer-events model, utilities, reduced motion.
+ *
+ * Pointer-events model: the UI is an HTML overlay above the full-screen 3D canvas.
+ *   .ui-root         covers the viewport but lets clicks fall through to the canvas (pointer-events: none)
+ *   .ui-interactive  opts a panel/control back in (pointer-events: auto). Every HUD panel needs it.
+ */
+html {
+  /*
+   * Resolution-aware root size × the player's UI scale, capped by the window (1.25vw ≈ 80rem wide, 2.22vh ≈ 45rem
+   * tall) so the largest UI scales still fit small windows: 140% at 1280x720 resolves to ≈ 118%, while 1080p and
+   * larger windows get the full 140%. 100% is never capped at 1024x640 or above.
+   * Every viewport term is × --ui-zoom (browser zoom, theme/scale.ts): zooming the browser shrinks the CSS viewport,
+   * which must not shrink the text back — at 200 % / 400 % zoom text is exactly 2× / 4× (W-064, Sol W-023 A2).
+   *
+   * Compact floor (W-118): the window-fit cap was made for the desktop landscape HUD and fell to 4.9 px at 390 px
+   * wide. Where the UNZOOMED window is narrower than 800 px or shorter than 450 px (exactly where a cap would go under
+   * 10 px), or on a touch phone (--ui-touch-floor), 1rem is at least 10 px × UI scale and the HUD uses its compact
+   * layout (hud/lib/phoneLayout.ts). The (threshold − window) × 1000 terms are a 0.01 px step, clamped by min() to
+   * the floor; on every window ≥ 800×450 they are 0 and the size is exactly the window-fit one. Below 350 px wide the
+   * scaled floor is capped at 4vw (never under 10 px), so 140 % on a 280 px window (11.2 px) does not break HUD
+   * words mid-letter. Mirrored by
+   * theme/scale.ts rootFontPx (tests/unit/ui-shell/hardening.test.ts + viewport-floor.test.ts keep them in sync).
+   */
+  font-size: max(min(calc(var(--ui-auto-size) * var(--ui-scale)), calc(1.25vw * var(--ui-zoom)), calc(2.2223vh * var(--ui-zoom))), min(calc(10px * var(--ui-scale)), max(10px, calc(4vw * var(--ui-zoom))), max(0px, calc((800px - 100vw * var(--ui-zoom)) * 1000), calc((450px - 100vh * var(--ui-zoom)) * 1000), calc(var(--ui-touch-floor) * 1000px))));
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+/* = theme/scale.ts TOUCH_FLOOR_QUERY = hud/lib/phoneLayout.ts PHONE_QUERY */
+@media (pointer: coarse) and (max-width: 500px), (pointer: coarse) and (max-height: 500px) {
+  :root {
+    --ui-touch-floor: 1;
+  }
+}
+
+.ui-root,
+.ui-root *,
+.ui-root *::before,
+.ui-root *::after,
+.ui-portal,
+.ui-portal *,
+.ui-portal *::before,
+.ui-portal *::after {
+  box-sizing: border-box;
+}
+
+.ui-root,
+.ui-portal {
+  font-family: var(--font-ui);
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  color: var(--text);
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.ui-root {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-hud);
+  pointer-events: none;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ui-portal {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-dialog);
+}
+.ui-portal--tooltip {
+  z-index: var(--z-tooltip);
+}
+
+.ui-interactive {
+  pointer-events: auto;
+}
+.ui-passthrough {
+  pointer-events: none;
+}
+
+/* ── element reset (scoped so we never fight the canvas or other pages) ── */
+.ui-root :where(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, dl, dd),
+.ui-portal :where(h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, dl, dd) {
+  margin: 0;
+  padding: 0;
+}
+.ui-root :where(ul, ol),
+.ui-portal :where(ul, ol) {
+  list-style: none;
+}
+.ui-root :where(button, input, select, textarea),
+.ui-portal :where(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+.ui-root :where(button),
+.ui-portal :where(button) {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.ui-root :where(button:disabled),
+.ui-portal :where(button:disabled) {
+  cursor: not-allowed;
+}
+.ui-root :where(img, svg, canvas),
+.ui-portal :where(img, svg, canvas) {
+  display: block;
+  max-width: 100%;
+}
+.ui-root :where(input, textarea),
+.ui-portal :where(input, textarea) {
+  user-select: text;
+  -webkit-user-select: text;
+}
+.ui-root :where(table),
+.ui-portal :where(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ui-root :where(a),
+.ui-portal :where(a) {
+  color: var(--text-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+/* ── typography helpers ── */
+.u-display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.005em;
+  line-height: var(--lh-tight);
+}
+.u-caps {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+}
+.u-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+  color: var(--text-warm);
+}
+.u-mono {
+  font-family: var(--font-mono);
+}
+.u-num {
+  font-variant-numeric: tabular-nums;
+}
+.u-muted {
+  color: var(--text-muted);
+}
+.u-faint {
+  color: var(--text-faint);
+}
+.u-accent {
+  color: var(--text-accent);
+}
+.u-warm {
+  color: var(--text-warm);
+}
+.u-danger {
+  color: var(--text-danger);
+}
+.u-strong {
+  color: var(--text-strong);
+  font-weight: var(--fw-semibold);
+}
+.u-small {
+  font-size: var(--fs-sm);
+}
+.u-xs {
+  font-size: var(--fs-xs);
+}
+.u-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+.u-balance {
+  text-wrap: balance;
+}
+.u-pretty {
+  text-wrap: pretty;
+}
+
+/* ── layout utilities ── */
+.u-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.u-col {
+  display: flex;
+  flex-direction: column;
+}
+.u-wrap {
+  flex-wrap: wrap;
+}
+.u-grow {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.u-shrink-0 {
+  flex-shrink: 0;
+}
+.u-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-between {
+  justify-content: space-between;
+}
+.u-end {
+  justify-content: flex-end;
+}
+.u-gap-1 {
+  gap: var(--sp-1);
+}
+.u-gap-2 {
+  gap: var(--sp-2);
+}
+.u-gap-3 {
+  gap: var(--sp-3);
+}
+.u-gap-4 {
+  gap: var(--sp-4);
+}
+.u-gap-6 {
+  gap: var(--sp-6);
+}
+.u-full {
+  width: 100%;
+}
+.u-glass {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: var(--blur-panel);
+  -webkit-backdrop-filter: var(--blur-panel);
+}
+.u-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ── focus ── */
+.ui-root :focus,
+.ui-portal :focus {
+  outline: none;
+}
+/* The ring follows each control's own corner radius (never reshape a control on focus). */
+.ui-root :focus-visible,
+.ui-portal :focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.ui-root [tabindex='-1']:focus-visible,
+.ui-portal [tabindex='-1']:focus-visible {
+  outline: none;
+}
+
+/* ── selection ── */
+.ui-root ::selection,
+.ui-portal ::selection {
+  background: rgba(159, 232, 112, 0.35);
+  color: var(--text-strong);
+}
+
+/* ── scrollbars ── */
+.ui-root *,
+.ui-portal * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(232, 224, 200, 0.22) transparent;
+}
+.ui-root ::-webkit-scrollbar,
+.ui-portal ::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.ui-root ::-webkit-scrollbar-track,
+.ui-portal ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ui-root ::-webkit-scrollbar-thumb,
+.ui-portal ::-webkit-scrollbar-thumb {
+  background: rgba(232, 224, 200, 0.2);
+  border-radius: var(--r-pill);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.ui-root ::-webkit-scrollbar-thumb:hover,
+.ui-portal ::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 224, 200, 0.34);
+  background-clip: padding-box;
+}
+
+/* ── keyframes shared by components ── */
+@keyframes ui-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ui-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes ui-pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes ui-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes ui-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes ui-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Compositor-only (opacity): animate it on a pseudo-element with `will-change: opacity`, never on paint properties. */
+@keyframes ui-pulse-critical {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+@keyframes ui-shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(250%);
+  }
+}
+@keyframes ui-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.72;
+  }
+  44% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+/* ── reduced motion: the player's setting is authoritative ── */
+html.reduce-motion *,
+html.reduce-motion *::before,
+html.reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-delay: 0ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  transition-delay: 0ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Icons never shrink inside flex rows (UI-HUD request H11). */
+.ui-icon {
+  max-width: none;
+  flex-shrink: 0;
+}

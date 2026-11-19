@@ -1,0 +1,186 @@
+{
+  "engine": "00794ead432a550e6bef79d96a8553097fdd3064",
+  "schemaVersion": 2,
+  "runs": [
+    {
+      "name": "derelict+journal",
+      "hash": "8cb6024f8a0c863ae77ae9f29d5aab23eff7a77db479774246fc9e4d17d867bc",
+      "tick": 7680,
+      "commands": 4,
+      "applied": 12,
+      "faults": [],
+      "pets": {
+        "version": 1,
+        "nextId": 3,
+        "strays": [
+          {
+            "id": "s1",
+            "species": "raccoon",
+            "name": "Bandit",
+            "trait": "thief",
+            "place": "street",
+            "trust": 0,
+            "calmTick": 0,
+            "arrivedTick": 7200,
+            "chaseCoolTick": 0,
+            "pos": {
+              "x": 24.329,
+              "z": 28.479
+            },
+            "facing": 1.592,
+            "anim": "walk",
+            "goal": {
+              "x": 28.803,
+              "z": 28.386
+            },
+            "slot": 128,
+            "busyUntil": 0
+          },
+          {
+            "id": "s2",
+            "species": "crow",
+            "name": "Caw",
+            "trait": "lazy",
+            "place": "graveyard",
+            "trust": 0,
+            "calmTick": 0,
+            "arrivedTick": 7200,
+            "chaseCoolTick": 0,
+            "pos": {
+              "x": 19.297,
+              "z": 1.57
+            },
+            "facing": 1.393,
+            "anim": "idle",
+            "goal": null,
+            "slot": 128,
+            "busyUntil": 0
+          }
+        ],
+        "pets": [],
+        "away": [],
+        "pending": []
+      }
+    },
+    {
+      "name": "empty+journal",
+      "hash": "5be051caf7f6ed31201d1d53ee31901e999a10a830451f691866f0423ed113c2",
+      "tick": 7680,
+      "commands": 4,
+      "applied": 12,
+      "faults": [],
+      "pets": {
+        "version": 1,
+        "nextId": 3,
+        "strays": [
+          {
+            "id": "s1",
+            "species": "raccoon",
+            "name": "Bandit",
+            "trait": "thief",
+            "place": "street",
+            "trust": 0,
+            "calmTick": 0,
+            "arrivedTick": 7200,
+            "chaseCoolTick": 0,
+            "pos": {
+              "x": 24.329,
+              "z": 28.479
+            },
+            "facing": 1.592,
+            "anim": "walk",
+            "goal": {
+              "x": 28.803,
+              "z": 28.386
+            },
+            "slot": 128,
+            "busyUntil": 0
+          },
+          {
+            "id": "s2",
+            "species": "crow",
+            "name": "Caw",
+            "trait": "lazy",
+            "place": "graveyard",
+            "trust": 0,
+            "calmTick": 0,
+            "arrivedTick": 7200,
+            "chaseCoolTick": 0,
+            "pos": {
+              "x": 19.297,
+              "z": 1.57
+            },
+            "facing": 1.393,
+            "anim": "idle",
+            "goal": null,
+            "slot": 128,
+            "busyUntil": 0
+          }
+        ],
+        "pets": [],
+        "away": [],
+        "pending": []
+      }
+    },
+    {
+      "name": "starter+journal",
+      "hash": "4a8c55b7d2853780a6209d73abf92e214e554dfa04ded74189d487d5766216b7",
+      "tick": 7680,
+      "commands": 3,
+      "applied": 11,
+      "faults": [],
+      "pets": {
+        "version": 1,
+        "nextId": 3,
+        "strays": [
+          {
+            "id": "s1",
+            "species": "raccoon",
+            "name": "Bandit",
+            "trait": "thief",
+            "place": "street",
+            "trust": 0,
+            "calmTick": 0,
+            "arrivedTick": 7200,
+            "chaseCoolTick": 0,
+            "pos": {
+              "x": 24.329,
+              "z": 28.479
+            },
+            "facing": 1.592,
+            "anim": "walk",
+            "goal": {
+              "x": 28.803,
+              "z": 28.386
+            },
+            "slot": 128,
+            "busyUntil": 0
+          },
+          {
+            "id": "s2",
+            "species": "crow",
+            "name": "Caw",
+            "trait": "lazy",
+            "place": "graveyard",
+            "trust": 0,
+            "calmTick": 0,
+            "arrivedTick": 7200,
+            "chaseCoolTick": 0,
+            "pos": {
+              "x": 19.297,
+              "z": 1.57
+            },
+            "facing": 1.393,
+            "anim": "idle",
+            "goal": null,
+            "slot": 128,
+            "busyUntil": 0
+          }
+        ],
+        "pets": [],
+        "away": [],
+        "pending": []
+      }
+    }
+  ]
+}

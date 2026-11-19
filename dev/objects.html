@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Afterlife Lease — Object Models</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #1d1726; color: #e8e0c8;
+        font: 12px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
+      #c { display: block; width: 100vw; height: 100vh; }
+      #ui { position: fixed; top: 10px; left: 10px; width: 236px; padding: 10px 12px; border-radius: 12px;
+        background: rgba(29, 23, 38, 0.86); border: 1px solid rgba(232, 224, 200, 0.15);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35); max-height: calc(100vh - 40px); overflow: auto; }
+      #ui h1 { font: 600 15px "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; margin: 0 0 6px; }
+      #ui label { display: flex; align-items: center; gap: 6px; margin: 3px 0; }
+      #ui input[type=range] { flex: 1; }
+      #ui select { width: 100%; background: #2b2f3a; color: #e8e0c8; border: 1px solid #555; border-radius: 6px; }
+      #ui .row { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+      #ui button { background: #2b2f3a; color: #e8e0c8; border: 1px solid rgba(232,224,200,.25); border-radius: 6px;
+        padding: 3px 8px; cursor: pointer; }
+      #ui .muted { color: #a59e93; }
+      .lbl { font: 600 11px system-ui, sans-serif; color: #e8e0c8; background: rgba(29, 23, 38, 0.78);
+        padding: 1px 6px; border-radius: 8px; white-space: nowrap; pointer-events: none;
+        border: 1px solid rgba(232, 224, 200, 0.12); }
+      .lbl.ph { color: #ffb35a; }
+      body.hide-ui #ui { display: none; }
+    </style>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <div id="ui"></div>
+    <script type="module" src="/src/render/models/dev/viewer.ts"></script>
+  </body>
+</html>

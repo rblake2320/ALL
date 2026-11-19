@@ -1,0 +1,263 @@
+{
+ "version": 1,
+ "contract": "creature v1 (pets pipeline)",
+ "fps": 30,
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "lods": {
+  "lod0": "Creature_lod0",
+  "lod1": "Creature_lod1"
+ },
+ "recolour": "Paint",
+ "creatures": {
+  "gator_toothless": {
+   "name": "Old Toothless",
+   "doc": "docs/levels/L4-bayou.md \u00a76",
+   "file": "models/creatures/gator_toothless.glb",
+   "bytes": 417148,
+   "sha256": "cd3838908f032523ba1046b27b827273ff2db7f13ac144ac3f210aeb2732bd26",
+   "plan": "quad",
+   "look": "undead",
+   "triangles": {
+    "Creature_lod0": 4674,
+    "Creature_lod1": 1634
+   },
+   "budget": {
+    "lod0": 6000,
+    "lod1": 2000
+   },
+   "bones": [
+    "root",
+    "hips",
+    "spine",
+    "chest",
+    "neck",
+    "head",
+    "jaw",
+    "ear_L",
+    "ear_R",
+    "upper_F_L",
+    "lower_F_L",
+    "paw_F_L",
+    "upper_F_R",
+    "lower_F_R",
+    "paw_F_R",
+    "tail_1",
+    "tail_2",
+    "tail_3",
+    "upper_H_L",
+    "lower_H_L",
+    "paw_H_L",
+    "upper_H_R",
+    "lower_H_R",
+    "paw_H_R"
+   ],
+   "materials": [
+    "Detail",
+    "EyeGlowA",
+    "EyeGlowB",
+    "Paint",
+    "Skin",
+    "Stitch"
+   ],
+   "clips": [
+    {
+     "name": "idle",
+     "duration": 4.0,
+     "loop": true
+    },
+    {
+     "name": "swim",
+     "duration": 1.6,
+     "loop": true
+    },
+    {
+     "name": "sun",
+     "duration": 5.0,
+     "loop": true
+    },
+    {
+     "name": "yawn",
+     "duration": 2.6,
+     "loop": false
+    },
+    {
+     "name": "roll",
+     "duration": 2.2,
+     "loop": false
+    },
+    {
+     "name": "wag",
+     "duration": 1.2,
+     "loop": true
+    }
+   ],
+   "paints": {
+    "bayou": "#c3cf9e"
+   },
+   "bounds": {
+    "min": [
+     -0.3289,
+     0,
+     -1.8128
+    ],
+    "max": [
+     0.3289,
+     0.3776,
+     1.1625
+    ]
+   },
+   "sizeM": {
+    "width": 0.658,
+    "height": 0.378,
+    "length": 2.975
+   },
+   "outline": [
+    [
+     [
+      -0.3289,
+      -0.408
+     ],
+     [
+      -0.0172,
+      -1.7932
+     ],
+     [
+      -0.0149,
+      -1.803
+     ],
+     [
+      -0.0086,
+      -1.8102
+     ],
+     [
+      -0.0074,
+      -1.811
+     ],
+     [
+      -0.0067,
+      -1.8112
+     ],
+     [
+      0.0,
+      -1.8128
+     ],
+     [
+      0.0067,
+      -1.8112
+     ],
+     [
+      0.0074,
+      -1.811
+     ],
+     [
+      0.0086,
+      -1.8102
+     ],
+     [
+      0.0149,
+      -1.803
+     ],
+     [
+      0.0172,
+      -1.7932
+     ],
+     [
+      0.3289,
+      -0.408
+     ],
+     [
+      0.3289,
+      0.458
+     ],
+     [
+      0.3239,
+      0.5297
+     ],
+     [
+      0.3143,
+      0.5552
+     ],
+     [
+      0.0448,
+      1.135
+     ],
+     [
+      0.0,
+      1.1625
+     ],
+     [
+      -0.0448,
+      1.135
+     ],
+     [
+      -0.3143,
+      0.5552
+     ],
+     [
+      -0.3239,
+      0.5297
+     ],
+     [
+      -0.3289,
+      0.458
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      1.7001
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "approach_side": {
+     "pos": [
+      0.7789,
+      0.0,
+      0.572
+     ],
+     "yaw": -90.0,
+     "kind": "approach"
+    },
+    "chin": {
+     "pos": [
+      0.0,
+      0.1249,
+      0.822
+     ],
+     "yaw": 0.0,
+     "kind": "hands"
+    },
+    "feet": {
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    },
+    "mouth": {
+     "pos": [
+      0.0,
+      0.2109,
+      1.0175
+     ],
+     "yaw": 0.0,
+     "kind": "mouth"
+    }
+   },
+   "groundClearanceMm": {
+    "idle": -0.0,
+    "sun": -0.0,
+    "yawn": -0.0,
+    "wag": -0.0
+   }
+  }
+ }
+}

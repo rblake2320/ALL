@@ -1,0 +1,193 @@
+/* ═════════════════════════════ Tutorial hint ═════════════════════════════ */
+.hud-hint-bubble {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  max-width: calc(100vw - 1.25rem);
+  padding: 0.875rem 1rem 0.875rem;
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(120% 70% at 0% 0%, rgba(159, 232, 112, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(38, 30, 50, 0.97), rgba(24, 19, 32, 0.97));
+  border: 1px solid rgba(159, 232, 112, 0.55);
+  box-shadow: var(--shadow-lg), 0 0 1.5rem rgba(159, 232, 112, 0.18);
+  z-index: var(--z-popover);
+  animation: ui-pop-in var(--dur-slow) var(--ease-spring) both;
+}
+.hud-hint-bubble__arrow {
+  position: absolute;
+  width: 0.875rem;
+  height: 0.875rem;
+  background: rgba(33, 26, 44, 0.98);
+  border: 1px solid rgba(159, 232, 112, 0.55);
+  transform: rotate(45deg);
+}
+.hud-hint-bubble[data-placement='bottom'] .hud-hint-bubble__arrow {
+  top: -0.47rem;
+  border-right: 0;
+  border-bottom: 0;
+}
+.hud-hint-bubble[data-placement='top'] .hud-hint-bubble__arrow {
+  bottom: -0.47rem;
+  border-left: 0;
+  border-top: 0;
+}
+.hud-hint-bubble[data-placement='right'] .hud-hint-bubble__arrow {
+  left: -0.47rem;
+  border-right: 0;
+  border-top: 0;
+}
+.hud-hint-bubble[data-placement='left'] .hud-hint-bubble__arrow {
+  right: -0.47rem;
+  border-left: 0;
+  border-bottom: 0;
+}
+.hud-hint-bubble[data-placement='center'] .hud-hint-bubble__arrow {
+  display: none;
+}
+.hud-hint-bubble__head {
+  display: flex;
+  align-items: center;
+  gap: 0.4375rem;
+}
+.hud-hint-bubble__icon {
+  display: grid;
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  color: var(--c-candle);
+  background: rgba(255, 179, 90, 0.14);
+  border: 1px solid rgba(255, 179, 90, 0.35);
+}
+.hud-hint-bubble__title {
+  margin-top: 0.375rem;
+  font-size: var(--fs-lg);
+  color: var(--text-strong);
+}
+.hud-hint-bubble__text {
+  margin-top: 0.25rem;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  color: var(--text);
+  text-wrap: pretty;
+}
+.hud-hint-bubble__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.375rem;
+  margin-top: 0.75rem;
+}
+.hud-hintring {
+  position: fixed;
+  display: none;
+  border-radius: var(--r-lg);
+  pointer-events: none;
+  z-index: calc(var(--z-popover) - 1);
+  box-shadow:
+    0 0 0 2px rgba(159, 232, 112, 0.85),
+    0 0 1.25rem rgba(159, 232, 112, 0.45);
+}
+/* the breathing halo is a separate layer animated by opacity only (compositor, no per-frame repaint) */
+.hud-hintring::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  box-shadow:
+    0 0 0 4px rgba(159, 232, 112, 0.35),
+    0 0 2rem rgba(159, 232, 112, 0.3);
+  will-change: opacity;
+  animation: hud-halo 1.6s var(--ease-in-out) infinite;
+}
+html.reduce-motion .hud-hintring::after {
+  animation: none;
+  opacity: 0.6;
+}
+@keyframes hud-halo {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ═════════════════════════════ Cursor label ═════════════════════════════ */
+.hud-cursorlabel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3125rem 0.625rem 0.3125rem 0.5rem;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--c-candle-hi);
+  background: rgba(16, 12, 22, 0.92);
+  border: 1px solid rgba(255, 179, 90, 0.45);
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+  z-index: var(--z-tooltip);
+  visibility: hidden;
+}
+.hud-cursorlabel.is-error {
+  color: #ffc2b6;
+  border-color: var(--border-danger);
+  background: rgba(40, 12, 20, 0.94);
+}
+
+/* ═════════════════════════════ FPS ═════════════════════════════ */
+.hud-fps {
+  --tone: var(--c-toxic);
+  position: absolute;
+  right: var(--hud-gap);
+  bottom: var(--hud-gap);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--r-sm);
+  background: rgba(16, 12, 22, 0.8);
+  border: 1px solid var(--border-faint);
+  z-index: var(--z-toast);
+  pointer-events: none;
+}
+.hud--buy .hud-fps,
+.hud--build .hud-fps {
+  bottom: calc(var(--hud-gap) * 2 + var(--hud-catalog-h));
+}
+.hud-fps[data-tone='warm'] {
+  --tone: var(--c-candle);
+}
+.hud-fps[data-tone='bad'] {
+  --tone: #ff8f9c;
+}
+.hud-fps__text {
+  min-width: 3.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--tone);
+}
+.hud-fps__spark {
+  width: 4rem;
+  height: 1.25rem;
+}
+.hud-fps__mid {
+  stroke: rgba(232, 224, 200, 0.12);
+  stroke-width: 1;
+  fill: none;
+}
+.hud-fps__line {
+  stroke: var(--tone);
+  stroke-width: 1.4;
+  fill: none;
+  stroke-linejoin: round;
+}

@@ -1,0 +1,204 @@
+/* ═════════════════════════════ Interaction menu ═════════════════════════════ */
+.hud-imenu-layer {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-menu);
+  pointer-events: none;
+}
+.hud-imenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 14.5rem;
+  max-width: 21rem;
+  max-height: min(32rem, calc(100vh - 1rem));
+  display: flex;
+  flex-direction: column;
+  padding: 0.375rem;
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(120% 60% at 50% -10%, rgba(102, 85, 126, 0.32), transparent 65%),
+    linear-gradient(180deg, rgba(38, 30, 50, 0.97), rgba(24, 19, 32, 0.97));
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg), var(--shadow-inset-hi), 0 0 0 1px rgba(0, 0, 0, 0.35);
+  backdrop-filter: var(--blur-panel);
+  -webkit-backdrop-filter: var(--blur-panel);
+  animation: hud-menu-in var(--dur-med) var(--ease-out) both;
+}
+.hud-imenu.is-flyout {
+  min-width: 13rem;
+  animation-duration: var(--dur-fast);
+}
+@keyframes hud-menu-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.hud-imenu__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.5rem 0.5rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px dashed rgba(232, 224, 200, 0.14);
+}
+.hud-imenu__actor {
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px rgba(159, 232, 112, 0.6);
+}
+.hud-imenu__titles {
+  min-width: 0;
+}
+.hud-imenu__title {
+  font-size: var(--fs-lg);
+  color: var(--text-strong);
+  line-height: 1.15;
+}
+.hud-imenu__as {
+  font-size: var(--fs-2xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  font-weight: var(--fw-semibold);
+}
+.hud-imenu.is-flyout .hud-imenu__title {
+  font-size: var(--fs-md);
+  color: var(--c-candle-hi);
+}
+.hud-imenu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0625rem;
+  overflow-y: auto;
+  min-height: 0;
+}
+.hud-imenu__row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 2.25rem;
+  padding: 0.25rem 0.375rem 0.25rem 0.25rem;
+  border-radius: var(--r-md);
+  text-align: left;
+  color: var(--text);
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.hud-imenu__row:hover,
+.hud-imenu__row:focus-visible,
+.hud-imenu__row.is-open {
+  background: linear-gradient(90deg, rgba(159, 232, 112, 0.16), rgba(159, 232, 112, 0.04));
+  color: var(--text-strong);
+}
+.ui-root .hud-imenu__row:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--focus), 0 0 0.75rem rgba(159, 232, 112, 0.25);
+}
+.hud-imenu__icon {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  color: var(--c-toxic);
+  background: rgba(159, 232, 112, 0.08);
+  border: 1px solid rgba(159, 232, 112, 0.2);
+  /* background only: cross-fading the glyph colour too passes through "green on green" mid-way (seen as an empty chip
+     in slow-frame captures); the glyph flips at once and stays legible on both the faint and the solid chip */
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+.hud-imenu__row:hover .hud-imenu__icon,
+.hud-imenu__row.is-open .hud-imenu__icon {
+  color: var(--text-on-accent);
+  background: var(--c-toxic);
+}
+.hud-imenu__row.is-group .hud-imenu__icon {
+  color: var(--c-candle);
+  background: rgba(255, 179, 90, 0.08);
+  border-color: rgba(255, 179, 90, 0.25);
+}
+.hud-imenu__row.is-group:hover .hud-imenu__icon,
+.hud-imenu__row.is-group.is-open .hud-imenu__icon {
+  color: #2a1a08;
+  background: var(--c-candle);
+}
+.hud-imenu__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+.hud-imenu__label {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+}
+.hud-imenu__row.is-group .hud-imenu__label {
+  font-weight: var(--fw-semibold);
+}
+.hud-imenu__reason {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: var(--fs-2xs);
+  color: #ffaa9a;
+  font-weight: var(--fw-semibold);
+}
+.hud-imenu__row.is-disabled {
+  cursor: not-allowed;
+}
+.hud-imenu__row.is-disabled .hud-imenu__label {
+  color: var(--text-disabled);
+}
+.hud-imenu__row.is-disabled .hud-imenu__icon {
+  color: var(--text-disabled);
+  background: transparent;
+  border-color: var(--border-faint);
+}
+.hud-imenu__row.is-disabled:hover {
+  background: rgba(232, 224, 200, 0.04);
+}
+.hud-imenu__cost {
+  padding: 0.125rem 0.4375rem;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--c-candle-hi);
+  background: rgba(255, 179, 90, 0.12);
+  border: 1px solid rgba(255, 179, 90, 0.3);
+}
+.hud-imenu__count {
+  min-width: 1.25rem;
+  padding: 0 0.3125rem;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  color: var(--text-muted);
+  background: rgba(232, 224, 200, 0.08);
+}
+.hud-imenu__chev {
+  display: inline-flex;
+  color: var(--text-muted);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.hud-imenu__row:hover .hud-imenu__chev,
+.hud-imenu__row.is-open .hud-imenu__chev {
+  color: var(--c-toxic-hi);
+  transform: translateX(2px);
+}
+.hud-imenu__empty {
+  padding: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: var(--fs-sm);
+}

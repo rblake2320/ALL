@@ -1,0 +1,32 @@
+# W-079: isolated SDK dependencies never enter the game renderer.
+name: Creator Kit
+on:
+  pull_request:
+    branches: [main, 'ship/**']
+  push:
+    branches: [main, 'ship/**']
+permissions:
+  contents: read
+jobs:
+  creator-kit:
+    name: Creator Kit (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        # Windows: run `npm --prefix scripts/creator test` locally.
+        os: [ubuntu-latest]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: scripts/creator
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4 (verified upstream commit)
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4 (verified upstream commit)
+        with:
+          node-version: 22.x
+          cache: npm
+          cache-dependency-path: scripts/creator/package-lock.json
+      - run: npm ci --ignore-scripts
+      - run: npm run build
+      - run: npm test

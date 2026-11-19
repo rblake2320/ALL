@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "note": "Premium bodies: realistic zombies sold for in-game currency. Ids are stable and stored in saves once the runtime contract (src/shared/cast.ts) adopts them; never rename. Each body is published in two representations of the SAME design on the 22-bone cast rig: `high` (its own declared budget below) and `low` (the unchanged cast budget in lib/config.py), so the purchase selects the design and the hardware selects the detail.",
+  "representations": {
+    "high": { "suffix": "", "triTarget": 30000, "triBudget": 30500, "texBase": 2048, "texNormal": 1024, "texOrm": 1024, "bytesBudget": 4194304 },
+    "low": { "suffix": "_low", "triTarget": 8800, "triBudget": 9000, "texBase": 1024, "texNormal": 512, "texOrm": 512, "bytesBudget": 921600 }
+  },
+  "totalBytesBudget": 26214400,
+  "bodies": [
+    { "id": "sexton", "sourceId": "undertaker", "name": "The Sexton", "height": 1.86, "blurb": "Buried half the town. Dug himself out." },
+    { "id": "lowside", "sourceId": "biker", "name": "Lowside", "height": 1.88, "blurb": "Laid the bike down in '09. Still walking it off." },
+    { "id": "waitress", "sourceId": "waitress", "name": "Night Shift", "height": 1.70, "blurb": "Coffee's cold. So is she." },
+    { "id": "patient", "sourceId": "patient", "name": "Bed Nine", "height": 1.78, "blurb": "Discharged himself. Against advice." },
+    { "id": "fisherman", "sourceId": "fisherman", "name": "The Drowned", "height": 1.76, "blurb": "Went out past the buoys. Came back on the tide." }
+  ]
+}

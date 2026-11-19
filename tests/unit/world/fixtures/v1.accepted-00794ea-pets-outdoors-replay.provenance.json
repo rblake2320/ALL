@@ -1,0 +1,33 @@
+{
+  "sourcePin": "00794ead432a550e6bef79d96a8553097fdd3064",
+  "sourceTree": "23042211a8b644d22cbae733458998618aae6aeb",
+  "schemaVersion": 2,
+  "sourceFixture": "tests/fixtures/saves/v1-saves.json",
+  "sourceFixtureSha256": "1282d0da84c0f1ea4c78d4393e5f9cb4db13758a944f0af2a96c98d23f5e938d",
+  "referenceSha256": "fbf1019d901fd7351ceffede3e3b724558c6b7e616339fe10e389cc61e14a06f",
+  "producer": "tests/unit/world/v1.pets-replay.record.ts",
+  "producerSha256": "66e4af2d7655afd7ae1a316d027b242cd25a6f623448ad4c40d3624c46f5c009",
+  "journals": 3,
+  "entriesApplied": 35,
+  "faults": 0,
+  "acceptedFeatureBase": "3cc1f39f4adee7a39034dc29ec20097c1b49a8d8",
+  "addedChange": "W-153 stray motion: src/sim/systems/pets/motion.ts as changed by commit 95d0d710 (animals stay outdoors), applied to the accepted base with no other change",
+  "host": "cloud Linux container (not a project runner)",
+  "node": "22.23.4",
+  "recorded": "2026-11-19",
+  "comparisonWithPreviousReference": {
+    "previous": "v1.batch-3cc1f39-pets-replay.json",
+    "unchanged": [
+      "name",
+      "tick",
+      "commands",
+      "applied",
+      "faults"
+    ],
+    "changed": [
+      "hash",
+      "pets"
+    ]
+  },
+  "policy": "Recorded on the accepted base plus W-153, before the world framework. Original v1 fixture and historical hashes untouched; pets remain in the comparison."
+}

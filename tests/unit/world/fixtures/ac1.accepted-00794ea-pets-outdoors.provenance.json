@@ -1,0 +1,43 @@
+{
+  "engine": "00794ead432a550e6bef79d96a8553097fdd3064",
+  "sourceTree": "23042211a8b644d22cbae733458998618aae6aeb",
+  "schemaVersion": 2,
+  "referenceSha256": "e6211d86fe2371d2c2b346144f0b47d26bcb6e07ef993c46fd25404fe69ea1cb",
+  "recorder": "tests/unit/world/ac1.accepted.record.ts",
+  "recorderSha256": "0b146a1c859a5a9a01b29c905d0be26a034d27e9715282fe2f38a9cb9d019aa5",
+  "harnessSha256": "f492655adb89cc0b7190f2505cf66269c56b953fbdafb85a23db99e3ea2f2051",
+  "workload": "21 runs: three templates x three seeds x seven days, continuous and real SaveManager reload; three fixture seeds x three days",
+  "acceptedFeatureBase": "3cc1f39f4adee7a39034dc29ec20097c1b49a8d8",
+  "addedChange": "W-153 stray motion: src/sim/systems/pets/motion.ts as changed by commit 95d0d710 (animals stay outdoors), applied to the accepted base with no other change",
+  "host": "cloud Linux container (not a project runner)",
+  "node": "22.23.4",
+  "recorded": "2026-11-19",
+  "exit": 0,
+  "faults": 0,
+  "comparisonWithPreviousReference": {
+    "previous": "ac1.batch-3cc1f39-pets.json",
+    "dayPrints": 135,
+    "eventHashAndCountIdentical": 135,
+    "saveHashIdentical": 9,
+    "saveHashChanged": 126,
+    "note": "The nine unchanged save hashes are the three fixture-world runs."
+  },
+  "stateAudit": {
+    "method": "Same scripted session (ac1Harness) on 3cc1f39 and on the candidate: nine template x seed combinations, seven days, legacy no-town mode; full projected world dumped at each day boundary and compared field by field.",
+    "snapshotsCompared": 63,
+    "eventLogsIdentical": 9,
+    "differingFields": 975,
+    "differingFieldsOutsidePetsStrays": 0,
+    "differingFieldNames": [
+      "pos.x",
+      "pos.z",
+      "facing",
+      "anim",
+      "goal"
+    ],
+    "strayCountChanged": false
+  },
+  "independentConfirmation": "The same session on this recording base and on the candidate (integration/batch-1112 @ 89b74108) gave byte-identical output: 63 day snapshots and 9 event logs.",
+  "causalCheck": "With commit 95d0d710 reverted on the candidate, the sixteen tests that failed against the previous reference pass (51 of 51 in the seven affected files).",
+  "purpose": "Independent accepted base for home-only equivalence after the intended W-153 change to stray motion. The previous 3cc1f39 reference and all historical fd20992/c36 references are preserved unchanged."
+}

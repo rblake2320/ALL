@@ -1,0 +1,19 @@
+node_modules
+dist/
+dist-*/
+release/
+dev/out/
+# player reports filed by `npm run feedback:ingest` (may hold screenshots/saves) — never commit
+feedback/inbox/
+tools/blender/out/
+**/__pycache__/
+*.pyc
+.vite/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+.keys/
+
+# Agent worktrees (Claude Code isolation) — never commit
+.claude/worktrees/

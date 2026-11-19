@@ -1,0 +1,362 @@
+/* Meters: ProgressBar, NeedBar (with colour-blind patterns), Portrait. */
+
+/* ═════════════════════════════ ProgressBar ═════════════════════════════ */
+.ui-progress {
+  --pct: 0;
+  --bar-h: 0.5rem;
+  position: relative;
+  height: var(--bar-h);
+  border-radius: var(--r-pill);
+  background: rgba(9, 6, 13, 0.6);
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.55),
+    0 0 0 1px var(--border-faint);
+  overflow: hidden;
+}
+.ui-progress--sm {
+  --bar-h: 0.3125rem;
+}
+.ui-progress--lg {
+  --bar-h: 0.75rem;
+}
+.ui-progress__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--pct) * 1%);
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-lo), var(--accent));
+  box-shadow: 0 0 0.625rem rgba(159, 232, 112, 0.35);
+  transition: width var(--dur-slower) var(--ease-out);
+  overflow: hidden;
+}
+.ui-progress--candle .ui-progress__fill {
+  background: linear-gradient(90deg, #d9782f, var(--c-candle));
+  box-shadow: 0 0 0.625rem rgba(255, 179, 90, 0.35);
+}
+.ui-progress--cryo .ui-progress__fill {
+  background: linear-gradient(90deg, #3fa8c8, var(--c-cryo));
+  box-shadow: 0 0 0.625rem rgba(127, 224, 255, 0.3);
+}
+.ui-progress--bone .ui-progress__fill {
+  background: linear-gradient(90deg, #a49a80, var(--c-bone));
+  box-shadow: none;
+}
+.ui-progress__fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: ui-shimmer 2.2s var(--ease-in-out) infinite;
+}
+.ui-progress--still .ui-progress__fill::after {
+  display: none;
+}
+.ui-progress--indeterminate .ui-progress__fill {
+  width: 35%;
+  animation: ui-progress-indeterminate 1.4s var(--ease-in-out) infinite;
+}
+@keyframes ui-progress-indeterminate {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+/* stitched seam variant (loading screen) */
+.ui-progress--stitched {
+  --bar-h: 0.875rem;
+  overflow: visible;
+  background: rgba(9, 6, 13, 0.65);
+}
+.ui-progress--stitched::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  top: 50%;
+  height: 0;
+  border-top: 1.5px dashed rgba(232, 224, 200, 0.22);
+  transform: translateY(-50%);
+}
+.ui-progress--stitched .ui-progress__fill {
+  overflow: hidden;
+}
+.ui-progress--stitched .ui-progress__fill::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    115deg,
+    rgba(21, 16, 28, 0) 0 0.625rem,
+    rgba(21, 16, 28, 0.32) 0.625rem 0.75rem
+  );
+}
+
+/* ═════════════════════════════ NeedBar ═════════════════════════════ */
+.ui-need {
+  --pct: 50;
+  --cap: 100;
+  --need-color: var(--c-need-mid);
+  --track-h: 0.625rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 0.5rem;
+  row-gap: 0.25rem;
+  align-items: center;
+  min-width: 0;
+}
+.ui-need--compact {
+  --track-h: 0.4375rem;
+  row-gap: 0.1875rem;
+}
+.ui-need--row {
+  grid-template-columns: auto minmax(5rem, 9rem) minmax(0, 1fr);
+  grid-template-rows: auto;
+}
+.ui-need__icon {
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  color: var(--need-color);
+  background: color-mix(in srgb, var(--need-color) 13%, rgba(9, 6, 13, 0.4));
+  border: 1px solid color-mix(in srgb, var(--need-color) 35%, transparent);
+  transition:
+    color var(--dur-slow) var(--ease-out),
+    background-color var(--dur-slow) var(--ease-out),
+    border-color var(--dur-slow) var(--ease-out);
+}
+.ui-need--compact .ui-need__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.ui-need--row .ui-need__icon {
+  grid-row: auto;
+}
+.ui-need__head {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: 0;
+  font-size: var(--fs-sm);
+  line-height: 1.1;
+}
+.ui-need__label {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: var(--fw-semibold);
+  color: var(--text);
+}
+.ui-need__value {
+  font-size: var(--fs-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-faint);
+}
+.ui-need__trend {
+  display: inline-flex;
+  align-items: center;
+  height: 0.875rem;
+  color: var(--c-need-high);
+}
+.ui-need__trend[data-dir='down'] {
+  color: var(--c-need-low);
+}
+.ui-need__trend svg + svg {
+  margin-left: -0.375rem;
+}
+.ui-need__track {
+  position: relative;
+  height: var(--track-h);
+  border-radius: var(--r-pill);
+  background: rgba(9, 6, 13, 0.62);
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(232, 224, 200, 0.07);
+  overflow: hidden;
+}
+.ui-need__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--pct) * 1%);
+  border-radius: inherit;
+  background-color: var(--need-color);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.12));
+  box-shadow: 0 0 0.5rem color-mix(in srgb, var(--need-color) 45%, transparent);
+  transition:
+    width var(--dur-slower) var(--ease-out),
+    background-color var(--dur-slower) var(--ease-out);
+}
+.ui-need__cap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--cap) * 1%);
+  right: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(232, 224, 200, 0.16) 0 0.125rem,
+    rgba(232, 224, 200, 0.03) 0.125rem 0.3125rem
+  );
+}
+.ui-need__capmark {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: calc(var(--cap) * 1%);
+  width: 2px;
+  margin-left: -1px;
+  background: var(--c-bone);
+  box-shadow: 0 0 0.25rem rgba(232, 224, 200, 0.6);
+}
+.ui-need__glyph {
+  display: none;
+  color: var(--need-color);
+}
+.ui-need.is-critical .ui-need__track {
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 154, 74, 0.6);
+}
+/* Critical pulse: a glowing inner edge that breathes via opacity only (compositor) — animating the track's own
+   box-shadow forced a style recalc + repaint every frame for as long as a need stayed critical. */
+.ui-need.is-critical .ui-need__track::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 1.5px rgba(255, 154, 74, 0.9),
+    inset 0 0 0.375rem rgba(255, 154, 74, 0.55);
+  pointer-events: none;
+  will-change: opacity;
+  animation: ui-pulse-critical 1.3s var(--ease-in-out) infinite;
+}
+.ui-need.is-critical .ui-need__icon {
+  color: var(--c-need-low);
+  border-color: rgba(255, 154, 74, 0.7);
+}
+.ui-need.is-critical .ui-need__label {
+  color: var(--c-candle-hi);
+}
+html.reduce-motion .ui-need.is-critical .ui-need__track {
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.6),
+    0 0 0 2px rgba(255, 154, 74, 0.85);
+}
+html.reduce-motion .ui-need.is-critical .ui-need__track::after {
+  animation: none;
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-need.is-critical .ui-need__track {
+    box-shadow:
+      inset 0 1px 2px rgba(0, 0, 0, 0.6),
+      0 0 0 2px rgba(255, 154, 74, 0.85);
+  }
+  .ui-need.is-critical .ui-need__track::after {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* colour-blind mode: patterns per band + glyph (also forced via .ui-need--cb) */
+html.cb-needs .ui-need__fill[data-band='low'],
+.ui-need--cb .ui-need__fill[data-band='low'] {
+  background-image: var(--tex-hatch);
+}
+html.cb-needs .ui-need__fill[data-band='mid'],
+.ui-need--cb .ui-need__fill[data-band='mid'] {
+  background-image: radial-gradient(circle, rgba(21, 16, 28, 0.55) 0.08rem, transparent 0.1rem);
+  background-size: 0.3125rem 0.3125rem;
+}
+html.cb-needs .ui-need__glyph,
+.ui-need--cb .ui-need__glyph {
+  display: inline-flex;
+}
+html.cb-needs .ui-need__track,
+.ui-need--cb .ui-need__track {
+  --track-h: 0.75rem;
+}
+
+/* ═════════════════════════════ Portrait ═════════════════════════════ */
+.ui-portrait {
+  --ring: var(--mood-fine);
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  border-radius: 50%;
+  line-height: 0;
+}
+.ui-portrait svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.ui-portrait__ring {
+  stroke: var(--ring);
+  transition: stroke var(--dur-slower) var(--ease-out);
+}
+/*
+ * Alert pulse, compositor-only: while alerting, the SVG ring hands over to a ::after ring of the same geometry
+ * (r 47.6 ± 1.8 of a 100 box) and colour whose OPACITY breathes. Animating the SVG stroke-opacity re-rasterised the
+ * portrait every frame (~40 style recalcs/s on an idle screen).
+ */
+.ui-portrait.is-alert.has-ring .ui-portrait__ring {
+  stroke-opacity: 0;
+}
+.ui-portrait.is-alert.has-ring::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle closest-side,
+    transparent 91.4%,
+    var(--ring) 91.8%,
+    var(--ring) 98.8%,
+    transparent 99.2%
+  );
+  pointer-events: none;
+  will-change: opacity;
+  animation: ui-portrait-alert 1.2s var(--ease-in-out) infinite;
+}
+@keyframes ui-portrait-alert {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+html.reduce-motion .ui-portrait.is-alert.has-ring::after {
+  animation: none;
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-portrait.is-alert.has-ring::after {
+    animation: none;
+    opacity: 1;
+  }
+}
+.ui-portrait.is-dimmed svg,
+.ui-portrait.is-dimmed::after {
+  filter: grayscale(0.85) brightness(0.7);
+}
+
+/* Reduced motion: an indeterminate bar becomes a still, softly hatched full-width bar (the sweep would otherwise
+   jump to its end state — off-screen — and the bar would read as empty). */
+html.reduce-motion .ui-progress--indeterminate .ui-progress__fill {
+  width: 100%;
+  transform: none;
+  opacity: 0.55;
+  background-image: repeating-linear-gradient(115deg, rgba(21, 16, 28, 0) 0 0.5rem, rgba(21, 16, 28, 0.35) 0.5rem 0.75rem);
+}

@@ -1,0 +1,31 @@
+name: World content
+description: Propose a neighbourhood/lot, a quest or an activity. Read docs/community/WORLD_BUILDING.md first.
+title: "World: "
+labels: [world, needs-triage]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [Neighbourhood or lot, Quest or quest chain, Activity (something zombies do), Event or holiday]
+    validations: { required: true }
+  - type: textarea
+    id: player
+    attributes: { label: What the player sees and does, description: "Player-facing first: the moment-to-moment, and why it's fun." }
+    validations: { required: true }
+  - type: textarea
+    id: fit
+    attributes: { label: How it fits, description: "Which design spec it builds on, the existing objects/interactions it uses, and any new assets it needs." }
+    validations: { required: true }
+  - type: textarea
+    id: numbers
+    attributes: { label: Numbers, description: "Rewards, prices, durations, using BALANCE.md ranges, or why they differ." }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: It is original (no places, characters or quests from other games, books or films)
+          required: true
+        - label: It works offline in the single-player game (no accounts or servers)
+          required: true

@@ -1,0 +1,859 @@
+{
+ "version": 1,
+ "level": "street",
+ "doc": "docs/DESIGN_WORLD_LEVELS.md",
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "models": [
+  {
+   "id": "barrier_road",
+   "level": "street",
+   "object": "barrier_road",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/street/barrier_road.glb",
+   "bytes": 21800,
+   "sha256": "073287e5efe704eeb765df7220ebe3d5b8fb12ba8fd5ee96268a7200c319c451",
+   "triangles": 456,
+   "size": [
+    2.7,
+    1.13,
+    0.6858
+   ],
+   "bounds": {
+    "min": [
+     -1.35,
+     0.0,
+     -0.3429
+    ],
+    "max": [
+     1.35,
+     1.13,
+     0.3429
+    ]
+   },
+   "materials": [
+    "StLamp",
+    "StRed",
+    "StSignFace",
+    "StSteel",
+    "StTimber"
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "barrier",
+    "unfinished",
+    "blocksPath"
+   ],
+   "frames": {
+    "read": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    3,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -1.35,
+      0.014
+     ],
+     [
+      -1.144,
+      -0.32
+     ],
+     [
+      -1.12,
+      -0.3429
+     ],
+     [
+      1.12,
+      -0.3429
+     ],
+     [
+      1.144,
+      -0.32
+     ],
+     [
+      1.35,
+      0.014
+     ],
+     [
+      1.35,
+      0.046
+     ],
+     [
+      1.144,
+      0.32
+     ],
+     [
+      1.12,
+      0.3429
+     ],
+     [
+      -1.12,
+      0.3429
+     ],
+     [
+      -1.144,
+      0.32
+     ],
+     [
+      -1.35,
+      0.046
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curb_ramp",
+   "level": "street",
+   "object": "curb_ramp",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/street/curb_ramp.glb",
+   "bytes": 18196,
+   "sha256": "f44f76714fe51d28ea663d5c6bef9751f701ca0a0d0f6e5e143e676e3db356d1",
+   "triangles": 384,
+   "size": [
+    2.0,
+    0.13,
+    0.6
+   ],
+   "bounds": {
+    "min": [
+     -1.0,
+     0.0,
+     -0.3
+    ],
+    "max": [
+     1.0,
+     0.13,
+     0.3
+    ]
+   },
+   "materials": [
+    "StConcrete",
+    "StHazard"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "kerb",
+    "crosswalk"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -1.0,
+      -0.3
+     ],
+     [
+      1.0,
+      -0.3
+     ],
+     [
+      1.0,
+      0.3
+     ],
+     [
+      -1.0,
+      0.3
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fence_construction_post",
+   "level": "street",
+   "object": "fence_construction_post",
+   "variant": null,
+   "kind": "edge",
+   "file": "models/levels/street/fence_construction_post.glb",
+   "bytes": 8128,
+   "sha256": "8a0b5b57d50d2bf53db950e8557c253cf7a59791ff069a1ec8fee0be1bca6fda",
+   "triangles": 124,
+   "size": [
+    0.3,
+    2.0,
+    0.2
+   ],
+   "bounds": {
+    "min": [
+     -0.15,
+     0.0,
+     -0.1
+    ],
+    "max": [
+     0.15,
+     2.0,
+     0.1
+    ]
+   },
+   "materials": [
+    "StConcrete",
+    "StRed",
+    "StSteel"
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fencePost",
+    "unfinished"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.15,
+      -0.09
+     ],
+     [
+      -0.14,
+      -0.1
+     ],
+     [
+      0.14,
+      -0.1
+     ],
+     [
+      0.15,
+      -0.09
+     ],
+     [
+      0.15,
+      0.09
+     ],
+     [
+      0.14,
+      0.1
+     ],
+     [
+      -0.14,
+      0.1
+     ],
+     [
+      -0.15,
+      0.09
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fence_construction_run",
+   "level": "street",
+   "object": "fence_construction_run",
+   "variant": null,
+   "kind": "edge",
+   "file": "models/levels/street/fence_construction_run.glb",
+   "bytes": 9300,
+   "sha256": "5431fe92692467f4512d7e90669792efb024919b16abcb17dad5f0191bd5257e",
+   "triangles": 136,
+   "size": [
+    1.0,
+    1.819,
+    0.0783
+   ],
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.0162
+    ],
+    "max": [
+     0.5,
+     1.819,
+     0.0621
+    ]
+   },
+   "materials": [
+    "StMesh",
+    "StSteel",
+    "StTarp",
+    "StTimber"
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fence",
+    "unfinished"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.0162
+     ],
+     [
+      0.5,
+      -0.0162
+     ],
+     [
+      0.5,
+      0.02
+     ],
+     [
+      -0.2233,
+      0.0621
+     ],
+     [
+      -0.43,
+      0.0461
+     ],
+     [
+      -0.5,
+      0.02
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sign_construction",
+   "level": "street",
+   "object": "sign_construction",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/street/sign_construction.glb",
+   "bytes": 17544,
+   "sha256": "3a9cd72437569fd3152ceba9c45894edaaa33267c57602ec9e2d8f1c64e78cbf",
+   "triangles": 370,
+   "size": [
+    0.8,
+    1.4,
+    0.563
+   ],
+   "bounds": {
+    "min": [
+     -0.4,
+     0.0,
+     -0.4411
+    ],
+    "max": [
+     0.4,
+     1.4,
+     0.1219
+    ]
+   },
+   "materials": [
+    "DecalInk",
+    "StHazard",
+    "StSignFace",
+    "StTimber"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "plate"
+   ],
+   "states": [],
+   "tags": [
+    "sign",
+    "unfinished",
+    "text"
+   ],
+   "frames": {
+    "read": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4,
+      0.036
+     ],
+     [
+      -0.382,
+      -0.4199
+     ],
+     [
+      -0.36,
+      -0.4411
+     ],
+     [
+      0.36,
+      -0.4411
+     ],
+     [
+      0.382,
+      -0.4199
+     ],
+     [
+      0.4,
+      0.036
+     ],
+     [
+      0.4,
+      0.054
+     ],
+     [
+      0.382,
+      0.1
+     ],
+     [
+      0.36,
+      0.1219
+     ],
+     [
+      -0.36,
+      0.1219
+     ],
+     [
+      -0.382,
+      0.1
+     ],
+     [
+      -0.4,
+      0.054
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sign_street",
+   "level": "street",
+   "object": "sign_street",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/street/sign_street.glb",
+   "bytes": 15480,
+   "sha256": "57dd035a1a9e1ad3eef70416f5a4e0bb9df106d3115d691251800fa1277cfffc",
+   "triangles": 260,
+   "size": [
+    0.86,
+    2.67,
+    0.86
+   ],
+   "bounds": {
+    "min": [
+     -0.41,
+     0.0,
+     -0.43
+    ],
+    "max": [
+     0.45,
+     2.67,
+     0.43
+    ]
+   },
+   "materials": [
+    "Bone",
+    "DecalInk",
+    "Paint",
+    "StConcrete",
+    "StSignFace"
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "plate",
+    "plate_cross"
+   ],
+   "states": [],
+   "tags": [
+    "sign",
+    "street",
+    "text"
+   ],
+   "frames": {
+    "read": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.41,
+      -0.006
+     ],
+     [
+      -0.406,
+      -0.01
+     ],
+     [
+      0.014,
+      -0.43
+     ],
+     [
+      0.026,
+      -0.43
+     ],
+     [
+      0.45,
+      -0.006
+     ],
+     [
+      0.45,
+      0.006
+     ],
+     [
+      0.026,
+      0.43
+     ],
+     [
+      0.014,
+      0.43
+     ],
+     [
+      -0.406,
+      0.01
+     ],
+     [
+      -0.41,
+      0.006
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "street_end_circle",
+   "level": "street",
+   "object": "street_end_circle",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/street/street_end_circle.glb",
+   "bytes": 43180,
+   "sha256": "ca919e4d76db85869c69e448c5abc6a7b940f4622422d4bebd9af13e3a10443d",
+   "triangles": 1261,
+   "size": [
+    8.6092,
+    1.0443,
+    6.2054
+   ],
+   "bounds": {
+    "min": [
+     -4.3046,
+     0.0,
+     -4.3099
+    ],
+    "max": [
+     4.3046,
+     1.0443,
+     1.8955
+    ]
+   },
+   "materials": [
+    "DecalInk",
+    "GyStone",
+    "Moss",
+    "SoilDark",
+    "StConcrete",
+    "StHazard",
+    "StSteel"
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "streetEnd"
+   ],
+   "tileFootprint": [
+    10,
+    10
+   ],
+   "outline": [
+    [
+     [
+      -4.3046,
+      0.2141
+     ],
+     [
+      -4.2944,
+      -0.3653
+     ],
+     [
+      -4.2942,
+      -0.3675
+     ],
+     [
+      -4.2061,
+      -0.9402
+     ],
+     [
+      -4.2056,
+      -0.9424
+     ],
+     [
+      -4.0412,
+      -1.498
+     ],
+     [
+      -4.0404,
+      -1.5001
+     ],
+     [
+      -3.8027,
+      -2.0285
+     ],
+     [
+      -3.8016,
+      -2.0305
+     ],
+     [
+      -3.4949,
+      -2.5221
+     ],
+     [
+      -3.4936,
+      -2.5239
+     ],
+     [
+      -3.1235,
+      -2.9697
+     ],
+     [
+      -3.1219,
+      -2.9713
+     ],
+     [
+      -2.6952,
+      -3.3632
+     ],
+     [
+      -2.6934,
+      -3.3646
+     ],
+     [
+      -2.2177,
+      -3.6955
+     ],
+     [
+      -2.2158,
+      -3.6967
+     ],
+     [
+      -1.6999,
+      -3.9605
+     ],
+     [
+      -1.6979,
+      -3.9614
+     ],
+     [
+      -1.1512,
+      -4.1533
+     ],
+     [
+      -1.149,
+      -4.1539
+     ],
+     [
+      -0.5814,
+      -4.2705
+     ],
+     [
+      -0.5792,
+      -4.2708
+     ],
+     [
+      -0.0011,
+      -4.3099
+     ],
+     [
+      0.0011,
+      -4.3099
+     ],
+     [
+      0.5792,
+      -4.2708
+     ],
+     [
+      0.5814,
+      -4.2705
+     ],
+     [
+      1.149,
+      -4.1539
+     ],
+     [
+      1.1512,
+      -4.1533
+     ],
+     [
+      1.6979,
+      -3.9614
+     ],
+     [
+      1.6999,
+      -3.9605
+     ],
+     [
+      2.2158,
+      -3.6967
+     ],
+     [
+      2.2177,
+      -3.6955
+     ],
+     [
+      2.6934,
+      -3.3646
+     ],
+     [
+      2.6952,
+      -3.3632
+     ],
+     [
+      3.1219,
+      -2.9713
+     ],
+     [
+      3.1235,
+      -2.9697
+     ],
+     [
+      3.4936,
+      -2.5239
+     ],
+     [
+      3.4949,
+      -2.5221
+     ],
+     [
+      3.8016,
+      -2.0305
+     ],
+     [
+      3.8027,
+      -2.0285
+     ],
+     [
+      4.0404,
+      -1.5001
+     ],
+     [
+      4.0412,
+      -1.498
+     ],
+     [
+      4.2056,
+      -0.9424
+     ],
+     [
+      4.2061,
+      -0.9402
+     ],
+     [
+      4.2942,
+      -0.3675
+     ],
+     [
+      4.2944,
+      -0.3653
+     ],
+     [
+      4.3046,
+      0.2141
+     ],
+     [
+      4.3045,
+      0.2163
+     ],
+     [
+      4.2366,
+      0.7917
+     ],
+     [
+      4.2361,
+      0.7939
+     ],
+     [
+      4.0914,
+      1.355
+     ],
+     [
+      4.0907,
+      1.3571
+     ],
+     [
+      3.8707,
+      1.8955
+     ],
+     [
+      -3.8707,
+      1.8955
+     ],
+     [
+      -4.0907,
+      1.3571
+     ],
+     [
+      -4.0914,
+      1.355
+     ],
+     [
+      -4.2361,
+      0.7939
+     ],
+     [
+      -4.2366,
+      0.7917
+     ],
+     [
+      -4.3045,
+      0.2163
+     ]
+    ]
+   ]
+  }
+ ]
+}

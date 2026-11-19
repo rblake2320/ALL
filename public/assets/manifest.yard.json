@@ -1,0 +1,4372 @@
+{
+ "version": 1,
+ "level": "yard",
+ "doc": "docs/systems/yard-building.md",
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "models": [
+  {
+   "id": "birdbath_skull",
+   "level": "yard",
+   "object": "birdbath_skull",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/birdbath_skull.glb",
+   "bytes": 15940,
+   "sha256": "7592c702d1a86895d5f687f0b9d46adc1f1a03d3480a187573e489055be1509f",
+   "triangles": 382,
+   "size": [
+    0.72,
+    0.97,
+    0.72
+   ],
+   "bounds": {
+    "min": [
+     -0.36,
+     0.0,
+     -0.36
+    ],
+    "max": [
+     0.36,
+     0.97,
+     0.36
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "Moss",
+    "StoneLight",
+    "Water"
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "water"
+   ],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "decor",
+    "perch"
+   ],
+   "frames": {
+    "perch": {
+     "pos": [
+      0.0,
+      0.965,
+      -0.345
+     ],
+     "yaw": 180.0,
+     "kind": "feet"
+    },
+    "perch_2": {
+     "pos": [
+      -0.3,
+      0.965,
+      0.17
+     ],
+     "yaw": 60.0,
+     "kind": "feet"
+    },
+    "use": {
+     "pos": [
+      0.0,
+      0.0,
+      0.8
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.36,
+      0.0
+     ],
+     [
+      -0.3118,
+      -0.18
+     ],
+     [
+      -0.18,
+      -0.3118
+     ],
+     [
+      0.0,
+      -0.36
+     ],
+     [
+      0.18,
+      -0.3118
+     ],
+     [
+      0.3118,
+      -0.18
+     ],
+     [
+      0.36,
+      0.0
+     ],
+     [
+      0.3118,
+      0.18
+     ],
+     [
+      0.18,
+      0.3118
+     ],
+     [
+      0.0,
+      0.36
+     ],
+     [
+      -0.18,
+      0.3118
+     ],
+     [
+      -0.3118,
+      0.18
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "branches_fallen",
+   "level": "yard",
+   "object": "branches_fallen",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/branches_fallen.glb",
+   "bytes": 15268,
+   "sha256": "39483c1aafa53adb5e7db112d3ec2cae76d564af0e08be56232fbf5c827c2e16",
+   "triangles": 286,
+   "size": [
+    0.7976,
+    0.2491,
+    0.7521
+   ],
+   "bounds": {
+    "min": [
+     -0.4117,
+     0.0,
+     -0.363
+    ],
+    "max": [
+     0.3859,
+     0.2491,
+     0.3891
+    ]
+   },
+   "materials": [
+    "Bark",
+    "BarkLight",
+    "GrassDry"
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "decor",
+    "cheap",
+    "branches"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4117,
+      0.1541
+     ],
+     [
+      -0.3183,
+      -0.2362
+     ],
+     [
+      -0.3092,
+      -0.2554
+     ],
+     [
+      -0.2874,
+      -0.2809
+     ],
+     [
+      0.0491,
+      -0.363
+     ],
+     [
+      0.0647,
+      -0.3607
+     ],
+     [
+      0.3473,
+      -0.3155
+     ],
+     [
+      0.3609,
+      -0.3087
+     ],
+     [
+      0.3732,
+      -0.2899
+     ],
+     [
+      0.3859,
+      -0.0835
+     ],
+     [
+      0.3477,
+      0.2106
+     ],
+     [
+      0.3382,
+      0.2245
+     ],
+     [
+      0.3312,
+      0.2321
+     ],
+     [
+      0.191,
+      0.3578
+     ],
+     [
+      -0.0729,
+      0.387
+     ],
+     [
+      -0.0934,
+      0.3891
+     ],
+     [
+      -0.123,
+      0.3787
+     ],
+     [
+      -0.3882,
+      0.2129
+     ],
+     [
+      -0.3997,
+      0.1914
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_cabbage_s1",
+   "level": "yard",
+   "object": "crop_cabbage",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_cabbage_s1.glb",
+   "bytes": 11360,
+   "sha256": "7544a8d092ef56f13ca244a4d2864bc5e796010c0ba828ede1f5231b044333ce",
+   "triangles": 288,
+   "size": [
+    1.0934,
+    0.0935,
+    1.1071
+   ],
+   "bounds": {
+    "min": [
+     -0.5467,
+     0.0,
+     -0.57
+    ],
+    "max": [
+     0.5467,
+     0.0935,
+     0.5371
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdCabbageLeaf"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "cabbage",
+    "stage1"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.5467,
+      0.4489
+     ],
+     [
+      -0.5267,
+      -0.3911
+     ],
+     [
+      -0.5016,
+      -0.5011
+     ],
+     [
+      -0.4,
+      -0.55
+     ],
+     [
+      0.42,
+      -0.57
+     ],
+     [
+      0.5216,
+      -0.5211
+     ],
+     [
+      0.5467,
+      -0.4111
+     ],
+     [
+      0.5467,
+      0.4289
+     ],
+     [
+      0.4764,
+      0.5171
+     ],
+     [
+      -0.3636,
+      0.5371
+     ],
+     [
+      -0.4764,
+      0.5371
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_cabbage_s2",
+   "level": "yard",
+   "object": "crop_cabbage",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_cabbage_s2.glb",
+   "bytes": 33384,
+   "sha256": "ccd1ff0bf732190fda05cf30d35dde02cbc4d95f6379ff8bea1474a8e9f51ba7",
+   "triangles": 832,
+   "size": [
+    1.1449,
+    0.1504,
+    1.1577
+   ],
+   "bounds": {
+    "min": [
+     -0.571,
+     0.0,
+     -0.5918
+    ],
+    "max": [
+     0.5739,
+     0.1504,
+     0.5659
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdBrain",
+    "YdCabbageLeaf"
+   ],
+   "budget": 1000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "cabbage",
+    "stage2"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.571,
+      0.3897
+     ],
+     [
+      -0.5421,
+      -0.3607
+     ],
+     [
+      -0.5016,
+      -0.5011
+     ],
+     [
+      -0.4408,
+      -0.5685
+     ],
+     [
+      -0.3803,
+      -0.5727
+     ],
+     [
+      0.3942,
+      -0.5918
+     ],
+     [
+      0.5216,
+      -0.5211
+     ],
+     [
+      0.5739,
+      -0.4463
+     ],
+     [
+      0.5511,
+      0.4808
+     ],
+     [
+      0.5097,
+      0.5251
+     ],
+     [
+      -0.3708,
+      0.5659
+     ],
+     [
+      -0.4764,
+      0.5371
+     ],
+     [
+      -0.571,
+      0.4503
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_cabbage_s3",
+   "level": "yard",
+   "object": "crop_cabbage",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_cabbage_s3.glb",
+   "bytes": 40624,
+   "sha256": "29d31b18b5960c0a9e7f4dec505457d4b046afad96df5d585bdbdfe4d836114b",
+   "triangles": 1024,
+   "size": [
+    1.3424,
+    0.2306,
+    1.3514
+   ],
+   "bounds": {
+    "min": [
+     -0.6618,
+     0.0,
+     -0.7006
+    ],
+    "max": [
+     0.6806,
+     0.2306,
+     0.6508
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdBrain",
+    "YdCabbageLeaf"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "cabbage",
+    "stage3"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.6618,
+      -0.4184
+     ],
+     [
+      -0.6421,
+      -0.5196
+     ],
+     [
+      -0.4016,
+      -0.6818
+     ],
+     [
+      0.4444,
+      -0.7006
+     ],
+     [
+      0.6699,
+      -0.5181
+     ],
+     [
+      0.6806,
+      -0.4156
+     ],
+     [
+      0.6708,
+      0.475
+     ],
+     [
+      0.6224,
+      0.566
+     ],
+     [
+      0.345,
+      0.6508
+     ],
+     [
+      -0.565,
+      0.6379
+     ],
+     [
+      -0.6379,
+      0.565
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_mushroom_s1",
+   "level": "yard",
+   "object": "crop_mushroom",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_mushroom_s1.glb",
+   "bytes": 13956,
+   "sha256": "7e126d029b44f90bd8a4ab1e3949f8570022b731d315e0c9823f9c8a722ea53e",
+   "triangles": 336,
+   "size": [
+    1.1714,
+    0.066,
+    1.1832
+   ],
+   "bounds": {
+    "min": [
+     -0.5857,
+     0.0,
+     -0.61
+    ],
+    "max": [
+     0.5857,
+     0.066,
+     0.5732
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdShroomCap"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "mushroom",
+    "stage1"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.5857,
+      0.4578
+     ],
+     [
+      -0.5657,
+      -0.3822
+     ],
+     [
+      -0.5329,
+      -0.526
+     ],
+     [
+      -0.4,
+      -0.59
+     ],
+     [
+      0.42,
+      -0.61
+     ],
+     [
+      0.5529,
+      -0.546
+     ],
+     [
+      0.5857,
+      -0.4022
+     ],
+     [
+      0.5857,
+      0.4378
+     ],
+     [
+      0.4938,
+      0.5532
+     ],
+     [
+      -0.3462,
+      0.5732
+     ],
+     [
+      -0.4938,
+      0.5732
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_mushroom_s2",
+   "level": "yard",
+   "object": "crop_mushroom",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_mushroom_s2.glb",
+   "bytes": 33844,
+   "sha256": "3cca140e763387e0c3d766acc865d0f08338929fb5ff05d46c4d9214562c16f3",
+   "triangles": 960,
+   "size": [
+    1.1714,
+    0.123,
+    1.1832
+   ],
+   "bounds": {
+    "min": [
+     -0.5857,
+     0.0,
+     -0.61
+    ],
+    "max": [
+     0.5857,
+     0.123,
+     0.5732
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdShroomCap",
+    "YdShroomStem"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "mushroom",
+    "stage2"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.5857,
+      0.4578
+     ],
+     [
+      -0.5657,
+      -0.3822
+     ],
+     [
+      -0.5329,
+      -0.526
+     ],
+     [
+      -0.515,
+      -0.5417
+     ],
+     [
+      -0.4811,
+      -0.5687
+     ],
+     [
+      -0.4,
+      -0.59
+     ],
+     [
+      0.42,
+      -0.61
+     ],
+     [
+      0.5529,
+      -0.546
+     ],
+     [
+      0.5612,
+      -0.5291
+     ],
+     [
+      0.58,
+      -0.49
+     ],
+     [
+      0.5857,
+      -0.4022
+     ],
+     [
+      0.5857,
+      0.4378
+     ],
+     [
+      0.4938,
+      0.5532
+     ],
+     [
+      -0.3462,
+      0.5732
+     ],
+     [
+      -0.4938,
+      0.5732
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_mushroom_s3",
+   "level": "yard",
+   "object": "crop_mushroom",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_mushroom_s3.glb",
+   "bytes": 43172,
+   "sha256": "0f235e50fe9eeed77f8dee98689648945be307c58643abf3900e98e116616687",
+   "triangles": 1248,
+   "size": [
+    1.2007,
+    0.3458,
+    1.2034
+   ],
+   "bounds": {
+    "min": [
+     -0.5857,
+     0.0,
+     -0.61
+    ],
+    "max": [
+     0.615,
+     0.3458,
+     0.5934
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdShroomCap",
+    "YdShroomStem"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "mushroom",
+    "stage3"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.5857,
+      0.4578
+     ],
+     [
+      -0.5657,
+      -0.3822
+     ],
+     [
+      -0.5486,
+      -0.5482
+     ],
+     [
+      -0.5045,
+      -0.5834
+     ],
+     [
+      -0.4,
+      -0.59
+     ],
+     [
+      0.42,
+      -0.61
+     ],
+     [
+      0.5905,
+      -0.5408
+     ],
+     [
+      0.615,
+      -0.49
+     ],
+     [
+      0.615,
+      0.35
+     ],
+     [
+      0.5857,
+      0.4378
+     ],
+     [
+      0.4938,
+      0.5532
+     ],
+     [
+      0.3455,
+      0.5734
+     ],
+     [
+      -0.4945,
+      0.5934
+     ],
+     [
+      -0.5386,
+      0.5582
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_pumpkin_s1",
+   "level": "yard",
+   "object": "crop_pumpkin",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_pumpkin_s1.glb",
+   "bytes": 14208,
+   "sha256": "a3b22a140711ac32d445b5e688eb90e14f4ceb6d53e728d232c98872d2e71d15",
+   "triangles": 336,
+   "size": [
+    1.0934,
+    0.1233,
+    1.1071
+   ],
+   "bounds": {
+    "min": [
+     -0.5467,
+     0.0,
+     -0.57
+    ],
+    "max": [
+     0.5467,
+     0.1233,
+     0.5371
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdVine"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "pumpkin",
+    "stage1"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.5467,
+      0.4489
+     ],
+     [
+      -0.5267,
+      -0.3911
+     ],
+     [
+      -0.5016,
+      -0.5011
+     ],
+     [
+      -0.4,
+      -0.55
+     ],
+     [
+      0.42,
+      -0.57
+     ],
+     [
+      0.5216,
+      -0.5211
+     ],
+     [
+      0.5467,
+      -0.4111
+     ],
+     [
+      0.5467,
+      0.4289
+     ],
+     [
+      0.4764,
+      0.5171
+     ],
+     [
+      -0.3636,
+      0.5371
+     ],
+     [
+      -0.4764,
+      0.5371
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_pumpkin_s2",
+   "level": "yard",
+   "object": "crop_pumpkin",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_pumpkin_s2.glb",
+   "bytes": 25608,
+   "sha256": "e9aa4f82df4e9871555d27c2b5dcdcdbc0ac88aa89265205e02bb49b46ed170d",
+   "triangles": 772,
+   "size": [
+    1.1989,
+    0.1808,
+    1.134
+   ],
+   "bounds": {
+    "min": [
+     -0.6123,
+     0.0,
+     -0.57
+    ],
+    "max": [
+     0.5866,
+     0.1808,
+     0.564
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdPumpkinGreen",
+    "YdVine"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "pumpkin",
+    "stage2"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.6123,
+      -0.0567
+     ],
+     [
+      -0.5016,
+      -0.5011
+     ],
+     [
+      -0.4,
+      -0.55
+     ],
+     [
+      0.42,
+      -0.57
+     ],
+     [
+      0.5216,
+      -0.5211
+     ],
+     [
+      0.5467,
+      -0.4111
+     ],
+     [
+      0.5866,
+      0.3184
+     ],
+     [
+      0.5866,
+      0.3616
+     ],
+     [
+      0.5467,
+      0.4289
+     ],
+     [
+      0.4764,
+      0.5171
+     ],
+     [
+      -0.0502,
+      0.564
+     ],
+     [
+      -0.4764,
+      0.5371
+     ],
+     [
+      -0.5467,
+      0.4489
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crop_pumpkin_s3",
+   "level": "yard",
+   "object": "crop_pumpkin",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/crop_pumpkin_s3.glb",
+   "bytes": 32748,
+   "sha256": "ac431e22357359aa7e1397070369e9684eed0c7838fd33bf71dad2b408585156",
+   "triangles": 928,
+   "size": [
+    1.2045,
+    0.3836,
+    1.21
+   ],
+   "bounds": {
+    "min": [
+     -0.6123,
+     0.0,
+     -0.64
+    ],
+    "max": [
+     0.5922,
+     0.3836,
+     0.57
+    ]
+   },
+   "materials": [
+    "SoilClod",
+    "YdBerry",
+    "YdPumpkin",
+    "YdPumpkinGreen",
+    "YdPumpkinPale",
+    "YdVine"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "crop",
+    "pumpkin",
+    "stage3"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.6123,
+      -0.0567
+     ],
+     [
+      -0.5016,
+      -0.5011
+     ],
+     [
+      -0.4,
+      -0.55
+     ],
+     [
+      -0.36,
+      -0.56
+     ],
+     [
+      0.34,
+      -0.64
+     ],
+     [
+      0.4458,
+      -0.6056
+     ],
+     [
+      0.5216,
+      -0.5211
+     ],
+     [
+      0.5467,
+      -0.4111
+     ],
+     [
+      0.5922,
+      0.2506
+     ],
+     [
+      0.5922,
+      0.3494
+     ],
+     [
+      0.5467,
+      0.4289
+     ],
+     [
+      0.4764,
+      0.5171
+     ],
+     [
+      -0.0502,
+      0.564
+     ],
+     [
+      -0.31,
+      0.57
+     ],
+     [
+      -0.49,
+      0.57
+     ],
+     [
+      -0.5902,
+      0.4218
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "doghouse_crypt",
+   "level": "yard",
+   "object": "doghouse_crypt",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/doghouse_crypt.glb",
+   "bytes": 23808,
+   "sha256": "2041cdc7063a06654a88a0f1ccca1fa834c65751909230e30dd15264a563e93b",
+   "triangles": 373,
+   "size": [
+    0.9368,
+    1.0613,
+    1.0
+   ],
+   "bounds": {
+    "min": [
+     -0.4418,
+     0.0,
+     -0.5
+    ],
+    "max": [
+     0.495,
+     1.0613,
+     0.5
+    ]
+   },
+   "materials": [
+    "Bone",
+    "DecalInk",
+    "Paint",
+    "Straw",
+    "YdBrain",
+    "YdPlank",
+    "YdPlankDark",
+    "YdShingle",
+    "YdTin"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "doghouse",
+    "pet"
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      1.425
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "lie": {
+     "pos": [
+      0.0,
+      0.06,
+      0.035
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    },
+    "pet": {
+     "pos": [
+      0.0,
+      0.06,
+      0.035
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4418,
+      -0.5
+     ],
+     [
+      0.4418,
+      -0.5
+     ],
+     [
+      0.495,
+      0.2
+     ],
+     [
+      0.4418,
+      0.5
+     ],
+     [
+      -0.4418,
+      0.5
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "flowerbed_lily",
+   "level": "yard",
+   "object": "flowerbed_lily",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/flowerbed_lily.glb",
+   "bytes": 48416,
+   "sha256": "f41022ae95ff434f2dc039531c0a31d6e0e6a0c1b9a717e59acdcb7004794cea",
+   "triangles": 1156,
+   "size": [
+    1.8079,
+    0.5793,
+    0.7914
+   ],
+   "bounds": {
+    "min": [
+     -0.9065,
+     0.0,
+     -0.37
+    ],
+    "max": [
+     0.9014,
+     0.5793,
+     0.4214
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Soil",
+    "YdCabbageLeaf",
+    "YdPetalOrange",
+    "YdPetalWhite",
+    "YdVine"
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "flowerbed",
+    "decor"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.9065,
+      -0.24
+     ],
+     [
+      -0.8882,
+      -0.2963
+     ],
+     [
+      -0.85,
+      -0.34
+     ],
+     [
+      -0.82,
+      -0.37
+     ],
+     [
+      0.82,
+      -0.37
+     ],
+     [
+      0.85,
+      -0.34
+     ],
+     [
+      0.9014,
+      -0.2748
+     ],
+     [
+      0.9014,
+      0.2748
+     ],
+     [
+      0.8333,
+      0.3918
+     ],
+     [
+      0.8118,
+      0.4214
+     ],
+     [
+      -0.8148,
+      0.4214
+     ],
+     [
+      -0.8363,
+      0.3918
+     ],
+     [
+      -0.8882,
+      0.2963
+     ],
+     [
+      -0.9065,
+      0.24
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "flowerbed_marigold",
+   "level": "yard",
+   "object": "flowerbed_marigold",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/flowerbed_marigold.glb",
+   "bytes": 53628,
+   "sha256": "094e3250f11b70d6ea35b361f4d21af31e52b5b25da0f12bb720747aa36fcc5c",
+   "triangles": 1318,
+   "size": [
+    1.84,
+    0.2882,
+    0.87
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.435
+    ],
+    "max": [
+     0.92,
+     0.2882,
+     0.435
+    ]
+   },
+   "materials": [
+    "Soil",
+    "YdPetalOrange",
+    "YdPlankDark",
+    "YdPumpkin",
+    "YdVine"
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "flowerbed",
+    "decor"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.92,
+      -0.429
+     ],
+     [
+      -0.914,
+      -0.435
+     ],
+     [
+      0.914,
+      -0.435
+     ],
+     [
+      0.92,
+      -0.429
+     ],
+     [
+      0.92,
+      0.429
+     ],
+     [
+      0.914,
+      0.435
+     ],
+     [
+      -0.914,
+      0.435
+     ],
+     [
+      -0.92,
+      0.429
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "flowerbed_nightshade",
+   "level": "yard",
+   "object": "flowerbed_nightshade",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/flowerbed_nightshade.glb",
+   "bytes": 52392,
+   "sha256": "c33155bda5d9715c8be8a52ed264a4e777b9f46106b96523f803f120005188b6",
+   "triangles": 1192,
+   "size": [
+    1.9084,
+    0.3208,
+    0.9415
+   ],
+   "bounds": {
+    "min": [
+     -0.943,
+     0.0,
+     -0.4805
+    ],
+    "max": [
+     0.9654,
+     0.3208,
+     0.461
+    ]
+   },
+   "materials": [
+    "GyStone",
+    "GyStoneDark",
+    "Soil",
+    "YdBerry",
+    "YdLeafAppleDark",
+    "YdPetalPurple",
+    "YdVine"
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "flowerbed",
+    "decor"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.943,
+      0.0
+     ],
+     [
+      -0.9337,
+      -0.0428
+     ],
+     [
+      -0.85,
+      -0.34
+     ],
+     [
+      -0.82,
+      -0.37
+     ],
+     [
+      -0.1506,
+      -0.4805
+     ],
+     [
+      0.226,
+      -0.4654
+     ],
+     [
+      0.82,
+      -0.37
+     ],
+     [
+      0.85,
+      -0.34
+     ],
+     [
+      0.9654,
+      0.0
+     ],
+     [
+      0.85,
+      0.34
+     ],
+     [
+      0.82,
+      0.37
+     ],
+     [
+      0.2234,
+      0.459
+     ],
+     [
+      0.1586,
+      0.461
+     ],
+     [
+      -0.2221,
+      0.456
+     ],
+     [
+      -0.82,
+      0.37
+     ],
+     [
+      -0.85,
+      0.34
+     ],
+     [
+      -0.9345,
+      0.0433
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "garden_plot",
+   "level": "yard",
+   "object": "garden_plot",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/garden_plot.glb",
+   "bytes": 23916,
+   "sha256": "e39f13bd238f8a574816fadb02a0200ea339c0d5449f2bbb452b08654f8a71b6",
+   "triangles": 648,
+   "size": [
+    1.9,
+    0.45,
+    1.9
+   ],
+   "bounds": {
+    "min": [
+     -0.95,
+     0.0,
+     -0.95
+    ],
+    "max": [
+     0.95,
+     0.45,
+     0.95
+    ]
+   },
+   "materials": [
+    "DecalInk",
+    "Soil",
+    "SoilDark",
+    "YdPlank",
+    "YdPlankDark"
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "garden",
+    "plot"
+   ],
+   "frames": {
+    "crop": {
+     "pos": [
+      0.0,
+      0.17,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "hands": {
+     "pos": [
+      0.0,
+      0.3,
+      0.55
+     ],
+     "yaw": 180.0,
+     "kind": "hands"
+    },
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      1.45
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.95,
+      -0.942
+     ],
+     [
+      -0.942,
+      -0.95
+     ],
+     [
+      0.942,
+      -0.95
+     ],
+     [
+      0.95,
+      -0.942
+     ],
+     [
+      0.95,
+      0.942
+     ],
+     [
+      0.942,
+      0.95
+     ],
+     [
+      -0.942,
+      0.95
+     ],
+     [
+      -0.95,
+      0.942
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "gazebo_wilted",
+   "level": "yard",
+   "object": "gazebo_wilted",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/gazebo_wilted.glb",
+   "bytes": 53536,
+   "sha256": "a9a72cc369f7d91e4963ffa3871a47efb26e9347268b0ca320cbf75ff13ec4e0",
+   "triangles": 1244,
+   "size": [
+    2.96,
+    3.62,
+    2.6156
+   ],
+   "bounds": {
+    "min": [
+     -1.48,
+     0.0,
+     -1.2817
+    ],
+    "max": [
+     1.48,
+     3.62,
+     1.3339
+    ]
+   },
+   "materials": [
+    "IronOld",
+    "Paint",
+    "YdIvy",
+    "YdPlank",
+    "YdPlankDark",
+    "YdShingle",
+    "YdShingleMoss"
+   ],
+   "budget": 5500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "shelter",
+    "seat"
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      1.99
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "sit0": {
+     "pos": [
+      0.6472,
+      0.6,
+      -0.3736
+     ],
+     "yaw": -60.0,
+     "kind": "seat"
+    },
+    "sit1": {
+     "pos": [
+      -0.6472,
+      0.6,
+      -0.3736
+     ],
+     "yaw": 60.0,
+     "kind": "seat"
+    },
+    "sit2": {
+     "pos": [
+      -0.6472,
+      0.6,
+      0.3736
+     ],
+     "yaw": 120.0,
+     "kind": "seat"
+    },
+    "sit3": {
+     "pos": [
+      0.6472,
+      0.6,
+      0.3736
+     ],
+     "yaw": -120.0,
+     "kind": "seat"
+    }
+   },
+   "tileFootprint": [
+    3,
+    3
+   ],
+   "outline": [
+    [
+     [
+      -1.48,
+      0.0
+     ],
+     [
+      -0.74,
+      -1.2817
+     ],
+     [
+      0.74,
+      -1.2817
+     ],
+     [
+      1.48,
+      0.0
+     ],
+     [
+      0.74,
+      1.2817
+     ],
+     [
+      0.45,
+      1.3339
+     ],
+     [
+      -0.45,
+      1.3339
+     ],
+     [
+      -0.74,
+      1.2817
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "greenhouse_grim",
+   "level": "yard",
+   "object": "greenhouse_grim",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/greenhouse_grim.glb",
+   "bytes": 59300,
+   "sha256": "01a123f503e27b05288242f0e67a0c29bcbccb7eea88d83b400763f5de472073",
+   "triangles": 1086,
+   "size": [
+    1.8905,
+    2.3886,
+    2.72
+   ],
+   "bounds": {
+    "min": [
+     -0.9434,
+     0.0,
+     -1.23
+    ],
+    "max": [
+     0.9471,
+     2.3886,
+     1.49
+    ]
+   },
+   "materials": [
+    "GyStone",
+    "GyStoneDark",
+    "IronOld",
+    "Paint",
+    "SoilDark",
+    "YdGlassHouse",
+    "YdIvy",
+    "YdPlank",
+    "YdPlankDark",
+    "YdPot",
+    "YdShingleMoss"
+   ],
+   "budget": 4000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "door"
+   ],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "greenhouse",
+    "garden"
+   ],
+   "frames": {
+    "door": {
+     "pos": [
+      0.0,
+      0.0,
+      2.03
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "hands": {
+     "pos": [
+      -0.62,
+      0.98,
+      -0.1
+     ],
+     "yaw": -90.0,
+     "kind": "hands"
+    },
+    "inside": {
+     "pos": [
+      0.0,
+      0.36,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "tileFootprint": [
+    2,
+    3
+   ],
+   "outline": [
+    [
+     [
+      -0.9434,
+      -1.23
+     ],
+     [
+      0.9434,
+      -1.23
+     ],
+     [
+      0.9471,
+      0.1433
+     ],
+     [
+      0.9434,
+      1.23
+     ],
+     [
+      0.43,
+      1.49
+     ],
+     [
+      -0.43,
+      1.49
+     ],
+     [
+      -0.9434,
+      1.23
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "grill_bbq",
+   "level": "yard",
+   "object": "grill_bbq",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/grill_bbq.glb",
+   "bytes": 30884,
+   "sha256": "11b0b40349d4fb9fd4ff9b8ff5b51397394a1ff6f23534c90a71dfca113277ee",
+   "triangles": 718,
+   "size": [
+    0.8504,
+    0.9003,
+    0.6535
+   ],
+   "bounds": {
+    "min": [
+     -0.3554,
+     0.0,
+     -0.3535
+    ],
+    "max": [
+     0.495,
+     0.9003,
+     0.3
+    ]
+   },
+   "materials": [
+    "Charcoal",
+    "Chrome",
+    "Rubber",
+    "WoodDark",
+    "YdCoal",
+    "YdEnamel",
+    "YdPlank"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame",
+    "lid"
+   ],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "grill",
+    "cook"
+   ],
+   "frames": {
+    "cook": {
+     "pos": [
+      0.0,
+      0.0,
+      0.8
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "hands": {
+     "pos": [
+      0.0,
+      0.88,
+      0.3
+     ],
+     "yaw": 180.0,
+     "kind": "hands"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.3554,
+      0.1394
+     ],
+     [
+      -0.305,
+      -0.0636
+     ],
+     [
+      -0.2641,
+      -0.1838
+     ],
+     [
+      -0.1525,
+      -0.2717
+     ],
+     [
+      0.0,
+      -0.3535
+     ],
+     [
+      0.1525,
+      -0.2717
+     ],
+     [
+      0.491,
+      -0.06
+     ],
+     [
+      0.495,
+      -0.056
+     ],
+     [
+      0.495,
+      0.156
+     ],
+     [
+      0.491,
+      0.16
+     ],
+     [
+      0.2854,
+      0.2606
+     ],
+     [
+      0.0,
+      0.3
+     ],
+     [
+      -0.2854,
+      0.2606
+     ],
+     [
+      -0.2957,
+      0.2429
+     ],
+     [
+      -0.3452,
+      0.1571
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "picnic_table",
+   "level": "yard",
+   "object": "picnic_table",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/picnic_table.glb",
+   "bytes": 22520,
+   "sha256": "13a891e90954608046b4d699e99571a88bc33a327a0f6618ac4a70bdf1234b33",
+   "triangles": 562,
+   "size": [
+    1.9298,
+    0.766,
+    2.5
+   ],
+   "bounds": {
+    "min": [
+     -0.9649,
+     0.0,
+     -1.25
+    ],
+    "max": [
+     0.9649,
+     0.766,
+     1.25
+    ]
+   },
+   "materials": [
+    "DecalInk",
+    "Moss",
+    "YdPlank",
+    "YdPlankDark"
+   ],
+   "budget": 2000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "seat",
+    "table",
+    "diningTable"
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      1.9
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "n0": {
+     "pos": [
+      -0.78,
+      0.46,
+      0.55
+     ],
+     "yaw": 90.0,
+     "kind": "seat"
+    },
+    "n1": {
+     "pos": [
+      -0.78,
+      0.46,
+      -0.55
+     ],
+     "yaw": 90.0,
+     "kind": "seat"
+    },
+    "s0": {
+     "pos": [
+      0.78,
+      0.46,
+      0.55
+     ],
+     "yaw": -90.0,
+     "kind": "seat"
+    },
+    "s1": {
+     "pos": [
+      0.78,
+      0.46,
+      -0.55
+     ],
+     "yaw": -90.0,
+     "kind": "seat"
+    }
+   },
+   "tileFootprint": [
+    2,
+    3
+   ],
+   "outline": [
+    [
+     [
+      -0.9649,
+      -0.85
+     ],
+     [
+      -0.95,
+      -1.244
+     ],
+     [
+      -0.944,
+      -1.25
+     ],
+     [
+      0.944,
+      -1.25
+     ],
+     [
+      0.95,
+      -1.244
+     ],
+     [
+      0.9649,
+      -0.85
+     ],
+     [
+      0.9649,
+      0.85
+     ],
+     [
+      0.95,
+      1.244
+     ],
+     [
+      0.944,
+      1.25
+     ],
+     [
+      -0.944,
+      1.25
+     ],
+     [
+      -0.95,
+      1.244
+     ],
+     [
+      -0.9649,
+      0.85
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pond_yard",
+   "level": "yard",
+   "object": "pond_yard",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/pond_yard.glb",
+   "bytes": 26652,
+   "sha256": "6c3b0a711a189fca3edb210e7c1129f83805b3c5a3fc23bc860ce0f3f811b474",
+   "triangles": 508,
+   "size": [
+    1.8834,
+    0.2746,
+    1.8125
+   ],
+   "bounds": {
+    "min": [
+     -0.9194,
+     0.0,
+     -0.8706
+    ],
+    "max": [
+     0.964,
+     0.2746,
+     0.9419
+    ]
+   },
+   "materials": [
+    "GyStone",
+    "GyStoneDark",
+    "LilyFlower",
+    "Moss",
+    "PondWater",
+    "Reed",
+    "SoilDark",
+    "YdLily"
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "water"
+   ],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "pond",
+    "water",
+    "decor"
+   ],
+   "frames": {
+    "view": {
+     "pos": [
+      0.0,
+      0.0,
+      1.5
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.9194,
+      -0.0529
+     ],
+     [
+      -0.906,
+      -0.126
+     ],
+     [
+      -0.7759,
+      -0.4975
+     ],
+     [
+      -0.5193,
+      -0.7669
+     ],
+     [
+      -0.4475,
+      -0.7979
+     ],
+     [
+      -0.1011,
+      -0.8611
+     ],
+     [
+      -0.0173,
+      -0.8706
+     ],
+     [
+      0.5036,
+      -0.784
+     ],
+     [
+      0.5704,
+      -0.7359
+     ],
+     [
+      0.8829,
+      -0.4456
+     ],
+     [
+      0.9279,
+      -0.3584
+     ],
+     [
+      0.964,
+      -0.0047
+     ],
+     [
+      0.8364,
+      0.438
+     ],
+     [
+      0.806,
+      0.5134
+     ],
+     [
+      0.5703,
+      0.7235
+     ],
+     [
+      0.491,
+      0.785
+     ],
+     [
+      0.0659,
+      0.9419
+     ],
+     [
+      -0.0394,
+      0.9311
+     ],
+     [
+      -0.4329,
+      0.8341
+     ],
+     [
+      -0.4961,
+      0.777
+     ],
+     [
+      -0.793,
+      0.4869
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rocks_small",
+   "level": "yard",
+   "object": "rocks_small",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/rocks_small.glb",
+   "bytes": 8232,
+   "sha256": "3948668b4aeeedfac8867a1f71bed95556f53704139d683f705034bb2bc107d5",
+   "triangles": 160,
+   "size": [
+    0.7968,
+    0.2902,
+    0.6327
+   ],
+   "bounds": {
+    "min": [
+     -0.3795,
+     0.0,
+     -0.3537
+    ],
+    "max": [
+     0.4173,
+     0.2902,
+     0.279
+    ]
+   },
+   "materials": [
+    "GyStone",
+    "GyStoneDark",
+    "Moss"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "decor",
+    "cheap",
+    "rocks"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.3795,
+      0.18
+     ],
+     [
+      -0.227,
+      -0.3227
+     ],
+     [
+      -0.1697,
+      -0.3461
+     ],
+     [
+      -0.1074,
+      -0.3537
+     ],
+     [
+      0.1842,
+      -0.2513
+     ],
+     [
+      0.264,
+      -0.1115
+     ],
+     [
+      0.4173,
+      0.16
+     ],
+     [
+      0.3775,
+      0.2251
+     ],
+     [
+      0.3112,
+      0.2656
+     ],
+     [
+      0.2252,
+      0.2748
+     ],
+     [
+      -0.2886,
+      0.279
+     ],
+     [
+      -0.3429,
+      0.2362
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "shed_tool",
+   "level": "yard",
+   "object": "shed_tool",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/shed_tool.glb",
+   "bytes": 33000,
+   "sha256": "307f577a17d5702f5d37051ae0a26c7a4463341209430d780faf1344611ae9bd",
+   "triangles": 506,
+   "size": [
+    1.9547,
+    2.3682,
+    1.8
+   ],
+   "bounds": {
+    "min": [
+     -1.003,
+     0.0,
+     -0.9
+    ],
+    "max": [
+     0.9517,
+     2.3682,
+     0.9
+    ]
+   },
+   "materials": [
+    "IronOld",
+    "Moss",
+    "Paint",
+    "Rust",
+    "WindowDark",
+    "Wood",
+    "YdPlank",
+    "YdPlankDark"
+   ],
+   "budget": 3000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "door"
+   ],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "shed",
+    "storage"
+   ],
+   "frames": {
+    "door": {
+     "pos": [
+      0.0,
+      0.0,
+      1.48
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "hands": {
+     "pos": [
+      0.3,
+      0.95,
+      0.88
+     ],
+     "yaw": 180.0,
+     "kind": "hands"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -1.003,
+      -0.25
+     ],
+     [
+      -0.995,
+      -0.4
+     ],
+     [
+      -0.9517,
+      -0.9
+     ],
+     [
+      0.9517,
+      -0.9
+     ],
+     [
+      0.9517,
+      0.9
+     ],
+     [
+      -0.9517,
+      0.9
+     ],
+     [
+      -0.9895,
+      0.38
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "stump_rotten",
+   "level": "yard",
+   "object": "stump_rotten",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/stump_rotten.glb",
+   "bytes": 15540,
+   "sha256": "1522a072043a7a09075d2be1ba59f8527a365f9fa4d6b4b18ff68cde793f5cae",
+   "triangles": 328,
+   "size": [
+    0.8729,
+    0.51,
+    0.8357
+   ],
+   "bounds": {
+    "min": [
+     -0.435,
+     0.0,
+     -0.4564
+    ],
+    "max": [
+     0.4379,
+     0.51,
+     0.3793
+    ]
+   },
+   "materials": [
+    "Bark",
+    "BarkLight",
+    "ByMushroom",
+    "Moss"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "decor",
+    "cheap",
+    "stump"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.435,
+      -0.1311
+     ],
+     [
+      -0.4301,
+      -0.153
+     ],
+     [
+      -0.4195,
+      -0.164
+     ],
+     [
+      -0.0098,
+      -0.4542
+     ],
+     [
+      0.0126,
+      -0.4564
+     ],
+     [
+      0.0264,
+      -0.4497
+     ],
+     [
+      0.429,
+      -0.1496
+     ],
+     [
+      0.4379,
+      -0.129
+     ],
+     [
+      0.4358,
+      -0.1139
+     ],
+     [
+      0.2749,
+      0.3617
+     ],
+     [
+      0.258,
+      0.3766
+     ],
+     [
+      0.243,
+      0.3793
+     ],
+     [
+      -0.2591,
+      0.3732
+     ],
+     [
+      -0.2785,
+      0.3618
+     ],
+     [
+      -0.2856,
+      0.3483
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "swing_creaky",
+   "level": "yard",
+   "object": "swing_creaky",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/yard/swing_creaky.glb",
+   "bytes": 22096,
+   "sha256": "30a06b185ea903e6e544315ccaa2ca2e0369d94c1c8850a9b4283d4d4a252ab0",
+   "triangles": 424,
+   "size": [
+    1.8606,
+    2.2146,
+    0.9486
+   ],
+   "bounds": {
+    "min": [
+     -0.9303,
+     0.0,
+     -0.4743
+    ],
+    "max": [
+     0.9303,
+     2.2146,
+     0.4743
+    ]
+   },
+   "materials": [
+    "IronOld",
+    "Paint",
+    "Rust",
+    "YdPlank"
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "swing0",
+    "swing1"
+   ],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "swing",
+    "play"
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      1.1
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "seat_0": {
+     "pos": [
+      -0.42,
+      0.46,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_1": {
+     "pos": [
+      0.42,
+      0.52,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    }
+   },
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      0.9303,
+      -0.1
+     ],
+     [
+      0.9303,
+      0.1
+     ],
+     [
+      -0.9303,
+      0.1
+     ],
+     [
+      -0.9303,
+      -0.1
+     ]
+    ],
+    [
+     [
+      0.8297,
+      -0.4743
+     ],
+     [
+      0.9,
+      -0.4743
+     ],
+     [
+      0.9303,
+      -0.457
+     ],
+     [
+      0.9303,
+      0.457
+     ],
+     [
+      0.9,
+      0.4743
+     ],
+     [
+      0.8297,
+      0.4743
+     ]
+    ],
+    [
+     [
+      -0.9303,
+      -0.457
+     ],
+     [
+      -0.9,
+      -0.4743
+     ],
+     [
+      -0.86,
+      -0.4743
+     ],
+     [
+      -0.86,
+      0.4743
+     ],
+     [
+      -0.9,
+      0.4743
+     ],
+     [
+      -0.9303,
+      0.457
+     ]
+    ],
+    [
+     [
+      0.2131,
+      -0.1
+     ],
+     [
+      0.2131,
+      -0.094
+     ],
+     [
+      -0.176,
+      -0.094
+     ],
+     [
+      -0.176,
+      -0.1
+     ]
+    ],
+    [
+     [
+      -0.664,
+      -0.1
+     ],
+     [
+      -0.664,
+      -0.094
+     ],
+     [
+      -0.8782,
+      -0.094
+     ],
+     [
+      -0.8782,
+      -0.1
+     ]
+    ],
+    [
+     [
+      0.8672,
+      -0.1
+     ],
+     [
+      0.8672,
+      -0.094
+     ],
+     [
+      0.62,
+      -0.094
+     ],
+     [
+      0.62,
+      -0.1
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_bloodmaple_s1",
+   "level": "yard",
+   "object": "tree_bloodmaple",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_bloodmaple_s1.glb",
+   "bytes": 13760,
+   "sha256": "c242e2cb06515ebcca0bb61e01ee211eb4107e4eb8bedebd04d7b77a5ddd7ed6",
+   "triangles": 194,
+   "size": [
+    0.39,
+    0.8416,
+    0.3802
+   ],
+   "bounds": {
+    "min": [
+     -0.195,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.195,
+     0.8416,
+     0.1802
+    ]
+   },
+   "materials": [
+    "BarkLight",
+    "SoilClod",
+    "Straw",
+    "YdMaple",
+    "YdMapleDark",
+    "YdPlank"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "bloodmaple",
+    "stage1"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.195,
+      0.0445
+     ],
+     [
+      -0.1564,
+      -0.1247
+     ],
+     [
+      0.0,
+      -0.2
+     ],
+     [
+      0.1007,
+      -0.1673
+     ],
+     [
+      0.1564,
+      -0.1247
+     ],
+     [
+      0.195,
+      0.0445
+     ],
+     [
+      0.0868,
+      0.1802
+     ],
+     [
+      -0.0868,
+      0.1802
+     ],
+     [
+      -0.1392,
+      0.1222
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_bloodmaple_s2",
+   "level": "yard",
+   "object": "tree_bloodmaple",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_bloodmaple_s2.glb",
+   "bytes": 15168,
+   "sha256": "c413de5518544f7e46abf2886029000741c3f1730fad798615a4499a8520855f",
+   "triangles": 460,
+   "size": [
+    0.917,
+    2.3034,
+    0.9147
+   ],
+   "bounds": {
+    "min": [
+     -0.4736,
+     0.0,
+     -0.4391
+    ],
+    "max": [
+     0.4434,
+     2.3034,
+     0.4756
+    ]
+   },
+   "materials": [
+    "BarkLight",
+    "SoilClod",
+    "YdMaple",
+    "YdMapleDark"
+   ],
+   "budget": 2200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "bloodmaple",
+    "stage2"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4736,
+      -0.0489
+     ],
+     [
+      -0.4724,
+      -0.1394
+     ],
+     [
+      -0.356,
+      -0.272
+     ],
+     [
+      -0.0384,
+      -0.3881
+     ],
+     [
+      0.1393,
+      -0.4391
+     ],
+     [
+      0.316,
+      -0.3866
+     ],
+     [
+      0.3892,
+      -0.2247
+     ],
+     [
+      0.4157,
+      -0.1435
+     ],
+     [
+      0.4434,
+      -0.0447
+     ],
+     [
+      0.2907,
+      0.364
+     ],
+     [
+      0.2146,
+      0.4126
+     ],
+     [
+      0.1372,
+      0.4467
+     ],
+     [
+      0.0546,
+      0.4756
+     ],
+     [
+      -0.0256,
+      0.4393
+     ],
+     [
+      -0.099,
+      0.4039
+     ],
+     [
+      -0.245,
+      0.2898
+     ],
+     [
+      -0.3672,
+      0.1895
+     ],
+     [
+      -0.4325,
+      0.1244
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_bloodmaple_s3",
+   "level": "yard",
+   "object": "tree_bloodmaple",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_bloodmaple_s3.glb",
+   "bytes": 26528,
+   "sha256": "446d053513804fc8789b2a32758f26c0a8043f938f18a43665b8bc908a2b21c5",
+   "triangles": 784,
+   "size": [
+    1.742,
+    3.9748,
+    1.7965
+   ],
+   "bounds": {
+    "min": [
+     -0.8397,
+     0.0,
+     -0.8754
+    ],
+    "max": [
+     0.9023,
+     3.9748,
+     0.9211
+    ]
+   },
+   "materials": [
+    "Bark",
+    "BarkLight",
+    "YdMaple",
+    "YdMapleDark"
+   ],
+   "budget": 3500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "bloodmaple",
+    "stage3"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      1.45
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.8397,
+      0.1047
+     ],
+     [
+      -0.8309,
+      -0.2787
+     ],
+     [
+      -0.8048,
+      -0.4469
+     ],
+     [
+      -0.7532,
+      -0.6174
+     ],
+     [
+      -0.6375,
+      -0.7612
+     ],
+     [
+      -0.2869,
+      -0.8754
+     ],
+     [
+      0.2787,
+      -0.8397
+     ],
+     [
+      0.6123,
+      -0.7461
+     ],
+     [
+      0.7229,
+      -0.6097
+     ],
+     [
+      0.7893,
+      -0.4529
+     ],
+     [
+      0.8114,
+      -0.2869
+     ],
+     [
+      0.9023,
+      0.4786
+     ],
+     [
+      0.6591,
+      0.7908
+     ],
+     [
+      0.2869,
+      0.9211
+     ],
+     [
+      -0.2787,
+      0.8935
+     ],
+     [
+      -0.5985,
+      0.7271
+     ],
+     [
+      -0.728,
+      0.6134
+     ],
+     [
+      -0.8177,
+      0.4621
+     ],
+     [
+      -0.8287,
+      0.2869
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_bonebirch_s1",
+   "level": "yard",
+   "object": "tree_bonebirch",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_bonebirch_s1.glb",
+   "bytes": 14832,
+   "sha256": "304989f4c56f2f115bad7e457ebe2269628243d7f3100f550c1ad1490a58d6e2",
+   "triangles": 214,
+   "size": [
+    0.4331,
+    0.9483,
+    0.3802
+   ],
+   "bounds": {
+    "min": [
+     -0.195,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.2381,
+     0.9483,
+     0.1802
+    ]
+   },
+   "materials": [
+    "Bark",
+    "SoilClod",
+    "Straw",
+    "YdBirch",
+    "YdBirchLeaf",
+    "YdPlank"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "bonebirch",
+    "stage1"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.195,
+      0.0445
+     ],
+     [
+      -0.1564,
+      -0.1247
+     ],
+     [
+      0.0,
+      -0.2
+     ],
+     [
+      0.1564,
+      -0.1247
+     ],
+     [
+      0.2228,
+      -0.0436
+     ],
+     [
+      0.2381,
+      0.0
+     ],
+     [
+      0.2177,
+      0.0399
+     ],
+     [
+      0.0868,
+      0.1802
+     ],
+     [
+      -0.0868,
+      0.1802
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_bonebirch_s2",
+   "level": "yard",
+   "object": "tree_bonebirch",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_bonebirch_s2.glb",
+   "bytes": 20820,
+   "sha256": "9e155735033166acab6a0ab2fb73e5ddfbed8e900a1b1d553b853aa903185088",
+   "triangles": 402,
+   "size": [
+    0.7852,
+    2.5024,
+    0.6771
+   ],
+   "bounds": {
+    "min": [
+     -0.3066,
+     0.0,
+     -0.3915
+    ],
+    "max": [
+     0.4786,
+     2.5024,
+     0.2856
+    ]
+   },
+   "materials": [
+    "Bark",
+    "SoilClod",
+    "YdBirch",
+    "YdBirchLeaf"
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "bonebirch",
+    "stage2"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.3066,
+      0.1211
+     ],
+     [
+      -0.2345,
+      -0.187
+     ],
+     [
+      -0.1563,
+      -0.3329
+     ],
+     [
+      -0.0637,
+      -0.3915
+     ],
+     [
+      0.038,
+      -0.3746
+     ],
+     [
+      0.1177,
+      -0.3195
+     ],
+     [
+      0.3653,
+      -0.1394
+     ],
+     [
+      0.4374,
+      -0.0853
+     ],
+     [
+      0.4786,
+      0.0
+     ],
+     [
+      0.45,
+      0.0945
+     ],
+     [
+      0.3385,
+      0.2124
+     ],
+     [
+      0.2564,
+      0.2614
+     ],
+     [
+      0.1581,
+      0.2795
+     ],
+     [
+      -0.1705,
+      0.2856
+     ],
+     [
+      -0.245,
+      0.2141
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_bonebirch_s3",
+   "level": "yard",
+   "object": "tree_bonebirch",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_bonebirch_s3.glb",
+   "bytes": 31808,
+   "sha256": "fde679b06663b42b810a4c36104891faaecb547db62d41bb1fca46760a64c7e4",
+   "triangles": 692,
+   "size": [
+    1.6868,
+    4.6781,
+    1.5127
+   ],
+   "bounds": {
+    "min": [
+     -0.7458,
+     0.0,
+     -0.8187
+    ],
+    "max": [
+     0.941,
+     4.6781,
+     0.694
+    ]
+   },
+   "materials": [
+    "Bark",
+    "YdBirch",
+    "YdBirchLeaf"
+   ],
+   "budget": 3000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "bonebirch",
+    "stage3"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      1.45
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.7458,
+      -0.2292
+     ],
+     [
+      -0.725,
+      -0.4394
+     ],
+     [
+      -0.105,
+      -0.7489
+     ],
+     [
+      0.0806,
+      -0.8187
+     ],
+     [
+      0.2471,
+      -0.7956
+     ],
+     [
+      0.4595,
+      -0.763
+     ],
+     [
+      0.9285,
+      -0.2079
+     ],
+     [
+      0.941,
+      0.0
+     ],
+     [
+      0.9068,
+      0.1922
+     ],
+     [
+      0.4284,
+      0.6607
+     ],
+     [
+      -0.3649,
+      0.694
+     ],
+     [
+      -0.5276,
+      0.5782
+     ],
+     [
+      -0.6986,
+      -0.0381
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_gravepine_s1",
+   "level": "yard",
+   "object": "tree_gravepine",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_gravepine_s1.glb",
+   "bytes": 9980,
+   "sha256": "1c37d38d446b01a821468e38d5473a580a329e6d35470bbe1d2f0bed19b23f75",
+   "triangles": 160,
+   "size": [
+    0.4,
+    0.9765,
+    0.4
+   ],
+   "bounds": {
+    "min": [
+     -0.2,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.2,
+     0.9765,
+     0.2
+    ]
+   },
+   "materials": [
+    "Bark",
+    "SoilClod",
+    "YdPine",
+    "YdPineDark"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "gravepine",
+    "stage1"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.2,
+      0.0
+     ],
+     [
+      -0.1564,
+      -0.1247
+     ],
+     [
+      -0.1414,
+      -0.1414
+     ],
+     [
+      0.0,
+      -0.2
+     ],
+     [
+      0.1414,
+      -0.1414
+     ],
+     [
+      0.1564,
+      -0.1247
+     ],
+     [
+      0.2,
+      0.0
+     ],
+     [
+      0.195,
+      0.0445
+     ],
+     [
+      0.1414,
+      0.1414
+     ],
+     [
+      0.0868,
+      0.1802
+     ],
+     [
+      0.0,
+      0.2
+     ],
+     [
+      -0.0868,
+      0.1802
+     ],
+     [
+      -0.1414,
+      0.1414
+     ],
+     [
+      -0.195,
+      0.0445
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_gravepine_s2",
+   "level": "yard",
+   "object": "tree_gravepine",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_gravepine_s2.glb",
+   "bytes": 13784,
+   "sha256": "abb3d50236bf47c2e4ab75d0dd73d96095ff289eaa775e3deba894cf10b8d461",
+   "triangles": 272,
+   "size": [
+    1.0,
+    2.6795,
+    1.0
+   ],
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.5
+    ],
+    "max": [
+     0.5,
+     2.6795,
+     0.5
+    ]
+   },
+   "materials": [
+    "Bark",
+    "SoilClod",
+    "YdPine",
+    "YdPineDark"
+   ],
+   "budget": 1000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "gravepine",
+    "stage2"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.5,
+      0.0
+     ],
+     [
+      -0.3536,
+      -0.3536
+     ],
+     [
+      0.0,
+      -0.5
+     ],
+     [
+      0.3536,
+      -0.3536
+     ],
+     [
+      0.5,
+      0.0
+     ],
+     [
+      0.3536,
+      0.3536
+     ],
+     [
+      0.0,
+      0.5
+     ],
+     [
+      -0.3536,
+      0.3536
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_gravepine_s3",
+   "level": "yard",
+   "object": "tree_gravepine",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_gravepine_s3.glb",
+   "bytes": 23824,
+   "sha256": "a17b4fcb7a964ca5d2dbacb9aec880d35631a82f74a01b9643d435d802782c4f",
+   "triangles": 580,
+   "size": [
+    1.84,
+    5.1829,
+    1.84
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.92
+    ],
+    "max": [
+     0.92,
+     5.1829,
+     0.92
+    ]
+   },
+   "materials": [
+    "Bark",
+    "BarkLight",
+    "YdPine",
+    "YdPineDark"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "gravepine",
+    "stage3"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      1.45
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.92,
+      0.0
+     ],
+     [
+      -0.6505,
+      -0.6505
+     ],
+     [
+      0.0,
+      -0.92
+     ],
+     [
+      0.6505,
+      -0.6505
+     ],
+     [
+      0.92,
+      0.0
+     ],
+     [
+      0.6505,
+      0.6505
+     ],
+     [
+      0.0,
+      0.92
+     ],
+     [
+      -0.6505,
+      0.6505
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_rotapple_s1",
+   "level": "yard",
+   "object": "tree_rotapple",
+   "variant": "s1",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_rotapple_s1.glb",
+   "bytes": 12240,
+   "sha256": "29ae3000bd4f63bf153053d07ee8e845d2deb5e777caec84c90d8aaf9fbeaad4",
+   "triangles": 162,
+   "size": [
+    0.39,
+    0.853,
+    0.3802
+   ],
+   "bounds": {
+    "min": [
+     -0.195,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.195,
+     0.853,
+     0.1802
+    ]
+   },
+   "materials": [
+    "Bark",
+    "SoilClod",
+    "Straw",
+    "YdLeafApple",
+    "YdLeafAppleDark",
+    "YdPlank"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "rotapple",
+    "stage1"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.195,
+      0.0445
+     ],
+     [
+      -0.1564,
+      -0.1247
+     ],
+     [
+      0.0,
+      -0.2
+     ],
+     [
+      0.1564,
+      -0.1247
+     ],
+     [
+      0.195,
+      0.0445
+     ],
+     [
+      0.0868,
+      0.1802
+     ],
+     [
+      -0.0868,
+      0.1802
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_rotapple_s2",
+   "level": "yard",
+   "object": "tree_rotapple",
+   "variant": "s2",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_rotapple_s2.glb",
+   "bytes": 19936,
+   "sha256": "96d529f624a2b319d392ea97c557f8b242290cbf0c17a3d7a17e4308a4f109c5",
+   "triangles": 582,
+   "size": [
+    0.8421,
+    2.187,
+    0.8193
+   ],
+   "bounds": {
+    "min": [
+     -0.4027,
+     0.0,
+     -0.3772
+    ],
+    "max": [
+     0.4394,
+     2.187,
+     0.4421
+    ]
+   },
+   "materials": [
+    "Bark",
+    "SoilClod",
+    "YdApple",
+    "YdLeafApple",
+    "YdLeafAppleDark"
+   ],
+   "budget": 2200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "rotapple",
+    "stage2"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      0.95
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4027,
+      -0.0711
+     ],
+     [
+      -0.4,
+      -0.1645
+     ],
+     [
+      -0.307,
+      -0.3388
+     ],
+     [
+      -0.1125,
+      -0.3772
+     ],
+     [
+      0.163,
+      -0.3282
+     ],
+     [
+      0.2395,
+      -0.3
+     ],
+     [
+      0.3088,
+      -0.2652
+     ],
+     [
+      0.4394,
+      -0.1544
+     ],
+     [
+      0.4272,
+      0.0213
+     ],
+     [
+      0.2454,
+      0.315
+     ],
+     [
+      0.1617,
+      0.3663
+     ],
+     [
+      0.0956,
+      0.4046
+     ],
+     [
+      0.0196,
+      0.4421
+     ],
+     [
+      -0.0595,
+      0.4145
+     ],
+     [
+      -0.1217,
+      0.3653
+     ],
+     [
+      -0.2501,
+      0.2584
+     ],
+     [
+      -0.3117,
+      0.2031
+     ],
+     [
+      -0.3872,
+      0.0182
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_rotapple_s3",
+   "level": "yard",
+   "object": "tree_rotapple",
+   "variant": "s3",
+   "kind": "floor",
+   "file": "models/levels/yard/tree_rotapple_s3.glb",
+   "bytes": 35896,
+   "sha256": "79011234bee03419344460e8408a665adabdf421036ea7514e44407b5fd9e5fd",
+   "triangles": 1082,
+   "size": [
+    1.7556,
+    4.2428,
+    1.8076
+   ],
+   "bounds": {
+    "min": [
+     -0.7774,
+     0.0,
+     -0.8211
+    ],
+    "max": [
+     0.9782,
+     4.2428,
+     0.9865
+    ]
+   },
+   "materials": [
+    "Bark",
+    "YdApple",
+    "YdLeafApple",
+    "YdLeafAppleDark"
+   ],
+   "budget": 4500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "outdoorOnly",
+    "tree",
+    "rotapple",
+    "stage3"
+   ],
+   "frames": {
+    "tend": {
+     "pos": [
+      0.0,
+      0.0,
+      1.45
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   },
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.7774,
+      0.0612
+     ],
+     [
+      -0.6572,
+      -0.4809
+     ],
+     [
+      -0.4189,
+      -0.7362
+     ],
+     [
+      -0.2607,
+      -0.7877
+     ],
+     [
+      -0.1025,
+      -0.8211
+     ],
+     [
+      0.064,
+      -0.8128
+     ],
+     [
+      0.7385,
+      -0.5722
+     ],
+     [
+      0.8928,
+      -0.2959
+     ],
+     [
+      0.9782,
+      0.0338
+     ],
+     [
+      0.6226,
+      0.8675
+     ],
+     [
+      0.2725,
+      0.9865
+     ],
+     [
+      -0.0794,
+      0.8699
+     ],
+     [
+      -0.5286,
+      0.6022
+     ],
+     [
+      -0.6479,
+      0.5131
+     ],
+     [
+      -0.7088,
+      0.3764
+     ]
+    ]
+   ]
+  }
+ ]
+}

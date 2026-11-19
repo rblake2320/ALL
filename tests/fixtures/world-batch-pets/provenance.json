@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "f4ae021ab652703dce7ce77fb8f6a484ec6eb8fc",
+  "sourceTree": "7d712b80f3652fd1701b1a992f8e4a5a3717365b",
+  "schemaVersion": 2,
+  "originalAdoptionCap": 4,
+  "petIds": [
+    "p1",
+    "p2",
+    "p3",
+    "p4"
+  ],
+  "tick": 13920,
+  "commandCount": 44,
+  "fixturePlacementCount": 24,
+  "producer": "tests/unit/pets/legacyPetCap.record.ts",
+  "producerSha256": "a9d3e2b6012310d218ac06700f3e0cf008ed0e9907193f4f2a2c7d9ab5079809",
+  "command": "PETS_FIXTURE_OUT=<out> npx vitest run tests/unit/pets/pets-four.record.test.ts --pool=threads --maxWorkers=1 --minWorkers=1",
+  "result": "1 passed / 0 failed / exit 0",
+  "scope": "sol-world-pet-fixture-f4ae021",
+  "invocation": "1947f7025f044a549069f5b83da55e5c",
+  "memoryPeakBytes": 1208250368,
+  "memoryMaxAndOomEvents": 0,
+  "rawEvidence": "<private-evidence-archive>",
+  "policy": "Frozen actual SaveManager export after four real paid/trust/cooldown/adoption command sequences. Fixture actor positions recorded separately; no clock/trust/nextId editing. Never regenerate with the cap-three implementation.",
+  "files": {
+    "pets-four-v2.alsave": "8eaf63cbd1ec923a92015b2e8891fcfd79132cba6da19f5944a67c1fd722f69e",
+    "pets-four-v2-world.json": "e5fe3e4459b99a2f675211b4484e55b4c2e1fcaf855377d4e0afdedd2bfa1e66"
+  }
+}

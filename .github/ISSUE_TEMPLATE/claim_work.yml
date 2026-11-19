@@ -1,0 +1,33 @@
+name: Claim work
+description: Ask to take a work item (W-nnn) or a starter task. One owner per item.
+title: "Claim: W-"
+labels: [claim, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "Check the item is still `todo` on docs/WORKBOARD.md. See docs/community/STARTER_TASKS.md for good first items."
+  - type: input
+    id: item
+    attributes: { label: Work item, description: "W-nnn, or the starter task's name.", placeholder: W-081 }
+    validations: { required: true }
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who does the work
+      options: [Me, An AI agent I run and review, Both]
+    validations: { required: true }
+  - type: textarea
+    id: plan
+    attributes: { label: Plan, description: "What you'll change, which files or folders, and how you'll test it." }
+    validations: { required: true }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: I have read CONTRIBUTING.md and docs/community/GETTING_STARTED.md
+          required: true
+        - label: I will post the exact test commands and counts in the pull request
+          required: true
+        - label: I am responsible for every line I or my agent submit
+          required: true

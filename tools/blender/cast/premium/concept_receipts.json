@@ -1,0 +1,147 @@
+{
+  "note": "Concept-image receipts for the premium bodies, extracted 2026-11-12 from the originating Claude Code session's own Meshy MCP calls (session ad4c9246, 2026-11-11 UTC). Each body: the Meshy text-to-image task that succeeded, the Meshy image object the session downloaded to each local file (signed query strings removed), and the downloaded file's SHA-256. Refused tasks are listed with the provider's error code.",
+  "bodies": [
+    {
+      "id": "sexton",
+      "sourceId": "undertaker",
+      "meshyTask": "01a1ccdc-cf2f-746b-af33-ff767717d1e1",
+      "model": "gpt-image-2-5-sunburst",
+      "downloadedBy": "curl of the task's image_urls (session Bash, 2026-11-11T23:08:14Z)",
+      "views": [
+        {
+          "file": "undertaker/concept/gpt_0.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1ccdd-d625-7390-a2be-094266f32e45_part_0.png",
+          "sha256": "67b42c1dc9ddb2a0fa1489830a6a2f49f3f7f73b94b0b92b567dcb2b4f532f60"
+        },
+        {
+          "file": "undertaker/concept/gpt_1.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1ccdd-d625-7390-a2be-094266f32e45_part_1.png",
+          "sha256": "41e3ad4d863b443fb1d00e711bc4f33f6645f034a21b55e6aa5877040e0926fe"
+        },
+        {
+          "file": "undertaker/concept/gpt_2.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1ccdd-d625-7390-a2be-094266f32e45_part_2.png",
+          "sha256": "5f6b113682d161ca1b789e0091ab2bf965ef45c33436c6f2d170acb7df55dd8c"
+        }
+      ],
+      "refusedEarlier": []
+    },
+    {
+      "id": "lowside",
+      "sourceId": "biker",
+      "meshyTask": "01a1cce5-5c22-7579-8633-2cbe63e27d2d",
+      "model": "gpt-image-2-5-sunburst",
+      "downloadedBy": "meshy_download_model (2026-11-11T23:16:32Z)",
+      "views": [
+        {
+          "file": "biker/concept/view_0.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce5-da4d-742f-bb06-7db6c7549a96_part_0.png",
+          "sha256": "72186939d982e0826f2f6ac1a7496860047c7a4b0f35c57417b0ed18c58b46ba"
+        },
+        {
+          "file": "biker/concept/view_1.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce5-da4d-742f-bb06-7db6c7549a96_part_1.png",
+          "sha256": "f7fecc78f7bbbe48ad9e64f0681e5a40cd52ab038d5ffe62531ce5ba5285c82f"
+        },
+        {
+          "file": "biker/concept/view_2.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce5-da4d-742f-bb06-7db6c7549a96_part_2.png",
+          "sha256": "9fba249bbc84b12d3376230be61f4842301ae29125f5c37345de2b2b6238eea0"
+        }
+      ],
+      "refusedEarlier": [
+        {
+          "task_id": "01a1cce3-ac60-7210-beef-20ca4b3731b6",
+          "status": "FAILED",
+          "error_code": "provider_content_refused"
+        }
+      ]
+    },
+    {
+      "id": "waitress",
+      "sourceId": "waitress",
+      "meshyTask": "01a1cce5-5f04-700b-9af0-245ea3f914ed",
+      "model": "gpt-image-2-5-sunburst",
+      "downloadedBy": "meshy_download_model (2026-11-11T23:16:52Z)",
+      "views": [
+        {
+          "file": "waitress/concept/view_0.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce6-450d-75e7-bee9-abb9504fa227_part_0.png",
+          "sha256": "2728bfa50908ff1928d3d96b2df5c115ca892346c30c0967cca7f8d1db718018"
+        },
+        {
+          "file": "waitress/concept/view_1.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce6-450d-75e7-bee9-abb9504fa227_part_1.png",
+          "sha256": "ebc1cb0a5590928dd990788df51ce36a2938580109c208ac90bb84bfa6f0be38"
+        },
+        {
+          "file": "waitress/concept/view_2.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce6-450d-75e7-bee9-abb9504fa227_part_2.png",
+          "sha256": "c5bdb3cdb68b566746059538b8fcb8a8da3690a42b836d46a7d9fe7005f4baf3"
+        }
+      ],
+      "refusedEarlier": [
+        {
+          "task_id": "01a1cce3-aeff-70c1-85c0-467f40bc411e",
+          "status": "FAILED"
+        }
+      ]
+    },
+    {
+      "id": "patient",
+      "sourceId": "patient",
+      "meshyTask": "01a1cce5-61c0-754f-9541-dfd84e7302f4",
+      "model": "gpt-image-2-5-sunburst",
+      "downloadedBy": "meshy_download_model (2026-11-11T23:16:54Z)",
+      "views": [
+        {
+          "file": "patient/concept/view_0.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce6-6448-7086-b96c-557eb3be34ce_part_0.png",
+          "sha256": "1dcc7a67671d7324ca1acad6c76485e2e6ab9a961980bdc390105bf8ffce1672"
+        },
+        {
+          "file": "patient/concept/view_1.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce6-6448-7086-b96c-557eb3be34ce_part_1.png",
+          "sha256": "8ca65e14e7c86d9cdbfb5397e026a3d2fa747ad04e70f49daeaedba21254e0d2"
+        },
+        {
+          "file": "patient/concept/view_2.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce6-6448-7086-b96c-557eb3be34ce_part_2.png",
+          "sha256": "cde9d1802f84cd6dff16c10e80f5b8b5b90f2d6824fe3c573ab128d3a09b6e2c"
+        }
+      ],
+      "refusedEarlier": [
+        {
+          "task_id": "01a1cce3-b1ea-7147-9a73-82e071a62bfb",
+          "status": "FAILED",
+          "error_code": "provider_content_refused"
+        }
+      ]
+    },
+    {
+      "id": "fisherman",
+      "sourceId": "fisherman",
+      "meshyTask": "01a1cce3-b491-7589-a6b2-c15d04eacddd",
+      "model": "gpt-image-2-5-sunburst",
+      "downloadedBy": "meshy_download_model (2026-11-11T23:15:19Z)",
+      "views": [
+        {
+          "file": "fisherman/concept/view_0.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce4-b87f-74b8-811e-958dd6c76809_part_0.png",
+          "sha256": "910287ad22bb000334017a81f031fd45c48b2da1c283d942c1cafd3fbad80c80"
+        },
+        {
+          "file": "fisherman/concept/view_1.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce4-b87f-74b8-811e-958dd6c76809_part_1.png",
+          "sha256": "61373e9a4f5810c1a29b570900678e83d69c165c4cb0973721c1227f000bd73a"
+        },
+        {
+          "file": "fisherman/concept/view_2.png",
+          "meshyObject": "assets.meshy.ai/.../uploads/multi_view_image_01a1cce4-b87f-74b8-811e-958dd6c76809_part_2.png",
+          "sha256": "a0a573ef20db712b4bbd9594d521125439a04d0200f2be41a01b6aedcf57eca1"
+        }
+      ],
+      "refusedEarlier": []
+    }
+  ]
+}

@@ -1,0 +1,605 @@
+/*
+ * Phone / compact layout (W-114, W-118). Applies only while lib/phoneLayout.ts's rule holds — a coarse pointer with a
+ * short side ≤ 500 CSS px, or (W-118) a compact window of any pointer: unzoomed width < 800 or height < 450 — which the
+ * Hud mirrors onto `<html data-phone data-orient>` and `.hud[data-phone][data-orient]`.
+ * Nothing here can reach the desktop layout: every rule is scoped by those attributes.
+ *
+ *  - a readable root size: theme/base.css floors 1rem at 10 px × UI scale on exactly these windows (W-118 moved the
+ *    floor there from here, so the menus and dialogs outside the HUD get it too)
+ *  - every tappable HUD control ≥ 44 × 44 CSS px (Apple HIG)
+ *  - no ellipsis on the live HUD's names / needs / mood / activity / queue labels: they wrap instead
+ *  - safe-area insets (notches, home indicator) on every edge
+ *  - portrait: two-row top bar, household column top-left, full-width agent panel at the bottom with the action queue
+ *    above it; landscape: one-row top bar, household column + agent panel down the left, queue beside the panel
+ */
+html[data-phone] {
+  --ph-safe-t: env(safe-area-inset-top, 0px);
+  --ph-safe-r: env(safe-area-inset-right, 0px);
+  --ph-safe-b: env(safe-area-inset-bottom, 0px);
+  --ph-safe-l: env(safe-area-inset-left, 0px);
+  --ph-g: 8px;
+  --ph-target: 44px;
+}
+
+.hud[data-phone] {
+  --hud-gap: var(--ph-g);
+  --ph-hh-w: 64px;
+  --hud-agent-w: 34rem;
+  --hud-agent-body-h: 15rem;
+}
+
+/* ── touch targets ── */
+.hud[data-phone] :is(button, [role='button'], [role='tab'], [role='radio'], [role^='menuitem'], [role='switch'], [role='checkbox'], summary) {
+  min-width: var(--ph-target);
+  min-height: var(--ph-target);
+}
+.hud[data-phone] .ui-iconbtn {
+  --ib-size: var(--ph-target);
+}
+.hud[data-phone] :is(input:not([type='checkbox']):not([type='radio']), select) {
+  min-height: var(--ph-target);
+}
+/* there is no hover on touch: hover-only reveals stay visible */
+.hud[data-phone] .ui-btn {
+  --btn-h: var(--ph-target);
+}
+
+/* ══════════════════════ top bar ══════════════════════ */
+.hud-topbar--phone {
+  top: calc(var(--ph-safe-t) + var(--ph-g));
+  left: calc(var(--ph-safe-l) + var(--ph-g));
+  right: calc(var(--ph-safe-r) + var(--ph-g));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 6px;
+}
+.hud-topbar--phone > .ui-panel {
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  border-radius: var(--r-lg);
+}
+.hud-topbar__break {
+  display: none;
+}
+.hud[data-orient='portrait'] .hud-topbar__break {
+  display: block;
+  flex-basis: 100%;
+  height: 0;
+}
+.hud[data-orient='landscape'] .hud-sys--phone {
+  order: 5;
+}
+
+/* household plaque: the name button's hit area runs down behind the funds (which pass taps through) */
+.hud-topbar--phone .hud-plaque {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  align-items: end;
+  column-gap: 2px;
+  min-width: 0;
+  max-width: none;
+  padding: 0 2px 0 0;
+}
+.hud[data-orient='portrait'] .hud-topbar--phone .hud-plaque {
+  flex: 1 1 auto;
+}
+.hud-topbar--phone .hud-plaque__row {
+  display: contents;
+}
+.hud-topbar--phone .hud-plaque__name {
+  grid-area: 1 / 1 / 2 / 2;
+  align-self: start;
+  display: block;
+  min-height: var(--ph-target);
+  margin-bottom: -1.625rem;
+  padding: 5px 10px 1.625rem;
+  font-size: var(--fs-md);
+  line-height: 1.15;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+.hud-topbar--phone .hud-funds {
+  grid-area: 2 / 1 / 3 / 2;
+  z-index: 3;
+  padding: 0 10px 5px;
+  pointer-events: none;
+}
+.hud-topbar--phone .hud-funds__coin {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+.hud-topbar--phone .hud-funds__amount {
+  font-size: var(--fs-lg);
+}
+.hud-topbar--phone .hud-bills {
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: center;
+  justify-content: center;
+  height: var(--ph-target);
+  padding: 0 8px;
+}
+
+/* clock pill (no dial on phone) */
+.hud-clock--phone {
+  justify-content: center;
+  min-height: var(--ph-target);
+  padding: 0 10px !important;
+}
+.hud-clock--phone .hud-clock__time {
+  padding: 0;
+}
+.hud-clock--phone .hud-clock__labels {
+  min-width: 0;
+}
+.hud-clock--phone .hud-clock__label {
+  font-size: var(--fs-md);
+}
+
+/* speed */
+.hud-speedbox .hud-speed {
+  padding: 0;
+  gap: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.hud-speedbox .hud-speed__btn {
+  width: var(--ph-target);
+  height: var(--ph-target);
+}
+
+/* Live / Buy / Build keep their labels: icon over a small caption */
+.hud-modes--phone {
+  margin-left: auto;
+}
+.hud-modes--phone .ui-seg {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  gap: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.hud-modes--phone .ui-seg__thumb {
+  top: 0;
+  bottom: 0;
+}
+.hud-topbar--phone[data-tier] .hud-modes--phone .ui-seg__opt {
+  flex-direction: column;
+  gap: 1px;
+  min-width: 46px;
+  padding: 3px 4px 2px;
+  font-size: var(--fs-2xs);
+  line-height: 1.05;
+}
+
+/* More (overflow) + Game menu */
+.hud-sys--phone {
+  position: relative;
+  gap: 0;
+}
+.hud-sys--phone .ui-iconbtn,
+.hud-topbar__more {
+  position: relative;
+  z-index: 2;
+}
+.hud-topbar__more.is-open {
+  color: var(--c-toxic-hi);
+}
+.hud-topbar__overflow {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: var(--z-popover);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: max-content;
+  max-width: calc(100vw - var(--ph-safe-l) - var(--ph-safe-r) - 2 * var(--ph-g));
+  max-height: calc(100vh - var(--hud-topbar-b, 120px) - var(--ph-safe-b) - 2 * var(--ph-g));
+  overflow-y: auto;
+  padding: 6px;
+  animation: ui-pop-in var(--dur-med) var(--ease-spring) both;
+}
+.hud-overflow__row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 2px;
+}
+.hud-overflow__row + .hud-overflow__row {
+  padding-top: 2px;
+  border-top: 1px solid var(--border-faint);
+}
+.hud-overflow__item {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--ph-target);
+  padding: 4px 10px;
+  border-radius: var(--r-sm);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  text-align: left;
+}
+.hud-overflow__item.is-tile {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  min-width: 4.75rem;
+  font-size: var(--fs-2xs);
+  text-align: center;
+}
+.hud-overflow__item:hover,
+.hud-overflow__item:focus-visible {
+  background: var(--bg-hover);
+}
+.hud-overflow__item.is-on,
+.hud-overflow__item[aria-pressed='true'] {
+  color: var(--c-toxic-hi);
+  background: rgba(159, 232, 112, 0.12);
+}
+.hud-overflow__item.is-failed {
+  color: #ffb4a3;
+}
+.hud-overflow__item[aria-disabled='true'] {
+  opacity: 0.6;
+}
+.hud-overflow__label {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* ══════════════════════ household column ══════════════════════ */
+.hud[data-phone] .hud-household {
+  top: calc(var(--hud-topbar-b, 120px) + var(--ph-g));
+  left: calc(var(--ph-safe-l) + var(--ph-g));
+  width: var(--ph-hh-w);
+  padding: 4px;
+}
+.hud[data-phone] .hud-household__list {
+  gap: 4px;
+}
+.hud[data-phone] .hud-member {
+  width: 100%;
+  padding: 4px 2px;
+}
+.hud[data-phone] .hud-member__name {
+  max-width: 100%;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* ══════════════════════ agent panel ══════════════════════ */
+.hud[data-phone] .hud-agent {
+  bottom: calc(var(--ph-safe-b) + var(--ph-g));
+  max-height: calc(100% - var(--hud-topbar-b, 120px) - var(--ph-safe-b) - 2 * var(--ph-g));
+}
+.hud[data-phone][data-orient='portrait'] .hud-agent {
+  left: calc(var(--ph-safe-l) + var(--ph-g));
+  right: calc(var(--ph-safe-r) + var(--ph-g));
+  width: auto;
+}
+.hud[data-phone][data-orient='landscape'] .hud-agent {
+  left: calc(var(--ph-safe-l) + 2 * var(--ph-g) + var(--ph-hh-w));
+  width: min(var(--hud-agent-w), calc(100% - var(--ph-safe-l) - var(--ph-safe-r) - 3 * var(--ph-g) - var(--ph-hh-w)));
+}
+.hud[data-phone] .hud-agent__head {
+  gap: 8px;
+  padding: 8px 8px 6px 10px;
+}
+.hud[data-phone] .hud-agent__portrait {
+  display: grid;
+  place-items: center;
+}
+.hud[data-phone] .hud-agent__name,
+.hud[data-phone] .hud-agent__activity,
+.hud[data-phone] .hud-agent__activity > span,
+.hud[data-phone] .hud-moodchip > span {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+.hud[data-phone] .hud-agent__name {
+  font-size: var(--fs-lg);
+}
+.hud[data-phone] .hud-agent__activity {
+  align-items: flex-start;
+}
+.hud[data-phone] .hud-moodchip {
+  height: auto;
+  min-height: 1.5rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 1.15;
+}
+.hud[data-phone] .hud-agent__tabs {
+  margin: 0 8px;
+}
+.hud[data-phone] .hud-agent__tabs .ui-tab {
+  padding: 0;
+}
+/* W-118 / batch 1106: the agent panel has 9 icon tabs (Jobs joined with W-124). Nine 44 px targets need ~412 px, so
+   on a narrower portrait window the strip scrolls sideways instead of shrinking the targets below 44 px or pushing
+   the last tab ("Info") off the panel. Every tab stays 44 x 44; the right edge fades while more tabs are off to the
+   side; the selected tab is scrolled into view by AgentPanel. Where the row has room nothing scrolls (the 22 px
+   edge fade and end gap stay: this file may hold phone-scoped selectors only, so no width media query). */
+.hud[data-phone][data-orient='portrait'] .hud-agent__tabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+}
+.hud[data-phone][data-orient='portrait'] .hud-agent__tabs::-webkit-scrollbar {
+  display: none;
+}
+.hud[data-phone][data-orient='portrait'] .hud-agent__tabs .ui-tab {
+  flex: 1 0 var(--ph-target);
+  min-width: var(--ph-target);
+  scroll-snap-align: start;
+}
+/* the strip's last tab clears the fade */
+.hud[data-phone][data-orient='portrait'] .hud-agent__tabs .ui-tab:last-child {
+  margin-right: 22px;
+}
+/* W-118: a short portrait window (320×480) — keep the agent panel clear of the Bones / Quests row under the top
+   bar, and let its body scroll sooner */
+.hud[data-phone][data-orient='portrait'] .hud-agent {
+  max-height: calc(100% - var(--hud-topbar-b, 120px) - var(--ph-safe-b) - 2 * var(--ph-g) - 56px);
+}
+.hud[data-phone][data-orient='portrait'] .hud-agent__body {
+  max-height: min(var(--hud-agent-body-h), max(8rem, calc(100vh - 360px)));
+}
+.hud[data-phone] .hud-agent__body {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
+  max-height: var(--hud-agent-body-h);
+  padding: 8px 10px 10px;
+}
+.hud[data-phone][data-orient='landscape'] .hud-agent__body {
+  max-height: 13rem;
+}
+/* needs: icon + the full label (it wraps rather than being cut) */
+.hud[data-phone] .hud-needs {
+  gap: 10px 12px;
+  padding-top: 2px;
+}
+.hud[data-phone] .ui-need__label {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+  line-height: 1.1;
+}
+.hud[data-phone] .hud-feeling {
+  height: auto;
+}
+.hud[data-phone] .hud-feeling__label,
+.hud[data-phone] .hud-contrib__label,
+.hud[data-phone] .hud-moodlet__label,
+.hud[data-phone] .hud-moodlet__time,
+.hud[data-phone] .hud-skill__name {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+
+/* ══════════════════════ action queue ══════════════════════ */
+.hud[data-phone] .hud-queue {
+  right: calc(var(--ph-safe-r) + var(--ph-g));
+  grid-template-columns: minmax(0, 1fr) minmax(0, max-content) minmax(0, 1fr);
+}
+.hud[data-phone][data-orient='portrait'] .hud-queue {
+  left: calc(var(--ph-safe-l) + var(--ph-g));
+  bottom: var(--q-bottom, calc(var(--ph-safe-b) + 18rem));
+}
+.hud[data-phone][data-orient='landscape'] .hud-queue {
+  left: var(--q-left-px, calc(var(--ph-safe-l) + 3 * var(--ph-g) + var(--ph-hh-w) + var(--hud-agent-w)));
+  bottom: calc(var(--ph-safe-b) + var(--ph-g));
+}
+.hud[data-phone] .hud-queue__list {
+  gap: 6px;
+  padding: 4px 6px 4px 4px;
+}
+.hud[data-phone] .hud-queue__idle {
+  white-space: normal;
+}
+.hud[data-phone] .hud-qactive__ring {
+  width: var(--ph-target);
+  height: var(--ph-target);
+}
+/* the active label wraps onto a second line instead of "Watch TV — CHOSEN ON…" */
+.hud[data-phone] .hud-qactive__text {
+  max-width: 16rem;
+}
+.hud[data-phone] .hud-qactive__label,
+.hud[data-phone] .hud-qactive__sub {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+}
+.hud[data-phone] .hud-qitem__tile {
+  width: var(--ph-target);
+  height: var(--ph-target);
+}
+/* queued tiles have no hover on touch: the whole tile is the cancel target, the × badge marks it */
+.hud[data-phone] .hud-qcancel.is-mini {
+  inset: 0;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  transform: none;
+  background: transparent;
+  border-color: transparent;
+}
+.hud[data-phone] .hud-qcancel.is-mini > svg {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--c-plum-700);
+  border: 1px solid var(--border-strong);
+}
+.hud[data-phone] .hud-queue__more {
+  min-width: var(--ph-target);
+  height: var(--ph-target);
+}
+
+/* ══════════════════════ tutorial tip ══════════════════════ */
+.hud[data-phone] .hud-hint-bubble {
+  width: min(20rem, calc(100vw - var(--ph-safe-l) - var(--ph-safe-r) - 2 * var(--ph-g)));
+  max-width: calc(100vw - var(--ph-safe-l) - var(--ph-safe-r) - 2 * var(--ph-g));
+  padding: 10px 12px;
+}
+.hud[data-phone] .hud-hint-bubble__actions {
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.hud[data-phone] .hud-hint-bubble__actions .ui-btn {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: var(--ph-target);
+  white-space: normal;
+}
+.hud[data-phone] .hud-hint-bubble__actions .ui-btn__label {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  line-height: 1.15;
+}
+
+/* ══════════════════════ toasts ══════════════════════ */
+/* W-118: in portrait the full-width agent panel rises from the bottom; on a short window (320×480) a toast under the
+   top bar landed on it. The stack now ends above the panel's top edge (--hud-agent-t, published by AgentPanel) and
+   scrolls if it needs more room. */
+.hud[data-phone][data-orient='portrait'] .hud-toasts {
+  max-height: max(0px, calc(var(--hud-agent-t, 100vh) - var(--hud-topbar-b, 120px) - 2 * var(--ph-g)));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.hud[data-phone][data-orient='portrait'] .hud-toast {
+  flex-shrink: 0;
+}
+/* landscape: the agent panel runs down the left, so the stack keeps to the right of it */
+.hud[data-phone][data-orient='landscape'] .hud-toasts {
+  width: min(26rem, max(12rem, calc(100% - var(--hud-agent-r, 0px) - var(--ph-safe-r) - 2 * var(--ph-g))));
+}
+.hud[data-phone] .hud-toasts {
+  top: calc(var(--hud-topbar-b, 120px) + var(--ph-g));
+  right: calc(var(--ph-safe-r) + var(--ph-g));
+  width: min(26rem, calc(100% - var(--ph-safe-l) - var(--ph-safe-r) - 2 * var(--ph-g)));
+}
+.hud[data-phone] .hud-toast .ui-toast__text {
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
+
+/* ══════════════════════ Buy / Build catalogs (W-118) ══════════════════════
+ * Portrait: the desktop row (grid | 23.5rem detail card) left the grid 0 px wide on a 390 px phone and cut the
+ * Seating chip and the colour swatches. Stack instead: search on its own row, the item grid (scrolls) above a
+ * compact detail card, swatches wrap. Landscape keeps the row; both use the full width inside the safe area. */
+.hud[data-phone] :is(.hud-buy, .hud-build) {
+  left: calc(var(--ph-safe-l) + var(--ph-g));
+  right: calc(var(--ph-safe-r) + var(--ph-g));
+  bottom: calc(var(--ph-safe-b) + var(--ph-g));
+  max-width: none;
+  margin-inline: 0;
+}
+.hud[data-phone] .hud-detail__swatches {
+  flex-wrap: wrap;
+  overflow: visible;
+}
+.hud[data-phone] .hud-detail__foot {
+  justify-content: flex-start;
+}
+.hud[data-orient='portrait'] .hud-buy {
+  height: min(36rem, calc(100vh - var(--hud-topbar-b, 120px) - var(--ph-safe-b) - 72px));
+}
+.hud[data-orient='portrait'] .hud-buy__head {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.hud[data-orient='portrait'] .hud-buy__search {
+  order: -1;
+  flex: 1 1 100%;
+  height: var(--ph-target);
+}
+.hud[data-orient='portrait'] .hud-buy__body {
+  flex-direction: column;
+  gap: 6px;
+}
+.hud[data-orient='portrait'] .hud-buy__gridwrap {
+  flex: 1 1 0;
+  min-height: 7.5rem;
+}
+.hud[data-orient='portrait'] .hud-detail {
+  flex: 0 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 0.625rem;
+  margin-bottom: 4px;
+}
+.hud[data-phone] .hud-hint__rot .ui-iconbtn {
+  --ib-size: var(--ph-target);
+}
+/* a short landscape window (2000×300): the catalog stays under the top bar and the Bones / Quests row */
+.hud[data-orient='landscape'] :is(.hud-buy, .hud-build) {
+  height: min(var(--hud-catalog-h), calc(100vh - var(--hud-topbar-b, 120px) - var(--ph-safe-b) - 60px));
+}
+.hud[data-orient='landscape'] .hud-detail {
+  flex-basis: min(23.5rem, 45%);
+  overflow-y: auto;
+}
+/* Build tools in portrait: the 3×3 tool palette becomes one scrolling row above the options (side by side it pushed
+   Undo / Redo off a 390 px screen) */
+.hud[data-orient='portrait'] .hud-build {
+  height: auto;
+  max-height: min(30rem, calc(100vh - var(--hud-topbar-b, 120px) - var(--ph-safe-b) - 72px));
+}
+.hud[data-orient='portrait'] .hud-build__main {
+  flex-direction: column;
+  gap: 8px;
+}
+.hud[data-orient='portrait'] .hud-tools-palette {
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: max(4.75rem, var(--ph-target));
+  grid-auto-rows: auto;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding: 0 0 6px;
+  border-right: 0;
+  border-bottom: 1px dashed rgba(232, 224, 200, 0.14);
+}
+.hud[data-orient='portrait'] .hud-build__options {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.hud[data-orient='portrait'] .hud-build__optHead {
+  flex-wrap: wrap;
+  gap: 6px;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afterlife Lease · Living wire map</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui;background:#101923;color:#e9eff5}body{margin:0}header{padding:22px 28px;background:#172431;border-bottom:1px solid #334759}h1{font-size:24px;margin:0 0 6px}p{line-height:1.5}.muted{color:#a9bacb}.controls{display:flex;gap:10px;flex-wrap:wrap;padding:14px 28px;align-items:center}input,select,button{font:inherit;padding:9px;border:1px solid #50667c;border-radius:6px;background:#1b2d3c;color:inherit}button{cursor:pointer}button:hover,button:focus-visible{background:#29465c;outline:2px solid #91d9d3}input{min-width:230px}main{display:grid;grid-template-columns:minmax(260px,34%) 1fr;gap:20px;padding:0 28px 28px}section{min-width:0}#list{max-height:73vh;overflow:auto}.row{display:block;width:100%;text-align:left;margin:0 0 6px}.row small{display:block;margin-top:6px;overflow-wrap:anywhere}.badge{font-size:12px;display:inline-block;padding:3px 8px;border-radius:10px;background:#32475c}.Working{background:#1e624d}.Failed,.Blocked{background:#76343a}.Stale{background:#715123}#detail{background:#172431;padding:20px;border-radius:10px;min-height:400px;overflow-wrap:anywhere}#notice{margin:0 28px 14px;padding:10px;border-left:3px solid #7493a8}#notice.stale{border-color:#f3bc6a;color:#ffd38a}a{color:#92dbf0}li{margin:7px 0}svg{width:100%;height:330px;background:#10202d;border-radius:8px}svg text{fill:#ebf5ff;font-size:11px}svg line{stroke:#507b91}svg circle{fill:#315d75;stroke:#a1d0dd}svg g{cursor:pointer}pre{white-space:pre-wrap;font-size:12px}.empty{padding:20px}.statusline{font-size:13px}#identity{font-size:12px;overflow-wrap:anywhere}label{display:flex;align-items:center;gap:6px}@media(max-width:780px){main{grid-template-columns:1fr;padding:0 12px}header,.controls{padding:14px}#list{max-height:35vh}#notice{margin:0 12px 12px}}
+</style>
+<header><h1>Afterlife Lease · Living wire map</h1><div class="muted">Follow a player journey into source, tests, assets and recorded evidence.</div><p id="identity">Loading source identity…</p></header>
+<div class="controls"><input id="search" aria-label="Search connections" placeholder="Search nodes and connections"><select id="group" aria-label="Group"><option value="all">All groups</option></select><select id="status" aria-label="Status"><option value="all">All states</option></select><button id="refresh">Refresh now</button><label><input id="watch" type="checkbox" style="min-width:0">Watch every 45s</label><span id="count" class="muted"></span></div>
+<p id="notice" role="status" aria-live="polite">Loading map…</p>
+<main><section aria-label="Map nodes"><div id="list"></div></section><section id="detail" aria-label="Selected node"><p>Select a node to inspect its connections and evidence.</p></section></main>
+<script type="module">
+const $=id=>document.getElementById(id);let data=null,selected=null,stale=false,busy=false;
+const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
+const state=n=>stale&&n.status==='Working'?'Stale':n.status;
+const badge=n=>el('span',state(n),'badge '+state(n));
+const sourceLink=p=>{const a=el('a',p);a.href='/api/source?path='+encodeURIComponent(p);a.target='_blank';a.rel='noopener';return a;};
+function controls(){for(const [id,values] of [['group',data.nodes.map(n=>n.group)],['status',data.nodes.map(state)]]){const select=$(id),prior=select.value;select.replaceChildren(new Option(id==='group'?'All groups':'All states','all'));for(const v of [...new Set(values)].sort())select.add(new Option(v,v));select.value=[...select.options].some(o=>o.value===prior)?prior:'all';}}
+function render(){if(!data)return;const q=$('search').value.toLowerCase(),g=$('group').value,s=$('status').value;
+ $('identity').textContent=`Local ${data.identity.localHead||'unavailable'} · integration ${data.identity.remoteShipHead||'unavailable'} · tree ${data.identity.workingTree} · observed ${data.observedAt}`;
+ const matching=data.nodes.filter(n=>(g==='all'||n.group===g)&&(s==='all'||state(n)===s)&&(!q||JSON.stringify(n).toLowerCase().includes(q)||data.edges.some(e=>(e.from===n.id||e.to===n.id)&&JSON.stringify(e).toLowerCase().includes(q))));
+ matching.sort((a,b)=>(a.kind==='journey'?-1:0)-(b.kind==='journey'?-1:0)||a.label.localeCompare(b.label));
+ $('count').textContent=`${matching.length} matching / ${data.nodes.length} nodes · ${data.edges.length} links`;
+ $('list').replaceChildren();for(const n of matching.slice(0,150)){const b=el('button',n.label,'row');b.dataset.node=n.id;b.append(el('small',n.group+' · '+n.id),badge(n));b.onclick=()=>choose(n.id);$('list').append(b);}
+ if(!matching.length)$('list').append(el('p','No matching nodes.','empty'));if(matching.length>150)$('list').append(el('p','Showing first 150. Narrow the search or group.','muted'));
+ if(selected)choose(selected);
+}
+function choose(id){selected=id;const n=data.nodes.find(x=>x.id===id);if(!n){$('detail').replaceChildren(el('p','This node is no longer present.'));return;}
+ const box=$('detail');box.replaceChildren(el('h2',n.label),badge(n),el('p',n.detail||''));if(n.source)box.append(sourceLink(n.source));
+ if(n.evidence){box.append(el('h3','Executed feature evidence'),el('p',`Commit ${n.evidence.commit} · observed ${n.evidence.observedAt} · ledger entry ${n.evidence.sequence}`),sourceLink(n.evidence.source),el('pre',JSON.stringify(n.evidence.result,null,2)));}
+ if(n.checks){box.append(el('h3','GitHub check runs'),el('p',`Checked integration commit: ${n.commit||'unavailable'}`));for(const c of n.checks){const p=el('p',`${c.name}: ${c.status} / ${c.conclusion||'pending'} `);if(c.url?.startsWith('https://github.com/')){const a=el('a','Open run');a.href=c.url;a.target='_blank';a.rel='noopener';p.append(a);}box.append(p);}}
+ if(n.tests?.length){box.append(el('h3','Registered tests'));for(const t of n.tests){const paragraph=el('p');paragraph.append(sourceLink(t));box.append(paragraph);}}
+ const links=data.edges.filter(e=>e.from===id||e.to===id), neighbors=[...new Set(links.map(e=>e.from===id?e.to:e.from))];
+ box.append(el('h3',`Connections (${links.length})`));const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 700 330');svg.setAttribute('role','img');svg.setAttribute('aria-label','Selected node and its direct connections');
+ const drawing=(tag,attrs,text)=>{const x=document.createElementNS(svg.namespaceURI,tag);for(const[k,v]of Object.entries(attrs))x.setAttribute(k,v);if(text)x.textContent=text;return x;};
+ const positions=neighbors.slice(0,16).map((other,i)=>({other,x:350+260*Math.cos(i*2*Math.PI/Math.min(16,neighbors.length)),y:165+125*Math.sin(i*2*Math.PI/Math.min(16,neighbors.length))}));
+ for(const p of positions)svg.append(drawing('line',{x1:350,y1:165,x2:p.x,y2:p.y}));
+ for(const p of [{other:id,x:350,y:165},...positions]){const group=drawing('g',{});group.append(drawing('circle',{cx:p.x,cy:p.y,r:p.other===id?15:9}),drawing('text',{x:p.x,y:p.y+25,'text-anchor':'middle'},(data.nodes.find(x=>x.id===p.other)?.label||p.other).slice(0,24)));group.onclick=()=>choose(p.other);svg.append(group);}
+ box.append(svg,el('p',`Diagram shows ${positions.length} of ${neighbors.length} neighbours. All links below.`,'muted'));const ul=el('ul');
+ for(const e of links){const other=e.from===id?e.to:e.from, li=el('li');const b=el('button',(e.from===id?'→ ':'← ')+(data.nodes.find(x=>x.id===other)?.label||other));b.onclick=()=>choose(other);li.append(b,el('span',` ${e.type}${e.line?' · line '+e.line:''} ${e.detail||''}`));ul.append(li);}box.append(ul);
+ if(n.missingSources?.length)box.append(el('p','Missing coverage files: '+n.missingSources.join(', ')));
+}
+async function refresh(){if(busy)return;busy=true;$('refresh').disabled=true;try{const response=await fetch('/api/map',{cache:'no-store'});if(!response.ok)throw Error(`HTTP ${response.status}`);const next=await response.json();if(next.schema!==2||!Array.isArray(next.nodes)||!Array.isArray(next.edges))throw Error('Invalid map response');data=next;stale=false;$('notice').className='';$('notice').textContent=`Refreshed ${data.observedAt}. ${data.diagnostics.length} evidence/parser issues. Source connections are not executed player journeys.`;controls();render();if(!selected&&data.journeys.length)choose(data.journeys[0].id);}catch(error){stale=true;$('notice').className='stale';$('notice').textContent=`Refresh failed: ${error.message}. Retained data is stale; Working badges are suspended.`;if(data){controls();render();}}finally{busy=false;$('refresh').disabled=false;}}
+$('refresh').onclick=refresh;for(const id of ['search','group','status'])$(id).addEventListener(id==='search'?'input':'change',render);setInterval(()=>{if($('watch').checked)refresh();},45000);refresh();
+</script></html>

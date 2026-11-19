@@ -1,0 +1,1005 @@
+{
+  "source": "15abcc6: evidence/astra-starts/run3/starts.json",
+  "rows": [
+    {
+      "seed": 1,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n1",
+        "variantSeed": 3922346580,
+        "neighbourSeed": 3477865014,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 2,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n3",
+        "variantSeed": 1800013360,
+        "neighbourSeed": 809183699,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 3,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n4",
+        "variantSeed": 3693330593,
+        "neighbourSeed": 3310870713,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 4,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_s2",
+        "variantSeed": 4193139908,
+        "neighbourSeed": 3618891392,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 5,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 151149288,
+        "neighbourSeed": 271155541,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 6,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n3",
+        "variantSeed": 195063375,
+        "neighbourSeed": 3413782072,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "empty",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "starter",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 7,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_s1",
+        "variantSeed": 874080888,
+        "neighbourSeed": 2047027183,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 8,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n3",
+        "variantSeed": 3348418113,
+        "neighbourSeed": 842016190,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 9,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_s3",
+        "variantSeed": 3903918725,
+        "neighbourSeed": 3259372301,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 10,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s2",
+        "variantSeed": 708872252,
+        "neighbourSeed": 2003277005,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_townhouse",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "empty",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 11,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_s3",
+        "variantSeed": 299881356,
+        "neighbourSeed": 3282174506,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "empty",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 12,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n4",
+        "variantSeed": 1694537040,
+        "neighbourSeed": 2062355636,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 13,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 4276017511,
+        "neighbourSeed": 1604235071,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 14,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n3",
+        "variantSeed": 737782409,
+        "neighbourSeed": 1737760541,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 15,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s2",
+        "variantSeed": 4023452577,
+        "neighbourSeed": 3210669102,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 16,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_s4",
+        "variantSeed": 3136535216,
+        "neighbourSeed": 3089967388,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "empty",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 17,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n4",
+        "variantSeed": 238965474,
+        "neighbourSeed": 1454032498,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "empty",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 18,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n1",
+        "variantSeed": 4167383163,
+        "neighbourSeed": 4093315697,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "empty",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 19,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 2783271746,
+        "neighbourSeed": 3725045363,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 20,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s2",
+        "variantSeed": 3372826865,
+        "neighbourSeed": 1544291587,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 21,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n1",
+        "variantSeed": 3959033871,
+        "neighbourSeed": 3462589541,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "empty",
+        "wormwood:mildew_s3": "starter",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 22,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s1",
+        "variantSeed": 4052830457,
+        "neighbourSeed": 1254742972,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 23,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n2",
+        "variantSeed": 2347097161,
+        "neighbourSeed": 2055279830,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 24,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n3",
+        "variantSeed": 931481103,
+        "neighbourSeed": 154942497,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 25,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n2",
+        "variantSeed": 1400442649,
+        "neighbourSeed": 1028726209,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_townhouse",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 26,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n4",
+        "variantSeed": 762320688,
+        "neighbourSeed": 545082004,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_townhouse",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 27,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 1772980894,
+        "neighbourSeed": 1664007510,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "empty",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 28,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n3",
+        "variantSeed": 3436343476,
+        "neighbourSeed": 4115895468,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "starter",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 29,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n1",
+        "variantSeed": 3618091330,
+        "neighbourSeed": 2177973434,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "starter",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 30,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n4",
+        "variantSeed": 906900681,
+        "neighbourSeed": 2683018702,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "empty",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 31,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n3",
+        "variantSeed": 2640649645,
+        "neighbourSeed": 7836422,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n4": "empty",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 32,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 86221747,
+        "neighbourSeed": 2273244935,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 33,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s3",
+        "variantSeed": 3805088310,
+        "neighbourSeed": 2360592286,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 34,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n3",
+        "variantSeed": 1810607340,
+        "neighbourSeed": 2333119831,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_townhouse",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "starter",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 35,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s3",
+        "variantSeed": 3404968451,
+        "neighbourSeed": 1625974736,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s4": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 36,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s3",
+        "variantSeed": 3554361786,
+        "neighbourSeed": 3286059964,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 37,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n1",
+        "variantSeed": 253806321,
+        "neighbourSeed": 2169051711,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 38,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 907011764,
+        "neighbourSeed": 2001516670,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "empty",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse"
+      }
+    },
+    {
+      "seed": 39,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s4",
+        "variantSeed": 876262458,
+        "neighbourSeed": 1647037462,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_townhouse",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "empty",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "starter"
+      }
+    },
+    {
+      "seed": 40,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n4",
+        "variantSeed": 267377393,
+        "neighbourSeed": 1104815509,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "empty",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 41,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_n1",
+        "variantSeed": 578028501,
+        "neighbourSeed": 2219043929,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_bungalow",
+        "wormwood:mildew_s2": "wormwood_bungalow",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 42,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_s2",
+        "variantSeed": 593518040,
+        "neighbourSeed": 1864182063,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "empty",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 43,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_s2",
+        "variantSeed": 2388754909,
+        "neighbourSeed": 2323719875,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "empty"
+      }
+    },
+    {
+      "seed": 44,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s3",
+        "variantSeed": 3873418584,
+        "neighbourSeed": 87598730,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "empty",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 45,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_s4",
+        "variantSeed": 3773248897,
+        "neighbourSeed": 2199659382,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 46,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s3",
+        "variantSeed": 2471506816,
+        "neighbourSeed": 746197602,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "empty",
+        "wormwood:mildew_n2": "wormwood_townhouse",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_bungalow",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 47,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict",
+        "slotId": "mildew_s2",
+        "variantSeed": 459181363,
+        "neighbourSeed": 2426017216,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_townhouse",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_n4": "starter",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 48,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n2",
+        "variantSeed": 3662725119,
+        "neighbourSeed": 2253426767,
+        "attempt": 1
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "wormwood_bungalow",
+        "wormwood:mildew_n3": "starter",
+        "wormwood:mildew_n4": "wormwood_townhouse",
+        "wormwood:mildew_s1": "empty",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "wormwood_bungalow",
+        "wormwood:mildew_s4": "starter"
+      }
+    },
+    {
+      "seed": 49,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lshape",
+        "slotId": "mildew_n4",
+        "variantSeed": 2098422197,
+        "neighbourSeed": 3117644129,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n1": "starter",
+        "wormwood:mildew_n2": "wormwood_bungalow",
+        "wormwood:mildew_n3": "wormwood_townhouse",
+        "wormwood:mildew_s1": "starter",
+        "wormwood:mildew_s2": "wormwood_townhouse",
+        "wormwood:mildew_s3": "empty",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    },
+    {
+      "seed": 50,
+      "pick": {
+        "genVersion": 1,
+        "templateId": "derelict_lean",
+        "slotId": "mildew_n1",
+        "variantSeed": 138739228,
+        "neighbourSeed": 1714522171,
+        "attempt": 0
+      },
+      "neighbours": {
+        "wormwood:mildew_n2": "starter",
+        "wormwood:mildew_n3": "wormwood_bungalow",
+        "wormwood:mildew_n4": "empty",
+        "wormwood:mildew_s1": "wormwood_townhouse",
+        "wormwood:mildew_s2": "starter",
+        "wormwood:mildew_s3": "wormwood_townhouse",
+        "wormwood:mildew_s4": "wormwood_bungalow"
+      }
+    }
+  ]
+}

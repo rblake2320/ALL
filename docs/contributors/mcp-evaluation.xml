@@ -1,0 +1,14 @@
+<evaluation>
+  <!-- Seed scripts/creator/demo.mjs in a fresh workspace first. Each question is
+       independent and read-only. These are evaluation tasks, not a claimed LLM score. -->
+  <qa_pair><question>Using creator_contract and creator_verify on creator-demo-1-0-0-0a5bc783173cb1fa, what supported content kind does the demo exercise?</question><answer>brandSkins</answer></qa_pair>
+  <qa_pair><question>Read the contract and demo verification. Which workboard task admits future creatures and other typed pack kinds?</question><answer>W-084</answer></qa_pair>
+  <qa_pair><question>Inspect the demo with creator_verify and identify the existing catalog object receiving the new skin.</question><answer>fridge_humming</answer></qa_pair>
+  <qa_pair><question>Inspect the demo's real registry result. Which skin id wins for that refrigerator?</question><answer>creator_demo</answer></qa_pair>
+  <qa_pair><question>Inspect the demo's before-registry result and contract. Which built-in refrigerator skin is restored after verification?</question><answer>grave_cola_fridge</answer></qa_pair>
+  <qa_pair><question>Use the contract and demo verification to find the exact stage rejecting this unsigned artifact without Creator mode.</question><answer>signature</answer></qa_pair>
+  <qa_pair><question>Read the demo manifest and supported brands. What approved house brand does this pack use?</question><answer>Grave-Cola</answer></qa_pair>
+  <qa_pair><question>Read the demo verification and give the exact label communicating its trust level.</question><answer>Unsigned — Creator mode</answer></qa_pair>
+  <qa_pair><question>Read contract and demo manifest. What age rating is declared by the starter artifact?</question><answer>E10+</answer></qa_pair>
+  <qa_pair><question>Using only read-only tools, inspect the demo artifact and give its full content fingerprint.</question><answer>0a5bc783173cb1fad00b7896ad262b521a916e1c6d21940bf2ca2dd006407aa2</answer></qa_pair>
+</evaluation>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img">
+
+ <path fill="#e2ad57" stroke="#1d1726" stroke-width="16" stroke-linejoin="round" d="m512 82 69 88 104-42 20 110 112 8-29 108 95 62-73 84 60 99-108 39 5 113-111-8-47 101-90-67-90 67-47-101-111 8 5-113-108-39 60-99-73-84 95-62-29-108 112-8 20-110 104 42Z"/>
+ <circle cx="512" cy="435" r="211" fill="#83637c"/><path fill="none" stroke="#efd9ad" stroke-width="12" stroke-dasharray="12 18" d="M512 253a182 182 0 1 0 0 364 182 182 0 1 0 0-364Z"/>
+ <circle cx="454" cy="365" r="19" fill="#efd9ad"/><circle cx="570" cy="342" r="13" fill="#efd9ad"/><circle cx="560" cy="469" r="27" fill="#efd9ad"/>
+ <text x="512" y="425" text-anchor="middle" fill="#e8e0c8" font-family="Arial,serif" font-size="97" font-weight="bold" letter-spacing="5">ROT</text><text x="512" y="530" text-anchor="middle" fill="#e8e0c8" font-family="Arial,serif" font-size="107" font-weight="bold" letter-spacing="5">POP</text>
+ <path fill="#1d1726" d="M240 805q272 40 544 0v70q-272 40-544 0Z"/><text x="512" y="854" text-anchor="middle" fill="#e8e0c8" font-family="Arial,serif" font-size="25" font-weight="bold" letter-spacing="4">CHEERFULLY FIZZY</text>
+
+</svg>

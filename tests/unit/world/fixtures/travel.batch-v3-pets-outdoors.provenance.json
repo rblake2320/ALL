@@ -1,0 +1,43 @@
+{
+  "recordedOn": "integration/batch-1112 @ 89b74108e3c004346e5377ef7f792623a66edb58 plus the fixture changes of this commit (no source change)",
+  "previousGoldens": [
+    "s3.travel.batch-v3-pets.golden.json",
+    "s3.travel.frozen.batch-v3-pets.golden.json",
+    "s4.stream.batch-v3-pets.golden.json"
+  ],
+  "reason": "Intended behaviour change W-153 (commit 95d0d710): strays pick outdoor-only walk targets and may not step from outside into a room.",
+  "procedure": "S3_RECORD=1 npx vitest run tests/unit/world/travel.roundtrip.test.ts ; S4_RECORD=1 npx vitest run tests/unit/world/stream.roundtrip.test.ts",
+  "comparisonWithPrevious": {
+    "s3.travel": {
+      "seed": "same",
+      "ticks": "same",
+      "crossings": "identical (12)",
+      "hashTicks": "identical",
+      "hashesChanged": "14 of 14"
+    },
+    "s3.travel.frozen": {
+      "crossings": "identical (12)",
+      "hashTicks": "identical",
+      "hashesChanged": "14 of 14"
+    },
+    "s4.stream": {
+      "seed": "same",
+      "ticks": "same",
+      "crossings": "identical (10)",
+      "tiers": "identical (7)",
+      "hashTicks": "identical",
+      "hashesChanged": "22 of 22"
+    }
+  },
+  "causalCheck": "With commit 95d0d710 reverted on the candidate, travel.roundtrip and stream.roundtrip pass against the previous goldens.",
+  "limit": "These goldens are recorded from the candidate itself (the walk needs the world framework, so no independent base exists). The full-state, field-by-field audit was done for the home-only cohort (see ac1.accepted-00794ea-pets-outdoors.provenance.json); for travel and streaming the evidence is the causal check plus identical crossings and tiers.",
+  "host": "cloud Linux container (not a project runner)",
+  "node": "22.23.4",
+  "recorded": "2026-11-19",
+  "files": {
+    "s3.travel.batch-v3-pets-outdoors.golden.json": "e39c94e57bc4c73018314c230ea31eed34604fbbe589ca8f028eea49bfe1bb1b",
+    "s3.travel.frozen.batch-v3-pets-outdoors.golden.json": "daf738abdac0cf284e0371c7169a1f57e133111d611e4d4705cf39ef8da30305",
+    "s4.stream.batch-v3-pets-outdoors.golden.json": "738c50cef863ce4f6fceb7d2ee1dbbba88471a7f6dee795c7d8f936acd6d2622"
+  },
+  "policy": "Old golden files remain unchanged. Goldens include the complete unprojected pets state."
+}

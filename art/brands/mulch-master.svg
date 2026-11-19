@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img">
+
+ <path fill="#476448" stroke="#e8e0c8" stroke-width="18" d="M512 90 808 214 772 600 512 735 252 600 216 214Z"/>
+ <path fill="none" stroke="#b9d39a" stroke-width="13" d="M512 125 778 238 746 578 512 699 278 578 246 238Z"/>
+ <path fill="#d6a55d" d="M340 500q18-100 166-130 134 28 177 130l-42 25H382Z"/>
+ <circle cx="397" cy="527" r="40" fill="#1d1726"/><circle cx="627" cy="527" r="40" fill="#1d1726"/>
+ <path d="M511 370V248m0 110q-111-6-122-105 99 1 122 105Zm0-35q27-93 119-100-9 100-119 100Z" fill="#b9d39a" stroke="#1d1726" stroke-width="9" stroke-linejoin="round"/>
+ <path fill="#1d1726" d="M115 651h794l-42 147H157Z"/><text x="512" y="716" text-anchor="middle" fill="#e8e0c8" font-family="Georgia,serif" font-size="76" font-weight="bold" letter-spacing="3">MULCH</text><text x="512" y="778" text-anchor="middle" fill="#d6a55d" font-family="Georgia,serif" font-size="67" font-weight="bold" letter-spacing="3">MASTER</text>
+ <text x="512" y="864" text-anchor="middle" fill="#1d1726" font-family="Arial,serif" font-size="24" font-weight="bold" letter-spacing="5">THE LAWN AWAKENS</text>
+
+</svg>

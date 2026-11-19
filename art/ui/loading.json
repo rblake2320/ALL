@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "medium": "OpenAI image generation; raster PNG originals",
+  "direction": "Original whimsical family-friendly painterly zombie life-simulation environment art, without intended text, logos, UI or watermark.",
+  "process": "L2 generated from text. L1 and L3-L7 generated using L2 as a visual style reference. L3 subsequently edited to remove illegible storefront lettering; its initial output is retained in parked/loading-vector-study/l3-uncorrected.png.",
+  "images": [
+    {
+      "id": "l1-wormwood",
+      "title": "Wormwood Heights",
+      "file": "loading/l1-wormwood.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ce3f689e07a8df09730ecac85f6e5d32146147c5dd6b0ab9ebd5987de0a30c32",
+      "scene_brief": "A lived-in suburban street with modest starter homes, gardens, a porch and a distant town center at twilight."
+    },
+    {
+      "id": "l2-graveyard",
+      "title": "Old Graveyard",
+      "file": "loading/l2-graveyard.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cbda7c8f907ed9bf1cd8870f9bbf32c8f405ddbb84054778f51aa00b184a717f",
+      "scene_brief": "A winding garden cemetery with weathered monuments, iron gates, mist, old trees and a warm caretaker cottage at twilight."
+    },
+    {
+      "id": "l3-rotrow",
+      "title": "Downtown Rot Row",
+      "file": "loading/l3-rotrow.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e64821c7dfabe377c2c1570b5bbedd4d4522d247cec720fe17619da212cf49bc",
+      "scene_brief": "A compact downtown with quirky storefronts, neon, streetcar tracks and apartments at blue hour."
+    },
+    {
+      "id": "l4-bayou",
+      "title": "Swampside Bayou",
+      "file": "loading/l4-bayou.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3fc2a832cfe16638027723ce67c6b6db19442a77aca418b825985c992c6a1332",
+      "scene_brief": "Wooden homes on stilts, cypress knees, hanging moss, water reflections and a boardwalk at twilight."
+    },
+    {
+      "id": "l5-mausoleum",
+      "title": "Mausoleum Hills",
+      "file": "loading/l5-mausoleum.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6ae759cefaa607a58c29bd889e057dc0c5bdde882080aff94f1ae896b526c1b8",
+      "scene_brief": "Stone mausoleums on rolling hills with stairs, ironwork, lanterns and sunset clouds."
+    },
+    {
+      "id": "l6-underneath",
+      "title": "The Underneath",
+      "file": "loading/l6-underneath.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f6221416be6d77d71de3ee4e0c84f80ed2b4ff108cf7ddb8a10b3fd44b2a642d",
+      "scene_brief": "An underground network of tunnels, crypt arches, supports, lanterns and a basement workshop."
+    },
+    {
+      "id": "l7-necropolis",
+      "title": "The Necropolis",
+      "file": "loading/l7-necropolis.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e1035318255b8e01505a138a88a74a0f0068f54824b14bea1eee29c26e9690e4",
+      "scene_brief": "A growing town seen from a hill, with varied homes, a plaza, paths and warm windows at dusk."
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Afterlife Lease — a cosy-macabre life sim where you keep a household of zombies fed, fresh and paying rent. Death didn't get you out of paying rent." />
+    <meta name="theme-color" content="#1d1726" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Afterlife Lease" />
+    <title>Afterlife Lease</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1726'/%3E%3Cpath d='M13 52V29.5L32 13l19 16.5V52z' fill='%23e8e0c8'/%3E%3Cpath d='M13 29.5L32 13l19 16.5' fill='none' stroke='%23a5532f' stroke-width='3.5' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='34' r='5.2' fill='%239fe870'/%3E%3Cpath d='M29.6 37h4.8l1.6 8.5h-8z' fill='%239fe870'/%3E%3Cpath d='M9 53.5h46' stroke='%236f8f5e' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <style>
+      /* Page shell only — the UI theme (src/ui/theme) styles everything inside #ui-root. */
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #1d1726;
+        color: #e8e0c8;
+        overscroll-behavior: none;
+      }
+      #game-canvas {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        outline: none;
+        touch-action: none;
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      /* Overlay contract (see src/ui/theme/base.css): clicks fall through to the canvas unless a panel opts in
+         with .ui-interactive. Duplicated here so the page behaves even before the theme CSS loads. */
+      #ui-root {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* ── Boot splash: pure CSS, removed by src/main.tsx once the UI mounts ── */
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        padding: 24px;
+        box-sizing: border-box;
+        background: radial-gradient(ellipse at 50% 38%, #2b2f3a 0%, #1d1726 62%);
+        font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+        text-align: center;
+        transition: opacity 360ms ease-out;
+      }
+      #boot-splash.boot-splash--done {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .boot-stone {
+        position: relative;
+        width: 74px;
+        height: 92px;
+        background: #e8e0c8;
+        clip-path: polygon(0 34%, 50% 0, 100% 34%, 100% 100%, 0 100%);
+        filter: drop-shadow(0 6px 18px rgba(159, 232, 112, 0.18));
+        animation: boot-sway 2.6s ease-in-out infinite;
+        transform-origin: 50% 100%;
+      }
+      .boot-stone::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 46%;
+        width: 14px;
+        height: 14px;
+        margin-left: -7px;
+        border-radius: 50%;
+        background: #9fe870;
+        box-shadow: 0 9px 0 -3px #9fe870, 0 0 18px rgba(159, 232, 112, 0.65);
+        animation: boot-glow 1.8s ease-in-out infinite;
+      }
+      .boot-title {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: #e8e0c8;
+      }
+      .boot-tag {
+        margin: 0;
+        font: 15px/1.4 system-ui, 'Segoe UI', Roboto, sans-serif;
+        color: #d9cfb8;
+        opacity: 0.75;
+      }
+      .boot-dots {
+        display: flex;
+        gap: 8px;
+      }
+      .boot-dots span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #ffb35a;
+        animation: boot-bob 1.2s ease-in-out infinite;
+      }
+      .boot-dots span:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .boot-dots span:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .boot-slow {
+        margin: 0;
+        max-width: 420px;
+        font: 13px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+        color: #d9cfb8;
+        opacity: 0;
+        animation: boot-reveal 0.4s ease-out 25s forwards;
+      }
+      #boot-splash.boot-splash--error {
+        font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+      }
+      #boot-splash.boot-splash--error h1 {
+        margin: 0;
+        font: 600 24px 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+      }
+      #boot-splash.boot-splash--error p {
+        margin: 0;
+        max-width: 520px;
+        line-height: 1.5;
+        color: #d9cfb8;
+      }
+      #boot-splash.boot-splash--error pre {
+        max-width: min(680px, 92vw);
+        max-height: 40vh;
+        overflow: auto;
+        margin: 0;
+        padding: 12px 14px;
+        border-radius: 10px;
+        border: 1px solid rgba(232, 224, 200, 0.15);
+        background: rgba(29, 23, 38, 0.86);
+        font: 12px/1.45 ui-monospace, Consolas, 'Cascadia Mono', monospace;
+        text-align: left;
+        white-space: pre-wrap;
+        user-select: text;
+        -webkit-user-select: text;
+      }
+      #boot-splash.boot-splash--error button {
+        padding: 10px 22px;
+        border: 1px solid rgba(232, 224, 200, 0.3);
+        border-radius: 10px;
+        background: #6e2a35;
+        color: #e8e0c8;
+        font: 600 15px system-ui, 'Segoe UI', Roboto, sans-serif;
+        cursor: pointer;
+      }
+      noscript p {
+        position: fixed;
+        inset: auto 0 18vh;
+        z-index: 20;
+        margin: 0 auto;
+        max-width: 460px;
+        padding: 16px;
+        border-radius: 12px;
+        background: rgba(29, 23, 38, 0.92);
+        border: 1px solid rgba(232, 224, 200, 0.15);
+        color: #e8e0c8;
+        font: 15px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+        text-align: center;
+      }
+      @keyframes boot-sway {
+        0%, 100% { transform: rotate(-2.5deg); }
+        50% { transform: rotate(2.5deg); }
+      }
+      @keyframes boot-glow {
+        0%, 100% { opacity: 0.55; }
+        50% { opacity: 1; }
+      }
+      @keyframes boot-bob {
+        0%, 100% { transform: translateY(0); opacity: 0.45; }
+        50% { transform: translateY(-6px); opacity: 1; }
+      }
+      @keyframes boot-reveal {
+        to { opacity: 0.8; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .boot-stone,
+        .boot-stone::after,
+        .boot-dots span {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="game-canvas" aria-label="Afterlife Lease game world" tabindex="-1"></canvas>
+    <div id="ui-root"></div>
+    <div id="boot-splash" role="status" aria-live="polite">
+      <div class="boot-stone" aria-hidden="true"></div>
+      <h1 class="boot-title">Afterlife Lease</h1>
+      <p class="boot-tag">Waking the dead…</p>
+      <div class="boot-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="boot-slow">Still digging? Loading can take a moment on first launch. If nothing happens, try reloading the page or updating your browser / graphics driver.</p>
+    </div>
+    <noscript>
+      <p>Afterlife Lease needs JavaScript to raise the dead. Please enable it and reload.</p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "feed-home",
+      "file": "social/feed-home.svg",
+      "width": 360,
+      "height": 200
+    },
+    {
+      "id": "feed-wardrobe",
+      "file": "social/feed-wardrobe.svg",
+      "width": 360,
+      "height": 200
+    },
+    {
+      "id": "feed-collection",
+      "file": "social/feed-collection.svg",
+      "width": 360,
+      "height": 200
+    },
+    {
+      "id": "badge-founders",
+      "file": "social/badge-founders.svg",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "id": "badge-curios",
+      "file": "social/badge-curios.svg",
+      "width": 96,
+      "height": 96
+    },
+    {
+      "id": "badge-style",
+      "file": "social/badge-style.svg",
+      "width": 96,
+      "height": 96
+    }
+  ]
+}

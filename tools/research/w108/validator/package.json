@@ -1,0 +1,8 @@
+{
+  "name": "afterlife-w108-format-check",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "gltf-validator": "2.0.0-dev.3.10"
+  }
+}

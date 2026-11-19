@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+const root=process.argv[2],read=name=>JSON.parse(fs.readFileSync(path.join(root,name,'native-report.json'),'utf8'));
+const valid=read('native-controls-v2/valid'),budget=read('native-controls-v2/over-budget'),cutoff=read('native-controls-v2/incomplete'),network=read('native-controls-v2/network');
+assert.equal(valid.geometryOutcome,'Worked');
+assert.equal(valid.checks.byteIdenticalReexport,true);
+assert.equal(valid.checks.roundTripGeometry,true);
+assert.equal(valid.routeReplacements.length>0,true);
+assert.equal(valid.blockedRequests.length,0);
+assert.equal(budget.geometryOutcome,'Failed');
+assert.equal(budget.checks.triangleBudget,false);
+assert.equal(cutoff.geometryOutcome,'Failed');
+assert.match(cutoff.error,/Incomplete native response/);
+assert.equal(network.geometryOutcome,'Failed');
+assert.equal(network.checks.pageErrors,false);
+assert(network.consoleErrors.some(e=>/Content Security Policy/.test(e)));
+console.log(JSON.stringify({outcome:'Worked',checks:12,kind:'synthetic native HTML export controls'}));

@@ -1,0 +1,18 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.glb binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary
+docs/desktop-reports/a11y-w064-evidence/** -text -whitespace
+
+docs/desktop-reports/sol-world-render-evidence/** -text -whitespace
+docs/desktop-reports/sol-world-stream-evidence/** -text -whitespace
+docs/desktop-reports/sol-world-s11-evidence/** -text -whitespace
+docs/desktop-reports/sol-world-s11-components/** -text -whitespace
+docs/desktop-reports/sol-world-s11-native/** -text -whitespace
+docs/desktop-reports/sol-world-s11-camera/** -text -whitespace
+docs/desktop-reports/sol-creator-hardening-evidence/** -text -whitespace

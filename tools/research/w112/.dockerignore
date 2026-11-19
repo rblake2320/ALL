@@ -1,0 +1,8 @@
+*
+!harness/
+!harness/**
+!source/
+!source/Dockerfile.harness
+harness/.git
+harness/.venv
+harness/logs

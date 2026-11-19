@@ -1,0 +1,61 @@
+{
+  "name": "afterlife-lease",
+  "productName": "Afterlife Lease",
+  "version": "1.0.0",
+  "description": "A domestic life simulator where you play the zombies. Death didn't get you out of paying rent.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Afterlife Lease Developers",
+  "main": "electron/dist/main.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "build:single": "tsc -p tsconfig.json --noEmit && node scripts/inline-build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p electron/tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:platform": "vitest run tests/unit/persistence tests/unit/electron",
+    "balance": "vitest run --config tests/balance/vitest.config.ts --mode full",
+    "e2e": "node tests/e2e/smoke.mjs",
+    "e2e:feedback": "node tests/e2e/feedback.mjs",
+    "feedback:ingest": "node scripts/feedback-ingest.mjs",
+    "e2e:placement": "node tests/e2e/placement.mjs",
+    "e2e:oldsave": "node tests/e2e/oldSave.mjs",
+    "e2e:soak": "node tests/e2e/soak.mjs",
+    "e2e:perspective": "node tests/e2e/perspective.mjs",
+    "e2e:no3d": "node tests/e2e/no3d.mjs",
+    "e2e:music": "node tests/e2e/music.mjs",
+    "preview": "vite preview --port 4173 --strictPort",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "electron:build-main": "node scripts/build-electron-main.mjs",
+    "electron:dev": "node scripts/dev-electron.mjs",
+    "electron:start": "npm run build && npm run electron:build-main && electron .",
+    "dist:win": "npm run build && npm run electron:build-main && electron-builder --win nsis --x64 --config electron/electron-builder.json --publish never",
+    "verify:features": "node scripts/verify-features.mjs",
+    "verify:ledger": "node scripts/verify-features.mjs --check",
+    "verify:local": "node scripts/verify-local.mjs",
+    "clip:gate": "node scripts/clip-gate.mjs"
+  },
+  "dependencies": {
+    "preact": "10.29.8",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/three": "0.180.0",
+    "electron": "44.9.3",
+    "electron-builder": "26.18.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7",
+    "vitest": "3.2.7"
+  },
+  "overrides": {
+    "electron": {
+      "@types/node": "$@types/node"
+    }
+  }
+}

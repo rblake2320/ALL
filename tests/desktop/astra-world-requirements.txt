@@ -1,0 +1,2 @@
+# Version executed for the retained Windows baseline; Chrome is an external prerequisite.
+playwright==1.53.0

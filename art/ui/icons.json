@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "viewBox": "0 0 48 48",
+  "icons": [
+    {
+      "id": "store",
+      "label": "Store",
+      "file": "icons/store.svg"
+    },
+    {
+      "id": "quest",
+      "label": "Quest",
+      "file": "icons/quest.svg"
+    },
+    {
+      "id": "bones",
+      "label": "Bones currency",
+      "file": "icons/bones.svg"
+    },
+    {
+      "id": "grave-gold",
+      "label": "Grave Gold",
+      "file": "icons/grave-gold.svg"
+    },
+    {
+      "id": "collection",
+      "label": "Collection book",
+      "file": "icons/collection.svg"
+    },
+    {
+      "id": "free-placement",
+      "label": "Free placement",
+      "file": "icons/free-placement.svg"
+    },
+    {
+      "id": "private-home",
+      "label": "Private home",
+      "file": "icons/private-home.svg"
+    },
+    {
+      "id": "invite",
+      "label": "Home invitation",
+      "file": "icons/invite.svg"
+    },
+    {
+      "id": "wardrobe",
+      "label": "Wardrobe",
+      "file": "icons/wardrobe.svg"
+    },
+    {
+      "id": "party",
+      "label": "Party",
+      "file": "icons/party.svg"
+    },
+    {
+      "id": "social-feed",
+      "label": "Social feed",
+      "file": "icons/social-feed.svg"
+    },
+    {
+      "id": "news",
+      "label": "The Daily Grave",
+      "file": "icons/news.svg"
+    },
+    {
+      "id": "photo",
+      "label": "Photo mode",
+      "file": "icons/photo.svg"
+    },
+    {
+      "id": "vehicles",
+      "label": "Vehicles",
+      "file": "icons/vehicles.svg"
+    },
+    {
+      "id": "seasons",
+      "label": "Seasons",
+      "file": "icons/seasons.svg"
+    },
+    {
+      "id": "construction",
+      "label": "Construction",
+      "file": "icons/construction.svg"
+    },
+    {
+      "id": "craft",
+      "label": "Craft",
+      "file": "icons/craft.svg"
+    },
+    {
+      "id": "daily",
+      "label": "Daily task",
+      "file": "icons/daily.svg"
+    }
+  ]
+}

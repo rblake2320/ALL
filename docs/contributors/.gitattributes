@@ -1,0 +1,2 @@
+# Preserve sealed evidence derivative bytes; formatting checks apply to authored source/docs.
+evidence/** -text -whitespace

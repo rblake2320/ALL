@@ -1,0 +1,12 @@
+[
+  {"id":"01-caz","setup":"menu","goal":"Start New Game. Choose a starter home, create a household, change your zombie's appearance, then enter the game. Use only this game window."},
+  {"id":"02-buy-fridge","setup":"starter","goal":"Buy an affordable refrigerator and place it on a clear floor tile. Confirm it stays placed and the funds change. Use only this game window."},
+  {"id":"03-move-chair","setup":"starter","goal":"Move an existing chair to another clear floor tile. Confirm its new location. Use only this game window."},
+  {"id":"04-sell-chair","setup":"starter","goal":"Sell one existing chair. Confirm the chair disappears and funds increase. Use only this game window."},
+  {"id":"05-window-preview","setup":"starter","goal":"In Build mode, add a window to an empty wall edge. Watch whether a valid green preview actually becomes a placed window when clicked. Report any mismatch. Use only this game window."},
+  {"id":"06-door","setup":"starter","goal":"Add a door to an empty wall edge. Confirm it appears where the preview was. Use only this game window."},
+  {"id":"07-wall-drag","setup":"starter","goal":"Build a short straight wall by dragging across three clear tiles. Inspect the preview during the drag and confirm the final wall matches it. Report any mismatch. Use only this game window."},
+  {"id":"08-undo-redo","setup":"starter","goal":"Buy and place one affordable item, undo the placement, then redo it. Confirm the object and funds change each time. Use only this game window."},
+  {"id":"09-save-load","setup":"starter","goal":"Save the household, return to the main menu, then Continue. Confirm the same household and home return. Use only this game window."},
+  {"id":"10-appearance","setup":"caz","goal":"Change the zombie's body style and outfit, then start playing. Confirm your chosen zombie appears in the world. Use only this game window."}
+]

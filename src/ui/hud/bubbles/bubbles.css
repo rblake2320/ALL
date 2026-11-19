@@ -1,0 +1,126 @@
+/* ═════════════════════════════ Bubbles ═════════════════════════════ */
+.hud-bubbles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-hud);
+  overflow: hidden;
+}
+.hud-bubble {
+  --rim: var(--c-toxic);
+  --ink: #2a1d2c;
+  --paper: #efe7d0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+.hud-bubble.is-neg {
+  --rim: #ff9a6a;
+  --ink: #5a1f2a;
+}
+.hud-bubble__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.25rem;
+  transform-origin: 50% 100%;
+  animation: hud-bubble-pop 220ms var(--ease-spring) both;
+}
+.hud-bubble.is-leaving .hud-bubble__inner {
+  animation: hud-bubble-out 180ms var(--ease-out) both;
+}
+@keyframes hud-bubble-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(0.375rem) scale(0.4);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes hud-bubble-out {
+  to {
+    opacity: 0;
+    transform: translateY(-0.25rem) scale(0.85);
+  }
+}
+.hud-bubble__body {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: var(--ink);
+  background: radial-gradient(circle at 38% 30%, #fffaf0, var(--paper) 62%, #d6cbab);
+  box-shadow:
+    0 0 0 2px var(--rim),
+    0 0 0.875rem color-mix(in srgb, var(--rim) 55%, transparent),
+    0 0.375rem 0.75rem rgba(8, 5, 12, 0.45);
+}
+/* thought: a soft cloud with two trailing dots */
+.hud-bubble.is-thought .hud-bubble__body {
+  border-radius: 46% 54% 48% 52% / 52% 46% 54% 48%;
+}
+.hud-bubble__dot {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--paper);
+  box-shadow: 0 0 0 1.5px var(--rim);
+}
+.hud-bubble__dot.is-a {
+  width: 0.625rem;
+  height: 0.625rem;
+  bottom: 0.0625rem;
+  left: calc(50% - 0.75rem);
+}
+.hud-bubble__dot.is-b {
+  width: 0.375rem;
+  height: 0.375rem;
+  bottom: -0.4375rem;
+  left: calc(50% - 1.0625rem);
+}
+/* speech: rounded card with a tail */
+.hud-bubble.is-speech .hud-bubble__body {
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 0.875rem;
+}
+.hud-bubble__tail {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: -0.375rem;
+  background: var(--paper);
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 0 0 var(--rim);
+  border-radius: 0 0 0.125rem 0;
+}
+/* shout: a jagged burst */
+.hud-bubble.is-shout .hud-bubble__body {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0;
+  clip-path: polygon(50% 0%, 61% 18%, 82% 8%, 78% 30%, 100% 36%, 84% 52%, 97% 72%, 74% 72%, 70% 95%, 52% 80%, 32% 98%, 29% 75%, 5% 78%, 17% 57%, 0% 40%, 21% 31%, 15% 9%, 38% 17%);
+  background: radial-gradient(circle at 45% 40%, #fffaf0, var(--paper) 55%, #e8c79a);
+  box-shadow: none;
+  filter: drop-shadow(0 0 1.5px var(--rim)) drop-shadow(0 0 0.6rem color-mix(in srgb, var(--rim) 50%, transparent));
+}
+.hud-bubble.is-shout .hud-bubble__tail {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-left: -0.3125rem;
+  bottom: 0.125rem;
+}
+html.reduce-motion .hud-bubble__inner {
+  animation: none !important;
+}

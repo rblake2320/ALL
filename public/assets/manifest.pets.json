@@ -1,0 +1,888 @@
+{
+  "version": 1,
+  "fps": 30,
+  "units": "m",
+  "up": "+Y",
+  "front": "+Z",
+  "clips": [
+    {
+      "name": "idle",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "duration": 0.8,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "duration": 0.5,
+      "loop": true
+    },
+    {
+      "name": "sit",
+      "duration": 3.0,
+      "loop": true
+    },
+    {
+      "name": "sleep",
+      "duration": 4.0,
+      "loop": true
+    },
+    {
+      "name": "eat",
+      "duration": 1.0,
+      "loop": true
+    },
+    {
+      "name": "play",
+      "duration": 1.2,
+      "loop": true
+    },
+    {
+      "name": "beg",
+      "duration": 1.6,
+      "loop": true
+    },
+    {
+      "name": "flee",
+      "duration": 0.4,
+      "loop": true
+    }
+  ],
+  "variants": {
+    "normal": "Pet_normal",
+    "undead": "Pet_undead"
+  },
+  "variantMaterials": {
+    "normal": [
+      "Paint",
+      "Skin",
+      "Detail",
+      "Eye",
+      "Shine"
+    ],
+    "undead": [
+      "Paint",
+      "Skin",
+      "Detail",
+      "EyeGlowA",
+      "EyeGlowB",
+      "Stitch"
+    ]
+  },
+  "recolour": "Paint",
+  "triangleBudget": 3000,
+  "species": {
+    "cat": {
+      "file": "models/pets/cat.glb",
+      "bytes": 397476,
+      "sha256": "8837a40e56ac208a29a964d7dd1f1efaaba1182593688e1ff12aa447f57b5843",
+      "plan": "quad",
+      "paint": "#f3e6cf",
+      "triangles": {
+        "Pet_normal": 2008,
+        "Pet_undead": 2068
+      },
+      "bones": [
+        "root",
+        "hips",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "jaw",
+        "ear_L",
+        "ear_R",
+        "upper_F_L",
+        "lower_F_L",
+        "paw_F_L",
+        "upper_F_R",
+        "lower_F_R",
+        "paw_F_R",
+        "tail_1",
+        "tail_2",
+        "tail_3",
+        "upper_H_L",
+        "lower_H_L",
+        "paw_H_L",
+        "upper_H_R",
+        "lower_H_R",
+        "paw_H_R"
+      ],
+      "materials": [
+        "Eye",
+        "EyeGlowA",
+        "EyeGlowB",
+        "Paint",
+        "Shine",
+        "Skin",
+        "Stitch"
+      ],
+      "bounds": {
+        "min": [
+          -0.0922,
+          0,
+          -0.2819
+        ],
+        "max": [
+          0.0922,
+          0.4363,
+          0.2989
+        ]
+      },
+      "sizeM": {
+        "width": 0.184,
+        "height": 0.436,
+        "length": 0.581
+      },
+      "groundClearanceMm": {
+        "idle": -0.0,
+        "walk": -0.0,
+        "run": -0.0,
+        "sit": -0.0,
+        "sleep": -0.0,
+        "eat": -0.0,
+        "play": -0.0,
+        "beg": -0.0,
+        "flee": -0.0
+      },
+      "outline": [
+        [
+          [
+            -0.0922,
+            0.1818
+          ],
+          [
+            -0.0848,
+            -0.0925
+          ],
+          [
+            -0.0534,
+            -0.1853
+          ],
+          [
+            -0.0099,
+            -0.2778
+          ],
+          [
+            0.0,
+            -0.2819
+          ],
+          [
+            0.0099,
+            -0.2778
+          ],
+          [
+            0.0534,
+            -0.1853
+          ],
+          [
+            0.0848,
+            -0.0925
+          ],
+          [
+            0.0922,
+            0.1818
+          ],
+          [
+            0.0757,
+            0.2234
+          ],
+          [
+            0.0622,
+            0.2568
+          ],
+          [
+            0.0595,
+            0.2614
+          ],
+          [
+            0.0091,
+            0.2964
+          ],
+          [
+            0.0,
+            0.2989
+          ],
+          [
+            -0.0091,
+            0.2964
+          ],
+          [
+            -0.0595,
+            0.2614
+          ],
+          [
+            -0.0622,
+            0.2568
+          ],
+          [
+            -0.0757,
+            0.2234
+          ]
+        ]
+      ],
+      "frames": {
+        "approach": {
+          "pos": [
+            0.0,
+            0.0,
+            0.7489
+          ],
+          "yaw": 180.0,
+          "kind": "approach"
+        },
+        "collar": {
+          "pos": [
+            0.0,
+            0.209,
+            0.1145
+          ],
+          "yaw": 0.0,
+          "kind": "attach"
+        },
+        "mouth": {
+          "pos": [
+            0.0,
+            0.234,
+            0.2868
+          ],
+          "yaw": 0.0,
+          "kind": "mouth"
+        },
+        "pet": {
+          "pos": [
+            0.0,
+            0.275,
+            0.1545
+          ],
+          "yaw": 0.0,
+          "kind": "hands"
+        }
+      }
+    },
+    "dog": {
+      "file": "models/pets/dog.glb",
+      "bytes": 379360,
+      "sha256": "fa05f3d2f57e3a94c4955fc86872acf4d53ebe913d5c4d601b039464b215419a",
+      "plan": "quad",
+      "paint": "#f0e2c8",
+      "triangles": {
+        "Pet_normal": 2020,
+        "Pet_undead": 2080
+      },
+      "bones": [
+        "root",
+        "hips",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "jaw",
+        "ear_L",
+        "ear_R",
+        "upper_F_L",
+        "lower_F_L",
+        "paw_F_L",
+        "upper_F_R",
+        "lower_F_R",
+        "paw_F_R",
+        "tail_1",
+        "tail_2",
+        "tail_3",
+        "upper_H_L",
+        "lower_H_L",
+        "paw_H_L",
+        "upper_H_R",
+        "lower_H_R",
+        "paw_H_R"
+      ],
+      "materials": [
+        "Detail",
+        "Eye",
+        "EyeGlowA",
+        "EyeGlowB",
+        "Paint",
+        "Shine",
+        "Stitch"
+      ],
+      "bounds": {
+        "min": [
+          -0.1158,
+          0,
+          -0.3161
+        ],
+        "max": [
+          0.1158,
+          0.547,
+          0.4596
+        ]
+      },
+      "sizeM": {
+        "width": 0.232,
+        "height": 0.547,
+        "length": 0.776
+      },
+      "groundClearanceMm": {
+        "idle": -0.0,
+        "walk": -0.0,
+        "run": -0.0,
+        "sit": -0.0,
+        "sleep": -0.0,
+        "eat": 0.0,
+        "play": -0.0,
+        "beg": -0.0,
+        "flee": -0.0
+      },
+      "outline": [
+        [
+          [
+            -0.1158,
+            0.272
+          ],
+          [
+            -0.1099,
+            -0.14
+          ],
+          [
+            -0.0646,
+            -0.252
+          ],
+          [
+            -0.0494,
+            -0.2755
+          ],
+          [
+            -0.0075,
+            -0.3129
+          ],
+          [
+            0.0,
+            -0.3161
+          ],
+          [
+            0.0075,
+            -0.3129
+          ],
+          [
+            0.0494,
+            -0.2755
+          ],
+          [
+            0.0646,
+            -0.252
+          ],
+          [
+            0.1099,
+            -0.14
+          ],
+          [
+            0.1158,
+            0.272
+          ],
+          [
+            0.114,
+            0.2819
+          ],
+          [
+            0.1122,
+            0.2891
+          ],
+          [
+            0.0372,
+            0.4238
+          ],
+          [
+            0.0124,
+            0.4562
+          ],
+          [
+            0.0,
+            0.4596
+          ],
+          [
+            -0.0124,
+            0.4562
+          ],
+          [
+            -0.0372,
+            0.4238
+          ],
+          [
+            -0.1122,
+            0.2891
+          ],
+          [
+            -0.114,
+            0.2819
+          ]
+        ]
+      ],
+      "frames": {
+        "approach": {
+          "pos": [
+            0.0,
+            0.0,
+            0.9096
+          ],
+          "yaw": 180.0,
+          "kind": "approach"
+        },
+        "collar": {
+          "pos": [
+            0.0,
+            0.3412,
+            0.162
+          ],
+          "yaw": 0.0,
+          "kind": "attach"
+        },
+        "mouth": {
+          "pos": [
+            0.0,
+            0.3954,
+            0.4348
+          ],
+          "yaw": 0.0,
+          "kind": "mouth"
+        },
+        "pet": {
+          "pos": [
+            0.0,
+            0.4462,
+            0.237
+          ],
+          "yaw": 0.0,
+          "kind": "hands"
+        }
+      }
+    },
+    "raccoon": {
+      "file": "models/pets/raccoon.glb",
+      "bytes": 390084,
+      "sha256": "72ca0aee849f84adda57ea00b8b03da91634a5c228b982205657f0f4b87cd867",
+      "plan": "quad",
+      "paint": "#e9e6de",
+      "triangles": {
+        "Pet_normal": 2166,
+        "Pet_undead": 2226
+      },
+      "bones": [
+        "root",
+        "hips",
+        "spine",
+        "chest",
+        "neck",
+        "head",
+        "jaw",
+        "ear_L",
+        "ear_R",
+        "upper_F_L",
+        "lower_F_L",
+        "paw_F_L",
+        "upper_F_R",
+        "lower_F_R",
+        "paw_F_R",
+        "tail_1",
+        "tail_2",
+        "tail_3",
+        "upper_H_L",
+        "lower_H_L",
+        "paw_H_L",
+        "upper_H_R",
+        "lower_H_R",
+        "paw_H_R"
+      ],
+      "materials": [
+        "Detail",
+        "Eye",
+        "EyeGlowA",
+        "EyeGlowB",
+        "Paint",
+        "Shine",
+        "Skin",
+        "Stitch"
+      ],
+      "bounds": {
+        "min": [
+          -0.1017,
+          0,
+          -0.4754
+        ],
+        "max": [
+          0.1066,
+          0.3584,
+          0.3384
+        ]
+      },
+      "sizeM": {
+        "width": 0.208,
+        "height": 0.358,
+        "length": 0.814
+      },
+      "groundClearanceMm": {
+        "idle": -0.0,
+        "walk": -0.0,
+        "run": -0.0,
+        "sit": -0.0,
+        "sleep": -0.0,
+        "eat": 0.0,
+        "play": -0.0,
+        "beg": -0.0,
+        "flee": -0.0
+      },
+      "outline": [
+        [
+          [
+            -0.1017,
+            -0.012
+          ],
+          [
+            -0.1016,
+            -0.056
+          ],
+          [
+            -0.0949,
+            -0.0999
+          ],
+          [
+            -0.032,
+            -0.451
+          ],
+          [
+            -0.0277,
+            -0.4619
+          ],
+          [
+            -0.0171,
+            -0.4711
+          ],
+          [
+            -0.0099,
+            -0.4734
+          ],
+          [
+            0.0,
+            -0.4754
+          ],
+          [
+            0.0099,
+            -0.4734
+          ],
+          [
+            0.0171,
+            -0.4711
+          ],
+          [
+            0.0277,
+            -0.4619
+          ],
+          [
+            0.032,
+            -0.451
+          ],
+          [
+            0.0949,
+            -0.0999
+          ],
+          [
+            0.1016,
+            -0.056
+          ],
+          [
+            0.1017,
+            -0.012
+          ],
+          [
+            0.084,
+            0.2071
+          ],
+          [
+            0.0757,
+            0.2409
+          ],
+          [
+            0.057,
+            0.2754
+          ],
+          [
+            0.0547,
+            0.2794
+          ],
+          [
+            0.0083,
+            0.3361
+          ],
+          [
+            0.0,
+            0.3384
+          ],
+          [
+            -0.0083,
+            0.3361
+          ],
+          [
+            -0.0547,
+            0.2794
+          ],
+          [
+            -0.057,
+            0.2754
+          ],
+          [
+            -0.0757,
+            0.2409
+          ],
+          [
+            -0.084,
+            0.2071
+          ]
+        ]
+      ],
+      "frames": {
+        "approach": {
+          "pos": [
+            0.0,
+            0.0,
+            0.7884
+          ],
+          "yaw": 180.0,
+          "kind": "approach"
+        },
+        "collar": {
+          "pos": [
+            0.0,
+            0.1982,
+            0.122
+          ],
+          "yaw": 0.0,
+          "kind": "attach"
+        },
+        "mouth": {
+          "pos": [
+            0.0,
+            0.2144,
+            0.3203
+          ],
+          "yaw": 0.0,
+          "kind": "mouth"
+        },
+        "pet": {
+          "pos": [
+            0.0,
+            0.2482,
+            0.172
+          ],
+          "yaw": 0.0,
+          "kind": "hands"
+        }
+      }
+    },
+    "crow": {
+      "file": "models/pets/crow.glb",
+      "bytes": 289736,
+      "sha256": "f3a3fae30a40d0f663fc84a974efd53a635d2953f4454644e4cd333ee387b4ba",
+      "plan": "bird",
+      "paint": "#5c6176",
+      "triangles": {
+        "Pet_normal": 2006,
+        "Pet_undead": 1986
+      },
+      "bones": [
+        "root",
+        "hips",
+        "neck",
+        "head",
+        "jaw",
+        "tail_1",
+        "wing_1_L",
+        "wing_2_L",
+        "upper_H_L",
+        "lower_H_L",
+        "paw_H_L",
+        "wing_1_R",
+        "wing_2_R",
+        "upper_H_R",
+        "lower_H_R",
+        "paw_H_R"
+      ],
+      "materials": [
+        "Detail",
+        "Eye",
+        "EyeGlowA",
+        "EyeGlowB",
+        "Paint",
+        "Shine",
+        "Stitch"
+      ],
+      "bounds": {
+        "min": [
+          -0.05,
+          0.0007,
+          -0.1915
+        ],
+        "max": [
+          0.05,
+          0.2166,
+          0.169
+        ]
+      },
+      "sizeM": {
+        "width": 0.1,
+        "height": 0.216,
+        "length": 0.361
+      },
+      "groundClearanceMm": {
+        "idle": 0.7,
+        "walk": -4.1,
+        "run": -4.2,
+        "sit": -4.0,
+        "sleep": -4.4,
+        "eat": 0.7,
+        "play": 0.7,
+        "beg": -1.6,
+        "flee": 102.2
+      },
+      "outline": [
+        [
+          [
+            -0.05,
+            -0.0044
+          ],
+          [
+            -0.0486,
+            -0.0318
+          ],
+          [
+            -0.0314,
+            -0.1643
+          ],
+          [
+            -0.0272,
+            -0.1782
+          ],
+          [
+            -0.0157,
+            -0.1881
+          ],
+          [
+            0.0,
+            -0.1915
+          ],
+          [
+            0.0157,
+            -0.1881
+          ],
+          [
+            0.0272,
+            -0.1782
+          ],
+          [
+            0.0314,
+            -0.1643
+          ],
+          [
+            0.0486,
+            -0.0318
+          ],
+          [
+            0.05,
+            -0.0044
+          ],
+          [
+            0.0486,
+            0.023
+          ],
+          [
+            0.0417,
+            0.0695
+          ],
+          [
+            0.0353,
+            0.1077
+          ],
+          [
+            0.001,
+            0.1684
+          ],
+          [
+            0.0006,
+            0.1688
+          ],
+          [
+            0.0004,
+            0.1689
+          ],
+          [
+            0.0,
+            0.169
+          ],
+          [
+            -0.0004,
+            0.1689
+          ],
+          [
+            -0.0006,
+            0.1688
+          ],
+          [
+            -0.001,
+            0.1684
+          ],
+          [
+            -0.0353,
+            0.1077
+          ],
+          [
+            -0.0417,
+            0.0695
+          ],
+          [
+            -0.0486,
+            0.023
+          ]
+        ]
+      ],
+      "frames": {
+        "approach": {
+          "pos": [
+            0.0,
+            0.0,
+            0.619
+          ],
+          "yaw": 180.0,
+          "kind": "approach"
+        },
+        "collar": {
+          "pos": [
+            0.0,
+            0.132,
+            0.0663
+          ],
+          "yaw": 0.0,
+          "kind": "attach"
+        },
+        "mouth": {
+          "pos": [
+            0.0,
+            0.16,
+            0.1489
+          ],
+          "yaw": 0.0,
+          "kind": "mouth"
+        },
+        "pet": {
+          "pos": [
+            0.0,
+            0.172,
+            0.0783
+          ],
+          "yaw": 0.0,
+          "kind": "hands"
+        }
+      }
+    }
+  }
+}

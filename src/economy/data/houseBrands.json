@@ -1,0 +1,112 @@
+{
+  "brandSkins": [
+    {
+      "id": "grave_cola_fridge",
+      "brand": "Grave-Cola",
+      "licensed": false,
+      "appliesTo": ["fridge_humming"],
+      "displayName": "Grave-Cola Chiller",
+      "flavorText": "Ice-cold fizz for the recently deceased. Now with 0% heartbeat.",
+      "livery": { "Paint": "#b3212f", "trim": "#f3eee2" },
+      "decals": { "logo": "assets/decals/grave-cola.svg" },
+      "enabled": true
+    },
+    {
+      "id": "coffin_coffee_espresso",
+      "brand": "Coffin Coffee",
+      "licensed": false,
+      "appliesTo": ["espresso_embalmer"],
+      "displayName": "Coffin Coffee Embalmer",
+      "flavorText": "Wake the dead. Literally. Fair-trade beans, unfair-trade souls.",
+      "livery": { "Paint": "#3b2a20", "trim": "#d7b56d" },
+      "decals": { "logo": "assets/decals/coffin-coffee.svg" },
+      "enabled": true
+    },
+    {
+      "id": "necro_tech_pc",
+      "brand": "Necro-Tech",
+      "licensed": false,
+      "appliesTo": ["desk_hauntedpc"],
+      "displayName": "Necro-Tech Haunted Rig",
+      "flavorText": "Boots up even after you don't. 1 TB of cursed storage included.",
+      "livery": { "Paint": "#1d2a33", "trim": "#5ef0a8" },
+      "decals": { "logo": "assets/decals/necro-tech.svg" },
+      "enabled": true
+    },
+    {
+      "id": "volt_hearse_ev",
+      "brand": "Volt-Hearse",
+      "licensed": false,
+      "appliesTo": ["env_hearse"],
+      "displayName": "Volt-Hearse EV",
+      "flavorText": "Zero emissions. Zero pulse. Ranges up to 300 miles between graveyards.",
+      "livery": { "Paint": "#2b2f3a", "trim": "#8be9fd" },
+      "decals": { "logo": "assets/decals/volt-hearse.svg" },
+      "enabled": true
+    },
+    {
+      "id": "mulch_master_mower",
+      "brand": "Mulch Master",
+      "licensed": false,
+      "appliesTo": [],
+      "displayName": "Mulch Master Ride-On",
+      "flavorText": "Keeps the lawn short and the shallow graves tidy.",
+      "livery": { "Paint": "#3f7a2c", "trim": "#f2d64b" },
+      "decals": { "logo": "assets/decals/mulch-master.svg" },
+      "enabled": true
+    },
+    {
+      "id": "brain_bran_box",
+      "brand": "Brain Bran",
+      "licensed": false,
+      "appliesTo": [],
+      "displayName": "Brain Bran Cereal",
+      "flavorText": "Part of a balanced undead breakfast. Crunchy on the outside, squishy on the inside.",
+      "livery": { "Paint": "#e58fa0", "trim": "#5a2a3a" },
+      "decals": { "logo": "assets/decals/brain-bran.svg" },
+      "enabled": true
+    },
+    {
+      "id": "rot_pop_can",
+      "brand": "Rot-Pop",
+      "licensed": false,
+      "appliesTo": [],
+      "displayName": "Rot-Pop Soda",
+      "flavorText": "Fermented to perfection. Best before: who knows.",
+      "livery": { "Paint": "#7c4dff", "trim": "#c6ff00" },
+      "decals": { "logo": "assets/decals/rot-pop.svg" },
+      "enabled": true
+    },
+    {
+      "id": "crypt_kicks_sneakers",
+      "brand": "Crypt-Kicks",
+      "licensed": false,
+      "appliesTo": [],
+      "displayName": "Crypt-Kicks Shufflers",
+      "flavorText": "Engineered for the slow shamble. Laces sold separately, like most limbs.",
+      "livery": { "Paint": "#f5f5f0", "trim": "#e0452b" },
+      "decals": { "logo": "assets/decals/crypt-kicks.svg" },
+      "enabled": true
+    }
+  ],
+  "adCreatives": [
+    { "id": "ad_grave_cola_tv", "surface": "tv", "brand": "Grave-Cola", "image": "assets/ads/grave-cola-tv.svg", "ageMin": 0 },
+    { "id": "ad_brain_bran_tv", "surface": "tv", "brand": "Brain Bran", "image": "assets/ads/brain-bran-tv.svg", "ageMin": 0 },
+    { "id": "ad_volt_hearse_billboard", "surface": "billboard", "brand": "Volt-Hearse", "image": "assets/ads/volt-hearse-billboard.svg", "ageMin": 0 },
+    { "id": "ad_mulch_master_billboard", "surface": "billboard", "brand": "Mulch Master", "image": "assets/ads/mulch-master-billboard.svg", "ageMin": 0 },
+    { "id": "ad_crypt_kicks_magazine", "surface": "magazine", "brand": "Crypt-Kicks", "image": "assets/ads/crypt-kicks-magazine.svg", "ageMin": 0 },
+    { "id": "ad_necro_tech_magazine", "surface": "magazine", "brand": "Necro-Tech", "image": "assets/ads/necro-tech-magazine.svg", "ageMin": 0 },
+    { "id": "ad_rot_pop_busstop", "surface": "busStop", "brand": "Rot-Pop", "image": "assets/ads/rot-pop-busstop.svg", "ageMin": 0 },
+    { "id": "ad_coffin_coffee_busstop", "surface": "busStop", "brand": "Coffin Coffee", "image": "assets/ads/coffin-coffee-busstop.svg", "ageMin": 0 }
+  ],
+  "colors": {
+    "Grave-Cola": ["#b3212f", "#f3eee2"],
+    "Coffin Coffee": ["#3b2a20", "#d7b56d"],
+    "Necro-Tech": ["#1d2a33", "#5ef0a8"],
+    "Volt-Hearse": ["#2b2f3a", "#8be9fd"],
+    "Mulch Master": ["#3f7a2c", "#f2d64b"],
+    "Brain Bran": ["#e58fa0", "#5a2a3a"],
+    "Rot-Pop": ["#7c4dff", "#c6ff00"],
+    "Crypt-Kicks": ["#f5f5f0", "#e0452b"]
+  }
+}

@@ -1,0 +1,522 @@
+/* ═════════════════════════════ Buy catalog ═════════════════════════════ */
+.hud-buy,
+.hud-build {
+  position: absolute;
+  left: var(--hud-gap);
+  right: var(--hud-gap);
+  bottom: var(--hud-gap);
+  height: var(--hud-catalog-h);
+  z-index: var(--z-panel);
+  border-radius: var(--r-xl);
+  animation: ui-rise-in var(--dur-slow) var(--ease-out) both;
+}
+/* The catalog is sized for the largest category (8 items) plus the detail card and centred — a counter, not a
+   full-width slab with a hole in the middle; smaller windows / bigger UI scales fall back to full width. */
+.hud-buy {
+  max-width: 84rem;
+  margin-inline: auto;
+}
+.hud-buy__head {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.75rem 0.5rem;
+}
+.hud-cats {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.hud-cats::-webkit-scrollbar {
+  display: none;
+}
+.hud-cat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4375rem;
+  flex-shrink: 0;
+  height: 2.375rem;
+  min-width: 2.375rem;
+  padding: 0 0.5625rem;
+  border-radius: var(--r-pill);
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+.hud-cat:hover {
+  color: var(--text-strong);
+  background: var(--bg-hover);
+}
+.hud-cat.is-active {
+  padding: 0 0.875rem 0 0.6875rem;
+  color: var(--c-toxic-hi);
+  background: linear-gradient(180deg, rgba(159, 232, 112, 0.2), rgba(159, 232, 112, 0.07));
+  border-color: rgba(159, 232, 112, 0.45);
+  box-shadow: 0 0 1rem rgba(159, 232, 112, 0.12);
+}
+.hud-cat__label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  white-space: nowrap;
+  animation: ui-fade-in var(--dur-med) var(--ease-out) both;
+}
+.hud-buy__search {
+  flex: 0 0 15rem;
+  height: 2.25rem;
+}
+.hud-buy__search input::-webkit-search-cancel-button {
+  display: none;
+}
+.hud-buy__body {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0 0.75rem;
+}
+.hud-buy__gridwrap {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.hud-buy__results {
+  padding: 0 0.25rem 0.375rem;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+/* W-123: the quest filter chip ("For your quest — an easel") */
+.hud-buy__filter {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--text-warm, var(--text));
+  font-weight: 600;
+}
+.hud-buy__grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.375rem, 1fr));
+  grid-auto-rows: max-content;
+  gap: 0.5rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.125rem 0.25rem 0.5rem 0.125rem;
+  scrollbar-gutter: stable;
+}
+.hud-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.375rem 0.375rem 0.4375rem;
+  border-radius: var(--r-md);
+  background: linear-gradient(180deg, rgba(232, 224, 200, 0.07), rgba(232, 224, 200, 0.025));
+  border: 1px solid var(--border-faint);
+  color: var(--text);
+  transition:
+    border-color var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out),
+    transform var(--dur-med) var(--ease-out),
+    box-shadow var(--dur-med) var(--ease-out),
+    opacity var(--dur-fast) var(--ease-out);
+}
+.hud-item:hover,
+.hud-item.is-focused {
+  border-color: var(--border-strong);
+  background: linear-gradient(180deg, rgba(232, 224, 200, 0.11), rgba(232, 224, 200, 0.04));
+}
+.hud-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.hud-item.is-selected {
+  border-color: var(--border-accent);
+  background: linear-gradient(180deg, rgba(159, 232, 112, 0.16), rgba(159, 232, 112, 0.05));
+  box-shadow: var(--glow-accent);
+}
+.hud-item.is-poor {
+  opacity: 0.55;
+}
+.hud-item.is-poor .hud-thumb img {
+  filter: saturate(0.4) brightness(0.8);
+}
+.hud-item__name {
+  width: 100%;
+  min-height: 2.1em;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-wrap: balance;
+}
+.hud-item__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.hud-item__price {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1875rem;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--c-candle-hi);
+}
+.hud-item__price.is-poor {
+  color: #ff9f8f;
+}
+.hud-item__env {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.0625rem;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+}
+.hud-item__env.is-pos {
+  color: var(--c-need-high);
+}
+.hud-item__env.is-neg {
+  color: #ff8f9c;
+}
+.hud-item__power {
+  position: absolute;
+  top: 0.375rem;
+  right: 0.375rem;
+  display: grid;
+  place-items: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  color: var(--c-cryo);
+  background: rgba(127, 224, 255, 0.12);
+}
+.hud-thumb {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  color: var(--text-faint);
+  background: radial-gradient(circle at 50% 40%, rgba(102, 85, 126, 0.55), rgba(29, 23, 38, 0.6) 75%);
+  box-shadow: inset 0 0 0 1px rgba(232, 224, 200, 0.06);
+}
+.hud-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.45));
+  animation: ui-fade-in var(--dur-med) var(--ease-out) both;
+}
+.hud-thumb__shimmer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.hud-thumb__shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(232, 224, 200, 0.12), transparent);
+  animation: ui-shimmer 1.4s var(--ease-in-out) infinite;
+}
+
+/* detail card: media column (thumbnail, price, chips) + info column */
+.hud-detail {
+  flex: 0 0 23.5rem;
+  display: grid;
+  grid-template-columns: 5.25rem minmax(0, 1fr);
+  gap: 0.875rem;
+  min-height: 0;
+  padding: 0.625rem 0.875rem 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--r-lg);
+  background: linear-gradient(180deg, rgba(9, 6, 13, 0.32), rgba(9, 6, 13, 0.18));
+  border: 1px solid var(--border-faint);
+  overflow: hidden;
+}
+.hud-detail.is-moving {
+  border-color: var(--border-warm);
+  background: linear-gradient(180deg, rgba(255, 179, 90, 0.08), rgba(9, 6, 13, 0.2));
+}
+.hud-detail__media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+}
+.hud-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  min-width: 0;
+  min-height: 0;
+}
+.hud-detail__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 1.25rem;
+}
+.hud-detail__name {
+  flex-shrink: 0;
+  font-size: var(--fs-lg);
+  color: var(--text-strong);
+  line-height: 1.15;
+}
+.hud-detail__chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.hud-detail__price {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--c-candle-hi);
+  line-height: 1;
+}
+.hud-detail__price.is-poor {
+  color: #ff9f8f;
+}
+.hud-detail__price.is-sell {
+  color: var(--c-toxic-hi);
+}
+.hud-detail__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1875rem;
+  height: 1.25rem;
+  padding: 0 0.4375rem;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  color: var(--text-muted);
+  background: rgba(232, 224, 200, 0.07);
+  border: 1px solid var(--border-faint);
+  cursor: default;
+}
+.hud-detail__chip.is-pos {
+  color: var(--c-need-high);
+  border-color: rgba(85, 214, 190, 0.35);
+}
+.hud-detail__chip.is-neg {
+  color: #ff8f9c;
+  border-color: rgba(255, 143, 156, 0.35);
+}
+.hud-detail__chip.is-power {
+  color: var(--c-cryo);
+  border-color: rgba(127, 224, 255, 0.35);
+}
+.hud-detail__desc {
+  flex-shrink: 0;
+  font-size: var(--fs-sm);
+  font-style: italic;
+  font-family: var(--font-display);
+  line-height: var(--lh-snug);
+  color: var(--text-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.hud-detail__good {
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.3125rem;
+  min-width: 0;
+  border-radius: var(--r-sm);
+}
+.hud-detail__label {
+  color: var(--text-warm);
+  margin-right: 0.125rem;
+}
+.hud-goodneed {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  height: 1.25rem;
+  padding: 0 0.4375rem 0 0.3125rem;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-semibold);
+  color: var(--c-need-high);
+  background: rgba(85, 214, 190, 0.1);
+  border: 1px solid rgba(85, 214, 190, 0.3);
+  cursor: default;
+}
+.hud-goodneed.is-skill {
+  color: var(--c-candle-hi);
+  background: rgba(255, 179, 90, 0.1);
+  border-color: rgba(255, 179, 90, 0.3);
+}
+.hud-detail__deco {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.hud-detail__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.375rem 0.5rem;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+/* action labels ("Sell for $1,234", "Put it back") never truncate: the row wraps instead */
+.hud-detail__foot > .ui-btn {
+  flex-shrink: 0;
+}
+.hud-detail__foot > .ui-btn .ui-btn__label {
+  overflow: visible;
+}
+.hud-detail__swatches {
+  flex: 1 1 auto;
+  gap: 0.3125rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.hud-swatch--default .ui-swatch__check {
+  color: #15101c;
+}
+
+/* hint bar */
+.hud-buy__hints,
+.hud-build__hints {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+  min-height: 2.25rem;
+  padding: 0.25rem 1rem 0.375rem;
+  border-top: 1px dashed rgba(232, 224, 200, 0.12);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.hud-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  white-space: nowrap;
+}
+.hud-hint.is-idle .hud-icon {
+  color: var(--c-candle);
+}
+.hud-hint__or {
+  color: var(--text-faint);
+}
+.hud-hint__rot {
+  display: inline-flex;
+  gap: 0.125rem;
+  margin-left: -0.5rem;
+}
+/* WCAG 2.5.8: the rotate buttons are ≥ 24 × 24 px at every UI scale / window size (axe target-size, W-064) */
+.hud-hint__rot .ui-iconbtn {
+  --ib-size: max(1.5rem, 24px);
+}
+
+/* ═════════════════════════════ Placement bar (W-116) ═════════════════════════════ */
+.hud-placebar {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--hud-catalog-h) + var(--hud-gap) * 2);
+  transform: translateX(-50%);
+  z-index: calc(var(--z-panel) + 1);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: calc(100% - var(--hud-gap) * 2);
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  border-radius: var(--r-xl);
+  animation: ui-rise-in var(--dur-slow) var(--ease-out) both;
+}
+.hud-placebar__icon {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--c-toxic, #9fe870);
+  background: color-mix(in srgb, currentColor 16%, transparent);
+}
+.hud-placebar__text {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.hud-placebar__title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.hud-placebar__name {
+  font-weight: 700;
+  min-width: 0;
+}
+.hud-placebar__price {
+  opacity: 0.85;
+}
+.hud-placebar__hint {
+  font-size: 0.8125rem;
+  opacity: 0.8;
+}
+.hud-placebar__keep {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  flex: none;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+.hud-placebar__done {
+  flex: none;
+  min-height: 2.5rem;
+  min-width: 5.5rem;
+}
+/* desktop: under the top bar, clear of the catalog and of the tips anchored to it */
+.hud:not([data-phone]) .hud-placebar {
+  bottom: auto;
+  top: 5.25rem;
+}
+.hud[data-phone] .hud-placebar {
+  left: var(--hud-gap);
+  right: var(--hud-gap);
+  transform: none;
+  flex-wrap: wrap;
+}
+.hud[data-phone] .hud-placebar__done {
+  /* prominent and ≥ 44 px on phone (W-116): an explicit height beats the button's own size */
+  height: 48px;
+  min-height: 48px;
+  min-width: 88px;
+}

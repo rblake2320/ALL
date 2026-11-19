@@ -1,0 +1,2808 @@
+{
+ "version": 1,
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "budget": {
+  "lod0": 6000,
+  "lod1": 2000
+ },
+ "materials": {
+  "Shell": "white; colour is in the vertex colours",
+  "Glass": "window panes"
+ },
+ "shells": {
+  "shell_starter": {
+   "name": "Fixer-Upper on Mildew Lane",
+   "level": "L1",
+   "homeClass": "starter",
+   "lot": "wormwood:starter",
+   "template": "starter",
+   "tileFootprint": {
+    "w": 11,
+    "d": 10
+   },
+   "doors": [
+    {
+     "x": 0.0,
+     "z": 5.0
+    }
+   ],
+   "lotRect": {
+    "x0": 9,
+    "z0": 9,
+    "w": 11,
+    "d": 10
+   },
+   "bounds": {
+    "min": [
+     -6.02,
+     0.0,
+     -5.3839
+    ],
+    "max": [
+     6.02,
+     6.9344,
+     6.6109
+    ]
+   },
+   "sizeM": {
+    "width": 12.04,
+    "depth": 11.99,
+    "height": 6.93
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -6.02,
+      0.41
+     ],
+     [
+      -6.0,
+      -4.53
+     ],
+     [
+      6.0,
+      -4.53
+     ],
+     [
+      6.02,
+      0.41
+     ],
+     [
+      6.02,
+      0.59
+     ],
+     [
+      6.0,
+      5.53
+     ],
+     [
+      5.9177,
+      5.55
+     ],
+     [
+      -5.973,
+      5.55
+     ],
+     [
+      -6.0,
+      5.53
+     ],
+     [
+      -6.02,
+      0.59
+     ]
+    ],
+    [
+     [
+      1.35,
+      -5.3839
+     ],
+     [
+      5.65,
+      -5.3839
+     ],
+     [
+      5.65,
+      -4.53
+     ],
+     [
+      1.35,
+      -4.53
+     ]
+    ],
+    [
+     [
+      1.55,
+      5.5174
+     ],
+     [
+      1.55,
+      6.6109
+     ],
+     [
+      -1.55,
+      6.6109
+     ],
+     [
+      -1.55,
+      5.5174
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      7.2
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.5,
+      0.0,
+      7.5
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      0.0,
+      0.18,
+      5.65
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_starter.glb",
+     "bytes": 36160,
+     "sha256": "66aa080fbb8693130c85f5259d7fc483c5b509bad51174023d8f201ee5868efa",
+     "triangles": 746,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -6.02,
+       0.0,
+       -5.3839
+      ],
+      "max": [
+       6.02,
+       6.9344,
+       6.6109
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_starter_lod1.glb",
+     "bytes": 14316,
+     "sha256": "d4acc67379b255568326aefeb4bd46709e8798790789bc1322ff8da1ccca32df",
+     "triangles": 264,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -6.0,
+       0.0,
+       -5.3839
+      ],
+      "max": [
+       6.0,
+       6.6475,
+       6.6109
+      ]
+     }
+    }
+   ]
+  },
+  "shell_derelict": {
+   "name": "The Condemned Shack on Mildew Lane",
+   "level": "L1",
+   "homeClass": "starter",
+   "lot": "derelict",
+   "template": "derelict",
+   "tileFootprint": {
+    "w": 8,
+    "d": 6
+   },
+   "doors": [
+    {
+     "x": -1.5,
+     "z": 3.0
+    }
+   ],
+   "lotRect": {
+    "x0": 11,
+    "z0": 13,
+    "w": 8,
+    "d": 6
+   },
+   "bounds": {
+    "min": [
+     -4.42,
+     0.0,
+     -3.7117
+    ],
+    "max": [
+     4.42,
+     5.4763,
+     3.7724
+    ]
+   },
+   "sizeM": {
+    "width": 8.84,
+    "depth": 7.48,
+    "height": 5.48
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -4.42,
+      -0.09
+     ],
+     [
+      -4.4,
+      -3.43
+     ],
+     [
+      -3.55,
+      -3.7117
+     ],
+     [
+      -0.85,
+      -3.7117
+     ],
+     [
+      4.4,
+      -3.43
+     ],
+     [
+      4.42,
+      -0.09
+     ],
+     [
+      4.42,
+      0.09
+     ],
+     [
+      4.4,
+      3.43
+     ],
+     [
+      3.7048,
+      3.7724
+     ],
+     [
+      3.4952,
+      3.7724
+     ],
+     [
+      -4.2497,
+      3.45
+     ],
+     [
+      -4.4,
+      3.43
+     ],
+     [
+      -4.42,
+      0.09
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      -1.5,
+      0.0,
+      3.9
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      0.0,
+      0.0,
+      4.2
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -1.5,
+      0.12,
+      3.45
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_derelict.glb",
+     "bytes": 28816,
+     "sha256": "5978b9f24017735eff51b362c43cb2b8d30d8b5a2f9d850384a2375c8853799f",
+     "triangles": 728,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -4.42,
+       0.0,
+       -3.7117
+      ],
+      "max": [
+       4.42,
+       5.4763,
+       3.7724
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_derelict_lod1.glb",
+     "bytes": 10472,
+     "sha256": "70ea9f8accc78178205fd1e97dd7d9e1fcbf9b3a364d01768dcfc272d04ab018",
+     "triangles": 184,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -4.4,
+       0.0,
+       -3.7117
+      ],
+      "max": [
+       4.4,
+       5.182,
+       3.77
+      ]
+     }
+    }
+   ]
+  },
+  "shell_derelict_lean": {
+   "name": "The Leaning Shack",
+   "level": "L1",
+   "homeClass": "starter",
+   "lot": "derelict_lean",
+   "template": "derelict_lean",
+   "tileFootprint": {
+    "w": 6,
+    "d": 8
+   },
+   "doors": [
+    {
+     "x": -0.5,
+     "z": 4.0
+    }
+   ],
+   "lotRect": {
+    "x0": 12,
+    "z0": 11,
+    "w": 6,
+    "d": 8
+   },
+   "bounds": {
+    "min": [
+     -3.42,
+     0.0,
+     -4.7117
+    ],
+    "max": [
+     3.42,
+     6.2437,
+     4.7724
+    ]
+   },
+   "sizeM": {
+    "width": 6.84,
+    "depth": 9.48,
+    "height": 6.24
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -3.42,
+      -0.09
+     ],
+     [
+      -3.4,
+      -4.4318
+     ],
+     [
+      -2.55,
+      -4.7117
+     ],
+     [
+      0.15,
+      -4.7117
+     ],
+     [
+      3.4,
+      -4.4318
+     ],
+     [
+      3.42,
+      -0.09
+     ],
+     [
+      3.42,
+      0.09
+     ],
+     [
+      3.4,
+      4.4318
+     ],
+     [
+      2.7048,
+      4.7724
+     ],
+     [
+      2.4952,
+      4.7724
+     ],
+     [
+      -3.2495,
+      4.45
+     ],
+     [
+      -3.4,
+      4.4318
+     ],
+     [
+      -3.42,
+      0.09
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      -0.5,
+      0.0,
+      4.9
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.0,
+      0.0,
+      5.2
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -0.5,
+      0.12,
+      4.45
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_derelict_lean.glb",
+     "bytes": 29524,
+     "sha256": "443d8210d769d7d121875284b66742e468d98b44e3ad93917d5ed398d41b899f",
+     "triangles": 744,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -3.42,
+       0.0,
+       -4.7117
+      ],
+      "max": [
+       3.42,
+       6.2437,
+       4.7724
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_derelict_lean_lod1.glb",
+     "bytes": 10484,
+     "sha256": "7ff0c8bf5348daaf028cdebbb7829dd923a9d9751ab423a9e29d81c4cd754a40",
+     "triangles": 184,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -3.4,
+       0.0,
+       -4.7117
+      ],
+      "max": [
+       3.4,
+       5.9466,
+       4.77
+      ]
+     }
+    }
+   ]
+  },
+  "shell_derelict_lshape": {
+   "name": "The Crooked-L Shack",
+   "level": "L1",
+   "homeClass": "starter",
+   "lot": "derelict_lshape",
+   "template": "derelict_lshape",
+   "tileFootprint": {
+    "w": 8,
+    "d": 8
+   },
+   "doors": [
+    {
+     "x": -1.5,
+     "z": 4.0
+    }
+   ],
+   "lotRect": {
+    "x0": 10,
+    "z0": 11,
+    "w": 8,
+    "d": 8
+   },
+   "bounds": {
+    "min": [
+     -4.42,
+     0.0,
+     -4.43
+    ],
+    "max": [
+     4.42,
+     5.4763,
+     4.795
+    ]
+   },
+   "sizeM": {
+    "width": 8.84,
+    "depth": 9.22,
+    "height": 5.48
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -4.42,
+      0.91
+     ],
+     [
+      -4.4,
+      -2.43
+     ],
+     [
+      4.412,
+      -2.43
+     ],
+     [
+      4.42,
+      -1.09
+     ],
+     [
+      4.42,
+      -0.91
+     ],
+     [
+      4.4,
+      2.43
+     ],
+     [
+      -4.412,
+      2.43
+     ],
+     [
+      -4.42,
+      1.09
+     ]
+    ],
+    [
+     [
+      1.42,
+      2.4124
+     ],
+     [
+      1.42,
+      4.4167
+     ],
+     [
+      1.4,
+      4.43
+     ],
+     [
+      1.2767,
+      4.45
+     ],
+     [
+      -4.2767,
+      4.45
+     ],
+     [
+      -4.4,
+      4.43
+     ],
+     [
+      -4.4121,
+      2.4124
+     ]
+    ],
+    [
+     [
+      0.58,
+      -4.4231
+     ],
+     [
+      0.6,
+      -4.43
+     ],
+     [
+      4.4,
+      -4.43
+     ],
+     [
+      4.412,
+      -2.43
+     ],
+     [
+      0.58,
+      -2.43
+     ]
+    ],
+    [
+     [
+      -3.95,
+      -2.8617
+     ],
+     [
+      -1.25,
+      -2.8617
+     ],
+     [
+      -1.25,
+      -2.43
+     ],
+     [
+      -3.95,
+      -2.43
+     ]
+    ],
+    [
+     [
+      -0.85,
+      4.43
+     ],
+     [
+      -0.85,
+      4.795
+     ],
+     [
+      -2.15,
+      4.795
+     ],
+     [
+      -2.1636,
+      4.7928
+     ],
+     [
+      -2.1636,
+      4.43
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      -1.5,
+      0.0,
+      4.9
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      0.0,
+      0.0,
+      5.2
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -1.5,
+      0.12,
+      4.45
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_derelict_lshape.glb",
+     "bytes": 35256,
+     "sha256": "e2760123087e2a3433a8d912bea68f129aeba50d1d11878ad68035952fc1ae22",
+     "triangles": 872,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -4.42,
+       0.0,
+       -4.43
+      ],
+      "max": [
+       4.42,
+       5.4763,
+       4.795
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_derelict_lshape_lod1.glb",
+     "bytes": 14152,
+     "sha256": "bdbf0a46de9b3714e559236c09032519aa33094b8b6c4b60dbaa09042308cc2e",
+     "triangles": 268,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -4.4,
+       0.0,
+       -4.43
+      ],
+      "max": [
+       4.4,
+       5.182,
+       4.795
+      ]
+     }
+    }
+   ]
+  },
+  "shell_wormwood_bungalow": {
+   "name": "Sagging Bungalow",
+   "level": "L1",
+   "homeClass": "cottage",
+   "lot": "wormwood:bungalow",
+   "template": "wormwood_bungalow",
+   "tileFootprint": {
+    "w": 13,
+    "d": 9
+   },
+   "doors": [
+    {
+     "x": -3.0,
+     "z": 4.5
+    }
+   ],
+   "lotRect": {
+    "x0": 7,
+    "z0": 11,
+    "w": 13,
+    "d": 9
+   },
+   "bounds": {
+    "min": [
+     -7.12,
+     0.0,
+     -5.1244
+    ],
+    "max": [
+     7.12,
+     5.9235,
+     6.807
+    ]
+   },
+   "sizeM": {
+    "width": 14.24,
+    "depth": 11.93,
+    "height": 5.92
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -6.56,
+      -5.1244
+     ],
+     [
+      6.58,
+      -5.1244
+     ],
+     [
+      6.58,
+      6.7152
+     ],
+     [
+      6.55,
+      6.807
+     ],
+     [
+      -6.55,
+      6.807
+     ],
+     [
+      -6.56,
+      6.7764
+     ]
+    ],
+    [
+     [
+      -7.12,
+      -0.09
+     ],
+     [
+      -7.1,
+      -5.1244
+     ],
+     [
+      7.1,
+      -5.1244
+     ],
+     [
+      7.12,
+      -0.09
+     ],
+     [
+      7.12,
+      0.09
+     ],
+     [
+      7.1,
+      5.1244
+     ],
+     [
+      -7.1,
+      5.1244
+     ],
+     [
+      -7.12,
+      0.09
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      -3.0,
+      0.0,
+      7.7
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      -1.5,
+      0.0,
+      8.0
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -3.0,
+      0.3,
+      5.5
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_wormwood_bungalow.glb",
+     "bytes": 56036,
+     "sha256": "c706d301b696e6d5096afc02261dbf24b517e07950b6dd5a51dd5e45c3ac7fce",
+     "triangles": 1188,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -7.12,
+       0.0,
+       -5.1244
+      ],
+      "max": [
+       7.12,
+       5.9235,
+       6.807
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_wormwood_bungalow_lod1.glb",
+     "bytes": 19340,
+     "sha256": "8e4a499b7333324fb24b4bbc59115bd248ac6948a11da1098efba66a417443ec",
+     "triangles": 372,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -7.1,
+       0.0,
+       -5.1244
+      ],
+      "max": [
+       7.1,
+       5.6235,
+       6.807
+      ]
+     }
+    }
+   ]
+  },
+  "shell_wormwood_townhouse": {
+   "name": "Narrow Townhouse",
+   "level": "L3",
+   "homeClass": "cottage",
+   "lot": "wormwood:townhouse",
+   "template": "wormwood_townhouse",
+   "tileFootprint": {
+    "w": 7,
+    "d": 15
+   },
+   "doors": [
+    {
+     "x": 0.0,
+     "z": 7.5
+    }
+   ],
+   "lotRect": {
+    "x0": 11,
+    "z0": 6,
+    "w": 7,
+    "d": 15
+   },
+   "bounds": {
+    "min": [
+     -3.8973,
+     0.0,
+     -7.87
+    ],
+    "max": [
+     3.8973,
+     14.9998,
+     9.4
+    ]
+   },
+   "sizeM": {
+    "width": 7.79,
+    "depth": 17.27,
+    "height": 15.0
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -3.8973,
+      -7.85
+     ],
+     [
+      -0.09,
+      -7.87
+     ],
+     [
+      0.09,
+      -7.87
+     ],
+     [
+      3.8973,
+      -7.85
+     ],
+     [
+      3.8973,
+      7.85
+     ],
+     [
+      3.8599,
+      7.87
+     ],
+     [
+      -3.8599,
+      7.87
+     ],
+     [
+      -3.8973,
+      7.85
+     ]
+    ],
+    [
+     [
+      1.0,
+      7.85
+     ],
+     [
+      1.0,
+      9.4
+     ],
+     [
+      -1.0,
+      9.4
+     ],
+     [
+      -1.0,
+      7.85
+     ]
+    ],
+    [
+     [
+      1.2,
+      7.85
+     ],
+     [
+      1.2,
+      8.8
+     ],
+     [
+      -1.2,
+      8.8
+     ],
+     [
+      -1.2,
+      7.85
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      10.3
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.5,
+      0.0,
+      10.6
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      0.0,
+      0.55,
+      8.15
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_wormwood_townhouse.glb",
+     "bytes": 82520,
+     "sha256": "d31602ee1408d7bd5f29e0815ee187a01f30bc967ffd901b581c7e427dd9f8e0",
+     "triangles": 1816,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -3.8973,
+       0.0,
+       -7.87
+      ],
+      "max": [
+       3.8973,
+       14.9998,
+       9.4
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_wormwood_townhouse_lod1.glb",
+     "bytes": 50376,
+     "sha256": "e036f53428156ef24a289a592ae8a73bb98bbe70f128964dc4fe1774432894c5",
+     "triangles": 1112,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -3.8973,
+       0.0,
+       -7.85
+      ],
+      "max": [
+       3.8973,
+       14.9998,
+       9.4
+      ]
+     }
+    }
+   ]
+  },
+  "shell_rotrow_walkup": {
+   "name": "Walk-Up 2A, Rot Row",
+   "level": "L3",
+   "homeClass": "apartment",
+   "lot": "rotrow:walkup_2a",
+   "template": "rotrow_walkup",
+   "tileFootprint": {
+    "w": 12,
+    "d": 10
+   },
+   "doors": [
+    {
+     "x": 0.5,
+     "z": 5.0
+    }
+   ],
+   "lotRect": {
+    "x0": 9,
+    "z0": 10,
+    "w": 12,
+    "d": 10
+   },
+   "bounds": {
+    "min": [
+     -6.25,
+     0.0,
+     -5.11
+    ],
+    "max": [
+     6.25,
+     12.03,
+     7.3
+    ]
+   },
+   "sizeM": {
+    "width": 12.5,
+    "depth": 12.41,
+    "height": 12.03
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -6.08,
+      -5.06
+     ],
+     [
+      -6.07,
+      -5.07
+     ],
+     [
+      -4.775,
+      -5.11
+     ],
+     [
+      4.775,
+      -5.11
+     ],
+     [
+      6.07,
+      -5.07
+     ],
+     [
+      6.08,
+      -5.06
+     ],
+     [
+      6.08,
+      5.275
+     ],
+     [
+      -6.08,
+      5.275
+     ]
+    ],
+    [
+     [
+      1.65,
+      5.275
+     ],
+     [
+      1.65,
+      7.2782
+     ],
+     [
+      1.6,
+      7.3
+     ],
+     [
+      -0.6,
+      7.3
+     ],
+     [
+      -0.63,
+      7.2901
+     ],
+     [
+      -0.63,
+      5.275
+     ]
+    ],
+    [
+     [
+      -2.095,
+      5.275
+     ],
+     [
+      -2.095,
+      5.945
+     ],
+     [
+      -4.7,
+      5.945
+     ],
+     [
+      -4.705,
+      5.9428
+     ],
+     [
+      -4.705,
+      5.275
+     ]
+    ],
+    [
+     [
+      2.025,
+      5.275
+     ],
+     [
+      2.025,
+      6.4
+     ],
+     [
+      -1.0,
+      6.4
+     ],
+     [
+      -1.0,
+      5.275
+     ]
+    ],
+    [
+     [
+      -6.25,
+      4.825
+     ],
+     [
+      6.25,
+      4.825
+     ],
+     [
+      6.25,
+      5.275
+     ],
+     [
+      -6.25,
+      5.275
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.5,
+      0.0,
+      8.2
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      2.0,
+      0.0,
+      8.5
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      0.5,
+      0.75,
+      5.7
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_rotrow_walkup.glb",
+     "bytes": 122160,
+     "sha256": "5c34c5ea0236b47c0a75e341c42be2dce0d280ebbce5d523f74a226312c14730",
+     "triangles": 2638,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -6.25,
+       0.0,
+       -5.11
+      ],
+      "max": [
+       6.25,
+       12.03,
+       7.3
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_rotrow_walkup_lod1.glb",
+     "bytes": 35756,
+     "sha256": "678524758c9d2f67d6e940e3ced26c7b1a82dfc98c671a9b75788cad9c197291",
+     "triangles": 738,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -6.25,
+       0.0,
+       -5.07
+      ],
+      "max": [
+       6.25,
+       12.03,
+       7.3
+      ]
+     }
+    }
+   ]
+  },
+  "shell_rotrow_loft": {
+   "name": "Market Street Loft",
+   "level": "L3",
+   "homeClass": "apartment",
+   "lot": "rotrow:loft",
+   "template": "rotrow_loft",
+   "tileFootprint": {
+    "w": 16,
+    "d": 14
+   },
+   "doors": [
+    {
+     "x": -0.5,
+     "z": 7.0
+    }
+   ],
+   "lotRect": {
+    "x0": 7,
+    "z0": 5,
+    "w": 16,
+    "d": 14
+   },
+   "bounds": {
+    "min": [
+     -8.15,
+     0.0,
+     -7.11
+    ],
+    "max": [
+     8.15,
+     10.88,
+     8.5
+    ]
+   },
+   "sizeM": {
+    "width": 16.3,
+    "depth": 15.61,
+    "height": 10.88
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -8.15,
+      6.87
+     ],
+     [
+      -8.11,
+      -5.6
+     ],
+     [
+      -8.08,
+      -7.06
+     ],
+     [
+      -8.07,
+      -7.07
+     ],
+     [
+      -6.87,
+      -7.11
+     ],
+     [
+      6.87,
+      -7.11
+     ],
+     [
+      8.07,
+      -7.07
+     ],
+     [
+      8.08,
+      -7.06
+     ],
+     [
+      8.11,
+      -5.6
+     ],
+     [
+      8.15,
+      6.87
+     ],
+     [
+      8.15,
+      7.17
+     ],
+     [
+      -8.15,
+      7.17
+     ]
+    ],
+    [
+     [
+      0.8,
+      7.17
+     ],
+     [
+      0.8,
+      8.215
+     ],
+     [
+      -1.8,
+      8.215
+     ],
+     [
+      -1.8,
+      7.17
+     ]
+    ],
+    [
+     [
+      0.5,
+      8.2
+     ],
+     [
+      0.5,
+      8.5
+     ],
+     [
+      -1.5,
+      8.5
+     ],
+     [
+      -1.5342,
+      8.4932
+     ],
+     [
+      -1.5342,
+      8.2
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      -0.5,
+      0.0,
+      9.4
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.0,
+      0.0,
+      9.7
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -0.5,
+      0.25,
+      7.6
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_rotrow_loft.glb",
+     "bytes": 117212,
+     "sha256": "e47476e7244b443acf9eaf836535eb7dd8bff9ed83de6ff46c54aad8b29bdcf1",
+     "triangles": 2500,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -8.15,
+       0.0,
+       -7.11
+      ],
+      "max": [
+       8.15,
+       10.88,
+       8.5
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_rotrow_loft_lod1.glb",
+     "bytes": 31704,
+     "sha256": "f1319f5e1bddca9b8352cc01ed84d98535d0ebb35e3a772f2e913376c8b59e0f",
+     "triangles": 636,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -8.07,
+       0.0,
+       -7.07
+      ],
+      "max": [
+       8.07,
+       10.58,
+       8.5
+      ]
+     }
+    }
+   ]
+  },
+  "shell_bayou_shotgun": {
+   "name": "Shotgun Stilt Shack",
+   "level": "L4",
+   "homeClass": "stilt",
+   "lot": "bayou:shotgun",
+   "template": "bayou_shotgun",
+   "tileFootprint": {
+    "w": 8,
+    "d": 12
+   },
+   "doors": [
+    {
+     "x": -1.5,
+     "z": 6.0
+    }
+   ],
+   "lotRect": {
+    "x0": 11,
+    "z0": 10,
+    "w": 8,
+    "d": 12
+   },
+   "bounds": {
+    "min": [
+     -4.58,
+     0.0,
+     -6.57
+    ],
+    "max": [
+     4.58,
+     9.0845,
+     11.0497
+    ]
+   },
+   "sizeM": {
+    "width": 9.16,
+    "depth": 17.62,
+    "height": 9.08
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -4.25,
+      -6.5515
+     ],
+     [
+      -0.09,
+      -6.57
+     ],
+     [
+      0.09,
+      -6.57
+     ],
+     [
+      4.25,
+      -6.5515
+     ],
+     [
+      4.25,
+      8.1078
+     ],
+     [
+      -4.25,
+      8.1078
+     ]
+    ],
+    [
+     [
+      -4.58,
+      -6.55
+     ],
+     [
+      -0.09,
+      -6.57
+     ],
+     [
+      0.09,
+      -6.57
+     ],
+     [
+      4.58,
+      -6.55
+     ],
+     [
+      4.58,
+      6.55
+     ],
+     [
+      4.5758,
+      6.57
+     ],
+     [
+      -4.5758,
+      6.57
+     ],
+     [
+      -4.58,
+      6.55
+     ]
+    ],
+    [
+     [
+      3.28,
+      8.0922
+     ],
+     [
+      3.28,
+      11.025
+     ],
+     [
+      3.25,
+      11.0441
+     ],
+     [
+      3.21,
+      11.0497
+     ],
+     [
+      1.79,
+      11.0497
+     ],
+     [
+      1.75,
+      11.0441
+     ],
+     [
+      1.72,
+      11.0294
+     ],
+     [
+      1.72,
+      8.0922
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      2.5,
+      0.0,
+      11.9
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      4.0,
+      0.0,
+      12.2
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -1.5,
+      2.9,
+      6.9
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_bayou_shotgun.glb",
+     "bytes": 69076,
+     "sha256": "5db1d3cdbcbcfa439edbf3fff47462cdb70b9bf609a7406545ed75fd0f9d720c",
+     "triangles": 1496,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -4.58,
+       0.0,
+       -6.57
+      ],
+      "max": [
+       4.58,
+       9.0845,
+       11.0497
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_bayou_shotgun_lod1.glb",
+     "bytes": 29436,
+     "sha256": "b4e4b33471772b1e3f262f2cae2fcd32e2e137b05d1c2cf9e686707c7e782848",
+     "triangles": 596,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -4.58,
+       0.0,
+       -6.55
+      ],
+      "max": [
+       4.58,
+       9.093,
+       11.0375
+      ]
+     }
+    }
+   ]
+  },
+  "shell_bayou_acadian": {
+   "name": "Raised Acadian Cottage",
+   "level": "L4",
+   "homeClass": "stilt",
+   "lot": "bayou:acadian",
+   "template": "bayou_acadian",
+   "tileFootprint": {
+    "w": 14,
+    "d": 10
+   },
+   "doors": [
+    {
+     "x": -3.5,
+     "z": 5.0
+    },
+    {
+     "x": 3.5,
+     "z": 5.0
+    }
+   ],
+   "lotRect": {
+    "x0": 8,
+    "z0": 8,
+    "w": 14,
+    "d": 10
+   },
+   "bounds": {
+    "min": [
+     -7.52,
+     0.0,
+     -5.5386
+    ],
+    "max": [
+     7.52,
+     11.2155,
+     10.6497
+    ]
+   },
+   "sizeM": {
+    "width": 15.04,
+    "depth": 16.19,
+    "height": 11.22
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -7.25,
+      -5.5386
+     ],
+     [
+      7.25,
+      -5.5386
+     ],
+     [
+      7.25,
+      7.7124
+     ],
+     [
+      -7.25,
+      7.7124
+     ]
+    ],
+    [
+     [
+      -7.52,
+      -0.09
+     ],
+     [
+      -7.5,
+      -5.5386
+     ],
+     [
+      7.5,
+      -5.5386
+     ],
+     [
+      7.52,
+      -0.09
+     ],
+     [
+      7.52,
+      0.09
+     ],
+     [
+      7.5,
+      5.5386
+     ],
+     [
+      -7.5,
+      5.5386
+     ],
+     [
+      -7.52,
+      0.09
+     ]
+    ],
+    [
+     [
+      0.95,
+      7.6876
+     ],
+     [
+      0.95,
+      10.621
+     ],
+     [
+      0.9,
+      10.6441
+     ],
+     [
+      0.86,
+      10.6497
+     ],
+     [
+      -0.86,
+      10.6497
+     ],
+     [
+      -0.9,
+      10.6441
+     ],
+     [
+      -0.93,
+      10.6302
+     ],
+     [
+      -0.93,
+      7.6876
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      11.5
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.5,
+      0.0,
+      11.8
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -3.5,
+      2.9,
+      6.2
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_bayou_acadian.glb",
+     "bytes": 93592,
+     "sha256": "1204f04295db16e6073abe1ea61502b5acd2d7177260236488d081e59b9b25f4",
+     "triangles": 2044,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -7.52,
+       0.0,
+       -5.5386
+      ],
+      "max": [
+       7.52,
+       11.2155,
+       10.6497
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_bayou_acadian_lod1.glb",
+     "bytes": 36964,
+     "sha256": "bc5afa52f93e79ec19c3995e299139edf659c7e16e78856f9595300634973183",
+     "triangles": 756,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -7.5,
+       0.0,
+       -5.5386
+      ],
+      "max": [
+       7.5,
+       10.9155,
+       10.6375
+      ]
+     }
+    }
+   ]
+  },
+  "shell_bayou_fishcamp": {
+   "name": "Fish Camp on the Bend",
+   "level": "L4",
+   "homeClass": "stilt",
+   "lot": "bayou:fishcamp",
+   "template": "bayou_fishcamp",
+   "tileFootprint": {
+    "w": 16,
+    "d": 14
+   },
+   "doors": [
+    {
+     "x": -3.5,
+     "z": 7.0
+    }
+   ],
+   "lotRect": {
+    "x0": 12,
+    "z0": 5,
+    "w": 16,
+    "d": 14
+   },
+   "bounds": {
+    "min": [
+     -9.6,
+     0.0,
+     -8.6
+    ],
+    "max": [
+     9.6,
+     9.8482,
+     11.8497
+    ]
+   },
+   "sizeM": {
+    "width": 19.2,
+    "depth": 20.45,
+    "height": 9.85
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -9.6,
+      -8.6
+     ],
+     [
+      9.6,
+      -8.6
+     ],
+     [
+      9.6,
+      8.6
+     ],
+     [
+      9.5345,
+      8.6247
+     ],
+     [
+      -9.5345,
+      8.6247
+     ],
+     [
+      -9.6,
+      8.6
+     ]
+    ],
+    [
+     [
+      1.03,
+      8.5753
+     ],
+     [
+      1.03,
+      11.8328
+     ],
+     [
+      1.0,
+      11.8441
+     ],
+     [
+      0.96,
+      11.8497
+     ],
+     [
+      -0.96,
+      11.8497
+     ],
+     [
+      -1.0,
+      11.8441
+     ],
+     [
+      -1.03,
+      11.8328
+     ],
+     [
+      -1.03,
+      8.5753
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      13.7
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.5,
+      0.0,
+      14.0
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -3.5,
+      2.9,
+      8.3
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_bayou_fishcamp.glb",
+     "bytes": 104488,
+     "sha256": "af1a04f559ec8cee789b52e7cd382e0aab05c2cf58cbb8b696422523aeeef213",
+     "triangles": 2292,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -9.6,
+       0.0,
+       -8.6
+      ],
+      "max": [
+       9.6,
+       9.8482,
+       11.8497
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_bayou_fishcamp_lod1.glb",
+     "bytes": 40384,
+     "sha256": "81aff192842b382fef5c58712c6ddb9cd9fc8174b3e5ae5db96e3850fee97705",
+     "triangles": 828,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -9.6,
+       0.0,
+       -8.6
+      ],
+      "max": [
+       9.6,
+       9.5482,
+       11.8375
+      ]
+     }
+    }
+   ]
+  },
+  "shell_mausoleum_mansard": {
+   "name": "Mansard Manor",
+   "level": "L5",
+   "homeClass": "mansion",
+   "lot": "mausoleum:mansard_manor",
+   "template": "mausoleum_mansard",
+   "tileFootprint": {
+    "w": 18,
+    "d": 17
+   },
+   "doors": [
+    {
+     "x": 0.0,
+     "z": 8.5
+    }
+   ],
+   "lotRect": {
+    "x0": 6,
+    "z0": 4,
+    "w": 18,
+    "d": 17
+   },
+   "bounds": {
+    "min": [
+     -9.3,
+     0.0,
+     -8.8
+    ],
+    "max": [
+     9.3,
+     10.92,
+     12.0
+    ]
+   },
+   "sizeM": {
+    "width": 18.6,
+    "depth": 20.8,
+    "height": 10.92
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -9.3,
+      -8.8
+     ],
+     [
+      9.3,
+      -8.8
+     ],
+     [
+      9.3,
+      8.8
+     ],
+     [
+      -9.3,
+      8.8
+     ]
+    ],
+    [
+     [
+      2.8411,
+      8.8
+     ],
+     [
+      2.8411,
+      11.9798
+     ],
+     [
+      2.8,
+      12.0
+     ],
+     [
+      -2.8,
+      12.0
+     ],
+     [
+      -2.8237,
+      11.9883
+     ],
+     [
+      -2.8237,
+      8.8
+     ]
+    ],
+    [
+     [
+      3.3,
+      8.8
+     ],
+     [
+      3.3,
+      11.2353
+     ],
+     [
+      -3.3,
+      11.2353
+     ],
+     [
+      -3.3,
+      8.8
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      12.9
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      1.5,
+      0.0,
+      13.2
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      0.0,
+      0.75,
+      9.8
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_mausoleum_mansard.glb",
+     "bytes": 133684,
+     "sha256": "6bbbacb5c70ff881985b85074317990299cdd91a9c5d0a58218ace696de79cef",
+     "triangles": 2996,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -9.3,
+       0.0,
+       -8.8
+      ],
+      "max": [
+       9.3,
+       10.92,
+       12.0
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_mausoleum_mansard_lod1.glb",
+     "bytes": 43832,
+     "sha256": "0fce258fb2e0f01ae36abcbbcdc0bb37a995c685acaed5d779ab664bd69d9bf8",
+     "triangles": 908,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -9.3,
+       0.0,
+       -8.8
+      ],
+      "max": [
+       9.3,
+       10.62,
+       12.0
+      ]
+     }
+    }
+   ]
+  },
+  "shell_mausoleum_ravenspire": {
+   "name": "Ravenspire Hall",
+   "level": "L5",
+   "homeClass": "mansion",
+   "lot": "mausoleum:ravenspire",
+   "template": "mausoleum_ravenspire",
+   "tileFootprint": {
+    "w": 24,
+    "d": 15
+   },
+   "doors": [
+    {
+     "x": 0.5,
+     "z": 7.5
+    }
+   ],
+   "lotRect": {
+    "x0": 3,
+    "z0": 5,
+    "w": 24,
+    "d": 15
+   },
+   "bounds": {
+    "min": [
+     -12.42,
+     0.0,
+     -7.9401
+    ],
+    "max": [
+     12.42,
+     18.9,
+     11.7
+    ]
+   },
+   "sizeM": {
+    "width": 24.84,
+    "depth": 19.64,
+    "height": 18.9
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -12.42,
+      -0.09
+     ],
+     [
+      -12.4,
+      -7.9401
+     ],
+     [
+      12.4,
+      -7.9401
+     ],
+     [
+      12.42,
+      -0.09
+     ],
+     [
+      12.42,
+      0.09
+     ],
+     [
+      12.4,
+      7.9401
+     ],
+     [
+      -12.4,
+      7.9401
+     ],
+     [
+      -12.42,
+      0.09
+     ]
+    ],
+    [
+     [
+      2.425,
+      7.9401
+     ],
+     [
+      2.425,
+      11.6937
+     ],
+     [
+      2.4,
+      11.7
+     ],
+     [
+      -1.4,
+      11.7
+     ],
+     [
+      -1.425,
+      11.6943
+     ],
+     [
+      -1.425,
+      7.9401
+     ]
+    ],
+    [
+     [
+      -5.2054,
+      7.9401
+     ],
+     [
+      -5.2054,
+      9.22
+     ],
+     [
+      -12.3066,
+      9.22
+     ],
+     [
+      -12.3946,
+      9.2
+     ],
+     [
+      -12.4,
+      7.9401
+     ]
+    ],
+    [
+     [
+      12.4,
+      7.9401
+     ],
+     [
+      12.3946,
+      9.2
+     ],
+     [
+      12.3146,
+      9.22
+     ],
+     [
+      5.2054,
+      9.22
+     ],
+     [
+      5.2054,
+      7.9401
+     ]
+    ],
+    [
+     [
+      3.15,
+      7.9401
+     ],
+     [
+      3.15,
+      9.15
+     ],
+     [
+      -2.15,
+      9.15
+     ],
+     [
+      -2.15,
+      7.9401
+     ]
+    ],
+    [
+     [
+      2.72,
+      9.15
+     ],
+     [
+      2.72,
+      10.8
+     ],
+     [
+      -1.72,
+      10.8
+     ],
+     [
+      -1.72,
+      9.15
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.5,
+      0.0,
+      12.6
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      2.0,
+      0.0,
+      12.9
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      0.5,
+      0.75,
+      9.9
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_mausoleum_ravenspire.glb",
+     "bytes": 124224,
+     "sha256": "c6221a0e8fc2f41f34589326d9186d78ebadd7e68451281d3099927d1a04983d",
+     "triangles": 2748,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -12.42,
+       0.0,
+       -7.9401
+      ],
+      "max": [
+       12.42,
+       18.9,
+       11.7
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_mausoleum_ravenspire_lod1.glb",
+     "bytes": 77360,
+     "sha256": "6cf1aa0fa5c63ad53b2dd310c3a3cb39c3659601083c4f63d54dd70664e33259",
+     "triangles": 1724,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -12.4,
+       0.0,
+       -7.9401
+      ],
+      "max": [
+       12.4,
+       18.9,
+       11.7
+      ]
+     }
+    }
+   ]
+  },
+  "shell_mausoleum_glass": {
+   "name": "The Glass Mausoleum",
+   "level": "L5",
+   "homeClass": "mansion",
+   "lot": "mausoleum:glass_mausoleum",
+   "template": "mausoleum_glass",
+   "tileFootprint": {
+    "w": 20,
+    "d": 14
+   },
+   "doors": [
+    {
+     "x": -2.5,
+     "z": 7.0
+    }
+   ],
+   "lotRect": {
+    "x0": 5,
+    "z0": 7,
+    "w": 20,
+    "d": 14
+   },
+   "bounds": {
+    "min": [
+     -10.6,
+     0.0,
+     -7.6
+    ],
+    "max": [
+     10.6,
+     9.4272,
+     8.8
+    ]
+   },
+   "sizeM": {
+    "width": 21.2,
+    "depth": 16.4,
+    "height": 9.43
+   },
+   "materials": [
+    "Glass",
+    "Shell"
+   ],
+   "interior": false,
+   "outline": [
+    [
+     [
+      -10.6,
+      -7.6
+     ],
+     [
+      10.6,
+      -7.6
+     ],
+     [
+      10.6,
+      7.6
+     ],
+     [
+      10.51,
+      7.61
+     ],
+     [
+      -10.5517,
+      7.61
+     ],
+     [
+      -10.6,
+      7.6
+     ]
+    ],
+    [
+     [
+      -0.2,
+      7.5904
+     ],
+     [
+      -0.2,
+      8.8
+     ],
+     [
+      -4.8,
+      8.8
+     ],
+     [
+      -4.8,
+      7.5904
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      -2.5,
+      0.0,
+      9.7
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "mailbox": {
+     "pos": [
+      -1.0,
+      0.0,
+      10.0
+     ],
+     "yaw": 0.0,
+     "kind": "attach"
+    },
+    "porch": {
+     "pos": [
+      -2.5,
+      0.9,
+      7.45
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lods": [
+    {
+     "lod": 0,
+     "file": "models/homes/shell_mausoleum_glass.glb",
+     "bytes": 44364,
+     "sha256": "1bc7d8b24d854edd87298b93718a1b286bb145ccc7e89a948f91f9f24f0fd8b1",
+     "triangles": 976,
+     "budget": 6000,
+     "bounds": {
+      "min": [
+       -10.6,
+       0.0,
+       -7.6
+      ],
+      "max": [
+       10.6,
+       9.4272,
+       8.8
+      ]
+     }
+    },
+    {
+     "lod": 1,
+     "file": "models/homes/shell_mausoleum_glass_lod1.glb",
+     "bytes": 19260,
+     "sha256": "6c7017bb0de464cafc053607155632e68b3b2add8a09316d021c16f019309bab",
+     "triangles": 372,
+     "budget": 2000,
+     "bounds": {
+      "min": [
+       -10.6,
+       0.0,
+       -7.6
+      ],
+      "max": [
+       10.6,
+       9.388,
+       8.8
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

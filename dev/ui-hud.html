@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Afterlife Lease — UI-HUD harness</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #130f19;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- UI-HUD dev harness: mock GameController + mock SimulationAPI, controlled by query params.
+         Open http://localhost:5178/dev/ui-hud.html?mode=live&tab=needs (see src/ui/hud/dev/params.ts). -->
+    <!-- tabindex=-1 like the real #game-canvas: clicking the world focuses it (menus hand focus back to it) -->
+    <div id="world" tabindex="-1" aria-label="World (stand-in)"></div>
+    <div id="app"></div>
+    <script type="module" src="/src/ui/hud/dev/main.tsx"></script>
+  </body>
+</html>

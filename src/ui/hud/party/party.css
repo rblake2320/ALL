@@ -1,0 +1,118 @@
+/* ═════════════════════════════ Party HUD ═════════════════════════════ */
+.hud-party {
+  --band: var(--c-candle);
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.875rem 0.5rem 0.5rem;
+  border-radius: var(--r-pill);
+  min-width: 22rem;
+  animation: ui-rise-in var(--dur-slow) var(--ease-out) both;
+}
+.hud-party.is-legendary {
+  --band: var(--c-toxic);
+  box-shadow: var(--shadow-lg), 0 0 1.5rem rgba(159, 232, 112, 0.25);
+}
+.hud-party.is-lame {
+  --band: #ff8f9c;
+}
+.hud-party__icon {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 2.375rem;
+  height: 2.375rem;
+  border-radius: 50%;
+  color: #2a1406;
+  background: radial-gradient(circle at 35% 30%, #ffe2ad, var(--band) 70%);
+  box-shadow: 0 0 1rem color-mix(in srgb, var(--band) 45%, transparent);
+}
+.hud-party.is-legendary .hud-party__icon {
+  animation: hud-party-bounce 1.2s var(--ease-in-out) infinite;
+}
+@keyframes hud-party-bounce {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-2px) rotate(-6deg);
+  }
+}
+.hud-party__main {
+  position: relative;
+  z-index: 2;
+  flex: 1 1 auto;
+  min-width: 0;
+  border-radius: var(--r-sm);
+}
+.hud-party__top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.hud-party__title {
+  font-size: var(--fs-lg);
+  color: var(--text-strong);
+}
+.hud-party__band {
+  flex: 1 1 auto;
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--band);
+}
+.hud-party__score {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--band);
+}
+.hud-party__meter {
+  position: relative;
+  height: 0.5rem;
+  border-radius: var(--r-pill);
+  background: rgba(9, 6, 13, 0.6);
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.55),
+    0 0 0 1px var(--border-faint);
+}
+.hud-party__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff8f9c, var(--c-candle) 45%, var(--c-toxic));
+  background-size: 22rem 100%;
+  box-shadow: 0 0 0.5rem color-mix(in srgb, var(--band) 50%, transparent);
+  transition: width var(--dur-slower) var(--ease-out);
+}
+.hud-party__mark {
+  position: absolute;
+  top: -0.1875rem;
+  bottom: -0.1875rem;
+  width: 2px;
+  margin-left: -1px;
+  border-radius: 1px;
+  background: var(--c-bone);
+  opacity: 0.55;
+}
+.hud-party__facts {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.hud-party__facts span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.hud-party__facts .hud-icon {
+  color: var(--c-candle);
+}

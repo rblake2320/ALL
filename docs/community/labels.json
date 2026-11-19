@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "labels": [
+    { "name": "needs-triage", "color": "d4c5f9", "description": "New; a maintainer hasn't looked yet" },
+    { "name": "needs-info", "color": "fbca04", "description": "Waiting on the sender for details" },
+    { "name": "ready", "color": "0e8a16", "description": "Accepted, has a work item, can be claimed" },
+    { "name": "declined", "color": "cfd3d7", "description": "Not going ahead; reason on the issue" },
+    { "name": "claimed", "color": "1d76db", "description": "Someone (person or agent) owns it" },
+    { "name": "in-progress", "color": "5319e7", "description": "Work is happening on a branch" },
+    { "name": "in-review", "color": "c5def5", "description": "Draft PR open and under review" },
+    { "name": "merged", "color": "6f42c1", "description": "Merged into ship/final-phase" },
+    { "name": "shipped", "color": "9fe870", "description": "In a playtest drop" },
+    { "name": "bug", "color": "d73a4a", "description": "Something is broken" },
+    { "name": "enhancement", "color": "a2eeef", "description": "An idea or new feature" },
+    { "name": "asset", "color": "e8e0c8", "description": "Art submission" },
+    { "name": "world", "color": "6f8f5e", "description": "Neighbourhood, quest or activity proposal" },
+    { "name": "playtest", "color": "ffb35a", "description": "Feedback from a playtest drop" },
+    { "name": "claim", "color": "7fe0ff", "description": "Request to take a work item" },
+    { "name": "starter", "color": "7057ff", "description": "Good first task (docs/community/STARTER_TASKS.md)" }
+  ]
+}

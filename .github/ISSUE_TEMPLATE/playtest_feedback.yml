@@ -1,0 +1,26 @@
+name: Playtest feedback
+description: How a playtest drop felt. Bugs welcome here too.
+title: "Playtest: "
+labels: [playtest, needs-triage]
+body:
+  - type: input
+    id: drop
+    attributes: { label: Drop, description: "The drop tag (playtest-YYYYMMDD) or the build shown in the session log." }
+    validations: { required: true }
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows desktop app, Web (desktop browser), Web (phone), Other]
+  - type: textarea
+    id: fun
+    attributes: { label: What was fun }
+  - type: textarea
+    id: confusing
+    attributes: { label: What was confusing or broken, description: "What you did, what happened, what you expected." }
+    validations: { required: true }
+  - type: textarea
+    id: report
+    attributes:
+      label: Report file
+      description: "Press F8, choose Export report file, zip the .alreport (GitHub only accepts some file types) and attach it here. It has no names or typed text."

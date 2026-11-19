@@ -1,0 +1,5879 @@
+{
+  "createdAt": "2026-11-12T16:49:09.417Z",
+  "format": "afterlife-lease-save",
+  "formatVersion": 1,
+  "gameVersion": "1.0.0",
+  "headerSha256": "953963987dcf12c1fc7677e2f0dd631f8c1574208e143ad7917a7af1aedf18f2",
+  "meta": {
+    "day": 5,
+    "funds": 1500,
+    "householdName": "The Rotworths",
+    "lotValue": 23000,
+    "memberNames": [
+      "Mort Ician",
+      "Ghoulia Ician"
+    ],
+    "thumbnail": null,
+    "timeLabel": "Tue 08:15"
+  },
+  "name": "Four legacy pets",
+  "payloadSha256": "b24b12dbf23d019e6337a7ec892deacf267ad353e615f1dc3fa279f00fd37549",
+  "playMinutes": 0,
+  "savedAt": "2026-11-12T16:49:09.417Z",
+  "schemaVersion": 2,
+  "slotId": "four-pets",
+  "payload": {
+    "agents": {
+      "a44": {
+        "active": {
+          "canceled": false,
+          "data": {
+            "_adj": 0,
+            "_at": 0,
+            "_c": 1,
+            "_fx": null,
+            "_fz": null,
+            "_rk": "here",
+            "_rr": 0,
+            "_rs": 13917,
+            "_uo": null,
+            "_ut": null
+          },
+          "duration": 3,
+          "elapsed": 0.75,
+          "interactionId": "engine_idle_phone",
+          "params": {},
+          "partnerId": null,
+          "phase": "run",
+          "pose": null,
+          "priority": 100,
+          "queuedTick": 13917,
+          "routeFails": 0,
+          "routeGoal": null,
+          "slot": null,
+          "source": "auto",
+          "stage": 0,
+          "stageTarget": {
+            "kind": "self"
+          },
+          "startedRunTick": 13917,
+          "target": {
+            "kind": "self"
+          },
+          "uid": 3084,
+          "waitMinutes": 0
+        },
+        "anim": "phone",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#3a3f55",
+          "bottomStyle": "pants",
+          "build": 0.4,
+          "eyeColor": "#f2e86d",
+          "eyeStyle": "droopy",
+          "hairColor": "#3b2f2f",
+          "hairStyle": "messy",
+          "height": 0.5,
+          "shoeColor": "#2a2420",
+          "skinTone": 0,
+          "stitches": true,
+          "topColor": "#6b4f8a",
+          "topStyle": "tee",
+          "voicePitch": 0.5
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": "phone",
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": -2.80775500985574,
+        "firstName": "Mort",
+        "id": "a44",
+        "lastName": "Graves",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [
+          {
+            "endTick": null,
+            "id": "freshAsADaisy",
+            "sourceId": null,
+            "stacks": 1,
+            "startTick": 1
+          }
+        ],
+        "needs": {
+          "energy": 95.00000000000114,
+          "fun": 95.95000000000066,
+          "hunger": 94.50000000000159,
+          "hygiene": 96.49999999999977,
+          "preservation": 96.23999999999938,
+          "social": 100
+        },
+        "occupation": null,
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 24.937,
+          "z": 28.358
+        },
+        "posY": 0,
+        "presence": "onLot",
+        "prevFacing": -2.80775500985574,
+        "prevPos": {
+          "x": 22.5,
+          "z": 8.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "household",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 39
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 35
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 10
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 5
+          },
+          "logic": {
+            "level": 0,
+            "xp": 7
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 4
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 13923,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 3112,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [],
+        "visit": null,
+        "vitality": 97.80000000000001,
+        "voiceSeed": 150975328,
+        "walkBy": null
+      },
+      "a45": {
+        "active": {
+          "canceled": false,
+          "data": {
+            "_adj": 0,
+            "_at": 0,
+            "_blk": null,
+            "_fx": null,
+            "_fz": null,
+            "_re": 2.175713172881685,
+            "_rk": "tileNear",
+            "_rr": 0,
+            "_rs": 13915,
+            "_uo": null,
+            "_ut": null,
+            "_v": 42
+          },
+          "duration": 0.5,
+          "elapsed": 0,
+          "interactionId": "engine_idle_wander",
+          "params": {},
+          "partnerId": null,
+          "phase": "route",
+          "pose": null,
+          "priority": 100,
+          "queuedTick": 13915,
+          "routeFails": 0,
+          "routeGoal": {
+            "x": 0,
+            "z": 4
+          },
+          "slot": null,
+          "source": "auto",
+          "stage": 0,
+          "stageTarget": {
+            "kind": "tile",
+            "x": 0,
+            "z": 4
+          },
+          "startedRunTick": null,
+          "target": {
+            "kind": "self"
+          },
+          "uid": 3083,
+          "waitMinutes": 0
+        },
+        "anim": "walk",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#3a3f55",
+          "bottomStyle": "pants",
+          "build": 0.4,
+          "eyeColor": "#f2e86d",
+          "eyeStyle": "droopy",
+          "hairColor": "#3b2f2f",
+          "hairStyle": "messy",
+          "height": 0.5,
+          "shoeColor": "#2a2420",
+          "skinTone": 0,
+          "stitches": true,
+          "topColor": "#6b4f8a",
+          "topStyle": "tee",
+          "voicePitch": 0.5
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": -0.7853981633974483,
+        "firstName": "Ghoulia",
+        "id": "a45",
+        "lastName": "Graves",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [
+          {
+            "endTick": null,
+            "id": "freshAsADaisy",
+            "sourceId": null,
+            "stacks": 1,
+            "startTick": 1
+          }
+        ],
+        "needs": {
+          "energy": 95.00000000000114,
+          "fun": 96.51666666666729,
+          "hunger": 94.50000000000159,
+          "hygiene": 96.49999999999977,
+          "preservation": 95.23999999999938,
+          "social": 96.00000000000023
+        },
+        "occupation": null,
+        "path": [
+          {
+            "x": 0.5,
+            "z": 4.5
+          }
+        ],
+        "pathIndex": 0,
+        "pos": {
+          "x": 1.3509514805718603,
+          "z": 3.6490485194281397
+        },
+        "posY": 0,
+        "presence": "onLot",
+        "prevFacing": -0.7853981633974483,
+        "prevPos": {
+          "x": 1.5807611844574883,
+          "z": 3.4192388155425117
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "household",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 48
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 39
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 15
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 36
+          },
+          "logic": {
+            "level": 0,
+            "xp": 21
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 22
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 13921,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 3166,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [],
+        "visit": null,
+        "vitality": 96.80000000000001,
+        "voiceSeed": 1982889268,
+        "walkBy": null
+      },
+      "a46": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#3f5a4a",
+          "bottomStyle": "pants",
+          "build": 0.75,
+          "eyeColor": "#f2e86d",
+          "eyeStyle": "droopy",
+          "hairColor": "#7a6a5a",
+          "hairStyle": "bald",
+          "height": 0.38,
+          "shoeColor": "#2a2420",
+          "skinTone": 7,
+          "stitches": true,
+          "topColor": "#8a6a4a",
+          "topStyle": "tatters",
+          "voicePitch": 0.95
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Desmond",
+        "id": "a46",
+        "lastName": "Dusterhoff",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 88,
+          "fun": 85,
+          "hunger": 73,
+          "hygiene": 60,
+          "preservation": 88,
+          "social": 61
+        },
+        "occupation": "Clock Repairer",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 1,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 5,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 2,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 3,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "artistic",
+          "neatFreak",
+          "nightOwl"
+        ],
+        "visit": null,
+        "vitality": 99,
+        "voiceSeed": 1058638321,
+        "walkBy": null
+      },
+      "a47": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "runner",
+          "bottomColor": "#8a6a4a",
+          "bottomStyle": "pants",
+          "build": 0.28,
+          "eyeColor": "#c46b6b",
+          "eyeStyle": "mismatched",
+          "hairColor": "#a8a090",
+          "hairStyle": "combover",
+          "height": 0.36,
+          "shoeColor": "#1d1726",
+          "skinTone": 3,
+          "stitches": false,
+          "topColor": "#5b3f6e",
+          "topStyle": "cardigan",
+          "voicePitch": 0.98
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Doris",
+        "id": "a47",
+        "lastName": "Underhill",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 68,
+          "fun": 60,
+          "hunger": 59,
+          "hygiene": 59,
+          "preservation": 81,
+          "social": 56
+        },
+        "occupation": "Eulogy Writer",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 1,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 3,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 3,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 2,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "bookworm",
+          "cheerful",
+          "hopelessRomantic"
+        ],
+        "visit": null,
+        "vitality": 92,
+        "voiceSeed": 2037310721,
+        "walkBy": null
+      },
+      "a48": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "gamer",
+          "bottomColor": "#3a3f55",
+          "bottomStyle": "pants",
+          "build": 0.12,
+          "eyeColor": "#c46b6b",
+          "eyeStyle": "wide",
+          "hairColor": "#4a3326",
+          "hairStyle": "mohawk",
+          "height": 0.09,
+          "shoeColor": "#1d1726",
+          "skinTone": 8,
+          "stitches": true,
+          "topColor": "#6b4f8a",
+          "topStyle": "cardigan",
+          "voicePitch": 0.43
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Tombias",
+        "id": "a48",
+        "lastName": "Creaker",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 65,
+          "fun": 55,
+          "hunger": 88,
+          "hygiene": 64,
+          "preservation": 79,
+          "social": 63
+        },
+        "occupation": "Raven Trainer",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 3,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 4,
+            "xp": 0
+          },
+          "logic": {
+            "level": 1,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "partyAnimal",
+          "artistic",
+          "neatFreak"
+        ],
+        "visit": null,
+        "vitality": 82,
+        "voiceSeed": 1984733673,
+        "walkBy": null
+      },
+      "a49": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "beanie",
+          "body": "jogger",
+          "bottomColor": "#5b3f6e",
+          "bottomStyle": "shorts",
+          "build": 0.12,
+          "eyeColor": "#c46b6b",
+          "eyeStyle": "wide",
+          "hairColor": "#c9c2b0",
+          "hairStyle": "pigtails",
+          "height": 0.33,
+          "shoeColor": "#2a2420",
+          "skinTone": 5,
+          "stitches": true,
+          "topColor": "#3f5a4a",
+          "topStyle": "tatters",
+          "voicePitch": 0.43
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 1.5707963267948966,
+        "firstName": "Ophelia",
+        "id": "a49",
+        "lastName": "Crowe",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 64,
+          "fun": 56,
+          "hunger": 72,
+          "hygiene": 68,
+          "preservation": 77.41499999999976,
+          "social": 70
+        },
+        "occupation": "Bone Setter",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 1.5707963267948966,
+        "prevPos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 2,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 5,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 2,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "ambitious",
+          "gourmand",
+          "socialButterfly"
+        ],
+        "visit": null,
+        "vitality": 82,
+        "voiceSeed": 634718910,
+        "walkBy": null
+      },
+      "a50": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#2b2f3a",
+          "bottomStyle": "pants",
+          "build": 0.05,
+          "eyeColor": "#9fe870",
+          "eyeStyle": "droopy",
+          "hairColor": "#8a5a3a",
+          "hairStyle": "bob",
+          "height": 0.47,
+          "shoeColor": "#1d1726",
+          "skinTone": 6,
+          "stitches": true,
+          "topColor": "#7a6a3a",
+          "topStyle": "blouse",
+          "voicePitch": 0.14
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 1.5707963267948966,
+        "firstName": "Roy",
+        "id": "a50",
+        "lastName": "Coldwater",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 75,
+          "fun": 67,
+          "hunger": 64,
+          "hygiene": 82,
+          "preservation": 70.41499999999976,
+          "social": 84
+        },
+        "occupation": "Taxidermist",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 1.5707963267948966,
+        "prevPos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 2,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 3,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 2,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "cheerful",
+          "neatFreak",
+          "socialButterfly"
+        ],
+        "visit": null,
+        "vitality": 90,
+        "voiceSeed": 1873513868,
+        "walkBy": null
+      },
+      "a51": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "beanie",
+          "bottomColor": "#7a6a3a",
+          "bottomStyle": "skirt",
+          "build": 0.91,
+          "eyeColor": "#d9cfb8",
+          "eyeStyle": "beady",
+          "hairColor": "#7a6a5a",
+          "hairStyle": "bun",
+          "height": 0.44,
+          "shoeColor": "#2a2420",
+          "skinTone": 0,
+          "stitches": false,
+          "topColor": "#a5532f",
+          "topStyle": "suit",
+          "voicePitch": 0.84
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 1.5707963267948966,
+        "firstName": "Phyllis",
+        "id": "a51",
+        "lastName": "Coffinsworth",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 59,
+          "fun": 78,
+          "hunger": 59,
+          "hygiene": 78,
+          "preservation": 61.414999999999765,
+          "social": 67
+        },
+        "occupation": "Funeral Florist",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 1.5707963267948966,
+        "prevPos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 4,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 2,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 5,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 1,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "bookworm",
+          "clumsy",
+          "artistic"
+        ],
+        "visit": null,
+        "vitality": 97,
+        "voiceSeed": 1589307902,
+        "walkBy": null
+      },
+      "a52": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "clown",
+          "bottomColor": "#3a3f55",
+          "bottomStyle": "pants",
+          "build": 0.6,
+          "eyeColor": "#c46b6b",
+          "eyeStyle": "wide",
+          "hairColor": "#6e2a35",
+          "hairStyle": "bun",
+          "height": 0.96,
+          "shoeColor": "#1d1726",
+          "skinTone": 1,
+          "stitches": false,
+          "topColor": "#6e3b3b",
+          "topStyle": "cardigan",
+          "voicePitch": 0.23
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Ulric",
+        "id": "a52",
+        "lastName": "Mummery",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 55,
+          "fun": 80,
+          "hunger": 87,
+          "hygiene": 61,
+          "preservation": 66,
+          "social": 47
+        },
+        "occupation": "Garden Gnome Restorer",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 2,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 3,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "hopelessRomantic",
+          "clumsy",
+          "cheerful"
+        ],
+        "visit": null,
+        "vitality": 80,
+        "voiceSeed": 1311141907,
+        "walkBy": null
+      },
+      "a53": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#3f5a4a",
+          "bottomStyle": "pants",
+          "build": 0.41,
+          "eyeColor": "#e8e0c8",
+          "eyeStyle": "droopy",
+          "hairColor": "#3f5a4a",
+          "hairStyle": "pigtails",
+          "height": 0.97,
+          "shoeColor": "#2a2420",
+          "skinTone": 8,
+          "stitches": false,
+          "topColor": "#8a6a4a",
+          "topStyle": "dress",
+          "voicePitch": 0.97
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": -1.5707963267948966,
+        "firstName": "Dennis",
+        "id": "a53",
+        "lastName": "Moanington",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 75,
+          "fun": 76,
+          "hunger": 64,
+          "hygiene": 65,
+          "preservation": 79.41499999999976,
+          "social": 77
+        },
+        "occupation": "Funeral Florist",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": -1.5707963267948966,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 3,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 2,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "loner",
+          "gourmand",
+          "hopelessRomantic"
+        ],
+        "visit": null,
+        "vitality": 94,
+        "voiceSeed": 854917256,
+        "walkBy": null
+      },
+      "a54": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "pizza",
+          "bottomColor": "#4a4a5e",
+          "bottomStyle": "shorts",
+          "build": 0.58,
+          "eyeColor": "#ff9a4a",
+          "eyeStyle": "sleepy",
+          "hairColor": "#a8a090",
+          "hairStyle": "long",
+          "height": 0.67,
+          "shoeColor": "#2a2420",
+          "skinTone": 6,
+          "stitches": true,
+          "topColor": "#5b3f6e",
+          "topStyle": "blouse",
+          "voicePitch": 0.85
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Jasper",
+        "id": "a54",
+        "lastName": "Sewell",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 82,
+          "fun": 60,
+          "hunger": 81,
+          "hygiene": 58,
+          "preservation": 74,
+          "social": 47
+        },
+        "occupation": "Hearse Driver",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 6,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 3,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 1,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "hothead",
+          "bookworm",
+          "artistic"
+        ],
+        "visit": null,
+        "vitality": 81,
+        "voiceSeed": 279867914,
+        "walkBy": null
+      },
+      "a55": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#6e3b3b",
+          "bottomStyle": "pants",
+          "build": 0.44,
+          "eyeColor": "#d9cfb8",
+          "eyeStyle": "mismatched",
+          "hairColor": "#4a3326",
+          "hairStyle": "pigtails",
+          "height": 0.29,
+          "shoeColor": "#2a2420",
+          "skinTone": 3,
+          "stitches": true,
+          "topColor": "#6b4f8a",
+          "topStyle": "tatters",
+          "voicePitch": 0.7
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 1.004067109271376,
+        "firstName": "Griselda",
+        "id": "a55",
+        "lastName": "Creaker",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 76.20833333333601,
+          "fun": 79.18750000000202,
+          "hunger": 68.02916666667042,
+          "hygiene": 70.5077083333299,
+          "preservation": 79.59833333333643,
+          "social": 79.5666666666672
+        },
+        "occupation": "Coffin Carpenter",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 1.004067109271376,
+        "prevPos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 2,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 1,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 2,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 2,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 3594,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 3166,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "artistic",
+          "neatFreak",
+          "grumpy"
+        ],
+        "visit": null,
+        "vitality": 94,
+        "voiceSeed": 1970217258,
+        "walkBy": null
+      },
+      "a56": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "flower",
+          "body": "fortune",
+          "bottomColor": "#d9cfb8",
+          "bottomStyle": "skirt",
+          "build": 0.95,
+          "eyeColor": "#e8e0c8",
+          "eyeStyle": "mismatched",
+          "hairColor": "#3b2f2f",
+          "hairStyle": "pigtails",
+          "height": 0.52,
+          "shoeColor": "#1d1726",
+          "skinTone": 7,
+          "stitches": true,
+          "topColor": "#4a4a5e",
+          "topStyle": "tee",
+          "voicePitch": 0.42
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Vesper",
+        "id": "a56",
+        "lastName": "Coldwater",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 83,
+          "fun": 79,
+          "hunger": 65,
+          "hygiene": 59,
+          "preservation": 78,
+          "social": 83
+        },
+        "occupation": "Bookbinder",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 5,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 2,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 5,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 2,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "socialButterfly",
+          "squeamish",
+          "artistic"
+        ],
+        "visit": null,
+        "vitality": 85,
+        "voiceSeed": 786222141,
+        "walkBy": null
+      },
+      "a57": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "cone",
+          "bottomColor": "#2b2f3a",
+          "bottomStyle": "skirt",
+          "build": 0.15,
+          "eyeColor": "#f2e86d",
+          "eyeStyle": "sleepy",
+          "hairColor": "#3b2f2f",
+          "hairStyle": "bun",
+          "height": 0.98,
+          "shoeColor": "#3b2a22",
+          "skinTone": 7,
+          "stitches": false,
+          "topColor": "#8a6a4a",
+          "topStyle": "hoodie",
+          "voicePitch": 0.88
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Rigor",
+        "id": "a57",
+        "lastName": "Dusterhoff",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 81,
+          "fun": 61,
+          "hunger": 64,
+          "hygiene": 82,
+          "preservation": 64,
+          "social": 55
+        },
+        "occupation": "Cemetery Night Watch",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 6,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 2,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 2,
+            "xp": 0
+          },
+          "logic": {
+            "level": 1,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 5,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "hopelessRomantic",
+          "neatFreak",
+          "cheerful"
+        ],
+        "visit": null,
+        "vitality": 99,
+        "voiceSeed": 418609409,
+        "walkBy": null
+      },
+      "a58": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "bandage",
+          "body": "shield",
+          "bottomColor": "#3a3f55",
+          "bottomStyle": "shorts",
+          "build": 0.49,
+          "eyeColor": "#9fe870",
+          "eyeStyle": "beady",
+          "hairColor": "#4a3326",
+          "hairStyle": "mohawk",
+          "height": 0.84,
+          "shoeColor": "#4a3326",
+          "skinTone": 2,
+          "stitches": false,
+          "topColor": "#4a4a5e",
+          "topStyle": "cardigan",
+          "voicePitch": 0.6
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": -1.5707963267948966,
+        "firstName": "Octavia",
+        "id": "a58",
+        "lastName": "Hollowell",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 73,
+          "fun": 83,
+          "hunger": 78,
+          "hygiene": 87,
+          "preservation": 65.41499999999976,
+          "social": 78
+        },
+        "occupation": "Moth Breeder",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": -1.5707963267948966,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 2,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 4,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 1,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 3,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "slob",
+          "bookworm",
+          "squeamish"
+        ],
+        "visit": null,
+        "vitality": 85,
+        "voiceSeed": 759520696,
+        "walkBy": null
+      },
+      "a59": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "glasses",
+          "bottomColor": "#3a3f55",
+          "bottomStyle": "shorts",
+          "build": 0.2,
+          "eyeColor": "#d9cfb8",
+          "eyeStyle": "droopy",
+          "hairColor": "#2a2a33",
+          "hairStyle": "bun",
+          "height": 0.84,
+          "shoeColor": "#3b2a22",
+          "skinTone": 6,
+          "stitches": false,
+          "topColor": "#a5532f",
+          "topStyle": "blouse",
+          "voicePitch": 0.54
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Maureen",
+        "id": "a59",
+        "lastName": "Stitchworth",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 80,
+          "fun": 71,
+          "hunger": 81,
+          "hygiene": 63,
+          "preservation": 91,
+          "social": 85
+        },
+        "occupation": "Librarian (Restricted Section)",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 5,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 2,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "cheerful",
+          "squeamish",
+          "gourmand"
+        ],
+        "visit": null,
+        "vitality": 91,
+        "voiceSeed": 1464959511,
+        "walkBy": null
+      },
+      "a60": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "runner",
+          "bottomColor": "#7a6a3a",
+          "bottomStyle": "pants",
+          "build": 0.37,
+          "eyeColor": "#ff9a4a",
+          "eyeStyle": "droopy",
+          "hairColor": "#4a3326",
+          "hairStyle": "bun",
+          "height": 0.62,
+          "shoeColor": "#4a3326",
+          "skinTone": 5,
+          "stitches": true,
+          "topColor": "#5b3f6e",
+          "topStyle": "cardigan",
+          "voicePitch": 0.02
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Stan",
+        "id": "a60",
+        "lastName": "Tollbury",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 55,
+          "fun": 60,
+          "hunger": 86,
+          "hygiene": 67,
+          "preservation": 78,
+          "social": 66
+        },
+        "occupation": "Lighthouse Keeper",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 3,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 1,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 3,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "cheerful",
+          "slob",
+          "loner"
+        ],
+        "visit": null,
+        "vitality": 88,
+        "voiceSeed": 1350832097,
+        "walkBy": null
+      },
+      "a61": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "civilian",
+          "bottomColor": "#6e3b3b",
+          "bottomStyle": "pants",
+          "build": 0.76,
+          "eyeColor": "#f2e86d",
+          "eyeStyle": "droopy",
+          "hairColor": "#5b3f6e",
+          "hairStyle": "long",
+          "height": 0.06,
+          "shoeColor": "#4b5156",
+          "skinTone": 8,
+          "stitches": false,
+          "topColor": "#a5532f",
+          "topStyle": "hoodie",
+          "voicePitch": 0.13
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 1.5707963267948966,
+        "firstName": "Janet",
+        "id": "a61",
+        "lastName": "Soggins",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 66,
+          "fun": 79,
+          "hunger": 92,
+          "hygiene": 87,
+          "preservation": 72.41499999999976,
+          "social": 89
+        },
+        "occupation": "Organist at St. Mildew’s",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 1.5707963267948966,
+        "prevPos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 5,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 5,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "partyAnimal",
+          "hothead",
+          "loner"
+        ],
+        "visit": null,
+        "vitality": 100,
+        "voiceSeed": 1604849066,
+        "walkBy": null
+      },
+      "a62": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#a5532f",
+          "bottomStyle": "skirt",
+          "build": 0.66,
+          "eyeColor": "#ff9a4a",
+          "eyeStyle": "droopy",
+          "hairColor": "#4a3326",
+          "hairStyle": "messy",
+          "height": 0.4,
+          "shoeColor": "#4a3326",
+          "skinTone": 8,
+          "stitches": true,
+          "topColor": "#7a6a3a",
+          "topStyle": "hoodie",
+          "voicePitch": 0.65
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Imogen",
+        "id": "a62",
+        "lastName": "Gristle",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 58,
+          "fun": 83,
+          "hunger": 69,
+          "hygiene": 72,
+          "preservation": 80,
+          "social": 82
+        },
+        "occupation": "Bat Wrangler",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 1,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 5,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 1,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 2,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "nightOwl",
+          "artistic",
+          "hothead"
+        ],
+        "visit": null,
+        "vitality": 80,
+        "voiceSeed": 1925306742,
+        "walkBy": null
+      },
+      "a63": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "body": "nurse",
+          "bottomColor": "#2b2f3a",
+          "bottomStyle": "skirt",
+          "build": 0.9,
+          "eyeColor": "#7fe0ff",
+          "eyeStyle": "mismatched",
+          "hairColor": "#a8a090",
+          "hairStyle": "bun",
+          "height": 0.36,
+          "shoeColor": "#2a2420",
+          "skinTone": 3,
+          "stitches": true,
+          "topColor": "#7a6a3a",
+          "topStyle": "blouse",
+          "voicePitch": 0.88
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Ghoulbert",
+        "id": "a63",
+        "lastName": "Moanington",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 90,
+          "fun": 74,
+          "hunger": 60,
+          "hygiene": 69,
+          "preservation": 63,
+          "social": 59
+        },
+        "occupation": "Wig Maker",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 2,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 5,
+            "xp": 0
+          },
+          "logic": {
+            "level": 2,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 1,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "vain",
+          "artistic",
+          "loner"
+        ],
+        "visit": null,
+        "vitality": 85,
+        "voiceSeed": 497953863,
+        "walkBy": null
+      },
+      "a64": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#2b2f3a",
+          "bottomStyle": "pants",
+          "build": 0.87,
+          "eyeColor": "#c46b6b",
+          "eyeStyle": "sleepy",
+          "hairColor": "#2a2a33",
+          "hairStyle": "messy",
+          "height": 0.37,
+          "shoeColor": "#4b5156",
+          "skinTone": 0,
+          "stitches": true,
+          "topColor": "#7a6a3a",
+          "topStyle": "suit",
+          "voicePitch": 0.25
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Beatrix",
+        "id": "a64",
+        "lastName": "Thornbury",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 56,
+          "fun": 53,
+          "hunger": 77,
+          "hygiene": 60,
+          "preservation": 83,
+          "social": 62
+        },
+        "occupation": "Séance Medium",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 2,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 4,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 4,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "loner",
+          "clumsy",
+          "artistic"
+        ],
+        "visit": null,
+        "vitality": 92,
+        "voiceSeed": 1898207970,
+        "walkBy": null
+      },
+      "a65": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "eyepatch",
+          "body": "boss",
+          "bottomColor": "#2b2f3a",
+          "bottomStyle": "skirt",
+          "build": 0,
+          "eyeColor": "#f2e86d",
+          "eyeStyle": "beady",
+          "hairColor": "#5b3f6e",
+          "hairStyle": "bob",
+          "height": 0.19,
+          "shoeColor": "#1d1726",
+          "skinTone": 1,
+          "stitches": false,
+          "topColor": "#4a4a5e",
+          "topStyle": "cardigan",
+          "voicePitch": 0.21
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Wendell",
+        "id": "a65",
+        "lastName": "Femurson",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 84,
+          "fun": 86,
+          "hunger": 65,
+          "hygiene": 79,
+          "preservation": 82,
+          "social": 77
+        },
+        "occupation": "Embalming Fluid Sales Rep",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 5,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 6,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 0,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 0,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "bookworm",
+          "socialButterfly",
+          "artistic"
+        ],
+        "visit": null,
+        "vitality": 82,
+        "voiceSeed": 1808568855,
+        "walkBy": null
+      },
+      "a66": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#d9cfb8",
+          "bottomStyle": "shorts",
+          "build": 0.89,
+          "eyeColor": "#e8e0c8",
+          "eyeStyle": "mismatched",
+          "hairColor": "#2a2a33",
+          "hairStyle": "bald",
+          "height": 0.18,
+          "shoeColor": "#4a3326",
+          "skinTone": 3,
+          "stitches": true,
+          "topColor": "#a5532f",
+          "topStyle": "cardigan",
+          "voicePitch": 0.42
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Winifred",
+        "id": "a66",
+        "lastName": "Darkmoor",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 75,
+          "fun": 77,
+          "hunger": 87,
+          "hygiene": 85,
+          "preservation": 86,
+          "social": 52
+        },
+        "occupation": "Retired Gym Teacher",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 2,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 1,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 2,
+            "xp": 0
+          },
+          "logic": {
+            "level": 2,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 2,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "bookworm",
+          "slob",
+          "socialButterfly"
+        ],
+        "visit": null,
+        "vitality": 97,
+        "voiceSeed": 708769176,
+        "walkBy": null
+      },
+      "a67": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "none",
+          "bottomColor": "#d9cfb8",
+          "bottomStyle": "pants",
+          "build": 1,
+          "eyeColor": "#e8e0c8",
+          "eyeStyle": "droopy",
+          "hairColor": "#2a2a33",
+          "hairStyle": "messy",
+          "height": 0.34,
+          "shoeColor": "#2a2420",
+          "skinTone": 0,
+          "stitches": true,
+          "topColor": "#a5532f",
+          "topStyle": "tee",
+          "voicePitch": 0.17
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 1.5707963267948966,
+        "firstName": "Clementine",
+        "id": "a67",
+        "lastName": "Shovell",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 75,
+          "fun": 82,
+          "hunger": 76,
+          "hygiene": 92,
+          "preservation": 78.41499999999976,
+          "social": 58
+        },
+        "occupation": "Night-Shift Nurse",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 1.5707963267948966,
+        "prevPos": {
+          "x": 29.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 5,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 2,
+            "xp": 0
+          },
+          "logic": {
+            "level": 0,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 4,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "slob",
+          "hopelessRomantic",
+          "lazy"
+        ],
+        "visit": null,
+        "vitality": 97,
+        "voiceSeed": 1261677659,
+        "walkBy": null
+      },
+      "a68": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "necklace",
+          "bottomColor": "#a5532f",
+          "bottomStyle": "shorts",
+          "build": 0.67,
+          "eyeColor": "#c46b6b",
+          "eyeStyle": "droopy",
+          "hairColor": "#8a5a3a",
+          "hairStyle": "buzz",
+          "height": 0.27,
+          "shoeColor": "#4b5156",
+          "skinTone": 8,
+          "stitches": false,
+          "topColor": "#6e3b3b",
+          "topStyle": "blouse",
+          "voicePitch": 0.83
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": 0,
+        "firstName": "Constance",
+        "id": "a68",
+        "lastName": "Dirge",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 71,
+          "fun": 77,
+          "hunger": 68,
+          "hygiene": 61,
+          "preservation": 81,
+          "social": 54
+        },
+        "occupation": "Bat Wrangler",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": 0,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 0,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 1,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 1,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 1,
+            "xp": 0
+          },
+          "logic": {
+            "level": 2,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 6,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 0,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "loner",
+          "vain",
+          "slob"
+        ],
+        "visit": null,
+        "vitality": 85,
+        "voiceSeed": 1819202103,
+        "walkBy": null
+      },
+      "a69": {
+        "active": null,
+        "anim": "idle",
+        "appearance": {
+          "accessory": "flower",
+          "bottomColor": "#6d7275",
+          "bottomStyle": "pants",
+          "build": 0.01,
+          "eyeColor": "#9fe870",
+          "eyeStyle": "mismatched",
+          "hairColor": "#5a4632",
+          "hairStyle": "afro",
+          "height": 0.15,
+          "shoeColor": "#1d1726",
+          "skinTone": 9,
+          "stitches": true,
+          "topColor": "#2b2f3a",
+          "topStyle": "tee",
+          "voicePitch": 0.34
+        },
+        "aspiration": null,
+        "aspirationMilestones": [],
+        "aspirationPoints": 0,
+        "career": null,
+        "carryObjectId": null,
+        "carrying": null,
+        "createdTick": 0,
+        "expression": "neutral",
+        "facing": -0.9994588469612631,
+        "firstName": "Bonita",
+        "id": "a69",
+        "lastName": "Mistley",
+        "limbs": {
+          "armL": "ok",
+          "armR": "ok",
+          "legL": "ok",
+          "legR": "ok"
+        },
+        "moodlets": [],
+        "needs": {
+          "energy": 59.799999999997745,
+          "fun": 82.30000000000152,
+          "hunger": 69.0666666666707,
+          "hygiene": 66.46333333333587,
+          "preservation": 70.05233333333489,
+          "social": 92.93333333333374
+        },
+        "occupation": "Hearse Driver",
+        "path": null,
+        "pathIndex": 0,
+        "pos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "posY": 0,
+        "presence": "offLot",
+        "prevFacing": -0.9994588469612631,
+        "prevPos": {
+          "x": 0.5,
+          "z": 28.5
+        },
+        "queue": [],
+        "rewardTraits": [],
+        "role": "townie",
+        "skills": {
+          "charisma": {
+            "level": 1,
+            "xp": 0
+          },
+          "cooking": {
+            "level": 0,
+            "xp": 0
+          },
+          "creativity": {
+            "level": 2,
+            "xp": 0
+          },
+          "fitness": {
+            "level": 2,
+            "xp": 0
+          },
+          "logic": {
+            "level": 5,
+            "xp": 0
+          },
+          "mortuary": {
+            "level": 0,
+            "xp": 0
+          }
+        },
+        "status": {
+          "autonomyCooldownUntil": 0,
+          "autonomyFails": 0,
+          "bonePileId": null,
+          "crumbledTick": null,
+          "feral": false,
+          "lastSocialTick": 771,
+          "passedOut": false,
+          "zeroPreservationMinutes": 0
+        },
+        "traits": [
+          "hothead",
+          "slob",
+          "lazy"
+        ],
+        "visit": null,
+        "vitality": 98,
+        "voiceSeed": 731740014,
+        "walkBy": null
+      }
+    },
+    "choices": [],
+    "flags": {
+      "cheated": true,
+      "home.lastLimbHour": 67,
+      "home.lastVitalityDay": 3,
+      "home.power.seen": true,
+      "people:driftDay": 3,
+      "people:fresh:day": 3,
+      "people:fresh:dayOk": true,
+      "people:fresh:init": true,
+      "people:fresh:samples": 20,
+      "people:fresh:streak": 2,
+      "people:last:a44|a55": "social_welcome",
+      "people:last:a44|a69": "social_introduce",
+      "people:last:a45|a55": "social_introduce",
+      "people:last:a45|a69": "social_welcome",
+      "people:lastVisit:a49": 2500,
+      "people:lastVisit:a50": 6856,
+      "people:lastVisit:a51": 2220,
+      "people:lastVisit:a53": 7204,
+      "people:lastVisit:a55": 3008,
+      "people:lastVisit:a58": 13488,
+      "people:lastVisit:a61": 12428,
+      "people:lastVisit:a67": 328,
+      "people:lastVisit:a69": 512,
+      "people:lovesickDay": 3,
+      "people:townies:generated": 24
+    },
+    "gameOver": false,
+    "household": {
+      "bills": [],
+      "funds": 6900,
+      "memberIds": [
+        "a44",
+        "a45"
+      ],
+      "name": "The Graves",
+      "repoDispatchedDay": null,
+      "txLog": [],
+      "utilitiesOn": true
+    },
+    "jobs": {
+      "list": [],
+      "nextId": 1,
+      "version": 1
+    },
+    "lot": {
+      "buildable": {
+        "x0": 1,
+        "x1": 29,
+        "z0": 1,
+        "z1": 27
+      },
+      "depth": 30,
+      "entryPoints": [
+        {
+          "x": 0.5,
+          "z": 28.5
+        },
+        {
+          "x": 29.5,
+          "z": 28.5
+        }
+      ],
+      "floorVersion": 1,
+      "floors": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_planks_dark",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        "floor_tile_morgue",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_planks_worn",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        "floor_checker_bw",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "floor_stone_crypt",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "sidewalkZ": 28,
+      "version": 42,
+      "wallVersion": 1,
+      "walls": {
+        "h:10:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:10:14": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_plum"
+          ]
+        },
+        "h:10:19": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:11:10": {
+          "openingId": "o9",
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:11:14": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_plum"
+          ]
+        },
+        "h:11:19": {
+          "openingId": "o5",
+          "paint": [
+            "wall_stripes_plum",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:12:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:12:14": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_plum"
+          ]
+        },
+        "h:12:19": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:13:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:13:14": {
+          "openingId": "o2",
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_plum"
+          ]
+        },
+        "h:13:19": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:14:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:14:14": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_plum"
+          ]
+        },
+        "h:14:19": {
+          "openingId": "o1",
+          "paint": [
+            "wall_stripes_plum",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:15:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:15:14": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_tile_morgue"
+          ]
+        },
+        "h:15:19": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:16:14": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_tile_morgue"
+          ]
+        },
+        "h:16:19": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:16:9": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_mint"
+          ]
+        },
+        "h:17:14": {
+          "openingId": "o4",
+          "paint": [
+            "wall_stripes_mint",
+            "wall_tile_morgue"
+          ]
+        },
+        "h:17:19": {
+          "openingId": "o7",
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:17:9": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_mint"
+          ]
+        },
+        "h:18:14": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_tile_morgue"
+          ]
+        },
+        "h:18:19": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:18:9": {
+          "openingId": "o11",
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_mint"
+          ]
+        },
+        "h:19:14": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_tile_morgue"
+          ]
+        },
+        "h:19:19": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "h:19:9": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_mint"
+          ]
+        },
+        "h:9:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "h:9:14": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_plum"
+          ]
+        },
+        "h:9:19": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:15:14": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_tile_morgue"
+          ]
+        },
+        "v:15:15": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_tile_morgue"
+          ]
+        },
+        "v:15:16": {
+          "openingId": "o3",
+          "paint": [
+            "wall_stripes_plum",
+            "wall_tile_morgue"
+          ]
+        },
+        "v:15:17": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_tile_morgue"
+          ]
+        },
+        "v:15:18": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_plum",
+            "wall_tile_morgue"
+          ]
+        },
+        "v:16:10": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_mint"
+          ]
+        },
+        "v:16:11": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_mint"
+          ]
+        },
+        "v:16:12": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_mint"
+          ]
+        },
+        "v:16:13": {
+          "openingId": null,
+          "paint": [
+            "wall_damask_midnight",
+            "wall_stripes_mint"
+          ]
+        },
+        "v:16:9": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_mint"
+          ]
+        },
+        "v:20:10": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:11": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:12": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:13": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:14": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:15": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:16": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:17": {
+          "openingId": "o8",
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:18": {
+          "openingId": null,
+          "paint": [
+            "wall_tile_morgue",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:20:9": {
+          "openingId": null,
+          "paint": [
+            "wall_stripes_mint",
+            "wall_exterior_siding"
+          ]
+        },
+        "v:9:10": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "v:9:11": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "v:9:12": {
+          "openingId": "o10",
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "v:9:13": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_damask_midnight"
+          ]
+        },
+        "v:9:14": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_plum"
+          ]
+        },
+        "v:9:15": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_plum"
+          ]
+        },
+        "v:9:16": {
+          "openingId": "o6",
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_plum"
+          ]
+        },
+        "v:9:17": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_plum"
+          ]
+        },
+        "v:9:18": {
+          "openingId": null,
+          "paint": [
+            "wall_exterior_siding",
+            "wall_stripes_plum"
+          ]
+        }
+      },
+      "width": 30
+    },
+    "nextId": 3086,
+    "notifications": [
+      {
+        "agentId": null,
+        "id": 70,
+        "kind": "good",
+        "objectId": null,
+        "read": false,
+        "text": "The Graves household has moved in. Death didn't get you out of paying rent.",
+        "tick": 0,
+        "title": "Welcome to Wormwood Heights"
+      },
+      {
+        "agentId": null,
+        "id": 71,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 0,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": "a45",
+        "id": 207,
+        "kind": "social",
+        "objectId": null,
+        "read": false,
+        "text": "Ghoulia waved Bonita Mistley over. They’re heading for the front door.",
+        "tick": 587,
+        "title": "Come on over!"
+      },
+      {
+        "agentId": null,
+        "id": 228,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 720,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 374,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 1440,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 518,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 2160,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 674,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 2880,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": "a44",
+        "id": 716,
+        "kind": "social",
+        "objectId": null,
+        "read": false,
+        "text": "Mort waved Griselda Creaker over. They’re heading for the front door.",
+        "tick": 3072,
+        "title": "Come on over!"
+      },
+      {
+        "agentId": null,
+        "id": 839,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 3600,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 994,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 4320,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 1154,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 5040,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 1311,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 5760,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 1467,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 6480,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 1632,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 7200,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 1802,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 7920,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 1973,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 8640,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 2131,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 9360,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 2297,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 10080,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 2454,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 10800,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": null,
+        "id": 2615,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 11520,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": "a44",
+        "id": 2741,
+        "kind": "good",
+        "objectId": null,
+        "read": false,
+        "text": "Mort adopted Ash the cat.",
+        "tick": 12120,
+        "title": "Ash moved in"
+      },
+      {
+        "agentId": null,
+        "id": 2759,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 12240,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": "a44",
+        "id": 2867,
+        "kind": "good",
+        "objectId": null,
+        "read": false,
+        "text": "Mort adopted Bones the dog.",
+        "tick": 12720,
+        "title": "Bones moved in"
+      },
+      {
+        "agentId": null,
+        "id": 2915,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 12960,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": "a44",
+        "id": 2993,
+        "kind": "good",
+        "objectId": null,
+        "read": false,
+        "text": "Mort adopted Caw the crow.",
+        "tick": 13320,
+        "title": "Caw moved in"
+      },
+      {
+        "agentId": null,
+        "id": 3043,
+        "kind": "info",
+        "objectId": null,
+        "read": false,
+        "text": "\"freshstart\" — the dead don't judge.",
+        "tick": 13680,
+        "title": "Cheat activated"
+      },
+      {
+        "agentId": "a44",
+        "id": 3085,
+        "kind": "good",
+        "objectId": null,
+        "read": false,
+        "text": "Mort adopted Velvet the cat.",
+        "tick": 13920,
+        "title": "Velvet moved in"
+      }
+    ],
+    "objects": {
+      "o1": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "door_splintered",
+        "id": "o1",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:14:19",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#4a3326",
+        "value": 120
+      },
+      "o10": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o10",
+        "inUseBy": [],
+        "placement": {
+          "edge": "v:9:12",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      },
+      "o11": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o11",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:18:9",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      },
+      "o12": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "tv_crt",
+        "id": "o12",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 11,
+          "z": 14
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 8,
+        "tint": "#4a3326",
+        "value": 300
+      },
+      "o13": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "sofa_moldy",
+        "id": "o13",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 2,
+          "x": 10,
+          "z": 18
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#3f5a4a",
+        "value": 320
+      },
+      "o14": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "armchair_tattered",
+        "id": "o14",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 1,
+          "x": 14,
+          "z": 15
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 14,
+        "tint": "#6e3b3b",
+        "value": 240
+      },
+      "o15": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "rug_rag",
+        "id": "o15",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 11,
+          "z": 16
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#5b3f6e",
+        "value": 90
+      },
+      "o16": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "table_coffinlid",
+        "id": "o16",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 9,
+          "z": 16
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#4a3326",
+        "value": 120
+      },
+      "o17": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "lamp_skull",
+        "id": "o17",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 9,
+          "z": 14
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 140
+      },
+      "o18": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "shelf_moldering",
+        "id": "o18",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 12,
+          "z": 14
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#4a3326",
+        "value": 280
+      },
+      "o19": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "painting_greatgrand",
+        "id": "o19",
+        "inUseBy": [],
+        "placement": {
+          "edge": "v:9:15",
+          "kind": "wall",
+          "side": 1
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 200
+      },
+      "o2": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "door_splintered",
+        "id": "o2",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:13:14",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 120
+      },
+      "o20": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "fridge_humming",
+        "id": "o20",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 1,
+          "x": 19,
+          "z": 14
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#cfd6c4",
+        "value": 450
+      },
+      "o21": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "stove_greasefire",
+        "id": "o21",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 1,
+          "x": 19,
+          "z": 15
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#d8cfb8",
+        "value": 400
+      },
+      "o22": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "counter_butcher",
+        "id": "o22",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 1,
+          "x": 19,
+          "z": 16
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 110
+      },
+      "o23": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "sink_rusty",
+        "id": "o23",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 1,
+          "x": 19,
+          "z": 17
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 180
+      },
+      "o24": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "counter_butcher",
+        "id": "o24",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 1,
+          "x": 19,
+          "z": 18
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 110
+      },
+      "o25": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "trash_lidded",
+        "id": "o25",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 15,
+          "z": 14
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6d7275",
+        "value": 50
+      },
+      "o26": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "table_wake",
+        "id": "o26",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 16,
+          "z": 16
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#4a3326",
+        "value": 340
+      },
+      "o27": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "chair_creaky",
+        "id": "o27",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 16,
+          "z": 15
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 60
+      },
+      "o28": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "chair_creaky",
+        "id": "o28",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 17,
+          "z": 15
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 60
+      },
+      "o29": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "chair_creaky",
+        "id": "o29",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 2,
+          "x": 16,
+          "z": 17
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 8,
+        "tint": "#6b4a35",
+        "value": 60
+      },
+      "o3": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "door_splintered",
+        "id": "o3",
+        "inUseBy": [],
+        "placement": {
+          "edge": "v:15:16",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 120
+      },
+      "o30": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "chair_creaky",
+        "id": "o30",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 2,
+          "x": 17,
+          "z": 17
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 60
+      },
+      "o31": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "coffin_pine",
+        "id": "o31",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 10,
+          "z": 10
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#8a6a4a",
+        "value": 300
+      },
+      "o32": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "candelabra_drippy",
+        "id": "o32",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 11,
+          "z": 10
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 90
+      },
+      "o33": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "coffin_chillrest",
+        "id": "o33",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 12,
+          "z": 10
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 1400
+      },
+      "o34": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "plant_deadfern",
+        "id": "o34",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 15,
+          "z": 10
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 45
+      },
+      "o35": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "sconce_candle",
+        "id": "o35",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:10:14",
+          "kind": "wall",
+          "side": 0
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 75
+      },
+      "o36": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "mirror_cracked",
+        "id": "o36",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 16,
+          "z": 9
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#4a3326",
+        "value": 160
+      },
+      "o37": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "shower_drizzle",
+        "id": "o37",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 19,
+          "z": 9
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#cfd6c4",
+        "value": 350
+      },
+      "o38": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {
+          "bills": 0,
+          "flag": false,
+          "mail": 0
+        },
+        "defId": "mailbox_crooked",
+        "id": "o38",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 15,
+          "z": 26
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 3,
+        "tint": null,
+        "value": 50
+      },
+      "o39": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "lantern_post",
+        "id": "o39",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 13,
+          "z": 25
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 180
+      },
+      "o4": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "door_splintered",
+        "id": "o4",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:17:14",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#8a6a4a",
+        "value": 120
+      },
+      "o40": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "plot_budget",
+        "id": "o40",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 5,
+          "z": 12
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 80
+      },
+      "o41": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "headstone_decor",
+        "id": "o41",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 5,
+          "z": 10
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 120
+      },
+      "o42": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "tree_gnarled",
+        "id": "o42",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 4,
+          "z": 21
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 250
+      },
+      "o43": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "tree_gnarled",
+        "id": "o43",
+        "inUseBy": [],
+        "placement": {
+          "kind": "floor",
+          "rot": 0,
+          "x": 24,
+          "z": 11
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": null,
+        "value": 250
+      },
+      "o5": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o5",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:11:19",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      },
+      "o6": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o6",
+        "inUseBy": [],
+        "placement": {
+          "edge": "v:9:16",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      },
+      "o7": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o7",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:17:19",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      },
+      "o8": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o8",
+        "inUseBy": [],
+        "placement": {
+          "edge": "v:20:17",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      },
+      "o9": {
+        "condition": {
+          "broken": false,
+          "burnMinutes": 0,
+          "burning": false,
+          "dirt": 0
+        },
+        "data": {},
+        "defId": "window_grimy",
+        "id": "o9",
+        "inUseBy": [],
+        "placement": {
+          "edge": "h:11:10",
+          "kind": "opening"
+        },
+        "purchasedTick": 0,
+        "reservedBy": {},
+        "rev": 0,
+        "tint": "#6b4a35",
+        "value": 90
+      }
+    },
+    "party": null,
+    "pets": {
+      "away": [],
+      "nextId": 5,
+      "pending": [],
+      "pets": [
+        {
+          "adoptedTick": 12120,
+          "anim": "idle",
+          "busyUntil": 0,
+          "facing": 1.189,
+          "goal": null,
+          "guardUntil": 0,
+          "id": "p1",
+          "name": "Ash",
+          "needs": {
+            "affection": 63.124999999990436,
+            "appetite": 50.000000000001705,
+            "fun": 57.499999999994884,
+            "hygiene": 64.99999999998806
+          },
+          "neglectMin": 0,
+          "pos": {
+            "x": 9.841,
+            "z": 20.236
+          },
+          "slot": 232,
+          "species": "cat",
+          "trait": "guard"
+        },
+        {
+          "adoptedTick": 12720,
+          "anim": "walk",
+          "busyUntil": 0,
+          "facing": 2.497,
+          "goal": {
+            "x": 11.5,
+            "z": 5.5
+          },
+          "guardUntil": 0,
+          "id": "p2",
+          "name": "Bones",
+          "needs": {
+            "affection": 64.99999999999659,
+            "appetite": 60.00000000000114,
+            "fun": 57.50000000000341,
+            "hygiene": 69.99999999999204
+          },
+          "neglectMin": 0,
+          "pos": {
+            "x": 8.953,
+            "z": 9.228
+          },
+          "slot": 232,
+          "species": "dog",
+          "trait": "curious"
+        },
+        {
+          "adoptedTick": 13320,
+          "anim": "idle",
+          "busyUntil": 0,
+          "facing": 3.045,
+          "goal": null,
+          "guardUntil": 0,
+          "id": "p3",
+          "name": "Caw",
+          "needs": {
+            "affection": 72.4999999999983,
+            "appetite": 70.00000000000057,
+            "fun": 68.7500000000017,
+            "hygiene": 74.99999999999602
+          },
+          "neglectMin": 0,
+          "pos": {
+            "x": 18.5,
+            "z": 9.5
+          },
+          "slot": 232,
+          "species": "crow",
+          "trait": "curious"
+        },
+        {
+          "adoptedTick": 13920,
+          "anim": "idle",
+          "busyUntil": 0,
+          "facing": 1.607,
+          "goal": null,
+          "guardUntil": 0,
+          "id": "p4",
+          "name": "Velvet",
+          "needs": {
+            "affection": 80,
+            "appetite": 80,
+            "fun": 80,
+            "hygiene": 80
+          },
+          "neglectMin": 0,
+          "pos": {
+            "x": 24.937,
+            "z": 28.358
+          },
+          "slot": -1,
+          "species": "cat",
+          "trait": "lazy"
+        }
+      ],
+      "strays": [],
+      "version": 1
+    },
+    "quests": {
+      "active": [
+        {
+          "instance": 1,
+          "questId": "story_firstMeal",
+          "startedTick": 0,
+          "step": {
+            "baseline": 0,
+            "done": false,
+            "heldMin": 0,
+            "progress": 0,
+            "seen": [],
+            "startDay": 1,
+            "startTick": 0,
+            "worldId": "w1nl1-u27juj1ifcvpq"
+          },
+          "stepIndex": 0
+        }
+      ],
+      "completions": {},
+      "grants": [],
+      "lastEndedDay": {},
+      "pinned": null,
+      "version": 1,
+      "worldId": "w1nl1-u27juj1ifcvpq"
+    },
+    "relationships": {
+      "a44|a45": {
+        "a": "a44",
+        "b": "a45",
+        "bestFriends": false,
+        "engaged": false,
+        "friendship": 29,
+        "interactions": 0,
+        "lastInteractionTick": 0,
+        "married": false,
+        "met": true,
+        "partners": false,
+        "romance": 0
+      },
+      "a44|a55": {
+        "a": "a44",
+        "b": "a55",
+        "bestFriends": false,
+        "engaged": false,
+        "friendship": 3,
+        "interactions": 2,
+        "lastInteractionTick": 3112,
+        "married": false,
+        "met": true,
+        "partners": false,
+        "romance": 0
+      },
+      "a44|a69": {
+        "a": "a44",
+        "b": "a69",
+        "bestFriends": false,
+        "engaged": false,
+        "friendship": 4,
+        "interactions": 1,
+        "lastInteractionTick": 771,
+        "married": false,
+        "met": true,
+        "partners": false,
+        "romance": 0
+      },
+      "a45|a55": {
+        "a": "a45",
+        "b": "a55",
+        "bestFriends": false,
+        "engaged": false,
+        "friendship": 4,
+        "interactions": 1,
+        "lastInteractionTick": 3166,
+        "married": false,
+        "met": true,
+        "partners": false,
+        "romance": 0
+      },
+      "a45|a69": {
+        "a": "a45",
+        "b": "a69",
+        "bestFriends": false,
+        "engaged": false,
+        "friendship": 8,
+        "interactions": 3,
+        "lastInteractionTick": 667,
+        "married": false,
+        "met": true,
+        "partners": false,
+        "romance": 0
+      }
+    },
+    "rng": {
+      "a": 1817188893,
+      "b": 2366607296,
+      "c": 1859280793,
+      "d": 3558566311
+    },
+    "schemaVersion": 2,
+    "seed": 77221,
+    "settings": {
+      "autonomy": "full",
+      "difficulty": "normal",
+      "visitorsEnabled": true
+    },
+    "stats": {
+      "agent": {
+        "a44": {
+          "socials": 3,
+          "townsfolkMet": 1
+        },
+        "a45": {
+          "socials": 4,
+          "townsfolkMet": 2
+        }
+      },
+      "counters": {
+        "moneySpent": 100,
+        "townieVisits": 2
+      }
+    },
+    "tick": 13920
+  }
+}

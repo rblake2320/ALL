@@ -1,0 +1,11 @@
+{
+  "engine": "c36d340",
+  "sourceArchiveSha256": "52747208b4f0b6226b4f1f17c2c8054cf031ed29aa4908d26d5a68cb25e3d40d",
+  "source": "git archive c36d340 src package.json package-lock.json vite.config.ts vitest.config.ts",
+  "harness": "ac1Harness.ts copied into the independent baseline archive, using only pre-world public APIs",
+  "workload": "3 real templates x 3 seeds x 7 days continuous and save/load at day 1 + 6h, plus 3 fixture seeds x 3 days: 21 runs",
+  "execution": "Spark2 Node22.22.1, four CPU cores /8GiB scope, four baseline recorder files passed",
+  "retainedEvidence": "sol-world-on-batch-evidence/baseline-c36-tests.json and <runner-host>:~/afterlife-sol-world/baseline-c36/evidence",
+  "purpose": "Home-only equivalence against the approved batch before adding the walkable world. Old fd20992 ac1.golden.json and v1 saves remain historical evidence, unchanged. Expanded furnished-world traversal has separate current runtime tests.",
+  "knownHistoricalDifference": "Independent starter+journal replay: c36 and the integrated engine both add only active.data._mess0 versus fd20992, from the batch's accepted stuck-cleaning guard. Both apply all 11 journal entries with zero divergence."
+}

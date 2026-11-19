@@ -1,0 +1,19 @@
+{
+  "sourcePin": "3cc1f39f4adee7a39034dc29ec20097c1b49a8d8",
+  "sourceTree": "e9ee7c94794dbc9c7ad717a5c16db3fe7470797d",
+  "schemaVersion": 2,
+  "sourceFixture": "tests/fixtures/saves/v1-saves.json",
+  "sourceFixtureSha256": "1282d0da84c0f1ea4c78d4393e5f9cb4db13758a944f0af2a96c98d23f5e938d",
+  "referenceSha256": "b962cd882d5b13d07f1abff96f70b2c5bbc14f20788aded7a51c2f80f6c38406",
+  "producer": "tests/unit/world/v1.pets-replay.record.ts",
+  "producerSha256": "e4151139b1e83467dc8b0f6ccff9d1a10cd38d74ffa34e1686af9f6e45f44e8b",
+  "journals": 3,
+  "entriesApplied": 35,
+  "faults": 0,
+  "scope": "sol-world-v1-replay-3cc",
+  "invocation": "3282f090a0ce4dcca33eaf001b218fa3",
+  "memoryPeak": 281608192,
+  "memoryMaxOomEvents": 0,
+  "evidence": "<private-evidence-archive>",
+  "policy": "Recorded on actual accepted base before framework. Original v1 fixture and historical hashes untouched; pets remain in the comparison."
+}

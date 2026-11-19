@@ -1,0 +1,250 @@
+# Afterlife Lease CI: typecheck, unit tests, web builds and asset verification on Windows + Linux,
+# the Windows NSIS installer as a downloadable artifact, and the browser e2e smoke test (when present).
+name: CI
+
+# Runners: GitHub-hosted only. This is a public repository, so pull requests from forks must never run on a
+# self-hosted machine. Linux runs on every push and pull request; Windows and the installer run on main and on
+# manual runs. Docs-only changes do not trigger CI.
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**', '**/*.md', 'parked/**']
+  pull_request:
+    # ready_for_review: a draft skips the browser suites (see the e2e job), so marking it ready must start a run.
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths-ignore: ['docs/**', '**/*.md', 'parked/**']
+  workflow_dispatch:
+    inputs:
+      installer:
+        description: 'Build the Windows installer artifact'
+        type: boolean
+        default: true
+      windows:
+        description: 'Also run on a Windows runner'
+        type: boolean
+        default: false
+
+# Least privilege: the workflow only reads the repository. Artifacts are uploaded with the run's own token.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  # PRs: newest commit wins. Branch pushes: let the running build finish (GitHub keeps only the newest
+  # pending run), so a busy branch still gets a completed result instead of every run being cancelled.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  # Keep logs readable and builds reproducible.
+  CI: 'true'
+  npm_config_fund: 'false'
+  npm_config_audit: 'false'
+
+jobs:
+  build-test:
+    name: Build and test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        # Linux always. Windows on main and on a manual run with windows=true.
+        os: ${{ fromJSON(((github.event_name == 'workflow_dispatch' && inputs.windows) || (github.event_name == 'push' && github.ref == 'refs/heads/main')) && '["ubuntu-latest","windows-latest"]' || '["ubuntu-latest"]') }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22.x
+          cache: npm
+
+      # Linux never launches or packages Electron, so skip its ~100 MB binary download there.
+      # Windows keeps it (dist:win below packages the desktop app).
+      - name: Install dependencies (Linux, no Electron binary)
+        if: runner.os == 'Linux'
+        run: npm ci
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+
+      - name: Install dependencies (Windows)
+        if: runner.os == 'Windows'
+        run: npm ci
+
+      - name: Feature ledger + registry integrity (W-090)
+        run: npm run verify:ledger
+
+      - name: Typecheck (renderer + Electron)
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test
+
+      # The save journal's crash-safety test draws its interleavings from real timer latency, so one pass proves one
+      # interleaving. Run 43144265722 failed it once on this runner ("recovered state 451 is older than the acknowledged
+      # 504") and 68 seeds passed elsewhere. Soak more seeds on every run until the cause is found and fixed; a failure
+      # prints the storage state at the kill point (describeKill in the test).
+      - name: Save-journal crash soak (24 seeds)
+        if: runner.os == 'Linux'
+        run: |
+          for seed in $(seq 1 24); do
+            echo "::group::CHAOS_SEED=$seed"
+            if ! CHAOS_SEED=$seed npx vitest run tests/unit/game/journalChaos.test.ts -t "hostile storage"; then
+              echo "::endgroup::"
+              echo "::error::journal crash soak failed at CHAOS_SEED=$seed"
+              exit 1
+            fi
+            echo "::endgroup::"
+          done
+
+      - name: Web build (dist/)
+        run: npm run build
+
+      - name: Single-file web build (dist-single/)
+        if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+        run: npm run build:single
+
+      - name: Verify source assets (public/assets manifests)
+        run: npm run verify:assets
+
+      - name: Verify built assets (dist/assets manifests)
+        run: node scripts/verify-assets.mjs --root dist/assets
+
+      # Unsigned unless signing secrets are configured; never auto-discover a certificate on the runner.
+      - name: Windows installer (NSIS x64, --publish never)
+        if: runner.os == 'Windows' && (github.ref == 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && inputs.installer))
+        run: npm run dist:win
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+
+      # electron-builder writes release/<version>/AfterlifeLease-Setup-<version>-x64.exe
+      # (directories.output = "release/${version}" in electron/electron-builder.json).
+      - name: Upload Windows installer
+        if: runner.os == 'Windows' && (github.ref == 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && inputs.installer))
+        uses: actions/upload-artifact@v4
+        with:
+          name: afterlife-lease-windows-installer
+          path: release/*/*.exe
+          if-no-files-found: error
+          retention-days: 14
+
+  e2e:
+    name: Browser e2e smoke
+    # Throughput on the one Spark runner (2026-11-12: build and test takes 2 min, the browser suites 22-31 min, one
+    # job at a time, six draft PRs queued behind each other for hours):
+    #  - after build-test, so a run that fails typecheck or a unit test does not also spend half an hour here;
+    #  - not on draft pull requests. Drafts get build and test on every push; the browser suites run on pushes to
+    #    main / ship/**, on manual runs, and on a pull request once it is marked ready for review.
+    needs: build-test
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 75 # one visible retry per e2e suite (smoke, a11y, placement) can double the worst case (W-115)
+    continue-on-error: false
+    env:
+      # The e2e suite runs in Chromium, never in Electron (also covers the later `npm install --no-save`).
+      ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+    steps:
+      - name: Check out
+        uses: actions/checkout@v5
+
+      # hashFiles() needs the checkout, so the "only if the e2e suite exists" gate lives on each step
+      # (a job-level `if:` is evaluated before checkout and cannot see the files). The gate is the
+      # `npm run e2e` entry point itself, so a half-written tests/e2e/ (helpers only) is skipped, not failed.
+      - name: Report whether the e2e suite exists
+        run: |
+          if [ -f tests/e2e/smoke.mjs ]; then echo "tests/e2e/smoke.mjs found: running the e2e suite"; else echo "tests/e2e/smoke.mjs not present: skipping e2e steps"; fi
+
+      - name: Set up Node.js 22
+        if: hashFiles('tests/e2e/smoke.mjs') != ''
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22.x
+          cache: npm
+
+      - name: Install dependencies (no Electron binary)
+        if: hashFiles('tests/e2e/smoke.mjs') != ''
+        run: npm ci
+
+      # Playwright is not a package.json dependency (the dev container preinstalls it globally);
+      # install the same version locally without touching package.json / package-lock.json. axe-core too (W-118):
+      # without it tests/e2e/a11y.mjs reports its WCAG rule scans as not run.
+      - name: Install Playwright + Chromium
+        if: hashFiles('tests/e2e/smoke.mjs') != ''
+        run: |
+          npm install --no-save playwright@1.63.0 axe-core@4.10.3
+          npx playwright install --with-deps chromium
+
+      # No separate build step: tests/e2e/lib/server.mjs (ensureBuild) rebuilds dist/ when it is older than
+      # its inputs, then serves it with `vite preview` on a free port.
+      - name: e2e smoke test
+        if: hashFiles('tests/e2e/smoke.mjs') != ''
+        # CI runners render far slower than local machines and flakes moved step to step (W-115). One retry on
+        # failure; the retry is surfaced as a warning annotation + job summary line, never hidden. Two failures fail.
+        run: |
+          set +e
+          npm run e2e; rc=$?
+          if [ $rc -ne 0 ]; then
+            echo "::warning title=e2e smoke retried::first attempt failed (exit $rc); attempt-1 evidence in dev/out/e2e-attempt1"
+            echo "### ⚠️ e2e smoke: first attempt FAILED (exit $rc), retried once — see dev/out/e2e-attempt1" >> "$GITHUB_STEP_SUMMARY"
+            rm -rf dev/out/e2e-attempt1; mv dev/out/e2e dev/out/e2e-attempt1 2>/dev/null
+            npm run e2e; rc=$?
+          fi
+          exit $rc
+
+      # W-064 accessibility acceptance (keyboard placement, Escape/focus, zoom, contrast) on the same dist/.
+      - name: e2e accessibility suite
+        if: hashFiles('tests/e2e/a11y.mjs') != ''
+        # Same visible single retry as the other e2e suites (W-115): annotation + job summary, attempt-1 kept.
+        run: |
+          set +e
+          node tests/e2e/a11y.mjs --no-build; rc=$?
+          if [ $rc -ne 0 ]; then
+            echo "::warning title=e2e a11y retried::first attempt failed (exit $rc); attempt-1 evidence in dev/out/e2e/a11y-attempt1"
+            echo "### ⚠️ e2e a11y: first attempt FAILED (exit $rc), retried once — see dev/out/e2e/a11y-attempt1" >> "$GITHUB_STEP_SUMMARY"
+            rm -rf dev/out/e2e/a11y-attempt1; mv dev/out/e2e/a11y dev/out/e2e/a11y-attempt1 2>/dev/null
+            node tests/e2e/a11y.mjs --no-build; rc=$?
+          fi
+          exit $rc
+        env:
+          E2E_OUT: dev/out/e2e/a11y
+
+      # Build/Buy placement matrix in a real browser: ghost colour == what a click does, for every placement kind
+      # (owner bug: green window that could not be added). Writes screenshots to dev/out/e2e-placement.
+      - name: e2e placement matrix
+        if: hashFiles('tests/e2e/placement.mjs') != ''
+        # CI runners render far slower than local machines and flakes moved step to step (W-115). One retry on
+        # failure; the retry is surfaced as a warning annotation + job summary line, never hidden. Two failures fail.
+        run: |
+          set +e
+          npm run e2e:placement; rc=$?
+          if [ $rc -ne 0 ]; then
+            echo "::warning title=e2e placement retried::first attempt failed (exit $rc); attempt-1 evidence in dev/out/e2e-placement-attempt1"
+            echo "### ⚠️ e2e placement: first attempt FAILED (exit $rc), retried once — see dev/out/e2e-placement-attempt1" >> "$GITHUB_STEP_SUMMARY"
+            rm -rf dev/out/e2e-placement-attempt1; mv dev/out/e2e-placement dev/out/e2e-placement-attempt1 2>/dev/null
+            npm run e2e:placement; rc=$?
+          fi
+          exit $rc
+
+      # The in-game feedback form (F8): report, screenshot, scrubbed diagnostics, outbox and export must keep working.
+      - name: e2e feedback form
+        if: hashFiles('tests/e2e/smoke.mjs') != ''
+        run: npm run e2e:feedback -- --no-build
+
+      # tests/e2e/run.mjs writes report.json + screenshots to dev/out/e2e (E2E_OUT overrides it).
+
+      # GitHub artifact storage has its own quota (run 43144265722: "Artifact storage quota has been hit" failed a job
+      # whose tests had finished). The upload is a convenience, never a gate: a failed upload does not fail the job.
+      - name: Upload e2e report and screenshots
+        if: always() && hashFiles('tests/e2e/smoke.mjs') != ''
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-report
+          path: |
+            dev/out/e2e
+            dev/out/e2e-attempt1
+            dev/out/e2e-placement
+            dev/out/e2e-placement-attempt1
+          if-no-files-found: ignore
+          retention-days: 3

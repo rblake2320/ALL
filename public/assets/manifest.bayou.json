@@ -1,0 +1,3920 @@
+{
+ "version": 1,
+ "level": "bayou",
+ "doc": "docs/levels/L4-bayou.md",
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "models": [
+  {
+   "id": "board_swampguide",
+   "level": "bayou",
+   "object": "board_swampguide",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/board_swampguide.glb",
+   "bytes": 30132,
+   "sha256": "d8a4cd18a9bb609e68ae1032bbb8607a90253f58d5d5d7210da8af102350d935",
+   "triangles": 528,
+   "size": [
+    1.0,
+    1.718,
+    0.1618
+   ],
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.1609
+    ],
+    "max": [
+     0.5,
+     1.718,
+     0.0009
+    ]
+   },
+   "materials": [
+    "Brass",
+    "ByBark",
+    "ByCypress",
+    "ByFrog",
+    "ByMapPaper",
+    "ByPlank",
+    "ByPlankDark",
+    "Cobalt",
+    "DecalInk",
+    "EnamelRed",
+    "Paper"
+   ],
+   "budget": 800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "career"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.153
+     ],
+     [
+      -0.492,
+      -0.1609
+     ],
+     [
+      0.492,
+      -0.1609
+     ],
+     [
+      0.5,
+      -0.153
+     ],
+     [
+      0.5,
+      -0.007
+     ],
+     [
+      0.492,
+      0.0009
+     ],
+     [
+      -0.492,
+      0.0009
+     ],
+     [
+      -0.5,
+      -0.007
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "booth_diner",
+   "level": "bayou",
+   "object": "booth_diner",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/booth_diner.glb",
+   "bytes": 34480,
+   "sha256": "8f58d838e9738c3d51078c2d56fc4a8261bd2501923cd01e2a12635a0e41b18e",
+   "triangles": 1260,
+   "size": [
+    1.95,
+    1.155,
+    0.821
+   ],
+   "bounds": {
+    "min": [
+     -0.975,
+     0.0,
+     -0.48
+    ],
+    "max": [
+     0.975,
+     1.155,
+     0.341
+    ]
+   },
+   "materials": [
+    "ByVinyl",
+    "ByVinylPatch",
+    "Chrome",
+    "Tin",
+    "WoodDark"
+   ],
+   "budget": 1300,
+   "front": "back_tall:0.75",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "seat"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.975,
+      -0.432
+     ],
+     [
+      -0.97,
+      -0.47
+     ],
+     [
+      -0.96,
+      -0.48
+     ],
+     [
+      0.96,
+      -0.48
+     ],
+     [
+      0.97,
+      -0.47
+     ],
+     [
+      0.975,
+      -0.432
+     ],
+     [
+      0.975,
+      0.272
+     ],
+     [
+      0.96,
+      0.341
+     ],
+     [
+      -0.96,
+      0.341
+     ],
+     [
+      -0.975,
+      0.272
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bush_bogberry",
+   "level": "bayou",
+   "object": "bush_bogberry",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/bush_bogberry.glb",
+   "bytes": 26872,
+   "sha256": "db45c9b5d5bdd0be7a590114eec8c1375c6c32f79438d9f857778385025053ac",
+   "triangles": 564,
+   "size": [
+    0.7798,
+    0.6074,
+    0.6668
+   ],
+   "bounds": {
+    "min": [
+     -0.389,
+     0.0,
+     -0.3743
+    ],
+    "max": [
+     0.3908,
+     0.6074,
+     0.2925
+    ]
+   },
+   "materials": [
+    "Bark",
+    "ByBerry",
+    "Hedge",
+    "HedgeLight"
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "count_1",
+    "count_2",
+    "count_3"
+   ],
+   "states": [
+    "count_1",
+    "count_2",
+    "count_3"
+   ],
+   "tags": [
+    "forage"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.389,
+      0.12
+     ],
+     [
+      -0.3504,
+      0.0107
+     ],
+     [
+      -0.2665,
+      -0.21
+     ],
+     [
+      -0.2138,
+      -0.3027
+     ],
+     [
+      -0.1501,
+      -0.3743
+     ],
+     [
+      0.2696,
+      -0.2926
+     ],
+     [
+      0.3291,
+      -0.2193
+     ],
+     [
+      0.3773,
+      -0.14
+     ],
+     [
+      0.3908,
+      0.16
+     ],
+     [
+      0.3396,
+      0.2324
+     ],
+     [
+      0.281,
+      0.2861
+     ],
+     [
+      0.1983,
+      0.2884
+     ],
+     [
+      -0.144,
+      0.2925
+     ],
+     [
+      -0.221,
+      0.2829
+     ],
+     [
+      -0.3568,
+      0.2339
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "chair_rocking",
+   "level": "bayou",
+   "object": "chair_rocking",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/chair_rocking.glb",
+   "bytes": 28284,
+   "sha256": "28e2dc4f9cf08eb9634f760a33a5cfd9b37c4714f0827b87c2b1aa0e36ad4bb4",
+   "triangles": 840,
+   "size": [
+    0.57,
+    1.0703,
+    0.6656
+   ],
+   "bounds": {
+    "min": [
+     -0.285,
+     0.0,
+     -0.3328
+    ],
+    "max": [
+     0.285,
+     1.0703,
+     0.3328
+    ]
+   },
+   "materials": [
+    "ByPlank",
+    "ByPlankDark",
+    "Cushion",
+    "Wicker"
+   ],
+   "budget": 1200,
+   "front": "back_tall:0.6",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "seat"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.285,
+      -0.232
+     ],
+     [
+      -0.26,
+      -0.3201
+     ],
+     [
+      -0.2546,
+      -0.3298
+     ],
+     [
+      -0.2344,
+      -0.3328
+     ],
+     [
+      0.2456,
+      -0.3328
+     ],
+     [
+      0.258,
+      -0.3249
+     ],
+     [
+      0.26,
+      -0.3201
+     ],
+     [
+      0.285,
+      -0.232
+     ],
+     [
+      0.285,
+      0.192
+     ],
+     [
+      0.258,
+      0.3249
+     ],
+     [
+      0.2456,
+      0.3328
+     ],
+     [
+      -0.2344,
+      0.3328
+     ],
+     [
+      -0.2546,
+      0.3298
+     ],
+     [
+      -0.285,
+      0.192
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "counter_diner",
+   "level": "bayou",
+   "object": "counter_diner",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/counter_diner.glb",
+   "bytes": 65624,
+   "sha256": "c496c5ae881d8e70b61ee89987234307542193155a7702e8bcb90dd2735cd1c9",
+   "triangles": 1960,
+   "size": [
+    4.94,
+    1.35,
+    0.9038
+   ],
+   "bounds": {
+    "min": [
+     -2.47,
+     0.0,
+     -0.43
+    ],
+    "max": [
+     2.47,
+     1.35,
+     0.4738
+    ]
+   },
+   "materials": [
+    "Black",
+    "ByFormica",
+    "ByPie",
+    "ByVinyl",
+    "ByVinylPatch",
+    "Chrome",
+    "Glass",
+    "Paper",
+    "Porcelain",
+    "Steel",
+    "WoodEbony"
+   ],
+   "budget": 3000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "counter"
+   ],
+   "tileFootprint": [
+    5,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -2.47,
+      0.228
+     ],
+     [
+      -2.46,
+      -0.418
+     ],
+     [
+      -2.448,
+      -0.43
+     ],
+     [
+      2.448,
+      -0.43
+     ],
+     [
+      2.46,
+      -0.418
+     ],
+     [
+      2.47,
+      0.228
+     ],
+     [
+      2.47,
+      0.248
+     ],
+     [
+      2.085,
+      0.4472
+     ],
+     [
+      2.0,
+      0.47
+     ],
+     [
+      1.0,
+      0.4738
+     ],
+     [
+      -2.0,
+      0.47
+     ],
+     [
+      -2.085,
+      0.4472
+     ],
+     [
+      -2.47,
+      0.248
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "counter_tackle",
+   "level": "bayou",
+   "object": "counter_tackle",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/counter_tackle.glb",
+   "bytes": 49996,
+   "sha256": "9958bd8f7edec29dd58f99540065d64828a536f636027dc0ab4094889b6a349e",
+   "triangles": 1086,
+   "size": [
+    2.92,
+    1.96,
+    0.895
+   ],
+   "bounds": {
+    "min": [
+     -1.46,
+     0.0,
+     -0.455
+    ],
+    "max": [
+     1.46,
+     1.96,
+     0.44
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "Brass",
+    "ByMinnow",
+    "ByPlank",
+    "ByPlankDark",
+    "Cork",
+    "FloatRed",
+    "IronOld",
+    "SoilDark",
+    "Tin",
+    "WoodDark"
+   ],
+   "budget": 1800,
+   "front": "back_tall:1.2",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "counter"
+   ],
+   "tileFootprint": [
+    3,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -1.46,
+      -0.228
+     ],
+     [
+      -1.4,
+      -0.442
+     ],
+     [
+      -1.395,
+      -0.447
+     ],
+     [
+      -1.387,
+      -0.455
+     ],
+     [
+      1.387,
+      -0.455
+     ],
+     [
+      1.395,
+      -0.447
+     ],
+     [
+      1.4,
+      -0.442
+     ],
+     [
+      1.46,
+      -0.228
+     ],
+     [
+      1.46,
+      0.428
+     ],
+     [
+      1.448,
+      0.44
+     ],
+     [
+      -1.448,
+      0.44
+     ],
+     [
+      -1.46,
+      0.428
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_bottleMessage",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_bottleMessage",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_bottleMessage.glb",
+   "bytes": 11104,
+   "sha256": "9cadcd80b6103d080fc46f64ea83fe0ed611131e9e6266a9e3e31558a4d81de2",
+   "triangles": 220,
+   "size": [
+    0.06,
+    0.057,
+    0.218
+   ],
+   "bounds": {
+    "min": [
+     -0.03,
+     0.0015,
+     -0.1
+    ],
+    "max": [
+     0.03,
+     0.0585,
+     0.118
+    ]
+   },
+   "materials": [
+    "Cork",
+    "EnamelRed",
+    "GlassGrimy",
+    "PaperOld"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.03,
+      -0.085
+     ],
+     [
+      -0.024,
+      -0.1
+     ],
+     [
+      0.024,
+      -0.1
+     ],
+     [
+      0.03,
+      -0.085
+     ],
+     [
+      0.03,
+      0.04
+     ],
+     [
+      0.016,
+      0.098
+     ],
+     [
+      0.0095,
+      0.118
+     ],
+     [
+      -0.0095,
+      0.118
+     ],
+     [
+      -0.016,
+      0.098
+     ],
+     [
+      -0.03,
+      0.04
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_cypressCarving",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_cypressCarving",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_cypressCarving.glb",
+   "bytes": 12608,
+   "sha256": "1bb17e4f5df72dcf12692f316b5932455e7c54e3467b567bc8f823e5c5669787",
+   "triangles": 304,
+   "size": [
+    0.068,
+    0.098,
+    0.0651
+   ],
+   "bounds": {
+    "min": [
+     -0.034,
+     0.0,
+     -0.0323
+    ],
+    "max": [
+     0.034,
+     0.098,
+     0.0328
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "Charcoal",
+    "WoodLight"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.034,
+      0.0
+     ],
+     [
+      -0.0275,
+      -0.02
+     ],
+     [
+      -0.0105,
+      -0.0323
+     ],
+     [
+      0.0105,
+      -0.0323
+     ],
+     [
+      0.0275,
+      -0.02
+     ],
+     [
+      0.034,
+      0.0
+     ],
+     [
+      0.0275,
+      0.02
+     ],
+     [
+      0.012,
+      0.0316
+     ],
+     [
+      0.0105,
+      0.0323
+     ],
+     [
+      0.0,
+      0.0328
+     ],
+     [
+      -0.0105,
+      0.0323
+     ],
+     [
+      -0.012,
+      0.0316
+     ],
+     [
+      -0.0275,
+      0.02
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_fiddlePeg",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_fiddlePeg",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_fiddlePeg.glb",
+   "bytes": 10540,
+   "sha256": "b4ec61388d33f579f555f5c2e07141536c87ab869c67ff5d7238ff69648f8b50",
+   "triangles": 182,
+   "size": [
+    0.0208,
+    0.0112,
+    0.072
+   ],
+   "bounds": {
+    "min": [
+     -0.0095,
+     0.0006,
+     -0.0359
+    ],
+    "max": [
+     0.0113,
+     0.0118,
+     0.0361
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Charcoal",
+    "Silver",
+    "WoodEbony"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.0095,
+      -0.022
+     ],
+     [
+      -0.0084,
+      -0.03
+     ],
+     [
+      -0.0047,
+      -0.0327
+     ],
+     [
+      0.0,
+      -0.0359
+     ],
+     [
+      0.0047,
+      -0.0327
+     ],
+     [
+      0.0084,
+      -0.03
+     ],
+     [
+      0.0095,
+      -0.022
+     ],
+     [
+      0.0113,
+      0.0239
+     ],
+     [
+      0.011,
+      0.0244
+     ],
+     [
+      0.0028,
+      0.036
+     ],
+     [
+      0.002,
+      0.0361
+     ],
+     [
+      -0.002,
+      0.0361
+     ],
+     [
+      -0.0028,
+      0.036
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_gatorTooth",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_gatorTooth",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_gatorTooth.glb",
+   "bytes": 9820,
+   "sha256": "4b5b8a388e77652f605a90fdf2fcbedbbdb78240fbd88629078a95f179dc3b53",
+   "triangles": 176,
+   "size": [
+    0.0252,
+    0.0175,
+    0.0659
+   ],
+   "bounds": {
+    "min": [
+     -0.009,
+     0.0,
+     -0.0312
+    ],
+    "max": [
+     0.0162,
+     0.0175,
+     0.0347
+    ]
+   },
+   "materials": [
+    "BoneDark",
+    "Gum",
+    "Teeth"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "quest"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.009,
+      -0.03
+     ],
+     [
+      -0.0072,
+      -0.031
+     ],
+     [
+      -0.0055,
+      -0.0312
+     ],
+     [
+      0.0055,
+      -0.0312
+     ],
+     [
+      0.0072,
+      -0.031
+     ],
+     [
+      0.0085,
+      -0.0305
+     ],
+     [
+      0.009,
+      -0.03
+     ],
+     [
+      0.0162,
+      0.0333
+     ],
+     [
+      0.0159,
+      0.0336
+     ],
+     [
+      0.015,
+      0.0342
+     ],
+     [
+      0.0142,
+      0.0346
+     ],
+     [
+      0.0138,
+      0.0347
+     ],
+     [
+      0.0052,
+      0.0257
+     ],
+     [
+      -0.0024,
+      0.0095
+     ],
+     [
+      -0.0072,
+      -0.0112
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_lanternHook",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_lanternHook",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_lanternHook.glb",
+   "bytes": 8984,
+   "sha256": "fd5248e1daaabade409b72f4d815265b3538e6943841993baf2b0fc5c668e452",
+   "triangles": 200,
+   "size": [
+    0.0636,
+    0.0157,
+    0.1504
+   ],
+   "bounds": {
+    "min": [
+     -0.015,
+     0.0,
+     -0.075
+    ],
+    "max": [
+     0.0486,
+     0.0157,
+     0.0754
+    ]
+   },
+   "materials": [
+    "IronOld",
+    "Rust"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.015,
+      -0.074
+     ],
+     [
+      -0.014,
+      -0.075
+     ],
+     [
+      0.014,
+      -0.075
+     ],
+     [
+      0.015,
+      -0.074
+     ],
+     [
+      0.0486,
+      0.0453
+     ],
+     [
+      0.0454,
+      0.0635
+     ],
+     [
+      0.0312,
+      0.0754
+     ],
+     [
+      0.0128,
+      0.0754
+     ],
+     [
+      -0.0013,
+      0.0637
+     ],
+     [
+      -0.0059,
+      0.0508
+     ],
+     [
+      -0.015,
+      0.014
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_pearlButton",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_pearlButton",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_pearlButton.glb",
+   "bytes": 10476,
+   "sha256": "34aade3a0e1fc433ef830f227cff4fd8c6c797db8c5df08bf8ab6f0834e2339d",
+   "triangles": 204,
+   "size": [
+    0.0282,
+    0.005,
+    0.0234
+   ],
+   "bounds": {
+    "min": [
+     -0.0162,
+     0.0,
+     -0.0117
+    ],
+    "max": [
+     0.012,
+     0.005,
+     0.0117
+    ]
+   },
+   "materials": [
+    "Charcoal",
+    "Curtain",
+    "Shell"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.0162,
+      -0.0038
+     ],
+     [
+      -0.0161,
+      -0.0045
+     ],
+     [
+      -0.0075,
+      -0.0094
+     ],
+     [
+      -0.0027,
+      -0.0117
+     ],
+     [
+      0.0027,
+      -0.0117
+     ],
+     [
+      0.0075,
+      -0.0094
+     ],
+     [
+      0.0108,
+      -0.0052
+     ],
+     [
+      0.012,
+      0.0
+     ],
+     [
+      0.0108,
+      0.0052
+     ],
+     [
+      0.0075,
+      0.0094
+     ],
+     [
+      0.0027,
+      0.0117
+     ],
+     [
+      -0.0027,
+      0.0117
+     ],
+     [
+      -0.0075,
+      0.0094
+     ],
+     [
+      -0.0108,
+      0.0052
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_riverboatToken",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_riverboatToken",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_riverboatToken.glb",
+   "bytes": 14420,
+   "sha256": "c3f97426052f53e5bde9074a15fd0ea253f2b8ea676908fdf0a364dee47a876e",
+   "triangles": 396,
+   "size": [
+    0.0332,
+    0.0042,
+    0.034
+   ],
+   "bounds": {
+    "min": [
+     -0.0166,
+     0.0,
+     -0.017
+    ],
+    "max": [
+     0.0166,
+     0.0042,
+     0.017
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Bronze",
+    "Charcoal"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.0166,
+      -0.0038
+     ],
+     [
+      -0.015,
+      -0.0072
+     ],
+     [
+      -0.0133,
+      -0.0106
+     ],
+     [
+      -0.0103,
+      -0.013
+     ],
+     [
+      -0.0074,
+      -0.0153
+     ],
+     [
+      -0.0037,
+      -0.0162
+     ],
+     [
+      0.0,
+      -0.017
+     ],
+     [
+      0.0037,
+      -0.0162
+     ],
+     [
+      0.0074,
+      -0.0153
+     ],
+     [
+      0.0103,
+      -0.013
+     ],
+     [
+      0.0133,
+      -0.0106
+     ],
+     [
+      0.015,
+      -0.0072
+     ],
+     [
+      0.0166,
+      -0.0038
+     ],
+     [
+      0.0166,
+      0.0038
+     ],
+     [
+      0.015,
+      0.0072
+     ],
+     [
+      0.0133,
+      0.0106
+     ],
+     [
+      0.0103,
+      0.013
+     ],
+     [
+      0.0074,
+      0.0153
+     ],
+     [
+      0.0037,
+      0.0162
+     ],
+     [
+      0.0,
+      0.017
+     ],
+     [
+      -0.0037,
+      0.0162
+     ],
+     [
+      -0.0074,
+      0.0153
+     ],
+     [
+      -0.0103,
+      0.013
+     ],
+     [
+      -0.0133,
+      0.0106
+     ],
+     [
+      -0.015,
+      0.0072
+     ],
+     [
+      -0.0166,
+      0.0038
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "curio_sunkenCompass",
+   "level": "bayou",
+   "object": "item_curio",
+   "variant": "curio_sunkenCompass",
+   "kind": "item",
+   "file": "models/levels/bayou/curio_sunkenCompass.glb",
+   "bytes": 19548,
+   "sha256": "14c3a5b74cfe234001ddda3db831ec12c838833e9e7b11cc930849a4771e7366",
+   "triangles": 336,
+   "size": [
+    0.0506,
+    0.0362,
+    0.0779
+   ],
+   "bounds": {
+    "min": [
+     -0.0253,
+     0.0,
+     -0.0405
+    ],
+    "max": [
+     0.0253,
+     0.0362,
+     0.0374
+    ]
+   },
+   "materials": [
+    "Brass",
+    "ByMud",
+    "Charcoal",
+    "EnamelRed",
+    "PaperOld",
+    "Steel",
+    "Verdigris"
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.0253,
+      0.0
+     ],
+     [
+      -0.0247,
+      -0.0338
+     ],
+     [
+      -0.0153,
+      -0.0387
+     ],
+     [
+      0.0,
+      -0.0405
+     ],
+     [
+      0.0153,
+      -0.0387
+     ],
+     [
+      0.0247,
+      -0.0338
+     ],
+     [
+      0.0253,
+      0.0
+     ],
+     [
+      0.0247,
+      0.008
+     ],
+     [
+      0.0239,
+      0.0104
+     ],
+     [
+      0.0213,
+      0.0162
+     ],
+     [
+      0.0,
+      0.0374
+     ],
+     [
+      -0.0153,
+      0.021
+     ],
+     [
+      -0.0205,
+      0.0149
+     ],
+     [
+      -0.0247,
+      0.008
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "den_gator",
+   "level": "bayou",
+   "object": "den_gator",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/den_gator.glb",
+   "bytes": 20728,
+   "sha256": "d1ea084e312eec314b99fc77a476900718565eeab954945a6ccab7f529507061",
+   "triangles": 434,
+   "size": [
+    1.9274,
+    0.669,
+    1.88
+   ],
+   "bounds": {
+    "min": [
+     -0.9637,
+     0.0,
+     -0.94
+    ],
+    "max": [
+     0.9637,
+     0.669,
+     0.94
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByMud",
+    "Charcoal",
+    "Moss",
+    "Tin",
+    "WoodLight"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "gator"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.9637,
+      -0.1497
+     ],
+     [
+      -0.95,
+      -0.1765
+     ],
+     [
+      -0.7349,
+      -0.5861
+     ],
+     [
+      -0.4079,
+      -0.8469
+     ],
+     [
+      0.0,
+      -0.94
+     ],
+     [
+      0.4079,
+      -0.8469
+     ],
+     [
+      0.7794,
+      -0.6077
+     ],
+     [
+      0.804,
+      -0.5906
+     ],
+     [
+      0.9164,
+      -0.2092
+     ],
+     [
+      0.9637,
+      0.0497
+     ],
+     [
+      0.9164,
+      0.2092
+     ],
+     [
+      0.7349,
+      0.5861
+     ],
+     [
+      0.4079,
+      0.8469
+     ],
+     [
+      0.0,
+      0.94
+     ],
+     [
+      -0.4079,
+      0.8469
+     ],
+     [
+      -0.7349,
+      0.5861
+     ],
+     [
+      -0.804,
+      0.4906
+     ],
+     [
+      -0.9164,
+      0.2092
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "env_cypressGroup",
+   "level": "bayou",
+   "object": "env_cypressGroup",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/bayou/env_cypressGroup.glb",
+   "bytes": 146960,
+   "sha256": "6f312dee729a5b691832dd19f24196be76301b32376843c9eef4924513b38e30",
+   "triangles": 5296,
+   "size": [
+    7.7143,
+    8.4754,
+    6.4803
+   ],
+   "bounds": {
+    "min": [
+     -4.2788,
+     0.0,
+     -3.1
+    ],
+    "max": [
+     3.4355,
+     8.4754,
+     3.3803
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByCypress",
+    "ByCypressLight",
+    "ByMud",
+    "BySpanishMoss",
+    "Moss"
+   ],
+   "budget": 6000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "env",
+    "dressing"
+   ],
+   "tileFootprint": [
+    7.5,
+    7.0
+   ],
+   "outline": [
+    [
+     [
+      -4.2788,
+      -0.774
+     ],
+     [
+      -4.2454,
+      -1.0235
+     ],
+     [
+      -4.0192,
+      -1.5198
+     ],
+     [
+      -2.277,
+      -2.895
+     ],
+     [
+      -1.7689,
+      -3.0346
+     ],
+     [
+      0.1,
+      -3.1
+     ],
+     [
+      1.2966,
+      -3.0829
+     ],
+     [
+      1.7513,
+      -3.0519
+     ],
+     [
+      2.1546,
+      -3.0122
+     ],
+     [
+      2.4037,
+      -2.669
+     ],
+     [
+      3.4355,
+      -1.1155
+     ],
+     [
+      3.3064,
+      -0.4963
+     ],
+     [
+      2.6981,
+      1.4
+     ],
+     [
+      1.6,
+      2.4981
+     ],
+     [
+      1.2255,
+      2.8073
+     ],
+     [
+      0.2528,
+      3.3803
+     ],
+     [
+      -0.1012,
+      3.2335
+     ],
+     [
+      -1.4,
+      2.4981
+     ],
+     [
+      -4.0382,
+      -0.0021
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "env_hearseBoat",
+   "level": "bayou",
+   "object": "env_hearseBoat",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/bayou/env_hearseBoat.glb",
+   "bytes": 91028,
+   "sha256": "bf1e5fa5b81c445f96eee712353632e7764d0764d44e4c1670cabc7a6209eb10",
+   "triangles": 2182,
+   "size": [
+    2.06,
+    2.292,
+    5.7418
+   ],
+   "bounds": {
+    "min": [
+     -1.03,
+     0.0,
+     -3.0
+    ],
+    "max": [
+     1.03,
+     2.292,
+     2.7418
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Bone",
+    "Brass",
+    "ByPlankDark",
+    "Chrome",
+    "Galvanised",
+    "HearseBlack",
+    "HearseCurtain",
+    "HearsePaint",
+    "Hedge",
+    "IronOld",
+    "Lantern",
+    "Rope",
+    "Rust",
+    "WindowDark",
+    "WoodEbony",
+    "WoodLight"
+   ],
+   "budget": 4000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "env",
+    "carpool"
+   ],
+   "tileFootprint": [
+    2.2,
+    5.6
+   ],
+   "outline": [
+    [
+     [
+      -1.03,
+      -2.63
+     ],
+     [
+      -0.465,
+      -3.0
+     ],
+     [
+      0.465,
+      -3.0
+     ],
+     [
+      1.03,
+      -2.63
+     ],
+     [
+      1.03,
+      1.2051
+     ],
+     [
+      0.746,
+      2.0166
+     ],
+     [
+      0.0,
+      2.7418
+     ],
+     [
+      -0.746,
+      2.0166
+     ],
+     [
+      -1.03,
+      1.2051
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "env_stiltHouse_a",
+   "level": "bayou",
+   "object": "env_stiltHouse_a",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/bayou/env_stiltHouse_a.glb",
+   "bytes": 64460,
+   "sha256": "34c68449b468f9a58d1997f0cbea345a6e7327d9e935c2eb1464738a3d03c1de",
+   "triangles": 1286,
+   "size": [
+    5.04,
+    6.1671,
+    5.1841
+   ],
+   "bounds": {
+    "min": [
+     -2.52,
+     0.0,
+     -2.4
+    ],
+    "max": [
+     2.52,
+     6.1671,
+     2.7841
+    ]
+   },
+   "materials": [
+    "Brass",
+    "ByBark",
+    "ByCypress",
+    "ByNet",
+    "ByPlank",
+    "ByPlankDark",
+    "IronOld",
+    "Lantern",
+    "Rust",
+    "WindowDark"
+   ],
+   "budget": 4500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "env",
+    "dressing"
+   ],
+   "tileFootprint": [
+    5.4,
+    5.6
+   ],
+   "outline": [
+    [
+     [
+      -2.52,
+      2.17
+     ],
+     [
+      -2.5,
+      -2.2
+     ],
+     [
+      -2.2117,
+      -2.4
+     ],
+     [
+      2.2117,
+      -2.4
+     ],
+     [
+      2.5,
+      -2.2
+     ],
+     [
+      2.52,
+      2.17
+     ],
+     [
+      2.52,
+      2.23
+     ],
+     [
+      -0.75,
+      2.7841
+     ],
+     [
+      -1.35,
+      2.7841
+     ],
+     [
+      -2.52,
+      2.23
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "env_stiltHouse_b",
+   "level": "bayou",
+   "object": "env_stiltHouse_b",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/bayou/env_stiltHouse_b.glb",
+   "bytes": 60044,
+   "sha256": "c98f01bcee1c02a29eb31a28ce1b25584aa10067a1e01cf79bf1e1f94b448dd4",
+   "triangles": 1058,
+   "size": [
+    5.4,
+    5.32,
+    7.2693
+   ],
+   "bounds": {
+    "min": [
+     -3.3,
+     0.0,
+     -2.2193
+    ],
+    "max": [
+     2.1,
+     5.32,
+     5.05
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByCypress",
+    "ByNet",
+    "ByPlank",
+    "ByPlankDark",
+    "ByVinylPatch",
+    "CurtainPurple",
+    "GhostSheet",
+    "IronOld",
+    "Lantern",
+    "Rope",
+    "Rust",
+    "Tin",
+    "WindowDark"
+   ],
+   "budget": 4500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "env",
+    "dressing"
+   ],
+   "tileFootprint": [
+    6.0,
+    7.2
+   ],
+   "outline": [
+    [
+     [
+      -3.3,
+      3.75
+     ],
+     [
+      -3.1,
+      -1.95
+     ],
+     [
+      -1.84,
+      -2.2061
+     ],
+     [
+      -0.64,
+      -2.2193
+     ],
+     [
+      -0.56,
+      -2.2193
+     ],
+     [
+      2.06,
+      -2.2061
+     ],
+     [
+      2.1,
+      -1.95
+     ],
+     [
+      2.1,
+      1.95
+     ],
+     [
+      -0.9,
+      5.05
+     ],
+     [
+      -3.3,
+      5.05
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hammock_moss",
+   "level": "bayou",
+   "object": "hammock_moss",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/hammock_moss.glb",
+   "bytes": 18340,
+   "sha256": "33a17e6e8625ac8425367c7d027cb8108421d58490079148ff2929865b8e1236",
+   "triangles": 496,
+   "size": [
+    1.9077,
+    1.3297,
+    0.62
+   ],
+   "bounds": {
+    "min": [
+     -0.954,
+     0.0,
+     -0.31
+    ],
+    "max": [
+     0.9537,
+     1.3297,
+     0.31
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByNet",
+    "BySpanishMoss",
+    "Cushion",
+    "Rope"
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "nap"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.954,
+      0.0
+     ],
+     [
+      -0.938,
+      -0.0389
+     ],
+     [
+      -0.78,
+      -0.1395
+     ],
+     [
+      -0.5569,
+      -0.2719
+     ],
+     [
+      -0.156,
+      -0.3032
+     ],
+     [
+      0.0,
+      -0.31
+     ],
+     [
+      0.156,
+      -0.3032
+     ],
+     [
+      0.6769,
+      -0.2719
+     ],
+     [
+      0.9377,
+      -0.0389
+     ],
+     [
+      0.9537,
+      0.0
+     ],
+     [
+      0.9377,
+      0.0389
+     ],
+     [
+      0.78,
+      0.1395
+     ],
+     [
+      0.624,
+      0.2009
+     ],
+     [
+      0.468,
+      0.2486
+     ],
+     [
+      0.312,
+      0.2827
+     ],
+     [
+      0.156,
+      0.3032
+     ],
+     [
+      0.0,
+      0.31
+     ],
+     [
+      -0.156,
+      0.3032
+     ],
+     [
+      -0.312,
+      0.2827
+     ],
+     [
+      -0.468,
+      0.2486
+     ],
+     [
+      -0.624,
+      0.2009
+     ],
+     [
+      -0.78,
+      0.1395
+     ],
+     [
+      -0.938,
+      0.0389
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "item_crawdads",
+   "level": "bayou",
+   "object": "item_crawdads",
+   "variant": null,
+   "kind": "item",
+   "file": "models/levels/bayou/item_crawdads.glb",
+   "bytes": 12540,
+   "sha256": "bb0dd48d285f617c896fa5955006bc8e7cd3526504203dc6f9b104b7666359d2",
+   "triangles": 242,
+   "size": [
+    0.2418,
+    0.3342,
+    0.2282
+   ],
+   "bounds": {
+    "min": [
+     -0.1209,
+     0.0,
+     -0.1141
+    ],
+    "max": [
+     0.1209,
+     0.3342,
+     0.1141
+    ]
+   },
+   "materials": [
+    "ByCrawdad",
+    "ByMud",
+    "IronOld",
+    "Tin"
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "food",
+    "sellable",
+    "ingredient"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.1209,
+      -0.0002
+     ],
+     [
+      -0.0971,
+      -0.0705
+     ],
+     [
+      -0.0371,
+      -0.1141
+     ],
+     [
+      0.0371,
+      -0.1141
+     ],
+     [
+      0.0971,
+      -0.0705
+     ],
+     [
+      0.1209,
+      -0.0002
+     ],
+     [
+      0.0971,
+      0.0705
+     ],
+     [
+      0.0371,
+      0.1141
+     ],
+     [
+      -0.0371,
+      0.1141
+     ],
+     [
+      -0.0971,
+      0.0705
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "jukebox_swamp",
+   "level": "bayou",
+   "object": "jukebox_swamp",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/jukebox_swamp.glb",
+   "bytes": 41040,
+   "sha256": "14c5ae069c339a0784db80bd2e53e586e6f7b47537007d453b5a4223af73b881",
+   "triangles": 1124,
+   "size": [
+    0.8,
+    1.513,
+    0.535
+   ],
+   "bounds": {
+    "min": [
+     -0.4,
+     0.0,
+     -0.33
+    ],
+    "max": [
+     0.4,
+     1.513,
+     0.205
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "Brass",
+    "ByBubble",
+    "ByFrog",
+    "ByMushroom",
+    "Cork",
+    "Glass",
+    "Wood",
+    "WoodDark"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "music"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4,
+      -0.31
+     ],
+     [
+      -0.38,
+      -0.33
+     ],
+     [
+      0.38,
+      -0.33
+     ],
+     [
+      0.4,
+      -0.31
+     ],
+     [
+      0.4,
+      0.15
+     ],
+     [
+      0.38,
+      0.17
+     ],
+     [
+      0.34,
+      0.188
+     ],
+     [
+      0.2225,
+      0.205
+     ],
+     [
+      -0.2225,
+      0.205
+     ],
+     [
+      -0.34,
+      0.188
+     ],
+     [
+      -0.38,
+      0.17
+     ],
+     [
+      -0.4,
+      0.15
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lantern_firefly",
+   "level": "bayou",
+   "object": "lantern_firefly",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/lantern_firefly.glb",
+   "bytes": 16096,
+   "sha256": "28f6c7e46d9aafdd24063ae00304097940231f21972b66ad5ee24c195011ca9f",
+   "triangles": 380,
+   "size": [
+    0.345,
+    1.0505,
+    0.1426
+   ],
+   "bounds": {
+    "min": [
+     -0.07,
+     0.0,
+     -0.0713
+    ],
+    "max": [
+     0.275,
+     1.0505,
+     0.0713
+    ]
+   },
+   "materials": [
+    "ByFirefly",
+    "Glass",
+    "IronOld",
+    "Line",
+    "Tin"
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "light"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.07,
+      0.0
+     ],
+     [
+      -0.0495,
+      -0.0495
+     ],
+     [
+      0.0,
+      -0.07
+     ],
+     [
+      0.1768,
+      -0.0713
+     ],
+     [
+      0.2232,
+      -0.0713
+     ],
+     [
+      0.2607,
+      -0.0441
+     ],
+     [
+      0.275,
+      0.0
+     ],
+     [
+      0.2607,
+      0.0441
+     ],
+     [
+      0.2232,
+      0.0713
+     ],
+     [
+      0.1768,
+      0.0713
+     ],
+     [
+      0.0,
+      0.07
+     ],
+     [
+      -0.0495,
+      0.0495
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "log_mushroom",
+   "level": "bayou",
+   "object": "log_mushroom",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/log_mushroom.glb",
+   "bytes": 22672,
+   "sha256": "16847748a08785db48f2d483dccfd368bac29217d808bbc06844c105cfd87889",
+   "triangles": 632,
+   "size": [
+    0.9696,
+    0.4042,
+    0.4696
+   ],
+   "bounds": {
+    "min": [
+     -0.4848,
+     0.0033,
+     -0.2696
+    ],
+    "max": [
+     0.4848,
+     0.4075,
+     0.2
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByMushroom",
+    "GlowToxic",
+    "Moss",
+    "WoodLight"
+   ],
+   "budget": 800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "forage"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4848,
+      -0.1237
+     ],
+     [
+      -0.4725,
+      -0.139
+     ],
+     [
+      -0.4594,
+      -0.1471
+     ],
+     [
+      0.4121,
+      -0.2696
+     ],
+     [
+      0.4269,
+      -0.2655
+     ],
+     [
+      0.4431,
+      -0.2534
+     ],
+     [
+      0.4471,
+      -0.225
+     ],
+     [
+      0.4848,
+      0.0437
+     ],
+     [
+      0.4725,
+      0.059
+     ],
+     [
+      0.4594,
+      0.0671
+     ],
+     [
+      0.3498,
+      0.1198
+     ],
+     [
+      0.33,
+      0.128
+     ],
+     [
+      0.1,
+      0.2
+     ],
+     [
+      -0.4121,
+      0.1896
+     ],
+     [
+      -0.4269,
+      0.1855
+     ],
+     [
+      -0.4431,
+      0.1734
+     ],
+     [
+      -0.4471,
+      0.145
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pirogue_dock",
+   "level": "bayou",
+   "object": "pirogue_dock",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/pirogue_dock.glb",
+   "bytes": 26956,
+   "sha256": "d9132d3eee8676a01b71af1105474ef4010ab50f9527bac6bb4ddfda25754537",
+   "triangles": 704,
+   "size": [
+    0.8012,
+    0.6219,
+    2.721
+   ],
+   "bounds": {
+    "min": [
+     -0.3045,
+     0.0,
+     -1.371
+    ],
+    "max": [
+     0.4967,
+     0.6219,
+     1.35
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByPlank",
+    "ByPlankDark",
+    "IronOld",
+    "Rope",
+    "Tin",
+    "WoodLight"
+   ],
+   "budget": 1600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "boat",
+    "waterOk"
+   ],
+   "tileFootprint": [
+    1,
+    3
+   ],
+   "outline": [
+    [
+     [
+      -0.3045,
+      -0.1929
+     ],
+     [
+      -0.2609,
+      -0.5786
+     ],
+     [
+      -0.1728,
+      -0.9643
+     ],
+     [
+      -0.0025,
+      -1.3445
+     ],
+     [
+      0.0,
+      -1.35
+     ],
+     [
+      0.18,
+      -1.371
+     ],
+     [
+      0.4,
+      -1.368
+     ],
+     [
+      0.4622,
+      -1.3422
+     ],
+     [
+      0.4777,
+      -1.326
+     ],
+     [
+      0.4967,
+      -1.28
+     ],
+     [
+      0.2609,
+      0.5786
+     ],
+     [
+      0.1728,
+      0.9643
+     ],
+     [
+      0.0025,
+      1.3445
+     ],
+     [
+      0.0,
+      1.35
+     ],
+     [
+      -0.1728,
+      0.9981
+     ],
+     [
+      -0.2609,
+      0.5786
+     ],
+     [
+      -0.3045,
+      0.1929
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "platform_viewing",
+   "level": "bayou",
+   "object": "platform_viewing",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/platform_viewing.glb",
+   "bytes": 51100,
+   "sha256": "874d37d07e99464596a78df393b916cee03f846c9398e341083156e4ab70939a",
+   "triangles": 1352,
+   "size": [
+    3.8604,
+    1.9365,
+    1.9522
+   ],
+   "bounds": {
+    "min": [
+     -1.9302,
+     0.0,
+     -0.995
+    ],
+    "max": [
+     1.9302,
+     1.9365,
+     0.9572
+    ]
+   },
+   "materials": [
+    "Brass",
+    "ByBark",
+    "ByMapPaper",
+    "ByPlank",
+    "ByPlankDark",
+    "IronOld",
+    "Verdigris"
+   ],
+   "budget": 2000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "view"
+   ],
+   "tileFootprint": [
+    4,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -1.9302,
+      0.881
+     ],
+     [
+      -1.93,
+      -0.392
+     ],
+     [
+      -1.922,
+      -0.4
+     ],
+     [
+      -1.8311,
+      -0.42
+     ],
+     [
+      1.9217,
+      -0.42
+     ],
+     [
+      1.93,
+      -0.392
+     ],
+     [
+      1.9302,
+      0.881
+     ],
+     [
+      1.9302,
+      0.919
+     ],
+     [
+      1.93,
+      0.942
+     ],
+     [
+      1.922,
+      0.95
+     ],
+     [
+      -0.695,
+      0.9572
+     ],
+     [
+      -0.805,
+      0.9572
+     ],
+     [
+      -1.922,
+      0.95
+     ],
+     [
+      -1.93,
+      0.942
+     ],
+     [
+      -1.9302,
+      0.919
+     ]
+    ],
+    [
+     [
+      0.695,
+      -0.9761
+     ],
+     [
+      0.781,
+      -0.995
+     ],
+     [
+      1.719,
+      -0.995
+     ],
+     [
+      1.75,
+      -0.9741
+     ],
+     [
+      1.771,
+      -0.93
+     ],
+     [
+      1.7894,
+      -0.8677
+     ],
+     [
+      1.7894,
+      -0.3759
+     ],
+     [
+      0.695,
+      -0.3759
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "post_fishing",
+   "level": "bayou",
+   "object": "post_fishing",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/post_fishing.glb",
+   "bytes": 23288,
+   "sha256": "9ccdf755f4d63d756ef757eb444ca05adbd848e2ac80e8f728b43a5a824e8b92",
+   "triangles": 540,
+   "size": [
+    0.7319,
+    1.19,
+    0.601
+   ],
+   "bounds": {
+    "min": [
+     -0.3459,
+     0.0,
+     -0.271
+    ],
+    "max": [
+     0.386,
+     1.19,
+     0.33
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByMud",
+    "ByPlankDark",
+    "FloatRed",
+    "IronOld",
+    "Line",
+    "Rope",
+    "Tin"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fishing",
+    "waterOk"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.3459,
+      0.1797
+     ],
+     [
+      -0.3434,
+      0.1424
+     ],
+     [
+      -0.1068,
+      -0.2268
+     ],
+     [
+      0.0,
+      -0.271
+     ],
+     [
+      0.1068,
+      -0.2268
+     ],
+     [
+      0.386,
+      0.285
+     ],
+     [
+      0.386,
+      0.315
+     ],
+     [
+      0.36,
+      0.33
+     ],
+     [
+      -0.2209,
+      0.2883
+     ],
+     [
+      -0.295,
+      0.2753
+     ],
+     [
+      -0.3434,
+      0.2176
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pot_boil",
+   "level": "bayou",
+   "object": "pot_boil",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/pot_boil.glb",
+   "bytes": 39200,
+   "sha256": "9653bbf12287b662fcbfa30e6ff4b6a4360fd50d4dd940adb479c9b3adf9b7c3",
+   "triangles": 1068,
+   "size": [
+    0.8569,
+    0.9579,
+    0.8569
+   ],
+   "bounds": {
+    "min": [
+     -0.4291,
+     0.0,
+     -0.4283
+    ],
+    "max": [
+     0.4278,
+     0.9579,
+     0.4286
+    ]
+   },
+   "materials": [
+    "Bark",
+    "ByCrawdad",
+    "FireCore",
+    "FireMid",
+    "FireOuter",
+    "Granite",
+    "Iron",
+    "IronOld",
+    "Steel",
+    "StoneLight",
+    "WaterDirty",
+    "WoodLight"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame",
+    "water"
+   ],
+   "states": [],
+   "tags": [
+    "cook"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4291,
+      0.0206
+     ],
+     [
+      -0.42,
+      -0.0903
+     ],
+     [
+      -0.3456,
+      -0.2556
+     ],
+     [
+      -0.268,
+      -0.3361
+     ],
+     [
+      -0.0269,
+      -0.4283
+     ],
+     [
+      0.0832,
+      -0.421
+     ],
+     [
+      0.2895,
+      -0.3175
+     ],
+     [
+      0.3613,
+      -0.2324
+     ],
+     [
+      0.4239,
+      -0.0703
+     ],
+     [
+      0.4278,
+      0.0412
+     ],
+     [
+      0.3224,
+      0.2826
+     ],
+     [
+      0.2403,
+      0.355
+     ],
+     [
+      0.0358,
+      0.4286
+     ],
+     [
+      -0.0764,
+      0.4233
+     ],
+     [
+      -0.2784,
+      0.3275
+     ],
+     [
+      -0.3534,
+      0.2447
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "pot_crawdad",
+   "level": "bayou",
+   "object": "pot_crawdad",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/pot_crawdad.glb",
+   "bytes": 27284,
+   "sha256": "362068c460de88ab2aa415e342470197335d6056a95e41c86a6b22bd277e6235",
+   "triangles": 636,
+   "size": [
+    0.6523,
+    0.358,
+    0.6558
+   ],
+   "bounds": {
+    "min": [
+     -0.28,
+     0.001,
+     -0.2235
+    ],
+    "max": [
+     0.3723,
+     0.359,
+     0.4323
+    ]
+   },
+   "materials": [
+    "ByCrawdad",
+    "ByMud",
+    "ByNet",
+    "FloatRed",
+    "Galvanised",
+    "Rope"
+   ],
+   "budget": 700,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "full"
+   ],
+   "states": [
+    "full"
+   ],
+   "tags": [
+    "trap"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.28,
+      -0.2235
+     ],
+     [
+      0.28,
+      -0.2235
+     ],
+     [
+      0.3723,
+      0.38
+     ],
+     [
+      0.357,
+      0.417
+     ],
+     [
+      0.32,
+      0.4323
+     ],
+     [
+      0.283,
+      0.417
+     ],
+     [
+      -0.28,
+      0.1235
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rack_bait",
+   "level": "bayou",
+   "object": "rack_bait",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/rack_bait.glb",
+   "bytes": 33268,
+   "sha256": "69293d525e497388121f03ee9b8194cfdbf23cc7367a24abf12d876ef74977d1",
+   "triangles": 688,
+   "size": [
+    0.9328,
+    1.4601,
+    0.51
+   ],
+   "bounds": {
+    "min": [
+     -0.4664,
+     0.0,
+     -0.35
+    ],
+    "max": [
+     0.4664,
+     1.4601,
+     0.16
+    ]
+   },
+   "materials": [
+    "ByCooler",
+    "ByMapPaper",
+    "ByPlank",
+    "ByPlankDark",
+    "Cardboard",
+    "Enamel",
+    "Glass",
+    "Tin",
+    "TinRed"
+   ],
+   "budget": 700,
+   "front": "back_tall:1.0",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "bait"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.4664,
+      -0.344
+     ],
+     [
+      -0.4604,
+      -0.35
+     ],
+     [
+      0.4604,
+      -0.35
+     ],
+     [
+      0.4664,
+      -0.344
+     ],
+     [
+      0.4664,
+      0.064
+     ],
+     [
+      0.4604,
+      0.07
+     ],
+     [
+      0.16,
+      0.16
+     ],
+     [
+      -0.16,
+      0.16
+     ],
+     [
+      -0.4604,
+      0.07
+     ],
+     [
+      -0.4664,
+      0.064
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rack_rods",
+   "level": "bayou",
+   "object": "rack_rods",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/rack_rods.glb",
+   "bytes": 41644,
+   "sha256": "83c532d54b91c34969c9b91c97a926f9d8284e95ec46e7f97c22afbfe74f6825",
+   "triangles": 832,
+   "size": [
+    2.84,
+    1.88,
+    0.5995
+   ],
+   "bounds": {
+    "min": [
+     -1.42,
+     0.0,
+     -0.435
+    ],
+    "max": [
+     1.42,
+     1.88,
+     0.1645
+    ]
+   },
+   "materials": [
+    "Bamboo",
+    "Brass",
+    "ByCypressLight",
+    "ByMapPaper",
+    "ByPlank",
+    "ByPlankDark",
+    "Cork",
+    "IronOld",
+    "WoodLight"
+   ],
+   "budget": 1400,
+   "front": "back_tall:1.0",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "rods"
+   ],
+   "tileFootprint": [
+    3,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -1.42,
+      -0.417
+     ],
+     [
+      -1.415,
+      -0.427
+     ],
+     [
+      -1.407,
+      -0.435
+     ],
+     [
+      1.407,
+      -0.435
+     ],
+     [
+      1.415,
+      -0.427
+     ],
+     [
+      1.42,
+      -0.417
+     ],
+     [
+      1.42,
+      -0.383
+     ],
+     [
+      1.402,
+      0.0966
+     ],
+     [
+      1.3997,
+      0.1174
+     ],
+     [
+      0.5009,
+      0.1645
+     ],
+     [
+      -0.5005,
+      0.1567
+     ],
+     [
+      -1.3999,
+      0.1253
+     ],
+     [
+      -1.42,
+      -0.383
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "rod_cypress",
+   "level": "bayou",
+   "object": "rod_cypress",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/bayou/rod_cypress.glb",
+   "bytes": 21920,
+   "sha256": "fd2ad5ba543034cf8a83c7d11f4c601dde567bcd77249dc704623177495b0612",
+   "triangles": 462,
+   "size": [
+    1.0009,
+    0.1383,
+    0.0984
+   ],
+   "bounds": {
+    "min": [
+     -0.5007,
+     1.386,
+     0.0
+    ],
+    "max": [
+     0.5002,
+     1.5243,
+     0.0984
+    ]
+   },
+   "materials": [
+    "Brass",
+    "ByPlankDark",
+    "Cork",
+    "FloatRed",
+    "IronOld",
+    "Line",
+    "WoodLight"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": 1.5,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "tools",
+    "rod"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.5007,
+      0.0515
+     ],
+     [
+      -0.5,
+      0.043
+     ],
+     [
+      -0.391,
+      0.0
+     ],
+     [
+      0.331,
+      0.0
+     ],
+     [
+      0.5,
+      0.055
+     ],
+     [
+      0.5002,
+      0.0575
+     ],
+     [
+      0.5002,
+      0.0625
+     ],
+     [
+      0.5,
+      0.065
+     ],
+     [
+      0.47,
+      0.074
+     ],
+     [
+      -0.2289,
+      0.0984
+     ],
+     [
+      -0.2411,
+      0.0984
+     ],
+     [
+      -0.5,
+      0.077
+     ],
+     [
+      -0.5007,
+      0.0685
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "stove_woodburning",
+   "level": "bayou",
+   "object": "stove_woodburning",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/stove_woodburning.glb",
+   "bytes": 29292,
+   "sha256": "9777c2a0def70b72f9bb7ad454214e99f9267bf021505f857d4748e9eac79e70",
+   "triangles": 812,
+   "size": [
+    0.6434,
+    2.3,
+    0.662
+   ],
+   "bounds": {
+    "min": [
+     -0.3217,
+     0.0,
+     -0.33
+    ],
+    "max": [
+     0.3217,
+     2.3,
+     0.332
+    ]
+   },
+   "materials": [
+    "Ash",
+    "Brass",
+    "CoalGlow",
+    "Iron",
+    "IronOld",
+    "Tin"
+   ],
+   "budget": 1300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "warm"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.3217,
+      -0.0734
+     ],
+     [
+      -0.258,
+      -0.2058
+     ],
+     [
+      -0.1432,
+      -0.2973
+     ],
+     [
+      0.0,
+      -0.33
+     ],
+     [
+      0.1432,
+      -0.2973
+     ],
+     [
+      0.258,
+      -0.2058
+     ],
+     [
+      0.3217,
+      -0.0734
+     ],
+     [
+      0.3217,
+      0.0734
+     ],
+     [
+      0.258,
+      0.2058
+     ],
+     [
+      0.1491,
+      0.321
+     ],
+     [
+      0.13,
+      0.332
+     ],
+     [
+      0.0,
+      0.33
+     ],
+     [
+      -0.08,
+      0.318
+     ],
+     [
+      -0.1432,
+      0.2973
+     ],
+     [
+      -0.258,
+      0.2058
+     ],
+     [
+      -0.3217,
+      0.0734
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "swing_porch",
+   "level": "bayou",
+   "object": "swing_porch",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/swing_porch.glb",
+   "bytes": 29788,
+   "sha256": "fa032f08d1fc8d87a1249c41490eb376e24aaabf521446f2559b82cbe6e79301",
+   "triangles": 812,
+   "size": [
+    1.6,
+    2.445,
+    0.56
+   ],
+   "bounds": {
+    "min": [
+     -0.8,
+     0.0,
+     -0.32
+    ],
+    "max": [
+     0.8,
+     2.445,
+     0.24
+    ]
+   },
+   "materials": [
+    "ByPlank",
+    "ByPlankDark",
+    "Cushion",
+    "IronOld"
+   ],
+   "budget": 1400,
+   "front": "back_tall:0.75",
+   "wallCentre": null,
+   "parts": [
+    "swing"
+   ],
+   "states": [],
+   "tags": [
+    "seat"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.8,
+      -0.32
+     ],
+     [
+      0.8,
+      -0.32
+     ],
+     [
+      0.8,
+      0.24
+     ],
+     [
+      -0.8,
+      0.24
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tank_bait",
+   "level": "bayou",
+   "object": "tank_bait",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/tank_bait.glb",
+   "bytes": 32596,
+   "sha256": "11f2b9f9c69c44fabfeabbda5645dc946ed38f8c0f335347167be91cd1d7d830",
+   "triangles": 716,
+   "size": [
+    1.82,
+    1.076,
+    0.708
+   ],
+   "bounds": {
+    "min": [
+     -0.91,
+     0.0,
+     -0.34
+    ],
+    "max": [
+     0.91,
+     1.076,
+     0.368
+    ]
+   },
+   "materials": [
+    "Bamboo",
+    "ByMinnow",
+    "ByPlank",
+    "ByPlankDark",
+    "Glass",
+    "IronOld",
+    "RubberGreen",
+    "Tin",
+    "Water"
+   ],
+   "budget": 1000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "water"
+   ],
+   "states": [],
+   "tags": [
+    "bait"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ],
+   "outline": [
+    [
+     [
+      -0.91,
+      -0.332
+     ],
+     [
+      -0.902,
+      -0.34
+     ],
+     [
+      0.902,
+      -0.34
+     ],
+     [
+      0.91,
+      -0.332
+     ],
+     [
+      0.91,
+      0.332
+     ],
+     [
+      0.902,
+      0.34
+     ],
+     [
+      -0.6,
+      0.368
+     ],
+     [
+      -0.902,
+      0.34
+     ],
+     [
+      -0.91,
+      0.332
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tree_cypress",
+   "level": "bayou",
+   "object": "tree_cypress",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/bayou/tree_cypress.glb",
+   "bytes": 70880,
+   "sha256": "80b5b79178beb7683867f99162d099d3c78072b63f1c53c8b0fb1a08db3cf995",
+   "triangles": 2482,
+   "size": [
+    1.952,
+    6.894,
+    1.8935
+   ],
+   "bounds": {
+    "min": [
+     -0.9868,
+     0.0,
+     -0.9655
+    ],
+    "max": [
+     0.9652,
+     6.894,
+     0.928
+    ]
+   },
+   "materials": [
+    "ByBark",
+    "ByCypress",
+    "ByCypressLight",
+    "BySpanishMoss"
+   ],
+   "budget": 5500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "tree"
+   ],
+   "tileFootprint": [
+    2,
+    2
+   ],
+   "outline": [
+    [
+     [
+      -0.9868,
+      -0.0233
+     ],
+     [
+      -0.9838,
+      -0.1483
+     ],
+     [
+      -0.965,
+      -0.2663
+     ],
+     [
+      -0.9133,
+      -0.3745
+     ],
+     [
+      -0.2878,
+      -0.9525
+     ],
+     [
+      -0.0169,
+      -0.9655
+     ],
+     [
+      0.2145,
+      -0.8983
+     ],
+     [
+      0.5579,
+      -0.7317
+     ],
+     [
+      0.8041,
+      -0.5622
+     ],
+     [
+      0.96,
+      -0.3678
+     ],
+     [
+      0.9652,
+      -0.1134
+     ],
+     [
+      0.7457,
+      0.5418
+     ],
+     [
+      0.5368,
+      0.7769
+     ],
+     [
+      0.4243,
+      0.8251
+     ],
+     [
+      0.3049,
+      0.8604
+     ],
+     [
+      0.0,
+      0.928
+     ],
+     [
+      -0.3449,
+      0.9162
+     ],
+     [
+      -0.5478,
+      0.7702
+     ],
+     [
+      -0.6274,
+      0.6962
+     ],
+     [
+      -0.7457,
+      0.5418
+     ]
+    ]
+   ]
+  }
+ ]
+}

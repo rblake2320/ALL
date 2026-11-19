@@ -1,0 +1,208 @@
+/*
+ * W-124 agent panel "Jobs" tab. Self-contained (only .hud-jobs* / .hud-job* selectors) so it cannot collide with the
+ * W-118 compact-layout rules for the rest of the agent panel. Phone (.hud[data-phone]): every control ≥ 44 px, the
+ * category grid wraps to two columns, nothing is ellipsised.
+ */
+.hud-jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+.hud-jobs__count {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.hud-jobs__empty {
+  margin: 0;
+  padding: 0.25rem 0.125rem;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  font-style: italic;
+}
+.hud-jobs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+.hud-job {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border-faint);
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--bg-hover) 55%, transparent);
+  min-width: 0;
+}
+.hud-job.is-blocked {
+  border-color: color-mix(in srgb, var(--c-candle) 55%, var(--border-faint));
+}
+.hud-job.is-paused {
+  opacity: 0.75;
+}
+.hud-job__head {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: 0;
+}
+.hud-job__name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: var(--fw-semibold);
+  color: var(--text-strong);
+  font-size: var(--fs-sm);
+  overflow-wrap: anywhere;
+}
+.hud-job__mode {
+  flex: 0 0 auto;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.hud-job__status {
+  font-size: var(--fs-xs);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.hud-job__state {
+  font-weight: var(--fw-bold);
+}
+.hud-job.is-blocked .hud-job__state {
+  color: var(--c-candle);
+}
+.hud-job__progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-2xs);
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.hud-job__progress .ui-progress {
+  flex: 1 1 auto;
+  min-width: 3rem;
+}
+.hud-job__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+.hud-job__prio {
+  margin-right: auto;
+}
+
+.hud-jobs__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-faint);
+}
+.hud-jobs__formtitle {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--text-strong);
+}
+.hud-jobs__cats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+  gap: 0.25rem;
+}
+.hud-jobs__cat {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 2rem;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--border-faint);
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: var(--fs-xs);
+  text-align: left;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.hud-jobs__cat:hover {
+  background: var(--bg-hover);
+}
+.hud-jobs__cat:focus-visible {
+  outline: 2px solid var(--c-cryo);
+  outline-offset: 1px;
+}
+.hud-jobs__cat.is-on {
+  border-color: var(--c-candle);
+  color: var(--text-strong);
+  background: color-mix(in srgb, var(--c-candle) 18%, transparent);
+}
+.hud-jobs__cat.is-later {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.hud-jobs__catlabel {
+  overflow-wrap: anywhere;
+}
+.hud-jobs__later {
+  flex-basis: 100%;
+  font-size: var(--fs-2xs);
+  color: var(--text-muted);
+  font-style: italic;
+}
+.hud-jobs__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.hud-jobs__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  flex: 1 1 8rem;
+  min-width: 0;
+  font-size: var(--fs-2xs);
+  color: var(--text-muted);
+}
+.hud-jobs__select {
+  min-height: 1.9rem;
+  width: 100%;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border-faint);
+  background: var(--bg-hover);
+  color: var(--text-strong);
+  font: inherit;
+  font-size: var(--fs-xs);
+  padding: 0 0.3rem;
+}
+.hud-jobs__select:focus-visible {
+  outline: 2px solid var(--c-cryo);
+  outline-offset: 1px;
+}
+.hud-jobs__msg {
+  margin: 0;
+  font-size: var(--fs-2xs);
+  color: var(--text-muted);
+}
+.hud-jobs__msg.is-bad {
+  color: var(--c-candle);
+}
+
+/* ── phone: 44 px targets, two-column categories ── */
+.hud[data-phone] .hud-jobs__cats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.hud[data-phone] .hud-jobs__cat,
+.hud[data-phone] .hud-jobs__select,
+.hud[data-phone] .hud-job__actions :is(button, .ui-iconbtn) {
+  min-height: var(--ph-target, 44px);
+  min-width: var(--ph-target, 44px);
+}
+.hud[data-phone] .hud-job__actions {
+  gap: 6px;
+}

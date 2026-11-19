@@ -1,0 +1,3471 @@
+{
+ "version": 1,
+ "models": [
+  {
+   "id": "arch_ironGate",
+   "level": "graveyard",
+   "object": "arch_ironGate",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/arch_ironGate.glb",
+   "bytes": 64608,
+   "sha256": "83b2e7af96c51063652547851a58719e246a9282c57a6bab8fe78d1088ec7fa4",
+   "triangles": 1554,
+   "size": [
+    1.7696,
+    2.46,
+    0.5426
+   ],
+   "bounds": {
+    "min": [
+     -0.9296,
+     0.0,
+     -0.263
+    ],
+    "max": [
+     0.84,
+     2.46,
+     0.2796
+    ]
+   },
+   "materials": [
+    "Bark",
+    "HedgeLight",
+    "Iron",
+    "Lace",
+    "Leaf"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 2600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  },
+  {
+   "id": "bed_pet",
+   "level": "graveyard",
+   "object": "bed_pet",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/bed_pet.glb",
+   "bytes": 30596,
+   "sha256": "1887aa4ca1f841b8f2b63e76f0de2ea31ba4f1db29097ac0e4e96f23dfb201bb",
+   "triangles": 880,
+   "size": [
+    0.89,
+    0.28,
+    0.6836
+   ],
+   "bounds": {
+    "min": [
+     -0.445,
+     0.0,
+     -0.3418
+    ],
+    "max": [
+     0.445,
+     0.28,
+     0.3418
+    ]
+   },
+   "materials": [
+    "Cushion",
+    "CushionDark",
+    "FloatRed",
+    "Wicker",
+    "WickerDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "pet",
+    "petBed"
+   ]
+  },
+  {
+   "id": "bench_gothic",
+   "level": "graveyard",
+   "object": "bench_gothic",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/bench_gothic.glb",
+   "bytes": 39456,
+   "sha256": "969962619b0c7540260ee2ec46302d10cd4bda9cefb515493cadf081c91a2282",
+   "triangles": 1094,
+   "size": [
+    1.7244,
+    1.03,
+    0.507
+   ],
+   "bounds": {
+    "min": [
+     -0.8552,
+     0.0,
+     -0.24
+    ],
+    "max": [
+     0.8692,
+     1.03,
+     0.267
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Moss",
+    "WoodDark"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 2400,
+   "front": "back_tall:0.6",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "seating",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  },
+  {
+   "id": "board_notice",
+   "level": "graveyard",
+   "object": "board_notice",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/board_notice.glb",
+   "bytes": 38004,
+   "sha256": "66977afbb2036d4cf7ea23798f34cc71eeacf0a770b893fcfeafdd24ec3e59c6",
+   "triangles": 664,
+   "size": [
+    0.992,
+    1.7445,
+    0.3
+   ],
+   "bounds": {
+    "min": [
+     -0.496,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.496,
+     1.7445,
+     0.1
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Cork",
+    "Ink",
+    "Magnet1",
+    "Magnet2",
+    "Magnet3",
+    "Moss",
+    "PaperGreen",
+    "PaperOld",
+    "PaperPink",
+    "Shingle",
+    "Wood",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 900,
+   "front": "facing:sign",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "notice",
+    "quest"
+   ]
+  },
+  {
+   "id": "bob_for_brains",
+   "level": "graveyard",
+   "object": "bob_for_brains",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/bob_for_brains.glb",
+   "bytes": 42364,
+   "sha256": "8c9589bd471f796b9491dc2add4db1fbf15bc86f144a64f32e13ce8bf7fb0a5f",
+   "triangles": 1186,
+   "size": [
+    0.698,
+    0.765,
+    0.6989
+   ],
+   "bounds": {
+    "min": [
+     -0.349,
+     0.0,
+     -0.349
+    ],
+    "max": [
+     0.349,
+     0.765,
+     0.3499
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Brain",
+    "BrainDark",
+    "Iron",
+    "PaperOld",
+    "PondWater",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "water"
+   ],
+   "states": [],
+   "tags": [
+    "halloween",
+    "joinable"
+   ]
+  },
+  {
+   "id": "bowl_pet",
+   "level": "graveyard",
+   "object": "bowl_pet",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/bowl_pet.glb",
+   "bytes": 15140,
+   "sha256": "7e618c94b0d2e49a583d8060e063ca74065fcac3941af1b7041aca50cebc9689",
+   "triangles": 395,
+   "size": [
+    0.3844,
+    0.0911,
+    0.3158
+   ],
+   "bounds": {
+    "min": [
+     -0.162,
+     0.0,
+     -0.1579
+    ],
+    "max": [
+     0.2224,
+     0.0911,
+     0.1579
+    ]
+   },
+   "materials": [
+    "Brain",
+    "Enamel",
+    "EnamelRim"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "facing:sign",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "pet",
+    "petFood"
+   ]
+  },
+  {
+   "id": "candle_cluster",
+   "level": "graveyard",
+   "object": "candle_cluster",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/candle_cluster.glb",
+   "bytes": 38548,
+   "sha256": "31b522c792960f7e28307cec57acc9d3b77283158fef34d9d5053ca7533b7e4c",
+   "triangles": 1180,
+   "size": [
+    0.4277,
+    0.405,
+    0.3672
+   ],
+   "bounds": {
+    "min": [
+     -0.2195,
+     0.0,
+     -0.1986
+    ],
+    "max": [
+     0.2082,
+     0.405,
+     0.1686
+    ]
+   },
+   "materials": [
+    "Bone",
+    "CandleFlame",
+    "GyStoneDark",
+    "Wax"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "lighting",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  },
+  {
+   "id": "carry_rod",
+   "level": "graveyard",
+   "object": "rod",
+   "variant": null,
+   "kind": "carry",
+   "file": "models/levels/graveyard/carry_rod.glb",
+   "bytes": 10092,
+   "sha256": "e34d6a615259ea115f4428d0e1582cb04654de197d9aba8e41de05ddcda770c0",
+   "triangles": 236,
+   "size": [
+    0.1646,
+    1.2811,
+    0.07
+   ],
+   "bounds": {
+    "min": [
+     -0.0161,
+     -0.1801,
+     -0.035
+    ],
+    "max": [
+     0.1485,
+     1.101,
+     0.035
+    ]
+   },
+   "materials": [
+    "Bamboo",
+    "FloatRed",
+    "Iron",
+    "Line"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "carry"
+   ]
+  },
+  {
+   "id": "carry_shovel",
+   "level": "graveyard",
+   "object": "shovel",
+   "variant": null,
+   "kind": "carry",
+   "file": "models/levels/graveyard/carry_shovel.glb",
+   "bytes": 8188,
+   "sha256": "3190c19a92f7cfe2a2244fc349fd26ba4f64a198db2d11004d99e0777e82d867",
+   "triangles": 144,
+   "size": [
+    0.22,
+    1.0899,
+    0.052
+   ],
+   "bounds": {
+    "min": [
+     -0.11,
+     -0.6379,
+     -0.026
+    ],
+    "max": [
+     0.11,
+     0.452,
+     0.026
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Steel",
+    "WoodLight"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "carry"
+   ]
+  },
+  {
+   "id": "circle_seance",
+   "level": "graveyard",
+   "object": "circle_seance",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/circle_seance.glb",
+   "bytes": 62448,
+   "sha256": "e4426cffc337b8cd21f0f0f67ceb6066233f50c56dc465564e2f366ed9f186da",
+   "triangles": 1964,
+   "size": [
+    2.6286,
+    1.0997,
+    2.6085
+   ],
+   "bounds": {
+    "min": [
+     -1.3164,
+     0.0,
+     -1.3285
+    ],
+    "max": [
+     1.3122,
+     1.0997,
+     1.28
+    ]
+   },
+   "materials": [
+    "CandleFlame",
+    "GyMoss",
+    "GyStone",
+    "GyStoneDark",
+    "GyStoneWarm",
+    "Moss",
+    "RuneGlow",
+    "Wax"
+   ],
+   "footprint": [
+    3,
+    3
+   ],
+   "budget": 2400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame",
+    "glow"
+   ],
+   "states": [
+    "flame",
+    "glow"
+   ],
+   "tags": [
+    "seance"
+   ]
+  },
+  {
+   "id": "curio_apothecaryBottle",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_apothecaryBottle",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_apothecaryBottle.glb",
+   "bytes": 12232,
+   "sha256": "d68c99b89538c42f6c587341eb3caa138a1d3cc9c5b12e17e1a034912b88c408",
+   "triangles": 260,
+   "size": [
+    0.0704,
+    0.155,
+    0.0722
+   ],
+   "bounds": {
+    "min": [
+     -0.0352,
+     0.0,
+     -0.0352
+    ],
+    "max": [
+     0.0352,
+     0.155,
+     0.037
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Cobalt",
+    "Cork2",
+    "Ink",
+    "Parchment"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_cameoBrooch",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_cameoBrooch",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_cameoBrooch.glb",
+   "bytes": 12924,
+   "sha256": "71d033e9d977e01177cea3055a95d2d7999d41b0ff430ef6d72c41b692fd536c",
+   "triangles": 340,
+   "size": [
+    0.059,
+    0.0119,
+    0.073
+   ],
+   "bounds": {
+    "min": [
+     -0.0295,
+     0.002,
+     -0.0365
+    ],
+    "max": [
+     0.0295,
+     0.0139,
+     0.0365
+    ]
+   },
+   "materials": [
+    "Coral",
+    "Gold",
+    "Shell"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_clayMarble",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_clayMarble",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_clayMarble.glb",
+   "bytes": 10020,
+   "sha256": "a279c74151611cfd3b28b303610399449f1eb58218b9872afdc40cb62fcdba62",
+   "triangles": 312,
+   "size": [
+    0.0506,
+    0.048,
+    0.0526
+   ],
+   "bounds": {
+    "min": [
+     -0.0253,
+     0.0,
+     -0.0263
+    ],
+    "max": [
+     0.0253,
+     0.048,
+     0.0263
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Clay",
+    "ClaySwirl"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_dollHand",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_dollHand",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_dollHand.glb",
+   "bytes": 13392,
+   "sha256": "502b83b207d27139b9437c8c0520ae5d388b89538425d676d49956e86fc7694c",
+   "triangles": 336,
+   "size": [
+    0.0619,
+    0.0256,
+    0.0678
+   ],
+   "bounds": {
+    "min": [
+     -0.022,
+     0.0,
+     -0.024
+    ],
+    "max": [
+     0.0399,
+     0.0256,
+     0.0438
+    ]
+   },
+   "materials": [
+    "Charcoal",
+    "Lace",
+    "Porcelain"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_fossilBeetle",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_fossilBeetle",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_fossilBeetle.glb",
+   "bytes": 11268,
+   "sha256": "7ca315719e5e14da2baaf55ac1ce4f50ad1adadb67205212e438559785078f0a",
+   "triangles": 264,
+   "size": [
+    0.0939,
+    0.036,
+    0.0756
+   ],
+   "bounds": {
+    "min": [
+     -0.0484,
+     0.0,
+     -0.0382
+    ],
+    "max": [
+     0.0455,
+     0.036,
+     0.0374
+    ]
+   },
+   "materials": [
+    "Amber",
+    "Charcoal",
+    "GyStoneWarm"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_funeralBell",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_funeralBell",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_funeralBell.glb",
+   "bytes": 12656,
+   "sha256": "0cf9466272c5f41072ab0d438c13627e763ea7ebd0dc28d77e58988f15cff1c3",
+   "triangles": 288,
+   "size": [
+    0.1181,
+    0.1129,
+    0.084
+   ],
+   "bounds": {
+    "min": [
+     -0.042,
+     0.0,
+     -0.042
+    ],
+    "max": [
+     0.0761,
+     0.1129,
+     0.042
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Brass",
+    "Bronze",
+    "Rope"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_glassEye",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_glassEye",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_glassEye.glb",
+   "bytes": 11552,
+   "sha256": "cfa57b5a9a77da8f60eccb1c3af3d57b30aa079171e30649f736879c09ad6bb0",
+   "triangles": 320,
+   "size": [
+    0.0686,
+    0.049,
+    0.0672
+   ],
+   "bounds": {
+    "min": [
+     -0.0343,
+     0.0,
+     -0.0336
+    ],
+    "max": [
+     0.0343,
+     0.049,
+     0.0336
+    ]
+   },
+   "materials": [
+    "Black",
+    "EyeIris",
+    "EyeWhite",
+    "FeltRed"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_jetRing",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_jetRing",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_jetRing.glb",
+   "bytes": 6496,
+   "sha256": "5f6c42593c91f7ed77de3431a04b59a9a0aaac7c935ff3a61ca8c25afa9a7cc9",
+   "triangles": 120,
+   "size": [
+    0.039,
+    0.0445,
+    0.018
+   ],
+   "bounds": {
+    "min": [
+     -0.0195,
+     0.0,
+     -0.009
+    ],
+    "max": [
+     0.0195,
+     0.0445,
+     0.009
+    ]
+   },
+   "materials": [
+    "Jet",
+    "Silver"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_keyBit",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_keyBit",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_keyBit.glb",
+   "bytes": 4024,
+   "sha256": "ac13332d390b3ca9ff00b7ac732bd97aed2a281f9b5b7d5e88c57ed306617d99",
+   "triangles": 64,
+   "size": [
+    0.07,
+    0.015,
+    0.0315
+   ],
+   "bounds": {
+    "min": [
+     -0.05,
+     0.0,
+     -0.0075
+    ],
+    "max": [
+     0.02,
+     0.015,
+     0.024
+    ]
+   },
+   "materials": [
+    "IronOld"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "quest",
+    "cryptKey"
+   ]
+  },
+  {
+   "id": "curio_keyBow",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_keyBow",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_keyBow.glb",
+   "bytes": 9740,
+   "sha256": "018fc5e25176530a92543badee46520e4b3c5b2a9155806b5ceb763729b633ed",
+   "triangles": 176,
+   "size": [
+    0.1037,
+    0.0185,
+    0.0629
+   ],
+   "bounds": {
+    "min": [
+     -0.0537,
+     0.0,
+     -0.0374
+    ],
+    "max": [
+     0.05,
+     0.0185,
+     0.0255
+    ]
+   },
+   "materials": [
+    "Black",
+    "IronOld",
+    "Rust"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "quest",
+    "cryptKey"
+   ]
+  },
+  {
+   "id": "curio_keyShaft",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_keyShaft",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_keyShaft.glb",
+   "bytes": 5064,
+   "sha256": "b5b437dc49c1ddededbb354d95d0e1216663ad018dbcad582c9d7abc2923b71b",
+   "triangles": 76,
+   "size": [
+    0.12,
+    0.019,
+    0.0204
+   ],
+   "bounds": {
+    "min": [
+     -0.06,
+     0.0,
+     -0.01
+    ],
+    "max": [
+     0.06,
+     0.019,
+     0.0104
+    ]
+   },
+   "materials": [
+    "IronOld",
+    "Rust"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "quest",
+    "cryptKey"
+   ]
+  },
+  {
+   "id": "curio_loveLetter",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_loveLetter",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_loveLetter.glb",
+   "bytes": 10160,
+   "sha256": "51c65fa6dfa4ce5077eeee494f48abd0c0f233372d9e184363e1c476256ac488",
+   "triangles": 216,
+   "size": [
+    0.12,
+    0.0168,
+    0.08
+   ],
+   "bounds": {
+    "min": [
+     -0.06,
+     0.0002,
+     -0.04
+    ],
+    "max": [
+     0.06,
+     0.017,
+     0.04
+    ]
+   },
+   "materials": [
+    "Envelope",
+    "Ink",
+    "PaperOld",
+    "WaxSeal"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_pocketWatch",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_pocketWatch",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_pocketWatch.glb",
+   "bytes": 13952,
+   "sha256": "3e880ea783231a57ac0c94b1b719a8ca909979d879e260e066e3ba2d41721945",
+   "triangles": 308,
+   "size": [
+    0.0765,
+    0.0292,
+    0.0826
+   ],
+   "bounds": {
+    "min": [
+     -0.024,
+     0.0,
+     -0.0351
+    ],
+    "max": [
+     0.0525,
+     0.0292,
+     0.0475
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Ink",
+    "Porcelain"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_signetRing",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_signetRing",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_signetRing.glb",
+   "bytes": 8108,
+   "sha256": "16ed299343bc94692114119f666e37047aa699b84aa9c15e21dfdea3b88e7c0e",
+   "triangles": 247,
+   "size": [
+    0.042,
+    0.0425,
+    0.022
+   ],
+   "bounds": {
+    "min": [
+     -0.021,
+     0.0,
+     -0.011
+    ],
+    "max": [
+     0.021,
+     0.0425,
+     0.011
+    ]
+   },
+   "materials": [
+    "Bronze",
+    "Gold"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_silverSpoon",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_silverSpoon",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_silverSpoon.glb",
+   "bytes": 7440,
+   "sha256": "ef09d72524e37f19ecf0802b93c9a90f2ef89bdae3b1a0308db42c1ecc46feef",
+   "triangles": 222,
+   "size": [
+    0.1572,
+    0.0381,
+    0.052
+   ],
+   "bounds": {
+    "min": [
+     -0.0793,
+     0.0003,
+     -0.03
+    ],
+    "max": [
+     0.0779,
+     0.0384,
+     0.022
+    ]
+   },
+   "materials": [
+    "Silver"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_tarnishedLocket",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_tarnishedLocket",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_tarnishedLocket.glb",
+   "bytes": 12196,
+   "sha256": "a9f6c4c6bab0493ba70cf6a67bc586ced12b692b67ba83f15ac0fa9dfe0c380a",
+   "triangles": 338,
+   "size": [
+    0.0881,
+    0.014,
+    0.0942
+   ],
+   "bounds": {
+    "min": [
+     -0.0568,
+     0.0,
+     -0.0618
+    ],
+    "max": [
+     0.0313,
+     0.014,
+     0.0324
+    ]
+   },
+   "materials": [
+    "Bronze",
+    "Verdigris"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "curio_tinSoldier",
+   "level": "graveyard",
+   "object": "item_curio",
+   "variant": "curio_tinSoldier",
+   "kind": "item",
+   "file": "models/levels/graveyard/curio_tinSoldier.glb",
+   "bytes": 12696,
+   "sha256": "fe3cd120430cf515c835906892f7544fbdc93bc1bebdfd5fc61307e1b3d875ff",
+   "triangles": 236,
+   "size": [
+    0.0494,
+    0.125,
+    0.052
+   ],
+   "bounds": {
+    "min": [
+     -0.0247,
+     0.0,
+     -0.026
+    ],
+    "max": [
+     0.0247,
+     0.125,
+     0.026
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "Iron",
+    "Tin",
+    "TinRed"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "curio",
+    "collectible",
+    "sellable"
+   ]
+  },
+  {
+   "id": "den_stray_cat",
+   "level": "graveyard",
+   "object": "den_stray",
+   "variant": "cat",
+   "kind": "floor",
+   "file": "models/levels/graveyard/den_stray_cat.glb",
+   "bytes": 13132,
+   "sha256": "55467f27b8b8a4a41f95772077fbee201d3b66e489401aa1c596dd25c83a7f05",
+   "triangles": 218,
+   "size": [
+    0.7995,
+    0.5117,
+    0.6926
+   ],
+   "bounds": {
+    "min": [
+     -0.461,
+     0.0,
+     -0.307
+    ],
+    "max": [
+     0.3385,
+     0.5117,
+     0.3856
+    ]
+   },
+   "materials": [
+    "Cardboard",
+    "Cushion",
+    "CushionDark",
+    "Enamel",
+    "Ink"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "facing:opening",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "strayDen",
+    "cat"
+   ]
+  },
+  {
+   "id": "den_stray_dog",
+   "level": "graveyard",
+   "object": "den_stray",
+   "variant": "dog",
+   "kind": "floor",
+   "file": "models/levels/graveyard/den_stray_dog.glb",
+   "bytes": 18300,
+   "sha256": "8f50751afef41583e4bb5a797bddaaab5d5aed54fc3032a444ea435e24ee5c64",
+   "triangles": 344,
+   "size": [
+    0.7,
+    0.48,
+    0.7729
+   ],
+   "bounds": {
+    "min": [
+     -0.35,
+     0.0,
+     -0.35
+    ],
+    "max": [
+     0.35,
+     0.48,
+     0.4229
+    ]
+   },
+   "materials": [
+    "Bone",
+    "CushionDark",
+    "Planks",
+    "Straw",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "facing:opening",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "strayDen",
+    "dog"
+   ]
+  },
+  {
+   "id": "den_stray_raccoon",
+   "level": "graveyard",
+   "object": "den_stray",
+   "variant": "raccoon",
+   "kind": "floor",
+   "file": "models/levels/graveyard/den_stray_raccoon.glb",
+   "bytes": 16464,
+   "sha256": "09d9789c0e958f1476112daf3030e05d03cf965d5eb7c4809bc1528e4c3bd284",
+   "triangles": 346,
+   "size": [
+    0.8405,
+    0.492,
+    0.904
+   ],
+   "bounds": {
+    "min": [
+     -0.42,
+     0.0,
+     -0.4694
+    ],
+    "max": [
+     0.4205,
+     0.492,
+     0.4346
+    ]
+   },
+   "materials": [
+    "GyDirt",
+    "GyStone",
+    "GyStoneDark",
+    "Peel",
+    "Tin",
+    "Void"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "facing:opening",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "strayDen",
+    "raccoon"
+   ]
+  },
+  {
+   "id": "env_spire",
+   "level": "graveyard",
+   "object": "env_spire",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/graveyard/env_spire.glb",
+   "bytes": 43076,
+   "sha256": "db6c15a05f427170160e34f743136695caab1b048a0bb41069d5b1e7f001aacb",
+   "triangles": 1044,
+   "size": [
+    4.5751,
+    16.1671,
+    4.5725
+   ],
+   "bounds": {
+    "min": [
+     -2.2876,
+     0.0,
+     -2.2856
+    ],
+    "max": [
+     2.2875,
+     16.1671,
+     2.2869
+    ]
+   },
+   "materials": [
+    "BellBronze",
+    "Gold",
+    "GyStone",
+    "GyStoneDark",
+    "Iron",
+    "Magnet3",
+    "Spire",
+    "SpireRoof",
+    "Void",
+    "WindowGlass",
+    "WoodEbony"
+   ],
+   "footprint": [
+    4.5,
+    4.5
+   ],
+   "budget": 2500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "env",
+    "dressing"
+   ]
+  },
+  {
+   "id": "fence_iron",
+   "level": "graveyard",
+   "object": "fence_iron",
+   "variant": null,
+   "kind": "edge",
+   "file": "models/levels/graveyard/fence_iron.glb",
+   "bytes": 9796,
+   "sha256": "687b9e7a1e81b4a436e71ab4812c909847d786e2ef04c3223cf8f95c0a6c72c9",
+   "triangles": 180,
+   "size": [
+    1.004,
+    1.145,
+    0.09
+   ],
+   "bounds": {
+    "min": [
+     -0.504,
+     0.0,
+     -0.045
+    ],
+    "max": [
+     0.5,
+     1.145,
+     0.045
+    ]
+   },
+   "materials": [
+    "Iron"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fence"
+   ]
+  },
+  {
+   "id": "firepit_grill",
+   "level": "graveyard",
+   "object": "firepit_grill",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/firepit_grill.glb",
+   "bytes": 50104,
+   "sha256": "3d4509a433be06b9aa04b015d0d48fc2253854b330d96687b9184a33c1564fd5",
+   "triangles": 1472,
+   "size": [
+    1.6753,
+    1.0843,
+    1.5159
+   ],
+   "bounds": {
+    "min": [
+     -0.7642,
+     0.0,
+     -0.8709
+    ],
+    "max": [
+     0.9111,
+     1.0843,
+     0.645
+    ]
+   },
+   "materials": [
+    "Ash",
+    "Bark",
+    "CoalGlow",
+    "FireCore",
+    "FireMid",
+    "FireOuter",
+    "GyStone",
+    "GyStoneDark",
+    "Iron"
+   ],
+   "footprint": [
+    2,
+    2
+   ],
+   "budget": 1600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "grill",
+    "cook"
+   ]
+  },
+  {
+   "id": "gate_iron",
+   "level": "graveyard",
+   "object": "gate_iron",
+   "variant": null,
+   "kind": "opening",
+   "file": "models/levels/graveyard/gate_iron.glb",
+   "bytes": 33384,
+   "sha256": "ca9d58fec5a2eaa46762edc73913ee23058df10a35717c2716c08b16a6a51aab",
+   "triangles": 836,
+   "size": [
+    1.03,
+    1.49,
+    0.13
+   ],
+   "bounds": {
+    "min": [
+     -0.515,
+     0.0,
+     -0.065
+    ],
+    "max": [
+     0.515,
+     1.49,
+     0.065
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "door",
+    "door_b"
+   ],
+   "states": [],
+   "tags": [
+    "door",
+    "gate"
+   ]
+  },
+  {
+   "id": "grave_marked_cross",
+   "level": "graveyard",
+   "object": "grave_marked",
+   "variant": "1",
+   "kind": "floor",
+   "file": "models/levels/graveyard/grave_marked_cross.glb",
+   "bytes": 38784,
+   "sha256": "c2a2b1fa1729fb7e901bfa536c717b268e86ab8287da5ff3b61e8153cf9275ec",
+   "triangles": 855,
+   "size": [
+    0.7317,
+    1.1203,
+    1.8878
+   ],
+   "bounds": {
+    "min": [
+     -0.36,
+     0.0,
+     -0.91
+    ],
+    "max": [
+     0.3717,
+     1.1203,
+     0.9778
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Flower1",
+    "Flower2",
+    "Flower3",
+    "GrassDry",
+    "GyMoss",
+    "GyStone",
+    "GyStoneDark",
+    "Leaf",
+    "Moss",
+    "Slate",
+    "Sod"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 900,
+   "front": "back_tall:0.45",
+   "wallCentre": null,
+   "parts": [
+    "flag"
+   ],
+   "states": [
+    "flag"
+   ],
+   "tags": [
+    "grave",
+    "marked"
+   ]
+  },
+  {
+   "id": "grave_marked_rounded",
+   "level": "graveyard",
+   "object": "grave_marked",
+   "variant": "0",
+   "kind": "floor",
+   "file": "models/levels/graveyard/grave_marked_rounded.glb",
+   "bytes": 36884,
+   "sha256": "5ac571095b1038e7ad1e52814d54e3dc3ed61de6b90b60bf89666f001bb70187",
+   "triangles": 707,
+   "size": [
+    0.8,
+    1.0608,
+    1.8149
+   ],
+   "bounds": {
+    "min": [
+     -0.4,
+     0.0,
+     -0.91
+    ],
+    "max": [
+     0.4,
+     1.0608,
+     0.9049
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Flower1",
+    "Flower2",
+    "Flower3",
+    "GrassDry",
+    "GyLichen",
+    "GyMoss",
+    "GySlab",
+    "GyStone",
+    "GyStoneDark",
+    "Leaf",
+    "Moss",
+    "Slate",
+    "Sod"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 900,
+   "front": "back_tall:0.45",
+   "wallCentre": null,
+   "parts": [
+    "flag"
+   ],
+   "states": [
+    "flag"
+   ],
+   "tags": [
+    "grave",
+    "marked"
+   ]
+  },
+  {
+   "id": "grave_marked_scroll",
+   "level": "graveyard",
+   "object": "grave_marked",
+   "variant": "2",
+   "kind": "floor",
+   "file": "models/levels/graveyard/grave_marked_scroll.glb",
+   "bytes": 40524,
+   "sha256": "b5e15d9e6912f9fc605f9b59214517336cf4e2f6a7a5074bf193da451eaff678",
+   "triangles": 837,
+   "size": [
+    0.827,
+    0.9365,
+    1.8149
+   ],
+   "bounds": {
+    "min": [
+     -0.409,
+     0.0,
+     -0.91
+    ],
+    "max": [
+     0.418,
+     0.9365,
+     0.9049
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Flower1",
+    "Flower2",
+    "Flower3",
+    "GrassDry",
+    "GyMoss",
+    "GyStone",
+    "GyStoneDark",
+    "GyStoneWarm",
+    "Leaf",
+    "Moss",
+    "Slate",
+    "Sod"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 900,
+   "front": "back_tall:0.45",
+   "wallCentre": null,
+   "parts": [
+    "flag"
+   ],
+   "states": [
+    "flag"
+   ],
+   "tags": [
+    "grave",
+    "marked"
+   ]
+  },
+  {
+   "id": "grave_marked_slab",
+   "level": "graveyard",
+   "object": "grave_marked",
+   "variant": "3",
+   "kind": "floor",
+   "file": "models/levels/graveyard/grave_marked_slab.glb",
+   "bytes": 38896,
+   "sha256": "64dc2b29e0b76c4dd47d8b916e5851db8247c8e533fe499abd1875da55bcf999",
+   "triangles": 810,
+   "size": [
+    0.8948,
+    0.837,
+    1.8575
+   ],
+   "bounds": {
+    "min": [
+     -0.4648,
+     0.0,
+     -0.9526
+    ],
+    "max": [
+     0.43,
+     0.837,
+     0.9049
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Flower1",
+    "Flower2",
+    "Flower3",
+    "GrassDry",
+    "GyLichen",
+    "GyMoss",
+    "GySlab",
+    "GyStone",
+    "GyStoneDark",
+    "Leaf",
+    "Moss",
+    "Slate",
+    "Sod"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 900,
+   "front": "back_tall:0.45",
+   "wallCentre": null,
+   "parts": [
+    "flag"
+   ],
+   "states": [
+    "flag"
+   ],
+   "tags": [
+    "grave",
+    "marked"
+   ]
+  },
+  {
+   "id": "heap_compost",
+   "level": "graveyard",
+   "object": "heap_compost",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/heap_compost.glb",
+   "bytes": 36496,
+   "sha256": "67ff6cf4ac199060d0e789a781e234654140e115f884e55dbefde741c1a83f0b",
+   "triangles": 738,
+   "size": [
+    1.7055,
+    0.9519,
+    1.5438
+   ],
+   "bounds": {
+    "min": [
+     -0.8551,
+     0.0,
+     -0.7701
+    ],
+    "max": [
+     0.8504,
+     0.9519,
+     0.7737
+    ]
+   },
+   "materials": [
+    "GyDirt",
+    "Leaf",
+    "LeafDead",
+    "Peel",
+    "Porcelain",
+    "Pumpkin",
+    "Steam",
+    "Wood",
+    "WoodDark",
+    "WoodLight",
+    "Worm"
+   ],
+   "footprint": [
+    2,
+    2
+   ],
+   "budget": 1200,
+   "front": "back_tall:0.75",
+   "wallCentre": null,
+   "parts": [
+    "steam"
+   ],
+   "states": [
+    "steam"
+   ],
+   "tags": [
+    "dig",
+    "compost"
+   ]
+  },
+  {
+   "id": "item_cryptKey",
+   "level": "graveyard",
+   "object": "item_cryptKey",
+   "variant": null,
+   "kind": "item",
+   "file": "models/levels/graveyard/item_cryptKey.glb",
+   "bytes": 11088,
+   "sha256": "450d0c3d89ca928e9b1b9b29e4dff996a130ac9d6213ddd1e10fee5818dfc792",
+   "triangles": 228,
+   "size": [
+    0.2587,
+    0.019,
+    0.0629
+   ],
+   "bounds": {
+    "min": [
+     -0.1487,
+     0.0,
+     -0.0374
+    ],
+    "max": [
+     0.11,
+     0.019,
+     0.0255
+    ]
+   },
+   "materials": [
+    "Black",
+    "IronOld"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "key",
+    "quest"
+   ]
+  },
+  {
+   "id": "item_fish_deep",
+   "level": "graveyard",
+   "object": "item_fish",
+   "variant": "deep",
+   "kind": "item",
+   "file": "models/levels/graveyard/item_fish_deep.glb",
+   "bytes": 10264,
+   "sha256": "0ef768c5814620b687749612810f2030f6f82414867d406bf83c045a1c754fbe",
+   "triangles": 260,
+   "size": [
+    0.2872,
+    0.0754,
+    0.1479
+   ],
+   "bounds": {
+    "min": [
+     -0.1672,
+     0.0,
+     -0.0569
+    ],
+    "max": [
+     0.12,
+     0.0754,
+     0.091
+    ]
+   },
+   "materials": [
+    "Black",
+    "EyeWhite",
+    "Paint"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fish",
+    "sellable",
+    "ingredient"
+   ]
+  },
+  {
+   "id": "item_fish_eel",
+   "level": "graveyard",
+   "object": "item_fish",
+   "variant": "eel",
+   "kind": "item",
+   "file": "models/levels/graveyard/item_fish_eel.glb",
+   "bytes": 13664,
+   "sha256": "ef6a27fd710b5460d0dfb9dfdbaa38621a2be51a5ea0ae24697690c1a93d9ec1",
+   "triangles": 268,
+   "size": [
+    0.4142,
+    0.046,
+    0.1227
+   ],
+   "bounds": {
+    "min": [
+     -0.2106,
+     0.0025,
+     -0.0636
+    ],
+    "max": [
+     0.2036,
+     0.0485,
+     0.0591
+    ]
+   },
+   "materials": [
+    "Black",
+    "EyeWhite",
+    "GlowCryo",
+    "Paint"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "fish",
+    "sellable",
+    "ingredient"
+   ]
+  },
+  {
+   "id": "item_fish_long",
+   "level": "graveyard",
+   "object": "item_fish",
+   "variant": "long",
+   "kind": "item",
+   "file": "models/levels/graveyard/item_fish_long.glb",
+   "bytes": 12228,
+   "sha256": "ae898dfca5c8ce21c586c1a8b4e93e0f3a3c4a1dc1410c84768a7308c8d547f2",
+   "triangles": 288,
+   "size": [
+    0.4508,
+    0.07,
+    0.0933
+   ],
+   "bounds": {
+    "min": [
+     -0.2452,
+     0.0,
+     -0.0373
+    ],
+    "max": [
+     0.2056,
+     0.07,
+     0.056
+    ]
+   },
+   "materials": [
+    "Black",
+    "EyeWhite",
+    "Paint"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fish",
+    "sellable",
+    "ingredient"
+   ]
+  },
+  {
+   "id": "item_fish_small",
+   "level": "graveyard",
+   "object": "item_fish",
+   "variant": "small",
+   "kind": "item",
+   "file": "models/levels/graveyard/item_fish_small.glb",
+   "bytes": 10708,
+   "sha256": "82bfbb2ae609cacc8917bc14ebe2e6143fcc9fd80080e1393235b54395bcf8ab",
+   "triangles": 260,
+   "size": [
+    0.1976,
+    0.047,
+    0.0682
+   ],
+   "bounds": {
+    "min": [
+     -0.1126,
+     0.0,
+     -0.0262
+    ],
+    "max": [
+     0.085,
+     0.047,
+     0.042
+    ]
+   },
+   "materials": [
+    "Black",
+    "EyeWhite",
+    "Paint"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fish",
+    "sellable",
+    "ingredient"
+   ]
+  },
+  {
+   "id": "junk_oldBoot",
+   "level": "graveyard",
+   "object": "item_fish",
+   "variant": "junk_oldBoot",
+   "kind": "item",
+   "file": "models/levels/graveyard/junk_oldBoot.glb",
+   "bytes": 14124,
+   "sha256": "feb52d06cef42513a40cafb40f5814d290575864873629def8db946c9bc1b021",
+   "triangles": 246,
+   "size": [
+    0.2771,
+    0.1456,
+    0.1616
+   ],
+   "bounds": {
+    "min": [
+     -0.1171,
+     0.0,
+     -0.06
+    ],
+    "max": [
+     0.16,
+     0.1456,
+     0.1016
+    ]
+   },
+   "materials": [
+    "Black",
+    "Leather",
+    "LeatherDark",
+    "PondWater",
+    "Rope"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fish",
+    "junk"
+   ]
+  },
+  {
+   "id": "junk_tinCan",
+   "level": "graveyard",
+   "object": "item_fish",
+   "variant": "junk_tinCan",
+   "kind": "item",
+   "file": "models/levels/graveyard/junk_tinCan.glb",
+   "bytes": 8152,
+   "sha256": "6067f5ebc74f75f02d632a5cbaffd4950d098e13c8b17cbba99185cf8bf30d7e",
+   "triangles": 208,
+   "size": [
+    0.145,
+    0.0727,
+    0.0919
+   ],
+   "bounds": {
+    "min": [
+     -0.0583,
+     0.0,
+     -0.0589
+    ],
+    "max": [
+     0.0867,
+     0.0727,
+     0.033
+    ]
+   },
+   "materials": [
+    "Rust",
+    "Tin",
+    "TinRed"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "fish",
+    "junk"
+   ]
+  },
+  {
+   "id": "lantern_ironCage",
+   "level": "graveyard",
+   "object": "lantern_ironCage",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/lantern_ironCage.glb",
+   "bytes": 26472,
+   "sha256": "b8969ba93aae3027f281568714603589c777c8326fb9d062aa68452e69b15ef1",
+   "triangles": 738,
+   "size": [
+    0.3,
+    0.6676,
+    0.3
+   ],
+   "bounds": {
+    "min": [
+     -0.15,
+     0.0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.6676,
+     0.15
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Lantern",
+    "Wax"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "bulb"
+   ],
+   "states": [],
+   "tags": [
+    "lighting",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  },
+  {
+   "id": "lantern_jack",
+   "level": "graveyard",
+   "object": "lantern_jack",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/lantern_jack.glb",
+   "bytes": 18292,
+   "sha256": "27c0928d12844268e3be08800b71aa9fd5b2fad47e42241a346ebf1e5196024e",
+   "triangles": 439,
+   "size": [
+    0.5,
+    0.4492,
+    0.51
+   ],
+   "bounds": {
+    "min": [
+     -0.25,
+     0.0,
+     -0.25
+    ],
+    "max": [
+     0.25,
+     0.4492,
+     0.26
+    ]
+   },
+   "materials": [
+    "Leaf",
+    "Pumpkin",
+    "PumpkinDark",
+    "PumpkinGlow",
+    "Stem"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 900,
+   "front": "facing:flame",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "decor",
+    "halloween",
+    "dressing"
+   ]
+  },
+  {
+   "id": "mound_soft",
+   "level": "graveyard",
+   "object": "mound_soft",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/mound_soft.glb",
+   "bytes": 24756,
+   "sha256": "ec9d32723351d0d5f61fc5a547f937b803eb604d61bd6fe856bf7e46276f63ae",
+   "triangles": 496,
+   "size": [
+    0.88,
+    0.2002,
+    1.72
+   ],
+   "bounds": {
+    "min": [
+     -0.44,
+     0.0,
+     -0.86
+    ],
+    "max": [
+     0.44,
+     0.2002,
+     0.86
+    ]
+   },
+   "materials": [
+    "BlessGlow",
+    "Bone",
+    "EnamelRed",
+    "GrassDry",
+    "GyDirt",
+    "GyDirtFresh",
+    "GyMoss",
+    "RuneGlow",
+    "Sod",
+    "SoilClod",
+    "Worm"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow",
+    "turned"
+   ],
+   "states": [
+    "glow",
+    "turned"
+   ],
+   "tags": [
+    "dig",
+    "mound"
+   ]
+  },
+  {
+   "id": "mower_mulchmaster",
+   "level": "graveyard",
+   "object": "mower_mulchmaster",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/mower_mulchmaster.glb",
+   "bytes": 69556,
+   "sha256": "1cecf73047c1330f590986ebd111a350e13b018aff8c5d73d554938d00b6dc0c",
+   "triangles": 2344,
+   "size": [
+    1.83,
+    1.083,
+    0.824
+   ],
+   "bounds": {
+    "min": [
+     -1.0,
+     0.0,
+     -0.412
+    ],
+    "max": [
+     0.83,
+     1.083,
+     0.412
+    ]
+   },
+   "materials": [
+    "Black",
+    "Chrome",
+    "Decal",
+    "DecalInk",
+    "GrassDry",
+    "Iron",
+    "Lantern",
+    "Leaf",
+    "Leather",
+    "LiveryAccent",
+    "LiveryMower",
+    "Rubber",
+    "RubberGreen",
+    "SheetMetal",
+    "Tire"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 3200,
+   "front": "facing:sign",
+   "wallCentre": null,
+   "parts": [
+    "brand_decal"
+   ],
+   "states": [],
+   "tags": [
+    "mower",
+    "sponsor",
+    "brand:Mulch Master",
+    "skin:mulch_master_mower"
+   ]
+  },
+  {
+   "id": "obelisk_founder",
+   "level": "graveyard",
+   "object": "obelisk_founder",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/obelisk_founder.glb",
+   "bytes": 37444,
+   "sha256": "22ea7407300e3ec817420909c0be04d26a105a3b0fdbc1bf4ce85b064351213f",
+   "triangles": 836,
+   "size": [
+    0.9,
+    2.57,
+    0.9
+   ],
+   "bounds": {
+    "min": [
+     -0.45,
+     0.0,
+     -0.45
+    ],
+    "max": [
+     0.45,
+     2.57,
+     0.45
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Bronze",
+    "Charcoal",
+    "Granite",
+    "GrassDry",
+    "GyLichen",
+    "GyMoss",
+    "GyStone",
+    "GyStoneDark",
+    "Moss",
+    "Verdigris"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1000,
+   "front": "facing:sign",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "grave",
+    "marked",
+    "monument"
+   ]
+  },
+  {
+   "id": "obelisk_mini",
+   "level": "graveyard",
+   "object": "obelisk_mini",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/obelisk_mini.glb",
+   "bytes": 14604,
+   "sha256": "04f6596bc9e1bbb53c41057905daf203b7d5352a731725bb60f0ee95473f9847",
+   "triangles": 344,
+   "size": [
+    0.5,
+    1.25,
+    0.5
+   ],
+   "bounds": {
+    "min": [
+     -0.25,
+     0.0,
+     -0.25
+    ],
+    "max": [
+     0.25,
+     1.25,
+     0.25
+    ]
+   },
+   "materials": [
+    "Bronze",
+    "GyStoneDark",
+    "GyStoneWarm",
+    "Marble",
+    "Moss"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  },
+  {
+   "id": "plaque_fish",
+   "level": "graveyard",
+   "object": "plaque_fish",
+   "variant": "wood",
+   "kind": "wall",
+   "file": "models/levels/graveyard/plaque_fish.glb",
+   "bytes": 16140,
+   "sha256": "da53f21499e9b70626e4acca60a36e5a79f0baeceea47cfc1cba368184dd5143",
+   "triangles": 386,
+   "size": [
+    0.68,
+    0.4,
+    0.129
+   ],
+   "bounds": {
+    "min": [
+     -0.34,
+     1.3,
+     0.0
+    ],
+    "max": [
+     0.34,
+     1.7,
+     0.129
+    ]
+   },
+   "materials": [
+    "Black",
+    "Brass",
+    "Ink",
+    "Paint",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 500,
+   "front": "facing:sign",
+   "wallCentre": 1.5,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "trophy"
+   ]
+  },
+  {
+   "id": "plaque_fish_gold",
+   "level": "graveyard",
+   "object": "plaque_fish",
+   "variant": "gold",
+   "kind": "wall",
+   "file": "models/levels/graveyard/plaque_fish_gold.glb",
+   "bytes": 19068,
+   "sha256": "f706195ebadb0f016e683569c7c96defb1fd3e5c156fb535c9894e80d4f8cc7e",
+   "triangles": 498,
+   "size": [
+    0.744,
+    0.453,
+    0.129
+   ],
+   "bounds": {
+    "min": [
+     -0.372,
+     1.2735,
+     0.0
+    ],
+    "max": [
+     0.372,
+     1.7265,
+     0.129
+    ]
+   },
+   "materials": [
+    "Black",
+    "Gold",
+    "Ink",
+    "Paint",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 500,
+   "front": "facing:sign",
+   "wallCentre": 1.5,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "trophy",
+    "bones"
+   ]
+  },
+  {
+   "id": "plot_grub",
+   "level": "graveyard",
+   "object": "plot_grub",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/plot_grub.glb",
+   "bytes": 24180,
+   "sha256": "e736d9c51bed08c9b9c985acba42c24ebb531d9cbe638389bb74672576d5b757",
+   "triangles": 488,
+   "size": [
+    0.91,
+    0.7352,
+    1.83
+   ],
+   "bounds": {
+    "min": [
+     -0.455,
+     0.0,
+     -0.915
+    ],
+    "max": [
+     0.455,
+     0.7352,
+     0.915
+    ]
+   },
+   "materials": [
+    "GyDirt",
+    "GyDirtFresh",
+    "Ink",
+    "Pine",
+    "Planks",
+    "Void",
+    "WoodDark",
+    "Worm"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 600,
+   "front": "facing:sign",
+   "wallCentre": null,
+   "parts": [
+    "turned"
+   ],
+   "states": [
+    "turned"
+   ],
+   "tags": [
+    "dig",
+    "mound",
+    "outdoorOnly"
+   ]
+  },
+  {
+   "id": "pond_murky",
+   "level": "graveyard",
+   "object": "pond_murky",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/pond_murky.glb",
+   "bytes": 105468,
+   "sha256": "94d6c7157fe91837221693e297f30c9dd6c330b0ea476ece140e941427fa38e5",
+   "triangles": 3040,
+   "size": [
+    6.6695,
+    0.5031,
+    4.1905
+   ],
+   "bounds": {
+    "min": [
+     -3.1795,
+     0.0,
+     -2.0753
+    ],
+    "max": [
+     3.49,
+     0.5031,
+     2.1152
+    ]
+   },
+   "materials": [
+    "Black",
+    "Flower2",
+    "GlassGrimy",
+    "GrassDry",
+    "GyMoss",
+    "GyMud",
+    "GyStone",
+    "GyStoneDark",
+    "GyStoneWarm",
+    "Iron",
+    "LilyFlower",
+    "LilyPad",
+    "LilyPadDark",
+    "Planks",
+    "PondDeep",
+    "PondEyes",
+    "PondWater",
+    "Reed",
+    "Rope",
+    "WoodDark"
+   ],
+   "footprint": [
+    7,
+    5
+   ],
+   "budget": 5800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow",
+    "water"
+   ],
+   "states": [
+    "glow"
+   ],
+   "tags": [
+    "pond",
+    "water",
+    "fishing"
+   ]
+  },
+  {
+   "id": "rack_tools",
+   "level": "graveyard",
+   "object": "rack_tools",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/rack_tools.glb",
+   "bytes": 71176,
+   "sha256": "7e106101734ea57901ae7fd1bd770bac73802bf1966a7e4e13715cbaa927040a",
+   "triangles": 1399,
+   "size": [
+    0.99,
+    1.7923,
+    0.3
+   ],
+   "bounds": {
+    "min": [
+     -0.495,
+     0.0,
+     -0.43
+    ],
+    "max": [
+     0.495,
+     1.7923,
+     -0.13
+    ]
+   },
+   "materials": [
+    "Bamboo",
+    "BloodWine",
+    "FloatRed",
+    "Iron",
+    "Lantern",
+    "PaperOld",
+    "Planks",
+    "Rust",
+    "Shingle",
+    "Steel",
+    "Wood",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1400,
+   "front": "back_tall:1.0",
+   "wallCentre": null,
+   "parts": [
+    "bulb",
+    "rod_0",
+    "rod_1",
+    "rod_2",
+    "shovel_0",
+    "shovel_1",
+    "shovel_2"
+   ],
+   "states": [],
+   "tags": [
+    "tools",
+    "shovel",
+    "rod",
+    "indoor"
+   ]
+  },
+  {
+   "id": "reeds_cattail",
+   "level": "graveyard",
+   "object": "reeds_cattail",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/reeds_cattail.glb",
+   "bytes": 17340,
+   "sha256": "1178cc5e78fc26ebda68cd2597b0e67b8a384e5d08967bdf3f8b06663e4d3901",
+   "triangles": 325,
+   "size": [
+    0.8982,
+    1.1835,
+    0.9158
+   ],
+   "bounds": {
+    "min": [
+     -0.5012,
+     0.0,
+     -0.4628
+    ],
+    "max": [
+     0.397,
+     1.1835,
+     0.453
+    ]
+   },
+   "materials": [
+    "Cattail",
+    "GyMud",
+    "Reed",
+    "ReedDry"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "sway"
+   ],
+   "states": [],
+   "tags": [
+    "plant",
+    "forage"
+   ]
+  },
+  {
+   "id": "rod_bent",
+   "level": "graveyard",
+   "object": "rod_bent",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/graveyard/rod_bent.glb",
+   "bytes": 18240,
+   "sha256": "4ab13185adfd8856635bcb75f646455667c4c99e4c1e89c2a4b517b9d6f587a1",
+   "triangles": 342,
+   "size": [
+    1.0412,
+    0.5661,
+    0.111
+   ],
+   "bounds": {
+    "min": [
+     -0.5202,
+     1.11,
+     -0.0
+    ],
+    "max": [
+     0.521,
+     1.6761,
+     0.111
+    ]
+   },
+   "materials": [
+    "Bamboo",
+    "Bone",
+    "FloatRed",
+    "Fringe",
+    "Iron",
+    "Line",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": 1.4,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "tools",
+    "rod"
+   ]
+  },
+  {
+   "id": "shelf_curio",
+   "level": "graveyard",
+   "object": "shelf_curio",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/shelf_curio.glb",
+   "bytes": 40344,
+   "sha256": "3e180f77d4261d399b61d5ca502b28f9f56160da25cf621d4fa46ea7b0fca7b9",
+   "triangles": 1220,
+   "size": [
+    0.86,
+    1.82,
+    0.499
+   ],
+   "bounds": {
+    "min": [
+     -0.43,
+     0.0,
+     -0.29
+    ],
+    "max": [
+     0.43,
+     1.82,
+     0.209
+    ]
+   },
+   "materials": [
+    "BloodWine",
+    "Bone",
+    "Cobalt",
+    "Glass",
+    "Porcelain",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1600,
+   "front": "facing:glass",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "display",
+    "indoor"
+   ]
+  },
+  {
+   "id": "shovel_trusty",
+   "level": "graveyard",
+   "object": "shovel_trusty",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/graveyard/shovel_trusty.glb",
+   "bytes": 14864,
+   "sha256": "c667b6d1020f51233d604f376f9eb9fd44b427a2bcd1e3f0db45748a38f9a420",
+   "triangles": 284,
+   "size": [
+    0.26,
+    1.3699,
+    0.1
+   ],
+   "bounds": {
+    "min": [
+     -0.13,
+     0.4421,
+     -0.0
+    ],
+    "max": [
+     0.13,
+     1.812,
+     0.1
+    ]
+   },
+   "materials": [
+    "GyDirt",
+    "Iron",
+    "Steel",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": 1.15,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "tools",
+    "shovel"
+   ]
+  },
+  {
+   "id": "stairs_crypt",
+   "level": "graveyard",
+   "object": "stairs_crypt",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/stairs_crypt.glb",
+   "bytes": 69968,
+   "sha256": "f66ef294c926bb41aa70cb01db65ee98bc8bcb68eaaafd9b4f231957541ee325",
+   "triangles": 1856,
+   "size": [
+    1.96,
+    2.36,
+    1.965
+   ],
+   "bounds": {
+    "min": [
+     -0.98,
+     0.0,
+     -0.995
+    ],
+    "max": [
+     0.98,
+     2.36,
+     0.97
+    ]
+   },
+   "materials": [
+    "Black",
+    "Brass",
+    "Cobweb",
+    "GySlab",
+    "GyStone",
+    "GyStoneDark",
+    "GyStoneWarm",
+    "Iron",
+    "Moss",
+    "Slate",
+    "Void"
+   ],
+   "footprint": [
+    2,
+    2
+   ],
+   "budget": 2800,
+   "front": "facing:sign",
+   "wallCentre": null,
+   "parts": [
+    "door"
+   ],
+   "states": [],
+   "tags": [
+    "crypt",
+    "stairs"
+   ]
+  },
+  {
+   "id": "statue_angelWeeping",
+   "level": "graveyard",
+   "object": "statue_angelWeeping",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/statue_angelWeeping.glb",
+   "bytes": 33496,
+   "sha256": "8ac4da1507a12c001c1b9478a19616f70cf5daa62ef0f61ecddcc09638ebd55e",
+   "triangles": 1034,
+   "size": [
+    0.9698,
+    1.814,
+    0.62
+   ],
+   "bounds": {
+    "min": [
+     -0.4849,
+     0.0,
+     -0.31
+    ],
+    "max": [
+     0.4849,
+     1.814,
+     0.31
+    ]
+   },
+   "materials": [
+    "Glass",
+    "GyStone",
+    "GyStoneDark",
+    "GyStoneWarm",
+    "Moss",
+    "Slate"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 3000,
+   "front": "facing:face",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  },
+  {
+   "id": "table_seance",
+   "level": "graveyard",
+   "object": "table_seance",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/table_seance.glb",
+   "bytes": 64072,
+   "sha256": "79d342527537c26e6c4c9af50c89207a0076b6397f19be0d8621462d656e2f03",
+   "triangles": 2036,
+   "size": [
+    1.346,
+    1.08,
+    1.346
+   ],
+   "bounds": {
+    "min": [
+     -0.673,
+     0.0,
+     -0.673
+    ],
+    "max": [
+     0.673,
+     1.08,
+     0.673
+    ]
+   },
+   "materials": [
+    "Brass",
+    "CandleFlame",
+    "Crystal",
+    "Fringe",
+    "Glass",
+    "GlowZapper",
+    "TableCloth",
+    "Wax",
+    "Wood",
+    "WoodEbony"
+   ],
+   "footprint": [
+    2,
+    2
+   ],
+   "budget": 2600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame",
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "seance",
+    "bones"
+   ]
+  },
+  {
+   "id": "tree_willow",
+   "level": "graveyard",
+   "object": "tree_willow",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/tree_willow.glb",
+   "bytes": 59492,
+   "sha256": "14da68d197d5ca2d0533dbae122f231ba6e2d19003ee65da98ab32df626bd95c",
+   "triangles": 1694,
+   "size": [
+    2.8227,
+    4.6491,
+    2.872
+   ],
+   "bounds": {
+    "min": [
+     -1.4302,
+     0.0,
+     -1.4394
+    ],
+    "max": [
+     1.3925,
+     4.6491,
+     1.4326
+    ]
+   },
+   "materials": [
+    "Bark",
+    "BarkLight",
+    "Black",
+    "Crow",
+    "Gold",
+    "Magnet3",
+    "Willow",
+    "WillowDark"
+   ],
+   "footprint": [
+    3,
+    3
+   ],
+   "budget": 4500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "sway"
+   ],
+   "states": [],
+   "tags": [
+    "tree",
+    "perch"
+   ]
+  },
+  {
+   "id": "urn_planterStone",
+   "level": "graveyard",
+   "object": "urn_planterStone",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/urn_planterStone.glb",
+   "bytes": 33488,
+   "sha256": "a417ca81e6a387ad7456b76b907d51d218b1deb00f20230989d82bde68cb90eb",
+   "triangles": 744,
+   "size": [
+    0.62,
+    1.0145,
+    0.5264
+   ],
+   "bounds": {
+    "min": [
+     -0.31,
+     0.0,
+     -0.2632
+    ],
+    "max": [
+     0.31,
+     1.0145,
+     0.2632
+    ]
+   },
+   "materials": [
+    "Flower3",
+    "GyDirt",
+    "GyStone",
+    "GyStoneWarm",
+    "HedgeLight",
+    "Leaf",
+    "Moss",
+    "PlantPurple"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "premium",
+    "set:moonlitMourning",
+    "outdoor"
+   ]
+  },
+  {
+   "id": "vending_gravecola",
+   "level": "graveyard",
+   "object": "vending_gravecola",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/graveyard/vending_gravecola.glb",
+   "bytes": 59500,
+   "sha256": "91799c9867eaa0d23f23c1a6fd7c28c15c2d35a6c33602b98421ea82f83c293f",
+   "triangles": 1720,
+   "size": [
+    0.86,
+    1.82,
+    0.7571
+   ],
+   "bounds": {
+    "min": [
+     -0.43,
+     0.0,
+     -0.37
+    ],
+    "max": [
+     0.43,
+     1.82,
+     0.3871
+    ]
+   },
+   "materials": [
+    "Black",
+    "BloodWine",
+    "Chrome",
+    "Crack",
+    "Decal",
+    "DecalInk",
+    "Iron",
+    "Livery",
+    "LiveryAccent",
+    "Magnet1",
+    "Magnet2",
+    "Magnet3",
+    "PlasticDark",
+    "ScreenSoda",
+    "Smoke",
+    "Spark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1800,
+   "front": "facing:screen",
+   "wallCentre": null,
+   "parts": [
+    "brand_decal",
+    "broken",
+    "screen"
+   ],
+   "states": [
+    "broken"
+   ],
+   "tags": [
+    "vending",
+    "sponsor",
+    "brand:Grave-Cola",
+    "skin:grave_cola_vending"
+   ]
+  },
+  {
+   "id": "wreath_mourning",
+   "level": "graveyard",
+   "object": "wreath_mourning",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/graveyard/wreath_mourning.glb",
+   "bytes": 33784,
+   "sha256": "bc8d967ead028c8eccffa294fda04d0064549d8e570b93807dca69160f2ecf08",
+   "triangles": 836,
+   "size": [
+    0.5,
+    0.732,
+    0.1588
+   ],
+   "bounds": {
+    "min": [
+     -0.25,
+     1.18,
+     -0.0
+    ],
+    "max": [
+     0.25,
+     1.912,
+     0.1588
+    ]
+   },
+   "materials": [
+    "CurtainPurple",
+    "Flower3",
+    "Hedge",
+    "HedgeLight",
+    "Iron",
+    "Lace",
+    "Leaf"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": 1.55,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "decor",
+    "premium",
+    "set:moonlitMourning"
+   ]
+  }
+ ]
+}

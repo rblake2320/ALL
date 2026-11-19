@@ -1,0 +1,147 @@
+{
+ "final": "37d3d70da1f7316d3fc30d247ebea772c6949e63d6f885fde58db11c5f9d60e0",
+ "hashes": [
+  {
+   "tick": 100,
+   "hash": "47f7b8d15f0a933a2159cedc50e69836ebc50e5922aecb6b863a048002c00da8"
+  },
+  {
+   "tick": 200,
+   "hash": "5c1e6843a5e8c8fcb20180dc5e3181a207292ba86af633690b9601b7d83d746b"
+  },
+  {
+   "tick": 300,
+   "hash": "867b6b6b82ade9dbc4589cb53e8dc0b7c64f457c6f01974d7127173ddbbc6619"
+  },
+  {
+   "tick": 400,
+   "hash": "e130e35410b501209c2e236614c90a939a72bb41d43c1b7aada877e97e28130b"
+  },
+  {
+   "tick": 500,
+   "hash": "144b47d946a84b726d07810ac1bc2fa2dc299597c003e68f825a12bf1c6585b1"
+  },
+  {
+   "tick": 600,
+   "hash": "9941ae806f3ac7e06feb64f6ea274f4ee55f280c43404827d991cd58029d398f"
+  },
+  {
+   "tick": 700,
+   "hash": "d0d49ebaadf9c9526fc5a2cacec6822af0e292bdbf8810bca3a03f91f1f13762"
+  },
+  {
+   "tick": 800,
+   "hash": "3c14f6b44dca75fa4b562af83824d6ca07652eb8aab3db0a960e3a9b413b7ab3"
+  },
+  {
+   "tick": 900,
+   "hash": "db9154ffed6e5b0c4fa50f28d478ea38a4e1817c345ce3ccf33a0f63dbd26146"
+  },
+  {
+   "tick": 1000,
+   "hash": "44a2b527d8a613f21278884f454178814b67c2407ac66d55182dc587c7efafbb"
+  },
+  {
+   "tick": 1100,
+   "hash": "1f08443acd7e9e65bb5661d430315ed1ed840e9733561b3949535a7bb06495f3"
+  },
+  {
+   "tick": 1200,
+   "hash": "d474977cc4ec955ff298c3d64d4a36f63b9c700bc46c2e74ea8d977514983ba4"
+  },
+  {
+   "tick": 1300,
+   "hash": "0b455e7fa73dc180f388adb5170440498d5c94a0400a08fb59ecb3210c92fdc3"
+  },
+  {
+   "tick": 1400,
+   "hash": "37d3d70da1f7316d3fc30d247ebea772c6949e63d6f885fde58db11c5f9d60e0"
+  }
+ ],
+ "crossings": [
+  {
+   "tick": 51,
+   "agentId": "a44",
+   "from": "wormwood:mildew_n2",
+   "to": "wormwood:mildew_n3",
+   "portalId": "sidewalk:mildew_n2-n3"
+  },
+  {
+   "tick": 57,
+   "agentId": "a45",
+   "from": "wormwood:mildew_n2",
+   "to": "street:mildew:2",
+   "portalId": "crosswalk:mildew_n2"
+  },
+  {
+   "tick": 103,
+   "agentId": "a45",
+   "from": "street:mildew:2",
+   "to": "wormwood:mildew_n2",
+   "portalId": "crosswalk:mildew_n2"
+  },
+  {
+   "tick": 104,
+   "agentId": "a44",
+   "from": "wormwood:mildew_n3",
+   "to": "street:mildew:3",
+   "portalId": "crosswalk:mildew_n3"
+  },
+  {
+   "tick": 152,
+   "agentId": "a44",
+   "from": "street:mildew:3",
+   "to": "street:mildew:4",
+   "portalId": "crosswalk:street_mildew_3-4"
+  },
+  {
+   "tick": 245,
+   "agentId": "a44",
+   "from": "street:mildew:4",
+   "to": "street:mildew:5",
+   "portalId": "crosswalk:street_mildew_4-5"
+  },
+  {
+   "tick": 281,
+   "agentId": "a44",
+   "from": "street:mildew:5",
+   "to": "graveyard:old_graveyard",
+   "portalId": "gate:old_graveyard"
+  },
+  {
+   "tick": 340,
+   "agentId": "a44",
+   "from": "graveyard:old_graveyard",
+   "to": "street:mildew:5",
+   "portalId": "gate:old_graveyard"
+  },
+  {
+   "tick": 376,
+   "agentId": "a44",
+   "from": "street:mildew:5",
+   "to": "street:mildew:4",
+   "portalId": "crosswalk:street_mildew_4-5"
+  },
+  {
+   "tick": 468,
+   "agentId": "a44",
+   "from": "street:mildew:4",
+   "to": "street:mildew:3",
+   "portalId": "crosswalk:street_mildew_3-4"
+  },
+  {
+   "tick": 517,
+   "agentId": "a44",
+   "from": "street:mildew:3",
+   "to": "wormwood:mildew_n3",
+   "portalId": "crosswalk:mildew_n3"
+  },
+  {
+   "tick": 562,
+   "agentId": "a44",
+   "from": "wormwood:mildew_n3",
+   "to": "wormwood:mildew_n2",
+   "portalId": "sidewalk:mildew_n2-n3"
+  }
+ ]
+}

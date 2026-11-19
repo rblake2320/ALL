@@ -1,0 +1,17 @@
+{
+  "scene": {
+    "repo": "ccore/Qwen3.5-4B-3D-Coder",
+    "revision": "4b9f05f3a0382725b679c5e32a338b88acaf0064",
+    "directory": "model-4b9f05f",
+    "license": "apache-2.0"
+  },
+  "glb": {
+    "repo": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "revision": "8f32a199f8b22fe3157b9c5c8b42b052a0750dd3",
+    "directory": "model-8f32a199",
+    "license": "apache-2.0",
+    "training_dataset": "ccore/ThreeJS-3D-GLB-Assets",
+    "dataset_revision": "68384ca0ee7e1c2a9dacc16d6d1e427bd57f96b9",
+    "dataset_license": "mit"
+  }
+}

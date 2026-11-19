@@ -1,0 +1,61 @@
+{
+  "$schema": "../node_modules/app-builder-lib/scheme.json",
+  "appId": "com.afterlifelease.game",
+  "productName": "Afterlife Lease",
+  "copyright": "Copyright (c) 2026 Afterlife Lease Developers",
+  "directories": {
+    "output": "release/${version}",
+    "buildResources": "electron/build"
+  },
+  "files": [
+    "!**/*",
+    "dist/**/*",
+    "!dist/**/*.map",
+    "electron/dist/**/*",
+    "package.json"
+  ],
+  "extraMetadata": {
+    "main": "electron/dist/main.js"
+  },
+  "asar": true,
+  "npmRebuild": false,
+  "nodeGypRebuild": false,
+  "buildDependenciesFromSource": false,
+  "electronFuses": {
+    "runAsNode": false,
+    "enableEmbeddedAsarIntegrityValidation": true,
+    "enableCookieEncryption": true,
+    "enableNodeOptionsEnvironmentVariable": false,
+    "enableNodeCliInspectArguments": false,
+    "onlyLoadAppFromAsar": true,
+    "grantFileProtocolExtraPrivileges": false
+  },
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "AfterlifeLease-Setup-${version}-${arch}.${ext}",
+    "icon": "electron/build/icon.ico",
+    "requestedExecutionLevel": "asInvoker",
+    "legalTrademarks": "Afterlife Lease"
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowElevation": false,
+    "allowToChangeInstallationDirectory": true,
+    "installerIcon": "electron/build/icon.ico",
+    "uninstallerIcon": "electron/build/icon.ico",
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Afterlife Lease",
+    "uninstallDisplayName": "Afterlife Lease",
+    "deleteAppDataOnUninstall": false,
+    "runAfterFinish": true,
+    "artifactName": "AfterlifeLease-Setup-${version}-${arch}.${ext}"
+  },
+  "publish": null
+}

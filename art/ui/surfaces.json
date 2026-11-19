@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "ads": [
+    {
+      "id": "tv-grave-cola",
+      "file": "../brands/ads/tv-grave-cola.svg",
+      "width": 1280,
+      "height": 720,
+      "alt": "Grave-Cola television advertisement"
+    },
+    {
+      "id": "billboard-mulch-master",
+      "file": "../brands/ads/billboard-mulch-master.svg",
+      "width": 1536,
+      "height": 640,
+      "alt": "Mulch Master billboard"
+    },
+    {
+      "id": "magazine-brain-bran",
+      "file": "../brands/ads/magazine-brain-bran.svg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Brain Bran magazine advertisement"
+    },
+    {
+      "id": "bus-stop-crypt-kicks",
+      "file": "../brands/ads/bus-stop-crypt-kicks.svg",
+      "width": 900,
+      "height": 1400,
+      "alt": "Crypt-Kicks bus stop advertisement"
+    }
+  ],
+  "news": [
+    {
+      "id": "daily-grave-masthead",
+      "file": "daily-grave/masthead.svg",
+      "width": 1600,
+      "height": 400
+    },
+    {
+      "id": "daily-grave-edition-template",
+      "file": "daily-grave/edition-template.svg",
+      "width": 1200,
+      "height": 1600
+    }
+  ]
+}

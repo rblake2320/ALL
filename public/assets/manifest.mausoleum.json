@@ -1,0 +1,1390 @@
+{
+ "version": 1,
+ "models": [
+  {
+   "id": "armoire_gilded",
+   "level": "mausoleum",
+   "object": "armoire_gilded",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/armoire_gilded.glb",
+   "bytes": 23760,
+   "sha256": "c8bb907963cf2fd03bb4ba7b363a0fff9babbeb4192cb18cdf006bee1d8149ab",
+   "triangles": 620,
+   "size": [
+    0.93,
+    2.1,
+    0.855
+   ],
+   "bounds": {
+    "min": [
+     -0.465,
+     0.0,
+     -0.4
+    ],
+    "max": [
+     0.465,
+     2.1,
+     0.455
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Chrome",
+    "MhGilt",
+    "Paint"
+   ],
+   "budget": 2000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "door"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "bookshelf_grand",
+   "level": "mausoleum",
+   "object": "bookshelf_grand",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/bookshelf_grand.glb",
+   "bytes": 88928,
+   "sha256": "ee7610512cf82a59100a4f36d448799dd6e0d73508c19edc20d28ac85c893ee3",
+   "triangles": 1940,
+   "size": [
+    1.99,
+    2.5,
+    0.818
+   ],
+   "bounds": {
+    "min": [
+     -0.995,
+     0.0,
+     -0.43
+    ],
+    "max": [
+     0.995,
+     2.5,
+     0.388
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhGilt",
+    "MhInk",
+    "MhPlum",
+    "MhWalnut",
+    "RubberGreen",
+    "WoodDark"
+   ],
+   "budget": 3200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "case_curio",
+   "level": "mausoleum",
+   "object": "case_curio",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/case_curio.glb",
+   "bytes": 22244,
+   "sha256": "57c17d6d85e7b49254d708d81d90fd5692c8e711baae16eb19c52695f2eec0eb",
+   "triangles": 492,
+   "size": [
+    1.87,
+    1.55,
+    0.849
+   ],
+   "bounds": {
+    "min": [
+     -0.935,
+     0.0,
+     -0.415
+    ],
+    "max": [
+     0.935,
+     1.55,
+     0.434
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Glass",
+    "MhGilt",
+    "MhMarble",
+    "MhWalnut"
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "Glass",
+    "display_0",
+    "display_1",
+    "display_2",
+    "display_3"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "gallery"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "chandelier_candle",
+   "level": "mausoleum",
+   "object": "chandelier_candle",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/chandelier_candle.glb",
+   "bytes": 44280,
+   "sha256": "10b28aed6938d8ce5d27fdc26a1b8b480c4e31a253a8aec88a5cd85d8b467c48",
+   "triangles": 1280,
+   "size": [
+    0.7051,
+    2.255,
+    0.7368
+   ],
+   "bounds": {
+    "min": [
+     -0.3201,
+     0.0,
+     -0.3684
+    ],
+    "max": [
+     0.385,
+     2.255,
+     0.3684
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Glass",
+    "MhFlame",
+    "Paint",
+    "Wax"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "store"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "clock_grandfather",
+   "level": "mausoleum",
+   "object": "clock_grandfather",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/clock_grandfather.glb",
+   "bytes": 40232,
+   "sha256": "c47b9c39511c715efe7dec452556b3719f13991fbc76ebe5feba371f212d8cfa",
+   "triangles": 1348,
+   "size": [
+    0.6506,
+    2.1,
+    0.486
+   ],
+   "bounds": {
+    "min": [
+     -0.3253,
+     0.0,
+     -0.23
+    ],
+    "max": [
+     0.3253,
+     2.1,
+     0.256
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhGilt",
+    "MhInk",
+    "Paint",
+    "Paper"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "pendulum"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "store"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "counter_museum",
+   "level": "mausoleum",
+   "object": "counter_museum",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/counter_museum.glb",
+   "bytes": 28748,
+   "sha256": "964d83aa21de4b77bddee39a1f1e1956849271ae63c80ec598794dfafab31c80",
+   "triangles": 820,
+   "size": [
+    2.94,
+    1.199,
+    0.9
+   ],
+   "bounds": {
+    "min": [
+     -1.47,
+     0.0,
+     -0.45
+    ],
+    "max": [
+     1.47,
+     1.199,
+     0.45
+    ]
+   },
+   "materials": [
+    "MhGilt",
+    "MhInk",
+    "MhWalnut",
+    "Paper"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "gallery"
+   ],
+   "tileFootprint": [
+    3,
+    1
+   ]
+  },
+  {
+   "id": "dais_viewing",
+   "level": "mausoleum",
+   "object": "dais_viewing",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/dais_viewing.glb",
+   "bytes": 46608,
+   "sha256": "76ffb1ad810918333852a28d7a701d7e159847135df5fe8bcea8ab3742767e04",
+   "triangles": 1336,
+   "size": [
+    2.7813,
+    0.9987,
+    1.7225
+   ],
+   "bounds": {
+    "min": [
+     -1.3763,
+     0.0,
+     -0.85
+    ],
+    "max": [
+     1.405,
+     0.9987,
+     0.8725
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhGilt",
+    "MhWalnut",
+    "Paint",
+    "Paper",
+    "RubberGreen"
+   ],
+   "budget": 2400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "gallery"
+   ],
+   "tileFootprint": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "env_mansion_a",
+   "level": "mausoleum",
+   "object": "env_mansion_a",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/mausoleum/env_mansion_a.glb",
+   "bytes": 200708,
+   "sha256": "afccb16dcf0574f4ab07295368f1793363902383ee66b8e1e84bdc10a55f7da6",
+   "triangles": 5686,
+   "size": [
+    9.68,
+    8.0,
+    7.04
+   ],
+   "bounds": {
+    "min": [
+     -4.84,
+     0.0,
+     -3.34
+    ],
+    "max": [
+     4.84,
+     8.0,
+     3.7
+    ]
+   },
+   "materials": [
+    "Iron",
+    "MhInk",
+    "MhMarble",
+    "MhRoof",
+    "MhVein",
+    "MhWalnut",
+    "MhWindow"
+   ],
+   "budget": 6000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "architecture"
+   ],
+   "tileFootprint": [
+    10,
+    7
+   ]
+  },
+  {
+   "id": "env_mansion_b",
+   "level": "mausoleum",
+   "object": "env_mansion_b",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/mausoleum/env_mansion_b.glb",
+   "bytes": 129304,
+   "sha256": "28a74317304343edbec670b1e011b8ad1e1296722c63a66aca112f16222cb20a",
+   "triangles": 3952,
+   "size": [
+    10.3,
+    8.98,
+    7.9
+   ],
+   "bounds": {
+    "min": [
+     -5.15,
+     0.0,
+     -3.95
+    ],
+    "max": [
+     5.15,
+     8.98,
+     3.95
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhInk",
+    "MhMarble",
+    "MhRoof",
+    "MhVein",
+    "MhWalnut",
+    "MhWindow"
+   ],
+   "budget": 6000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "architecture"
+   ],
+   "tileFootprint": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "env_topiary",
+   "level": "mausoleum",
+   "object": "env_topiary",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/mausoleum/env_topiary.glb",
+   "bytes": 8064,
+   "sha256": "6e3011fe774762327d62cbc1742b6092b04b893d7dd1478fdc6080b53cc599af",
+   "triangles": 164,
+   "size": [
+    0.68,
+    1.995,
+    0.6468
+   ],
+   "bounds": {
+    "min": [
+     -0.34,
+     0.0,
+     -0.3234
+    ],
+    "max": [
+     0.34,
+     1.995,
+     0.3234
+    ]
+   },
+   "materials": [
+    "MhLawn",
+    "MhMarble",
+    "MhWalnut"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "grounds"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "fireplace_grand",
+   "level": "mausoleum",
+   "object": "fireplace_grand",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/fireplace_grand.glb",
+   "bytes": 37304,
+   "sha256": "4b716bec2823e7975a535b4b1654f092cf640b050715e620ecb9eefa9ae3ad15",
+   "triangles": 932,
+   "size": [
+    1.93,
+    1.68,
+    0.88
+   ],
+   "bounds": {
+    "min": [
+     -0.965,
+     0.0,
+     -0.44
+    ],
+    "max": [
+     0.965,
+     1.68,
+     0.44
+    ]
+   },
+   "materials": [
+    "Iron",
+    "MhFlame",
+    "MhGilt",
+    "MhInk",
+    "MhMarble",
+    "MhVein",
+    "Paper",
+    "WoodDark"
+   ],
+   "budget": 3500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "gramophone_brass",
+   "level": "mausoleum",
+   "object": "gramophone_brass",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/gramophone_brass.glb",
+   "bytes": 21604,
+   "sha256": "c9ccb5f35922fe5df6eca184643ca72503d081373433a2f8af0f71bbe4e58d22",
+   "triangles": 500,
+   "size": [
+    0.8304,
+    1.2155,
+    0.7255
+   ],
+   "bounds": {
+    "min": [
+     -0.36,
+     0.0,
+     -0.32
+    ],
+    "max": [
+     0.4704,
+     1.2155,
+     0.4055
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Chrome",
+    "MhGilt",
+    "MhInk",
+    "MhWalnut"
+   ],
+   "budget": 1600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "record",
+    "speaker"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "green_putting",
+   "level": "mausoleum",
+   "object": "green_putting",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/green_putting.glb",
+   "bytes": 22260,
+   "sha256": "d451d4bbc6ac283edd579ed7a4e625d77d4ce9c0ed670bcf60b703f8176a9dd2",
+   "triangles": 808,
+   "size": [
+    5.95,
+    1.25,
+    4.95
+   ],
+   "bounds": {
+    "min": [
+     -2.975,
+     0.0,
+     -2.475
+    ],
+    "max": [
+     2.975,
+     1.25,
+     2.475
+    ]
+   },
+   "materials": [
+    "MhInk",
+    "MhLawn",
+    "MhPlum",
+    "Paper"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flag"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "grounds"
+   ],
+   "tileFootprint": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "lawn_croquet",
+   "level": "mausoleum",
+   "object": "lawn_croquet",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/lawn_croquet.glb",
+   "bytes": 42748,
+   "sha256": "0533f3946722ce76a27e0b8fb7f93d9a5c4f533fae6e57981e5e9d4e591a4ad0",
+   "triangles": 868,
+   "size": [
+    7.98,
+    0.63,
+    5.955
+   ],
+   "bounds": {
+    "min": [
+     -3.99,
+     0.0,
+     -2.9775
+    ],
+    "max": [
+     3.99,
+     0.63,
+     2.9775
+    ]
+   },
+   "materials": [
+    "MhGilt",
+    "MhInk",
+    "MhLawn",
+    "MhLawnLight",
+    "MhMarble",
+    "MhPlum",
+    "MhWalnut",
+    "Paper",
+    "WoodLight"
+   ],
+   "budget": 2000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "grounds"
+   ],
+   "tileFootprint": [
+    8,
+    6
+   ]
+  },
+  {
+   "id": "organ_pipe",
+   "level": "mausoleum",
+   "object": "organ_pipe",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/organ_pipe.glb",
+   "bytes": 85072,
+   "sha256": "e0cfea636ad63665091c0adb4dbc1481111b75dd9433fbb4b3d08b01d8bf1547",
+   "triangles": 1892,
+   "size": [
+    2.85,
+    2.5929,
+    0.895
+   ],
+   "bounds": {
+    "min": [
+     -1.425,
+     0.0,
+     -0.44
+    ],
+    "max": [
+     1.425,
+     2.5929,
+     0.455
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhFlame",
+    "MhGilt",
+    "MhInk",
+    "MhWalnut",
+    "Paint",
+    "Steel",
+    "Teeth",
+    "Wax"
+   ],
+   "budget": 5800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame",
+    "speaker"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    3,
+    1
+   ]
+  },
+  {
+   "id": "platter_catered",
+   "level": "mausoleum",
+   "object": "platter_catered",
+   "variant": null,
+   "kind": "item",
+   "file": "models/levels/mausoleum/platter_catered.glb",
+   "bytes": 27712,
+   "sha256": "0255d048be472b9172c8697ea7f86e775f4d078fe47e9b211676346801730b52",
+   "triangles": 576,
+   "size": [
+    0.58,
+    0.104,
+    0.4
+   ],
+   "bounds": {
+    "min": [
+     -0.29,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.29,
+     0.104,
+     0.2
+    ]
+   },
+   "materials": [
+    "Brain",
+    "BrainDark",
+    "Chrome",
+    "Paper"
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "items"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "pool_reflecting",
+   "level": "mausoleum",
+   "object": "pool_reflecting",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/pool_reflecting.glb",
+   "bytes": 22076,
+   "sha256": "14562df9613ca794cab675912879cf05758e78d633d789d1ffae3866da2fb440",
+   "triangles": 640,
+   "size": [
+    3.93,
+    0.28,
+    1.93
+   ],
+   "bounds": {
+    "min": [
+     -1.965,
+     0.0,
+     -0.965
+    ],
+    "max": [
+     1.965,
+     0.28,
+     0.965
+    ]
+   },
+   "materials": [
+    "MhInk",
+    "MhMarble",
+    "MhWater",
+    "Paper",
+    "RubberGreen"
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "water"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "grounds"
+   ],
+   "tileFootprint": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "portrait_largeOval",
+   "level": "mausoleum",
+   "object": "portrait_largeOval",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/mausoleum/portrait_largeOval.glb",
+   "bytes": 20716,
+   "sha256": "73958915381f40ac9f618f20b59c060b208d3629da774f9d3cae7a55f5af2928",
+   "triangles": 664,
+   "size": [
+    0.749,
+    1.07,
+    0.0734
+   ],
+   "bounds": {
+    "min": [
+     -0.3745,
+     0.965,
+     0.0106
+    ],
+    "max": [
+     0.3745,
+     2.035,
+     0.084
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhGilt",
+    "MhInk",
+    "MhMarble",
+    "MhPlum"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": 1.5,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "store"
+   ],
+   "tileFootprint": [
+    1,
+    0.1
+   ]
+  },
+  {
+   "id": "roof_mansard",
+   "level": "mausoleum",
+   "object": "roof_mansard",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/mausoleum/roof_mansard.glb",
+   "bytes": 78160,
+   "sha256": "26069e43be428197bc8628433de33dfc339437ade42bdacda82ef8ef9241e4dd",
+   "triangles": 1708,
+   "size": [
+    11.88,
+    3.7,
+    7.88
+   ],
+   "bounds": {
+    "min": [
+     -5.94,
+     0.0,
+     -3.94
+    ],
+    "max": [
+     5.94,
+     3.7,
+     3.94
+    ]
+   },
+   "materials": [
+    "Iron",
+    "MhMarble",
+    "MhRoof",
+    "MhWindow"
+   ],
+   "budget": 6000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "cresting",
+    "dormers",
+    "tower_cap"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "architecture"
+   ],
+   "tileFootprint": [
+    12,
+    8
+   ]
+  },
+  {
+   "id": "rug_gilded",
+   "level": "mausoleum",
+   "object": "rug_gilded",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/rug_gilded.glb",
+   "bytes": 14620,
+   "sha256": "4e43342d3e36c7c670002d13f780b0b87b8922db16c4fa58c8678fa0c1d6c5d2",
+   "triangles": 264,
+   "size": [
+    1.95,
+    0.022,
+    3.02
+   ],
+   "bounds": {
+    "min": [
+     -0.975,
+     0.0,
+     -1.51
+    ],
+    "max": [
+     0.975,
+     0.022,
+     1.51
+    ]
+   },
+   "materials": [
+    "MhGilt",
+    "Paint"
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "store"
+   ],
+   "tileFootprint": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "skeleton_display",
+   "level": "mausoleum",
+   "object": "skeleton_display",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/skeleton_display.glb",
+   "bytes": 120080,
+   "sha256": "6aa6fc478b2bd7a76d96b6be0aecda7cdf6a3c0811b50180b46a9cf895dbf47f",
+   "triangles": 4626,
+   "size": [
+    3.85,
+    2.7756,
+    2.55
+   ],
+   "bounds": {
+    "min": [
+     -1.925,
+     0.0,
+     -1.275
+    ],
+    "max": [
+     1.925,
+     2.7756,
+     1.275
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron",
+    "MhGilt",
+    "MhInk",
+    "MhMarble"
+   ],
+   "budget": 6000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "head"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "gallery"
+   ],
+   "tileFootprint": [
+    4,
+    3
+   ]
+  },
+  {
+   "id": "statue_marble",
+   "level": "mausoleum",
+   "object": "statue_marble",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/statue_marble.glb",
+   "bytes": 37524,
+   "sha256": "fa7e60a87af128be6cfdb986728c970dd10ac42df6901162cfe870880b50828b",
+   "triangles": 1279,
+   "size": [
+    0.83,
+    1.74,
+    0.8285
+   ],
+   "bounds": {
+    "min": [
+     -0.415,
+     0.0,
+     -0.36
+    ],
+    "max": [
+     0.415,
+     1.74,
+     0.4685
+    ]
+   },
+   "materials": [
+    "MhGilt",
+    "MhInk",
+    "MhMarble",
+    "MhVein"
+   ],
+   "budget": 2800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "gallery"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "table_banquet",
+   "level": "mausoleum",
+   "object": "table_banquet",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/table_banquet.glb",
+   "bytes": 36764,
+   "sha256": "e47a44dee781429697a38f80af1028743071f221b326c8e28806dde00fc8135e",
+   "triangles": 888,
+   "size": [
+    3.86,
+    1.425,
+    1.8
+   ],
+   "bounds": {
+    "min": [
+     -1.93,
+     0.0,
+     -0.9
+    ],
+    "max": [
+     1.93,
+     1.425,
+     0.9
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhFlame",
+    "MhGilt",
+    "MhWalnut",
+    "Wax"
+   ],
+   "budget": 3800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "flame"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "table_billiards",
+   "level": "mausoleum",
+   "object": "table_billiards",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/table_billiards.glb",
+   "bytes": 63532,
+   "sha256": "c83846ca1c19877d3d3622ca3f033827eabce4d334dd3eca362f0e12b13c1473",
+   "triangles": 2104,
+   "size": [
+    2.92,
+    0.999,
+    1.88
+   ],
+   "bounds": {
+    "min": [
+     -1.46,
+     0.0,
+     -0.94
+    ],
+    "max": [
+     1.46,
+     0.999,
+     0.94
+    ]
+   },
+   "materials": [
+    "MhGilt",
+    "MhInk",
+    "MhMarble",
+    "MhWalnut",
+    "Paint",
+    "WoodLight"
+   ],
+   "budget": 3600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "table_tea",
+   "level": "mausoleum",
+   "object": "table_tea",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/table_tea.glb",
+   "bytes": 38452,
+   "sha256": "20128590663d3f92a8c60c6e04ff134146c6eb5765daf7b2011c94789b98b15a",
+   "triangles": 980,
+   "size": [
+    0.93,
+    1.128,
+    0.93
+   ],
+   "bounds": {
+    "min": [
+     -0.465,
+     0.0,
+     -0.465
+    ],
+    "max": [
+     0.465,
+     1.128,
+     0.465
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhPlum",
+    "MhWalnut",
+    "Paper",
+    "Porcelain"
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "telescope_brass",
+   "level": "mausoleum",
+   "object": "telescope_brass",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/telescope_brass.glb",
+   "bytes": 22996,
+   "sha256": "60e7a4c56abeef98eda79cb6970626a7650d370df590068f4effa25269dabf22",
+   "triangles": 600,
+   "size": [
+    0.8487,
+    1.65,
+    0.69
+   ],
+   "bounds": {
+    "min": [
+     -0.4547,
+     0.0,
+     -0.245
+    ],
+    "max": [
+     0.394,
+     1.65,
+     0.445
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Glass",
+    "MhInk",
+    "MhWalnut",
+    "Paper"
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "interiors"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "vase_urnGilded",
+   "level": "mausoleum",
+   "object": "vase_urnGilded",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/vase_urnGilded.glb",
+   "bytes": 24496,
+   "sha256": "0b2190f13dc69c2124e4f5e5c73ab4c43e03b8e9f67be79f4c5a9a3cd9e00aac",
+   "triangles": 792,
+   "size": [
+    0.7292,
+    0.75,
+    0.52
+   ],
+   "bounds": {
+    "min": [
+     -0.3646,
+     0.0,
+     -0.26
+    ],
+    "max": [
+     0.3646,
+     0.75,
+     0.26
+    ]
+   },
+   "materials": [
+    "MhGilt",
+    "MhInk",
+    "Paint"
+   ],
+   "budget": 1000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "store"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "wall_painting_frame",
+   "level": "mausoleum",
+   "object": "wall_painting_frame",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/mausoleum/wall_painting_frame.glb",
+   "bytes": 22176,
+   "sha256": "430c632266265941be75bb38e7fa04104aef429ff195ab297c7505ff14f07346",
+   "triangles": 508,
+   "size": [
+    0.805,
+    1.805,
+    0.67
+   ],
+   "bounds": {
+    "min": [
+     -0.4025,
+     0.0,
+     -0.335
+    ],
+    "max": [
+     0.4025,
+     1.805,
+     0.335
+    ]
+   },
+   "materials": [
+    "Brass",
+    "MhGilt",
+    "MhInk",
+    "MhMarble",
+    "MhPlum",
+    "MhWalnut"
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "canvas"
+   ],
+   "states": [],
+   "tags": [
+    "mausoleum",
+    "gallery"
+   ],
+   "tileFootprint": [
+    1,
+    1
+   ]
+  }
+ ]
+}

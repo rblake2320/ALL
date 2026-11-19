@@ -1,0 +1,550 @@
+/*
+ * Overlay component styles: Tooltip (+ anchor/arrow placement), Modal (+ tab bar), ConfirmDialog, Toast, tables.
+ * Rendered mostly inside portal layers (.ui-portal), see src/ui/common/Portal.tsx.
+ */
+
+/* ═════════════════════════════ Tooltip ═════════════════════════════ */
+.ui-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 18rem;
+  padding: 0.4375rem 0.625rem;
+  border-radius: var(--r-sm);
+  background: var(--bg-tooltip);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+  pointer-events: none;
+  animation: ui-tooltip-in var(--dur-fast) var(--ease-out) both;
+  will-change: transform, opacity;
+}
+.ui-tooltip[data-placement='bottom'] {
+  --tip-dy: -0.25rem;
+}
+.ui-tooltip[data-placement='top'] {
+  --tip-dy: 0.25rem;
+}
+.ui-tooltip[data-placement='left'] {
+  --tip-dx: 0.25rem;
+}
+.ui-tooltip[data-placement='right'] {
+  --tip-dx: -0.25rem;
+}
+@keyframes ui-tooltip-in {
+  from {
+    opacity: 0;
+    translate: var(--tip-dx, 0) var(--tip-dy, 0);
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.ui-tooltip__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+.ui-tooltip__title {
+  font-weight: var(--fw-semibold);
+  color: var(--text-strong);
+}
+.ui-tooltip__body {
+  margin-top: 0.125rem;
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+.ui-tooltip__arrow {
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--bg-tooltip);
+  border: 1px solid var(--border-subtle);
+  transform: rotate(45deg);
+}
+.ui-tooltip[data-placement='top'] .ui-tooltip__arrow {
+  bottom: -0.28rem;
+  border-top: 0;
+  border-left: 0;
+}
+.ui-tooltip[data-placement='bottom'] .ui-tooltip__arrow {
+  top: -0.28rem;
+  border-bottom: 0;
+  border-right: 0;
+}
+.ui-tooltip[data-placement='left'] .ui-tooltip__arrow {
+  right: -0.28rem;
+  border-bottom: 0;
+  border-left: 0;
+}
+.ui-tooltip[data-placement='right'] .ui-tooltip__arrow {
+  left: -0.28rem;
+  border-top: 0;
+  border-right: 0;
+}
+
+/* ═════════════════════════════ Modal ═════════════════════════════ */
+.ui-modal-layer {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  /* one track the size of the layer (W-118): with auto tracks a wide dialog grew its track past a 320 px viewport
+     (Sol: Settings 549.74 px wide at 400 % zoom); now width: min(--modal-w, 100%) resolves
+     against the viewport. Identical wherever the dialog already fitted. */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  place-items: center;
+  --ui-modal-pad: var(--sp-6);
+  padding: var(--ui-modal-pad);
+  pointer-events: auto;
+}
+.ui-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 95% at 50% 42%, rgba(14, 9, 20, 0.42), rgba(7, 4, 11, 0.8));
+  backdrop-filter: blur(3px) saturate(0.85);
+  -webkit-backdrop-filter: blur(3px) saturate(0.85);
+  animation: ui-fade-in var(--dur-slow) var(--ease-out) both;
+}
+html.ui-low-fx .ui-modal-backdrop {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.ui-modal-backdrop--none {
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.ui-modal {
+  --modal-w: 38rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(var(--modal-w), 100%);
+  /*
+   * The height cap is in viewport units, never a percentage (W-118, Sol's native Chrome 400 % retest: a percentage
+   * max-height inside a centred grid falls back to the content height wherever the track is not definite, and a
+   * 316×232 CSS viewport then had Close at y = 254.81, off screen). 100dvh minus the layer's own padding always fits
+   * the visible viewport — dynamic units follow a phone's collapsing browser bars; the vh line is the fallback for
+   * engines without dvh. On every desktop window 88vh is the smaller term, so desktop dialogs are unchanged. The body
+   * scrolls inside (.ui-modal__body below), not the page.
+   */
+  max-height: min(88vh, calc(100vh - 2 * var(--ui-modal-pad, 0px)));
+  max-height: min(88dvh, calc(100dvh - 2 * var(--ui-modal-pad, 0px)));
+  border-radius: var(--r-xl);
+  background:
+    radial-gradient(140% 70% at 50% -10%, rgba(102, 85, 126, 0.28), transparent 60%),
+    linear-gradient(180deg, rgba(36, 28, 47, 0.97), rgba(24, 19, 32, 0.97));
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg), var(--shadow-inset-hi), var(--shadow-inset-frame);
+  animation: ui-rise-in var(--dur-slow) var(--ease-out) both;
+  outline: none;
+}
+.ui-modal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: var(--tex-grain);
+  opacity: 0.04;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+.ui-modal--sm {
+  --modal-w: 27rem;
+}
+.ui-modal--md {
+  --modal-w: 38rem;
+}
+.ui-modal--lg {
+  --modal-w: 54rem;
+}
+.ui-modal--xl {
+  --modal-w: 66rem;
+}
+.ui-modal--tall {
+  height: min(46rem, 88vh);
+  height: min(46rem, 88dvh);
+}
+.ui-modal__header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  padding: var(--sp-5) var(--sp-5) var(--sp-4) var(--sp-6);
+}
+.ui-modal__header--rule {
+  border-bottom: 1px solid var(--border-faint);
+}
+.ui-modal__heading {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.ui-modal__eyebrow {
+  margin-bottom: 0.25rem;
+}
+.ui-modal__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-tight);
+  color: var(--text-strong);
+  text-wrap: balance;
+}
+.ui-modal__subtitle {
+  margin-top: 0.3125rem;
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  text-wrap: pretty;
+}
+.ui-modal__close {
+  margin: -0.375rem -0.375rem 0 0;
+}
+.ui-modal__body {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  min-height: 0;
+  /* W-118: the body is the dialog's scroller (header and footer stay put); dialogs with their own ScrollArea never
+     overflow it */
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-2) var(--sp-6) var(--sp-5);
+}
+.ui-modal__body--flush {
+  padding: 0;
+}
+.ui-modal__footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-6) var(--sp-5);
+  border-top: 1px solid var(--border-faint);
+  background: linear-gradient(180deg, rgba(9, 6, 13, 0.18), rgba(9, 6, 13, 0.32));
+  border-radius: 0 0 var(--r-xl) var(--r-xl);
+}
+.ui-modal__footer-spacer {
+  flex: 1 1 auto;
+}
+/* Footer actions never truncate their labels: they wrap onto a second row instead (narrow dialogs, long copy,
+   large UI scale). */
+.ui-modal__footer {
+  flex-wrap: wrap;
+  row-gap: var(--sp-2);
+}
+.ui-modal__footer > .ui-btn {
+  flex-shrink: 0;
+}
+
+/* ConfirmDialog */
+.ui-confirm__icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  color: var(--text-warm);
+  background: radial-gradient(circle, rgba(255, 179, 90, 0.2), rgba(255, 179, 90, 0.05) 70%);
+  border: 1px solid rgba(255, 179, 90, 0.35);
+}
+.ui-confirm__icon--danger {
+  color: var(--c-rose);
+  background: radial-gradient(circle, rgba(226, 86, 106, 0.22), rgba(226, 86, 106, 0.05) 70%);
+  border-color: rgba(255, 143, 122, 0.4);
+}
+.ui-confirm__text {
+  color: var(--text-muted);
+  text-wrap: pretty;
+}
+
+/* ═════════════════════════════ Toast ═════════════════════════════ */
+.ui-toast {
+  --toast-accent: var(--c-parchment);
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: start;
+  width: 22rem;
+  max-width: 100%;
+  padding: 0.75rem 0.625rem 0.8125rem 0.875rem;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(38, 30, 49, 0.95), rgba(26, 20, 34, 0.95));
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg), var(--shadow-inset-hi);
+  backdrop-filter: var(--blur-panel);
+  -webkit-backdrop-filter: var(--blur-panel);
+  animation: ui-slide-in-right var(--dur-slow) var(--ease-out) both;
+  color: var(--text);
+}
+.ui-toast::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.625rem;
+  bottom: 0.625rem;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--toast-accent);
+  box-shadow: 0 0 0.75rem var(--toast-accent);
+}
+.ui-toast[data-kind='good'],
+.ui-toast[data-kind='skill'] {
+  --toast-accent: var(--c-need-high);
+}
+.ui-toast[data-kind='bad'],
+.ui-toast[data-kind='decay'] {
+  --toast-accent: #e2566a;
+}
+.ui-toast[data-kind='warning'] {
+  --toast-accent: var(--c-need-low);
+}
+.ui-toast[data-kind='money'] {
+  --toast-accent: var(--c-candle);
+}
+.ui-toast[data-kind='career'] {
+  --toast-accent: var(--c-cryo);
+}
+.ui-toast[data-kind='social'] {
+  --toast-accent: var(--c-toxic);
+}
+.ui-toast[data-kind='romance'] {
+  --toast-accent: #ff8fb1;
+}
+.ui-toast__icon {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  color: var(--toast-accent);
+  background: color-mix(in srgb, var(--toast-accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--toast-accent) 38%, transparent);
+}
+.ui-toast__body {
+  min-width: 0;
+  padding-top: 0.0625rem;
+}
+.ui-toast__title {
+  font-weight: var(--fw-semibold);
+  color: var(--text-strong);
+  line-height: var(--lh-snug);
+}
+.ui-toast__text {
+  margin-top: 0.125rem;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: var(--lh-snug);
+  text-wrap: pretty;
+}
+.ui-toast__meta {
+  margin-top: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-2xs);
+  color: var(--text-faint);
+}
+.ui-toast__actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: var(--sp-2);
+}
+.ui-toast__progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  transform-origin: left center;
+  background: var(--toast-accent);
+  opacity: 0.55;
+}
+.ui-toast--compact {
+  width: 18rem;
+  padding: 0.5rem 0.5rem 0.5625rem 0.75rem;
+}
+.ui-toast--compact .ui-toast__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* ═════════════════════════════ Tables / key-value ═════════════════════════════ */
+.ui-table {
+  width: 100%;
+  font-size: var(--fs-sm);
+}
+.ui-table th {
+  text-align: left;
+  font-size: var(--fs-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--text-warm);
+  font-weight: var(--fw-semibold);
+  padding: 0 0.75rem 0.5rem;
+}
+.ui-table td {
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--border-faint);
+  vertical-align: middle;
+}
+.ui-table tbody tr:hover td {
+  background: rgba(232, 224, 200, 0.03);
+}
+.ui-kv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.375rem 1rem;
+  font-size: var(--fs-sm);
+}
+.ui-kv dt {
+  color: var(--text-muted);
+}
+.ui-kv dd {
+  color: var(--text-strong);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ═════════════════════════════ Tooltip anchor + arrow placement ═════════════════════════════ */
+.ui-tip-anchor {
+  display: inline-flex;
+  vertical-align: middle;
+  max-width: 100%;
+}
+.ui-tip-anchor--block {
+  display: flex;
+}
+/* Disabled controls swallow no pointer events in some engines: let the anchor see the hover so the tooltip
+   (usually the reason it is disabled) still appears. */
+.ui-tip-anchor > button:disabled {
+  pointer-events: none;
+}
+.ui-tooltip[data-placement='top'] .ui-tooltip__arrow,
+.ui-tooltip[data-placement='bottom'] .ui-tooltip__arrow {
+  left: calc(var(--arrow, 50%) - 0.25rem);
+}
+.ui-tooltip[data-placement='left'] .ui-tooltip__arrow,
+.ui-tooltip[data-placement='right'] .ui-tooltip__arrow {
+  top: calc(var(--arrow, 50%) - 0.25rem);
+}
+.ui-tooltip:not([data-placement]) .ui-tooltip__arrow {
+  display: none;
+}
+.ui-portal__host {
+  display: contents;
+}
+
+/* Modal tab bar (full width under the header) */
+.ui-modal__header--tabs {
+  padding-bottom: 0.75rem;
+}
+.ui-modal__tabs {
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--sp-6);
+  border-bottom: 1px solid var(--border-faint);
+}
+.ui-modal__tabs > .ui-tabs--underline {
+  border-bottom: 0;
+  margin-left: -0.75rem;
+}
+
+/*
+ * Readable floors inside dialogs (W-064, Sol W-023 A3). Dialogs are ordinary UI, not the spatial HUD: when a small
+ * window (390 px wide at 140 % UI scale → 1rem ≈ 4.9 px) shrinks the root size, their text keeps a legible size and
+ * every control keeps a ≥ 24 × 24 px target (WCAG 2.5.8) — the body scrolls instead of the content collapsing.
+ * The floors sit at (or just under) the 1280×720 / 100 % sizes, so they change nothing at 1280×720 and above.
+ */
+.ui-modal {
+  --fs-2xs: max(0.6875rem, 9.5px);
+  --fs-xs: max(0.75rem, 10.2px);
+  --fs-sm: max(0.8125rem, 11px);
+  --fs-md: max(0.9375rem, 12.75px);
+  --fs-lg: max(1.0625rem, 14px);
+  --fs-xl: max(1.375rem, 17px);
+  --fs-2xl: max(1.75rem, 21px);
+  --ctl-h-sm: max(2rem, 26px);
+  --ctl-h-md: max(2.5rem, 32px);
+  --ctl-h-lg: max(3rem, 36px);
+}
+.ui-modal .ui-iconbtn--xs {
+  --ib-size: max(1.5rem, 24px);
+}
+.ui-modal .ui-tab {
+  min-height: 24px;
+}
+
+/*
+ * Reflow (WCAG 1.4.10, W-118). A narrow (≤ 600 CSS px) or short (≤ 500 CSS px) viewport — a phone, or a desktop window
+ * at 400 % browser zoom (1280×1024 → 320×256 CSS px, where 1rem stays 13.6 CSS px by design, theme/scale.ts) — gets
+ * one column: setting rows stack their control under the label, tab bars scroll sideways, and a short viewport
+ * scrolls the WHOLE dialog (header + body + footer) as one column instead of squeezing the body to nothing. Focused
+ * controls are scrolled into view by Modal (revealFocused). Desktop windows never match these queries.
+ */
+@media (max-width: 600px), (max-height: 500px) {
+  .ui-modal-layer {
+    --ui-modal-pad: max(var(--sp-2), 8px);
+  }
+  .ui-modal__header {
+    padding: var(--sp-4) var(--sp-4) var(--sp-3) var(--sp-4);
+  }
+  .ui-modal__tabs {
+    padding: 0 var(--sp-4);
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+  .ui-modal__tabs .ui-tab {
+    flex: 0 0 auto;
+  }
+  .ui-modal__body:not(.ui-modal__body--flush) {
+    padding: var(--sp-2) var(--sp-4) var(--sp-4);
+  }
+  .ui-modal__footer {
+    flex-wrap: wrap;
+    padding: var(--sp-3) var(--sp-4) var(--sp-4);
+  }
+  .ui-modal .ui-setting {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ui-modal .ui-setting__control {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .ui-modal .ui-setting__control--wide {
+    min-width: 0;
+  }
+  .ui-modal .ui-setting__control > * {
+    max-width: 100%;
+  }
+  .ui-modal .sh-dialog-scroll {
+    padding: var(--sp-3) var(--sp-4) var(--sp-4);
+  }
+}
+@media (max-height: 500px) {
+  .ui-modal {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .ui-modal--tall {
+    height: auto;
+  }
+  .ui-modal > *,
+  .ui-modal .ui-modal__body,
+  .ui-modal .ui-modal__body > .ui-scroll {
+    flex: 0 0 auto;
+    min-height: auto;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "cli": "0.8.3",
+  "stages": [
+    {
+      "resource": "text-to-3d",
+      "stage": "preview",
+      "task_id": "01a1adf2-ca14-76fe-9ae9-913c637cae15",
+      "status": "SUCCEEDED",
+      "consumed_credits": 5,
+      "created_at": 1793919733887,
+      "finished_at": 1793919760211
+    },
+    {
+      "resource": "text-to-3d",
+      "stage": "refine",
+      "task_id": "01a1adf4-334c-7327-8b9f-2e59dc163afa",
+      "status": "SUCCEEDED",
+      "consumed_credits": 10,
+      "created_at": 1793919827036,
+      "finished_at": 1793919856476
+    }
+  ],
+  "totalConsumedCredits": 15,
+  "geometryFaces": 1661,
+  "triangleBudget": 1800,
+  "publishedToGame": true,
+  "files": [
+    {
+      "file": "geometry.glb",
+      "bytes": 30828,
+      "sha256": "f4410f4f4b9e2a0ac6bcb99da9e49d744e134f4a269622c4511c20d5f6060e6d"
+    },
+    {
+      "file": "textured.glb",
+      "bytes": 6786832,
+      "sha256": "9661fc7222e7d81bd1a5096a5da27333ddae22f4969bbc6d59177e514efeea10"
+    },
+    {
+      "file": "geometry-preview.png",
+      "bytes": 96369,
+      "sha256": "89b707a6df7e1e0c76231ce86d7e7dce3172ac167fe3b7475f60e0d41640af14"
+    },
+    {
+      "file": "textured-preview.png",
+      "bytes": 167822,
+      "sha256": "1d774b48ed14c8f020f0a5ca811e6001611b5a5b0ac973863adee252da967a8f"
+    },
+    {
+      "file": "prompt.txt",
+      "bytes": 752,
+      "sha256": "3461d0a711497b7d68a80ed9453fd87f1a149359b8f386ca5ad84d5d9cfa059e"
+    }
+  ],
+  "gameVariant": {
+    "id": "jukebox_ghoul",
+    "level": "rotrow",
+    "object": "jukebox_ghoul",
+    "variant": null,
+    "kind": "floor",
+    "file": "models/levels/rotrow/jukebox_ghoul.glb",
+    "bytes": 83892,
+    "sha256": "34e51fd770edd621eb6807c57f25736e9e9c0750ef63f40485276f873985136e",
+    "triangles": 1781,
+    "size": [
+      0.927,
+      1.65,
+      0.5336
+    ],
+    "bounds": {
+      "min": [
+        -0.4635,
+        0.0,
+        -0.2668
+      ],
+      "max": [
+        0.4635,
+        1.65,
+        0.2668
+      ]
+    },
+    "materials": [
+      "Brass",
+      "Paint",
+      "RRInk",
+      "RRNeonTeal",
+      "RRPink"
+    ],
+    "footprint": [
+      1,
+      1
+    ],
+    "budget": 1800,
+    "front": "",
+    "wallCentre": null,
+    "parts": [
+      "glow"
+    ],
+    "states": [],
+    "tags": [
+      "noir",
+      "rotrow"
+    ]
+  }
+}

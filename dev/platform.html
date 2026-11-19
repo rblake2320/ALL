@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PLATFORM — real-browser persistence check</title>
+    <style>
+      body { background: #1d1726; color: #e8e0c8; font: 14px/1.5 system-ui, sans-serif; padding: 16px; }
+      .ok { color: #9fe870; } .bad { color: #ff7a7a; }
+    </style>
+  </head>
+  <body>
+    <h1>Persistence in a real browser</h1>
+    <p>Driven by <code>node dev/platform.e2e.cjs</code> (Playwright). Open manually and run
+      <code>await window.__platform.run('write')</code> in the console to try it by hand.</p>
+    <pre id="log"></pre>
+    <script type="module" src="./platform.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "purpose": "Two distinct real schema-v2 exports for the migration collision; synthetic households, public simulation API, seed613927, tick16, autonomyoff, invariants empty.",
+  "exports": [
+    {
+      "file": "world-v2.json",
+      "source": "f14d26d8146ea3d4a379b202799041f1f921e64d",
+      "producer": "createNewWorld/createSimulation/16 steps/serialize",
+      "expected": {
+        "town": true,
+        "jobs": false
+      },
+      "sha256": "49c20b594607a6080ce01303c55579b56121827daab40fb04a26328ead9e700b",
+      "bytes": 221903
+    },
+    {
+      "file": "jobs-v2.json",
+      "source": "7cc72af2de5977bc723e65c0693a5e493766293f",
+      "producer": "createNewWorld/createSimulation/job assign(clean,untilDone,high)/pause/16 steps/serialize",
+      "expected": {
+        "town": false,
+        "jobs": true
+      },
+      "sha256": "999536db255d39efb633eb9837646dc91588dfc26158f33e9aeb922be08265ac",
+      "bytes": 103944
+    }
+  ]
+}

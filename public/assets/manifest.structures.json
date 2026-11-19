@@ -1,0 +1,5118 @@
+{
+ "version": 1,
+ "units": "m",
+ "up": "+Y",
+ "front": "+Z",
+ "storeyHeight": 2.9,
+ "note": "stand-alone kit (D-038): not catalogue objects until W-030/W-031 register them",
+ "models": {
+  "qb_stairs_wood": {
+   "kind": "stairs",
+   "file": "models/structures/qb_stairs_wood.glb",
+   "bytes": 40460,
+   "sha256": "0aa94c520f70562bcc4da3829530674e89d0fa5f75e273a15c0d1cb17d5e6abc",
+   "triangles": 1308,
+   "budget": 1800,
+   "tileFootprint": {
+    "w": 1,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -0.474,
+     0.0,
+     -1.4977
+    ],
+    "max": [
+     0.4728,
+     3.912,
+     1.4977
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -0.474,
+      -1.41
+     ],
+     [
+      -0.47,
+      -1.442
+     ],
+     [
+      -0.462,
+      -1.45
+     ],
+     [
+      -0.41,
+      -1.4977
+     ],
+     [
+      0.41,
+      -1.4977
+     ],
+     [
+      0.462,
+      -1.45
+     ],
+     [
+      0.47,
+      -1.442
+     ],
+     [
+      0.4728,
+      -1.41
+     ],
+     [
+      0.4728,
+      1.41
+     ],
+     [
+      0.47,
+      1.442
+     ],
+     [
+      0.462,
+      1.45
+     ],
+     [
+      0.41,
+      1.4977
+     ],
+     [
+      -0.41,
+      1.4977
+     ],
+     [
+      -0.462,
+      1.45
+     ],
+     [
+      -0.47,
+      1.442
+     ],
+     [
+      -0.474,
+      1.41
+     ]
+    ]
+   ],
+   "material": "wood",
+   "vertical": {
+    "kind": "stairs",
+    "run": 3,
+    "width": 1,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_stairs_wood_lod1.glb",
+    "bytes": 18924,
+    "sha256": "172c4a72b141b4cf13b4bcfa3d343517271e7c1b4c57924961fd4cf67337d1ef",
+    "triangles": 364,
+    "budget": 810
+   }
+  },
+  "qb_grandstairs_wood": {
+   "kind": "grandStairs",
+   "file": "models/structures/qb_grandstairs_wood.glb",
+   "bytes": 42832,
+   "sha256": "79de09d8b84b0aae5bbdbdaa5a7fec5833e3d6d6d35aebe9a09beda3d36450cf",
+   "triangles": 1376,
+   "budget": 3500,
+   "tileFootprint": {
+    "w": 3,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -1.474,
+     0.0,
+     -1.4977
+    ],
+    "max": [
+     1.4728,
+     3.912,
+     1.4977
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -1.474,
+      -1.41
+     ],
+     [
+      -1.47,
+      -1.442
+     ],
+     [
+      -1.462,
+      -1.45
+     ],
+     [
+      -1.41,
+      -1.4977
+     ],
+     [
+      1.41,
+      -1.4977
+     ],
+     [
+      1.462,
+      -1.45
+     ],
+     [
+      1.47,
+      -1.442
+     ],
+     [
+      1.4728,
+      -1.41
+     ],
+     [
+      1.4728,
+      1.41
+     ],
+     [
+      1.47,
+      1.442
+     ],
+     [
+      1.462,
+      1.45
+     ],
+     [
+      1.41,
+      1.4977
+     ],
+     [
+      -1.41,
+      1.4977
+     ],
+     [
+      -1.462,
+      1.45
+     ],
+     [
+      -1.47,
+      1.442
+     ],
+     [
+      -1.474,
+      1.41
+     ]
+    ]
+   ],
+   "material": "wood",
+   "vertical": {
+    "kind": "stairs",
+    "run": 3,
+    "width": 3,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_grandstairs_wood_lod1.glb",
+    "bytes": 21016,
+    "sha256": "7473bd070ceae1e5ab8401fdc60e6e3a2cba3ae262dec59258601df3d0d47f38",
+    "triangles": 424,
+    "budget": 1575
+   }
+  },
+  "qb_ramp_wood": {
+   "kind": "ramp",
+   "file": "models/structures/qb_ramp_wood.glb",
+   "bytes": 28336,
+   "sha256": "3f6da4f2f84135d700ac8bbbf63a8fe205836b2dfccfff68f57b8d19d149c120",
+   "triangles": 744,
+   "budget": 1200,
+   "tileFootprint": {
+    "w": 3,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -1.474,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     1.4728,
+     3.7987,
+     1.5
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -1.474,
+      -1.43
+     ],
+     [
+      -1.4661,
+      -1.4461
+     ],
+     [
+      -1.42,
+      -1.5
+     ],
+     [
+      1.42,
+      -1.5
+     ],
+     [
+      1.4661,
+      -1.4461
+     ],
+     [
+      1.4694,
+      -1.4398
+     ],
+     [
+      1.4728,
+      -1.43
+     ],
+     [
+      1.4694,
+      1.4398
+     ],
+     [
+      1.42,
+      1.5
+     ],
+     [
+      -1.42,
+      1.5
+     ],
+     [
+      -1.474,
+      1.43
+     ]
+    ]
+   ],
+   "material": "wood",
+   "vertical": {
+    "kind": "ramp",
+    "run": 3,
+    "width": 3,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_ramp_wood_lod1.glb",
+    "bytes": 16804,
+    "sha256": "fa8d48483d840282fccaa3cd8bb1febd8c5b4ec941c3541c0f8e509e2177e937",
+    "triangles": 424,
+    "budget": 540
+   }
+  },
+  "qb_ramp_narrow_wood": {
+   "kind": "ramp",
+   "file": "models/structures/qb_ramp_narrow_wood.glb",
+   "bytes": 23524,
+   "sha256": "519515d4ea02289452fcb9cc75ed18f043a27e990ca828dc66a82593191b3a0f",
+   "triangles": 568,
+   "budget": 1200,
+   "tileFootprint": {
+    "w": 1,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -0.474,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     0.4728,
+     3.7987,
+     1.5
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a76 (Alt = narrow ramp)",
+   "outline": [
+    [
+     [
+      -0.474,
+      -1.43
+     ],
+     [
+      -0.4661,
+      -1.4461
+     ],
+     [
+      -0.42,
+      -1.5
+     ],
+     [
+      0.42,
+      -1.5
+     ],
+     [
+      0.4661,
+      -1.4461
+     ],
+     [
+      0.4694,
+      -1.4398
+     ],
+     [
+      0.4728,
+      -1.43
+     ],
+     [
+      0.4694,
+      1.4398
+     ],
+     [
+      0.42,
+      1.5
+     ],
+     [
+      -0.42,
+      1.5
+     ],
+     [
+      -0.474,
+      1.43
+     ]
+    ]
+   ],
+   "material": "wood",
+   "vertical": {
+    "kind": "ramp",
+    "run": 3,
+    "width": 1,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_ramp_narrow_wood_lod1.glb",
+    "bytes": 11984,
+    "sha256": "c8285733c758efcc4fd57895d2a7f118a9fdbc00ec7e371dc5292c7974beb778",
+    "triangles": 248,
+    "budget": 540
+   }
+  },
+  "qb_pillar_wood": {
+   "kind": "pillar",
+   "file": "models/structures/qb_pillar_wood.glb",
+   "bytes": 8320,
+   "sha256": "c68997b04323b48e89671f5cba8cd14610e0b5c3f5ed3ff289b5326e83803cea",
+   "triangles": 156,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.175,
+     0.0,
+     -0.175
+    ],
+    "max": [
+     0.175,
+     2.7,
+     0.175
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Wood",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a76/\u00a711",
+   "outline": [
+    [
+     [
+      -0.175,
+      -0.155
+     ],
+     [
+      -0.155,
+      -0.175
+     ],
+     [
+      0.155,
+      -0.175
+     ],
+     [
+      0.175,
+      -0.155
+     ],
+     [
+      0.175,
+      0.155
+     ],
+     [
+      0.155,
+      0.175
+     ],
+     [
+      -0.155,
+      0.175
+     ],
+     [
+      -0.175,
+      0.155
+     ]
+    ]
+   ],
+   "material": "wood",
+   "lod1": {
+    "file": "models/structures/qb_pillar_wood_lod1.glb",
+    "bytes": 4152,
+    "sha256": "473d8fa4f57639ccbbca3123893881d246ad12cb1cecebe171f19458336131b5",
+    "triangles": 36,
+    "budget": 180
+   }
+  },
+  "qb_stairwell_rail_wood": {
+   "kind": "edge",
+   "file": "models/structures/qb_stairwell_rail_wood.glb",
+   "bytes": 13760,
+   "sha256": "f1c0ab78c85fb93ccf6b0a3131b8ba8733c5e37be6b3bcf7df7f85192c7af0bd",
+   "triangles": 236,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.2
+   },
+   "bounds": {
+    "min": [
+     -0.49,
+     0.0,
+     -0.026
+    ],
+    "max": [
+     0.49,
+     0.955,
+     0.026
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Wood",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4 (stairwell)",
+   "outline": [
+    [
+     [
+      -0.49,
+      -0.0194
+     ],
+     [
+      -0.425,
+      -0.025
+     ],
+     [
+      -0.4,
+      -0.026
+     ],
+     [
+      0.4,
+      -0.026
+     ],
+     [
+      0.425,
+      -0.025
+     ],
+     [
+      0.49,
+      -0.0194
+     ],
+     [
+      0.49,
+      0.024
+     ],
+     [
+      0.4,
+      0.026
+     ],
+     [
+      -0.4,
+      0.026
+     ],
+     [
+      -0.49,
+      0.024
+     ]
+    ]
+   ],
+   "material": "wood",
+   "lod1": {
+    "file": "models/structures/qb_stairwell_rail_wood_lod1.glb",
+    "bytes": 6652,
+    "sha256": "6fbf12832401d0db0d739f696b6160f943dbab796001761f9e20190483d1162d",
+    "triangles": 88,
+    "budget": 135
+   }
+  },
+  "qb_landing_wood": {
+   "kind": "landing",
+   "file": "models/structures/qb_landing_wood.glb",
+   "bytes": 16288,
+   "sha256": "34a3aebd9d6d8dd12c29a73dd6b82cad26ef2ad80d83def0ad0dcdf0b15ba7b9",
+   "triangles": 364,
+   "budget": 500,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.49,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.49,
+     2.903,
+     0.49
+    ]
+   },
+   "materials": [
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4 (stair exit)",
+   "outline": [
+    [
+     [
+      -0.49,
+      -0.478
+     ],
+     [
+      -0.478,
+      -0.49
+     ],
+     [
+      0.478,
+      -0.49
+     ],
+     [
+      0.49,
+      -0.478
+     ],
+     [
+      0.49,
+      0.478
+     ],
+     [
+      0.478,
+      0.49
+     ],
+     [
+      -0.478,
+      0.49
+     ],
+     [
+      -0.49,
+      0.478
+     ]
+    ]
+   ],
+   "material": "wood",
+   "frames": {
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_landing_wood_lod1.glb",
+    "bytes": 7472,
+    "sha256": "83fa9c1b5b10bacb3ffe8c8048ae9285b29b4d93d2c9b8b540b05385c57334cf",
+    "triangles": 108,
+    "budget": 225
+   }
+  },
+  "qb_stairs_stone": {
+   "kind": "stairs",
+   "file": "models/structures/qb_stairs_stone.glb",
+   "bytes": 30444,
+   "sha256": "4cc4c0097703564db1996497b5b2f356907b301022b5c7466e1e14891fd34dab",
+   "triangles": 1048,
+   "budget": 1800,
+   "tileFootprint": {
+    "w": 1,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -0.4728,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     0.4728,
+     3.509,
+     1.5
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -0.4728,
+      -1.44
+     ],
+     [
+      -0.47,
+      -1.492
+     ],
+     [
+      -0.462,
+      -1.5
+     ],
+     [
+      0.462,
+      -1.5
+     ],
+     [
+      0.47,
+      -1.492
+     ],
+     [
+      0.4728,
+      -1.44
+     ],
+     [
+      0.4728,
+      1.44
+     ],
+     [
+      0.47,
+      1.492
+     ],
+     [
+      0.462,
+      1.5
+     ],
+     [
+      -0.462,
+      1.5
+     ],
+     [
+      -0.47,
+      1.492
+     ],
+     [
+      -0.4728,
+      1.44
+     ]
+    ]
+   ],
+   "material": "stone",
+   "vertical": {
+    "kind": "stairs",
+    "run": 3,
+    "width": 1,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_stairs_stone_lod1.glb",
+    "bytes": 6848,
+    "sha256": "95b46947e85664963e646563224ee25e82ad155b88385ef8572e0217cb97fe74",
+    "triangles": 140,
+    "budget": 810
+   }
+  },
+  "qb_grandstairs_stone": {
+   "kind": "grandStairs",
+   "file": "models/structures/qb_grandstairs_stone.glb",
+   "bytes": 30464,
+   "sha256": "992f9aae19a1a486c32da1d25f2e79b5299bc28a4ce9831bbecf073639942f07",
+   "triangles": 1048,
+   "budget": 3500,
+   "tileFootprint": {
+    "w": 3,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -1.4728,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     1.4728,
+     3.509,
+     1.5
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -1.4728,
+      -1.44
+     ],
+     [
+      -1.47,
+      -1.492
+     ],
+     [
+      -1.462,
+      -1.5
+     ],
+     [
+      1.462,
+      -1.5
+     ],
+     [
+      1.47,
+      -1.492
+     ],
+     [
+      1.4728,
+      -1.44
+     ],
+     [
+      1.4728,
+      1.44
+     ],
+     [
+      1.47,
+      1.492
+     ],
+     [
+      1.462,
+      1.5
+     ],
+     [
+      -1.462,
+      1.5
+     ],
+     [
+      -1.47,
+      1.492
+     ],
+     [
+      -1.4728,
+      1.44
+     ]
+    ]
+   ],
+   "material": "stone",
+   "vertical": {
+    "kind": "stairs",
+    "run": 3,
+    "width": 3,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_grandstairs_stone_lod1.glb",
+    "bytes": 6872,
+    "sha256": "1d96ac8854e55bd32061dc0d12e7418e516ecc666ef204b71c37b4a59fbd6c17",
+    "triangles": 140,
+    "budget": 1575
+   }
+  },
+  "qb_ramp_stone": {
+   "kind": "ramp",
+   "file": "models/structures/qb_ramp_stone.glb",
+   "bytes": 13764,
+   "sha256": "903b088c861e97077171ed9fc4ef0005bbc83ad1d3146bc45e3abe87192ee760",
+   "triangles": 308,
+   "budget": 1200,
+   "tileFootprint": {
+    "w": 3,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -1.474,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     1.4728,
+     3.7987,
+     1.5
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -1.474,
+      -1.43
+     ],
+     [
+      -1.4661,
+      -1.4461
+     ],
+     [
+      -1.42,
+      -1.5
+     ],
+     [
+      1.42,
+      -1.5
+     ],
+     [
+      1.4661,
+      -1.4461
+     ],
+     [
+      1.4694,
+      -1.4398
+     ],
+     [
+      1.4728,
+      -1.43
+     ],
+     [
+      1.4694,
+      1.4398
+     ],
+     [
+      1.42,
+      1.5
+     ],
+     [
+      -1.42,
+      1.5
+     ],
+     [
+      -1.474,
+      1.43
+     ]
+    ]
+   ],
+   "material": "stone",
+   "vertical": {
+    "kind": "ramp",
+    "run": 3,
+    "width": 3,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_ramp_stone_lod1.glb",
+    "bytes": 6672,
+    "sha256": "bf744ae8ad59c26ab51213bed6738c4e5f6201736fc00cb41ff4a074576182c8",
+    "triangles": 84,
+    "budget": 540
+   }
+  },
+  "qb_ramp_narrow_stone": {
+   "kind": "ramp",
+   "file": "models/structures/qb_ramp_narrow_stone.glb",
+   "bytes": 13752,
+   "sha256": "09e245dd71571376abac3063b61f04aab8d4f849546d94b57794430eb1c1e1d2",
+   "triangles": 308,
+   "budget": 1200,
+   "tileFootprint": {
+    "w": 1,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -0.474,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     0.4728,
+     3.7987,
+     1.5
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a76 (Alt = narrow ramp)",
+   "outline": [
+    [
+     [
+      -0.474,
+      -1.43
+     ],
+     [
+      -0.4661,
+      -1.4461
+     ],
+     [
+      -0.42,
+      -1.5
+     ],
+     [
+      0.42,
+      -1.5
+     ],
+     [
+      0.4661,
+      -1.4461
+     ],
+     [
+      0.4694,
+      -1.4398
+     ],
+     [
+      0.4728,
+      -1.43
+     ],
+     [
+      0.4694,
+      1.4398
+     ],
+     [
+      0.42,
+      1.5
+     ],
+     [
+      -0.42,
+      1.5
+     ],
+     [
+      -0.474,
+      1.43
+     ]
+    ]
+   ],
+   "material": "stone",
+   "vertical": {
+    "kind": "ramp",
+    "run": 3,
+    "width": 1,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_ramp_narrow_stone_lod1.glb",
+    "bytes": 6660,
+    "sha256": "0046ababd78e93bd1bb2e99f9b8e800997e36a14b5fc13c260a09f8b63cc31a0",
+    "triangles": 84,
+    "budget": 540
+   }
+  },
+  "qb_pillar_stone": {
+   "kind": "pillar",
+   "file": "models/structures/qb_pillar_stone.glb",
+   "bytes": 9780,
+   "sha256": "9aae1a1259f3ade563e6225aaf3c9abaddc720833090c81e1f12d1b8f037605e",
+   "triangles": 332,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.175,
+     0.0,
+     -0.175
+    ],
+    "max": [
+     0.175,
+     2.7,
+     0.175
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a76/\u00a711",
+   "outline": [
+    [
+     [
+      -0.175,
+      0.0
+     ],
+     [
+      -0.1516,
+      -0.0875
+     ],
+     [
+      -0.0875,
+      -0.1516
+     ],
+     [
+      0.0,
+      -0.175
+     ],
+     [
+      0.0875,
+      -0.1516
+     ],
+     [
+      0.1516,
+      -0.0875
+     ],
+     [
+      0.175,
+      0.0
+     ],
+     [
+      0.1516,
+      0.0875
+     ],
+     [
+      0.0875,
+      0.1516
+     ],
+     [
+      0.0,
+      0.175
+     ],
+     [
+      -0.0875,
+      0.1516
+     ],
+     [
+      -0.1516,
+      0.0875
+     ]
+    ]
+   ],
+   "material": "stone",
+   "lod1": {
+    "file": "models/structures/qb_pillar_stone_lod1.glb",
+    "bytes": 4464,
+    "sha256": "cde9502e0a2a38303343d5ec3e8f361946ad9ea091920f3e41d65a2f944d991e",
+    "triangles": 124,
+    "budget": 180
+   }
+  },
+  "qb_stairwell_rail_stone": {
+   "kind": "edge",
+   "file": "models/structures/qb_stairwell_rail_stone.glb",
+   "bytes": 7656,
+   "sha256": "de59803ad46ade29637ce4f9cae80ca9d602f07b09f1a4b3c3f7614708819825",
+   "triangles": 124,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.2
+   },
+   "bounds": {
+    "min": [
+     -0.495,
+     0.0,
+     -0.07
+    ],
+    "max": [
+     0.495,
+     0.9,
+     0.07
+    ]
+   },
+   "materials": [
+    "Black",
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4 (stairwell)",
+   "outline": [
+    [
+     [
+      -0.495,
+      -0.058
+     ],
+     [
+      -0.483,
+      -0.07
+     ],
+     [
+      0.483,
+      -0.07
+     ],
+     [
+      0.495,
+      -0.058
+     ],
+     [
+      0.495,
+      0.058
+     ],
+     [
+      0.483,
+      0.07
+     ],
+     [
+      -0.483,
+      0.07
+     ],
+     [
+      -0.495,
+      0.058
+     ]
+    ]
+   ],
+   "material": "stone",
+   "lod1": {
+    "file": "models/structures/qb_stairwell_rail_stone_lod1.glb",
+    "bytes": 3612,
+    "sha256": "384d4b9f7331b9c2ab9ad469ea72ef0a0c8f6d79d0966af3e0d1f1a16bc0437a",
+    "triangles": 24,
+    "budget": 135
+   }
+  },
+  "qb_landing_stone": {
+   "kind": "landing",
+   "file": "models/structures/qb_landing_stone.glb",
+   "bytes": 8632,
+   "sha256": "38e11c56cba5fb8f5dc2199e3beacc9515e83d41ce51305677273294201469c7",
+   "triangles": 220,
+   "budget": 500,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.49,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.49,
+     2.9,
+     0.49
+    ]
+   },
+   "materials": [
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4 (stair exit)",
+   "outline": [
+    [
+     [
+      -0.49,
+      -0.478
+     ],
+     [
+      -0.478,
+      -0.49
+     ],
+     [
+      0.478,
+      -0.49
+     ],
+     [
+      0.49,
+      -0.478
+     ],
+     [
+      0.49,
+      0.478
+     ],
+     [
+      0.478,
+      0.49
+     ],
+     [
+      -0.478,
+      0.49
+     ],
+     [
+      -0.49,
+      0.478
+     ]
+    ]
+   ],
+   "material": "stone",
+   "frames": {
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_landing_stone_lod1.glb",
+    "bytes": 5260,
+    "sha256": "7a4ece2b404af7e46fd848b237eba26b5d2893ff9579dde6476b30537254edbb",
+    "triangles": 60,
+    "budget": 225
+   }
+  },
+  "qb_stairs_metal": {
+   "kind": "stairs",
+   "file": "models/structures/qb_stairs_metal.glb",
+   "bytes": 54092,
+   "sha256": "0171f52e194f98b8cb45b438893d00bfda3f4b67aef03018edbff2a9bb8147f9",
+   "triangles": 1760,
+   "budget": 1800,
+   "tileFootprint": {
+    "w": 1,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -0.474,
+     0.0,
+     -1.4838
+    ],
+    "max": [
+     0.4728,
+     3.912,
+     1.4838
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Rust",
+    "Steel"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -0.474,
+      -1.41
+     ],
+     [
+      -0.47,
+      -1.442
+     ],
+     [
+      -0.462,
+      -1.45
+     ],
+     [
+      -0.4101,
+      -1.4838
+     ],
+     [
+      0.4101,
+      -1.4838
+     ],
+     [
+      0.462,
+      -1.45
+     ],
+     [
+      0.47,
+      -1.442
+     ],
+     [
+      0.4728,
+      -1.41
+     ],
+     [
+      0.4728,
+      1.41
+     ],
+     [
+      0.47,
+      1.442
+     ],
+     [
+      0.462,
+      1.45
+     ],
+     [
+      0.4101,
+      1.4838
+     ],
+     [
+      -0.4101,
+      1.4838
+     ],
+     [
+      -0.462,
+      1.45
+     ],
+     [
+      -0.47,
+      1.442
+     ],
+     [
+      -0.474,
+      1.41
+     ]
+    ]
+   ],
+   "material": "metal",
+   "vertical": {
+    "kind": "stairs",
+    "run": 3,
+    "width": 1,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_stairs_metal_lod1.glb",
+    "bytes": 16824,
+    "sha256": "7c6ca504ff5416f88204b040248c924fcca1e78498c2936a046e7f021aeca581",
+    "triangles": 340,
+    "budget": 810
+   }
+  },
+  "qb_grandstairs_metal": {
+   "kind": "grandStairs",
+   "file": "models/structures/qb_grandstairs_metal.glb",
+   "bytes": 62084,
+   "sha256": "3c2cacc1364c62305e7ba5f9746df65f7d953cd9c6439c79a5aea5df4a26a15b",
+   "triangles": 2024,
+   "budget": 3500,
+   "tileFootprint": {
+    "w": 3,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -1.474,
+     0.0,
+     -1.4838
+    ],
+    "max": [
+     1.4728,
+     3.912,
+     1.4838
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Rust",
+    "Steel"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -1.474,
+      -1.41
+     ],
+     [
+      -1.47,
+      -1.442
+     ],
+     [
+      -1.462,
+      -1.45
+     ],
+     [
+      -1.4101,
+      -1.4838
+     ],
+     [
+      1.4101,
+      -1.4838
+     ],
+     [
+      1.462,
+      -1.45
+     ],
+     [
+      1.47,
+      -1.442
+     ],
+     [
+      1.4728,
+      -1.41
+     ],
+     [
+      1.4728,
+      1.41
+     ],
+     [
+      1.47,
+      1.442
+     ],
+     [
+      1.462,
+      1.45
+     ],
+     [
+      1.4101,
+      1.4838
+     ],
+     [
+      -1.4101,
+      1.4838
+     ],
+     [
+      -1.462,
+      1.45
+     ],
+     [
+      -1.47,
+      1.442
+     ],
+     [
+      -1.474,
+      1.41
+     ]
+    ]
+   ],
+   "material": "metal",
+   "vertical": {
+    "kind": "stairs",
+    "run": 3,
+    "width": 3,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_grandstairs_metal_lod1.glb",
+    "bytes": 20096,
+    "sha256": "fb66d38504a031c48b0e6cac87131681efb283f65a5bbcdce422b08e68701612",
+    "triangles": 444,
+    "budget": 1575
+   }
+  },
+  "qb_ramp_metal": {
+   "kind": "ramp",
+   "file": "models/structures/qb_ramp_metal.glb",
+   "bytes": 23072,
+   "sha256": "01d7d2a963f21b17b770fd59aa0749d61b7e4023a642a3718e8ad0b0751fd090",
+   "triangles": 648,
+   "budget": 1200,
+   "tileFootprint": {
+    "w": 3,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -1.474,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     1.4728,
+     3.7987,
+     1.5
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Rust",
+    "Steel"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4/\u00a711",
+   "outline": [
+    [
+     [
+      -1.474,
+      -1.43
+     ],
+     [
+      -1.4661,
+      -1.4461
+     ],
+     [
+      -1.42,
+      -1.5
+     ],
+     [
+      1.42,
+      -1.5
+     ],
+     [
+      1.4661,
+      -1.4461
+     ],
+     [
+      1.4694,
+      -1.4398
+     ],
+     [
+      1.4728,
+      -1.43
+     ],
+     [
+      1.4694,
+      1.4398
+     ],
+     [
+      1.42,
+      1.5
+     ],
+     [
+      -1.42,
+      1.5
+     ],
+     [
+      -1.474,
+      1.43
+     ]
+    ]
+   ],
+   "material": "metal",
+   "vertical": {
+    "kind": "ramp",
+    "run": 3,
+    "width": 3,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_ramp_metal_lod1.glb",
+    "bytes": 15960,
+    "sha256": "180bcecb0f16006fd53c94b6a99acee874dcba5703e4288e928cf1a4dd316552",
+    "triangles": 424,
+    "budget": 540
+   }
+  },
+  "qb_ramp_narrow_metal": {
+   "kind": "ramp",
+   "file": "models/structures/qb_ramp_narrow_metal.glb",
+   "bytes": 18176,
+   "sha256": "64b661ec9a0dd656e321d7b1beeae1c4bda4312d07fdbb3af0d9e29e0843b7ee",
+   "triangles": 472,
+   "budget": 1200,
+   "tileFootprint": {
+    "w": 1,
+    "d": 3
+   },
+   "bounds": {
+    "min": [
+     -0.474,
+     0.0,
+     -1.5
+    ],
+    "max": [
+     0.4728,
+     3.7987,
+     1.5
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Rust",
+    "Steel"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a76 (Alt = narrow ramp)",
+   "outline": [
+    [
+     [
+      -0.474,
+      -1.43
+     ],
+     [
+      -0.4661,
+      -1.4461
+     ],
+     [
+      -0.42,
+      -1.5
+     ],
+     [
+      0.42,
+      -1.5
+     ],
+     [
+      0.4661,
+      -1.4461
+     ],
+     [
+      0.4694,
+      -1.4398
+     ],
+     [
+      0.4728,
+      -1.43
+     ],
+     [
+      0.4694,
+      1.4398
+     ],
+     [
+      0.42,
+      1.5
+     ],
+     [
+      -0.42,
+      1.5
+     ],
+     [
+      -0.474,
+      1.43
+     ]
+    ]
+   ],
+   "material": "metal",
+   "vertical": {
+    "kind": "ramp",
+    "run": 3,
+    "width": 1,
+    "rise": 2.9,
+    "climbs": "+Z"
+   },
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      -2.0
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      2.0
+     ],
+     "yaw": 0.0,
+     "kind": "exit"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_ramp_narrow_metal_lod1.glb",
+    "bytes": 11064,
+    "sha256": "4f676981452bc06922dc302373515e2e6dd5a77a9d7ac96db6fe79797f2c7f7f",
+    "triangles": 248,
+    "budget": 540
+   }
+  },
+  "qb_pillar_metal": {
+   "kind": "pillar",
+   "file": "models/structures/qb_pillar_metal.glb",
+   "bytes": 12532,
+   "sha256": "d615eb3b790134444c4de5c42ce5d25a457fc090c3965e827eb89b853b22b3aa",
+   "triangles": 304,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.175,
+     0.0,
+     -0.175
+    ],
+    "max": [
+     0.175,
+     2.7,
+     0.175
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Rust"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a76/\u00a711",
+   "outline": [
+    [
+     [
+      -0.175,
+      -0.165
+     ],
+     [
+      -0.165,
+      -0.175
+     ],
+     [
+      0.165,
+      -0.175
+     ],
+     [
+      0.175,
+      -0.165
+     ],
+     [
+      0.175,
+      0.165
+     ],
+     [
+      0.165,
+      0.175
+     ],
+     [
+      -0.165,
+      0.175
+     ],
+     [
+      -0.175,
+      0.165
+     ]
+    ]
+   ],
+   "material": "metal",
+   "lod1": {
+    "file": "models/structures/qb_pillar_metal_lod1.glb",
+    "bytes": 5048,
+    "sha256": "384a97402de4e4abfe186935c646b1bec3d12d4b99f42e06af453e7272a1ab4d",
+    "triangles": 112,
+    "budget": 180
+   }
+  },
+  "qb_stairwell_rail_metal": {
+   "kind": "edge",
+   "file": "models/structures/qb_stairwell_rail_metal.glb",
+   "bytes": 12920,
+   "sha256": "820254bf3782741d1b087002eb971daf054ae1760aae3b5766070520a9e8f434",
+   "triangles": 252,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.2
+   },
+   "bounds": {
+    "min": [
+     -0.49,
+     0.0,
+     -0.026
+    ],
+    "max": [
+     0.49,
+     0.955,
+     0.026
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Rust"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4 (stairwell)",
+   "outline": [
+    [
+     [
+      -0.49,
+      -0.0194
+     ],
+     [
+      -0.425,
+      -0.025
+     ],
+     [
+      -0.4,
+      -0.026
+     ],
+     [
+      0.4,
+      -0.026
+     ],
+     [
+      0.425,
+      -0.025
+     ],
+     [
+      0.49,
+      -0.0194
+     ],
+     [
+      0.49,
+      0.024
+     ],
+     [
+      0.4,
+      0.026
+     ],
+     [
+      -0.4,
+      0.026
+     ],
+     [
+      -0.49,
+      0.024
+     ]
+    ]
+   ],
+   "material": "metal",
+   "lod1": {
+    "file": "models/structures/qb_stairwell_rail_metal_lod1.glb",
+    "bytes": 3840,
+    "sha256": "815c84f43efdce06deb7966d2eab6c839b06ed489d11a49acbc145447c96a48d",
+    "triangles": 48,
+    "budget": 135
+   }
+  },
+  "qb_landing_metal": {
+   "kind": "landing",
+   "file": "models/structures/qb_landing_metal.glb",
+   "bytes": 13084,
+   "sha256": "9155bd673d0b9b7fc179648d91664ad632db6e0b65835c23d41d39345d0cbfae",
+   "triangles": 316,
+   "budget": 500,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.49,
+     0.0,
+     -0.49
+    ],
+    "max": [
+     0.49,
+     2.9,
+     0.49
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Steel"
+   ],
+   "parts": [],
+   "doc": "quick-build \u00a74.4 (stair exit)",
+   "outline": [
+    [
+     [
+      -0.49,
+      -0.478
+     ],
+     [
+      -0.478,
+      -0.49
+     ],
+     [
+      0.478,
+      -0.49
+     ],
+     [
+      0.49,
+      -0.478
+     ],
+     [
+      0.49,
+      0.478
+     ],
+     [
+      0.478,
+      0.49
+     ],
+     [
+      -0.478,
+      0.49
+     ],
+     [
+      -0.49,
+      0.478
+     ]
+    ]
+   ],
+   "material": "metal",
+   "frames": {
+    "top": {
+     "pos": [
+      0.0,
+      2.9,
+      0.0
+     ],
+     "yaw": 0.0,
+     "kind": "feet"
+    }
+   },
+   "lod1": {
+    "file": "models/structures/qb_landing_metal_lod1.glb",
+    "bytes": 7504,
+    "sha256": "6fa354c831a380bea6aee77b996a98682591c94e65fcc7cc7c58c6275b54005a",
+    "triangles": 108,
+    "budget": 225
+   }
+  },
+  "pad_driveway": {
+   "kind": "parking",
+   "file": "models/structures/pad_driveway.glb",
+   "bytes": 14084,
+   "sha256": "e92ffd4bc1f3a93eb008b3b67ad9955ac47e919529eabb1e30143f5874a3cf30",
+   "triangles": 248,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 2,
+    "d": 5
+   },
+   "bounds": {
+    "min": [
+     -0.98,
+     0.0,
+     -2.48
+    ],
+    "max": [
+     0.99,
+     0.1443,
+     2.48
+    ]
+   },
+   "materials": [
+    "Crack",
+    "GrassDry",
+    "Smudge",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "vehicles \u00a75",
+   "outline": [
+    [
+     [
+      -0.98,
+      -2.468
+     ],
+     [
+      -0.968,
+      -2.48
+     ],
+     [
+      0.968,
+      -2.48
+     ],
+     [
+      0.98,
+      -2.468
+     ],
+     [
+      0.99,
+      1.1899
+     ],
+     [
+      0.98,
+      2.468
+     ],
+     [
+      0.968,
+      2.48
+     ],
+     [
+      -0.968,
+      2.48
+     ],
+     [
+      -0.98,
+      2.468
+     ]
+    ]
+   ],
+   "parking": {
+    "spots": [
+     {
+      "x": 0.0,
+      "z": 0.0,
+      "rot": 0,
+      "size": "car"
+     },
+     {
+      "x": 0.0,
+      "z": 1.25,
+      "rot": 0,
+      "size": "small"
+     },
+     {
+      "x": 0.0,
+      "z": -1.25,
+      "rot": 0,
+      "size": "small"
+     }
+    ],
+    "options": [
+     [
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "needsStreetAccess": true
+   }
+  },
+  "carport_crooked": {
+   "kind": "parking",
+   "file": "models/structures/carport_crooked.glb",
+   "bytes": 37676,
+   "sha256": "084058057bc168c6c638c5d3241f220cfca72139d68931ece02da81defc10c48",
+   "triangles": 1032,
+   "budget": 2800,
+   "tileFootprint": {
+    "w": 3,
+    "d": 6
+   },
+   "bounds": {
+    "min": [
+     -1.5008,
+     0.0,
+     -2.9614
+    ],
+    "max": [
+     1.5008,
+     2.7608,
+     2.963
+    ]
+   },
+   "materials": [
+    "Cobweb",
+    "Iron",
+    "Lantern",
+    "Rust",
+    "SheetMetal",
+    "StoneLight",
+    "Wood",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "vehicles \u00a75",
+   "outline": [
+    [
+     [
+      -1.5008,
+      -2.9322
+     ],
+     [
+      -1.2558,
+      -2.9349
+     ],
+     [
+      0.4591,
+      -2.9529
+     ],
+     [
+      1.4391,
+      -2.9614
+     ],
+     [
+      1.4665,
+      -2.8254
+     ],
+     [
+      1.5008,
+      2.9322
+     ],
+     [
+      1.5008,
+      2.9338
+     ],
+     [
+      1.2558,
+      2.9365
+     ],
+     [
+      -0.4591,
+      2.9545
+     ],
+     [
+      -1.4391,
+      2.963
+     ],
+     [
+      -1.5008,
+      -2.9306
+     ]
+    ]
+   ],
+   "parking": {
+    "spots": [
+     {
+      "x": 0.5,
+      "z": 0.0,
+      "rot": 0,
+      "size": "car"
+     },
+     {
+      "x": -1.0,
+      "z": 0.6,
+      "rot": 0,
+      "size": "small"
+     }
+    ],
+    "options": [
+     [
+      0,
+      1
+     ]
+    ],
+    "needsStreetAccess": true
+   }
+  },
+  "rack_bike": {
+   "kind": "parking",
+   "file": "models/structures/rack_bike.glb",
+   "bytes": 13672,
+   "sha256": "9b589cd740cbf11e21499ddf933807589a1441a6c33dc0086334e8173823e5f1",
+   "triangles": 304,
+   "budget": 500,
+   "tileFootprint": {
+    "w": 1,
+    "d": 2
+   },
+   "bounds": {
+    "min": [
+     -0.37,
+     0.0,
+     -0.95
+    ],
+    "max": [
+     0.37,
+     0.7982,
+     0.95
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Galvanised"
+   ],
+   "parts": [],
+   "doc": "vehicles \u00a75",
+   "outline": [
+    [
+     [
+      -0.37,
+      -0.95
+     ],
+     [
+      0.37,
+      -0.95
+     ],
+     [
+      0.37,
+      0.95
+     ],
+     [
+      -0.37,
+      0.95
+     ]
+    ]
+   ],
+   "parking": {
+    "spots": [
+     {
+      "x": 0.0,
+      "z": 0.44,
+      "rot": 90,
+      "size": "small"
+     },
+     {
+      "x": 0.0,
+      "z": -0.44,
+      "rot": 90,
+      "size": "small"
+     }
+    ],
+    "options": [
+     [
+      0,
+      1
+     ]
+    ],
+    "needsStreetAccess": false
+   }
+  },
+  "door_garage": {
+   "kind": "opening",
+   "file": "models/structures/door_garage.glb",
+   "bytes": 27392,
+   "sha256": "497c5e5088ba49d64ac36029a6a425f1f882f76e8140e432de6d565e23e4d4b6",
+   "triangles": 696,
+   "budget": 1600,
+   "tileFootprint": {
+    "w": 3,
+    "d": 0.4
+   },
+   "bounds": {
+    "min": [
+     -1.54,
+     0.0,
+     -0.15
+    ],
+    "max": [
+     1.54,
+     2.56,
+     0.15
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite",
+    "Iron",
+    "Rust",
+    "SheetMetal"
+   ],
+   "parts": [
+    "door"
+   ],
+   "doc": "vehicles \u00a75",
+   "outline": [
+    [
+     [
+      -1.54,
+      -0.12
+     ],
+     [
+      -1.51,
+      -0.15
+     ],
+     [
+      1.51,
+      -0.15
+     ],
+     [
+      1.54,
+      -0.12
+     ],
+     [
+      1.54,
+      0.12
+     ],
+     [
+      1.51,
+      0.15
+     ],
+     [
+      -1.51,
+      0.15
+     ],
+     [
+      -1.54,
+      0.12
+     ]
+    ]
+   ]
+  },
+  "pad_garage": {
+   "kind": "parking",
+   "file": "models/structures/pad_garage.glb",
+   "bytes": 6844,
+   "sha256": "0f65cc3aece46ac5d224b49650f6f86a49a7054415cc39266d164c5bc9ca71ab",
+   "triangles": 76,
+   "budget": 100,
+   "tileFootprint": {
+    "w": 3,
+    "d": 6
+   },
+   "bounds": {
+    "min": [
+     -1.48,
+     0.0,
+     -2.98
+    ],
+    "max": [
+     1.48,
+     0.016,
+     2.98
+    ]
+   },
+   "materials": [
+    "Bone",
+    "Granite",
+    "Smudge"
+   ],
+   "parts": [],
+   "doc": "vehicles \u00a75",
+   "outline": [
+    [
+     [
+      -1.48,
+      -2.98
+     ],
+     [
+      1.48,
+      -2.98
+     ],
+     [
+      1.48,
+      2.98
+     ],
+     [
+      -1.48,
+      2.98
+     ]
+    ]
+   ],
+   "parking": {
+    "spots": [
+     {
+      "x": 0.0,
+      "z": 0.0,
+      "rot": 0,
+      "size": "car"
+     },
+     {
+      "x": -0.6,
+      "z": 0.0,
+      "rot": 0,
+      "size": "small"
+     },
+     {
+      "x": 0.6,
+      "z": 0.0,
+      "rot": 0,
+      "size": "small"
+     }
+    ],
+    "options": [
+     [
+      0
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "needsStreetAccess": false
+   }
+  },
+  "scaffold_project": {
+   "kind": "project",
+   "file": "models/structures/scaffold_project.glb",
+   "bytes": 62580,
+   "sha256": "51696b643fae030a6ff93a5a25b98ad8a50d6ad1e05fb106a68d8facee6e1984",
+   "triangles": 1332,
+   "budget": 1800,
+   "tileFootprint": {
+    "w": 3,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -1.44,
+     0.0,
+     -0.48
+    ],
+    "max": [
+     1.44,
+     3.1102,
+     0.491
+    ]
+   },
+   "materials": [
+    "Galvanised",
+    "Iron",
+    "Lantern",
+    "PaintGreen",
+    "PaintRed",
+    "Paper",
+    "Pine",
+    "Straw",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [
+    "glow",
+    "tarp"
+   ],
+   "doc": "housing-progression \u00a76.3/\u00a715",
+   "outline": [
+    [
+     [
+      -1.44,
+      -0.48
+     ],
+     [
+      1.44,
+      -0.48
+     ],
+     [
+      1.44,
+      0.48
+     ],
+     [
+      1.1153,
+      0.491
+     ],
+     [
+      0.7247,
+      0.491
+     ],
+     [
+      -1.44,
+      0.48
+     ]
+    ]
+   ],
+   "frames": {
+    "pitch_in": {
+     "pos": [
+      0.7,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "work": {
+     "pos": [
+      -0.6,
+      2.0,
+      0.0
+     ],
+     "yaw": 180.0,
+     "kind": "feet"
+    },
+    "work_2": {
+     "pos": [
+      0.7,
+      2.0,
+      0.0
+     ],
+     "yaw": 180.0,
+     "kind": "feet"
+    }
+   }
+  },
+  "scaffold_bay": {
+   "kind": "project",
+   "file": "models/structures/scaffold_bay.glb",
+   "bytes": 23304,
+   "sha256": "9a54e88fd26f3620b06decf78b510664de7b94235e214fec0ae386fa1960de88",
+   "triangles": 464,
+   "budget": 600,
+   "tileFootprint": {
+    "w": 2,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.9818,
+     0.0,
+     -0.48
+    ],
+    "max": [
+     0.9818,
+     3.1102,
+     0.48
+    ]
+   },
+   "materials": [
+    "Pine",
+    "Straw",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a76.3/\u00a715",
+   "outline": [
+    [
+     [
+      -0.9818,
+      0.1654
+     ],
+     [
+      -0.981,
+      -0.3814
+     ],
+     [
+      -0.96,
+      -0.48
+     ],
+     [
+      0.96,
+      -0.48
+     ],
+     [
+      0.9789,
+      -0.3985
+     ],
+     [
+      0.981,
+      -0.1586
+     ],
+     [
+      0.9812,
+      -0.1097
+     ],
+     [
+      0.9818,
+      0.3746
+     ],
+     [
+      0.96,
+      0.48
+     ],
+     [
+      -0.96,
+      0.48
+     ],
+     [
+      -0.978,
+      0.4054
+     ]
+    ]
+   ],
+   "frames": {
+    "approach": {
+     "pos": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "work": {
+     "pos": [
+      0.0,
+      2.0,
+      0.0
+     ],
+     "yaw": 180.0,
+     "kind": "feet"
+    }
+   }
+  },
+  "scaffold_ladder": {
+   "kind": "project",
+   "file": "models/structures/scaffold_ladder.glb",
+   "bytes": 10952,
+   "sha256": "8645f36ff1301413ae1864ef38eeebcd18210211c2e610b4f1a6cd708b6f18a4",
+   "triangles": 164,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.25,
+     0.0,
+     -0.3653
+    ],
+    "max": [
+     0.25,
+     2.9549,
+     0.41
+    ]
+   },
+   "materials": [
+    "Pine",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a76.3/\u00a715",
+   "outline": [
+    [
+     [
+      -0.25,
+      0.31
+     ],
+     [
+      -0.23,
+      -0.286
+     ],
+     [
+      -0.2247,
+      -0.3478
+     ],
+     [
+      -0.2,
+      -0.3653
+     ],
+     [
+      0.2,
+      -0.3653
+     ],
+     [
+      0.2247,
+      -0.3478
+     ],
+     [
+      0.23,
+      -0.286
+     ],
+     [
+      0.25,
+      0.31
+     ],
+     [
+      0.25,
+      0.41
+     ],
+     [
+      -0.25,
+      0.41
+     ]
+    ]
+   ],
+   "frames": {
+    "bottom": {
+     "pos": [
+      0.0,
+      0.0,
+      0.85
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    },
+    "top": {
+     "pos": [
+      0.0,
+      2.0,
+      -0.34
+     ],
+     "yaw": 180.0,
+     "kind": "exit"
+    }
+   }
+  },
+  "scaffold_tarp": {
+   "kind": "project",
+   "file": "models/structures/scaffold_tarp.glb",
+   "bytes": 16028,
+   "sha256": "9b6729d474a01e5a0494de14b9087f1f7b632a8ac9f74b731aca3edcf521360c",
+   "triangles": 360,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 2,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.98,
+     0.0,
+     -0.08
+    ],
+    "max": [
+     0.98,
+     3.0,
+     0.2584
+    ]
+   },
+   "materials": [
+    "PaintGreen",
+    "Pine",
+    "Straw",
+    "WoodDark"
+   ],
+   "parts": [
+    "tarp"
+   ],
+   "doc": "housing-progression \u00a76.3/\u00a715",
+   "outline": [
+    [
+     [
+      -0.98,
+      -0.08
+     ],
+     [
+      0.98,
+      -0.08
+     ],
+     [
+      0.98,
+      0.08
+     ],
+     [
+      0.86,
+      0.2584
+     ],
+     [
+      -0.98,
+      0.08
+     ]
+    ]
+   ]
+  },
+  "lantern_crew": {
+   "kind": "project",
+   "file": "models/structures/lantern_crew.glb",
+   "bytes": 15520,
+   "sha256": "7f54aee39147f04fc08d327f5f991c1ba1daa5d1bf4d3bc5bbf4db8ebc49d4bf",
+   "triangles": 240,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.3424,
+     0.0,
+     -0.2132
+    ],
+    "max": [
+     0.38,
+     1.7448,
+     0.3806
+    ]
+   },
+   "materials": [
+    "Galvanised",
+    "Iron",
+    "Lantern",
+    "Pine",
+    "Straw",
+    "WoodLight"
+   ],
+   "parts": [
+    "glow"
+   ],
+   "doc": "housing-progression \u00a76.3/\u00a715",
+   "outline": [
+    [
+     [
+      -0.3424,
+      0.3133
+     ],
+     [
+      -0.3318,
+      -0.1949
+     ],
+     [
+      -0.3074,
+      -0.2132
+     ],
+     [
+      0.3159,
+      -0.1985
+     ],
+     [
+      0.3403,
+      -0.1802
+     ],
+     [
+      0.38,
+      0.22
+     ],
+     [
+      0.3449,
+      0.3049
+     ],
+     [
+      0.26,
+      0.34
+     ],
+     [
+      0.0068,
+      0.3806
+     ],
+     [
+      -0.0238,
+      0.3806
+     ],
+     [
+      -0.3174,
+      0.3567
+     ]
+    ]
+   ]
+  },
+  "curb_fence_picket": {
+   "kind": "curb",
+   "file": "models/structures/curb_fence_picket.glb",
+   "bytes": 11264,
+   "sha256": "0dff87d21537147a884e92382e7dca53218ef2edc44b4eb67743db955fd3b18c",
+   "triangles": 198,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.2
+   },
+   "bounds": {
+    "min": [
+     -0.52,
+     0.0,
+     -0.07
+    ],
+    "max": [
+     0.49,
+     1.03,
+     0.07
+    ]
+   },
+   "materials": [
+    "Moss",
+    "Trim"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.52,
+      0.0
+     ],
+     [
+      -0.495,
+      -0.045
+     ],
+     [
+      -0.45,
+      -0.07
+     ],
+     [
+      0.49,
+      -0.0375
+     ],
+     [
+      0.49,
+      -0.0025
+     ],
+     [
+      0.475,
+      0.022
+     ],
+     [
+      -0.45,
+      0.07
+     ],
+     [
+      -0.495,
+      0.045
+     ]
+    ]
+   ],
+   "band": 1
+  },
+  "curb_mailbox": {
+   "kind": "curb",
+   "file": "models/structures/curb_mailbox.glb",
+   "bytes": 9368,
+   "sha256": "cff32892219fda2459d32049667fbe9a183b8ea5be1eda2857896b2d822f9454",
+   "triangles": 88,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.13,
+     0.0,
+     -0.21
+    ],
+    "max": [
+     0.196,
+     1.2788,
+     0.221
+    ]
+   },
+   "materials": [
+    "Bone",
+    "EnamelRed",
+    "Galvanised",
+    "SoilDark",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.13,
+      -0.13
+     ],
+     [
+      -0.035,
+      -0.21
+     ],
+     [
+      0.185,
+      -0.21
+     ],
+     [
+      0.196,
+      -0.0974
+     ],
+     [
+      0.196,
+      -0.0026
+     ],
+     [
+      0.185,
+      0.21
+     ],
+     [
+      0.105,
+      0.221
+     ],
+     [
+      0.045,
+      0.221
+     ],
+     [
+      -0.035,
+      0.21
+     ],
+     [
+      -0.13,
+      0.13
+     ]
+    ]
+   ],
+   "band": 1,
+   "frames": {
+    "use": {
+     "pos": [
+      0.075,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  },
+  "curb_flowerbed": {
+   "kind": "curb",
+   "file": "models/structures/curb_flowerbed.glb",
+   "bytes": 17736,
+   "sha256": "628a68367a8db4a151caa95cb9ddb90eb4b7ae236d8a4c5db43592013a5cb170",
+   "triangles": 196,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 2,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.97,
+     0.0,
+     -0.46
+    ],
+    "max": [
+     0.97,
+     0.5448,
+     0.46
+    ]
+   },
+   "materials": [
+    "Berry",
+    "Bone",
+    "EnamelRed",
+    "PlantGreen",
+    "PlantPurple",
+    "Soil",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.97,
+      -0.42
+     ],
+     [
+      -0.96,
+      -0.46
+     ],
+     [
+      0.96,
+      -0.46
+     ],
+     [
+      0.97,
+      -0.42
+     ],
+     [
+      0.97,
+      0.42
+     ],
+     [
+      0.96,
+      0.46
+     ],
+     [
+      -0.96,
+      0.46
+     ],
+     [
+      -0.97,
+      0.42
+     ]
+    ]
+   ],
+   "band": 1
+  },
+  "curb_gnome_skull": {
+   "kind": "curb",
+   "file": "models/structures/curb_gnome_skull.glb",
+   "bytes": 15036,
+   "sha256": "e4657a2cf86334121e55ee0f8e7fd13f6edbff8eed8a9469e4ad7c34ab2d1652",
+   "triangles": 192,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.17,
+     0.0,
+     -0.17
+    ],
+    "max": [
+     0.24,
+     0.7748,
+     0.17
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "BoneDark",
+    "EnamelRed",
+    "PaintMoon",
+    "SoilDark",
+    "Steel",
+    "WoodLight"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.17,
+      0.0
+     ],
+     [
+      -0.1202,
+      -0.1202
+     ],
+     [
+      0.0,
+      -0.17
+     ],
+     [
+      0.1202,
+      -0.1202
+     ],
+     [
+      0.24,
+      0.014
+     ],
+     [
+      0.24,
+      0.026
+     ],
+     [
+      0.1202,
+      0.1202
+     ],
+     [
+      0.0,
+      0.17
+     ],
+     [
+      -0.1202,
+      0.1202
+     ]
+    ]
+   ],
+   "band": 1
+  },
+  "curb_planter": {
+   "kind": "curb",
+   "file": "models/structures/curb_planter.glb",
+   "bytes": 11716,
+   "sha256": "9ded906d3f79e02cf0f0331ec3a759ca849496e24aaec00e8117057052e5a7ee",
+   "triangles": 122,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.4,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.4312,
+     0.6725,
+     0.2478
+    ]
+   },
+   "materials": [
+    "Hedge",
+    "HedgeLight",
+    "Planks",
+    "PlantGreen",
+    "SoilDark",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.4,
+      -0.22
+     ],
+     [
+      0.4,
+      -0.22
+     ],
+     [
+      0.4312,
+      0.244
+     ],
+     [
+      0.4109,
+      0.2478
+     ],
+     [
+      -0.4,
+      0.22
+     ]
+    ]
+   ],
+   "band": 2
+  },
+  "curb_porch_light": {
+   "kind": "curb",
+   "file": "models/structures/curb_porch_light.glb",
+   "bytes": 9720,
+   "sha256": "f82d0c42aba5782d0d7d70d640c2dd093ae2e7feb3f0b92556103f43f6f61c18",
+   "triangles": 150,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.09,
+     0.0,
+     -0.09
+    ],
+    "max": [
+     0.315,
+     1.6388,
+     0.09
+    ]
+   },
+   "materials": [
+    "Galvanised",
+    "Iron",
+    "Lantern"
+   ],
+   "parts": [
+    "glow"
+   ],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.09,
+      0.0
+     ],
+     [
+      -0.0636,
+      -0.0636
+     ],
+     [
+      0.0,
+      -0.09
+     ],
+     [
+      0.24,
+      -0.075
+     ],
+     [
+      0.295,
+      -0.055
+     ],
+     [
+      0.315,
+      0.0
+     ],
+     [
+      0.295,
+      0.055
+     ],
+     [
+      0.24,
+      0.075
+     ],
+     [
+      0.0,
+      0.09
+     ],
+     [
+      -0.0636,
+      0.0636
+     ]
+    ]
+   ],
+   "band": 2
+  },
+  "curb_bench": {
+   "kind": "curb",
+   "file": "models/structures/curb_bench.glb",
+   "bytes": 11348,
+   "sha256": "40bd7d26bb69084341b48bd5478202875f062c11d0d482be3cc5d4aa75b08bec",
+   "triangles": 192,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 2,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.81,
+     0.0,
+     -0.3274
+    ],
+    "max": [
+     0.81,
+     0.9257,
+     0.2879
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Planks"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.81,
+      -0.3001
+     ],
+     [
+      -0.78,
+      -0.3274
+     ],
+     [
+      0.78,
+      -0.3274
+     ],
+     [
+      0.81,
+      -0.3001
+     ],
+     [
+      0.81,
+      0.24
+     ],
+     [
+      0.808,
+      0.26
+     ],
+     [
+      0.78,
+      0.2879
+     ],
+     [
+      -0.78,
+      0.2879
+     ],
+     [
+      -0.808,
+      0.26
+     ],
+     [
+      -0.81,
+      0.24
+     ]
+    ]
+   ],
+   "band": 2,
+   "frames": {
+    "seat_0": {
+     "pos": [
+      -0.4,
+      0.47,
+      0.02
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    },
+    "seat_1": {
+     "pos": [
+      0.4,
+      0.47,
+      0.02
+     ],
+     "yaw": 0.0,
+     "kind": "seat"
+    }
+   }
+  },
+  "curb_bike_rack": {
+   "kind": "curb",
+   "file": "models/structures/curb_bike_rack.glb",
+   "bytes": 10956,
+   "sha256": "68ab672f3a55d51679833d7259780f234312bc9f5acc8394e4f78ea4fd86b505",
+   "triangles": 212,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.4606,
+     0.0,
+     -0.07
+    ],
+    "max": [
+     0.4606,
+     0.8238,
+     0.07
+    ]
+   },
+   "materials": [
+    "Galvanised",
+    "Rust",
+    "Steel"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.4606,
+      -0.035
+     ],
+     [
+      -0.4,
+      -0.07
+     ],
+     [
+      0.4,
+      -0.07
+     ],
+     [
+      0.4606,
+      -0.035
+     ],
+     [
+      0.4606,
+      0.035
+     ],
+     [
+      0.4,
+      0.07
+     ],
+     [
+      -0.4,
+      0.07
+     ],
+     [
+      -0.4606,
+      0.035
+     ]
+    ]
+   ],
+   "band": 2,
+   "frames": {
+    "park": {
+     "pos": [
+      0.0,
+      0.0,
+      0.55
+     ],
+     "yaw": 90.0,
+     "kind": "attach"
+    }
+   }
+  },
+  "curb_topiary": {
+   "kind": "curb",
+   "file": "models/structures/curb_topiary.glb",
+   "bytes": 12404,
+   "sha256": "dab89a48c0691edbb4b0764f29a99f9e2dfa160f15c51266d9e8c91b876c5866",
+   "triangles": 308,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.3,
+     0.0,
+     -0.3
+    ],
+    "max": [
+     0.3,
+     1.687,
+     0.3
+    ]
+   },
+   "materials": [
+    "Black",
+    "Hedge",
+    "HedgeLight",
+    "StoneLight",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.3,
+      0.0
+     ],
+     [
+      -0.2121,
+      -0.2121
+     ],
+     [
+      0.0,
+      -0.3
+     ],
+     [
+      0.2121,
+      -0.2121
+     ],
+     [
+      0.3,
+      0.0
+     ],
+     [
+      0.2121,
+      0.2121
+     ],
+     [
+      0.0,
+      0.3
+     ],
+     [
+      -0.2121,
+      0.2121
+     ]
+    ]
+   ],
+   "band": 3
+  },
+  "curb_fountain": {
+   "kind": "curb",
+   "file": "models/structures/curb_fountain.glb",
+   "bytes": 15272,
+   "sha256": "a86865565622ae77a4f7376b177aa160fca5342e06cc791bd412e376c9fc5441",
+   "triangles": 440,
+   "budget": 500,
+   "tileFootprint": {
+    "w": 2,
+    "d": 2
+   },
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.92
+    ],
+    "max": [
+     0.92,
+     1.199,
+     0.92
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "Marble",
+    "Water"
+   ],
+   "parts": [
+    "water"
+   ],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.92,
+      0.0
+     ],
+     [
+      -0.7967,
+      -0.46
+     ],
+     [
+      -0.46,
+      -0.7967
+     ],
+     [
+      0.0,
+      -0.92
+     ],
+     [
+      0.46,
+      -0.7967
+     ],
+     [
+      0.7967,
+      -0.46
+     ],
+     [
+      0.92,
+      0.0
+     ],
+     [
+      0.7967,
+      0.46
+     ],
+     [
+      0.46,
+      0.7967
+     ],
+     [
+      0.0,
+      0.92
+     ],
+     [
+      -0.46,
+      0.7967
+     ],
+     [
+      -0.7967,
+      0.46
+     ]
+    ]
+   ],
+   "band": 3,
+   "frames": {
+    "view": {
+     "pos": [
+      0.0,
+      0.0,
+      1.5
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  },
+  "curb_gate_iron": {
+   "kind": "curb",
+   "file": "models/structures/curb_gate_iron.glb",
+   "bytes": 14156,
+   "sha256": "8844ba2c97573b27272eee3749b2df234d565163d370456d7d89af29461b04f8",
+   "triangles": 276,
+   "budget": 400,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.2
+   },
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.09
+    ],
+    "max": [
+     0.5,
+     1.47,
+     0.09
+    ]
+   },
+   "materials": [
+    "Granite",
+    "Iron"
+   ],
+   "parts": [],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.08
+     ],
+     [
+      -0.42,
+      -0.09
+     ],
+     [
+      0.42,
+      -0.09
+     ],
+     [
+      0.5,
+      -0.08
+     ],
+     [
+      0.5,
+      0.08
+     ],
+     [
+      0.42,
+      0.09
+     ],
+     [
+      -0.42,
+      0.09
+     ],
+     [
+      -0.5,
+      0.08
+     ]
+    ]
+   ],
+   "band": 3
+  },
+  "curb_lamp_post": {
+   "kind": "curb",
+   "file": "models/structures/curb_lamp_post.glb",
+   "bytes": 8812,
+   "sha256": "1b38e4b7197b6ba51fd2f734efcdb5ed9e3ed975c508eebb7c0973b4b7f46583",
+   "triangles": 170,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 1
+   },
+   "bounds": {
+    "min": [
+     -0.22,
+     0.0,
+     -0.2
+    ],
+    "max": [
+     0.22,
+     3.28,
+     0.2
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron",
+    "Lantern"
+   ],
+   "parts": [
+    "glow"
+   ],
+   "doc": "housing-progression \u00a75/\u00a715 (curb appeal)",
+   "outline": [
+    [
+     [
+      -0.22,
+      -0.018
+     ],
+     [
+      -0.1732,
+      -0.1
+     ],
+     [
+      0.0,
+      -0.2
+     ],
+     [
+      0.1732,
+      -0.1
+     ],
+     [
+      0.22,
+      -0.018
+     ],
+     [
+      0.22,
+      0.018
+     ],
+     [
+      0.1732,
+      0.1
+     ],
+     [
+      0.0,
+      0.2
+     ],
+     [
+      -0.1732,
+      0.1
+     ],
+     [
+      -0.22,
+      0.018
+     ]
+    ]
+   ],
+   "band": 3
+  },
+  "fence_picket_run": {
+   "kind": "fence",
+   "file": "models/structures/fence_picket_run.glb",
+   "bytes": 9708,
+   "sha256": "65fd5f1fab4f3de8293bc8016b63947e6ef7999a20c8a2afcbb13bbe5ae2ef9b",
+   "triangles": 192,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.0375
+    ],
+    "max": [
+     0.5,
+     0.87,
+     0.022
+    ]
+   },
+   "materials": [
+    "Trim"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.0375
+     ],
+     [
+      0.5,
+      -0.0375
+     ],
+     [
+      0.5,
+      -0.0025
+     ],
+     [
+      0.465,
+      0.022
+     ],
+     [
+      -0.465,
+      0.022
+     ],
+     [
+      -0.5,
+      -0.0025
+     ]
+    ]
+   ],
+   "style": "picket"
+  },
+  "fence_picket_post": {
+   "kind": "fencePost",
+   "file": "models/structures/fence_picket_post.glb",
+   "bytes": 2920,
+   "sha256": "77826855832c0b67986b03590213d1a573e0a0f4f66cdb4067a34a2a4fa2b79f",
+   "triangles": 30,
+   "budget": 200,
+   "tileFootprint": {
+    "w": 0.5,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.085,
+     0.0,
+     -0.085
+    ],
+    "max": [
+     0.085,
+     1.08,
+     0.085
+    ]
+   },
+   "materials": [
+    "Trim"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.085,
+      0.0
+     ],
+     [
+      -0.075,
+      -0.075
+     ],
+     [
+      0.0,
+      -0.085
+     ],
+     [
+      0.075,
+      -0.075
+     ],
+     [
+      0.085,
+      0.0
+     ],
+     [
+      0.075,
+      0.075
+     ],
+     [
+      0.0,
+      0.085
+     ],
+     [
+      -0.075,
+      0.075
+     ]
+    ]
+   ],
+   "style": "picket"
+  },
+  "fence_picket_gate": {
+   "kind": "gate",
+   "file": "models/structures/fence_picket_gate.glb",
+   "bytes": 13760,
+   "sha256": "bf05e0bf0e7728377dfe8c6964480cd703a5a74873ed160e80571350e9a890d8",
+   "triangles": 228,
+   "budget": 700,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.505,
+     0.0,
+     -0.055
+    ],
+    "max": [
+     0.505,
+     1.12,
+     0.055
+    ]
+   },
+   "materials": [
+    "Iron",
+    "Trim"
+   ],
+   "parts": [
+    "door"
+   ],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.505,
+      0.0
+     ],
+     [
+      -0.5,
+      -0.05
+     ],
+     [
+      -0.45,
+      -0.055
+     ],
+     [
+      0.45,
+      -0.055
+     ],
+     [
+      0.5,
+      -0.05
+     ],
+     [
+      0.505,
+      0.0
+     ],
+     [
+      0.5,
+      0.05
+     ],
+     [
+      0.45,
+      0.055
+     ],
+     [
+      -0.45,
+      0.055
+     ],
+     [
+      -0.5,
+      0.05
+     ]
+    ]
+   ],
+   "style": "picket",
+   "door": {
+    "node": "door",
+    "hinge": [
+     -0.4,
+     0.0,
+     0.0
+    ],
+    "axis": "+Y",
+    "opens": 90
+   },
+   "frames": {
+    "back": {
+     "pos": [
+      0.0,
+      0.0,
+      -0.75
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "front": {
+     "pos": [
+      0.0,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  },
+  "fence_iron_run": {
+   "kind": "fence",
+   "file": "models/structures/fence_iron_run.glb",
+   "bytes": 9836,
+   "sha256": "d0b4f9d463a72e0276b35cc1e1589ef8fa99743b52ae46b977dde48b8fc1e70c",
+   "triangles": 168,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.028
+    ],
+    "max": [
+     0.5,
+     1.1,
+     0.028
+    ]
+   },
+   "materials": [
+    "Iron"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.015
+     ],
+     [
+      -0.4375,
+      -0.028
+     ],
+     [
+      0.4375,
+      -0.028
+     ],
+     [
+      0.5,
+      -0.015
+     ],
+     [
+      0.5,
+      0.015
+     ],
+     [
+      0.4375,
+      0.028
+     ],
+     [
+      -0.4375,
+      0.028
+     ],
+     [
+      -0.5,
+      0.015
+     ]
+    ]
+   ],
+   "style": "iron"
+  },
+  "fence_iron_post": {
+   "kind": "fencePost",
+   "file": "models/structures/fence_iron_post.glb",
+   "bytes": 3816,
+   "sha256": "13cbaef837b7d9f33b63050da9a2e76fdd1994fa7e5573c47186dd328e7aaad3",
+   "triangles": 60,
+   "budget": 200,
+   "tileFootprint": {
+    "w": 0.5,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.06,
+     0.0,
+     -0.06
+    ],
+    "max": [
+     0.06,
+     1.175,
+     0.06
+    ]
+   },
+   "materials": [
+    "Iron"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.06,
+      -0.06
+     ],
+     [
+      0.06,
+      -0.06
+     ],
+     [
+      0.06,
+      0.06
+     ],
+     [
+      -0.06,
+      0.06
+     ]
+    ]
+   ],
+   "style": "iron"
+  },
+  "fence_iron_gate": {
+   "kind": "gate",
+   "file": "models/structures/fence_iron_gate.glb",
+   "bytes": 16608,
+   "sha256": "b70a220cc38f3ccedb6b48884020bc907ba313be1a4f2df1622531e4f7735302",
+   "triangles": 306,
+   "budget": 700,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.4983,
+     0.0,
+     -0.05
+    ],
+    "max": [
+     0.4983,
+     1.2,
+     0.05
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron"
+   ],
+   "parts": [
+    "door"
+   ],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.4983,
+      -0.025
+     ],
+     [
+      -0.49,
+      -0.035
+     ],
+     [
+      -0.455,
+      -0.05
+     ],
+     [
+      0.455,
+      -0.05
+     ],
+     [
+      0.49,
+      -0.035
+     ],
+     [
+      0.4983,
+      -0.025
+     ],
+     [
+      0.4983,
+      0.025
+     ],
+     [
+      0.49,
+      0.035
+     ],
+     [
+      0.455,
+      0.05
+     ],
+     [
+      -0.455,
+      0.05
+     ],
+     [
+      -0.49,
+      0.035
+     ],
+     [
+      -0.4983,
+      0.025
+     ]
+    ]
+   ],
+   "style": "iron",
+   "door": {
+    "node": "door",
+    "hinge": [
+     -0.4,
+     0.0,
+     0.0
+    ],
+    "axis": "+Y",
+    "opens": 90
+   },
+   "frames": {
+    "back": {
+     "pos": [
+      0.0,
+      0.0,
+      -0.75
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "front": {
+     "pos": [
+      0.0,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  },
+  "fence_bone_run": {
+   "kind": "fence",
+   "file": "models/structures/fence_bone_run.glb",
+   "bytes": 11876,
+   "sha256": "5e13b5a9195e74ab4b577b083871d81e1d59718c6697c2dd95194e8ec65d8468",
+   "triangles": 204,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.4896,
+     0.0,
+     -0.0324
+    ],
+    "max": [
+     0.4896,
+     0.8435,
+     0.03
+    ]
+   },
+   "materials": [
+    "Bone",
+    "BoneDark"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.4896,
+      -0.01
+     ],
+     [
+      -0.465,
+      -0.0324
+     ],
+     [
+      0.465,
+      -0.0324
+     ],
+     [
+      0.4896,
+      -0.01
+     ],
+     [
+      0.4802,
+      0.0262
+     ],
+     [
+      0.36,
+      0.03
+     ],
+     [
+      -0.36,
+      0.03
+     ],
+     [
+      -0.4802,
+      0.0262
+     ]
+    ]
+   ],
+   "style": "bone"
+  },
+  "fence_bone_post": {
+   "kind": "fencePost",
+   "file": "models/structures/fence_bone_post.glb",
+   "bytes": 12596,
+   "sha256": "b74defe2224faaa13237719cce40de0ce14e4849d99fe1657df439c3d49d5804",
+   "triangles": 296,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 0.5,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.07,
+     0.0,
+     -0.0849
+    ],
+    "max": [
+     0.07,
+     1.071,
+     0.0849
+    ]
+   },
+   "materials": [
+    "Black",
+    "Bone",
+    "BoneDark"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.07,
+      -0.0424
+     ],
+     [
+      -0.055,
+      -0.055
+     ],
+     [
+      0.0,
+      -0.0849
+     ],
+     [
+      0.055,
+      -0.055
+     ],
+     [
+      0.07,
+      -0.0424
+     ],
+     [
+      0.07,
+      0.0424
+     ],
+     [
+      0.0505,
+      0.0721
+     ],
+     [
+      0.0323,
+      0.0779
+     ],
+     [
+      0.0,
+      0.0849
+     ],
+     [
+      -0.0323,
+      0.0779
+     ],
+     [
+      -0.0505,
+      0.0721
+     ],
+     [
+      -0.07,
+      0.0424
+     ]
+    ]
+   ],
+   "style": "bone"
+  },
+  "fence_bone_gate": {
+   "kind": "gate",
+   "file": "models/structures/fence_bone_gate.glb",
+   "bytes": 24056,
+   "sha256": "d1e74f0c366cf915e459332482dc67c6379e09bec641a5898d959dd0350b6278",
+   "triangles": 492,
+   "budget": 700,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.5026,
+     0.0,
+     -0.055
+    ],
+    "max": [
+     0.5026,
+     1.115,
+     0.055
+    ]
+   },
+   "materials": [
+    "Bone",
+    "BoneDark",
+    "Iron"
+   ],
+   "parts": [
+    "door"
+   ],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.5026,
+      -0.0275
+     ],
+     [
+      -0.455,
+      -0.055
+     ],
+     [
+      0.455,
+      -0.055
+     ],
+     [
+      0.5026,
+      -0.0275
+     ],
+     [
+      0.5026,
+      0.0275
+     ],
+     [
+      0.455,
+      0.055
+     ],
+     [
+      -0.455,
+      0.055
+     ],
+     [
+      -0.5026,
+      0.0275
+     ]
+    ]
+   ],
+   "style": "bone",
+   "door": {
+    "node": "door",
+    "hinge": [
+     -0.4,
+     0.0,
+     0.0
+    ],
+    "axis": "+Y",
+    "opens": 90
+   },
+   "frames": {
+    "back": {
+     "pos": [
+      0.0,
+      0.0,
+      -0.75
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "front": {
+     "pos": [
+      0.0,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  },
+  "fence_hedge_run": {
+   "kind": "fence",
+   "file": "models/structures/fence_hedge_run.glb",
+   "bytes": 4996,
+   "sha256": "ee8167c45a70beb9e91b45c8ef255e39b6137fbc42712a2932188e9362c6f5b8",
+   "triangles": 88,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.2056
+    ],
+    "max": [
+     0.5,
+     0.9863,
+     0.2056
+    ]
+   },
+   "materials": [
+    "Hedge",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.19
+     ],
+     [
+      0.25,
+      -0.2056
+     ],
+     [
+      0.5,
+      -0.19
+     ],
+     [
+      0.5,
+      0.19
+     ],
+     [
+      0.25,
+      0.2056
+     ],
+     [
+      -0.5,
+      0.19
+     ]
+    ]
+   ],
+   "style": "hedge"
+  },
+  "fence_hedge_post": {
+   "kind": "fencePost",
+   "file": "models/structures/fence_hedge_post.glb",
+   "bytes": 5328,
+   "sha256": "e93b3c5deb87ccc6df579f84a98561ab8e9754913b8f7dcc824153b414eaaf23",
+   "triangles": 44,
+   "budget": 200,
+   "tileFootprint": {
+    "w": 0.5,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.2282,
+     0.0,
+     -0.22
+    ],
+    "max": [
+     0.22,
+     1.1826,
+     0.22
+    ]
+   },
+   "materials": [
+    "Hedge",
+    "HedgeLight",
+    "WoodDark"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.2282,
+      0.0
+     ],
+     [
+      -0.22,
+      -0.22
+     ],
+     [
+      0.22,
+      -0.22
+     ],
+     [
+      0.22,
+      0.22
+     ],
+     [
+      -0.22,
+      0.22
+     ]
+    ]
+   ],
+   "style": "hedge"
+  },
+  "fence_hedge_gate": {
+   "kind": "gate",
+   "file": "models/structures/fence_hedge_gate.glb",
+   "bytes": 17136,
+   "sha256": "0aac9737454244907271b14bc17d6e0b49cb92f29ddefae7bc2ea5771523127b",
+   "triangles": 320,
+   "budget": 700,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.2025
+    ],
+    "max": [
+     0.5,
+     1.0,
+     0.2025
+    ]
+   },
+   "materials": [
+    "Hedge",
+    "Iron",
+    "Planks",
+    "WoodDark"
+   ],
+   "parts": [
+    "door"
+   ],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.19
+     ],
+     [
+      0.465,
+      -0.2025
+     ],
+     [
+      0.5,
+      -0.19
+     ],
+     [
+      0.5,
+      0.19
+     ],
+     [
+      0.465,
+      0.2025
+     ],
+     [
+      -0.5,
+      0.19
+     ]
+    ]
+   ],
+   "style": "hedge",
+   "door": {
+    "node": "door",
+    "hinge": [
+     -0.4,
+     0.0,
+     0.0
+    ],
+    "axis": "+Y",
+    "opens": 90
+   },
+   "frames": {
+    "back": {
+     "pos": [
+      0.0,
+      0.0,
+      -0.75
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "front": {
+     "pos": [
+      0.0,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  },
+  "fence_stone_run": {
+   "kind": "fence",
+   "file": "models/structures/fence_stone_run.glb",
+   "bytes": 15240,
+   "sha256": "e8f5312371d10011c8385995dad0c90d72ab8664d377b979d3a299472006ac31",
+   "triangles": 236,
+   "budget": 300,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.5,
+     0.0,
+     -0.18
+    ],
+    "max": [
+     0.5,
+     0.8149,
+     0.18
+    ]
+   },
+   "materials": [
+    "Charcoal",
+    "Granite",
+    "Moss",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.5,
+      -0.18
+     ],
+     [
+      0.5,
+      -0.18
+     ],
+     [
+      0.5,
+      0.18
+     ],
+     [
+      -0.5,
+      0.18
+     ]
+    ]
+   ],
+   "style": "stone"
+  },
+  "fence_stone_post": {
+   "kind": "fencePost",
+   "file": "models/structures/fence_stone_post.glb",
+   "bytes": 6288,
+   "sha256": "2d1dda8df340862ceb9b444a0f7a587638a40f2cce5a1f18f67ca9228ed6ca83",
+   "triangles": 60,
+   "budget": 200,
+   "tileFootprint": {
+    "w": 0.5,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.24,
+     0.0,
+     -0.24
+    ],
+    "max": [
+     0.24,
+     1.16,
+     0.24
+    ]
+   },
+   "materials": [
+    "Charcoal",
+    "Granite",
+    "StoneLight"
+   ],
+   "parts": [],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.24,
+      -0.24
+     ],
+     [
+      0.24,
+      -0.24
+     ],
+     [
+      0.24,
+      0.24
+     ],
+     [
+      -0.24,
+      0.24
+     ]
+    ]
+   ],
+   "style": "stone"
+  },
+  "fence_stone_gate": {
+   "kind": "gate",
+   "file": "models/structures/fence_stone_gate.glb",
+   "bytes": 13080,
+   "sha256": "fb9e6e2debf498faedee6350048474399951e536ac9aa0002c81abfe2a504fa7",
+   "triangles": 174,
+   "budget": 700,
+   "tileFootprint": {
+    "w": 1,
+    "d": 0.5
+   },
+   "bounds": {
+    "min": [
+     -0.52,
+     0.0,
+     -0.19
+    ],
+    "max": [
+     0.52,
+     1.07,
+     0.19
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Granite",
+    "Iron",
+    "StoneLight"
+   ],
+   "parts": [
+    "door"
+   ],
+   "doc": "yard-building \u00a71/\u00a73",
+   "outline": [
+    [
+     [
+      -0.52,
+      -0.19
+     ],
+     [
+      0.52,
+      -0.19
+     ],
+     [
+      0.52,
+      0.19
+     ],
+     [
+      -0.52,
+      0.19
+     ]
+    ]
+   ],
+   "style": "stone",
+   "door": {
+    "node": "door",
+    "hinge": [
+     -0.4,
+     0.0,
+     0.0
+    ],
+    "axis": "+Y",
+    "opens": 90
+   },
+   "frames": {
+    "back": {
+     "pos": [
+      0.0,
+      0.0,
+      -0.75
+     ],
+     "yaw": 0.0,
+     "kind": "approach"
+    },
+    "front": {
+     "pos": [
+      0.0,
+      0.0,
+      0.75
+     ],
+     "yaw": 180.0,
+     "kind": "approach"
+    }
+   }
+  }
+ }
+}

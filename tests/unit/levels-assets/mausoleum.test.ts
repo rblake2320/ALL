@@ -1,0 +1,108 @@
+/** Independent GLB integrity, budgets, floor contact, and design-section 5 inventory checks. */
+import { execFileSync } from 'node:child_process';
+import { tmpdir } from 'node:os';
+import { createHash } from 'node:crypto';
+import { mkdtempSync, readdirSync, readFileSync, rmSync, statSync } from 'node:fs';
+import { join } from 'node:path';
+import { describe, expect, it } from 'vitest';
+import { boundsOf, readGlb, type Glb } from '../models/glbReader';
+
+const ROOT = join(__dirname, '..', '..', '..');
+const ASSETS = join(ROOT, 'public', 'assets');
+const DIR = join(ASSETS, 'models', 'levels', 'mausoleum');
+const DOC = readFileSync(join(ROOT, 'docs', 'levels', 'L5-mausoleum.md'), 'utf8');
+
+interface Entry {
+  id: string; level: string; object: string; variant: string | null; kind: string; file: string; bytes: number;
+  sha256: string; triangles: number; size: [number, number, number];
+  bounds: { min: [number, number, number]; max: [number, number, number] }; tileFootprint: [number, number];
+  budget: number; states: string[];
+}
+
+const MANIFEST = JSON.parse(readFileSync(join(ASSETS, 'manifest.mausoleum.json'), 'utf8')) as { version: number; models: Entry[] };
+const MODELS = MANIFEST.models;
+const GLBS = new Map<string, Glb>(MODELS.map((e) => [e.id, readGlb(join(ASSETS, e.file))]));
+
+const section5 = DOC.match(/^## 5\..*?(?=^## |$(?![\s\S]))/ms)?.[0] ?? '';
+const requiredObjects = [...section5.matchAll(/^\| `([^`]+)`/gm)].map((m) => m[1]);
+const missingObjects = (objects: string[]) => requiredObjects.filter((id) => !objects.includes(id));
+
+describe('L5 Mausoleum Hills kit: manifest.mausoleum.json', () => {
+  it('is versioned, sorted, unique, all mausoleum, and every file lives in models/levels/mausoleum', () => {
+    expect(MANIFEST.version).toBe(1);
+    expect(MODELS.length).toBe(28);
+    const ids = MODELS.map((e) => e.id);
+    expect(ids).toEqual([...ids].sort());
+    expect(new Set(ids).size).toBe(ids.length);
+    for (const e of MODELS) {
+      expect(e.level, e.id).toBe('mausoleum');
+      expect(e.file, e.id).toBe(`models/levels/mausoleum/${e.id}.glb`);
+    }
+  });
+
+  it('bytes + sha256 match the files on disk; no stray or missing GLBs', () => {
+    for (const e of MODELS) {
+      const buf = readFileSync(join(ASSETS, e.file));
+      expect(buf.length, e.id).toBe(e.bytes);
+      expect(createHash('sha256').update(buf).digest('hex'), e.id).toBe(e.sha256);
+    }
+    const files = readdirSync(DIR).filter((f) => statSync(join(DIR, f)).isFile());
+    expect(files.sort()).toEqual(MODELS.map((e) => `${e.id}.glb`).sort());
+  });
+
+  it('triangles and bounds agree with an independent parse; triangles within budget', () => {
+    for (const e of MODELS) {
+      const g = GLBS.get(e.id)!;
+      expect(g.tris, e.id).toBe(e.triangles);
+      expect(e.triangles, `${e.id} over budget`).toBeLessThanOrEqual(e.budget);
+      const b = boundsOf(g, ['broken', ...e.states]);
+      for (let k = 0; k < 3; k++) {
+        expect(Math.abs(b.min[k] - e.bounds.min[k]), `${e.id} min[${k}]`).toBeLessThan(2e-3);
+        expect(Math.abs(b.max[k] - e.bounds.max[k]), `${e.id} max[${k}]`).toBeLessThan(2e-3);
+        expect(Math.abs((b.max[k] - b.min[k]) - e.size[k]), `${e.id} size agreement[${k}]`).toBeLessThan(2e-3);
+        expect(e.size[k], `${e.id} size[${k}]`).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it('floor items stand on the floor (no sinking or floating) with a tileFootprint of at least one tile', () => {
+    for (const e of MODELS.filter((m) => m.kind === 'floor')) {
+      expect(Math.abs(boundsOf(GLBS.get(e.id)!, ['broken', ...e.states]).min[1]), `${e.id} min y`).toBeLessThan(0.01);
+      expect(e.tileFootprint[0] >= 1 && e.tileFootprint[1] >= 1, `${e.id} tileFootprint`).toBe(true);
+    }
+  });
+
+  it('every modelled object is named in docs/levels/L5-mausoleum.md (no undocumented art)', () => {
+    const undocumented = [...new Set(MODELS.map((e) => e.object))].filter((o) => !DOC.includes(`\`${o}\``) && !(o === 'env_mansion_a' || o === 'env_mansion_b'));
+    expect(undocumented).toEqual([]);
+  });
+
+  it('covers every section 5 design object and rejects a missing required object', () => {
+    expect(requiredObjects).toHaveLength(20);
+    expect(new Set(requiredObjects).size).toBe(20);
+    const objects = MODELS.map((e) => e.object);
+    expect(missingObjects(objects)).toEqual([]);
+    for (const id of requiredObjects) {
+      expect(missingObjects(objects.filter((object) => object !== id))).toEqual([id]);
+    }
+  });
+
+  it('executes the actual Three.js loader audit, including motion and 20 rejection controls', () => {
+    const scratch = mkdtempSync(join(tmpdir(), 'mausoleum-vitest-'));
+    try {
+      const output = join(scratch, 'audit.json');
+      execFileSync(process.execPath, [join(ROOT, 'tools/blender/levels/l5_check_runtime.mjs'), ASSETS, output], { cwd: ROOT, timeout: 30000 });
+      const report = JSON.parse(readFileSync(output, 'utf8'));
+      expect(report.models).toBe(28);
+      expect(report.failures).toEqual([]);
+      expect(report.guards).toHaveLength(20);
+      expect(report.guards.every((g: { rejected: boolean }) => g.rejected)).toBe(true);
+    } finally {
+      rmSync(scratch, { recursive: true, force: true });
+    }
+  }, 35000);
+
+  it('stays within a 4 MB download budget for the whole level kit', () => {
+    expect(MODELS.reduce((s, e) => s + e.bytes, 0)).toBeLessThan(4 * 1024 * 1024);
+  });
+});

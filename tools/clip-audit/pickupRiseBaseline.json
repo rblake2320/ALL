@@ -1,0 +1,563 @@
+{
+  "source": "82167c71eb7c986be09d9be7bdd75d5348d83832",
+  "sampling": "60 Hz, inclusive 0.65–0.85 s",
+  "times": [
+    0.65,
+    0.666667,
+    0.683333,
+    0.7,
+    0.716667,
+    0.733333,
+    0.75,
+    0.766667,
+    0.783333,
+    0.8,
+    0.816667,
+    0.833333,
+    0.85
+  ],
+  "toolSha256": "996bd325edaeb1f2fd4e4f62bb5d509369d9a3d65372e4975471395bf34f8f68",
+  "manifestSha256": "fb411aaabd92cb146dc47c8f33488243b4d2e53825cdcbd7dd4b9219b3020b0d",
+  "rows": [
+    {
+      "look": "classic@h0.5",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "classic@h0.5",
+      "carry": "ingredients",
+      "mm": 4.4,
+      "at": 0.716667,
+      "samples": 13,
+      "detail": "foot_L",
+      "maxMm": 15
+    },
+    {
+      "look": "classic@h0.5",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "classic@h0.5",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "classic@h0.5",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "mascot@h0.5",
+      "carry": "book",
+      "mm": 41.2,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "upperarm_R",
+      "maxMm": 49
+    },
+    {
+      "look": "mascot@h0.5",
+      "carry": "ingredients",
+      "mm": 18.2,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "foot_R",
+      "maxMm": 24
+    },
+    {
+      "look": "mascot@h0.5",
+      "carry": "limb",
+      "mm": 43.1,
+      "at": 0.85,
+      "samples": 13,
+      "detail": "upperarm_R",
+      "maxMm": 51
+    },
+    {
+      "look": "mascot@h0.5",
+      "carry": "pizza",
+      "mm": 29.8,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "upperarm_R",
+      "maxMm": 36
+    },
+    {
+      "look": "mascot@h0.5",
+      "carry": "plate",
+      "mm": 44,
+      "at": 0.8,
+      "samples": 13,
+      "detail": "upperarm_R",
+      "maxMm": 52
+    },
+    {
+      "look": "sexton@h0.5",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5",
+      "carry": "ingredients",
+      "mm": 8.3,
+      "at": 0.75,
+      "samples": 13,
+      "detail": "shin_R",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5,low",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5,low",
+      "carry": "ingredients",
+      "mm": 5.2,
+      "at": 0.733333,
+      "samples": 13,
+      "detail": "shin_R",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5,low",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5,low",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "sexton@h0.5,low",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5",
+      "carry": "ingredients",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5,low",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5,low",
+      "carry": "ingredients",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5,low",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5,low",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "lowside@h0.5,low",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "waitress@h0.5",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "waitress@h0.5",
+      "carry": "ingredients",
+      "mm": 58.4,
+      "at": 0.75,
+      "samples": 13,
+      "detail": "shin_L",
+      "maxMm": 68
+    },
+    {
+      "look": "waitress@h0.5",
+      "carry": "limb",
+      "mm": 17.1,
+      "at": 0.7,
+      "samples": 13,
+      "detail": "thigh_R",
+      "maxMm": 22
+    },
+    {
+      "look": "waitress@h0.5",
+      "carry": "pizza",
+      "mm": 23.8,
+      "at": 0.833333,
+      "samples": 13,
+      "detail": "thigh_R",
+      "maxMm": 30
+    },
+    {
+      "look": "waitress@h0.5",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "waitress@h0.5,low",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "waitress@h0.5,low",
+      "carry": "ingredients",
+      "mm": 58.5,
+      "at": 0.75,
+      "samples": 13,
+      "detail": "shin_L",
+      "maxMm": 68
+    },
+    {
+      "look": "waitress@h0.5,low",
+      "carry": "limb",
+      "mm": 17.2,
+      "at": 0.716667,
+      "samples": 13,
+      "detail": "thigh_R",
+      "maxMm": 22
+    },
+    {
+      "look": "waitress@h0.5,low",
+      "carry": "pizza",
+      "mm": 22.4,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "shin_R",
+      "maxMm": 28
+    },
+    {
+      "look": "waitress@h0.5,low",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5",
+      "carry": "ingredients",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5,low",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5,low",
+      "carry": "ingredients",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5,low",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5,low",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "patient@h0.5,low",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5",
+      "carry": "ingredients",
+      "mm": 18.7,
+      "at": 0.75,
+      "samples": 13,
+      "detail": "shin_R",
+      "maxMm": 24
+    },
+    {
+      "look": "fisherman@h0.5",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5,low",
+      "carry": "book",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5,low",
+      "carry": "ingredients",
+      "mm": 22.2,
+      "at": 0.716667,
+      "samples": 13,
+      "detail": "shin_R",
+      "maxMm": 28
+    },
+    {
+      "look": "fisherman@h0.5,low",
+      "carry": "limb",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5,low",
+      "carry": "pizza",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    },
+    {
+      "look": "fisherman@h0.5,low",
+      "carry": "plate",
+      "mm": 0,
+      "at": 0.65,
+      "samples": 13,
+      "detail": "-",
+      "maxMm": 15
+    }
+  ]
+}

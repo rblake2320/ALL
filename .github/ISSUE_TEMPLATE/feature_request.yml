@@ -1,0 +1,14 @@
+name: Feature request
+description: Suggest a change or a new feature.
+labels: [enhancement, needs-triage]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: What should players be able to do?, description: The player-facing goal, not the implementation. }
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes: { label: Why it matters }
+  - type: textarea
+    id: notes
+    attributes: { label: Notes, description: "Mock-ups, references, constraints (E10+, phone, offline)." }

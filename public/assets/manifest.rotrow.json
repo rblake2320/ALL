@@ -1,0 +1,2445 @@
+{
+ "version": 1,
+ "models": [
+  {
+   "id": "bag_punching",
+   "level": "rotrow",
+   "object": "bag_punching",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/bag_punching.glb",
+   "bytes": 15908,
+   "sha256": "00ea03372d014d5ec35a31a2f3d524a1b10b12111bc7824152ad588a4d0f3f50",
+   "triangles": 316,
+   "size": [
+    0.86,
+    2.0446,
+    0.8
+   ],
+   "bounds": {
+    "min": [
+     -0.43,
+     0.0,
+     -0.4
+    ],
+    "max": [
+     0.43,
+     2.0446,
+     0.4
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Iron",
+    "LeatherDark",
+    "Paint",
+    "Paper"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "bag"
+   ],
+   "states": [],
+   "tags": [
+    "gym",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "ball_mirrorSkull",
+   "level": "rotrow",
+   "object": "ball_mirrorSkull",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/ball_mirrorSkull.glb",
+   "bytes": 17452,
+   "sha256": "774f3141f0341c22cd9fd4eb1a4f478f12d6613cc59c6e97ad17956ba6dddbad",
+   "triangles": 436,
+   "size": [
+    0.4964,
+    1.1997,
+    0.5212
+   ],
+   "bounds": {
+    "min": [
+     -0.2482,
+     0.0003,
+     -0.2606
+    ],
+    "max": [
+     0.2482,
+     1.2,
+     0.2606
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paint",
+    "RRInk",
+    "RRNeonPink"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "bar_counter",
+   "level": "rotrow",
+   "object": "bar_counter",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/bar_counter.glb",
+   "bytes": 53908,
+   "sha256": "7b7ffd068cacda3ab633aaa48f0bd299a971d6aa13fcfa96117e7cd8cae4d9c9",
+   "triangles": 1379,
+   "size": [
+    3.75,
+    1.285,
+    0.98
+   ],
+   "bounds": {
+    "min": [
+     -1.875,
+     0.0,
+     -0.46
+    ],
+    "max": [
+     1.875,
+     1.285,
+     0.52
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paper",
+    "RRBlue",
+    "RRFabric",
+    "RRInk",
+    "RRPink",
+    "RRTeal",
+    "RRTrim",
+    "Wood",
+    "WoodEbony",
+    "WoodLight"
+   ],
+   "footprint": [
+    4,
+    1
+   ],
+   "budget": 3200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "menu"
+   ],
+   "states": [],
+   "tags": [
+    "club",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "bench_lab",
+   "level": "rotrow",
+   "object": "bench_lab",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/bench_lab.glb",
+   "bytes": 36600,
+   "sha256": "f02746fc8a660387853f4fa51583466f2ea6feccc1209bf9cc867203af46a8e7",
+   "triangles": 1291,
+   "size": [
+    1.88,
+    1.5401,
+    0.82
+   ],
+   "bounds": {
+    "min": [
+     -0.94,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     0.94,
+     1.5401,
+     0.41
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Galvanised",
+    "RRGlass",
+    "RRInk",
+    "RRNeonTeal",
+    "RRPink",
+    "RRTrim"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 2400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "lab",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "bench_locker",
+   "level": "rotrow",
+   "object": "bench_locker",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/bench_locker.glb",
+   "bytes": 26980,
+   "sha256": "e821bdfc549706bb22aefc51ad78381e5a89547792635310aa38f92486900b36",
+   "triangles": 628,
+   "size": [
+    1.86,
+    1.55,
+    0.82
+   ],
+   "bounds": {
+    "min": [
+     -0.93,
+     0.0,
+     -0.46
+    ],
+    "max": [
+     0.93,
+     1.55,
+     0.36
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Galvanised",
+    "Iron",
+    "Paint",
+    "RRInk",
+    "RRTeal"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 700,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "gym",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "bin_donation",
+   "level": "rotrow",
+   "object": "bin_donation",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/bin_donation.glb",
+   "bytes": 11268,
+   "sha256": "e19a2d070e2fc67dde77d3741ee1c356be71df42836065b1ac331b4f9d1cf306",
+   "triangles": 160,
+   "size": [
+    0.84,
+    1.08,
+    0.785
+   ],
+   "bounds": {
+    "min": [
+     -0.42,
+     0.0,
+     -0.39
+    ],
+    "max": [
+     0.42,
+     1.08,
+     0.395
+    ]
+   },
+   "materials": [
+    "Paper",
+    "RRInk",
+    "RRPink",
+    "Wood",
+    "WoodDark"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "booth_dj",
+   "level": "rotrow",
+   "object": "booth_dj",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/booth_dj.glb",
+   "bytes": 57976,
+   "sha256": "0cad4ac9d74e533020fea757a01a65d5204e255cc0db3d0606c8b76288c027c1",
+   "triangles": 1574,
+   "size": [
+    1.84,
+    2.0417,
+    0.8138
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.4028
+    ],
+    "max": [
+     0.92,
+     2.0417,
+     0.411
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Chrome",
+    "Iron",
+    "Paint",
+    "RRInk",
+    "RRNeonPink",
+    "RRPink",
+    "RRTrim",
+    "Rubber",
+    "WoodEbony"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 2800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow",
+    "platter_L",
+    "platter_R"
+   ],
+   "states": [],
+   "tags": [
+    "club",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "booth_velvet",
+   "level": "rotrow",
+   "object": "booth_velvet",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/booth_velvet.glb",
+   "bytes": 16968,
+   "sha256": "6bfa6911877239a30cf1a6bcb50ee5c3a79cc3de5642f7a714f279908a88745a",
+   "triangles": 576,
+   "size": [
+    1.86,
+    1.1,
+    0.765
+   ],
+   "bounds": {
+    "min": [
+     -0.93,
+     0.0,
+     -0.385
+    ],
+    "max": [
+     0.93,
+     1.1,
+     0.38
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paint",
+    "WoodEbony"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "club",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "catalog_cards",
+   "level": "rotrow",
+   "object": "catalog_cards",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/catalog_cards.glb",
+   "bytes": 36928,
+   "sha256": "617b907143c9cede5037b998be54b4a489931f861574e4a9d2b3b490dea3cc3a",
+   "triangles": 712,
+   "size": [
+    0.84,
+    1.52,
+    0.7449
+   ],
+   "bounds": {
+    "min": [
+     -0.42,
+     0.0,
+     -0.35
+    ],
+    "max": [
+     0.42,
+     1.52,
+     0.3949
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paper",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "library",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "chair_salon",
+   "level": "rotrow",
+   "object": "chair_salon",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/chair_salon.glb",
+   "bytes": 17276,
+   "sha256": "2db5306dcf41c0b7f14ec9ec0b1633efdab820598d5655f087fba6000d2fb32a",
+   "triangles": 460,
+   "size": [
+    0.7187,
+    1.16,
+    0.83
+   ],
+   "bounds": {
+    "min": [
+     -0.355,
+     0.0,
+     -0.34
+    ],
+    "max": [
+     0.3637,
+     1.16,
+     0.49
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "LeatherDark",
+    "Rubber"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "salon",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "counter_checkout",
+   "level": "rotrow",
+   "object": "counter_checkout",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/counter_checkout.glb",
+   "bytes": 24268,
+   "sha256": "e20b51a52bf1b01ce464683a22b2915845d4f973f580724c11e829ca6ff4e91e",
+   "triangles": 518,
+   "size": [
+    1.84,
+    1.22,
+    0.8525
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     0.92,
+     1.22,
+     0.4425
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paper",
+    "RRInk",
+    "RRTrim",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "counter_curio",
+   "level": "rotrow",
+   "object": "counter_curio",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/counter_curio.glb",
+   "bytes": 31176,
+   "sha256": "4ebe8dcdb98882a26d7ce8a13e92f2f2304c709ec27d1e4094e31b624fe6309f",
+   "triangles": 768,
+   "size": [
+    1.84,
+    1.2,
+    0.8525
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     0.92,
+     1.2,
+     0.4425
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paper",
+    "RRGlass",
+    "RRInk",
+    "RRTeal",
+    "StoneLight",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "counter_loan",
+   "level": "rotrow",
+   "object": "counter_loan",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/counter_loan.glb",
+   "bytes": 22504,
+   "sha256": "2c8300d981ee520e5a1e30c9dfed4334efc7e6309bc52e7bee6ce43c97068f0c",
+   "triangles": 508,
+   "size": [
+    1.84,
+    1.16,
+    0.8525
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     0.92,
+     1.16,
+     0.4425
+    ]
+   },
+   "materials": [
+    "Brass",
+    "RRBook",
+    "RRInk",
+    "RRTrim",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "library",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "counter_pantry",
+   "level": "rotrow",
+   "object": "counter_pantry",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/counter_pantry.glb",
+   "bytes": 39152,
+   "sha256": "9784c9bb49f8b88cdc3ece95c088d0840f0e0867531d7119d3aa82f7b2134d12",
+   "triangles": 1016,
+   "size": [
+    2.85,
+    1.147,
+    0.857
+   ],
+   "bounds": {
+    "min": [
+     -1.425,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     1.425,
+     1.147,
+     0.447
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paper",
+    "RRInk",
+    "RRTeal",
+    "RRTrim",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    3,
+    1
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "counter_reception",
+   "level": "rotrow",
+   "object": "counter_reception",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/counter_reception.glb",
+   "bytes": 19292,
+   "sha256": "ee72618c73a3ae9529ce4cc8e7ae9ba5cfdb0bc1a558f9a5c72d538b66238882",
+   "triangles": 452,
+   "size": [
+    1.84,
+    1.055,
+    0.8525
+   ],
+   "bounds": {
+    "min": [
+     -0.92,
+     0.0,
+     -0.41
+    ],
+    "max": [
+     0.92,
+     1.055,
+     0.4425
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron",
+    "Paper",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "salon",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "crate_supplies",
+   "level": "rotrow",
+   "object": "crate_supplies",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/crate_supplies.glb",
+   "bytes": 18968,
+   "sha256": "b07432cb191c91d0d7a50b090a987f218c0a61450a45f0b9e6ee83ab775f271e",
+   "triangles": 373,
+   "size": [
+    0.85,
+    0.77,
+    0.851
+   ],
+   "bounds": {
+    "min": [
+     -0.425,
+     0.0,
+     -0.425
+    ],
+    "max": [
+     0.425,
+     0.77,
+     0.426
+    ]
+   },
+   "materials": [
+    "RRInk",
+    "Wood",
+    "WoodDark",
+    "WoodLight"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "display_cryptkicks",
+   "level": "rotrow",
+   "object": "display_cryptkicks",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/rotrow/display_cryptkicks.glb",
+   "bytes": 36492,
+   "sha256": "15e3aee9746cc1965d7e7181f08df55d9ba53d879291b19701a5d871b0c5d4ee",
+   "triangles": 936,
+   "size": [
+    0.92,
+    1.2,
+    0.23
+   ],
+   "bounds": {
+    "min": [
+     -0.46,
+     0.9,
+     0.0
+    ],
+    "max": [
+     0.46,
+     2.1,
+     0.23
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paper",
+    "RRFabric",
+    "RRTeal",
+    "RRTrim",
+    "WoodEbony"
+   ],
+   "footprint": [
+    1,
+    0.25
+   ],
+   "budget": 1100,
+   "front": "",
+   "wallCentre": 1.5,
+   "parts": [
+    "brand"
+   ],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "display_showroom",
+   "level": "rotrow",
+   "object": "display_showroom",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/display_showroom.glb",
+   "bytes": 24156,
+   "sha256": "e292462663ac31aebcd919a2e4a47333e9b8efa0091315384946528ad35a95a6",
+   "triangles": 580,
+   "size": [
+    2.8,
+    1.62,
+    1.8
+   ],
+   "bounds": {
+    "min": [
+     -1.4,
+     0.0,
+     -0.9
+    ],
+    "max": [
+     1.4,
+     1.62,
+     0.9
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paper",
+    "RRFabric",
+    "RRInk",
+    "RRTeal",
+    "RRTrim",
+    "WoodDark"
+   ],
+   "footprint": [
+    3,
+    2
+   ],
+   "budget": 3500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "dryer_hood",
+   "level": "rotrow",
+   "object": "dryer_hood",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/dryer_hood.glb",
+   "bytes": 22964,
+   "sha256": "9c843cc4cebd95c15282a7495b620855eea36edf8a7673d200e61e9892220ac8",
+   "triangles": 712,
+   "size": [
+    0.7187,
+    1.61,
+    0.872
+   ],
+   "bounds": {
+    "min": [
+     -0.355,
+     0.0,
+     -0.382
+    ],
+    "max": [
+     0.3637,
+     1.61,
+     0.49
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paint",
+    "Rubber"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1400,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "salon",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "env_brick_block",
+   "level": "rotrow",
+   "object": "env_brick_block",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/rotrow/env_brick_block.glb",
+   "bytes": 91552,
+   "sha256": "e3c3f4e432c04fdb66a47a090806d517b23b31d1a819bc61a9c054c5824ba428",
+   "triangles": 1968,
+   "size": [
+    5.97,
+    10.525,
+    3.945
+   ],
+   "bounds": {
+    "min": [
+     -2.985,
+     0.0,
+     -1.885
+    ],
+    "max": [
+     2.985,
+     10.525,
+     2.06
+    ]
+   },
+   "materials": [
+    "Iron",
+    "RRBlue",
+    "RRBrickDark",
+    "RRInk",
+    "RRTrim",
+    "StoneLight"
+   ],
+   "footprint": [
+    6,
+    4
+   ],
+   "budget": 3000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "env_neon_sign",
+   "level": "rotrow",
+   "object": "env_neon_sign",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/rotrow/env_neon_sign.glb",
+   "bytes": 8632,
+   "sha256": "b67a3d308b45807487c0a2cb11bfcd0765b30c2176835edbf30c258f4909d838",
+   "triangles": 163,
+   "size": [
+    1.4,
+    0.62,
+    0.2094
+   ],
+   "bounds": {
+    "min": [
+     -0.7,
+     0.0,
+     -0.1414
+    ],
+    "max": [
+     0.7,
+     0.62,
+     0.068
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Iron",
+    "RRNeonPink"
+   ],
+   "footprint": [
+    1.5,
+    0.3
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "env_rooftop_billboard",
+   "level": "rotrow",
+   "object": "env_rooftop_billboard",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/rotrow/env_rooftop_billboard.glb",
+   "bytes": 25088,
+   "sha256": "54b5ddecf13facd93d5bae7b0e77772a32ed266b476ae5370d9be63fa10205b3",
+   "triangles": 607,
+   "size": [
+    3.85,
+    2.9539,
+    0.7448
+   ],
+   "bounds": {
+    "min": [
+     -1.925,
+     0.0,
+     -0.3048
+    ],
+    "max": [
+     1.925,
+     2.9539,
+     0.44
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Iron",
+    "RRTeal",
+    "RRTrim"
+   ],
+   "footprint": [
+    4,
+    1
+   ],
+   "budget": 1500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "ad_panel"
+   ],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "env_shopfront_a",
+   "level": "rotrow",
+   "object": "env_shopfront_a",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/rotrow/env_shopfront_a.glb",
+   "bytes": 155916,
+   "sha256": "c8547aad0e463a315bc2d84ebc39f87e309810f30dcd388283486de309f193df",
+   "triangles": 4013,
+   "size": [
+    4.97,
+    6.425,
+    3.3125
+   ],
+   "bounds": {
+    "min": [
+     -2.485,
+     0.0,
+     -1.385
+    ],
+    "max": [
+     2.485,
+     6.425,
+     1.9275
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron",
+    "RRBlue",
+    "RRBrick",
+    "RRBrickDark",
+    "RRFabric",
+    "RRInk",
+    "RRTrim",
+    "StoneLight",
+    "WoodDark"
+   ],
+   "footprint": [
+    5,
+    3
+   ],
+   "budget": 4500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "env_shopfront_b",
+   "level": "rotrow",
+   "object": "env_shopfront_b",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/rotrow/env_shopfront_b.glb",
+   "bytes": 110868,
+   "sha256": "bd08854d468364e96ad67362c99714c5b56ea1b9660d2491d5f81e5a4808f635",
+   "triangles": 2752,
+   "size": [
+    2.97,
+    6.73,
+    3.3125
+   ],
+   "bounds": {
+    "min": [
+     -1.485,
+     0.0,
+     -1.385
+    ],
+    "max": [
+     1.485,
+     6.73,
+     1.9275
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Iron",
+    "RRBlue",
+    "RRBrick",
+    "RRBrickDark",
+    "RRFabric",
+    "RRInk",
+    "RRTeal",
+    "RRTrim",
+    "StoneLight",
+    "WoodDark"
+   ],
+   "footprint": [
+    3,
+    3
+   ],
+   "budget": 3500,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "env_tram_stop",
+   "level": "rotrow",
+   "object": "env_tram_stop",
+   "variant": null,
+   "kind": "env",
+   "file": "models/levels/rotrow/env_tram_stop.glb",
+   "bytes": 36708,
+   "sha256": "9efd64578f23953f59ebfc1a8b9c2299fe1c6408004fe1ca36f85a3f0232e152",
+   "triangles": 822,
+   "size": [
+    2.88,
+    2.57,
+    1.644
+   ],
+   "bounds": {
+    "min": [
+     -1.44,
+     0.0,
+     -0.81
+    ],
+    "max": [
+     1.44,
+     2.57,
+     0.834
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Iron",
+    "RRGlass",
+    "RRInk",
+    "RRPink",
+    "RRTeal",
+    "RRTrim",
+    "WoodLight"
+   ],
+   "footprint": [
+    3,
+    2
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "ad_panel"
+   ],
+   "states": [],
+   "tags": [
+    "street",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "floor_dance_lit",
+   "level": "rotrow",
+   "object": "floor_dance_lit",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/floor_dance_lit.glb",
+   "bytes": 6668,
+   "sha256": "9d35f062e51e151595c745bb256606e001ed67097780d90001215830d3aab1b9",
+   "triangles": 92,
+   "size": [
+    0.99,
+    0.035,
+    0.99
+   ],
+   "bounds": {
+    "min": [
+     -0.495,
+     0.0,
+     -0.495
+    ],
+    "max": [
+     0.495,
+     0.035,
+     0.495
+    ]
+   },
+   "materials": [
+    "Iron",
+    "RRNeonPink",
+    "RRNeonTeal"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "club",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "fridge_rotpop",
+   "level": "rotrow",
+   "object": "fridge_rotpop",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/fridge_rotpop.glb",
+   "bytes": 43064,
+   "sha256": "de6846996295c6bbb78f38ab763c5cba0238dcaa376a8a5bd0f1e223c1715600",
+   "triangles": 1069,
+   "size": [
+    0.82,
+    1.9,
+    0.843
+   ],
+   "bounds": {
+    "min": [
+     -0.41,
+     0.0,
+     -0.42
+    ],
+    "max": [
+     0.41,
+     1.9,
+     0.423
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paint",
+    "Paper",
+    "RRBlue",
+    "RRGlass",
+    "RRInk",
+    "RRNeonPink",
+    "RRPink",
+    "RRTeal"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "brand",
+    "door",
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "item_bouquet",
+   "level": "rotrow",
+   "object": "item_bouquet",
+   "variant": null,
+   "kind": "item",
+   "file": "models/levels/rotrow/item_bouquet.glb",
+   "bytes": 22180,
+   "sha256": "f29203442caefe54ca515beae9bc06928ffb5b4de66a991b94026ebe16d0fc85",
+   "triangles": 434,
+   "size": [
+    0.2413,
+    0.4445,
+    0.2281
+   ],
+   "bounds": {
+    "min": [
+     -0.12,
+     0.0,
+     -0.12
+    ],
+    "max": [
+     0.1213,
+     0.4445,
+     0.1081
+    ]
+   },
+   "materials": [
+    "Paper",
+    "RRFabric",
+    "RRPink",
+    "RRTeal"
+   ],
+   "footprint": [
+    0.32,
+    0.32
+   ],
+   "budget": 800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "carry",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "item_libraryBook",
+   "level": "rotrow",
+   "object": "item_libraryBook",
+   "variant": null,
+   "kind": "item",
+   "file": "models/levels/rotrow/item_libraryBook.glb",
+   "bytes": 5612,
+   "sha256": "f3b29b80d141b59c22afc46cc2dc392dbce38ca6a41de0cf1c20ed9e97dc2969",
+   "triangles": 100,
+   "size": [
+    0.2,
+    0.04,
+    0.1515
+   ],
+   "bounds": {
+    "min": [
+     -0.1,
+     0.0,
+     -0.075
+    ],
+    "max": [
+     0.1,
+     0.04,
+     0.0765
+    ]
+   },
+   "materials": [
+    "Paper",
+    "RRBook"
+   ],
+   "footprint": [
+    0.2,
+    0.15
+   ],
+   "budget": 300,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "carry",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "item_mealbox",
+   "level": "rotrow",
+   "object": "item_mealbox",
+   "variant": null,
+   "kind": "item",
+   "file": "models/levels/rotrow/item_mealbox.glb",
+   "bytes": 5572,
+   "sha256": "acecc865e78d1241335796baff5d9a47859f138c85f36009a7cc4f2ce820b57d",
+   "triangles": 100,
+   "size": [
+    0.25,
+    0.121,
+    0.181
+   ],
+   "bounds": {
+    "min": [
+     -0.125,
+     0.0,
+     -0.0905
+    ],
+    "max": [
+     0.125,
+     0.121,
+     0.0905
+    ]
+   },
+   "materials": [
+    "Paper",
+    "RRTeal"
+   ],
+   "footprint": [
+    0.25,
+    0.18
+   ],
+   "budget": 350,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "carry",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "jukebox_ghoul",
+   "level": "rotrow",
+   "object": "jukebox_ghoul",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/jukebox_ghoul.glb",
+   "bytes": 83892,
+   "sha256": "34e51fd770edd621eb6807c57f25736e9e9c0750ef63f40485276f873985136e",
+   "triangles": 1781,
+   "size": [
+    0.927,
+    1.65,
+    0.5336
+   ],
+   "bounds": {
+    "min": [
+     -0.4635,
+     0.0,
+     -0.2668
+    ],
+    "max": [
+     0.4635,
+     1.65,
+     0.2668
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paint",
+    "RRInk",
+    "RRNeonTeal",
+    "RRPink"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "lamp_bankerGreen",
+   "level": "rotrow",
+   "object": "lamp_bankerGreen",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/lamp_bankerGreen.glb",
+   "bytes": 8472,
+   "sha256": "1830dea1b25a0a5a85502960228f69773e52906bc48306f203a48990cbbb39fb",
+   "triangles": 168,
+   "size": [
+    0.425,
+    0.5162,
+    0.3851
+   ],
+   "bounds": {
+    "min": [
+     -0.2125,
+     0.0,
+     -0.174
+    ],
+    "max": [
+     0.2125,
+     0.5162,
+     0.2111
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paint",
+    "RRNeonWarm"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 700,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "bulb"
+   ],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "mat_stretch",
+   "level": "rotrow",
+   "object": "mat_stretch",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/mat_stretch.glb",
+   "bytes": 6096,
+   "sha256": "ecd5c6859ed1f9230f1d572e214d2e24b9ca293b17668f69307d24b230018bb6",
+   "triangles": 112,
+   "size": [
+    1.75,
+    0.087,
+    1.687
+   ],
+   "bounds": {
+    "min": [
+     -0.875,
+     0.0,
+     -0.792
+    ],
+    "max": [
+     0.875,
+     0.087,
+     0.895
+    ]
+   },
+   "materials": [
+    "Paint",
+    "RRTrim"
+   ],
+   "footprint": [
+    2,
+    2
+   ],
+   "budget": 200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "gym",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "pod_nap",
+   "level": "rotrow",
+   "object": "pod_nap",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/pod_nap.glb",
+   "bytes": 19832,
+   "sha256": "2fe681532f5f83329c42acee439361c732599f9d219326c4fb669b54c5ad9b6d",
+   "triangles": 484,
+   "size": [
+    0.88,
+    0.94,
+    1.894
+   ],
+   "bounds": {
+    "min": [
+     -0.44,
+     0.0,
+     -0.94
+    ],
+    "max": [
+     0.44,
+     0.94,
+     0.954
+    ]
+   },
+   "materials": [
+    "Paint",
+    "RRFabric",
+    "RRInk",
+    "RRNeonTeal",
+    "RRTrim"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 2200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "door",
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "lab",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "pool_plunge",
+   "level": "rotrow",
+   "object": "pool_plunge",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/pool_plunge.glb",
+   "bytes": 37576,
+   "sha256": "ff332934bafe639c751706e53d220559c79bc90c3fc95e7879719a87002d777b",
+   "triangles": 880,
+   "size": [
+    2.9,
+    0.5677,
+    1.9
+   ],
+   "bounds": {
+    "min": [
+     -1.45,
+     0.0,
+     -0.95
+    ],
+    "max": [
+     1.45,
+     0.5677,
+     0.95
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paper",
+    "RRIce",
+    "RRTeal",
+    "RRTrim",
+    "RRWater",
+    "StoneLight"
+   ],
+   "footprint": [
+    3,
+    2
+   ],
+   "budget": 2600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "frost",
+    "water"
+   ],
+   "states": [
+    "frost"
+   ],
+   "tags": [
+    "gym",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "poster_gigTattered",
+   "level": "rotrow",
+   "object": "poster_gigTattered",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/rotrow/poster_gigTattered.glb",
+   "bytes": 12060,
+   "sha256": "7806faee32730873fa64fb76eecf642119a2e7962244f315b0b9d502cac19639",
+   "triangles": 234,
+   "size": [
+    0.88,
+    0.8,
+    0.026
+   ],
+   "bounds": {
+    "min": [
+     -0.44,
+     1.11,
+     -0.001
+    ],
+    "max": [
+     0.44,
+     1.91,
+     0.025
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paint",
+    "RRFabric",
+    "RRInk"
+   ],
+   "footprint": [
+    1,
+    0.03
+   ],
+   "budget": 500,
+   "front": "",
+   "wallCentre": 1.5,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "rug_checkerboard",
+   "level": "rotrow",
+   "object": "rug_checkerboard",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/rug_checkerboard.glb",
+   "bytes": 10232,
+   "sha256": "9df14259e69aa9ff4bd8914e7815e0cede8346040062dc16cd1e59dd6ee06023",
+   "triangles": 188,
+   "size": [
+    1.9,
+    0.025,
+    2.9
+   ],
+   "bounds": {
+    "min": [
+     -0.95,
+     0.0,
+     -1.45
+    ],
+    "max": [
+     0.95,
+     0.025,
+     1.45
+    ]
+   },
+   "materials": [
+    "Paint",
+    "RRInk"
+   ],
+   "footprint": [
+    2,
+    3
+   ],
+   "budget": 200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "server_rack",
+   "level": "rotrow",
+   "object": "server_rack",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/server_rack.glb",
+   "bytes": 35000,
+   "sha256": "c20e273a2369e05967d431281c5b45d28492b769d9753133a315a80d0ca1ff03",
+   "triangles": 816,
+   "size": [
+    0.78,
+    1.95,
+    0.8408
+   ],
+   "bounds": {
+    "min": [
+     -0.39,
+     0.0,
+     -0.4438
+    ],
+    "max": [
+     0.39,
+     1.95,
+     0.397
+    ]
+   },
+   "materials": [
+    "Galvanised",
+    "Iron",
+    "RRInk",
+    "RRNeonTeal",
+    "Rubber"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 900,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "lab",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "shelf_grocery",
+   "level": "rotrow",
+   "object": "shelf_grocery",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/shelf_grocery.glb",
+   "bytes": 94876,
+   "sha256": "4e33cb8652e30a597c0cd66ae3abd529848bace90807ccebdac995bf999c47b8",
+   "triangles": 2414,
+   "size": [
+    2.88,
+    1.7,
+    0.809
+   ],
+   "bounds": {
+    "min": [
+     -1.44,
+     0.0,
+     -0.39
+    ],
+    "max": [
+     1.44,
+     1.7,
+     0.419
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Galvanised",
+    "LeatherDark",
+    "Paper",
+    "RRInk",
+    "RRPink",
+    "RRTeal",
+    "RRTrim",
+    "WoodLight"
+   ],
+   "footprint": [
+    3,
+    1
+   ],
+   "budget": 2800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "brand"
+   ],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "shelf_library",
+   "level": "rotrow",
+   "object": "shelf_library",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/shelf_library.glb",
+   "bytes": 74044,
+   "sha256": "bbb69352d3013b99f192986c96aba5a2c893adfdfc10716e760a8e2cf95dc17a",
+   "triangles": 2132,
+   "size": [
+    2.88,
+    2.05,
+    0.905
+   ],
+   "bounds": {
+    "min": [
+     -1.44,
+     0.0,
+     -0.39
+    ],
+    "max": [
+     1.44,
+     2.05,
+     0.515
+    ]
+   },
+   "materials": [
+    "Brass",
+    "RRBlue",
+    "RRBook",
+    "RRFabric",
+    "RRTrim",
+    "WoodEbony",
+    "WoodLight"
+   ],
+   "footprint": [
+    3,
+    1
+   ],
+   "budget": 3000,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "library",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "shelf_pantry",
+   "level": "rotrow",
+   "object": "shelf_pantry",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/shelf_pantry.glb",
+   "bytes": 51580,
+   "sha256": "ecef3391d360204223078e9b875c40278aba6c3da7b361afbc41077bc6696189",
+   "triangles": 1260,
+   "size": [
+    2.88,
+    1.85,
+    0.78
+   ],
+   "bounds": {
+    "min": [
+     -1.44,
+     0.0,
+     -0.39
+    ],
+    "max": [
+     1.44,
+     1.85,
+     0.39
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Galvanised",
+    "Paper",
+    "RRPink",
+    "RRTeal",
+    "TinRed"
+   ],
+   "footprint": [
+    3,
+    1
+   ],
+   "budget": 2200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "sign_neonCustom",
+   "level": "rotrow",
+   "object": "sign_neonCustom",
+   "variant": null,
+   "kind": "wall",
+   "file": "models/levels/rotrow/sign_neonCustom.glb",
+   "bytes": 7972,
+   "sha256": "90ca0d285400e826e52aefd3efefda852dc440affaf1ed0555f71ceac954acf8",
+   "triangles": 161,
+   "size": [
+    0.94,
+    0.46,
+    0.071
+   ],
+   "bounds": {
+    "min": [
+     -0.47,
+     1.27,
+     0.0
+    ],
+    "max": [
+     0.47,
+     1.73,
+     0.071
+    ]
+   },
+   "materials": [
+    "Paint",
+    "RRInk",
+    "RRNeonPink"
+   ],
+   "footprint": [
+    1,
+    0.18
+   ],
+   "budget": 800,
+   "front": "",
+   "wallCentre": 1.5,
+   "parts": [
+    "glow",
+    "sign"
+   ],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "stage_small",
+   "level": "rotrow",
+   "object": "stage_small",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/stage_small.glb",
+   "bytes": 37404,
+   "sha256": "22faee47bf5f422aae3d98e8c86d345dd65b0b18853c1d05cfc2b14eed76b401",
+   "triangles": 881,
+   "size": [
+    2.85,
+    2.095,
+    1.876
+   ],
+   "bounds": {
+    "min": [
+     -1.425,
+     0.0,
+     -0.925
+    ],
+    "max": [
+     1.425,
+     2.095,
+     0.951
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Chrome",
+    "Iron",
+    "RRFabric",
+    "RRInk",
+    "RRTrim",
+    "Rubber",
+    "WoodDark"
+   ],
+   "footprint": [
+    3,
+    2
+   ],
+   "budget": 2200,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "club",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "stall_fish",
+   "level": "rotrow",
+   "object": "stall_fish",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/stall_fish.glb",
+   "bytes": 27464,
+   "sha256": "b5c357be60272bdaa24b8f483e57f7e9b7d180ecf3a4197d4629e33c550ad1c4",
+   "triangles": 705,
+   "size": [
+    1.85,
+    1.325,
+    0.85
+   ],
+   "bounds": {
+    "min": [
+     -0.925,
+     0.0,
+     -0.425
+    ],
+    "max": [
+     0.925,
+     1.325,
+     0.425
+    ]
+   },
+   "materials": [
+    "Iron",
+    "RRBlue",
+    "RRIce",
+    "RRInk",
+    "RRTeal",
+    "RRTrim",
+    "Tin",
+    "WoodDark"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "stall_flowers",
+   "level": "rotrow",
+   "object": "stall_flowers",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/stall_flowers.glb",
+   "bytes": 68556,
+   "sha256": "0a57ed75df33da1f0c6e21f6a6eb0adf2eba21547275469d74ee96a7086bd460",
+   "triangles": 1633,
+   "size": [
+    1.85,
+    1.2245,
+    0.779
+   ],
+   "bounds": {
+    "min": [
+     -0.925,
+     0.0,
+     -0.375
+    ],
+    "max": [
+     0.925,
+     1.2245,
+     0.404
+    ]
+   },
+   "materials": [
+    "Galvanised",
+    "Iron",
+    "Paper",
+    "RRInk",
+    "RRPink",
+    "RRTeal",
+    "RRTrim",
+    "WoodLight"
+   ],
+   "footprint": [
+    2,
+    1
+   ],
+   "budget": 1700,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "market",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "station_waxpreserve",
+   "level": "rotrow",
+   "object": "station_waxpreserve",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/station_waxpreserve.glb",
+   "bytes": 19616,
+   "sha256": "a591fed1a0850a0ca3c8f1ea4291d6f74c6bd3976715a5a241c17fe06ff6da23",
+   "triangles": 516,
+   "size": [
+    0.805,
+    0.89,
+    1.68
+   ],
+   "bounds": {
+    "min": [
+     -0.375,
+     0.0,
+     -0.84
+    ],
+    "max": [
+     0.43,
+     0.89,
+     0.84
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Chrome",
+    "Paper",
+    "RRTrim",
+    "RRWax"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "glow"
+   ],
+   "states": [],
+   "tags": [
+    "salon",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "stool_barChrome",
+   "level": "rotrow",
+   "object": "stool_barChrome",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/stool_barChrome.glb",
+   "bytes": 10972,
+   "sha256": "e41fdef19742d2e4b005381fed70641a3fe0196ab18e51762d018588ec45e63a",
+   "triangles": 316,
+   "size": [
+    0.54,
+    0.695,
+    0.54
+   ],
+   "bounds": {
+    "min": [
+     -0.27,
+     0.0,
+     -0.27
+    ],
+    "max": [
+     0.27,
+     0.695,
+     0.27
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paint"
+   ],
+   "footprint": [
+    1,
+    1
+   ],
+   "budget": 650,
+   "front": "",
+   "wallCentre": null,
+   "parts": [],
+   "states": [],
+   "tags": [
+    "noir",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "table_reading",
+   "level": "rotrow",
+   "object": "table_reading",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/table_reading.glb",
+   "bytes": 27428,
+   "sha256": "f4775be738f945140e9353f3ed739b92e4b6560c1f0f1ce5c496fd19ddeb2a42",
+   "triangles": 668,
+   "size": [
+    2.85,
+    1.1282,
+    0.85
+   ],
+   "bounds": {
+    "min": [
+     -1.425,
+     0.0,
+     -0.425
+    ],
+    "max": [
+     1.425,
+     1.1282,
+     0.425
+    ]
+   },
+   "materials": [
+    "Brass",
+    "Paint",
+    "Paper",
+    "RRBook",
+    "RRNeonWarm",
+    "RRTeal",
+    "WoodDark"
+   ],
+   "footprint": [
+    3,
+    1
+   ],
+   "budget": 1600,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "bulb"
+   ],
+   "states": [],
+   "tags": [
+    "library",
+    "rotrow"
+   ]
+  },
+  {
+   "id": "treadmill_rattle",
+   "level": "rotrow",
+   "object": "treadmill_rattle",
+   "variant": null,
+   "kind": "floor",
+   "file": "models/levels/rotrow/treadmill_rattle.glb",
+   "bytes": 23948,
+   "sha256": "e82bd1202d1464cca246a6b1dadef4ab47910a6245f2cd635ed2d3bf1effb60c",
+   "triangles": 413,
+   "size": [
+    0.9,
+    1.228,
+    1.82
+   ],
+   "bounds": {
+    "min": [
+     -0.45,
+     0.0,
+     -0.91
+    ],
+    "max": [
+     0.45,
+     1.228,
+     0.91
+    ]
+   },
+   "materials": [
+    "Chrome",
+    "Paint",
+    "RRInk",
+    "RRNeonTeal",
+    "RRPink",
+    "RRTrim",
+    "Rubber"
+   ],
+   "footprint": [
+    1,
+    2
+   ],
+   "budget": 1800,
+   "front": "",
+   "wallCentre": null,
+   "parts": [
+    "belt",
+    "screen"
+   ],
+   "states": [],
+   "tags": [
+    "gym",
+    "rotrow"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1079 @@
+{
+  "engine": "3cc1f39f4adee7a39034dc29ec20097c1b49a8d8",
+  "schemaVersion": 2,
+  "days": 7,
+  "reloadTick": 7200,
+  "runs": [
+    {
+      "key": "real:derelict:1",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "9eeee59cbdc23ec6242942b256ec645c0f6b0d8069fc504afc613d3bd148d62f",
+          "events": "86f4b2c11c4b532179cc12d8800ed3dc17701e08fe880f82b8a08d59dee36a43",
+          "eventCount": 1849
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "c40588acffb422cdaf71f6bff41808a0aa7121aedaf5e485a516d1096a4fc6f1",
+          "events": "876fa0dc01a8c6f565f902e52c82b4d0fc02dc13ecf6d35b944f799c7b185d95",
+          "eventCount": 1691
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "73c9086263dc8ece23f77d84008a1d2a1fe388b73de0623bee6a73a6d8e68859",
+          "events": "edb533740143b5ba4cdcb2b553f7723ff29b6d574edebfe159eec4ab95e64154",
+          "eventCount": 1660
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "0dfe8a79b1e157f449ab3c14715a958ea1d90da5d88755f229e8cebf4ad54ac2",
+          "events": "6643e6ecd039645900949f8ba739803a6bf99b7bcf48e8ce6fe79fbfe1fbd4a9",
+          "eventCount": 1155
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "6b3df75579be2511e712aeddcf2a190425df9f6f0cfeb59faefea3ff1e3a6558",
+          "events": "df1d4eb37540e02d81fee0eb215c69b2e8adf6b638f4f3d437284a5b686e0b3a",
+          "eventCount": 780
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "0c7d64320412522c2f5564f67846a81f6d56858205ba235a0318ebc78c9b1bd6",
+          "events": "a1246da9eb034aaf5ad671b563078d4707f334a3b5831b393e46a4e102e31251",
+          "eventCount": 285
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "3308ce77aea3e680831eaca52042f2c69c965cdaabf3b96a226555f1f93d62b7",
+          "events": "c94ab0525e0899f7cac69079bb60ec2549d3759380d6a9b0a811b5b736bd5dcb",
+          "eventCount": 616
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:derelict:1:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "9eeee59cbdc23ec6242942b256ec645c0f6b0d8069fc504afc613d3bd148d62f",
+          "events": "86f4b2c11c4b532179cc12d8800ed3dc17701e08fe880f82b8a08d59dee36a43",
+          "eventCount": 1849
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "c40588acffb422cdaf71f6bff41808a0aa7121aedaf5e485a516d1096a4fc6f1",
+          "events": "dde2ea11712d0a5646fd9fe5ac1531c8c1dcefba92e87f7920fb79d7896a64ea",
+          "eventCount": 1691
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "73c9086263dc8ece23f77d84008a1d2a1fe388b73de0623bee6a73a6d8e68859",
+          "events": "edb533740143b5ba4cdcb2b553f7723ff29b6d574edebfe159eec4ab95e64154",
+          "eventCount": 1660
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "0dfe8a79b1e157f449ab3c14715a958ea1d90da5d88755f229e8cebf4ad54ac2",
+          "events": "6643e6ecd039645900949f8ba739803a6bf99b7bcf48e8ce6fe79fbfe1fbd4a9",
+          "eventCount": 1155
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "6b3df75579be2511e712aeddcf2a190425df9f6f0cfeb59faefea3ff1e3a6558",
+          "events": "df1d4eb37540e02d81fee0eb215c69b2e8adf6b638f4f3d437284a5b686e0b3a",
+          "eventCount": 780
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "0c7d64320412522c2f5564f67846a81f6d56858205ba235a0318ebc78c9b1bd6",
+          "events": "a1246da9eb034aaf5ad671b563078d4707f334a3b5831b393e46a4e102e31251",
+          "eventCount": 285
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "3308ce77aea3e680831eaca52042f2c69c965cdaabf3b96a226555f1f93d62b7",
+          "events": "c94ab0525e0899f7cac69079bb60ec2549d3759380d6a9b0a811b5b736bd5dcb",
+          "eventCount": 616
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:derelict:7",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "31a15557b6593836889514aaee8063d586a23185e0901d00dd92a4c8119c20a2",
+          "events": "ce631fb70c4d93abc32d4f8d58886590b57459001d1f1d98650acf3500de66d3",
+          "eventCount": 1922
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "a1731f6ac9c631944be41df74ac28c00856b11cf1b44e72f1a4d76a0211103ea",
+          "events": "2aece94778f18106b51317b73b3533263d4a9debed9c2c4860dffdead76e5f72",
+          "eventCount": 1583
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "d60c985546007184b8fc066ffa68ecf1f609e9aa034533425e87c1f2bb68b9cc",
+          "events": "7e767f886eaa75ab1b54426da0c877b172f35b6dd257a3dd540e248855b1683b",
+          "eventCount": 1339
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "7f921175778e57c29872fdb7c9b9a091341e74a7c319669881659bdb51956f46",
+          "events": "69eba8789a446ed037d5355f3548eb680ba62ea7c39889eacbbfe79a47771b8f",
+          "eventCount": 982
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "395fb93fcbc90ab78440b514bb46d98572a7ef3dacc98b412ebd507c42bb8594",
+          "events": "ef924732f7fe626246855a20a5ec2fed2b8efb1571993d894c4269254a833efe",
+          "eventCount": 514
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "1d7369b84f0b8eaeb6393e41e02679efd209872647871acff37282bb2b28e515",
+          "events": "abd274ebce22c72c002fbb9d91233d1f4b439f08c80a879f7daf93bb220d36b9",
+          "eventCount": 655
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "bb36a80cdc30a59360d93a96b23be4bbad8dfd3a1f68e08e749982d4b18b7dfe",
+          "events": "8b57ce1344166ac7567fa19b2d42c44be6f8eb794e4bed6fc467386e9eeb3d55",
+          "eventCount": 913
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:derelict:7:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "31a15557b6593836889514aaee8063d586a23185e0901d00dd92a4c8119c20a2",
+          "events": "ce631fb70c4d93abc32d4f8d58886590b57459001d1f1d98650acf3500de66d3",
+          "eventCount": 1922
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "a1731f6ac9c631944be41df74ac28c00856b11cf1b44e72f1a4d76a0211103ea",
+          "events": "65c3e1dc66052315b8ab44411375a3be48bd957f73a33d1381dc245edeb9b4d6",
+          "eventCount": 1583
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "d60c985546007184b8fc066ffa68ecf1f609e9aa034533425e87c1f2bb68b9cc",
+          "events": "7e767f886eaa75ab1b54426da0c877b172f35b6dd257a3dd540e248855b1683b",
+          "eventCount": 1339
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "7f921175778e57c29872fdb7c9b9a091341e74a7c319669881659bdb51956f46",
+          "events": "69eba8789a446ed037d5355f3548eb680ba62ea7c39889eacbbfe79a47771b8f",
+          "eventCount": 982
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "395fb93fcbc90ab78440b514bb46d98572a7ef3dacc98b412ebd507c42bb8594",
+          "events": "ef924732f7fe626246855a20a5ec2fed2b8efb1571993d894c4269254a833efe",
+          "eventCount": 514
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "1d7369b84f0b8eaeb6393e41e02679efd209872647871acff37282bb2b28e515",
+          "events": "abd274ebce22c72c002fbb9d91233d1f4b439f08c80a879f7daf93bb220d36b9",
+          "eventCount": 655
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "bb36a80cdc30a59360d93a96b23be4bbad8dfd3a1f68e08e749982d4b18b7dfe",
+          "events": "8b57ce1344166ac7567fa19b2d42c44be6f8eb794e4bed6fc467386e9eeb3d55",
+          "eventCount": 913
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:derelict:2024",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "deb88d582a19f178401009cb660ed8ed78614b7f24bae42d7eba3f300d09f6b5",
+          "events": "33ca78b5d829a2432eea096dd76e1e429964675e064c5cfdb14835581845e33d",
+          "eventCount": 2014
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "a007d9f936a3b15592f33853e876547ec07a9dfcbf491de40cfbb86e6e19531a",
+          "events": "555e0a3f39f33dae5baf42be938782ad7fa868cc3b08ba4147bfce62c18c7274",
+          "eventCount": 1627
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "f94a5c42395117961a469a1347282c68c371a1e4fd0a851a79f025be1437571b",
+          "events": "6cd8a9138f56bd8a8a4cc4f1eb5761a2818717c3ff80bcf8fc83a597e93b40b2",
+          "eventCount": 1279
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "25d060b55531ca3bd1a36f2193ae2fac0cc026033eb80b0fa671eea1742e23b2",
+          "events": "2a468385b43d2201214bef9f575b07ba5bf2a8a15d3db140df5a1433840592aa",
+          "eventCount": 1044
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "59379aade0e6f461af7bd613b483a71e54dfc1a3cd688cd05632289c54fb8abd",
+          "events": "e142a43b787f7c7610373a81eefc5e216621cb5e0c717b02b0d5dc546eba2c36",
+          "eventCount": 559
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "3cfcf9dc9e762586019e9445fbf13240a6d09f3818d56252830c2814b08f11de",
+          "events": "9217889a3e3e8c0636c79c2331de8dfeee63ff7d714200ba66693220d36e1875",
+          "eventCount": 622
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "0a4b6e68c96866b4f563d18cc695134a9838c658b60be739ed2186764231d0f6",
+          "events": "c56007cbde89cfb4357533166ec50be0b534de9e02512356c04c0f373fb181e0",
+          "eventCount": 868
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:derelict:2024:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "deb88d582a19f178401009cb660ed8ed78614b7f24bae42d7eba3f300d09f6b5",
+          "events": "33ca78b5d829a2432eea096dd76e1e429964675e064c5cfdb14835581845e33d",
+          "eventCount": 2014
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "a007d9f936a3b15592f33853e876547ec07a9dfcbf491de40cfbb86e6e19531a",
+          "events": "555e0a3f39f33dae5baf42be938782ad7fa868cc3b08ba4147bfce62c18c7274",
+          "eventCount": 1627
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "f94a5c42395117961a469a1347282c68c371a1e4fd0a851a79f025be1437571b",
+          "events": "6cd8a9138f56bd8a8a4cc4f1eb5761a2818717c3ff80bcf8fc83a597e93b40b2",
+          "eventCount": 1279
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "25d060b55531ca3bd1a36f2193ae2fac0cc026033eb80b0fa671eea1742e23b2",
+          "events": "2a468385b43d2201214bef9f575b07ba5bf2a8a15d3db140df5a1433840592aa",
+          "eventCount": 1044
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "59379aade0e6f461af7bd613b483a71e54dfc1a3cd688cd05632289c54fb8abd",
+          "events": "e142a43b787f7c7610373a81eefc5e216621cb5e0c717b02b0d5dc546eba2c36",
+          "eventCount": 559
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "3cfcf9dc9e762586019e9445fbf13240a6d09f3818d56252830c2814b08f11de",
+          "events": "9217889a3e3e8c0636c79c2331de8dfeee63ff7d714200ba66693220d36e1875",
+          "eventCount": 622
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "0a4b6e68c96866b4f563d18cc695134a9838c658b60be739ed2186764231d0f6",
+          "events": "c56007cbde89cfb4357533166ec50be0b534de9e02512356c04c0f373fb181e0",
+          "eventCount": 868
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:starter:1",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "8ac5d443cd95d67e9e571064b54d8a73d0c34349ac1159bf83363f33e9aecdb5",
+          "events": "83398327ea304d924327b447610aae3f212672ff536bc57195e6487204501a0c",
+          "eventCount": 1239
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "ff3588851a370e617ad0376ed2f9a4d3c2289e4595a691a142e18ecf223f0db5",
+          "events": "ea8f63bfe5373429b62bf42cceae2e93bd9a57c8ee9cc9b882235d2b193ab47e",
+          "eventCount": 1278
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "f228a10a0fc3cb7f15b1794ac3e901b02b9b554db25bdafa742221dbfb14b839",
+          "events": "95659a2d307f8c4810584d1d93091b69c4a94f9fbe85a2bb94d1cb1d0cea0e9e",
+          "eventCount": 1296
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "75f2dad391dd9a16da22d805a72844000b65f0c5bc16b5dd16a61ef0a866a455",
+          "events": "499eb0039562cf6eab5f303ab98e89960e4ae77334b1d4a58c463848ed9ea379",
+          "eventCount": 1305
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "84ac36c26c83d8e693309277e93360bb9823a332f2f18034a5442376eb699987",
+          "events": "e9a03c5a0f83a841f846f771ddb931a665c5bc7c6e4b75e567aee1750aab2c42",
+          "eventCount": 1078
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "b860cd73a81502334ec76b067234519772796f6371725e99c5de9b46409412f1",
+          "events": "e908d6317839b367d6e5066e5e78346407db188d68435309c21a08c04b610c29",
+          "eventCount": 1147
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "633c991487a571ca36875c7f26e71fe7760ae427bb8333a4718e2f364faa00f6",
+          "events": "32a3854b72ec63a9f065a25b8d992aa52548ccc70bd2435548ac810274fc03cc",
+          "eventCount": 1059
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:starter:1:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "8ac5d443cd95d67e9e571064b54d8a73d0c34349ac1159bf83363f33e9aecdb5",
+          "events": "83398327ea304d924327b447610aae3f212672ff536bc57195e6487204501a0c",
+          "eventCount": 1239
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "ff3588851a370e617ad0376ed2f9a4d3c2289e4595a691a142e18ecf223f0db5",
+          "events": "ab56af8c4ddd11cddc239728846a52401721606ec849c86f8c132838ffc9adb4",
+          "eventCount": 1278
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "f228a10a0fc3cb7f15b1794ac3e901b02b9b554db25bdafa742221dbfb14b839",
+          "events": "95659a2d307f8c4810584d1d93091b69c4a94f9fbe85a2bb94d1cb1d0cea0e9e",
+          "eventCount": 1296
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "75f2dad391dd9a16da22d805a72844000b65f0c5bc16b5dd16a61ef0a866a455",
+          "events": "499eb0039562cf6eab5f303ab98e89960e4ae77334b1d4a58c463848ed9ea379",
+          "eventCount": 1305
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "84ac36c26c83d8e693309277e93360bb9823a332f2f18034a5442376eb699987",
+          "events": "e9a03c5a0f83a841f846f771ddb931a665c5bc7c6e4b75e567aee1750aab2c42",
+          "eventCount": 1078
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "b860cd73a81502334ec76b067234519772796f6371725e99c5de9b46409412f1",
+          "events": "e908d6317839b367d6e5066e5e78346407db188d68435309c21a08c04b610c29",
+          "eventCount": 1147
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "633c991487a571ca36875c7f26e71fe7760ae427bb8333a4718e2f364faa00f6",
+          "events": "32a3854b72ec63a9f065a25b8d992aa52548ccc70bd2435548ac810274fc03cc",
+          "eventCount": 1059
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:starter:7",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "8d73729ee09b61951c6ab678e3af76c69d1ccbf2a8a8e8c40ae6ad760ca0a14c",
+          "events": "ecd1e42d546d20f90fae83e22a30d5de8bf855205502ba1fa3349fea9b5aa213",
+          "eventCount": 1281
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "2e9ee1c79a2845140d149172471093543c32533fd7c881818e707b86e62a09f4",
+          "events": "05340a6ec42f01f2567111a1d8515ac9e3ecd33417d6214b35c32a03d456d646",
+          "eventCount": 1371
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "cb163623f363b13adf6918da3d34daabe751b408c3c2a137dc3a4d97f5a5e7db",
+          "events": "9970fde3bf1ad7c1bce2a65e9417a3d36abf686ca0acd6e23e6585feb661f191",
+          "eventCount": 1123
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "28223d1ea0ea44d0f83337881c4b2bf6749a50c5f39460ac617bca03b0bb5169",
+          "events": "a6f9988b9d357288162869f2ac426c97764b0a1d5a5a83531f67b7ed9271d40d",
+          "eventCount": 1061
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "bd1a642cc400d295193f8ba915e159fe188d18635a1db4bbaad905c7bbbfc0b1",
+          "events": "feb289ae1f09af9d6c0dbfc6ef7240a29762f921205bd24325ad43ab626e0a52",
+          "eventCount": 1301
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "d44d3666190ce38d9f3355feacdf1c7077b91e06d682a386cbe2c61af4d31471",
+          "events": "edc0b7b83cef404fd150d9248821beaf136ff9c3719af6bb96dd99194df1a3b1",
+          "eventCount": 1111
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "11602119ed52df8c781e7049f949d4bc0a52dd2d5adf81ff74f8a9724b5e9593",
+          "events": "3bfa0de54e6f5cbb219c10e5e366e5e7eec0dfc7a0448ec9701c292cc817e521",
+          "eventCount": 1212
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:starter:7:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "8d73729ee09b61951c6ab678e3af76c69d1ccbf2a8a8e8c40ae6ad760ca0a14c",
+          "events": "ecd1e42d546d20f90fae83e22a30d5de8bf855205502ba1fa3349fea9b5aa213",
+          "eventCount": 1281
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "2e9ee1c79a2845140d149172471093543c32533fd7c881818e707b86e62a09f4",
+          "events": "05340a6ec42f01f2567111a1d8515ac9e3ecd33417d6214b35c32a03d456d646",
+          "eventCount": 1371
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "cb163623f363b13adf6918da3d34daabe751b408c3c2a137dc3a4d97f5a5e7db",
+          "events": "9970fde3bf1ad7c1bce2a65e9417a3d36abf686ca0acd6e23e6585feb661f191",
+          "eventCount": 1123
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "28223d1ea0ea44d0f83337881c4b2bf6749a50c5f39460ac617bca03b0bb5169",
+          "events": "a6f9988b9d357288162869f2ac426c97764b0a1d5a5a83531f67b7ed9271d40d",
+          "eventCount": 1061
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "bd1a642cc400d295193f8ba915e159fe188d18635a1db4bbaad905c7bbbfc0b1",
+          "events": "feb289ae1f09af9d6c0dbfc6ef7240a29762f921205bd24325ad43ab626e0a52",
+          "eventCount": 1301
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "d44d3666190ce38d9f3355feacdf1c7077b91e06d682a386cbe2c61af4d31471",
+          "events": "edc0b7b83cef404fd150d9248821beaf136ff9c3719af6bb96dd99194df1a3b1",
+          "eventCount": 1111
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "11602119ed52df8c781e7049f949d4bc0a52dd2d5adf81ff74f8a9724b5e9593",
+          "events": "3bfa0de54e6f5cbb219c10e5e366e5e7eec0dfc7a0448ec9701c292cc817e521",
+          "eventCount": 1212
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:starter:2024",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "11dbd7ea658569bfb778e327e0a165ce84d58ef92c1be65e9a758e0d23fc5346",
+          "events": "0d78f69a64adca80e5a4499cf3b49d296ecb23a65ad0853bbf4c32bb16950d17",
+          "eventCount": 1290
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "9b8109d90baeb391185292d48150d0a622934b3aace372b35014a5b299dd0385",
+          "events": "d713d51dadd12f9c8dd02f6cdcbc88acec63b119e07ee96222175ab0de82d7ab",
+          "eventCount": 1371
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "8080761fe110e6db64cb216baf36ddcbd91642eefd95cce10de8a342e24525bb",
+          "events": "e3de8b559707ab3e189c1f379816c0eae29748168e5693ad682fba39f79ad65d",
+          "eventCount": 1276
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "6fa16e74770a12443e4b75cbd879bb144009748ae40afb0c44568d4ffa644987",
+          "events": "fc53697c35b0bd255c878cbba088a4866124eca5c6a03a63e8da1b53b85a25dd",
+          "eventCount": 1073
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "9193194e2eb60b3c4ee6d8febef7a7a02d503a7fade81d7f500ec3d17fb0b864",
+          "events": "9fd262c9af70cabb65fe8b2e5bf1c26fd20af1b34b6750de00f450325b2c1ff8",
+          "eventCount": 980
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "43c5415b9ec2528a51cc9ddcff5ac0259dc14c8eab11b059bcb4c6dbf69a1926",
+          "events": "d0dcc98308c126bd70fbbae060d6d3f2146847f2d5a9af7192928e0e4f7352f0",
+          "eventCount": 1126
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "cbdba349b046192af119f40386a7dfec6183b197b5402eb4a87d93f5ba2abfca",
+          "events": "7390ce4ec69af1ce299e4c3cfa114f00d19c36c541e7ca06277a641a1636c505",
+          "eventCount": 1048
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:starter:2024:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "11dbd7ea658569bfb778e327e0a165ce84d58ef92c1be65e9a758e0d23fc5346",
+          "events": "0d78f69a64adca80e5a4499cf3b49d296ecb23a65ad0853bbf4c32bb16950d17",
+          "eventCount": 1290
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "9b8109d90baeb391185292d48150d0a622934b3aace372b35014a5b299dd0385",
+          "events": "cfa1fb5db8f586fe259cd23bdb7f8d73b81db8fea18954e1daaffff22186e023",
+          "eventCount": 1371
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "8080761fe110e6db64cb216baf36ddcbd91642eefd95cce10de8a342e24525bb",
+          "events": "e3de8b559707ab3e189c1f379816c0eae29748168e5693ad682fba39f79ad65d",
+          "eventCount": 1276
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "6fa16e74770a12443e4b75cbd879bb144009748ae40afb0c44568d4ffa644987",
+          "events": "fc53697c35b0bd255c878cbba088a4866124eca5c6a03a63e8da1b53b85a25dd",
+          "eventCount": 1073
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "9193194e2eb60b3c4ee6d8febef7a7a02d503a7fade81d7f500ec3d17fb0b864",
+          "events": "9fd262c9af70cabb65fe8b2e5bf1c26fd20af1b34b6750de00f450325b2c1ff8",
+          "eventCount": 980
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "43c5415b9ec2528a51cc9ddcff5ac0259dc14c8eab11b059bcb4c6dbf69a1926",
+          "events": "d0dcc98308c126bd70fbbae060d6d3f2146847f2d5a9af7192928e0e4f7352f0",
+          "eventCount": 1126
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "cbdba349b046192af119f40386a7dfec6183b197b5402eb4a87d93f5ba2abfca",
+          "events": "7390ce4ec69af1ce299e4c3cfa114f00d19c36c541e7ca06277a641a1636c505",
+          "eventCount": 1048
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:empty:1",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "0f7e06827b89e532b9a85820a38d899a604cc53d43213fce1a22cdeff606c264",
+          "events": "aea87a8e8de75b1533fda41b6ad3edbcf0a64c4a7be0e2d531d034e4293f621f",
+          "eventCount": 2119
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "b6b32de6e50e87b145aa4ebc63cd69aa6d001dc7e68c041782b4cf8697ebceaa",
+          "events": "e78bbf79129d4e0cc5d3b828fc1608ed019d20369f2480f0c19dc6fb449c1f89",
+          "eventCount": 2663
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "bf71cf5be0d01aa2cec72d537898fd8809e88fd70cb8c955bac904a2e309ffb6",
+          "events": "5882c04cc17e44793b710368fa7107638405d4775b1d3a0671b730fa1bb8d42f",
+          "eventCount": 2473
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "01bf707a5f36c116efcc09d947803658e31641a2518efc7af4beac3530011422",
+          "events": "d2934135b8c48bf30e78c7ba9a38307f152ff006915ce5bbaeb626c2d5e46266",
+          "eventCount": 2003
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "c352bdd3b30c77903ca851fc7a1c88b80d42bf8aad44bd61c83b22ab7e4006cb",
+          "events": "575d785305a41da432ebb0491b25f664466a2ff60f0d48e29c765c95e238fd82",
+          "eventCount": 1523
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "5b39dff097801db955d2c26750c1463d7f5a1dcba7cecf056e4b9b0899c9c888",
+          "events": "202d37b64d7322346caca28bfcc438aa8aa1d5a0e965132f48e779327fbb452b",
+          "eventCount": 1867
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "bf743b389e993d1281c82ee67dd1c4ae23a58c7fd5bf147c501bc9821936d7f4",
+          "events": "3a4cf2ca8eca06a60a5db9c980b8d2c5540a5aaac0a5c0ffd1e92e8fdd594c99",
+          "eventCount": 1884
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:empty:1:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "0f7e06827b89e532b9a85820a38d899a604cc53d43213fce1a22cdeff606c264",
+          "events": "aea87a8e8de75b1533fda41b6ad3edbcf0a64c4a7be0e2d531d034e4293f621f",
+          "eventCount": 2119
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "b6b32de6e50e87b145aa4ebc63cd69aa6d001dc7e68c041782b4cf8697ebceaa",
+          "events": "e78bbf79129d4e0cc5d3b828fc1608ed019d20369f2480f0c19dc6fb449c1f89",
+          "eventCount": 2663
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "bf71cf5be0d01aa2cec72d537898fd8809e88fd70cb8c955bac904a2e309ffb6",
+          "events": "5882c04cc17e44793b710368fa7107638405d4775b1d3a0671b730fa1bb8d42f",
+          "eventCount": 2473
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "01bf707a5f36c116efcc09d947803658e31641a2518efc7af4beac3530011422",
+          "events": "d2934135b8c48bf30e78c7ba9a38307f152ff006915ce5bbaeb626c2d5e46266",
+          "eventCount": 2003
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "c352bdd3b30c77903ca851fc7a1c88b80d42bf8aad44bd61c83b22ab7e4006cb",
+          "events": "575d785305a41da432ebb0491b25f664466a2ff60f0d48e29c765c95e238fd82",
+          "eventCount": 1523
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "5b39dff097801db955d2c26750c1463d7f5a1dcba7cecf056e4b9b0899c9c888",
+          "events": "202d37b64d7322346caca28bfcc438aa8aa1d5a0e965132f48e779327fbb452b",
+          "eventCount": 1867
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "bf743b389e993d1281c82ee67dd1c4ae23a58c7fd5bf147c501bc9821936d7f4",
+          "events": "3a4cf2ca8eca06a60a5db9c980b8d2c5540a5aaac0a5c0ffd1e92e8fdd594c99",
+          "eventCount": 1884
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:empty:7",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "b4c7ea8d669f3e47eb6b713f3d576a057041cdb4d624cc73088f687bb1ef47fa",
+          "events": "304027b5121f58263a9263bdd5bdfb20d093f769fa06533f9da821aba7e9d180",
+          "eventCount": 1915
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "2b5fb6331395c83eb0624da75445d04da960a0b8bff6c5094fd897fac9ea448d",
+          "events": "3fafa404b5f4e72aa0967c6dbe741a4d070fd0e1eab583744184f1fc86871e44",
+          "eventCount": 2826
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "87f29bb078969c3755ce92e580380fd976f9208e55fd45000c1d46a4fce785c2",
+          "events": "dc46452ef7987579e60b1613a34d9f297aa6e4726ed2a25a8be234251339ad85",
+          "eventCount": 2432
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "87ad830362df903c3e6db165b9dedb4842b1b9796d94540ad54e0dcf8588c2aa",
+          "events": "9dd7faffedf652c02a76088ff1550530c2c98ae8ae0725507b9c86912dda3c2a",
+          "eventCount": 1774
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "a54d103b524015ec7bb7d2495ac1b6ad5e5a989d605019b8679a595c9e960fd1",
+          "events": "59ae46d9ba2951d4712981c38302b179c5cf004dbd649a36e1ac5d3f21ea2ad1",
+          "eventCount": 1356
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "bb3f32dcdf41b71604f5602aa7c4daa02efd3c9da3e66713d79fe441df09f4db",
+          "events": "117ccb479ff037653ed5981a1fd82db37e9499991c5e8254d6b7a411ae320de4",
+          "eventCount": 1708
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "dd2513cfecdf61da5333db8c99bda142ab2c5089fd9ec49637d12767ba27abaf",
+          "events": "87e68e9ed08520dd9f0167d7614f3b92b27d7ea7a41da604d25ebc35da373104",
+          "eventCount": 1740
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:empty:7:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "b4c7ea8d669f3e47eb6b713f3d576a057041cdb4d624cc73088f687bb1ef47fa",
+          "events": "304027b5121f58263a9263bdd5bdfb20d093f769fa06533f9da821aba7e9d180",
+          "eventCount": 1915
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "2b5fb6331395c83eb0624da75445d04da960a0b8bff6c5094fd897fac9ea448d",
+          "events": "824ac6b939737d7e6ae6359b86a9bf69d3aa3b08c88fb10e8dde50c46aebdb47",
+          "eventCount": 2826
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "87f29bb078969c3755ce92e580380fd976f9208e55fd45000c1d46a4fce785c2",
+          "events": "dc46452ef7987579e60b1613a34d9f297aa6e4726ed2a25a8be234251339ad85",
+          "eventCount": 2432
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "87ad830362df903c3e6db165b9dedb4842b1b9796d94540ad54e0dcf8588c2aa",
+          "events": "9dd7faffedf652c02a76088ff1550530c2c98ae8ae0725507b9c86912dda3c2a",
+          "eventCount": 1774
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "a54d103b524015ec7bb7d2495ac1b6ad5e5a989d605019b8679a595c9e960fd1",
+          "events": "59ae46d9ba2951d4712981c38302b179c5cf004dbd649a36e1ac5d3f21ea2ad1",
+          "eventCount": 1356
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "bb3f32dcdf41b71604f5602aa7c4daa02efd3c9da3e66713d79fe441df09f4db",
+          "events": "117ccb479ff037653ed5981a1fd82db37e9499991c5e8254d6b7a411ae320de4",
+          "eventCount": 1708
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "dd2513cfecdf61da5333db8c99bda142ab2c5089fd9ec49637d12767ba27abaf",
+          "events": "87e68e9ed08520dd9f0167d7614f3b92b27d7ea7a41da604d25ebc35da373104",
+          "eventCount": 1740
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:empty:2024",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "922d31518f910103b885df031d2c6659aaf53e76ff4acb7ee770bc1b6c3ddd48",
+          "events": "20fc97c506d25778dd870a47149643fda3f21d1f5c9d9cd56c9776a19a53efe2",
+          "eventCount": 1796
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "f35c7528e97c656a931cc64f4bafb91ea7ede868f7cc06b8df8a4d6ce6604064",
+          "events": "9e41d95411dc8fa3e262ef67e7ecf94faa344f66b90c94018df2f0db0bcd7f3b",
+          "eventCount": 2539
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "bd5b91852cda4d4a4ac931c5a112f0c90734c46830ddac92de86632044244913",
+          "events": "09e2f5defe2f64b636b503ec6210b396cf2483b531c16d870d008e5fd5632ca9",
+          "eventCount": 2275
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "019ee7376519cad2c2591e37097624ddbfd08d8ccd02b3b542845eb748647ce5",
+          "events": "a5fdb1ec7f7e8b0a9754b3ee123a1c1a8eb5139f633a5af7f24454478c1836a1",
+          "eventCount": 1690
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "5aa22eae215a4d1cc84752cee6e1287d69dcccaac52f1f39f79d2df96ad69e27",
+          "events": "4ebfaf7066d0247f2e07148f25eaceb3270a53a4a8f4165851d68320f5d46c53",
+          "eventCount": 1392
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "835b467284fb0803ad806a467f1ab70601acad44079207576c01c090b62f7038",
+          "events": "798342c385f2706714e495a5f9081e1cdec8e94d36ad383bf0fc16be6cc00e76",
+          "eventCount": 1772
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "b55493ba823131a30ec3e77b93c589bd43fb7cc2808d8ce2859670d6d26d11f3",
+          "events": "551dfd9667810d0613770cee8865348f31d9da78dde17a7d59af46a7b70155b2",
+          "eventCount": 1788
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "real:empty:2024:reload",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "922d31518f910103b885df031d2c6659aaf53e76ff4acb7ee770bc1b6c3ddd48",
+          "events": "20fc97c506d25778dd870a47149643fda3f21d1f5c9d9cd56c9776a19a53efe2",
+          "eventCount": 1796
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "f35c7528e97c656a931cc64f4bafb91ea7ede868f7cc06b8df8a4d6ce6604064",
+          "events": "9e41d95411dc8fa3e262ef67e7ecf94faa344f66b90c94018df2f0db0bcd7f3b",
+          "eventCount": 2539
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "bd5b91852cda4d4a4ac931c5a112f0c90734c46830ddac92de86632044244913",
+          "events": "09e2f5defe2f64b636b503ec6210b396cf2483b531c16d870d008e5fd5632ca9",
+          "eventCount": 2275
+        },
+        {
+          "day": 4,
+          "tick": 23040,
+          "save": "019ee7376519cad2c2591e37097624ddbfd08d8ccd02b3b542845eb748647ce5",
+          "events": "a5fdb1ec7f7e8b0a9754b3ee123a1c1a8eb5139f633a5af7f24454478c1836a1",
+          "eventCount": 1690
+        },
+        {
+          "day": 5,
+          "tick": 28800,
+          "save": "5aa22eae215a4d1cc84752cee6e1287d69dcccaac52f1f39f79d2df96ad69e27",
+          "events": "4ebfaf7066d0247f2e07148f25eaceb3270a53a4a8f4165851d68320f5d46c53",
+          "eventCount": 1392
+        },
+        {
+          "day": 6,
+          "tick": 34560,
+          "save": "835b467284fb0803ad806a467f1ab70601acad44079207576c01c090b62f7038",
+          "events": "798342c385f2706714e495a5f9081e1cdec8e94d36ad383bf0fc16be6cc00e76",
+          "eventCount": 1772
+        },
+        {
+          "day": 7,
+          "tick": 40320,
+          "save": "b55493ba823131a30ec3e77b93c589bd43fb7cc2808d8ce2859670d6d26d11f3",
+          "events": "551dfd9667810d0613770cee8865348f31d9da78dde17a7d59af46a7b70155b2",
+          "eventCount": 1788
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "fixture:starter:2024",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "003d06f3ac36de4968837bc419c2de70bef95992ce668f32e5524c61108eb76e",
+          "events": "42174acb14fb74e5006e8a25295100669f80a696b8039a377252c7f7e94cf74e",
+          "eventCount": 1484
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "f164061e6d371782ca2d566dabaf0565f1371e618aca9c584c438daa51ef44f3",
+          "events": "a793efb97d6df1f34a9456418ba124876f2801afc3f44743e1a2bfccc4b14087",
+          "eventCount": 1521
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "f6cb75581ff3f8f09bf08da0b112b589df2ac8a021c2be5528620b35f971a336",
+          "events": "79e8b3b41abc1fe35df77e65cde67a8c0d863195de206a219205acabf4ca858f",
+          "eventCount": 1367
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "fixture:starter:99",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "82682943c7951098f9acd7e8552d3e2b2dd5a54ab48b8524b2e676c3afd5ad0f",
+          "events": "5842b59ad2f94b25c161559d46bc8e1562b1cca89fdbb9668749ea8ef2f7f720",
+          "eventCount": 1500
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "595077dfe6375d8d1a3a527426b34b4f9502a7628392604cc5be6d0e8d6d3c96",
+          "events": "25678f5f67071d84396065f397daa2f0be230a932728b4068ddbc55b52bb9357",
+          "eventCount": 1503
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "a653cd4925204899601945b861d366de3173ff93e14bdfb53271c4c320cecf30",
+          "events": "1e8f1d294ab72b5bbde23467260686ecf25266685202d5bfa684a6a633b190d0",
+          "eventCount": 1365
+        }
+      ],
+      "faults": 0
+    },
+    {
+      "key": "fixture:starter:5",
+      "days": [
+        {
+          "day": 1,
+          "tick": 5760,
+          "save": "e276e993b88bf6d5802dad44a497aa3b915fcfae7d22c6adbe0ce26563af113d",
+          "events": "8496e201c839598bf7da99bb856f2997a5efb71d15d2c5659763862b787759b8",
+          "eventCount": 1412
+        },
+        {
+          "day": 2,
+          "tick": 11520,
+          "save": "47ed59e66ca2b550c04d6ead52510352aa8de6b63035d09e111d36c5ec5bda52",
+          "events": "cd478f84ee83b61f51ed39f5496dacf2bf1fa6798294a9977962b0846bcf6052",
+          "eventCount": 1529
+        },
+        {
+          "day": 3,
+          "tick": 17280,
+          "save": "82673f09df57a139d7306e44c387698c28f7c0a0115d6b079e7aa0f65f44fb60",
+          "events": "f5bc39be7f6e28ee98e4c0428be639494b9e532ced09e1aafaadd0f2905c1b30",
+          "eventCount": 1427
+        }
+      ],
+      "faults": 0
+    }
+  ]
+}

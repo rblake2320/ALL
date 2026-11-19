@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img">
+
+ <path fill="#2b2f3a" d="M95 343 214 212h668l-92 124 92 124H214Z"/><path fill="#7fe0ff" d="M156 340 236 255h553l-68 85 68 85H236Z"/>
+ <path fill="#1d1726" d="M413 323h174l-31 64 89-20-154 153 29-91-83 18Z"/>
+ <text x="512" y="608" text-anchor="middle" fill="#1d1726" font-family="Arial,serif" font-size="143" font-weight="bold" letter-spacing="8">VOLT</text><text x="512" y="702" text-anchor="middle" fill="#486879" font-family="Arial,serif" font-size="91" font-weight="bold" letter-spacing="8">HEARSE</text>
+ <path stroke="#486879" stroke-width="12" d="M194 757h636"/><text x="512" y="815" text-anchor="middle" fill="#1d1726" font-family="Arial,serif" font-size="25" font-weight="bold" letter-spacing="5">THE LONG WAY HOME</text>
+
+</svg>

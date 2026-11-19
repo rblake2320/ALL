@@ -1,0 +1,206 @@
+/* ═════════════════════════════ Action queue ═════════════════════════════ */
+.hud-queue {
+  position: absolute;
+  bottom: var(--hud-gap);
+  left: var(--hud-gap);
+  right: var(--hud-gap);
+  /*
+   * Centred on the screen when there is room; otherwise pushed right of the agent panel (the side columns reserve
+   * --q-left / --q-right and share whatever is left equally), and only then allowed to shrink.
+   */
+  display: grid;
+  grid-template-columns: minmax(var(--q-left, 0px), 1fr) minmax(0, max-content) minmax(var(--q-right, 0px), 1fr);
+  z-index: var(--z-panel);
+  pointer-events: none;
+}
+.hud-queue__list {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.5rem 0.375rem 0.375rem;
+  border-radius: var(--r-pill);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg), var(--shadow-inset-hi);
+  backdrop-filter: var(--blur-panel);
+  -webkit-backdrop-filter: var(--blur-panel);
+  min-width: 0;
+  overflow: hidden;
+}
+.hud-queue__idle {
+  display: flex;
+  align-items: center;
+  gap: 0.4375rem;
+  padding: 0.375rem 0.75rem;
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  font-style: italic;
+  white-space: nowrap;
+}
+.hud-qactive {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-right: 0.25rem;
+  min-width: 0;
+  animation: ui-pop-in var(--dur-med) var(--ease-spring) both;
+}
+.hud-qactive__ring {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 35%, rgba(102, 85, 126, 0.65), rgba(29, 23, 38, 0.95));
+  box-shadow: inset 0 0 0 1px rgba(232, 224, 200, 0.1), 0 0 1rem rgba(159, 232, 112, 0.12);
+}
+.hud-qactive__ring > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.hud-qactive__track {
+  fill: none;
+  stroke: rgba(232, 224, 200, 0.12);
+  stroke-width: 3.2;
+}
+.hud-qactive__arc {
+  fill: none;
+  stroke: var(--c-toxic);
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 2px rgba(159, 232, 112, 0.65));
+  transition: stroke-dashoffset var(--dur-slower) linear;
+}
+.hud-qactive.is-auto .hud-qactive__arc {
+  stroke: var(--c-parchment);
+  filter: none;
+}
+.hud-qactive.is-system .hud-qactive__arc {
+  stroke: var(--c-cryo);
+}
+.hud-qactive__icon {
+  position: relative;
+  color: var(--text-strong);
+}
+.hud-qactive__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  /* room for real interaction names ("Slam the Door Dramatically"); QUEUE_GEOMETRY.active follows this */
+  max-width: 15rem;
+  line-height: 1.2;
+}
+.hud-qactive__label {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-md);
+  color: var(--text-strong);
+}
+.hud-qactive__sub {
+  font-size: var(--fs-2xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  font-weight: var(--fw-semibold);
+}
+.hud-qcancel {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: var(--text-muted);
+  background: rgba(232, 224, 200, 0.06);
+  border: 1px solid var(--border-faint);
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+.hud-qcancel:hover {
+  color: #fff2ee;
+  background: #b4404f;
+  border-color: transparent;
+}
+.hud-qcancel:active {
+  transform: scale(0.9);
+}
+.hud-qlock {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-faint);
+}
+.hud-qitem {
+  position: relative;
+  flex-shrink: 0;
+  animation: ui-pop-in var(--dur-med) var(--ease-spring) both;
+  animation-delay: calc(var(--i, 0) * 30ms);
+}
+.hud-qitem__tile {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(232, 224, 200, 0.1), rgba(232, 224, 200, 0.04));
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-inset-hi);
+  cursor: default;
+}
+.hud-qitem.is-auto .hud-qitem__tile {
+  color: var(--text-muted);
+  border-style: dashed;
+  background: rgba(232, 224, 200, 0.03);
+}
+.hud-qitem.is-system .hud-qitem__tile {
+  color: var(--c-cryo);
+  border-color: rgba(127, 224, 255, 0.35);
+}
+.hud-qcancel.is-mini {
+  position: absolute;
+  top: -0.3125rem;
+  right: -0.3125rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  opacity: 0;
+  transform: scale(0.7);
+  background: var(--c-plum-700);
+  border-color: var(--border-strong);
+  transition:
+    opacity var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-spring),
+    background-color var(--dur-fast) var(--ease-out);
+}
+.hud-qitem:hover .hud-qcancel.is-mini,
+.hud-qitem:focus-within .hud-qcancel.is-mini {
+  opacity: 1;
+  transform: none;
+}
+.hud-qcancel.is-mini:hover {
+  background: #b4404f;
+}
+.hud-queue__more {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  min-width: 2.125rem;
+  height: 2.125rem;
+  padding: 0 0.375rem;
+  border-radius: var(--r-pill);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  color: var(--text-muted);
+  background: rgba(232, 224, 200, 0.05);
+  border: 1px dashed var(--border-subtle);
+  cursor: default;
+}

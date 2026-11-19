@@ -1,0 +1,6 @@
+# Targeted additive repair of the exact image used by batch1; no inference service.
+# Before building, tag and verify the local batch image's exact sha256 ID.
+FROM astra-w112-harness:clipboard-base-250e750
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends xsel && rm -rf /var/lib/apt/lists/*
+USER tester

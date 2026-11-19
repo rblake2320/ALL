@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "note": "One exporter and one canonical build platform per kit. Key = folder under public/assets/models. `generator` is the glTF asset.generator every GLB in that folder must carry (tests/unit/art-manifests/toolchain.test.ts fails on any other string; build_levels.py refuses to publish or verify with another exporter). `platform` is where a rebuild is byte-identical: Blender writes different last float bits on Linux and Windows, so on the other platform --verify compares the models by content (tools/blender/common/glb_semantic.py) and says so. A pin may exist before its folder does (levels/street is in an open pull request). Moving a kit to another Blender or platform is a deliberate full rebuild of that kit plus a change to its entry here.",
+  "kits": {
+    "characters": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "linux"
+    },
+    "characters/cast": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "windows"
+    },
+    "characters/premium": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "windows"
+    },
+    "creatures": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "homes": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "levels/bayou": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "levels/graveyard": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "windows"
+    },
+    "levels/mausoleum": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "linux"
+    },
+    "levels/rotrow": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "linux"
+    },
+    "levels/street": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "levels/yard": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "objects": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "linux"
+    },
+    "objects/homeservices": {
+      "generator": "Khronos glTF Blender I/O v5.2.41",
+      "platform": "windows"
+    },
+    "pets": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "structures": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "vehicles": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    },
+    "wildlife": {
+      "generator": "Khronos glTF Blender I/O v5.1.20",
+      "platform": "windows"
+    }
+  },
+  "blender": {
+    "Khronos glTF Blender I/O v5.2.41": {
+      "blender": "5.2.3 LTS",
+      "sha256": {
+        "blender-5.2.3-windows-x64.zip": "723f08a4401502561eb763cdeacf8745b31e5f3f154d287d3830d97cf75dc2fb",
+        "blender-5.2.3-windows-x64.msi": "a103d4ece8d9acffd2a95c9d8860355b1f209977cc983b4a3d1e1cfb441c8605",
+        "blender-5.2.3-linux-x64.tar.xz": "78486c018b4443efe5e75ab54c290ed8c15abafd249b862c2c9ce2530a918eec"
+      }
+    },
+    "Khronos glTF Blender I/O v5.1.20": {
+      "blender": "5.1.2",
+      "sha256": {
+        "blender-5.1.2-windows-x64.zip": "345bedea7b0acf7cc9666423d8553f9129622aea34ded65c23e8cb70f83f14ff",
+        "blender-5.1.2-windows-x64.msi": "7d1bb468057a3ac8fd19809e90544f6064cc215053b7732cc8a1ccc83b651ab5"
+      }
+    }
+  }
+}

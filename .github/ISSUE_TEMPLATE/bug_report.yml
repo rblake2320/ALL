@@ -1,0 +1,29 @@
+name: Bug report
+description: Something in the game is broken or behaves wrongly.
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: What you saw, and what you expected instead. }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce }
+    validations: { required: true }
+  - type: input
+    id: build
+    attributes: { label: Build or commit, description: "The build shown at the top of the session log, or the commit SHA." }
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows desktop app, Web (desktop browser), Web (phone), Other]
+  - type: textarea
+    id: log
+    attributes:
+      label: Session log
+      description: "Pause → Copy session log, then paste it here. It contains no names or typed text."
+      render: text
+  - type: textarea
+    id: shots
+    attributes: { label: Screenshots }

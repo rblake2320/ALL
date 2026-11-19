@@ -1,0 +1,2 @@
+# Inference and evaluator hashes bind exact bytes, including line endings.
+* -text

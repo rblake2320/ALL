@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source": "docs/systems/furniture-tiers-contractors.md sections 2 and 3",
+  "budget_scope": "Fixed experiment targets, not changes to production asset contracts",
+  "props": [
+    {"id":"rusty-icebox","name":"Rusty Icebox","size":[0.8,1.4,0.8],"triangles":2500,"materials":8,"description":"Junk-tier vintage single-door refrigerator: rounded faded mint enamel, rust at lower corners, thick cream door gasket, chunky tarnished handle and four short metal feet. Closed door. Comic gothic domestic style, appealing silhouette, visible layered construction."},
+    {"id":"morgue-locker","name":"Necro-Chef Morgue Locker","size":[1.2,1.9,0.8],"triangles":3000,"materials":8,"description":"Signature-tier tall refrigerator shaped like an elegant miniature mortuary locker: brushed dark steel cabinet, two horizontal closed drawer fronts, brass pull handles, discreet bone-shaped crest and a small teal temperature dial. Furniture prop, no corpse or human parts."},
+    {"id":"moonlit-mirror","name":"Moonlit Mirror","size":[0.8,1.8,0.45],"triangles":1800,"materials":8,"description":"Freestanding tall oval dressing mirror with a silver-blue reflective-looking surface, graceful aged bronze frame, crescent-moon crest, two curved supports and a stable four-foot base. Smooth stylized curves, readable at game camera distance."},
+    {"id":"damned-gramophone","name":"Gramophone of the Damned","size":[0.9,1.15,0.75],"triangles":3000,"materials":8,"description":"Tabletop antique gramophone, burgundy carved wooden base, black record on a bronze turntable, curved tonearm and flared brass horn with scalloped rim. Four short feet. Slightly spooky elegant craftsmanship, no table beneath it."},
+    {"id":"embalmer-easel","name":"Embalmer Easel","size":[0.75,1.65,0.7],"triangles":2200,"materials":8,"description":"Tall wooden artist tripod easel with dark walnut rails, adjustable brass canvas clamp, rectangular linen canvas and a narrow paint tray holding three small muted paint pots. Rear leg visibly braces the frame. Stylish gothic domestic prop."},
+    {"id":"ancestor-rocker","name":"Ancestor Rocking Chair","size":[0.85,1.1,1.1],"triangles":3000,"materials":8,"description":"Comfortable antique rocking chair, curved dark walnut rockers, dusty plum upholstered seat and tall upholstered back, two curved wooden armrests, four legs and subtle brass fasteners. Rounded smooth domestic style. Keep the seating surface clear and all structural parts connected."}
+  ]
+}

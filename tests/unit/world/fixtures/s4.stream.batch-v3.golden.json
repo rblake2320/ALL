@@ -1,0 +1,227 @@
+{
+ "seed": 7,
+ "ticks": 2200,
+ "final": "413213566708185d7e5eeb2a360bc03e347dad350ebe296205d9a27bb829734f",
+ "hashes": [
+  {
+   "tick": 100,
+   "hash": "2bc23262a62e0a1d75b38326b0720d0b3a03d4b59118a381c84cbeaf1328f8e3"
+  },
+  {
+   "tick": 200,
+   "hash": "8f7d3df2b37a1cf83ae4c34f32e5909c3b408eb7bad916acdee9a9f8fa65aeb0"
+  },
+  {
+   "tick": 300,
+   "hash": "bf28778ce490235b771fc6c6d7c13be957d22d71a3155ad4ba2f632980dfad94"
+  },
+  {
+   "tick": 400,
+   "hash": "cdbbedfdb62b81347bdeb27fd4284407f1b41ba77120e333ea991e77bdfe185b"
+  },
+  {
+   "tick": 500,
+   "hash": "9e325f730b5f40d7c8cebe32890ccea5c8727881c1b1ced37a4b23e74b2f7c9d"
+  },
+  {
+   "tick": 600,
+   "hash": "c2bc3289e2b8a76a74a4c305d1452c43610fb76335e20144b62dee5b2a5160e8"
+  },
+  {
+   "tick": 700,
+   "hash": "dc4bb54ee91f84275a1f6ec89106b9a6450144cbedbc543ba9774e5f7969a192"
+  },
+  {
+   "tick": 800,
+   "hash": "793ab9b718d34aef07eeea3db1f1f4b62e7c5e8f25d8e93781be7b8ffe0f76a8"
+  },
+  {
+   "tick": 900,
+   "hash": "f2dd3e2aa39fa01de6a24e452dd5125a8f346201dcfef4daa67a471569cae848"
+  },
+  {
+   "tick": 1000,
+   "hash": "59925680a5d05ee4f06692b98d1e9aef2fe7a9431e5c6e62c3d94e69666595f8"
+  },
+  {
+   "tick": 1100,
+   "hash": "5c731bece3f5f25e53c44130420542e9a47e5d0f4e7f4d4f10a8f857016ea68e"
+  },
+  {
+   "tick": 1200,
+   "hash": "44810bb2b49d32b74ac2cd4ca70a15964cc4d339eac57e77e7c2f9adabeb066f"
+  },
+  {
+   "tick": 1300,
+   "hash": "8426005f08d3bd70576c8212398542d2029a09d1a822fe97517d9eca66f4cb90"
+  },
+  {
+   "tick": 1400,
+   "hash": "a5e57dc860d2d2a5ec18ec916e0d364bb777f36ca7ad886de4a680aaabbbacc1"
+  },
+  {
+   "tick": 1500,
+   "hash": "6f4f75fa24942064839cd39d27d94fe4cf1c17ba3f2338fecf27cbc5db7c4e52"
+  },
+  {
+   "tick": 1600,
+   "hash": "d85c4292b88d5c17fef5ad99f304b961ea807e243ff22eab92bbccc536833764"
+  },
+  {
+   "tick": 1700,
+   "hash": "6a73b397f56417f26faf69ef915dd88ad7eb6addd37a5f11adf463bda45ca6de"
+  },
+  {
+   "tick": 1800,
+   "hash": "4d7c5ee612bcdb78adcd4bceaaf5fbb5d15cd50454be278de45d10a31c0a42ed"
+  },
+  {
+   "tick": 1900,
+   "hash": "fdc451e5cf1878a66fca75848fbbfdc01e968dee5f7f90317f688864857bfaa5"
+  },
+  {
+   "tick": 2000,
+   "hash": "2f0ba03abcd14f343dd891eeb753830e04a2d8abe1a9464a33c24001feed468a"
+  },
+  {
+   "tick": 2100,
+   "hash": "67e86d9f7405d56e2c6dbb169501f24499fc81c9e0e0568c73f776675f1ad7a9"
+  },
+  {
+   "tick": 2200,
+   "hash": "413213566708185d7e5eeb2a360bc03e347dad350ebe296205d9a27bb829734f"
+  }
+ ],
+ "tiers": [
+  {
+   "tick": 0,
+   "thawed": [
+    "street:mildew:0",
+    "street:mildew:1",
+    "street:mildew:2",
+    "street:mildew:3",
+    "street:mildew:4",
+    "wormwood:mildew_n1",
+    "wormwood:mildew_n3",
+    "wormwood:mildew_s1",
+    "wormwood:mildew_s2",
+    "wormwood:mildew_s3"
+   ],
+   "frozen": []
+  },
+  {
+   "tick": 108,
+   "thawed": [
+    "street:mildew:5"
+   ],
+   "frozen": []
+  },
+  {
+   "tick": 248,
+   "thawed": [
+    "graveyard:old_graveyard"
+   ],
+   "frozen": [
+    "wormwood:mildew_s3"
+   ]
+  },
+  {
+   "tick": 388,
+   "thawed": [
+    "wormwood:mildew_n4"
+   ],
+   "frozen": [
+    "wormwood:mildew_s2"
+   ]
+  },
+  {
+   "tick": 420,
+   "thawed": [
+    "wormwood:mildew_s4"
+   ],
+   "frozen": [
+    "graveyard:old_graveyard"
+   ]
+  },
+  {
+   "tick": 552,
+   "thawed": [
+    "wormwood:mildew_s2",
+    "wormwood:mildew_s3"
+   ],
+   "frozen": [
+    "wormwood:mildew_n4",
+    "wormwood:mildew_s4"
+   ]
+  },
+  {
+   "tick": 564,
+   "thawed": [],
+   "frozen": [
+    "street:mildew:5"
+   ]
+  }
+ ],
+ "crossings": [
+  {
+   "tick": 51,
+   "from": "wormwood:mildew_n2",
+   "to": "wormwood:mildew_n3",
+   "portalId": "sidewalk:mildew_n2-n3"
+  },
+  {
+   "tick": 104,
+   "from": "wormwood:mildew_n3",
+   "to": "street:mildew:3",
+   "portalId": "crosswalk:mildew_n3"
+  },
+  {
+   "tick": 152,
+   "from": "street:mildew:3",
+   "to": "street:mildew:4",
+   "portalId": "crosswalk:street_mildew_3-4"
+  },
+  {
+   "tick": 245,
+   "from": "street:mildew:4",
+   "to": "street:mildew:5",
+   "portalId": "crosswalk:street_mildew_4-5"
+  },
+  {
+   "tick": 281,
+   "from": "street:mildew:5",
+   "to": "graveyard:old_graveyard",
+   "portalId": "gate:old_graveyard"
+  },
+  {
+   "tick": 340,
+   "from": "graveyard:old_graveyard",
+   "to": "street:mildew:5",
+   "portalId": "gate:old_graveyard"
+  },
+  {
+   "tick": 376,
+   "from": "street:mildew:5",
+   "to": "street:mildew:4",
+   "portalId": "crosswalk:street_mildew_4-5"
+  },
+  {
+   "tick": 425,
+   "from": "street:mildew:4",
+   "to": "wormwood:mildew_n4",
+   "portalId": "crosswalk:mildew_n4"
+  },
+  {
+   "tick": 470,
+   "from": "wormwood:mildew_n4",
+   "to": "wormwood:mildew_n3",
+   "portalId": "sidewalk:mildew_n3-n4"
+  },
+  {
+   "tick": 563,
+   "from": "wormwood:mildew_n3",
+   "to": "wormwood:mildew_n2",
+   "portalId": "sidewalk:mildew_n2-n3"
+  }
+ ]
+}

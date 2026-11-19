@@ -1,0 +1,38 @@
+name: Asset submission
+description: Houses, furniture, zombies, pets, vehicles or animations. Read docs/community/ASSETS.md first.
+title: "Asset: "
+labels: [asset, needs-triage]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [Furniture or prop, House or building piece, Zombie body or outfit, Pet or creature, Vehicle, Animation, House-brand skin (Creator Kit pack)]
+    validations: { required: true }
+  - type: input
+    id: id
+    attributes: { label: Proposed object id, description: "lowercase_with_underscores; must not match an existing id in public/assets/manifest.objects.json" }
+    validations: { required: true }
+  - type: textarea
+    id: specs
+    attributes: { label: Size and budget, description: "Footprint in tiles, height in metres, triangle count, material names (recolourable one named Paint)." }
+    validations: { required: true }
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance (per file)
+      description: "Who made it, how (hand, script, AI tool + model + prompt + references), and the rights: your own work, CC0, or CC-BY with exact credit text."
+    validations: { required: true }
+  - type: textarea
+    id: files
+    attributes: { label: Files and previews, description: "Attach the .glb (zipped), source files and renders: front, side, top, and in-game if you can." }
+    validations: { required: true }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Originality and rating
+      options:
+        - label: Nothing here is taken from, or made to look like, another game, film, show or brand
+          required: true
+        - label: It fits ART_DIRECTION.md and the E10+ rating
+          required: true

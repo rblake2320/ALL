@@ -1,0 +1,1075 @@
+/* UI-SHELL screens: shared bits, brand, main menu, loading, new game, game over, fatal. (caz.css, dialogs.css) */
+
+.sh-screen-host {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+/* Shell screens (not the HUD) query their own size so layouts compact by rem — i.e. they react to the UI scale
+   as well as the window size (a 140% UI on 1280x720 behaves like a small window). */
+.ui-root:not([data-screen='game']) > .sh-screen-host {
+  container: shellscreen / size;
+}
+.sh-screen {
+  position: absolute;
+  inset: 0;
+  animation: ui-fade-in var(--dur-slower) var(--ease-out) both;
+}
+.sh-title {
+  margin-top: 0.25rem;
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-tight);
+  color: var(--text-strong);
+  text-wrap: balance;
+}
+.sh-subtitle {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: var(--fs-md);
+  text-wrap: pretty;
+}
+.sh-hint {
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+  text-wrap: pretty;
+}
+.sh-hint--warm {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--c-candle-hi);
+}
+
+/* ═════════════════════════════ Brand ═════════════════════════════ */
+.sh-emblem {
+  flex-shrink: 0;
+  filter: drop-shadow(0 0.5rem 1.25rem rgba(0, 0, 0, 0.45)) drop-shadow(0 0 1.5rem rgba(159, 232, 112, 0.12));
+}
+.sh-wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  line-height: 0.95;
+  margin: 0;
+  --wm: 4.75rem;
+}
+.sh-wordmark--md {
+  --wm: 3.25rem;
+  align-items: center;
+}
+.sh-wordmark--sm {
+  --wm: 2.25rem;
+  align-items: center;
+}
+.sh-wordmark__first {
+  display: inline-flex;
+  font-size: var(--wm);
+  letter-spacing: -0.012em;
+  background: linear-gradient(180deg, #fbf6e6 0%, #ebe2c8 48%, #bfb394 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0.18rem 0 rgba(10, 6, 14, 0.65)) drop-shadow(0 0 1.4rem rgba(159, 232, 112, 0.16));
+  padding-bottom: 0.08em;
+}
+.sh-wordmark__ch {
+  display: inline-block;
+}
+.sh-wordmark.is-animated .sh-wordmark__ch {
+  animation: sh-letter-in 720ms var(--ease-out) both;
+  animation-delay: calc(var(--i) * 55ms + 140ms);
+}
+.sh-wordmark.is-animated .sh-wordmark__ch:nth-child(6) {
+  animation:
+    sh-letter-in 720ms var(--ease-out) both,
+    ui-flicker 9s 3s steps(1, end) infinite;
+  animation-delay: calc(var(--i) * 55ms + 140ms), 3s;
+}
+.sh-wordmark.is-animated .sh-wordmark__first {
+  animation: sh-breathe 6s var(--ease-in-out) 1.4s infinite;
+}
+@keyframes sh-letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em) rotate(-2deg);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+@keyframes sh-breathe {
+  0%,
+  100% {
+    filter: drop-shadow(0 0.18rem 0 rgba(10, 6, 14, 0.65)) drop-shadow(0 0 1.4rem rgba(159, 232, 112, 0.14));
+  }
+  50% {
+    filter: drop-shadow(0 0.18rem 0 rgba(10, 6, 14, 0.65)) drop-shadow(0 0 2.2rem rgba(159, 232, 112, 0.3));
+  }
+}
+.sh-wordmark__second {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.2em;
+  padding-left: 0.12em;
+}
+.sh-wordmark--md .sh-wordmark__second,
+.sh-wordmark--sm .sh-wordmark__second {
+  justify-content: center;
+}
+.sh-wordmark__lease {
+  font-size: calc(var(--wm) * 0.5);
+  font-style: italic;
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.06em;
+  color: var(--c-candle);
+  text-shadow: 0 0 1.25rem rgba(255, 179, 90, 0.35);
+}
+.sh-wordmark__rule {
+  flex: 0 1 4.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 179, 90, 0.55));
+}
+.sh-wordmark__rule:last-child {
+  flex: 1 1 4rem;
+  max-width: 7rem;
+  background: linear-gradient(90deg, rgba(255, 179, 90, 0.55), transparent);
+}
+.sh-wordmark--lg .sh-wordmark__rule:first-child {
+  display: none;
+}
+.sh-wordmark.is-animated .sh-wordmark__second {
+  animation: ui-slide-in-left 700ms var(--ease-out) 700ms both;
+}
+
+/* ═════════════════════════════ Main menu ═════════════════════════════ */
+.sh-menu {
+  display: flex;
+}
+.sh-menu__column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(36rem, 46vw);
+  min-width: 26rem;
+  height: 100%;
+  padding: max(8vh, 3rem) 3.5rem min(2rem, 4vh) 4.5rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 8, 16, 0.95) 0%,
+    rgba(15, 11, 21, 0.9) 52%,
+    rgba(15, 11, 21, 0.62) 80%,
+    rgba(15, 11, 21, 0) 100%
+  );
+}
+.sh-menu__column::-webkit-scrollbar {
+  display: none;
+}
+/* Large UI scale on short windows: cap type by viewport height so the menu still fits. */
+.sh-menu .sh-wordmark--lg {
+  --wm: min(4.75rem, 10vh);
+}
+.sh-menu__column::before {
+  content: '';
+  position: absolute;
+  left: 2.25rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, transparent 4%, rgba(255, 179, 90, 0.28) 30%, rgba(255, 179, 90, 0.28) 70%, transparent 96%);
+}
+.sh-menu__brand {
+  margin-bottom: clamp(1rem, 4.5vh, 3rem);
+}
+.sh-menu__tagline {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-lg);
+  color: var(--text-muted);
+  animation: ui-fade-in 900ms var(--ease-out) 900ms both;
+}
+.sh-menu__orn {
+  margin-top: 1.125rem;
+  color: var(--c-candle);
+  animation: ui-fade-in 900ms var(--ease-out) 1100ms both;
+}
+.sh-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+  margin-left: -0.5rem;
+}
+.sh-menu__list > li {
+  animation: ui-slide-in-left 520ms var(--ease-out) both;
+}
+.sh-menu__list > li:nth-child(1) {
+  animation-delay: 380ms;
+}
+.sh-menu__list > li:nth-child(2) {
+  animation-delay: 440ms;
+}
+.sh-menu__list > li:nth-child(3) {
+  animation-delay: 500ms;
+}
+.sh-menu__list > li:nth-child(4) {
+  animation-delay: 560ms;
+}
+.sh-menu__list > li:nth-child(5) {
+  animation-delay: 620ms;
+}
+.sh-menu__list > li:nth-child(6) {
+  animation-delay: 680ms;
+}
+.sh-menu__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: min(2.5rem, 5.6vh) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.9375rem;
+  width: 100%;
+  padding: min(0.5625rem, 1vh) 1rem min(0.5625rem, 1vh) 0.5rem;
+  border-radius: var(--r-lg);
+  text-align: left;
+  color: var(--text);
+  transition:
+    background-color var(--dur-med) var(--ease-out),
+    transform var(--dur-med) var(--ease-out);
+}
+.sh-menu__item::before {
+  content: '';
+  position: absolute;
+  left: -0.625rem;
+  top: 22%;
+  bottom: 22%;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--c-candle);
+  box-shadow: 0 0 0.75rem rgba(255, 179, 90, 0.7);
+  transform: scaleY(0);
+  transition: transform var(--dur-med) var(--ease-out);
+}
+.sh-menu__item:hover:not(:disabled),
+.sh-menu__item:focus-visible {
+  background: linear-gradient(90deg, rgba(232, 224, 200, 0.085), rgba(232, 224, 200, 0) 85%);
+  transform: translateX(0.25rem);
+}
+.sh-menu__item:hover:not(:disabled)::before,
+.sh-menu__item:focus-visible::before {
+  transform: scaleY(1);
+}
+.sh-menu__glyph {
+  display: grid;
+  place-items: center;
+  /* vh cap: at 140% on a short window the six items still fit above the footer. */
+  width: min(2.5rem, 5.6vh);
+  height: min(2.5rem, 5.6vh);
+  border-radius: 50%;
+  color: var(--text-muted);
+  background: rgba(232, 224, 200, 0.045);
+  border: 1px solid var(--border-subtle);
+  transition:
+    color var(--dur-med) var(--ease-out),
+    background-color var(--dur-med) var(--ease-out),
+    border-color var(--dur-med) var(--ease-out),
+    box-shadow var(--dur-med) var(--ease-out);
+}
+.sh-menu__item:hover:not(:disabled) .sh-menu__glyph,
+.sh-menu__item:focus-visible .sh-menu__glyph {
+  color: var(--accent);
+  border-color: rgba(159, 232, 112, 0.45);
+  background: rgba(159, 232, 112, 0.1);
+}
+.sh-menu__item.is-primary .sh-menu__glyph {
+  color: var(--text-on-accent);
+  background: linear-gradient(180deg, #c4f7a2, #8fdc63);
+  border-color: rgba(30, 60, 18, 0.5);
+  box-shadow: 0 0 1.25rem rgba(159, 232, 112, 0.35);
+}
+.sh-menu__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.sh-menu__label {
+  font-family: var(--font-display);
+  font-size: min(1.6875rem, 3.8vh);
+  font-weight: var(--fw-semibold);
+  line-height: 1.12;
+  color: var(--text-strong);
+  letter-spacing: 0.004em;
+}
+.sh-menu__detail {
+  margin-top: 0.0625rem;
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sh-menu__item.is-primary .sh-menu__detail {
+  color: var(--c-toxic-hi);
+}
+.sh-menu__flame {
+  color: var(--c-candle);
+  opacity: 0;
+  transform: translateX(-0.5rem);
+  transition:
+    opacity var(--dur-med) var(--ease-out),
+    transform var(--dur-med) var(--ease-out);
+}
+.sh-menu__item:hover:not(:disabled) .sh-menu__flame,
+.sh-menu__item:focus-visible .sh-menu__flame {
+  opacity: 1;
+  transform: none;
+}
+.ui-root .sh-menu__item:focus-visible {
+  outline: 1.5px solid rgba(159, 232, 112, 0.55);
+  outline-offset: 0;
+  border-radius: var(--r-lg);
+}
+.sh-menu__item:disabled {
+  cursor: not-allowed;
+}
+.sh-menu__item:disabled .sh-menu__label,
+.sh-menu__item:disabled .sh-menu__glyph {
+  opacity: 0.42;
+}
+.sh-menu__item:disabled .sh-menu__detail {
+  opacity: 0.8;
+}
+.sh-menu__error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: var(--text-danger);
+  font-size: var(--fs-sm);
+}
+.sh-menu__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: min(1.5rem, 3vh);
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.sh-menu__dot {
+  opacity: 0.6;
+}
+
+/* ═════════════════════════════ Loading ═════════════════════════════ */
+.sh-loading {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 38%, rgba(74, 58, 96, 0.55), transparent 70%),
+    radial-gradient(ellipse at 50% 120%, rgba(159, 232, 112, 0.08), transparent 55%),
+    linear-gradient(180deg, #17121f 0%, #110d17 55%, #0b0810 100%);
+}
+.sh-loading__fog {
+  position: absolute;
+  inset: -25%;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 40% 18% at 30% 78%, rgba(154, 163, 154, 0.12), transparent 70%),
+    radial-gradient(ellipse 35% 14% at 72% 84%, rgba(154, 163, 154, 0.1), transparent 70%),
+    radial-gradient(ellipse 50% 20% at 55% 92%, rgba(154, 163, 154, 0.09), transparent 70%);
+  animation: sh-fog 28s var(--ease-in-out) infinite alternate;
+}
+@keyframes sh-fog {
+  from {
+    transform: translateX(-4%);
+  }
+  to {
+    transform: translateX(4%);
+  }
+}
+.sh-loading__center {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: min(32rem, 88vw);
+  text-align: center;
+}
+.sh-loading__emblem {
+  animation: sh-float 6s var(--ease-in-out) infinite;
+}
+@keyframes sh-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.375rem);
+  }
+}
+.sh-loading__progress {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+.sh-loading__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+.sh-loading__label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sh-loading__pct {
+  color: var(--accent);
+  font-weight: var(--fw-semibold);
+}
+.sh-loading__tip {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 1rem 1.5rem 0.875rem;
+  border-radius: var(--r-lg);
+  background: rgba(232, 224, 200, 0.035);
+  border: 1px solid var(--border-faint);
+}
+.sh-loading__tiphead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--c-candle);
+}
+.sh-loading__tiptext {
+  min-height: 2.9em;
+  margin-top: 0.5rem;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  line-height: 1.45;
+  color: var(--text);
+  text-wrap: balance;
+  animation: ui-fade-in 600ms var(--ease-out) both;
+}
+.sh-loading__orn {
+  margin: 0.625rem auto 0;
+  color: var(--c-candle);
+}
+
+/* ═════════════════════════════ New game ═════════════════════════════ */
+.sh-newgame {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background: radial-gradient(ellipse at 50% 40%, rgba(16, 12, 22, 0.5), rgba(9, 6, 13, 0.86));
+}
+.sh-newgame__sheet {
+  position: relative;
+  /* margin:auto centres while there is room and lets overflow scroll from the top (grid centring clips it). */
+  margin: auto;
+  flex-shrink: 0;
+  width: min(60rem, 100%);
+  padding: 1.75rem 2.25rem 1.5rem;
+  border-radius: var(--r-xl);
+  background:
+    radial-gradient(120% 60% at 50% -10%, rgba(102, 85, 126, 0.25), transparent 60%),
+    linear-gradient(180deg, rgba(36, 28, 47, 0.96), rgba(22, 17, 30, 0.96));
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-lg), var(--shadow-inset-hi);
+  backdrop-filter: blur(18px) saturate(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(1.1);
+  animation: ui-rise-in var(--dur-slower) var(--ease-out) both;
+}
+html.ui-low-fx .sh-newgame__sheet {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.sh-newgame__head {
+  text-align: center;
+  margin-bottom: 1.375rem;
+}
+.sh-lots {
+  display: grid;
+  /* Three lots (W-113): as many columns as fit at >= 15rem, one column on phones (no squeezed one-word-per-line names). */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.25rem;
+}
+.sh-lot {
+  padding: 0;
+  overflow: hidden;
+}
+.sh-lot__art {
+  aspect-ratio: 32 / 13;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-faint);
+  background: #1b1530;
+}
+.sh-lot__art svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--dur-slower) var(--ease-out);
+}
+.sh-lot:hover .sh-lot__art svg {
+  transform: scale(1.03);
+}
+.sh-lot__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.875rem 1.25rem 1.125rem;
+}
+.sh-lot__titlerow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  padding-right: 1.75rem;
+  min-width: 0;
+}
+/* The tag never overflows its card (phone widths showed "FURNISHED COT…" spilling out): it shrinks and ellipsises.
+   Its text has a px floor (--fs-2xs) while the root rem shrinks with small windows, so its box grows with the text. */
+.sh-lot__tag.ui-badge {
+  display: inline-block;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 1.25rem;
+  padding-block: 0.15em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.3;
+}
+.sh-lot__name {
+  flex: 1 1 9rem;
+  min-width: 0;
+  overflow-wrap: break-word;
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  color: var(--text-strong);
+  line-height: 1.1;
+}
+.sh-lot__desc {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  text-wrap: pretty;
+}
+.sh-lot__features {
+  display: grid;
+  gap: 0.25rem;
+}
+.sh-lot__features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-sm);
+  color: var(--text);
+}
+.sh-lot__features .ui-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.sh-lot__funds {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 0.375rem;
+  padding-top: 0.625rem;
+  border-top: 1px dashed var(--border-faint);
+}
+.sh-lot__fundslabel {
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+.sh-lot__fundsvalue {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  color: var(--c-candle);
+}
+.sh-lot.ui-card .ui-card__check {
+  top: auto;
+  bottom: auto;
+  margin-top: 0;
+}
+.sh-newgame__bonus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  margin-top: 0.75rem;
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+.sh-difficulty {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem 0.875rem;
+  border-radius: var(--r-lg);
+  background: var(--bg-sunken);
+  border: 1px solid var(--border-faint);
+}
+.sh-difficulty__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+.sh-difficulty__label {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--text-strong);
+}
+.sh-difficulty__desc {
+  min-height: 2.6em;
+  margin-top: 0.625rem;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  animation: ui-fade-in var(--dur-slow) var(--ease-out) both;
+}
+.sh-newgame__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+@media (max-aspect-ratio: 16/9.6), (max-height: 760px) {
+  .sh-newgame {
+    padding: 1rem;
+  }
+  .sh-newgame__sheet {
+    padding: 1.25rem 1.75rem 1.125rem;
+  }
+  .sh-newgame__head {
+    margin-bottom: 1rem;
+  }
+  .sh-lot__art {
+    aspect-ratio: 32 / 11;
+  }
+  .sh-lot__body {
+    gap: 0.375rem;
+    padding: 0.75rem 1.125rem 0.875rem;
+  }
+  .sh-difficulty {
+    margin-top: 1rem;
+    padding: 0.75rem 1.125rem 0.625rem;
+  }
+  .sh-newgame__foot {
+    margin-top: 1rem;
+  }
+}
+
+/* ═════════════════════════════ Game over ═════════════════════════════ */
+.sh-gameover {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  overflow-y: auto;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 32%, rgba(58, 45, 76, 0.75), transparent 72%),
+    linear-gradient(180deg, rgba(14, 10, 19, 0.96), rgba(8, 5, 11, 0.98));
+}
+.sh-gameover__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  width: min(44rem, 100%);
+  margin: auto;
+  flex-shrink: 0;
+  text-align: center;
+}
+.sh-gameover__stone {
+  margin-bottom: 0.75rem;
+  color: var(--c-parchment);
+  filter: drop-shadow(0 0 1.5rem rgba(159, 232, 112, 0.2));
+  animation: sh-float 7s var(--ease-in-out) infinite;
+}
+.sh-gameover__title {
+  font-family: var(--font-display);
+  font-size: 3.75rem;
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+  background: linear-gradient(180deg, #fbf6e6, #c8bd9f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0.2rem 0 rgba(0, 0, 0, 0.55));
+  animation: ui-rise-in 900ms var(--ease-out) 150ms both;
+}
+.sh-gameover__sub {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: var(--fs-lg);
+  text-wrap: balance;
+}
+.sh-gameover__reason {
+  margin-top: 0.125rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-md);
+  color: var(--c-candle);
+  text-wrap: balance;
+}
+/* The roster may be wider than the card (8 members) — it stays centred on the screen. */
+.sh-gameover__members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 0.75rem;
+  width: max-content;
+  max-width: calc(100vw - 3rem);
+  margin-top: 1rem;
+}
+.sh-gameover__members li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  width: 5.75rem;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.sh-gameover__members .ui-trunc {
+  max-width: 100%;
+}
+.sh-gameover__more {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px dashed var(--border-strong);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--text-muted);
+}
+.sh-gameover__orn {
+  margin: 1rem 0 0.75rem;
+  color: var(--c-candle);
+}
+.sh-gameover__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.625rem;
+  width: 100%;
+}
+.sh-gameover__stats > div {
+  padding: 0.75rem 0.5rem;
+  border-radius: var(--r-md);
+  background: rgba(232, 224, 200, 0.04);
+  border: 1px solid var(--border-faint);
+}
+.sh-gameover__stats dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3125rem;
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+.sh-gameover__stats dt .ui-icon {
+  color: var(--c-candle);
+}
+.sh-gameover__stats dd {
+  margin: 0.25rem 0 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--text-strong);
+}
+.sh-gameover__epitaph {
+  margin-top: 1.125rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--text-faint);
+}
+.sh-gameover__msg {
+  margin-top: 0.5rem;
+  font-size: var(--fs-sm);
+  color: var(--c-candle);
+}
+.sh-gameover__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+/* ═════════════════════════════ Fatal ═════════════════════════════ */
+.sh-fatal-root {
+  z-index: var(--z-fatal);
+}
+.sh-fatal {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  overflow-y: auto;
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 30%, rgba(76, 40, 58, 0.55), transparent 70%),
+    linear-gradient(180deg, #16101c, #09070c);
+}
+.sh-fatal__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: min(36rem, 100%);
+  margin: auto;
+  flex-shrink: 0;
+  text-align: center;
+}
+.sh-fatal__icon {
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  color: var(--c-rose);
+  background: radial-gradient(circle, rgba(226, 86, 106, 0.18), rgba(226, 86, 106, 0.04) 70%);
+  border: 1px solid rgba(255, 143, 122, 0.35);
+}
+.sh-fatal__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-3xl);
+  color: var(--text-strong);
+  line-height: 1.1;
+}
+.sh-fatal__text {
+  color: var(--text-muted);
+  text-wrap: balance;
+}
+/* W-149: "things to try" on the no-3D screen */
+.sh-fatal__steps {
+  width: 100%;
+  text-align: left;
+}
+.sh-fatal__steps ol {
+  margin: var(--sp-2, 0.5rem) 0 0;
+  padding-left: 1.4em;
+  list-style: decimal;
+  display: grid;
+  gap: 0.4em;
+  color: var(--text);
+}
+.sh-fatal__details {
+  width: 100%;
+  margin-top: 0.75rem;
+  text-align: left;
+}
+.sh-fatal__details summary {
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  color: var(--text-faint);
+}
+.sh-fatal__details pre {
+  margin: 0.5rem 0 0;
+  max-height: 10rem;
+  overflow: auto;
+  padding: 0.75rem;
+  border-radius: var(--r-md);
+  background: var(--bg-sunken);
+  border: 1px solid var(--border-faint);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  white-space: pre-wrap;
+  word-break: break-word;
+  user-select: text;
+}
+.sh-fatal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-top: 1rem;
+}
+/* W-149: this screen is also what a phone without WebGL shows: its buttons are touch targets there */
+@media (max-width: 520px), (pointer: coarse) {
+  .sh-fatal__actions .ui-btn {
+    min-height: 44px;
+  }
+}
+.sh-fatal__status {
+  min-height: 1.25rem;
+  font-size: var(--fs-sm);
+}
+.sh-fatal__hint {
+  font-size: var(--fs-xs);
+  color: var(--text-faint);
+}
+
+/* ═════════════════════════════ Shell toasts (screens without the HUD) ═════════════════════════════ */
+.sh-toasts {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  width: 22rem;
+  max-width: calc(100vw - 2.5rem);
+  pointer-events: none;
+}
+.sh-toast {
+  max-width: 100%;
+  pointer-events: auto;
+}
+.sh-toast .ui-toast__progress {
+  transition: transform 260ms linear;
+}
+html.reduce-motion .sh-toast .ui-toast__progress {
+  display: none;
+}
+
+/* ── New game on phones (W-113): the root rem shrinks with the window (theme/scale.ts) while small text keeps a px
+   floor, so three cards side by side squeeze names to one word per line. Narrow windows get one card per row, and
+   the display-size names / funds get the same kind of floor as the body text. ── */
+@media (max-width: 640px), (max-aspect-ratio: 3/4) {
+  .sh-lots {
+    grid-template-columns: 1fr;
+    gap: max(0.75rem, 8px);
+  }
+  .sh-lot__art {
+    aspect-ratio: auto;
+    height: max(7rem, 64px);
+  }
+  .sh-newgame__sheet {
+    padding-inline: max(1rem, 10px);
+  }
+}
+.sh-lot__name,
+.sh-lot__fundsvalue {
+  font-size: max(var(--fs-2xl), 15px);
+}
+
+/* ── New game: short windows / large UI scales (rem-based so the UI scale counts) ── */
+@container shellscreen (max-height: 50rem) {
+  .sh-newgame {
+    padding: 0.75rem;
+  }
+  .sh-newgame__sheet {
+    padding: 1rem 1.5rem 1rem;
+  }
+  .sh-newgame__head {
+    margin-bottom: 0.75rem;
+  }
+  .sh-newgame .sh-title {
+    font-size: var(--fs-2xl);
+  }
+  .sh-newgame .sh-subtitle {
+    margin-top: 0.25rem;
+  }
+  .sh-lot__art {
+    aspect-ratio: auto;
+    height: 7rem;
+  }
+  .sh-lot__features {
+    display: none;
+  }
+  .sh-lot__body {
+    gap: 0.3125rem;
+    padding: 0.625rem 1rem 0.75rem;
+  }
+  .sh-lot__funds {
+    margin-top: 0.125rem;
+    padding-top: 0.375rem;
+  }
+  .sh-newgame__bonus {
+    margin-top: 0.5rem;
+  }
+  .sh-difficulty {
+    margin-top: 0.75rem;
+    padding: 0.625rem 1rem 0.5rem;
+  }
+  .sh-difficulty__desc {
+    min-height: 0;
+    margin-top: 0.375rem;
+  }
+  .sh-newgame__foot {
+    margin-top: 0.75rem;
+  }
+}
+
+/* ── Game over: short windows ── */
+@container shellscreen (max-height: 50rem) {
+  .sh-gameover {
+    padding: 1rem;
+  }
+  .sh-gameover__stone {
+    margin-bottom: 0.25rem;
+  }
+  .sh-gameover__stone .ui-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .sh-gameover__title {
+    font-size: 3rem;
+  }
+  .sh-gameover__members {
+    margin-top: 0.625rem;
+  }
+  .sh-gameover__orn {
+    margin: 0.625rem 0 0.5rem;
+  }
+  .sh-gameover__stats > div {
+    padding: 0.5rem;
+  }
+  .sh-gameover__epitaph {
+    margin-top: 0.75rem;
+  }
+  .sh-gameover__actions {
+    margin-top: 0.875rem;
+  }
+}
+
+/* ── W-118: phone-width main menu / New Game — text wraps instead of being cut ("Sign a lease on the a…") ── */
+@container shellscreen (max-width: 799.98px) or (max-height: 449.98px) {
+  .sh-menu__detail {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+  /* New Game: thumb-sized footer buttons (they were 30 px tall with 10.6 px text on a phone) */
+  .sh-newgame__foot .ui-btn {
+    min-height: 44px;
+    font-size: max(var(--fs-md), 15px);
+  }
+  /* New Game: a lot's tag wraps inside its card instead of being cut ("MOVE-IN READY (SA…" at 844×390) */
+  .sh-lot__tag.ui-badge {
+    height: auto;
+    min-height: 1.25rem;
+    padding-block: 2px;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.15;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}

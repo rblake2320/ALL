@@ -1,0 +1,23 @@
+{
+  "engine": "3cc1f39f4adee7a39034dc29ec20097c1b49a8d8",
+  "sourceTree": "e9ee7c94794dbc9c7ad717a5c16db3fe7470797d",
+  "schemaVersion": 2,
+  "referenceSha256": "698c72800071c588aabc967e2646752121a799ad598b17a962d15b79dc27d53b",
+  "recorder": "tests/unit/world/ac1.accepted.record.ts",
+  "recorderSha256": "0b146a1c859a5a9a01b29c905d0be26a034d27e9715282fe2f38a9cb9d019aa5",
+  "harnessSha256": "f492655adb89cc0b7190f2505cf66269c56b953fbdafb85a23db99e3ea2f2051",
+  "workload": "21 runs: three templates x three seeds x seven days, continuous and real SaveManager reload; three fixture seeds x three days",
+  "host": "spark1 / <runner-host>",
+  "node": "22.22.3",
+  "scope": "sol-world-ac1-3cc1f39",
+  "invocation": "986fa6bc27104039bf08ed8d33fe9090",
+  "cpuQuota": "400%",
+  "memoryMax": 8589934592,
+  "swapMax": 0,
+  "memoryPeak": 1273602048,
+  "memoryMaxOomEvents": 0,
+  "exit": 0,
+  "faults": 0,
+  "evidence": "<private-evidence-archive>",
+  "purpose": "Independent accepted pets/premium/journal base before this framework. Pets stay in the projection. Historical fd20992/c36 references are preserved unchanged."
+}

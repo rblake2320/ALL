@@ -1,0 +1,8 @@
+// Render actual SVGs at common UI sizes on light and dark surfaces.
+const fs=require('fs'),path=require('path'),{chromium}=require('playwright');
+const dir=__dirname, icons=JSON.parse(fs.readFileSync(path.join(dir,'icons.json'),'utf8')).icons;
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+ try{const page=await browser.newPage({viewport:{width:1200,height:900},deviceScaleFactor:1});
+ const cells=icons.map(({id,file})=>{const svg=fs.readFileSync(path.join(dir,file),'utf8');return '<article><div class="sample dark"><span class="s24">'+svg+'</span><span class="s48">'+svg+'</span></div><div class="sample light"><span class="s24">'+svg+'</span><span class="s48">'+svg+'</span></div><p>'+id+'</p></article>'}).join('');
+ await page.setContent('<style>body{margin:0;padding:22px;background:#d9cfb8;font:15px Arial;color:#1d1726}h1{margin:0 0 6px;font:28px Georgia}p{margin:7px 0}.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}article{background:#f0eadb;border-radius:10px;padding:8px}.sample{height:66px;display:flex;align-items:center;justify-content:space-around;border-radius:6px}.dark{background:#1d1726;color:#e8e0c8}.light{background:#e8e0c8;color:#1d1726}.s24 svg{width:24px;height:24px}.s48 svg{width:48px;height:48px}</style><h1>Afterlife Lease · icon review</h1><p>Each symbol shown at 24 and 48 CSS pixels on plum and bone.</p><div class="grid">'+cells+'</div>');
+ await page.screenshot({path:path.join(dir,'icons-contact.png'),fullPage:true});}finally{await browser.close()}})().catch(e=>{console.error(e);process.exitCode=1});

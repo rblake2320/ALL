@@ -1,0 +1,75 @@
+/**
+ * Feedback dialog strings (English), registered with the shell's i18n under the `feedback.` prefix (the store's
+ * strings.ts pattern). Resolve with `ft('key')`. Plain-language consent text (W-110 §4) lives here too.
+ */
+import { registerStrings, t, type StringParams } from '../../i18n';
+
+export const FEEDBACK_EN: Record<string, string> = {
+  entry: 'Report a bug / feedback',
+  'entry.short': 'Report a bug',
+  title: 'Report a bug or send feedback',
+  subtitle: 'Tell us what happened. Nothing is sent anywhere until you choose to.',
+  'type.label': 'What kind of report?',
+  'type.bug': 'Bug',
+  'type.idea': 'Idea',
+  'type.praise': 'Something I liked',
+  'area.label': 'Where in the game?',
+  'area.live': 'Live mode',
+  'area.buy': 'Buy mode',
+  'area.build': 'Build mode',
+  'area.caz': 'Create-a-Zombie',
+  'area.store': 'Store',
+  'area.menu': 'Menus',
+  'presets.label': 'What happened?',
+  'presets.hint': 'Pick up to {max}.',
+  'preset.cantPlace': "I couldn't place an item",
+  'preset.lookedWrong': 'Something looked wrong',
+  'preset.stuck': 'The game got stuck',
+  'preset.lostProgress': 'I lost progress',
+  'preset.tooHard': 'It was too hard',
+  'preset.confusing': "I didn't know what to do",
+  'preset.loveIt': 'I love this!',
+  'preset.wantMore': 'I want more of this',
+  'text.label': 'Tell us more (optional if you picked a chip above)',
+  'text.placeholder': 'What did you do, what did you expect, and what happened instead?',
+  'text.counter': '{n} / {max}',
+  'text.privacy': "Please don't write your real name, e-mail or other personal details — we remove them if we spot them.",
+  'kids.note': 'Pick the chips that fit. To keep everyone safe, younger players choose from chips instead of typing.',
+  'shot.label': 'Include a screenshot',
+  'shot.alt': 'Screenshot of the game taken when this report was opened',
+  'shot.none': 'No screenshot could be taken (the 3D view was not available).',
+  'shot.removed': 'Screenshot removed. It will not be included.',
+  'shot.remove': 'Remove screenshot',
+  'shot.restore': 'Add the screenshot back',
+  'save.label': 'Attach my save so you can reproduce it',
+  'save.desc': 'Includes your household and its names. Off unless you switch it on.',
+  'save.unavailable': 'Only available while a household is being played.',
+  'diag.note': 'Game version, graphics settings, recent errors and the last steps you took are added automatically — never your name, e-mail or anything you typed elsewhere.',
+  send: 'Save report',
+  sending: 'Saving…',
+  cancel: 'Cancel',
+  'err.empty': 'Pick at least one chip or write a few words.',
+  'err.tooLong': 'Please keep it under {max} characters.',
+  'err.presetsOnly': 'Please use the chips.',
+  'err.storage': "Your report couldn't be stored on this device ({error}). You can still export it below.",
+  'err.saveTooLarge': 'Your save is too large to attach. Switch "Attach my save" off and try again.',
+  'err.generic': 'Something went wrong. Please try again.',
+  'done.title': 'Thanks! Your report is {id}',
+  'done.text': 'It is saved on this device in your report outbox. Online sending is coming later — for now, export the report file and send it to us.',
+  'done.id': 'Report ID',
+  'done.dropped': 'Your outbox was full, so the oldest report ({ids}) was removed.',
+  'done.export': 'Export report file',
+  'done.exported': 'Report file exported — check your downloads.',
+  'done.exportFailed': 'The file could not be exported on this device.',
+  'done.close': 'Done',
+  'outbox.count': '{count} reports waiting in your outbox',
+  'outbox.count.one': '1 report waiting in your outbox',
+  'outbox.count.other': '{count} reports waiting in your outbox',
+  'crash.entry': 'Report this crash',
+};
+
+registerStrings(Object.fromEntries(Object.entries(FEEDBACK_EN).map(([k, v]) => [`feedback.${k}`, v])));
+
+export function ft(key: string, params?: StringParams): string {
+  return t(`feedback.${key}`, params);
+}

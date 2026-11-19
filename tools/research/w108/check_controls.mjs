@@ -1,0 +1,12 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const report=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
+const byId=new Map(report.results.map(r=>[r.id,r]));
+assert.equal(byId.get('valid-sphere')?.geometryOutcome,'Worked');
+assert.equal(byId.get('over-budget')?.geometryOutcome,'Failed');
+assert.equal(byId.get('over-budget')?.checks.triangleBudget,false);
+assert.match(byId.get('forbidden-network')?.error||'',/Forbidden capability fetch/);
+assert.equal(byId.get('valid-sphere')?.checks.byteIdenticalReexport,true);
+assert.equal(byId.get('valid-sphere')?.checks.roundTripGeometry,true);
+assert.match(byId.get('duplicate-binding')?.error||'',/already been declared/);
+assert.equal(report.results.length,4);
+console.log(JSON.stringify({outcome:'Worked',checks:8,kind:'synthetic harness controls'}));

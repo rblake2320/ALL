@@ -1,0 +1,51 @@
+[
+  {
+    "id": "l1-wormwood",
+    "file": "loading/l1-wormwood.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "WORMWOOD HEIGHTS"
+  },
+  {
+    "id": "l2-graveyard",
+    "file": "loading/l2-graveyard.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "OLD GRAVEYARD"
+  },
+  {
+    "id": "l3-rotrow",
+    "file": "loading/l3-rotrow.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "DOWNTOWN ROT ROW"
+  },
+  {
+    "id": "l4-bayou",
+    "file": "loading/l4-bayou.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "SWAMPSIDE BAYOU"
+  },
+  {
+    "id": "l5-mausoleum",
+    "file": "loading/l5-mausoleum.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "MAUSOLEUM HILLS"
+  },
+  {
+    "id": "l6-underneath",
+    "file": "loading/l6-underneath.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "THE UNDERNEATH"
+  },
+  {
+    "id": "l7-necropolis",
+    "file": "loading/l7-necropolis.svg",
+    "width": 1600,
+    "height": 900,
+    "title": "THE NECROPOLIS"
+  }
+]

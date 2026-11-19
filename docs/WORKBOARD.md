@@ -4,6 +4,7 @@ Status: todo / claimed / in-progress / review / done / blocked. One row per item
 
 | ID | Item | Owner | Branch | Status | Notes |
 |---|---|---|---|---|---|
+| W-167 | Playable starter zombie roster and asset package plan | Codex | feat/playable-zombie-roster | review | Six existing cast models with complete playable presets; real-content validation, deterministic sim and save/load tests; browser execution pending because local Chromium cannot create its process socket; `docs/PLAYABLE_ZOMBIES.md` |
 | W-001 | 25 cast bodies: Blender conversion + independent verify | Claude Cloud (cloud agents) | ship/final-phase | in-progress | tools/blender/cast |
 | W-002 | Cast bodies runtime rig + CAZ Body picker + townies + saves | Claude Cloud (cloud agents) | ship/final-phase | review | runtime + UI landed: 25 bodies load/animate (1+1 draws each), CAZ Body picker, townies, saves byte-compatible; real-browser 6/6; gaps: no eye material, no jaw; done when CI green |
 | W-003 | Economy foundation: quests, daily tasks, Bones ledger, store UI, catalog tiers, packs, age gate | Claude Cloud (cloud agents) | ship/final-phase | review | built + adversarial review (R1–R7 fixed); done when CI green; follow-ups D-026..D-028, achievement record in sim | docs/MONETIZATION.md |

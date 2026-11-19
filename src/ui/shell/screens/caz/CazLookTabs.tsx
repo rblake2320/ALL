@@ -31,6 +31,7 @@ import { Button } from '../../../common/Button';
 import { castBodyOf, lookOptionApplies } from '../../../common/castArt';
 import type { CastBodyId } from '../../../../shared/cast';
 import { useEconomy } from '../../../store/useEconomy';
+import { CazStarterPicker } from './CazStarterPicker';
 
 export interface MemberEditorProps {
   member: NewMemberSpec;
@@ -67,6 +68,7 @@ export function IdentityTab({ member, index, householdName, update, randomize, t
   const chosen = member.traits.map((id) => traits.find((x) => x.id === id)).filter((x): x is TraitInfo => !!x);
   return (
     <div class="sh-tab sh-tab--identity">
+      <CazStarterPicker key={index} update={update} traits={traits} aspirations={aspirations} />
       <div class="sh-name-grid">
         {freeText ? null : (
           <>

@@ -18,10 +18,12 @@ export const ATTACK_WINDOW_HOURS = 24;
 export const MAX_ATTACKS_PER_WINDOW = 3;
 /** "Skip this attack" passes every extra home is given once its grace period ends. More are earned in play. */
 export const FREE_PASSES_PER_HOME = 1;
-/** Longest single vacation, in town hours. */
-export const VACATION_MAX_HOURS = 14 * 24;
-/** Windows that must pass after a vacation ends before the next one may start ("not every single time"). */
-export const VACATION_COOLDOWN_WINDOWS = 4;
+/**
+ * After the fighting mode is switched on or off, and after every attack the household makes, the switch is locked for
+ * this many town hours. Nobody attacks and then hides, and nobody flips back and forth. Switching off is also how a
+ * household goes on vacation: it is protected for as long as it stays out, and that is at least this long.
+ */
+export const FIGHT_MODE_LOCK_HOURS = 48;
 /** Town hours between two changes of main home. */
 export const MAIN_HOME_CHANGE_COOLDOWN_HOURS = 30 * 24;
 /** No change of main home this close before a window opens (so nobody swaps homes to dodge an attack). */
@@ -30,14 +32,16 @@ export const MAIN_HOME_CHANGE_LOCK_HOURS = 24;
 export interface HomeDefenseState {
   /** The household's main home is never attackable. */
   isMainHome: boolean;
-  /** The household switched the fight-raid-defend mode on (adults and teens of 15+ only; never a child profile). */
+  /**
+   * The household's fighting mode is in effect (adults and teens of 15+ only; never a child profile). This is the
+   * EFFECTIVE state: a switch-off asked for during an open window takes effect when that window closes
+   * (`fightModeOffTakesEffectAt`).
+   */
   frontierOn: boolean;
   /** Town hour at which the home was bought or finished. */
   acquiredAtHour: number;
   /** Window indexes the owner spent a pass on. */
   passedWindows: readonly number[];
-  /** Vacation shield, if one is set. `startHour` inclusive, `endHour` exclusive. */
-  vacation: { startHour: number; endHour: number } | null;
   /** Attacks already received in the current window. */
   attacksThisWindow: number;
   /** The home was breached in the current window (it is then shielded until the window closes). */
@@ -51,7 +55,6 @@ export type NotAttackableReason =
   | 'grace'
   | 'noWindowOpen'
   | 'passUsed'
-  | 'vacation'
   | 'breachedThisWindow'
   | 'attackLimit';
 
@@ -94,8 +97,6 @@ export function canBeAttacked(home: HomeDefenseState | null | undefined, nowHour
   if (window === null) return { ok: false, reason: 'noWindowOpen' };
   if (window < firstAttackableWindow(home.acquiredAtHour)) return { ok: false, reason: 'grace' };
   if (home.passedWindows.includes(window)) return { ok: false, reason: 'passUsed' };
-  const v = home.vacation;
-  if (v && isHour(v.startHour) && isHour(v.endHour) && nowHour >= v.startHour && nowHour < v.endHour) return { ok: false, reason: 'vacation' };
   if (home.breachedThisWindow !== false) return { ok: false, reason: 'breachedThisWindow' };
   if (!Number.isInteger(home.attacksThisWindow) || home.attacksThisWindow < 0 || home.attacksThisWindow >= MAX_ATTACKS_PER_WINDOW) return { ok: false, reason: 'attackLimit' };
   return { ok: true, window };
@@ -117,21 +118,44 @@ export function canUsePass(home: HomeDefenseState | null | undefined, passesHeld
   return { ok: true };
 }
 
-export type VacationRefusal = 'badInput' | 'tooLong' | 'inThePast' | 'cooldown' | 'windowOpen';
+export interface FightModeHistory {
+  /** Town hour of the last time the switch was changed, either way (null if never). */
+  lastSwitchHour: number | null;
+  /** Town hour of the last attack this household made on another home (null if never). */
+  lastAttackMadeHour: number | null;
+}
+
+/** The town hour from which the switch may be changed again. A broken history locks it forever (fail closed). */
+export function fightModeUnlockHour(history: FightModeHistory | null | undefined): number {
+  if (!history) return Number.POSITIVE_INFINITY;
+  let unlock = 0;
+  for (const h of [history.lastSwitchHour, history.lastAttackMadeHour]) {
+    if (h === null) continue;
+    if (!isHour(h)) return Number.POSITIVE_INFINITY;
+    unlock = Math.max(unlock, h + FIGHT_MODE_LOCK_HOURS);
+  }
+  return unlock;
+}
 
 /**
- * May the household start a vacation shield from `startHour` to `endHour`? `lastVacationEndHour` is when the previous one
- * ended (null if there never was one). A vacation cannot be started while a window is open: it is for planned absence,
- * not for escaping an attack that has begun.
+ * May the household change its fighting-mode switch now (on or off)? Locked for FIGHT_MODE_LOCK_HOURS after the last
+ * change and after the last attack it made, whichever is later.
  */
-export function canStartVacation(startHour: number, endHour: number, nowHour: number, lastVacationEndHour: number | null): { ok: true } | { ok: false; reason: VacationRefusal } {
-  if (!isHour(startHour) || !isHour(endHour) || !isHour(nowHour) || endHour <= startHour) return { ok: false, reason: 'badInput' };
-  if (lastVacationEndHour !== null && !isHour(lastVacationEndHour)) return { ok: false, reason: 'badInput' };
-  if (startHour < nowHour) return { ok: false, reason: 'inThePast' };
-  if (endHour - startHour > VACATION_MAX_HOURS) return { ok: false, reason: 'tooLong' };
-  if (openWindowAt(nowHour) !== null) return { ok: false, reason: 'windowOpen' };
-  if (lastVacationEndHour !== null && startHour < lastVacationEndHour + VACATION_COOLDOWN_WINDOWS * ATTACK_CYCLE_HOURS) return { ok: false, reason: 'cooldown' };
-  return { ok: true };
+export function canChangeFightMode(history: FightModeHistory | null | undefined, nowHour: number): { ok: true } | { ok: false; reason: 'badInput' | 'locked'; unlockHour?: number } {
+  if (!isHour(nowHour)) return { ok: false, reason: 'badInput' };
+  const unlockHour = fightModeUnlockHour(history);
+  if (!Number.isFinite(unlockHour)) return { ok: false, reason: 'badInput' };
+  return nowHour >= unlockHour ? { ok: true } : { ok: false, reason: 'locked', unlockHour };
+}
+
+/**
+ * When a switch-off asked for at `nowHour` takes effect: at once between windows, at the close of the window if one
+ * is open. A household cannot leave in the middle of an attack window it was part of.
+ */
+export function fightModeOffTakesEffectAt(nowHour: number): number {
+  if (!isHour(nowHour)) return Number.POSITIVE_INFINITY;
+  const open = openWindowAt(nowHour);
+  return open === null ? nowHour : windowStartHour(open) + ATTACK_WINDOW_HOURS;
 }
 
 export type MainHomeChangeRefusal = 'badInput' | 'sameHome' | 'notOwned' | 'cooldown' | 'windowOpen' | 'windowSoon' | 'targetUnderAttack';

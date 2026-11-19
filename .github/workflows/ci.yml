@@ -44,7 +44,9 @@ jobs:
   build-test:
     name: Build and test (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 40
+    # GitHub-hosted runners are several times slower than the machine the suite was tuned on: the first public run
+    # was cancelled at 40 minutes with the unit tests still going.
+    timeout-minutes: 90
     strategy:
       fail-fast: false
       matrix:

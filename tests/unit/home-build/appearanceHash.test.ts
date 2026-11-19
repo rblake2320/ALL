@@ -38,9 +38,11 @@ const load = (w: unknown): WorldState => {
 };
 
 describe('Row 9: every zombie look survives save, load and play byte-identically', () => {
-  it('40 households, plus each premium body: the appearance hash is unchanged by a validated load and by 3 game hours', () => {
-    let checked = 0;
-    for (let seed = 1; seed <= 40; seed++) {
+  // One test per household (W-153 lesson: a single 40-household test ran within 2 s of its 60 s limit on a fast
+  // machine and timed out on a slower one). Every assertion is kept; the total is checked at the end.
+  let checked = 0;
+  for (let seed = 1; seed <= 40; seed++) {
+    it(`household ${seed}: the appearance hash is unchanged by a validated load and by 3 game hours`, () => {
       const w = world(seed);
       const before = appearanceHashes(w);
       const loaded = load(w);
@@ -49,9 +51,15 @@ describe('Row 9: every zombie look survives save, load and play byte-identically
       for (let i = 0; i < 3 * 60 * 4; i++) sim.step();
       expect(appearanceHashes(sim.state), `seed ${seed} after 3 h`).toEqual(before);
       checked += Object.keys(before).length;
-    }
+    });
+  }
+
+  it('all 40 households were checked: at least 120 zombie looks', () => {
     expect(checked).toBeGreaterThanOrEqual(120);
-    for (const body of PREMIUM_BODY_IDS) {
+  });
+
+  for (const body of PREMIUM_BODY_IDS) {
+    it(`premium body ${body}: the look and the body id survive a load and play`, () => {
       const w = world(7);
       const id = w.household.memberIds[0];
       (w.agents[id].appearance as { body: string }).body = body;
@@ -60,8 +68,8 @@ describe('Row 9: every zombie look survives save, load and play byte-identically
       for (let i = 0; i < 400; i++) sim.step();
       expect(appearanceHashes(sim.state), body).toEqual(before);
       expect((sim.state.agents[id].appearance as { body: string }).body).toBe(body);
-    }
-  });
+    });
+  }
 
   it('a second save and load of an already loaded world changes nothing (idempotent)', () => {
     const w = load(world(11));

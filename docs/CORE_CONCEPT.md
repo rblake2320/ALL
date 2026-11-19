@@ -75,8 +75,9 @@ What keeps a mission game alive, and what each mode should have:
 - **Health, healing and respawn.** A beaten zombie respawns back home after a short wait and loses nothing
   permanent ([combat-power.md §3.3](contract-requests/combat-power.md)).
 
-**Fixed rule 4.** Missions and home attacks are for profiles of 15 and over that switched the fighting mode on.
-Child profiles play the life sim and the town, and never see a fight.
+**Fixed rule 4.** Fighting is opt-in, for profiles of 15 and over that switched the fighting mode on. You are in or
+you are out: the switch locks for 48 hours after you change it and after every attack you make, so nobody attacks and
+then hides. Child profiles play the life sim and the town, and never see a fight.
 
 **Fixed rule 5.** Comic, not graphic. Power is earned in play and can never be bought.
 
@@ -95,7 +96,9 @@ calls it yet); the numbers are starting values to be tuned.
 | **Grace period:** a new home is safe until it has had one full cycle to set up | Its first window is the first one opening at least a week after you got it |
 | Attacks on one home per window are capped | 3, and a breached home is shielded for the rest of that window |
 | **Free pass:** every extra home gets one "skip this attack" pass after its grace period, usable on any window | 1 per home; more are earned in missions |
-| **Vacation mode:** a shield for when you are away. It cannot be started during a window, and not every time | Up to 14 days, then 4 windows before the next one |
+| **In or out, no flip-flopping:** the fighting mode is a switch. After you change it, and after every attack you make, it is locked | 48 hours |
+| Switching off during an open window takes effect when that window closes | So nobody leaves mid-attack |
+| **Going on vacation:** switch the fighting mode off. Your extra homes cannot be attacked for as long as you stay out | At least 48 hours |
 | Who may attack you | Only crews close to your home's defence strength |
 | What you can lose | Only what you placed in the home's at-risk set, capped per window. Never anything bought with real money |
 
@@ -114,6 +117,9 @@ Every defence has an answer, and an attack is a timed mission against the home, 
 **Changing your main home.** Allowed, with rules so it cannot be used to dodge an attack: not while a window is open,
 not in the 24 hours before one, not more than once in 30 days, and the home you leave becomes an ordinary extra home
 with a fresh grace period. These rules are in the same tested file.
+
+Open for design: whether the switch covers all fighting or only home attacks. The starting assumption is home
+attacks and the versus arena; missions against computer-controlled enemies stay open to anyone of 15 and over.
 
 ## 6. Hordes, crews and blocks
 

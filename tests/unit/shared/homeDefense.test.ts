@@ -7,12 +7,13 @@ import {
   MAIN_HOME_CHANGE_COOLDOWN_HOURS,
   MAIN_HOME_CHANGE_LOCK_HOURS,
   MAX_ATTACKS_PER_WINDOW,
-  VACATION_COOLDOWN_WINDOWS,
-  VACATION_MAX_HOURS,
+  FIGHT_MODE_LOCK_HOURS,
   afterMainHomeChange,
   canBeAttacked,
   canChangeMainHome,
-  canStartVacation,
+  canChangeFightMode,
+  fightModeOffTakesEffectAt,
+  fightModeUnlockHour,
   canUsePass,
   firstAttackableWindow,
   openWindowAt,
@@ -25,7 +26,6 @@ const home = (over: Partial<HomeDefenseState> = {}): HomeDefenseState => ({
   frontierOn: true,
   acquiredAtHour: 0,
   passedWindows: [],
-  vacation: null,
   attacksThisWindow: 0,
   breachedThisWindow: false,
   ...over,
@@ -95,13 +95,6 @@ describe('canBeAttacked', () => {
     expect(canBeAttacked(h, now)).toEqual({ ok: false, reason: 'passUsed' });
     expect(canBeAttacked(h, inWindow(5))).toEqual({ ok: true, window: 5 });
   });
-  it('a vacation covers its hours and no others (end hour is exclusive)', () => {
-    const h = home({ vacation: { startHour: now + 1, endHour: now + 3 } });
-    expect(canBeAttacked(h, now)).toEqual({ ok: true, window: 4 });
-    expect(canBeAttacked(h, now + 1)).toEqual({ ok: false, reason: 'vacation' });
-    expect(canBeAttacked(h, now + 2)).toEqual({ ok: false, reason: 'vacation' });
-    expect(canBeAttacked(h, now + 3)).toEqual({ ok: true, window: 4 });
-  });
   it('a breached home is shielded for the rest of the window, and the attack count is capped', () => {
     expect(canBeAttacked(home({ breachedThisWindow: true }), now)).toEqual({ ok: false, reason: 'breachedThisWindow' });
     expect(canBeAttacked(home({ attacksThisWindow: MAX_ATTACKS_PER_WINDOW - 1 }), now)).toEqual({ ok: true, window: 4 });
@@ -124,9 +117,6 @@ describe('canBeAttacked', () => {
     ];
     for (const b of bad) expect(canBeAttacked(b as HomeDefenseState, now).ok, JSON.stringify(b)).toBe(false);
     for (const t of [NaN, -1, Infinity]) expect(canBeAttacked(home(), t).ok).toBe(false);
-  });
-  it('a damaged vacation record does not shield a home (it cannot be forged into protection)', () => {
-    expect(canBeAttacked(home({ vacation: { startHour: NaN, endHour: Infinity } }), now)).toEqual({ ok: true, window: 4 });
   });
 });
 
@@ -153,30 +143,40 @@ describe('passes', () => {
   });
 });
 
-describe('vacation mode', () => {
-  const now = windowStartHour(6) + W + 5; // between windows
-  it('control: a planned vacation of allowed length is accepted', () => {
-    expect(canStartVacation(now + 10, now + 10 + VACATION_MAX_HOURS, now, null)).toEqual({ ok: true });
+describe('the fighting-mode switch: in or out, no flip-flopping', () => {
+  const L = FIGHT_MODE_LOCK_HOURS;
+  it('control: a household that never switched and never attacked may change the switch', () => {
+    expect(L).toBe(48);
+    expect(canChangeFightMode({ lastSwitchHour: null, lastAttackMadeHour: null }, 500)).toEqual({ ok: true });
   });
-  it('refuses: too long, already started in the past, or while an attack window is open', () => {
-    expect(canStartVacation(now, now + VACATION_MAX_HOURS + 1, now, null)).toEqual({ ok: false, reason: 'tooLong' });
-    expect(canStartVacation(now - 1, now + 5, now, null)).toEqual({ ok: false, reason: 'inThePast' });
-    const during = inWindow(7);
-    expect(canStartVacation(during, during + 24, during, null)).toEqual({ ok: false, reason: 'windowOpen' });
+  it('after a change the switch is locked for the full lock time, to the hour', () => {
+    const h = { lastSwitchHour: 500, lastAttackMadeHour: null };
+    expect(canChangeFightMode(h, 500)).toEqual({ ok: false, reason: 'locked', unlockHour: 500 + L });
+    expect(canChangeFightMode(h, 500 + L - 1)).toEqual({ ok: false, reason: 'locked', unlockHour: 500 + L });
+    expect(canChangeFightMode(h, 500 + L)).toEqual({ ok: true });
   });
-  it('cannot be used every time: a cooldown of whole windows after the last one', () => {
-    const lastEnd = now - 1;
-    const earliest = lastEnd + VACATION_COOLDOWN_WINDOWS * C;
-    expect(canStartVacation(now + 1, now + 25, now, lastEnd)).toEqual({ ok: false, reason: 'cooldown' });
-    // just outside a window, one hour too early and exactly on time
-    const later = windowStartHour(Math.ceil(earliest / C)) + W + 1;
-    expect(canStartVacation(Math.max(later, earliest), Math.max(later, earliest) + 24, later, lastEnd)).toEqual({ ok: true });
+  it('attack and hide is refused: an attack re-locks the switch even if it was changed long ago', () => {
+    const h = { lastSwitchHour: 10, lastAttackMadeHour: 900 };
+    expect(canChangeFightMode(h, 901)).toEqual({ ok: false, reason: 'locked', unlockHour: 900 + L });
+    expect(canChangeFightMode(h, 900 + L)).toEqual({ ok: true });
+    // the later of the two always wins
+    expect(fightModeUnlockHour({ lastSwitchHour: 950, lastAttackMadeHour: 900 })).toBe(950 + L);
   });
-  it('hostile input is refused', () => {
-    expect(canStartVacation(now + 5, now + 5, now, null).ok).toBe(false);
-    expect(canStartVacation(now + 5, now + 1, now, null).ok).toBe(false);
-    expect(canStartVacation(NaN, now + 5, now, null).ok).toBe(false);
-    expect(canStartVacation(now + 1, now + 5, now, NaN).ok).toBe(false);
+  it('a switch-off takes effect at once between windows, and only at the close of a window that is open', () => {
+    const between = windowStartHour(6) + W + 3;
+    expect(fightModeOffTakesEffectAt(between)).toBe(between);
+    expect(fightModeOffTakesEffectAt(inWindow(7))).toBe(windowStartHour(7) + W);
+    expect(fightModeOffTakesEffectAt(windowStartHour(7) + W - 1)).toBe(windowStartHour(7) + W);
+  });
+  it('vacation: a household that switched off is not attackable for as long as it stays out', () => {
+    for (const w of [8, 9, 10]) expect(canBeAttacked(home({ frontierOn: false }), inWindow(w))).toEqual({ ok: false, reason: 'frontierOff' });
+  });
+  it('hostile or damaged history keeps the switch locked', () => {
+    for (const bad of [null, undefined, { lastSwitchHour: NaN, lastAttackMadeHour: null }, { lastSwitchHour: null, lastAttackMadeHour: -3 }, { lastSwitchHour: Infinity, lastAttackMadeHour: null }, { lastSwitchHour: '5', lastAttackMadeHour: null }]) {
+      expect(canChangeFightMode(bad as never, 1000).ok, JSON.stringify(bad)).toBe(false);
+    }
+    expect(canChangeFightMode({ lastSwitchHour: null, lastAttackMadeHour: null }, NaN).ok).toBe(false);
+    expect(fightModeOffTakesEffectAt(NaN)).toBe(Infinity);
   });
 });
 

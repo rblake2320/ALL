@@ -6,7 +6,7 @@ A life sim where **you play the zombies**. Run a household of the undead in the 
 dinner parties, pets and home décor, while your zombies slowly rot and keeping them fresh competes with every other
 expense. It runs in a browser and as a Windows desktop app, entirely on your own device.
 
-![The home view: a household of four premium zombies](.github/assets/03-home.jpg)
+![Over the shoulder of a premium zombie at home](.github/assets/06-over-the-shoulder.jpg)
 
 *Pictured: the premium zombies. They are store unlocks marked "coming soon" and cannot be bought yet. Today you can
 preview them in Create-a-Zombie and play with any of the 25 free sculpted zombies, or build your own piece by piece.*
@@ -20,8 +20,8 @@ world, fixes or whole new systems. Start with [CONTRIBUTING.md](CONTRIBUTING.md)
 |---|---|
 | ![Create-a-Zombie](.github/assets/02-create-a-zombie.jpg) | ![Buy mode](.github/assets/05-buy-mode.jpg) |
 | Create-a-Zombie: 31 zombies, with a premium one previewed | Buy mode: furnish the place |
-| ![Over the shoulder](.github/assets/06-over-the-shoulder.jpg) | ![Walls up](.github/assets/04-walls-up.jpg) |
-| Follow a zombie over the shoulder | The house with its walls up |
+| ![The household outside](.github/assets/03-home.jpg) | ![Walls up](.github/assets/04-walls-up.jpg) |
+| A household of four premium zombies | The house with its walls up |
 
 ## What makes it different
 

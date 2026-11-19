@@ -59,7 +59,7 @@ guide**; older detail is in [combat-power.md](docs/contract-requests/combat-powe
 - **Power levels, weapons and loadouts:** four combat stats earned in play, one power number per zombie and per crew;
   weapons crafted from salvage or found in the world. Power can never be bought.
 - **Homes:** your main home is always protected. Extra homes can be attacked only in a scheduled weekly window, after
-  a grace period, with a free pass, a vacation mode, and defences you build or hire: guard dogs, traps, weapons and
+  a grace period, with a free pass, a 48-hour lock on switching the fighting mode on or off, and defences you build or hire: guard dogs, traps, weapons and
   hired guards.
 - **Hordes, crews and blocks:** friends roaming together, lasting crews, and a crew's home block.
 

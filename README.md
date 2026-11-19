@@ -8,6 +8,8 @@ expense. It runs in a browser and as a Windows desktop app, entirely on your own
 
 ![The home view: a zombie household at breakfast time](.github/assets/03-home.jpg)
 
+**[Play now](https://rblake2320.github.io/ALL/)** in your browser.
+
 **This is an open project, and you are invited to build it with us.** Add furniture, careers, pets, places in the
 world, fixes or whole new systems. Start with [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -48,8 +50,8 @@ Everything runs on your device. There are no accounts, no servers and no data co
 
 What the game is meant to become: **[docs/CORE_CONCEPT.md](docs/CORE_CONCEPT.md)**. What to build next: **[ROADMAP.md](ROADMAP.md)**. What changed lately: [CHANGELOG.md](CHANGELOG.md).
 
-A playable web build is published from `main` by [the Pages workflow](.github/workflows/pages.yml) once GitHub Pages is
-switched on for the repository.
+**[Play it in your browser](https://rblake2320.github.io/ALL/)**: nothing to install. The link is rebuilt from `main` by
+[the Pages workflow](.github/workflows/pages.yml) every time the game changes.
 
 ## Run it
 

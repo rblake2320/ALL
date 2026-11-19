@@ -1,5 +1,7 @@
 # Roadmap: where Afterlife Lease is going
 
+**Start with [docs/CORE_CONCEPT.md](docs/CORE_CONCEPT.md):** what the game is meant to become and which rules are fixed.
+
 This page is for anyone who wants to help build the game. It says what exists, what comes next and which rules a
 piece of work has to respect. Pick something, open an issue to claim it ([CONTRIBUTING.md](CONTRIBUTING.md)), and
 build towards it. The owner keeps the game's direction; the detailed list of work items is
@@ -14,11 +16,10 @@ fight.
 
 - **Home mode: the life sim.** Everyone starts here, and children only ever see this. Needs, jobs, bills, pets,
   building a home, walking the town, visiting neighbours.
-- **Frontier mode: fight, raid and defend.** For players of 15 and over who own a second home and switch it on.
-  Weapons and loadouts, home defences, crews, and **Eviction Night** (working title): a scheduled night when
-  households that opted in can raid and be raided.
+- **The fighting mode: missions and home defence.** For players of 15 and over who switch it on. Separate missions
+  you queue for, alone or in a group, and scheduled attacks on extra homes that their owners defend.
 
-Home-mode players are never attacked, never lose anything to a raid, and do not even see the fights.
+Home-mode players are never attacked, never lose anything, and do not even see the fights.
 
 ## 1. Playable today
 
@@ -42,41 +43,36 @@ Good places to start, because nothing here needs an account, hosting or a lawyer
 | Home security against townies and strays: guard pets, alarms, locks, lights | W-142 | [DESIGN_OPEN_WORLD.md §4.8](docs/DESIGN_OPEN_WORLD.md) |
 | New furniture, careers, pets, recipes, outfits and story beats | any time | [docs/community/](docs/community/README.md) |
 
-## 3. Frontier mode and Eviction Night
+## 3. Missions, and homes worth defending
 
-The fight-raid-defend side of the game. Nothing here is built yet. The design is in
-[combat-power.md](docs/contract-requests/combat-power.md) and
-[DESIGN_OPEN_WORLD.md §4.7 to §4.8.1](docs/DESIGN_OPEN_WORLD.md).
+The fighting side of the game. Nothing here is built yet except the schedule rules for home attacks, which exist as
+tested code in `src/shared/homeDefense.ts`. **[docs/CORE_CONCEPT.md](docs/CORE_CONCEPT.md) sections 4 to 6 are the
+guide**; older detail is in [combat-power.md](docs/contract-requests/combat-power.md) and
+[zombie-build-system.md](docs/contract-requests/zombie-build-system.md).
 
+- **Missions you queue for, not an open free-for-all.** Solo, duo, crew runs of four, raids of eight and a versus
+  arena. Each mode has its own feel, roles in a group, rewards at the end and daily or weekly resets.
 - **Three ways to see and play, switched at any time:** the overview (classic life-sim camera), over the shoulder
-  (roam the world as one zombie) and first person. The three views exist today; Frontier mode adds what fighting
-  needs on top of them.
-- **Health, healing and respawn:** a health bar that only matters in Frontier mode; ways to heal (food, embalming,
-  rest, items) and to raise maximum health; a zombie that is beaten respawns back home after a short wait and loses
-  nothing permanent.
-- **Power levels:** four combat stats earned in play, one visible power number per zombie and per crew, and
-  matchmaking that only allows a raid between crews of similar strength. Power can never be bought.
-- **Weapons and loadouts:** crafted from salvage or found in the world; two weapons, one tool or trap, one perk.
-- **Defences:** walls, gates, alarms, traps and guard pets, placed in Build mode. Every defence has an answer.
-- **Eviction Night:** opt-in for each event. Crews with roles (lookout, breaker, carrier, guard). First against the
-  home's saved defences while the owner is away, replayed for them afterwards; later live.
-- **Takeovers:** a crew can hold a contested second home for a while. A first home can never be taken.
-- **The night may be its own way to play.** One idea on the table: zombies leave home for the night and the event
-  plays as an action game, then they come home with salvage, bruises and a trophy. Open for design.
+  (roam the world as one zombie) and first person. The three views exist today.
+- **Health, healing and respawn:** a health bar that only matters in missions; ways to heal and to raise maximum
+  health; a beaten zombie respawns back home after a short wait and loses nothing permanent.
+- **Power levels, weapons and loadouts:** four combat stats earned in play, one power number per zombie and per crew;
+  weapons crafted from salvage or found in the world. Power can never be bought.
+- **Homes:** your main home is always protected. Extra homes can be attacked only in a scheduled weekly window, after
+  a grace period, with a free pass, a vacation mode, and defences you build or hire: guard dogs, traps, weapons and
+  hired guards.
+- **Hordes, crews and blocks:** friends roaming together, lasting crews, and a crew's home block.
 
-**Rules that are not up for debate** (work that breaks one will not be merged):
+Good first pieces: a health bar and healing in the life sim's own rules; one solo mission against computer-controlled
+enemies; hired guards as a job type; a "defence strength" number for a home.
 
-1. Everything is opt-in. A household that did not join an event cannot be raided, and cannot raid.
-2. Loss is bounded: only items the owner put at risk, capped per event. Nothing bought with real money is ever at
-   risk. A death never costs stats, items, money or the zombie.
-3. First homes are never taken.
-4. Child profiles (under 15) stay in Home mode: no weapons, no raids, no fights shown.
-5. Comic, not graphic. The base game stays suitable for an E10+ rating.
+The fixed rules (nobody attacked in the town, 15 and over with the mode switched on, bounded loss, no bought power)
+are listed in the core concept. Work that breaks one will not be merged.
 
 ## 4. One shared town: everyone in the same world at the same time
 
 **This is the headline goal.** Today each player has their own separate game. The aim is that when twenty people open
-the game, they are in the same town, see each other walk around, wave, visit and (in Frontier mode) fight.
+the game, they are in the same town, see each other walk around, wave, visit, and team up for missions.
 
 How it is meant to work, the same way most browser multiplayer games do it:
 
@@ -95,7 +91,7 @@ Steps, each one playable:
 1. A server that runs the town and lets two browsers see each other's zombies walk the street.
 2. Twenty or more players in one town; regions, interest management, reconnecting.
 3. Emotes and preset phrases; visiting a home with the owner's permission.
-4. Frontier mode on the shared server: health, combat, Eviction Night.
+4. Missions on the server: small separate rooms of up to eight players, with health and combat.
 
 Nothing here is built yet. Design notes: [DESIGN_OPEN_WORLD.md §5](docs/DESIGN_OPEN_WORLD.md).
 

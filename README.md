@@ -46,7 +46,7 @@ Early access, in active development (version 1.0.0).
 
 Everything runs on your device. There are no accounts, no servers and no data collection.
 
-Where it is going, including Frontier mode and Eviction Night (opt-in raid nights): **[ROADMAP.md](ROADMAP.md)**. What changed lately: [CHANGELOG.md](CHANGELOG.md).
+What the game is meant to become: **[docs/CORE_CONCEPT.md](docs/CORE_CONCEPT.md)**. What to build next: **[ROADMAP.md](ROADMAP.md)**. What changed lately: [CHANGELOG.md](CHANGELOG.md).
 
 A playable web build is published from `main` by [the Pages workflow](.github/workflows/pages.yml) once GitHub Pages is
 switched on for the repository.

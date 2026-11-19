@@ -53,6 +53,9 @@ The version number has one source, `package.json` → `"version"` (see docs/SHIP
 - L3 Downtown Rot Row art kit (W-053, Astra, PR #15) + integrity suite.
 
 ### Fixed
+- The performance test measured the whole test process, so other tests running in parallel threads counted against it (6.7 s alone, 13.3 s next to one other file). It now measures its own thread and scales its 20 s budget by a measured machine-speed factor, so it holds on slower machines and still fails on a real slowdown.
+- The 40-household look test is one test per household; as a single test it timed out on a slower machine.
+- CI job limit raised from 40 to 90 minutes for GitHub-hosted runners.
 - World boundary save/load checks run each of the 34 save points as its own test, preserving every replay assertion while avoiding the aggregate 60-second timeout on shared runners.
 - Home build/buy and home services use the household's region. Neighbour furniture cannot block home redo, count toward home caps/sets/pay, or be sold or removed with a home wall. Building relocates home actors only; station commands refuse away members, and foreign fires leave home-service eligibility unchanged.
 - Renderer warm-up stats now record cumulative material precompile calls and elapsed milliseconds; the long-soak samples and receipt report these counters.

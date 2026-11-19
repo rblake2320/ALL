@@ -4,6 +4,7 @@
  */
 import { afterEach, describe, expect, it } from 'vitest';
 import { WebSocket } from 'ws';
+import type { Socket } from 'node:net';
 import { defaultAppearance } from '../../../src/shared/appearance';
 import { lookOf, MAX_CLIENT_MESSAGE_BYTES, parseServerMessage, type ServerMsg, type SnapMsg, type WelcomeMsg } from '../../../src/shared/townNet/protocol';
 import { ROOM_CAPACITY, TOWN_TICK_HZ, WALK_SPEED } from '../../../src/shared/townNet/room';
@@ -154,6 +155,23 @@ describe('two players in the shared town', () => {
 });
 
 describe('limits the server enforces itself', () => {
+  for (const joined of [false, true]) {
+    it(`buffered hello after a drop cannot leave ghost players (joined=${joined})`, async () => {
+      const s = await boot();
+      const c = joined ? (await join(s)).c : await connect(s);
+      // Batch both frames into one write so ws delivers the second message after drop().
+      const socket = (c.ws as unknown as { _socket: Socket })._socket;
+      socket.cork();
+      c.ws.send(joined ? HELLO : '{"t":"chat","text":"invalid"}');
+      c.ws.send(HELLO);
+      socket.uncork();
+      expect(await c.closed).toBe(1008);
+      expect(s.stats()).toMatchObject({ connections: 0, players: 0, rooms: 0 });
+      const next = await join(s);
+      expect(next.welcome.players).toHaveLength(1);
+    });
+  }
+
   it('a web site that is not on the list cannot connect; one on the list can', async () => {
     const s = await boot({ allowedOrigins: ['https://play.example'] });
     await expect(connect(s, { origin: 'https://evil.example' })).rejects.toThrow('HTTP 403');

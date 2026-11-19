@@ -42,15 +42,20 @@ export function townServerOrigin(value: string | undefined = process.env.VITE_TO
  * single-file build's inline scripts to script-src.
  */
 export function cspMetaPlugin(): Plugin {
+  let townServer = process.env.VITE_TOWN_SERVER;
   return {
     name: 'afterlife-csp-meta',
     apply: 'build',
+    configResolved(config) {
+      // Use the same resolved .env/mode/shell value Vite exposes to the client.
+      townServer = config.env.VITE_TOWN_SERVER ?? '';
+    },
     transformIndexHtml: {
       order: 'post',
       handler(html, ctx?: { filename?: string }) {
         if (/http-equiv\s*=\s*["']?content-security-policy/i.test(html)) throw new Error('index.html already declares a CSP; keep one source of truth (electron/csp.ts)');
         // Only the shared-town test page may talk to a server, and only to the one named at build time.
-        const town = /(^|[\\/])town\.html$/.test(ctx?.filename ?? '') ? townServerOrigin() : null;
+        const town = /(^|[\\/])town\.html$/.test(ctx?.filename ?? '') ? townServerOrigin(townServer) : null;
         const tag = `<meta http-equiv="Content-Security-Policy" content="${buildMetaCsp(town ? { connect: [town] } : {})}" />`;
         const charset = /<meta\s+charset\s*=\s*["']?utf-8["']?\s*\/?>/i;
         if (charset.test(html)) return html.replace(charset, (m) => `${m}\n    ${tag}`);

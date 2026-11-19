@@ -56,6 +56,7 @@ The version number has one source, `package.json` → `"version"` (see docs/SHIP
 - L3 Downtown Rot Row art kit (W-053, Astra, PR #15) + integrity suite.
 
 ### Fixed
+- Shared-town connections ignore buffered messages after disconnection, preventing ghost players from occupying rooms. The town page's CSP now uses Vite's resolved environment, including `.env.production`, so its permitted server matches the client configuration.
 - The performance test measured the whole test process, so other tests running in parallel threads counted against it (6.7 s alone, 13.3 s next to one other file). It now measures its own thread and scales its 20 s budget by a measured machine-speed factor, so it holds on slower machines and still fails on a real slowdown.
 - The 40-household look test is one test per household; as a single test it timed out on a slower machine.
 - CI job limit raised from 40 to 90 minutes for GitHub-hosted runners.

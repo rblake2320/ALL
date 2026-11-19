@@ -3,6 +3,10 @@
  * and only a well-formed one; the game's own page never does.
  */
 import { afterEach, describe, expect, it } from 'vitest';
+import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { build } from 'vite';
 import { buildCsp, buildMetaCsp } from '../../../electron/csp';
 import { cspMetaPlugin, townServerOrigin } from '../../../vite.config';
 import { isTownServerUrl } from '../../../src/town/connection';
@@ -53,6 +57,32 @@ describe('the build reads the town server from VITE_TOWN_SERVER', () => {
 });
 
 describe('only the town page gets the extra origin', () => {
+  it('a production env file configures both the client and the generated CSP', async () => {
+    delete process.env.VITE_TOWN_SERVER;
+    const root = mkdtempSync(path.join(tmpdir(), 'town-csp-'));
+    try {
+      writeFileSync(path.join(root, '.env'), 'VITE_TOWN_SERVER=wss://base.example\n');
+      writeFileSync(path.join(root, '.env.production'), 'VITE_TOWN_SERVER=wss://production.example/ws\n');
+      writeFileSync(path.join(root, 'index.html'), PAGE);
+      writeFileSync(path.join(root, 'town.html'), PAGE.replace('</body>', '<script type="module" src="/client.js"></script></body>'));
+      writeFileSync(path.join(root, 'client.js'), 'console.log(import.meta.env.VITE_TOWN_SERVER);');
+      const result = await build({ root, configFile: false, logLevel: 'silent', plugins: [cspMetaPlugin()], build: {
+        write: false, rollupOptions: { input: { main: path.join(root, 'index.html'), town: path.join(root, 'town.html') } },
+      } });
+      const outputs = (Array.isArray(result) ? result : [result]).flatMap(r => 'output' in r ? r.output : []);
+      const html = (name: string): string => {
+        const asset = outputs.find(o => o.fileName === name);
+        return asset?.type === 'asset' ? String(asset.source) : '';
+      };
+      expect(connectOf(html('town.html'))).toContain('wss://production.example');
+      expect(connectOf(html('town.html'))).not.toContain('base.example');
+      expect(connectOf(html('index.html'))).toBe("'self' data: blob:");
+      expect(outputs.some(o => o.type === 'chunk' && o.code.includes('wss://production.example/ws'))).toBe(true);
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
+
   it('town.html gets it when a server is configured', () => {
     process.env.VITE_TOWN_SERVER = 'wss://town.example/ws';
     expect(connectOf(run(PAGE, '/repo/town.html'))).toBe("'self' data: blob: wss://town.example");

@@ -159,6 +159,8 @@ export async function startTownServer(opts: TownServerOptions = {}): Promise<Tow
   };
 
   const onMessage = (c: Conn, data: unknown, isBinary: boolean): void => {
+    // ws can deliver buffered frames after drop() removed this connection.
+    if (c.closed) return;
     const t = now();
     c.tokens = Math.min(rate, c.tokens + ((t - c.tokensAt) / 1000) * rate);
     c.tokensAt = t;

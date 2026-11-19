@@ -84,7 +84,7 @@ it was built and to nothing else. The game's own page may connect to nobody, as 
 | `server/` | The server: `townServer.ts` (connections, limits) and `main.ts` (start it from the command line) |
 | `src/town/` | The page: `scene.ts` (hands the renderer one zombie per player), `connection.ts` (the WebSocket), `main.ts` (keys, camera, name tags) |
 | `town.html` | The page itself |
-| `tests/unit/town/` | 132 tests: 83 on the rules, 24 against the real server over real connections, 25 on which page may connect to what |
+| `tests/unit/town/` | 135 tests: 83 on the rules, 26 against the real server over real connections, 26 on which page may connect to what |
 | `tests/e2e/town.mjs` | 23 checks with two real browsers on the built page |
 
 ## Putting it on a host (owner only, after the review above)

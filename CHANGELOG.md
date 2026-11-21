@@ -7,6 +7,7 @@ The version number has one source, `package.json` → `"version"` (see docs/SHIP
 ## [Unreleased]
 
 ### Added
+- `tests/e2e/models-loaded.mjs` (`npm run e2e:models`, in CI): fails when any furniture model is not downloaded or is drawn as the plain fallback box. Before, a model the browser could not read was replaced by a box silently and every test still passed.
 - **Shared town, first test** (`docs/SHARED_TOWN.md`): a Node.js WebSocket server (`server/`, `npm run town:server`) and a separate page (`town.html`) on which two or more browsers walk Mildew Lane's street and see each other's zombies, drawn by the game's renderer. The server decides every position; the page predicts its own zombie with the same rule. No accounts, no chat, no free text, nothing stored. Off by default: the page connects only when built with `VITE_TOWN_SERVER`, and the game has no button for it. Not hosted, and not tried with twenty real players.
 - New development packages for that server: `ws` 8.23.0 and `@types/ws` 8.18.2; `esbuild` 0.28.2 (already installed through Vite) is now listed directly because the server bundle uses it.
 - **The project is open.** The code and script-generated art are under the MIT licence; the files it does not cover are listed in `CREDITS.md`. Contributions come by fork and pull request (`CONTRIBUTING.md`), with a code of conduct.

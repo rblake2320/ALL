@@ -38,6 +38,7 @@ the first step towards a shared town ([docs/SHARED_TOWN.md](docs/SHARED_TOWN.md)
 | `node scripts/verify-features.mjs --check` | Feature ledger hash chain |
 | `npm run e2e` | The built game in a real browser |
 | `npm run e2e:town` | The shared-town page in two real browsers against the real server |
+| `npm run e2e:models` | Every furniture model loads; none is drawn as a fallback box |
 | `npm run clip:gate` | Character/furniture clipping (art, seats, animations) |
 | `npm run verify:assets` | Model files match their manifest hashes |
 

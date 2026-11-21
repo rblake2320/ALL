@@ -233,6 +233,12 @@ jobs:
         if: hashFiles('tests/e2e/smoke.mjs') != ''
         run: npm run e2e:feedback -- --no-build
 
+      # Every furniture model loads; a model the browser cannot read is drawn as a plain box and nothing else fails.
+      # Uses the dist/ built above. Control: `node tests/e2e/models-loaded.mjs --break=chair_creaky` must fail.
+      - name: e2e furniture models load
+        if: hashFiles('tests/e2e/models-loaded.mjs') != ''
+        run: npm run e2e:models -- --no-build
+
       # Shared town, step 1: two browsers on the built town page against the real server (makes its own build).
       - name: e2e shared town
         if: hashFiles('tests/e2e/town.mjs') != ''
